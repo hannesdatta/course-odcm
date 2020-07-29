@@ -1,0 +1,4 @@
+baseURL = "https://datacollections.hannesdatta.com/"
+languageCode = "en-us"
+title = "Online Data Collections"
+theme = 'book'

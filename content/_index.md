@@ -3,7 +3,7 @@ title: Introduction
 type: docs
 ---
 
-# Large-scale Online Data Collection and Management
+# Online Data Collection and Management (oDCM)
 
 **Learn how to mine the social and digital web**
 
@@ -50,9 +50,9 @@ Already know what you're looking for? Search the __Glossary__ here.
     - Data Preparation using Python and R
 - A high level of commitment, both in terms of time and effort, is expected
 
-## Enrollment
+## Enrollment and Obtaining Course Credits
 
-The course will be taught in the Marketing Analytics Program at Tilburg University. Please check Osiris for the specifics, or [contact the instructor](mailto:h.datta@tilburguniversity.edu).
+The course (3 ECTS) will be taught in the Marketing Analytics Program at Tilburg University. Please check Osiris for the specifics, or [contact the instructor](mailto:h.datta@tilburguniversity.edu).
 
 ## License
 

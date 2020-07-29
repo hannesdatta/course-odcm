@@ -22,3 +22,7 @@ New to Git and Markdown? Then please see our sister site at http://tilburgscienc
 - Start up the webserver by typing `hugo server`
 - Not sure what to contribute? Head over to the issues page on GitHub to see what are good issues to address. Of course, you're welcome to suggest your own changes.
 - Make your changes in new branches, and issue a PR.
+
+### Documentation
+
+- Hugo `Book` Theme: https://themes.gohugo.io//theme/hugo-book/

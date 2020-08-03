@@ -1,5 +1,5 @@
 ---
 bookFlatSection: true
 title: "Glossary"
-bookHidden: true
+bookHidden: false
 ---

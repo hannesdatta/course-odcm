@@ -1,5 +1,6 @@
 ---
-bookCollapseSection: true
+bookCollapseSection: false
+title: Web Scraping
 ---
 
 # Section

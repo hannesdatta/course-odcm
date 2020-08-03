@@ -2,7 +2,7 @@
 weight: 1
 bookFlatSection: true
 title: "Syllabus"
-bookHidden: true
+bookHidden: false
 ---
 
 # Introduction

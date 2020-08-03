@@ -5,7 +5,7 @@ type: docs
 
 # Online Data Collection and Management (oDCM)
 
-**Learn how to mine the social and digital web**
+**Web scraping, APIs, and database managing for mining the social web**
 
 _Tilburg University, Block 3, 2020/2021 (January - March 2021)_
 

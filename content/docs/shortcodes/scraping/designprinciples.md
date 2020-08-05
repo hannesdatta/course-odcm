@@ -44,6 +44,7 @@ description: How to design
     - Clicking
     - Submitting
     - Scrolling
+    - Downloading (click + capture)
     - Examples
       - Logging in and out
   - Looping
@@ -52,14 +53,16 @@ description: How to design
   - Parsing
     - to single CSV file w/ headers
     - new file per scrape
-    - to DB
+    - to DB (set up DB)
     - store meta data when the site was extracted
 
 - Technical specs
   - data storage
     - locally, BUT [...]!
     - databases: structured versus unstructured --> is it dynamic? --> database-approach
+      - how to set one up + what are the principles in DBs
     - file remotes: pushing to S3 (e.g. HTML, sync)
+      - how to set it up? what are the principles?
     - assess space requirements (# files, HD space); storage may be transitory (e.g., database to support extraction); or permanent (CSV) -> if permanent, choose files
 
   - deployment
@@ -88,10 +91,7 @@ description: How to design
   - check flags - antyhing excluded?
   - validity of data (e.g., only recent data).
   - keeping screenshots
-
-
-  - understand infrastructure of site
-  - regular CSV capture
+  - regular CSV capture as downloads
 
   - display options (not recommended; or sorted by date)
 
@@ -157,15 +157,8 @@ e.g., plots of errors
 - Reporting in paper
 - web scraping is the process of designing and deploying code that automatically extracts and parses information from websites/APIs.
 
-WORKING WITH web scarped data
 
-
-NOtes Johannes:
-- does web scraping encompass APIs?
-  - APIs share concepts: endpoints; but extraction is more automatic
-  - Figure 3: "innovation"/"gut feeling of good idea"
-  - SERVICES provide websites or APIs; it's nt that websites provide apis. APIs / like websites, offer recent data. so that's general.
-
+# NOTES TO JOHANNES
 
 - provide a structured workflow
   - explore and prototype
@@ -186,3 +179,9 @@ To be discussed w/ Johannes:
 - unit of analysis: user - time; page.
 - building panel data
 - include "booleans" in overview
+
+NOtes Johannes:
+- does web scraping encompass APIs?
+  - APIs share concepts: endpoints; but extraction is more automatic
+  - Figure 3: "innovation"/"gut feeling of good idea"
+  - SERVICES provide websites or APIs; it's nt that websites provide apis. APIs / like websites, offer recent data. so that's general.

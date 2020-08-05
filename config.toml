@@ -1,6 +1,6 @@
 baseURL = "https://datacollections.hannesdatta.com/"
 languageCode = "en-us"
-title = "Online Data Collections"
+title = "Online Data Collections (oDCM)"
 theme = 'book'
 
 # Book configuration

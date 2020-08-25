@@ -46,3 +46,5 @@ Examples here.
 - increasing limits (&limit=100), or elements on pages.
 - display options (not recommended; or sorted by date)
 - check flags - antyhing excluded?
+
+- capture recommendations

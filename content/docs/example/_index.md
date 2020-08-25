@@ -5,68 +5,131 @@ title: "Syllabus"
 bookHidden: false
 ---
 
-# Introduction
+# Syllabus
 
-## Ferre hinnitibus erat accipitrem dixi Troiae tollens
+## Preparation before the course starts
 
-Lorem markdownum, a quoque nutu est *quodcumque mandasset* veluti. Passim
-inportuna totidemque nympha fert; repetens pendent, poenarum guttura sed vacet
-non, mortali undas. Omnis pharetramque gramen portentificisque membris servatum
-novabis fallit de nubibus atque silvas mihi. **Dixit repetitaque Quid**; verrit
-longa; sententia [mandat](http://pastor-ad.io/questussilvas) quascumque nescio
-solebat [litore](http://lacrimas-ab.net/); noctes. *Hostem haerentem* circuit
-[plenaque tamen](http://www.sine.io/in).
+## During the course
 
-- Pedum ne indigenae finire invergens carpebat
-- Velit posses summoque
-- De fumos illa foret
+- Module 0: Course overview + getting started
 
-## Est simul fameque tauri qua ad
+- Module 1a: Research and Business Opportunities From Online Data Collections
+  - Design principles
+  - Prep: Business
+  - Prep: Research
+  - Prep: Legality
+  - "What I think is hot right now"
 
-Locum nullus nisi vomentes. Ab Persea sermone vela, miratur aratro; eandem
-Argolicas gener.
+- Module 1b: Legality and Terms of Use (--> paper? advice?)
 
-## Me sol
+- Module 3: Web scraping
+- Module 4: APIs
 
-Nec dis certa fuit socer, Nonacria **dies** manet tacitaque sibi? Sucis est
-iactata Castrumque iudex, et iactato quoque terraeque es tandem et maternos
-vittis. Lumina litus bene poenamque animos callem ne tuas in leones illam dea
-cadunt genus, et pleno nunc in quod. Anumque crescentesque sanguinis
-[progenies](http://www.late.net/alimentavirides) nuribus rustica tinguet. Pater
-omnes liquido creditis noctem.
+- Module 5: Data Management and Deployment in Production
+  - Software Stack
+  - Computing Infrastructure
+  - Dockers
+  - Structured and Unstructured databases
+  - "Polishing" Code
 
-    if (mirrored(icmp_dvd_pim, 3, smbMirroredHard) != lion(clickImportQueue,
-            viralItunesBalancing, bankruptcy_file_pptp)) {
-        file += ip_cybercrime_suffix;
-    }
-    if (runtimeSmartRom == netMarketingWord) {
-        virusBalancingWin *= scriptPromptBespoke + raster(post_drive,
-                windowsSli);
-        cd = address_hertz_trojan;
-        soap_ccd.pcbServerGigahertz(asp_hardware_isa, offlinePeopleware, nui);
-    } else {
-        megabyte.api = modem_flowchart - web + syntaxHalftoneAddress;
-    }
-    if (3 < mebibyteNetworkAnimated) {
-        pharming_regular_error *= jsp_ribbon + algorithm * recycleMediaKindle(
-                dvrSyntax, cdma);
-        adf_sla *= hoverCropDrive;
-        templateNtfs = -1 - vertical;
-    } else {
-        expressionCompressionVariable.bootMulti = white_eup_javascript(
-                table_suffix);
-        guidPpiPram.tracerouteLinux += rtfTerabyteQuicktime(1,
-                managementRosetta(webcamActivex), 740874);
-    }
-    var virusTweetSsl = nullGigo;
+- Module 6: Data sharing
 
-## Trepident sitimque
+- Presentation of research / business projects
 
-Sentiet et ferali errorem fessam, coercet superbus, Ascaniumque in pennis
-mediis; dolor? Vidit imi **Aeacon** perfida propositos adde, tua Somni Fluctibus
-errante lustrat non.
+## Meetings
 
-Tamen inde, vos videt e flammis Scythica parantem rupisque pectora umbras. Haec
-ficta canistris repercusso simul ego aris Dixit! Esse Fama trepidare hunc
-crescendo vigor ululasse vertice *exspatiantur* celer tepidique petita aversata
-oculis iussa est me ferro.
+
+## Preparation before the course starts
+
+- Software environment setup
+- Introduction to Python and Jupyter Notebook using Anaconda
+- Overview about this course
+
+
+## Online Tutorials (prerecorded) / "labs"
+
+### Webscraping 101
+
+### Webscraping Advanced
+
+### APIs 101
+
+### APIs Advanced
+
+### Structured databases
+
+### Unstructured databases
+
+### Disclosing data / data workflow
+
+## Web scraping
+
+## APIs
+
+- Software environment setup
+- Introduction to Anaconda Python (Jupyter Notebook, Spyder)
+- Introduction to the Glossary
+
+## Web scraping
+
+- Data retrieval from websites
+- Application protocol interfaces
+- Data/functionality/algorithm access
+- API get
+- API provide
+- Releasing/sharing data via APIs
+- Parsing
+
+## Data management
+
+- Database technology
+- Structured: MySQL, Google BigQuery
+- Unstructured: Amazon DynamoDB, MongoDB
+- File-based systems
+- Local: SSD, HDD
+- Server/cloud: S3, FTP, Google Drive
+- Per database
+- Schema/design
+- Extracting and writing data
+- Indexing
+- Maintenance
+- ShinyApps / Interactive dashboards
+
+
+- Scraper 1: Static scraper, single-machine, no database (two versions: either with or without browser); backward-looking versus forward-looking
+- Scraper 2: Dynamic scraper, with database connection + monitoring
+
+## Ethics
+
+## Topics for the guide
+
+### Web scraping
+
+- Design principles
+- Connecting to a website without browser window
+- Connecting to a website with browser window
+- Using headers
+- Cookies and continuing existing sessions
+- Identifying objects using CSS selectors
+- Identifying objects using XPATH selectors
+- Loop through objects
+- Timing / delays
+- Looping
+- Planning a data collection
+- Seeding
+- Sampling
+- Writing to CSV
+- Writing to JSON
+
+### Saving and writing locally and remotely (databases, file-based systems)
+- Writing to file
+- Writing to S3
+- SQL - write
+- SQL - read
+-
+
+Project: Data collection + auditing of data
+
+Real-time analytics (use database (learnt here), in combination with research method (e.g., regression), to create insights in realtime
+
+Project: collect data OR make available data/algorithm from other classes / how to run supervision?

@@ -28,8 +28,8 @@ Already know what you're looking for? Search the __Glossary__ here.
 - Gain practical experience using Python, MySQL, MongoDB and Amazon Web Services (AWS)
 - Enable you to draft, execute, monitor and audit online data collections, that you can use to kickstart your own academic or commercial projects<!-- cronjobs-->
 - Document and archive your data, and make them available for public (re)use
-- Track and share your own progress and learnings
-- Critically evaluate your own contribution and the contribution of team members to group projects ("peer assessment")
+- Track and share your own progress on the course's learning goals
+- Critically evaluate your contribution and the contribution of team members to group projects ("peer assessment")
 
 ## Grading
 

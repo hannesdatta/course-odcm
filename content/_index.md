@@ -67,12 +67,13 @@ Elke toetsvorm (bijv. paper, exam, midterm) dient apart in Osiris te worden inge
 - The course is intended for both novices and those students with a technical background
   - We recommend novices to familiarize themselves with Python/Jupyter Notebook before the start of the course. Material (e.g., courses at Datacamp.com) will be shared with students well in advance.
   - Alternatively, novices may benefit from following other courses at Tilburg University in which Python is used, for example, *Research Skills: Data Processing* and *Research Skills: Data Processing Advanced*.
-- The course is instructed to MSc students in the Marketing Analytics (TiSEM) program. Interested Research Master or PhD students who seek to advance their data collection skills can audit this course upon the approval of the course coordinator.
+- The course is instructed to MSc students in the Marketing Analytics (TiSEM) program.
 - A high level of commitment, both in terms of time and effort, is expected
 
 ## Enrollment and Obtaining Course Credits
 
-The course (3 ECTS) will be taught in the Marketing Analytics Program at Tilburg University. Please check Osiris for the specifics, or [contact the instructor](mailto:h.datta@tilburguniversity.edu).
+- The course (3 ECTS) will be taught in the Marketing Analytics Program at Tilburg University (please check Osiris for the specifics).
+- Interested Research Master or PhD students who seek to advance their data collection skills can audit this course upon the approval of [the instructor](mailto:h.datta@tilburguniversity.edu).
 
 ## License
 

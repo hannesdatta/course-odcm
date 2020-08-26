@@ -7,6 +7,16 @@ bookHidden: false
 
 # Syllabus
 
+Activities
+
+- Data collection pitch (group) / presentation
+- Legal battle + anonymization outcome
+- Prototype
+- Deployment as large project
+
+session chair, presentations, pitches, discussions
+
+
 ## Preparation before the course starts
 
 ## During the course

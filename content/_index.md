@@ -65,10 +65,9 @@ Elke toetsvorm (bijv. paper, exam, midterm) dient apart in Osiris te worden inge
 ## Student profile / prerequisites
 
 - The course is intended for both novices and those students with a technical background
-- The student is instructed to MSc students, but also highly suitable for Research Master or PhD students who seek to advance their data collection skills
-- Recommended courses at Tilburg to have taken before
-    - Research Skills: Data Processing
-    - Research Skills: Data Processing Advanced
+  - We recommend novices to familiarize themselves with Python/Jupyter Notebook before the start of the course. Material (e.g., courses at Datacamp.com) will be shared with students well in advance.
+  - Alternatively, novices may benefit from following other courses at Tilburg University in which Python is used, for example, *Research Skills: Data Processing* and *Research Skills: Data Processing Advanced*.
+- The course is instructed to MSc students in the Marketing Analytics (TiSEM) program. Interested Research Master or PhD students who seek to advance their data collection skills can audit this course upon the approval of the course coordinator.
 - A high level of commitment, both in terms of time and effort, is expected
 
 ## Enrollment and Obtaining Course Credits

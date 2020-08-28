@@ -21,10 +21,14 @@ enableGitInfo = true
 # And https://gohugo.io/content-management/multilingual/#translation-by-content-directory
 [languages]
 [languages.en]
-  languageName = 'English'
+  languageName = 'oDCM'
   contentDir = 'content'
   weight = 1
 
+#[languages.dprep]
+#  languageName = 'dPrep'
+#  contentDir = 'content.dataprep'
+#  weight = 2
 
 [menu]
 # [[menu.before]]

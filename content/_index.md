@@ -9,7 +9,7 @@ type: docs
 
 <!--, and database management-->
 
-_Tilburg University, Block 3, 2020/2021 (January - March 2021)_
+_Tilburg University, Block 3, 2020/2021 (February - April 2021)_
 
 _Instructor: [dr. Hannes Datta](https://hannesdatta.com)_
 
@@ -81,7 +81,7 @@ Python - MongoDB (SQL eruit, MongoDB eruit)
 
 ## Grading
 
-- Team project (4-5 team members) (40% + 10% individual assessment on the basis of self- and peer assessment<sup>1</sup>)
+- Team project (4-5 team members) (40% + 10% individual assessment on the basis of self- and peer assessment[^2])
 - Share individual progress and learnings (e.g., open science contributions like tutorials or code snippets in the form of pull requests to GitHub, maintaining a public FAQ/blog, sharing one's progress with the group) (10%)
 - Computer exam (40%)
 
@@ -92,7 +92,7 @@ Python - MongoDB (SQL eruit, MongoDB eruit)
 
 Students pass this course if the final course grade (i.e., the weighted average of the individual components; weights indicated above) is ≥ 5.5, and the exam is passed (≥ 5.5).
 
-<sup>1</sup>Self- and peer-assessment: The team project is subject to self- and peer assessment, i.e., students' grades will be corrected upwards or downwards, depending on their own contribution to the overall team effort. Students provide written feedback to each other once during the course, and score themselves and their team members on, among others, the quantity and quality of their contributions.
+[^2]: The team project is subject to *self- and peer assessment*, i.e., students' grades will be corrected upwards or downwards, depending on their own contribution to the overall team effort. Students provide written feedback to each other once during the course, and score themselves and their team members on, among others, the quantity and quality of their contributions.
 
 
 <!-- take home exercise: just submit; you get "DONE" on it as per the deadline -- make sure students stay up-to-date w/ the content

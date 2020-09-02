@@ -4,7 +4,7 @@ This is the course page for "Online Data Collection and Management (oDCM)", a ne
 
 ## Using the course website and glossary
 
-This is the source code of the website, and not the website itself. If you're looking for the actual website, please point your browser to [https://datacollection.hannesdatta.com](https://datacollections.hannesdatta.com).
+This is the source code of the website, and not the website itself. If you're looking for the actual website, please point your browser to [https://odcm.hannesdatta.com](https://odcm.hannesdatta.com).
 
 ## Using this repository
 

@@ -126,7 +126,7 @@ Elke toetsvorm (bijv. paper, exam, midterm) dient apart in Osiris te worden inge
 
 ## Enrollment and Obtaining Course Credits
 
-- The course (3 ECTS) will be taught in the Marketing Analytics Program at Tilburg University (please check Osiris for the specifics).
+- The course (3 ECTS) will be taught in the Marketing Analytics Program at Tilburg University (please check Osiris for the specifics). The course code is 328060-M-3.
 - Interested Research Master or PhD students who seek to advance their data collection skills can audit this course upon the approval of [the instructor](mailto:h.datta@tilburguniversity.edu) and their coordinator.
 
 ## License

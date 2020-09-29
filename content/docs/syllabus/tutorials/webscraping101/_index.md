@@ -1,5 +1,5 @@
 ---
-weight: 1
+weight: 2
 title: Web scraping 101
 description: Learn how to make a simple HTTP connection to a site and parse content to a CSV file
 bookCollapseSection: true

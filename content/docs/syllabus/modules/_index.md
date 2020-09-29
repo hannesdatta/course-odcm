@@ -1,9 +1,9 @@
 ---
-weight: 4
-title: Tutorials
+weight: 3
+title: Modules
 bookCollapseSection: true
 ---
 
-# Tutorials
+# Modules
 
 {{<section>}}

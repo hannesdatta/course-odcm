@@ -1,11 +1,11 @@
 ---
-weight: 3
-title: Web scraping Advanced
+weight: 6
+title: Web scraper deployment with S3 mirror
 description: Learn how ...
 bookCollapseSection: true
 ---
 
-# Web scraping Advanced
+# Title
 
 ## Learning goals
 

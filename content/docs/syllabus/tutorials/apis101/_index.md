@@ -1,5 +1,5 @@
 ---
-weight: 3
+weight: 4
 title: APIs 101
 description: Learn how to make a connection to an API and retrieve data
 bookCollapseSection: true

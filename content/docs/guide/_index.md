@@ -1,5 +1,5 @@
 ---
 bookFlatSection: true
-title: "Guide"
+title: "Building Blocks"
 bookHidden: false
 ---

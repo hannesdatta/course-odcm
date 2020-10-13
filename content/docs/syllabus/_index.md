@@ -10,8 +10,7 @@ bookHidden: false
 ## Course structure
 
 - The course consists of 5 modules
-  - Modules build your expertise
-  - Each module consists of different components
+- Each module builds up your expertise along one or multiple of the course's learning goals
     - Preparation
       - Prerecorded or live lectures
       - Prerecorded tutorials
@@ -23,7 +22,7 @@ bookHidden: false
       - Discuss advanced issues
 
 
-## Module overview/draft
+## Module overview
 
 ### Module 0: Preparation before the course starts
 

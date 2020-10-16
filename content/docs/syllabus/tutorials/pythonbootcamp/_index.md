@@ -11,9 +11,18 @@ bookCollapseSection: true
 
 - Enable you to write and execute simple code in Python
 - Familiarize with basic programming concepts
+  - Loading packages
   - Variables
-  - Looping...
+  - Looping
+  - String manipulations (e.g., `.replace`)
+  - Regular expressions (`import re`)
+  - Dictionaries (for JSON objects)
+  - Arrays for looping through a list of text
+  - Functions
+  - Error handling (`try` and `except`)
+- Reading from and writing to ASCII files (e.g., .txt, .csv)
 - Know where to look for help (e.g., Stackoverflow)
+
 - @Roy, I need your input here; what is really required of such a course?
 
 ## Prerequisites
@@ -23,6 +32,40 @@ bookCollapseSection: true
 ## Let's get started
 
 - Mandatory
+  - Onboarding met Jupyter en Python in general
+  - Notebook
+
+- Mandatory
   - List those datacamp courses here
+
 - Optional
   - List those datacamp courses heres
+
+
+
+##### NOTEBOOK
+
+###### Problem
+
+###### Code snippet that's dealing with the problem
+
+###### Uitleg: why we do the things the way we do them
+
+###### Advanced use cases: variatie's van het concept
+
+###### Exercises
+
+1. Question
+
+FILL IN THE SOLUTION HERE
+
+2.
+3.
+
+###### Solutions
+
+1.
+
+2.
+
+3.

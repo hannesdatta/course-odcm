@@ -5,6 +5,15 @@ title: "Syllabus"
 bookHidden: false
 ---
 
+<!-- office hours; geen voorbereiding; maak het zo WEINIG groot mogelijk; 20-30 studenten; 50 studenten als verwachting
+
+proctorio met testvision.
+
+- TAKE HOME [...] / COMPUTER EXAM. -> Beslissing maken
+
+
+-->
+
 # Syllabus
 
 ## Course structure
@@ -144,6 +153,15 @@ paper? advice?))-->
 
 - Exercises: Pseudo-code for navigation challenge
 
+
+  -->
+
+  <!--
+
+2x 2u scheduled begin en einde
+
+FOCUS VOORAL OP WEINIG LIVE CONTACTUREN (of maar 1 keer in de week)
+- WHATs THE MOST ESSENTIAL THING
 
   -->
 

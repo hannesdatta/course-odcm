@@ -1,6 +1,6 @@
 ---
 bookFlatSection: true
-title: "Building Blocks"
+title: "Course"
 bookHidden: false
-weight: 3
+weight: 1
 ---

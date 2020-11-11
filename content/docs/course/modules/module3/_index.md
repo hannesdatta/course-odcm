@@ -1,7 +1,7 @@
 ---
 weight: 4
 title: Week 3) Data collection planning
-description: Make a plan to extract data from a website or API
+description: Make a plan to extract data from a website or API.
 bookCollapseSection: true
 ---
 

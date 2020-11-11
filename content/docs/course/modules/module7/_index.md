@@ -1,15 +1,13 @@
 ---
 weight: 70
 title: Week 7) Course summary
-description: Description of module
+description: Summarizing the course, and discussing next steps.
 bookCollapseSection: true
 ---
 
-### Module 4: Data Management and Deployment in Production
-  - Software Stack
-  - Computing Infrastructure
-  - Dockers
-  - Structured and Unstructured databases
-  - "Polishing" Code
+# Week 7: Course summary
 
-  - Presentation of research / business projects
+## Meetup
+
+- Course summary
+- Presentation of research / business projects

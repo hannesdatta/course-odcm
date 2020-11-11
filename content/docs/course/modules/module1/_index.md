@@ -1,11 +1,11 @@
 ---
 weight: 2
 title: Week 1) Research and business opportunities
-description: Recognize research and business opportunities from using web data, and learn how to assess a website or API for data availability before retrieval.
+description: Recognize research and business opportunities from online data collections.
 bookCollapseSection: true
 ---
 
-# Module 1: Identifying Research and Business Opportunities From Online Data Collections
+# Module 1: Research and Business Opportunities From Online Data Collections
 
 ## Kickoff meetup
 *with live chat [Zoom link will appear here]*

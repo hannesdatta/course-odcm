@@ -1,7 +1,7 @@
 ---
 weight: 3
 title: Week 2) Data availability assessment
-description: Data availability assessment
+description: Learn how to assess data quality and website/API structure, and decide whether the data fits your research question or business idea.
 bookCollapseSection: true
 ---
 

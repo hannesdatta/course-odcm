@@ -1,11 +1,11 @@
 ---
 weight: 60
-title: Week 6) Lab week + documentation
-description: D...
+title: Week 6) Lab week
+description: Work on your projects, with a focus on preprocessing, validating, and documenting your data.
 bookCollapseSection: true
 ---
 
-# Module 4: Data Management and Deployment in Production
+# Week 6) Lab week
 
 ## Feedback labs
 - Live coding and team viewer sessions for feedback

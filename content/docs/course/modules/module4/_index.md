@@ -1,9 +1,11 @@
 ---
 weight: 4
-title: Week 4) Lab week + debugging
-description: Work on your projects and debug your code
+title: Week 4) Lab week
+description: Work on your projects, with a focus on running the data collection and debugging code.
 bookCollapseSection: true
 ---
+
+# Week 4) Lab week
 
 ## Self-study
 - Debugging *prerecorded*

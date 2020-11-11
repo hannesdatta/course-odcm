@@ -71,3 +71,15 @@ session chair, presentations, pitches, discussions
 - Writing to S3
 - SQL - write
 - SQL - read
+
+
+- Technologies to watch
+  - Dockers
+  - Structured and Unstructured databases
+
+: Data Management and Deployment in Production
+  - Software Stack
+  - Computing Infrastructure
+  - - "Polishing" Code
+
+  - 

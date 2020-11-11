@@ -9,10 +9,9 @@ type: docs
 
 <!--, and database management-->
 
-_Tilburg University, Block 3, 2020/2021 (February - April 2021)_
+_Tilburg University, Block 3, Course 328060-M-3, 2020/2021 (February - April 2021)_
 
 _Instructor: [dr. Hannes Datta](https://hannesdatta.com)_
-
 
 ## Learn how to mine the web
 
@@ -26,7 +25,7 @@ This website is the backbone of the course, and features three main sections.
 
 - The [__tutorial__](docs/tutorials) section offers a list of self-guided Jupyter Notebooks that teach you the *basics* of conducting web scraping and APIs. Use these to start your own scraping projects!
 
-- Finally, the __building block__ section offers a collection of code snippets in Python that you can use to build and extend your own scrapers and API retrieval projects.
+- Finally, the [__building block__](docs/snippets) section offers a collection of code snippets in Python that you can use to build and extend your own scrapers and API retrieval projects.
 
 ## Want to know more?
 

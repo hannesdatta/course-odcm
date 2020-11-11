@@ -5,7 +5,7 @@ bookHidden: false
 weight: 1
 ---
 
-## Syllabus
+# Syllabus
 
 ## Learning objectives
 

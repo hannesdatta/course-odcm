@@ -3,7 +3,7 @@ title: Introduction
 type: docs
 ---
 
-# Online Data Collection and Management (oDCM)
+# Online Data Collection and Management (ODCM)
 
 **Use web scraping and APIs to mine the web**
 
@@ -14,23 +14,26 @@ _Tilburg University, Block 3, 2020/2021 (February - April 2021)_
 _Instructor: [dr. Hannes Datta](https://hannesdatta.com)_
 
 
-## Learn how to mine the social web
+## Learn how to mine the web
 
-Welcome to the course website of ODCM. This course teaches you the nuts and bolts about web scraping and application protocol interfaces (API). Unlike most of the courses you find online, this course not only teaches you about the technicalities of using scraping and APIs, but also introduces a comprehensive framework that helps you to "think" about web scraping - specifically with regard to how to use scraping for conducting academic marketing research.
+Welcome to the course website of ODCM. This course teaches you the nuts and bolts about collecting data from the web. Unlike most other courses on this topic, this course not only teaches you the *technicalities* of using web scraping and Application Protocol Interfaces (APIs), but also introduces a *comprehensive framework* that helps you to *think* about scraping - specifically with regard to its application in academic marketing research.
 
 ## This website
 
-This website is the backbone of the course, and features two main sections.
+This website is the backbone of the course, and features three main sections.
 
-- The __course__ section holds a list of (weekly) [modules](docs/course/modules) and prerecorded lectures to watch. Even if you're not enrolled, you can watch these clips, but interaction with the course instructor is restricted to enrolled students only.
+- The __course__ section holds a list of weekly [modules](docs/course/modules), consisting of live streams, readings, and prerecorded clips. Even if you're not enrolled in this course, you can watch these clips, but interaction with the course instructor is reserved for enrolled students only.
 
-- The [__tutorial__](docs/tutorials) section offers a list of self-guided Jupyter Notebooks that teach you the *basics* of conducting web scraping and APIs.
+- The [__tutorial__](docs/tutorials) section offers a list of self-guided Jupyter Notebooks that teach you the *basics* of conducting web scraping and APIs. Use these to start your own scraping projects!
 
-- Finally, the __building block__ section offers a collection of code snippets in Python that you can use to build your own scrapers and API clients.
+- Finally, the __building block__ section offers a collection of code snippets in Python that you can use to build and extend your own scrapers and API retrieval projects.
 
-## Wanna enroll, or learn more about grading in this course?
+## Want to know more?
 
-Then head over to the [course syllabus](docs/course/syllabus).
+- If you'd like to enroll, head over to the [course syllabus](docs/course/syllabus) for all the details. The course offers seats to Research Master and PhD students from outside of Tilburg University.
+
+- Curious about obtaining a MSc degree? Then explore the [Marketing Analytics program](https://www.tilburguniversity.edu/education/masters-programmes/marketing-analytics), offered by faculty of Tilburg University's [Marketing Department](https://tilburguniversity.edu/marketing).
+
 
 <!--
 ## Glossary search

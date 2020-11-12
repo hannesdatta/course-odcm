@@ -3,6 +3,7 @@ weight: 10
 title: Web scraping 101
 description: Learn how to make a simple (headless) HTTP connection to a site and parse content to a CSV file
 bookCollapseSection: true
+draft: true
 ---
 
 # Web scraping 101

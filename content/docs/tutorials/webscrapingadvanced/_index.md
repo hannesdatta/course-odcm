@@ -2,8 +2,8 @@
 weight: 20
 title: Web scraping Advanced
 description: Learn how to simulate browser usage by remote-controlling Chrome using chromedriver.
-
 bookCollapseSection: true
+draft: true
 ---
 
 # Web scraping Advanced

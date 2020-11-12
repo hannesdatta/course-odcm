@@ -6,6 +6,8 @@ bookCollapseSection: true
 
 # Modules
 
+The course consists of weekly modules, structured along the workflow of collecting online web data.
+
 <!--
 ## Course structure
 
@@ -25,10 +27,5 @@ bookCollapseSection: true
 
 ...-->
 
-## Workflow for collecting online data (web scraping, APIs)
-
-...
-
-## Module overview
 
 {{<section>}}

@@ -3,16 +3,17 @@ weight: 10
 title: Web data retrieval for dummies
 description: Learn how to make a simple (headless) HTTP connection to a site and parse content to a CSV file
 bookCollapseSection: true
+draft: true
 ---
 
-# Web scraping 101
+# Web data retrieval for dummies
 
 ## Learning goals
 
 - Run example scraper and API from class
 - Try to modify it along three dimensions: different CSS selectors, different seeds, different social media endpoint
 
-## 
+##
 
   ## Exercises and activities
   - Part 1

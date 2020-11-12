@@ -1,11 +1,12 @@
 ---
-weight: 30
+weight: 20
 title: APIs 101
 description: Learn how to make a connection to an API and retrieve data
 bookCollapseSection: true
+draft: true
 ---
 
-# APIs 101 (package + parsing)
+# Data packaging and dissemination
 
 ## Learning goals
 

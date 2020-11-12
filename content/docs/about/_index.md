@@ -2,7 +2,7 @@
 bookFlatSection: true
 title: "About"
 bookHidden: false
-weight: 5
+weight: 20
 ---
 
 # About

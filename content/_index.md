@@ -3,7 +3,7 @@ title: Introduction
 type: docs
 ---
 
-# Online Data Collection and Management (ODCM)
+# Online Data Collection and Management (oDCM)
 
 **Use web scraping and APIs to mine the web**
 
@@ -15,7 +15,7 @@ _Instructor: [dr. Hannes Datta](https://hannesdatta.com)_
 
 ## Learn how to mine the web
 
-Welcome to the course website of ODCM. This course teaches you the nuts and bolts about collecting data from the web. Unlike most other courses on this topic, this course not only teaches you the *technicalities* of using web scraping and Application Protocol Interfaces (APIs), but also introduces a *comprehensive framework* that helps you to *think* about scraping - specifically with regard to its application in academic marketing research.
+Welcome to the course website of oDCM. This course teaches you the nuts and bolts about collecting data from the web. Unlike most other courses on this topic, this course not only teaches you the *technicalities* of using web scraping and Application Protocol Interfaces (APIs), but also introduces a *comprehensive framework* that helps you to *think* about scraping - specifically with regard to its application in academic marketing research.
 
 ## This website
 

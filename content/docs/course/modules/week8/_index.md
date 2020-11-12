@@ -1,13 +1,13 @@
 ---
 weight: 70
-title: Week 7) Course summary
+title: Week 8) Course summary
 description: Summarizing the course, and discussing next steps.
 bookCollapseSection: true
 ---
 
-# Week 7: Course summary
+# Week 8: Course summary
 
 ## Meetup
 
-- Course summary
 - Presentation of research / business projects
+- Course summary and exam preparation questions

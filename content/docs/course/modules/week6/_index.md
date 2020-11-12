@@ -1,14 +1,14 @@
 ---
 weight: 50
-title: Week 5) Data packaging and dissemination
+title: Week 6) Data collection and packaging
 description: Learn how to preprocess, validate, document and distribute your data - both internally (collaborators within the same organization) and externally (the public domain).
 bookCollapseSection: true
 ---
 
-# Week 5: Data Packaging and Distribution
+# Data Packaging and Distribution
 
-## Feedback labs
-- Live coding and team viewer sessions for feedback
+## Meetup
+- Feedback on coding up the data collection
 
 ## Self-study
 - Data packaging and distribution *prerecorded*
@@ -16,3 +16,8 @@ bookCollapseSection: true
   - Validation
   - Documentation
   - Distribution
+- Tutorial: Data packaging and distribution
+
+## Exercises and activities
+- ...
+- ...

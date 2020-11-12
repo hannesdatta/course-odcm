@@ -1,20 +1,20 @@
 ---
 weight: 4
-title: Week 3) Data collection planning
-description: Make a plan to extract data from a website or API.
+title: Week 4) Data extraction plan
+description: Make a plan how to extract data from a website or API.
 bookCollapseSection: true
 ---
 
-# Week 3: Planning your data collection
+# Planning your data collection
 
 ## Meetup
 *with live chat [Zoom link will appear here]*
 
-- Presentation of research fit assessment by site/API *live*
-- Finalizing project scopes: which website and API?
+- Presentation of research fit assessment by teams *live*
+- Q&A on tutorials and exercises *live*
+- Finalizing project scopes: which website and API? *live*
 
 ## Self-study
-
 - Data extraction plan
   - Design choices: modularity and storage *prerecorded*
   - Data capture and enrichment *prerecorded*

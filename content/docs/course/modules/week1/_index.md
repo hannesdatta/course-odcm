@@ -1,27 +1,31 @@
 ---
 weight: 2
 title: Week 1) Research and business opportunities
-description: Recognize research and business opportunities from online data collections.
+description: Recognize research and business opportunities from using web data.
 bookCollapseSection: true
 ---
 
-# Module 1: Research and Business Opportunities From Online Data Collections
+# Identifying Research and Business Opportunities From Online Data Collections
 
-## Kickoff meetup
+## Meetup
 *with live chat [Zoom link will appear here]*
 
 - Introduction to the course *live*
-  - Workflow and course objectives
-  - Course setup (synchronous live/prerecorded lectures; asynchronous skill building)
+  - Course objectives
+  - Course setup
 - What is web scraping? What are APIs? *prerecorded*
 - How do web scrapers and APIs work? (w/ use of interactive notebook) *prerecorded*
+
+## Self-study
+- Web scraping workflow *prerecorded*
 - Benefits of using web scraping and APIs...
   - for doing academic research *prerecorded*
   - developing new business ideas and conducting marketing research *interview/podcast*
+- [Web data retrieval for dummies (Tutorial)](docs/tutorials/webdata101)
 
-## Exercises and activities
-
-- Idea generation for academic research and new business
+## Activities and exercises
+- Idea generation for academic research or new business
+- Practice questions for "Web data retrieval for dummies"
 
 <!--
 - Reading: Web scraping workflow

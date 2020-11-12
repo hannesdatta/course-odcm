@@ -1,6 +1,6 @@
 # Course page for "Online Data Collection and Management (oDCM)"
 
-This is the course page for "Online Data Collection and Management (oDCM)", a new course taught in the Marketing Analytics Curriculum at [Tilburg University](https://tilburguniversity.edu) by [dr. Hannes Datta](https://hannesdatta.com) in Block 3 (January-March) 2021.
+This is the course page for "Online Data Collection and Management (oDCM)", a new course taught in the Marketing Analytics Curriculum at [Tilburg University](https://tilburguniversity.edu) by [dr. Hannes Datta](https://hannesdatta.com) in Block 3 (February-April) 2021.
 
 ## Using the course website and glossary
 

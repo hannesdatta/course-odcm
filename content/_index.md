@@ -33,6 +33,23 @@ This website is the backbone of the course, and features three main sections.
 
 - Curious about obtaining a MSc degree? Then explore the [Marketing Analytics program](https://www.tilburguniversity.edu/education/masters-programmes/marketing-analytics), offered by faculty of Tilburg University's [Marketing Department](https://tilburguniversity.edu/marketing).
 
+<!--
+
+
+# Some more content notes (to be integrated elsewhere)
+
+## Possible activities
+
+- Data collection pitch (group) / presentation
+- Legal battle + anonymization outcome
+- Building a prototype for either a web scraper or API
+- Deployment as large project with the team
+- Data sharing / auditing of data
+- Real-time analytics (use database (learnt here), in combination with research method (e.g., regression), to create insights in realtime
+
+session chair, presentations, pitches, discussions
+-->
+
 
 <!--
 ## Glossary search

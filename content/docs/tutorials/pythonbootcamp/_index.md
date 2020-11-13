@@ -10,6 +10,7 @@ bookCollapseSection: true
 ## Learning goals
 
 - Enable you to write and execute simple code in Python
+- Familairizing with interface: 
 - Familiarize with basic programming concepts
   - Loading packages
   - Variables

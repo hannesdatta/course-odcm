@@ -12,25 +12,43 @@ __draft__
 
 1. Web data retrieval for dummies
   - Do
-    - Run selenium/chromium on social blade and iterate through predefined list of seeds
-    - Collect from publicly available API endpoints and parse
+    - Scraping: Run selenium/chromium on socialblade.com and iterate through predefined list of seeds which you have loaded from a text file or from an array inside Jupyter Notebook
+    - API: Collect from publicly available API endpoints and parse
   - Practice
-    - Swapping CSS selectors
-    - Parsing multiple endpoints
+    - Swapping CSS selectors; changing inputs for seeds
+    - API: Parsing multiple endpoints
 
 2. Web scraping 101
   - Do
-    - Applications: spotifcharts.com (headless), socialblade.com (simulated browser)
+    - Applications: spotifcharts.com (headless; download CSV), socialblade.com (selenium; simulated browser)
     - Building and iterating through seeds (predefined, on the basis of an external list, on the basis of a web-scraped list)
     - Avoiding simple errors (`time.sleep`)
   - Practice
     - Extend to other site that downloads stuff (which site?)
     - Extend to long list of seeds (self-obtain)
 
+    - Learn how to make headless HTTP requests using Python's `requests` library
+    - Understand the implications of using various user agents in request headers
+    - Save content of HTTP request to a file, and explore content (and compare content to one that you see in a browser)
+    - Learn about the structure of websites using Chrome's developer tools, and identify elements using "anchors" (e.g., CSS selectors, XPATHs)
+    - Extract values (e.g., text, attributes) from web site elements as identified by their CSS selectors
+    - Write extracted values to flat txt/csv files
+    - Load IDs of seeds from external txt/csv files
+    - Modularize code, by using functions and loops
+    - Handle retrieval errors using try and except statements
+    - Make use of timers to emulate user behavior (e.g., `time.sleep(1)`)
+
+    ## Prerequisites
+    - Download this notebook and open it in Jupyter Notebook
+
+    ## Details
+    -
+
+
 3. APIs 101
   - Do
     - Applications: Twitter API (with authentication)
-    - Ideally not with a pre-made package
+    - Ideally not with a pre-made package: requests.
     - Ideally data from different endpoints
     - JSON file structures
   - Practice

@@ -27,11 +27,13 @@ This website is the backbone of the course, and features three main sections.
 
 - Finally, the [__building block__](docs/snippets) section offers a collection of code snippets in Python that you can use to build and extend your own scrapers and API retrieval projects.
 
-## Want to know more?
+## Enroll in this class
 
-- If you'd like to enroll, head over to the [course syllabus](docs/course/syllabus) for all the details. The course offers seats to Research Master and PhD students from outside of Tilburg University.
+- Head over to the [course syllabus](docs/course/syllabus) for all the details. The course offers seats to Research Master and PhD students from outside of Tilburg University.
 
 - Curious about obtaining a MSc degree? Then explore the [Marketing Analytics program](https://www.tilburguniversity.edu/education/masters-programmes/marketing-analytics), offered by faculty of Tilburg University's [Marketing Department](https://tilburguniversity.edu/marketing).
+
+- Want to pursue a PhD at Tilburg University? Check out the [Research Master in Business - Marketing track](https://www.tilburguniversity.edu/education/masters-programmes/research-master-marketing).
 
 <!--
 

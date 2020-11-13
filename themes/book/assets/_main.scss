@@ -102,7 +102,7 @@ ul.pagination {
   nav {
     width: $menu-width;
     padding: $padding-16;
-    background: $body-background;
+    background: $menu-background;
 
     @include fixed;
   }

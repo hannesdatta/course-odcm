@@ -5,6 +5,7 @@
   </a>
   </div>
 <div class="book-title">
-  <span>{{ .Site.Title }}</span>
-
+  <a href="{{ .Site.BaseURL | relLangURL }}">
+    <span>{{ .Site.Title }}</span>
+  </a>
 </div>

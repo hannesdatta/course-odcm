@@ -129,11 +129,11 @@ h3,h4,h5,h6 {
     border-right: 1px solid #ddddd8;
 }
 
-.book-menu nav ul li a, .book-menu nav ul li span {
+.book-menu nav ul li a {
     transition: all .15s ease;
     position: relative;
     display: block;
-    padding: 0px 0px 0px 10px;
+    padding: 10px 40px 10px 20px;
     line-height: 1.17;
     color: #036;
 }
@@ -141,8 +141,4 @@ h3,h4,h5,h6 {
 .book-menu nav ul li a:focus, .book-menu nav ul li a:hover {
     color: #000;
     text-decoration: none;
-}
-
-.book-menu a.collapsed::after {
-    margin-left: 20px;
 }

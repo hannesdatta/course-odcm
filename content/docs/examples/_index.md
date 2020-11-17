@@ -15,3 +15,6 @@ This site collects links to web scrapers and API retrieval projects.
 
 ## APIs
 - [Documenting data collected via APIs (Chartmetric)](https://github.com/hannesdatta/data-spotify-playlist-ecosystem)
+
+## Tools
+- [Code to monitor the health of online data collections via Push Messages](https://github.com/hannesdatta/healthmonitor)

@@ -18,13 +18,13 @@ bookCollapseSection: true
 
 ## Self-study
 - Web scraping workflow *prerecorded*
-- Benefits of using web scraping and APIs...
+- Common benefits and use cases of using web scraping...
   - for doing academic research *prerecorded*
-  - developing new business ideas and conducting marketing research *interview/podcast*
+  - for developing new business ideas and conducting marketing research [*video*](https://www.youtube.com/watch?v=2XfA0e4Bzkk)
 - [Web data retrieval for dummies (Tutorial)](docs/tutorials/webdata101)
 
 ## Activities and exercises
-- Idea generation for academic research or new business
+- Idea generation for academic research (inspiration), or new business ([inspiration](https://www.youtube.com/watch?v=qljvs_ttgl0))
 - Practice questions for "Web data retrieval for dummies"
 
 <!--

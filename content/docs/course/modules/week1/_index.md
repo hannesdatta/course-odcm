@@ -10,18 +10,22 @@ bookCollapseSection: true
 ## Meetup
 *with live chat [Zoom link will appear here]*
 
+*screen cast* *slide cast* *talking head + some fancy text* *text*
+
 - Introduction to the course *live*
   - Course objectives
   - Course setup
-- What is web scraping? What are APIs? *prerecorded*
-- How do web scrapers and APIs work? (w/ use of interactive notebook) *prerecorded*
+- What is web scraping? What are APIs? *prerecorded* [script + slides] @Hannes: define exact content of this and the next content item
+- How do web scrapers and APIs work (technically)? (no "full" video; but: interactive notebook with "auxiliary videos" as needed) *prerecorded*
 
 ## Self-study
-- Web scraping workflow *prerecorded*
+- Web scraping workflow *"hannes in the office" + diagram in beeld*prerecorded*
 - Common benefits and use cases of using web scraping...
   - for doing academic research *prerecorded*
   - for developing new business ideas and conducting marketing research [*video*](https://www.youtube.com/watch?v=2XfA0e4Bzkk)
+- Web scrapers in action (running a few scrapers as examples)
 - [Web data retrieval for dummies (Tutorial)](docs/tutorials/webdata101)
+
 
 ## Activities and exercises
 - Idea generation for academic research (inspiration), or new business ([inspiration](https://www.youtube.com/watch?v=qljvs_ttgl0))

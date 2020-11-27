@@ -11,7 +11,7 @@ This site collects links to web scrapers and API retrieval projects.
 
 ## Web scrapers
 - [Netflix Home Screen Capture](https://github.com/hannesdatta/data-netflix)
-- [Spotify New Releases and Playlist Promotions](https://github.com/andreantonacci/everynoise_scraper)
+- [Playlist Promotions and New Releases at Spotify](https://github.com/hannesdatta/data-spotify-playlists-releases)
 
 ## APIs
 - [Documenting data collected via APIs (Chartmetric)](https://github.com/hannesdatta/data-spotify-playlist-ecosystem)

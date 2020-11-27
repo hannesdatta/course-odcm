@@ -12,11 +12,11 @@ __draft__
 
 1. Web data retrieval for dummies
   - Do
-    - Scraping: Run selenium/chromium on socialblade.com and iterate through predefined list of seeds which you have loaded from a text file or from an array inside Jupyter Notebook
-    - API: Collect from publicly available API endpoints and parse
+    - Scraping: Run selenium/chromium on socialblade.com and iterate through predefined list of seeds which you have loaded from a text file or from an array inside Jupyter Notebook, write to CSV
+    - API: Collect from publicly available API endpoints, and directly parse outcome to CSV
   - Practice
     - Swapping CSS selectors; changing inputs for seeds
-    - API: Parsing multiple endpoints
+    - API: Parsing from other endpoints, and parsing other attributes, exploring JSON data wiht a JSON viewer
 
 2. Web scraping 101
   - Do

@@ -10,11 +10,12 @@ weight: 4
 To document your data collection, please start from the [template](http://tilburgsciencehub.com/workflow/documenting-data/).
 
 ## Tips for filling in the documentation
-- Imagine you would have to work with this data in the future – how would you write up the documentation so that you (and your future self) may understand it?
-- In your writing, be as concise as possible. We’ve had some recent experience using tools like Grammarly to improve our writing (there is a free version available), but there are certainly alternatives available!
-- The original paper on which the readme template is based on (references available on the site) provides a few helpful (filled in) examples that may provide some inspiration.
+-	Try to answer the questions to the best of your ability.
+    - Imagine you would have to work with this data in the future – how would you write up the documentation so that you (and your future self) may understand it?
+    - In your writing, be as concise as possible. We’ve had some recent experience using tools like Grammarly to improve our writing (there is a free version available), but there are certainly alternatives available!
+    - The original paper on which the readme template is based on provides a few helpful (filled in) examples that may provide some inspiration.
 - We recommend you to use a proper text editor (e.g., ATOM) to work on your readme.
-- Good text editors will also indicate to you where new lines should occur (to make sure that the text stays readable).
+    - Good text editors will also indicate to you where new lines should occur (to make sure that the text stays readable).
 - Next to the .txt, please convert the readme to a PDF file, which we can easily use to grade your readmes on Canvas.
 
 ## Specific guidance for each section

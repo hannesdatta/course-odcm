@@ -10,7 +10,7 @@ bookCollapseSection: true
 ## Meetup
 - Introduction to the course *live* <!-- add zoom link-->
   - What is web scraping? What are APIs? <!-- to do -->
-  - Course objectives and practical arrangements <!-- to do -->s
+  - Course objectives and practical arrangements <!-- to do -->
 
 ## Self-study
 - [Web data retrieval for dummies (Tutorial)](docs/tutorials/webdata-for-dummies)

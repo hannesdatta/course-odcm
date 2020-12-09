@@ -1,24 +1,17 @@
 ---
 weight: 10
-title: Web data retrieval for dummies
-description: Learn how to make a simple (headless) HTTP connection to a site and parse content to a CSV file
+title: Web data for dummies
+description: A gentle introduction to collecting online data via web scraping and APIs
 bookCollapseSection: true
-draft: true
+draft: false
 ---
 
 # Web data retrieval for dummies
 
 ## Learning goals
 
-- Run example scraper and API from class
-- Try to modify it along three dimensions: different CSS selectors, different seeds, different social media endpoint
+- paste learning goals here
 
-##
+## Get started
 
-  ## Exercises and activities
-  - Part 1
-    - Tutorial: webscraping 101
-    - Exercises: navigation path, CSS selectors, choice for headless versus browser emulation
-  - Part 2
-    - Tutorial: API 101
-    - Exercises: endpoint navigation, authentication, parsing, modularization
+- download the tutorial, and open it in Jupyter Notebook

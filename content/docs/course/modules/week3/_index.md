@@ -12,11 +12,12 @@ bookCollapseSection: true
 
 This week, there is no live contact moment. Instead, you are required to work through a set of tutorials to build your scraping and API skills.
 
-
 ## Self-study
-- Web scraping - Advanced
-- APIs - Advanced
+- [Web scraping 101 (Tutorial)](docs/tutorials/webscraping101)
+- [APIs 101 (Tutorial)](docs/tutorials/apis101)
 
-## Exercises and activities
-- ...
-- ...
+## Activities (individual exercises or team project)
+- Please complete data availability / research fit assessment for your team project
+<!--
+- Please collect questions on our board on XXXX; we will answer with updates in the notebooks to resolve questions
+-->

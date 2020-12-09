@@ -19,13 +19,16 @@ Welcome to the course website of oDCM. This course teaches you the nuts and bolt
 
 ## This website
 
-This website is the backbone of the course, and features three main sections.
+This website is the backbone of the course, and features the following main sections.
 
 - The __course__ section holds a list of weekly [modules](docs/course/modules), consisting of live streams, readings, and prerecorded clips. Even if you're not enrolled in this course, you can watch these clips, but interaction with the course instructor is reserved for enrolled students only.
 
 - The [__tutorial__](docs/tutorials) section offers a list of self-guided Jupyter Notebooks that teach you the *basics* of conducting web scraping and APIs. Use these to start your own scraping projects!
 
-- Finally, the [__building block__](docs/snippets) section offers a collection of code snippets in Python that you can use to build and extend your own scrapers and API retrieval projects.
+<!--- Finally, the [__building block__](docs/snippets) section offers a collection of code snippets in Python that you can use to build and extend your own scrapers and API retrieval projects.
+-->
+- Finally, the [__example__](docs/examples) section offers a collection of links to web scraping and API projects on the web, which you can use to get inspired.
+
 
 ## Enroll in this class
 

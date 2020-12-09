@@ -6,7 +6,7 @@ bookCollapseSection: true
 draft: false
 ---
 
-# Web data retrieval for dummies
+# Tutorial: Web data retrieval for dummies
 
 ## Learning goals
 

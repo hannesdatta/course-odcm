@@ -1,19 +1,18 @@
 ---
 weight: 20
 title: APIs 101
-description: Learn how to make a connection to an API and retrieve data
+description: Learn how to make a connection to an API, retrieve data, and parse it to CSV files
 bookCollapseSection: true
-draft: true
+draft: false
+
 ---
 
-# Data packaging and dissemination
+# Tutorial: APIs 101
 
 ## Learning goals
 
-- Retrieve data using the Twitter streaming API
-- Obtaining authentication credentials
-- Run API retrieval
-- Write basic parsing code after data retrieval
+- paste learning goals here
 
-## Prerequisites
-- ...
+## Get started
+
+- download the tutorial, and open it in Jupyter Notebook

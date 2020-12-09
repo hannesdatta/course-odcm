@@ -6,8 +6,7 @@ bookCollapseSection: true
 draft: false
 ---
 
-
-# Web scraping 101
+# Tutorial: Web scraping 101
 
 ## Learning goals
 

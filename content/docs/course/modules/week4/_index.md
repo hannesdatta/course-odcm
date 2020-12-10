@@ -8,21 +8,24 @@ bookCollapseSection: true
 # Planning your data collection
 
 ## Meetup
-*with live chat [Zoom link will appear here]*
 
-- Presentation of research fit assessment by teams *live*
-- Q&A on tutorials and exercises *live*
-- Finalizing project scopes: which website and API? *live*
+- Finalizing project scopes *live* <!-- link here-->
+<!--: __which website and API?__ *live; in two groups + one PhD session*
+  - Presentation of research fit assessment by teams: 2 timeslots? [5 minutes; define slide titles; template]
+  - Modifications to data collection/research question
+  - Goal: "final goal for project"
+(comment Roy: have other groups give feedback)
+-->
 
 ## Self-study
 - Data extraction plan
-  - Design choices: modularity and storage *prerecorded*
+  <!--- Design choices: modularity and storage *prerecorded*
   - Data capture and enrichment *prerecorded*
-  - Deployment *prerecorded*
-- Legal and ethical considerations when scraping *reading* [tba]
+  - Deployment *prerecorded*-->
+- Legal and ethical considerations when scraping <!-- *reading* [tba]-->
 
-## Exercises and activities
-- Make a data extraction plan for your website, taking into account legal and ethical concerns
+## Activities (individual exercises or team project)
+- [Project] Make a data extraction plan for your website, taking into account legal and ethical concerns <!-- develop -->
 
 
 <!-- Software Stack
@@ -34,68 +37,4 @@ Deployment in practice *prerecorded guest lecture*
   - Dockers
   - Structured and Unstructured databases
   - "Polishing" Code
-  -->
-
-
-<!--
-
-- Ethics and laws of scraping *reading*
-
-- Kickoff livestream
-  - Design choices
-    - Dynamic versus static scraping
-    - Modularity (collect-parse-store versus collect-store-parse)
-    - Storage (local versus remote; database versus files; flat versus unstructured)
-  - Data extraction
-    - Sampling choice
-    - Navigation and path mapping
-    - Data capture using JSON (APIs) and CSS selectors (scraping)
-    - Meta data enrichent
-  - Deployment
-    - Retrieval technology
-      - APIs: package versus self-programmed request library
-      - Web scraping: headless versus emulated browser
-    - Deployment
-      - Local versus remote
-      - One instance versus multiple instances
-    - Monitoring and error handling
-
-- Self-study
-  - Tutorial: Web scraping 101
-  - Tutorial: Web scraping advanced
-  - Exercises for webscraping 101 (e.g., CSS challenge)
-
-- Feedback livestream
-  - Discussing exercises for webscraping
-    - CSS challenge
-    - Navigation paths
-  - Finalize teams
-
-
 -->
-  <!--
-  Kickoff livestream
-  - ...
-  - Breakout: Discuss CSS of what you want to get; type of scraper you may need
-  - Try out whether to get there, or not
-  - Come back in big session: show what you get ,what are core elements, demonstrate this works
-
-- Activity:
-  - CSS selector hackathon
-  - Navigation challenge + writing down a navigation path
-
-  - Tutorial: API 101
-
-- Exercises: Pseudo-code for navigation challenge
-
-
-  -->
-
-  <!--
-
-2x 2u scheduled begin en einde
-
-FOCUS VOORAL OP WEINIG LIVE CONTACTUREN (of maar 1 keer in de week)
-- WHATs THE MOST ESSENTIAL THING
-
-  -->

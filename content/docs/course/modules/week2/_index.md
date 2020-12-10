@@ -9,20 +9,52 @@ bookCollapseSection: true
 
 ## Meetup
 
-*live*
+- Exploration of research and business ideas *live* <!-- add zoom link-->
+<!-- post link here
+Discussion: Structuring potential research and business ideas
 
-- Feedback on exercises for "Web data for dummies"
-- Discussion: Structuring potential research and business ideas
-  - breakout groups: academia/business
-  - presentation to the entire group
-  - generate list of websites and APIs, and allocation to teams teams (4-5 students)
+<!--
+
+- Generate groups on the fly: academic versus business; API vs. web scraping; substantive areas in which you're interested; initial research ideas
+
+- Create break-out groups: 20-30m of discussion
+- Leading questions:
+  - What's hot right now?
+  - What are important phenomena?
+  - What excites you about research?
+  - Which websites do you spend a lot of time on?
+  - What websites would be cool to monitor today?
+  - Have you used an API before?
+  - Have you stumbled upon some interesting documentation?
+
+  - What excites you?
+  - Search for websites: what do they show?
+  - Search for APIs: what do they show? Are they accessible?
+  - Why is it an important phenomena, whom does it affect?
+
+- Come back in the "big room" + quick presentation + feedback
+
+- The result is a board with websites, and people that are interested in it
+- Subscribe to at least 3 data sources.
+
+- Together with other team members, fill in the "steckbrief" of these sites
+
+<!--[split by academic research/ topic, vs. business): generating ideas for potential data sources / phenomena ("what's hot right now? What are important phenomena?", "what excites you about a potential area? what would be cool websites to monitor today?"
+
+- Discuss: in which area does it fall? are people monitoring that site already? what capture would you hope to achieve? is this more "investment in data?"/"timeliness", or more robustness? is this more a covariate or a key thing?
+
+- breakout groups: academia/business
+- presentation to the entire group
+- generate list of websites and APIs, and allocation to teams (4-5 students)
+
+-->
 
 ## Self-study
-- Data availability and research fit assessment *prerecorded*
-- Exploration of alternative data sources *prerecorded*
+- Data availability and research fit assessment <!--*prerecorded*-->
+- Exploration of alternative data sources <!--*prerecorded*-->
 
-## Exercises and activities
-- Conduct your own data availability assessment using a template with your team *download*
+## Activities (individual exercises or team project)
+- [Project] Conduct your own data availability assessment using a template with your team <!-- *download* generate template to fill in or a slide deck -->
 
 
 <!--- Ethics in scraping and APIs *live*

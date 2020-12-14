@@ -7,21 +7,11 @@ bookCollapseSection: true
 
 # Preparation before the course starts
 
-## Software environment setup
+## Tutorials
 
-### Configuration
+- [Software Installation: Python/Anaconda for web scraping](docs/tutorials/software)
+- [Python Bootcamp: Python/Anaconda for web scraping](docs/tutorials/software)
 
-- Python via Anaconda
-- chromedriver
+<!-- ## Register for *Pulse*
 
-### Tutorials
-
-- Watch the installation tutorial for Macs *prerecorded*
-- Watch the installation tutorial for Windows *prerecorded*
-
-## Learn Python
-
-- Recommended content to upgrade Python/Jupyter Notebook skills ("bootcamp")
-
-### Miscellaneous
-- Team formation survey
+-->

@@ -24,23 +24,7 @@ bookCollapseSection: true
 - Reading from and writing to ASCII files (e.g., .txt, .csv)
 - Know where to look for help (e.g., Stackoverflow)
 
-- @Roy, I need your input here; what is really required of such a course?
+## Getting started
 
-## Prerequisites
-- Completion of the [software installation](../software)
-- Access to [datacamp.com](https://datacamp.com) (avaiable via a Campus license by Tilburg University); external students are recommended to buy a membership for the duration of the course
-
-<!--
-## Let's get started
-
-- Mandatory
-  - Onboarding met Jupyter en Python in general
-  - Notebook
-
-- Mandatory
-  - List those datacamp courses here
-
-- Optional
-  - List those datacamp courses heres
-
-  -->
+- First, complete the [software installation](../software)
+- Get access to [datacamp.com](https://datacamp.com) (available via a Campus license by Tilburg University); external students are recommended to buy a membership for the duration of the course

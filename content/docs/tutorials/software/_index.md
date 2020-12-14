@@ -24,6 +24,7 @@ draft: false
 - Enable you to have the software setup right to follow basic tutorials in Python,
 
 
-## Prerequisites
+## Getting started
+
 - Access to a computer with administrator rights (Windows, Mac, or Linux)
 - We strongly advise not to use Chromebooks (Android)

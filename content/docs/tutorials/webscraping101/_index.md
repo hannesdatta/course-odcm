@@ -10,8 +10,14 @@ draft: false
 
 ## Learning goals
 
-- paste learning goals here
+* Generate lists of entities to scrape data from
+* Map navigation path on a website using URLs, and understand how to use parameters to modify results
+* Select data for extraction on a website using CSS selectors
+* Write data to CSV file, and enrich with relevant metadata
+* Bundle data capture in Python functions and modularize extraction code
+* Loop through list of URLs to capture data in bulk, using functions
+* Understand the difference between Jupyter Notebooks and “raw” Python files, and extraction code to Python, and run collection via the command line/terminal
 
-## Get started
+## Getting started
 
-- download the tutorial, and open it in Jupyter Notebook
+- [Download the tutorial](webscraping-101.ipynb) (right-click, download linked file as...). Then, open the file in Jupyter Notebook and start the tutorial!

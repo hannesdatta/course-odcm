@@ -13,6 +13,6 @@ draft: false
 
 - paste learning goals here
 
-## Get started
+## Getting started
 
-- download the tutorial, and open it in Jupyter Notebook
+- [Download the tutorial](apis-101.ipynb) (right-click, download linked file as...). Then, open the file in Jupyter Notebook and start the tutorial!

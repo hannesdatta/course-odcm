@@ -14,8 +14,8 @@ bookCollapseSection: true
 
 ## Self-study
 - [Web data retrieval for dummies (Tutorial)](docs/tutorials/webdata-for-dummies)
-- Workflow for collection online data <!-- to do *"hannes in the office" + diagram in beeld*prerecorded*-->
-- Common benefits and use cases of using web scraping...
+- Workflow for collecting online data <!-- to do *"hannes in the office" + diagram in beeld*prerecorded*-->
+- Common benefits and use cases of web scraping...
   - for doing academic research <!-- to *prerecorded* -->
   - for developing new business ideas and conducting marketing research [*video*](https://www.youtube.com/watch?v=2XfA0e4Bzkk)
 

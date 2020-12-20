@@ -11,7 +11,10 @@ draft: false
 
 ## Learning goals
 
-- paste learning goals here
+* Send HTTP requests to a web API, and retrieve JSON responses
+* Use parameters to modify the results of an API call
+* Iterate over multiple pages of JSON responses
+* Extract and store results of an API request in lists and files
 
 ## Getting started
 

@@ -13,6 +13,50 @@ _Tilburg University, Block 3, 2020/2021 (February - April 2021)_
 
 _Instructor: [dr. Hannes Datta](https://hannesdatta.com)_
 
+## Learn how to mine the web
+
+Welcome to the course website of oDCM. This course teaches you the nuts and bolts about collecting data from the web. Unlike most other courses on this topic, this course not only teaches you the *technicalities* of using web scraping and Application Protocol Interfaces (APIs), but also introduces a *comprehensive framework* that helps you to *think* about scraping - specifically with regard to its application in academic marketing research.
+
+## This website
+
+This website is the backbone of the course, and features the following main sections.
+
+- The __course__ section holds a list of weekly [modules](docs/course/modules), consisting of live streams, readings, and prerecorded clips. Even if you're not enrolled in this course, you can watch these clips, but interaction with the course instructor is reserved for enrolled students only.
+
+- The [__tutorial__](docs/tutorials) section offers a list of self-guided Jupyter Notebooks that teach you the *basics* of conducting web scraping and APIs. Use these to start your own scraping projects!
+
+<!--- Finally, the [__building block__](docs/snippets) section offers a collection of code snippets in Python that you can use to build and extend your own scrapers and API retrieval projects.
+-->
+- Finally, the [__example__](docs/examples) section offers a collection of links to web scraping and API projects on the web, which you can use to get inspired.
+
+
+## Enroll in this class
+
+- Head over to the [course syllabus](docs/course/syllabus) for all the details. The course offers seats to Research Master and PhD students from outside of Tilburg University.
+
+- Curious about obtaining a MSc degree? Then explore the [Marketing Analytics program](https://www.tilburguniversity.edu/education/masters-programmes/marketing-analytics), offered by faculty of Tilburg University's [Marketing Department](https://tilburguniversity.edu/marketing).
+
+- Want to pursue a PhD at Tilburg University? Check out the [Research Master in Business - Marketing track](https://www.tilburguniversity.edu/education/masters-programmes/research-master-marketing).
+
+<!--
+
+
+# Some more content notes (to be integrated elsewhere)
+
+## Possible activities
+
+- Data collection pitch (group) / presentation
+- Legal battle + anonymization outcome
+- Building a prototype for either a web scraper or API
+- Deployment as large project with the team
+- Data sharing / auditing of data
+- Real-time analytics (use database (learnt here), in combination with research method (e.g., regression), to create insights in realtime
+
+session chair, presentations, pitches, discussions
+-->
+
+
+>>>>>>> dev
 <!--
 ## Glossary search
 
@@ -54,87 +98,3 @@ SESSIONS
 6) Poster session w/ powerpoint/ "verhaal" maken
 
 -->
-
-## Learning objectives
-
-The internet offers abundant possibilities to collect data (e.g., from social networks, from digital media providers, from price comparison websites, from online platforms) that can be used in empirical research projects and/or provide business value. After successful completion of this course, students will be able to:
-
--	Identify online data sources and evaluate their value in the context of a specific research question or business problem
-- Assess the terms and conditions for collecting, storing, and sharing data
-- Collect data via web scraping and Application Protocol Interfaces (APIs) by mixing, extending and repurposing code snippets
-- Transform semi-structured JSON data to structured data sets for statistical analysis ("parsing")
-- Store and manage data using file-based systems and databases
-- Draft, execute, monitor and audit online data collections locally and remotely
-- Document and archive collected data, and make it available for public (re)use
-- Track and share progress on the course's learning goals
-
-<!--Python - JSON
-Python - web scraping
-Python - MongoDB (SQL eruit, MongoDB eruit)
-
-(e.g., websites, open data sets, APIs)!
-
-<!--- Learn how , that can be used you can use to kickstart your own academic or commercial projects<!-- cronjobs-->
-
-<!--
-- Gain practical experience using Python, MySQL, MongoDB and Amazon Web Services (AWS)-->
-
-## Grading
-
-- Team project (4-5 team members) (40% + 10% individual assessment on the basis of self- and peer assessment[^2])
-- Share individual progress and learnings (e.g., open science contributions like tutorials or code snippets in the form of pull requests to GitHub, maintaining a public FAQ/blog, sharing one's progress with the group) (10%)
-- Computer exam (40%)
-
-<!--; can consist out of in-class contributions (e.g., presentation, pitch), code (e.g., data collection code), or reports
-
- (disclosing code of projects in a transparent way)
-  -->
-
-Students pass this course if the final course grade (i.e., the weighted average of the individual components; weights indicated above) is ≥ 5.5, and the exam is passed (≥ 5.5).
-
-[^2]: The team project is subject to *self- and peer assessment*, i.e., students' grades will be corrected upwards or downwards, depending on their own contribution to the overall team effort. Students provide written feedback to each other once during the course, and score themselves and their team members on, among others, the quantity and quality of their contributions.
-
-
-<!-- take home exercise: just submit; you get "DONE" on it as per the deadline -- make sure students stay up-to-date w/ the content
-
--->
-
-<!--
-Elke toetsvorm (bijv. paper, exam, midterm) dient apart in Osiris te worden ingevoerd, met vermelding van minimum cijfer en wegingsfactor.
-
--->
-
-
-## Format
-
-- Hybrid format: Jupyter notebooks or pre-recorded web clips for preparation and self-paced lab sessions; live streams on Zoom for feedback and joint coding sessions (recordings will be made available)
-- Modern content: copy-paste code snippets and demos from the course page, access code on GitHub, start projects with templates from GitHub, share screens and solve problems
-- Interactive, immersive and student-centred: live coding, debates, open-source content contributions, scraping real websites and accessing real APIs
-
-<!--, simulations, hackathon-->
-<!-- work on VMs on AWS, code in SQL and R, compete on Kaggle, or work on own computer--; Coding Dojo student-=led analysis; while sharing screens-->
-
-## Student profile / prerequisites
-
-- The course is instructed to MSc students in the Marketing Analytics (TiSEM) program.
-- The course expects students to have acquired working knowledge in Python (e.g., from introductory courses at Datacamp), including an understanding of data types (e.g., characters, integers), loops, if-else statements, and functions.
-- The course welcomes novices, of whom extra preparation prior to the start of the course is expected. Preparation material will be shared with students in advance in the form of Jupyter Notebooks or course recommendations at Datacamp. Novices may further benefit from following other courses at Tilburg University in which Python is used, for example, *Research Skills: Data Processing* and *Research Skills: Data Processing Advanced*.
-- Students are recommended to use their own computer for this course (Windows, Mac or Linux). Android/Chromebook/iOS devices are not supported.
-
-<!--We will review the basics during induction week, but the pace will be very brisk.
--->
-
-## Enrollment and Obtaining Course Credits
-
-- The course (3 ECTS) will be taught in the Marketing Analytics Program at Tilburg University (please check Osiris for the specifics). The course code is 328060-M-3.
-- Interested Research Master or PhD students who seek to advance their data collection skills are encouraged to apply for a seat.
-  - Students from Tilburg University can enroll in this course upon the approval of [the instructor](mailto:h.datta@tilburguniversity.edu) and their coordinator (please notify the course coordinator by 15 December 2020).
-  - Students outside of Tilburg University are invited to audit this course. For admission, please [email](mailto:h.datta@tilburguniversity.edu) a brief research statement and motivation of why you want to join this class, and your CV by 15 December 2020. Eligible candidates will be notified via email by 22 December 2021.
-
-## License
-
-This course is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License](http://creativecommons.org/licenses/by-nc/4.0/). In other words, you're invited to contribute to it, or even copy and modify it to suit your needs.
-
-Spread the word about this open education initiative!
-
-![Creative Commons Licence](https://i.creativecommons.org/l/by-nc/4.0/88x31.png)

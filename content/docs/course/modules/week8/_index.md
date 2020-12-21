@@ -3,6 +3,7 @@ weight: 70
 title: Week 8) Course summary
 description: Summarizing the course, and discussing next steps.
 bookCollapseSection: true
+draft: true
 ---
 
 # Week 8: Course summary

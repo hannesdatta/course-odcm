@@ -3,6 +3,7 @@ weight: 2
 title: Week 1) Research and business opportunities
 description: Recognize research and business opportunities from using web data.
 bookCollapseSection: true
+draft: true
 ---
 
 # Identifying Research and Business Opportunities From Online Data Collections

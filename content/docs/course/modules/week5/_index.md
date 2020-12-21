@@ -3,6 +3,7 @@ weight: 5
 title: Week 5) Skill-building
 description: Work on your projects, with a focus on running the data collection and debugging code.
 bookCollapseSection: true
+draft: true
 ---
 
 # Skill-building <!--+ feedback-->

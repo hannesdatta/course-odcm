@@ -3,6 +3,7 @@ weight: 3
 title: Week 3) Skill-building
 description: Learn the basics concepts of retrieving data using web scraping and APIs
 bookCollapseSection: true
+draft: true
 ---
 
 # Skill-building

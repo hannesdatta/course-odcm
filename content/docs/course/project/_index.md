@@ -19,6 +19,7 @@ To start, pick one of the project ideas, or pitch your own one during one of the
 3. [Document your data](doc.md)
 4. Publish your data
 
+<!--
 ## Deadline and submission
 - xx.xx 2021, 9am.
 - Submission via email to course coordinator (one email per team).

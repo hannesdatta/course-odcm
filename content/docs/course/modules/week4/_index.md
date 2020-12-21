@@ -3,6 +3,7 @@ weight: 4
 title: Week 4) Data extraction plan
 description: Make a plan how to extract data from a website or API.
 bookCollapseSection: true
+draft: true
 ---
 
 # Planning your data collection

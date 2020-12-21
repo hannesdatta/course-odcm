@@ -7,6 +7,9 @@ weight: 5
 
 # Final exam
 
-Description about the final exam here.
+Description about the final exam follows here.
+
+<!--
 
 Blabla
+-->

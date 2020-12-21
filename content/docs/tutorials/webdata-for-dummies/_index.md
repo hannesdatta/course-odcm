@@ -3,7 +3,7 @@ weight: 10
 title: Web data for dummies
 description: A gentle introduction to collecting online data via web scraping and APIs. An absolute must for anybody interested in starting to scrape.
 bookCollapseSection: true
-draft: false
+draft: true
 ---
 
 # Tutorial: Web data retrieval for dummies

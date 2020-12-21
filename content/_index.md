@@ -9,7 +9,7 @@ type: docs
 
 <!--, and database management-->
 
-_Tilburg University, Block 3, 2020/2021 (February - April 2021)_
+_Tilburg University, Block 3, Course 328060-M-3, 2020/2021 (February - April 2021)_
 
 _Instructor: [dr. Hannes Datta](https://hannesdatta.com)_
 
@@ -56,7 +56,6 @@ session chair, presentations, pitches, discussions
 -->
 
 
->>>>>>> dev
 <!--
 ## Glossary search
 

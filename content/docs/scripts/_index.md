@@ -1,6 +1,6 @@
 ---
 bookFlatSection: true
-title: "Video scripts - dev"
+title: "Webscraping workflow (dev)"
 bookHidden: false
 weight: 40
 bookCollapseSection: true

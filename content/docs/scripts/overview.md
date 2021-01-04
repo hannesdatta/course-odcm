@@ -1,6 +1,6 @@
 ---
 bookFlatSection: true
-title: "Workflow - Overview"
+title: "Introduction"
 bookHidden: false
 weight: 1
 ---
@@ -9,91 +9,68 @@ weight: 1
 
 ## Introduction
 
-Gathering data from the web requires careful planning and execution, to a similar degree that econometricians think about model calibration, or experimentalists opt for a particular study design over another.
+Gathering data from the web requires careful planning and execution, to a similar degree that econometricians calibrate statistical models, or consumer psychologists opt for a particular design for their experimental study.
 
-In fact, the numerous decisions that you will have to make when collecting data from the web have a crucial impact on your study's *relevance* and *rigor*. *Relevance* means that managers or public policy makers can make more informed and better decisions, based on your study's findings. *Rigor*, in turn, means whether your study has been correctly executed, such that the research community will actually believe the findings that you're reporting.
+The numerous decisions you will have to make when collecting data from the web have a crucial impact on your study's *relevance* and *rigor*. *Relevance* means that managers or public policymakers can make more informed and better decisions based on your study's findings. *Rigor*, in turn, implies whether your research has been correctly executed, such that the research community will trust your conclusions.
 
-To guide you in making the right decisions when embarking on your scraping project, we provide you with a toolkit that helps you *think conceptually* about how to gather data from the web. We call our toolkit the "workflow for collecting web data", and I'll walk you through it right now.
-
-## Quick preview
+To guide you in making the right decisions when embarking on your scraping project, we provide you with a toolkit that helps you *think conceptually* about how to gather data from the web. We call this toolkit the "workflow for collecting web data", and I'll walk you through it right now.
 
 ### 1. Opportunity Identification
 
-Everything starts with identifying an opportunity for gathering data from the web. Such an opportunity could arise from a research project you're already working on but where you've just not managed to find useful field data yet. In other circumstances, you may just have this vague gut feeling that a particular data context may soon become important and hence interesting to study. Once you've identified an opportunity, start searching the web and make a list of potential websites to scrape, or APIs to retrieve data from.
+The workflow starts by identifying an opportunity for gathering data from the web. Such an opportunity could arise from a research project you're already working on but where you've just not managed to find useful field data yet. In other circumstances, you may only have this vague gut feeling that a particular data context may soon become important and hence interesting to study.
+
+Once you've identified an opportunity, start searching the web and make a list of potential websites to scrape or APIs to retrieve data from.
 
 ### 2. Data Availability and Research Fit Assessment
 
-From your list of websites and APIs, pick one that you think is the best candidate for gathering data, and (a) assess what data is really available on the site, and (b) whether the data actually fits your research purpose.
+From your list of websites and APIs, pick one that you think is the best candidate for gathering data, and assess what data can be extracted from it.
 
-### Data Availability Assessment
+When visiting a typical e-commerce website, for example, you would notice that you can extract information on products and its reviews. Yet, such sites may also allow you to extract information on other, less obvious entities, such as the *users* that have written product reviews, or the *sellers* of products. Also check for what time data is available on the site or via the API, and try to understand how algorithms - such as ranking or recommendation algorithms - may affect which data you will capture.
 
-Let's talk briefly about data availability here:
+Then, assess whether the available data fits your research purpose. For example, you may realize that the website or API does not provide historical data, which would require you to scrape data in real-time. Suppose your study's minimum data requirement is two years, implying your data collection also has to run for two years. Is that realistic? Also, think about sampling: if your study's goal is to generalize to a population, then obtaining a *random* sample from the site or API is a requirement. How can that be achieved?
 
-- Familiarize yourself with the structure of the website or API. What entities are actually available? A typical e-commerce website, for example, not only displays information on products and its reviews, but also allows you to extract information on the *sellers* of products, and the *users* that have written the reviews. Check out how these entities could potentially be linked to one another, or even to a dataset you're already working on.
-- Next, check for what time period the data is available on the site or API. Some sources only display data in real-time, while others have historical data available. How long can you go back in time?
-- Last, think about why the site or API displays particular content, and hides other. In other words, are there any algorithms in place that could potentially distort your data collection?
+Once you've assessed data availability and research fit, you have to make a decision to either proceed with your data collection from the site or API you've just reviewed, or explore alternative data sources instead. Situations in which you consider alternative data sources may not only arise from a lack of research fit, but also involve projected resource use such as development time and costs for scrapers, or license fees for commercial APIs. When looking for alternative data sources, try to also consider
+- data aggregators rather then only primary data providers,
+- APIs of services where you've just found a website, or
+- published and publicly accessible data sets.
 
-### Research fit
+Re-conduct your data availability and research fit assessment for your second-best candidate, which may give you the data you need.
 
-Once you've gotten a better idea on what data is available on the site, you need to assess whether the data that's there actually fits your research purpose.
+### 3. Extraction Plan
 
-- Start with evaluating how you could obtain a valid sample from the entities on the site or API. Can you actually obtain a random sample? If not, would convenience sampling be "good enough", or pose a serious threat to your study's generalizability?
-- Then, think about how to actually measure the constructs you're interested in. Websites and APIs provide a whole lot of information, but, which one do you capture, and how do you convert the data into variables that you can use in your analysis? Do these variables really measure what you're interested in?
-- Last, data on a website is typically flat - it's not particularly well arranged to be put into spreadsheets that you need for analysis. So ask yourself: *Can* the data that's on the site actually be structured in rows and columns, so that you can analyze it? And how would you do that?
+Once you've picked a website or API to extract data from, you need to make a plan to define for which entities you would like to gather data, and in what frequency to retrieve such data. Also, you need to map out the exact navigation path you would like your scraper to follow - such as opening specific website URLs, simulating user behavior such as logging in, clicking or scrolling, or looping through the results of an API call. Finally, you need to decide which specific data you could like to record from the website, and how to store it - for example in database in the cloud, or simply as files in your local computer.
 
-Once you've assessed data availability and research fit, you have to make a tough call: proceed with your data collection plan, or explore alternative sources of data, for example because (a) either the data that you need isn't there or doesn't fit your research purpose, or (b) because the costs to develop a scraper or the fees you would have to pay to obtain API access are too high.
+Next, you pick the software toolkit to program your scraper. If you're using an API, does this API have a package available in Python you could use? Or is it more advisable to self-program an interface? For websites, can you read the website's content without actually seeing them (e.g., via BeautifulSoup), or do you need to open a browser and "simulate" user behavior, such as clicking? Or are there commercial packages available you could use?
 
-When looking for alternative data sources, think about the following characteristics:
-- First, extracting data via websites may be difficult; are there APIs available - maybe even from the same service - that ease your data collection efforts?
-- Second, is the web site or API you've looked at a *primary data provider*, or a *data aggregator*? For example, you can use the Spotify Web API to collect data from Spotify - a primary data provider -, while the API of Chartmetric.com - an aggregator - allows you to extract data not only from Spotify, but also from Apple Music, Deezer, and TikTok. This may offer interesting opportunities for broadening, or even simplifying the data collection.
-- Third, are there publicly available data sets, e.g., Data Science Challenges published on sites like Kaggle? Obviously, using them tremendously cuts down your data collection efforst, but may pose a threat to study rigor if the data set is poorly ducmented.
+Then, you pick the hardware infrastructure for the deployment of your scraper. Your local PC may be cheap (you already own it), but how do you get that done, given you will have to restart your computer once in a while or put it in your bag while traveling? A remote system, such as on a computer in the cloud, maybe more durable.
 
-Finally, make a call whether to proceed with the website or API, or identify alternative sources and re-conduct your data availability and research fit assessment.
+Finally, you decide how to monitor the data collection while it is running. That's particularly important for data collections that gather real-time data, but may also be useful for data one-shot data collections to verify that all of the requested data, in fact, has been obtained.
 
+On a final note, I would like to remark that making your data extraction plan is nothing you simply do on paper. In fact, I always prototype a data collection during this phase, e.g., by trying out how easy it is to extract particular data, or get certain packages to work.
 
-### 3. Data extraction plan
-
-Once you've made a choice for a website to actually scrape, it's time to get into the little nitty greedy technical details. The goal of working on a data extraction plan is to have a detailed roadmap that guides you in writing the necessary computer code to extract the information from the website or API. Think of it as a rulebook, that you could also hand off to a programmer, who could assist you in writing the data extraction code.
-
-1. First, determine which entities you would like to get. If these entitites are sampled from the site directly, how do you get to that initial list? Be as specific as possible: go here, obtain the first 1000 products there, then start scraping these pages, etc.
-2. Second, determine the frequency of data collection. For historical data, that's typically just once, unless you want to refresh your data towards the end of your project. For data that's only available in real time, things get more complicated and you need to balance the number of entities in your data, the extraction frequency, and the limits imposed by the website, such as only 5 requests per second.
-3. Third, map out the exact navigation path on the site. Which page to open, for which entities? This becomes a loop in your data extraction code. What interaction is necessary: is it enough to visit a website with a link, or do you need to simulate clicks and scrolling behavior? Similarly, if not all units are shown at once, how can you reach the remaining units (e.g., via pagination/looping)?
-4. Fourth, decide whether to store raw data during the collection procedure. The upside of storing raw data is you could extract data you haven't planned for. The downside is you may breach privacy laws, or exceed your disk space.
-5. Fifth, select data for extraction, and prototype data capture in Python or Juptyer Notebook. Can you make use of HTML tags, or do you need to make use of CSS or XPATH selectors?
-6. Sixth, and finally, determine how to store the data. What's the file format: do you make use of flattened CSV files, or unstructured JSON files? Do you store it in a database or in files? And, finally, do you store it on a local computer, or somehwere in the cloud?
-
-When you're done, you're entering another feedback loop, i.e., to assess the legal compliance about your data extraction strategy. Sometimes website prohibit the use of scrapers, but with a valid research purpose, you may be able to overwrite that and still do it. Sometimes data is hidden after a login screen, but also available before the login screen. Can you do with such data, too? Maybe you can limit the scope of the collection, and hence limit your exposure to legal risk in a way that makes your data collection more sustainable.
+When you're done, you're entering another feedback loop, i.e., to assess your data extraction plan's legal compliance. Sometimes websites prohibit the use of scrapers, but with a good research purpose, you may be able to overwrite that and still do it. Some data may be considered personal data under the GDPR, which may prevent you from storing it in the first place, so you would have to anonymize data on-the-fly.
 
 ### 4. Collection
 
-Wow, that is indeed a lot of planning, but... you've finally entered the data collection stage.
+After planning your data collection, it's finally time to start collecting the data. In this phase of your research. Make sure to regularly monitor the data collection while it is running. For long data collections - some for which I haven't even determined an endpoint yet - I make use of daily mobile push messages that inform me about whether the data collection is still running. That way, I can quickly intervene should my extraction code become buggy.
 
-- Make a choice for a software toolkit to use. If you're using an API, does this API have a package available in Python you could use? Or is it more advisable to self-program an interface?
-- For websites, can you read the websites content without actually seeing them (e.g., via BeautifulSoup), or do you need to actually open a browser and "simulate" a user, such as clicking behavior? Or - are there commercial packages available you could use?
-
-- Second, on what infrastructure will you run the scraper? Your local PC may be cheap (you already own it), but how do you get that done, given you will have to restart your computer once in a while, or put it in your bag while traveling? A remote system, such as on a computer in the cloud, may be more durable.
-
-- Third, how do you build in monitoring functionality in your code to inform you about what's wrong? For example, with a live data collection, can you put systems in a place that inform you about the health of your data collection?
-
-The chance is high that you have to revise your scarper while it is running, e.g., to fix mistakes when it is broken, or to add additional data. We also recommend you keep an eye on the focal firm's blog for any important service announcements, such as server downtimes, updates to algorithms, etc.
+I also recommend you keep an eye on the focal firm's blog for any important service announcements, such as server downtimes, updates to algorithms, etc.
 
 ### 5. Preprocessing and documentation
 
-After you've collected your data, it's time to preprocess and document it. Of course, when working on a live data collection, it makes a lot of sense preprocessing and documenting the data already while it is being collected.
+After you've collected your data, it's time to preprocess and document it. When working on a live data collection, it makes a lot of sense to preprocessing and documenting the data already while it is being collected.
 
-Adhere to the following tips:
+Preprocessing entails the cleaning of your data, so it can be used in your project. For example, you may have to remove unnecessary HTML tags from text you've extracted. In other circumstances, you may want to anonymizing specific data points to make its storage GDPR-compliant. Also, you have to choose the final data format for your data.
 
-- Preprocessing means you have to clean the data, such as taking out unnecessary HTML tags in text you've extracted. It involves transfomration (such as anonymizing certain fields, or recoding them), and it involves making a decision about the final data format, for example long-to-wide conversions, or normalization.
+After preprocessing, you validate the data. Check the log files of your scraper: were there any interruptions while the data collection was running? What does that mean for the quality of your data? Also, check the raw data if you stored it: are there any new variables that popped up, and that may also be relevant for your study? Finally, check the preprocessed data: are all variables GDPR-compliant? Are there any weird characters, which may point to encoding issues?
 
-- After preprocessing, you can continue to validate the data. Check the log files you've written: were there any interruptions? What does that mean for hte uqliaty of your data? Also check the raw data if you stored it: are there any new variables that popped up? Finally, check the preprocessed data: are all variables GDPR compliant? Are there any weird characters caused by encoding issues?
+Finally, document the data set for both internal and external use. If you plan using the data set only with your direct colleagues, share information on the composition of the data set (i.e., the entities and timeframe), collection process (any errors)?, the amount of preprocessing you've done, and start gathering information on the institutional background of your data collection with screenshots, a PDF version of the API documentation, or some PDF-ed blog articles from the site. Note that working on an academic study takes a long time, and the chance is the site will change substantially in a while, so you have to make copies. If you plan on distributing the site externally, also include a statement of the motivation of why you've collected the data. This will help people make more informed choices when they think about reusing your data. Also, tell them what you think the data is useful for and what not. Mostly in the latter category, you'd be surprised how many times data gets used for impossible purposes because that hasn't been saying. Finally, decide for a license for the data.
 
-- Finally, document the data set for both internal and external use. If you plan using the data set only with your driect colleagues, share information on the composition of the data set (i.e., the entities and timeframe), collection process (any errors)?, the amount of preprocessing you've done, and start having a plakboek with instiutional backgrounds such as screenshots, a PDF version of the API documentation, or some blog articles about the site. Note that working on an academic study takes a long time, and chance is the site will change substantially in a while, so you have to take copies. If you plan on distributing the site externally, also include a statement of motivation of why you've collected the data. This will help people make more informed choices when they think about reusing your data. Also tell them for what you think the data is useful for, and what not. Mostly in the latter category, you'd be surprised how many times data gets used for impossible purposes because that hasn't been said. Finally, make a call for licensing the data.
+Note that your dataset won't be perfect instantenously. While you're working on your research, revisit the data preprocessing and documentation steps, and keep it up-to-date.
 
-While you're working on the project, kyou have to keep it up-to-date. Revalidate new data, and add documentation to it. Also track your teams errors, and fix those in the data. No scraping collected data set is perfect, so work on this conitnuously.
+### 6. Use
 
-#### 6. Use
-
-The last step is why you've gone down the route of collecting data in the first place: to *put it into productive use* - probably for an academic paper. This stage involves the dissemination of data to your collaborators and team members, use the data in your analysis, and report the results.
+The last step is why you've gone down the route of collecting data in the first place: to *put it into productive use* - probably for an academic paper. This stage involves disseminating data to your collaborators and team members, using the data in your analysis, and reporting the results.
 
 
-To sum up - scraping involves numerous decisions along the way. Carefully review those when you embark on a scraping project, so that you can work on your best possible study.
+To sum up - scraping involves numerous decisions along the way. Carefully review those when you embark on a scraping project so that you can work on your best possible study.

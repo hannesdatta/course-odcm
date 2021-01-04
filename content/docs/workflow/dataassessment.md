@@ -1,15 +1,47 @@
 ---
 bookFlatSection: true
-title: "Workflow - Data availability assessment and research fit"
-description: 
+title: "Data Availability and Research Fit Assessment"
+description:
 bookHidden: false
 weight: 2
+description: " "
 ---
 
-#  Data availability and research fit
+# Workflow for collecting online data
+
+##  Data Availability and Research Fit Assessment
 
 
-#### Data availability assessment
+
+### Data Availability Assessment
+
+Let's talk briefly about data availability here:
+
+- Familiarize yourself with the structure of the website or API. What entities are actually available? A typical e-commerce website, for example, not only displays information on products and their reviews, but also allows you to extract information on the *sellers* of products and the *users* that have written the reviews. Check out how these entities could potentially be linked to one another or even to a dataset you're already working on.
+- Next, check for what time the data is available on the site or API. Some sources only display data in real-time, while others have historical data available. How long can you go back in time?
+- Last, think about why the site or API displays certain content and hides others. In other words, are there any algorithms in place that could potentially distort your data collection?
+
+### Research fit
+
+Once you've gotten a better idea of what data is available on the site, you need to assess whether the information that's there actually fits your research purpose.
+
+- Start with evaluating how you could obtain a valid sample from the entities on the site or API. Can you get a random sample? If not, would convenience sampling be "good enough" or pose a serious threat to your study's generalizability?
+- Then, think about how actually to measure the constructs you're interested in. Websites and APIs provide a lot of information, but which one do you capture, and how do you convert the data into variables you can use in your analysis? Do these variables measure what you're interested in?
+- Last, data on a website is typically flat - it's not particularly well arranged to be put into spreadsheets that you need for analysis. So ask yourself: *Can* the data that's on the site actually be structured in rows and columns so that you can analyze it? And how would you do that?
+
+
+
+When looking for alternative data sources, think about the following characteristics:
+- First, extracting data via websites may be difficult; are there APIs available - maybe even from the same service - that ease your data collection efforts?
+- Second, is the website or API you've looked at a *primary data provider*, or a *data aggregator*? For example, you can use the Spotify Web API to collect data from Spotify - a primary data provider -, while the API of Chartmetric.com - an aggregator - allows you to extract data not only from Spotify but also from Apple Music, Deezer, and TikTok. This may offer exciting opportunities for broadening or even simplifying the data collection.
+- Third, are there publicly available data sets, e.g., Data Science Challenges published on sites like Kaggle? Using them tremendously cuts down your data collection efforts but may pose a threat to study rigor if the data set is poorly documented.
+
+
+
+
+ call: proceed with your data collection, or explore alternative sources of data, for example, because (a) either the data that you need isn't there or doesn't fit your research purpose, or (b) because the costs to develop a scraper or the fees you would have to pay to obtain API access are too high.
+
+
 
 Let's say you've narrowed down your search to just a few websites or APIs. A common mistake done by many is to directly go ahead and scraping that data without actually thinking through *which* particular data you need, and whether that data actually fits your research idea.
 

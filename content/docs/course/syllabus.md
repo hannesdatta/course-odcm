@@ -3,6 +3,7 @@ bookFlatSection: true
 title: "Syllabus"
 bookHidden: false
 weight: 1
+description: " "
 ---
 
 # Syllabus

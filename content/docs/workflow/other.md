@@ -3,11 +3,21 @@ bookFlatSection: true
 title: "Workflow - Other"
 bookHidden: false
 weight: 20
+description: " "
 ---
 
 
 ### Other text snippets
 
+
+
+
+- Choose a software toolkit for data extraction. If you're using an API, does this API have a package available in Python you could use? Or is it more advisable to self-program an interface?
+- For websites, can you read the website's content without actually seeing them (e.g., via BeautifulSoup), or do you need to open a browser and "simulate" user behavior, such as clicking? Or - are there commercial packages available you could use?
+
+- Second, on what infrastructure will you run the scraper? Your local PC may be cheap (you already own it), but how do you get that done, given you will have to restart your computer once in a while or put it in your bag while traveling? A remote system, such as on a computer in the cloud, maybe more durable.
+
+- Third, how do you build monitoring functionality in your code to inform you about what's wrong? For example, with a live data collection, can you put systems in a place that tell you about your data collection's health?
 
 
 

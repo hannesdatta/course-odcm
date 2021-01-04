@@ -2,7 +2,7 @@
 bookFlatSection: true
 title: "Tutorials"
 bookHidden: false
-weight: 2
+weight: 30
 bookCollapseSection: true
 
 ---

@@ -3,6 +3,7 @@ weight: 2
 bookFlatSection: true
 title: "Schedule"
 bookHidden: false
+description: " "
 ---
 
 # Schedule

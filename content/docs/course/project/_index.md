@@ -2,6 +2,7 @@
 weight: 3
 title: "Team Project"
 bookCollapseSection: true
+description: " "
 ---
 
 # Team Project

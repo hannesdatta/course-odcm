@@ -3,6 +3,7 @@ bookFlatSection: true
 title: "Exam"
 bookHidden: false
 weight: 5
+description: " "
 ---
 
 # Final exam

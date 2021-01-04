@@ -1,5 +1,7 @@
 ---
 bookHidden: true
+description: " "
+draft: true
 ---
 
 # This page is hidden in menu

@@ -2,7 +2,7 @@
 bookFlatSection: true
 title: "Examples"
 bookHidden: false
-weight: 10
+weight: 50
 ---
 
 # Examples

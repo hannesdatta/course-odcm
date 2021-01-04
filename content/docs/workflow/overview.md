@@ -3,6 +3,7 @@ bookFlatSection: true
 title: "Introduction"
 bookHidden: false
 weight: 1
+description: " "
 ---
 
 # Workflow for collecting online data

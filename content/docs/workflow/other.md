@@ -13,6 +13,20 @@ draft: true
 
 
 
+{{< mermaid class="text-left">}}
+
+graph TD
+    A[Opportunity Identification] --> B
+    B[Data Availability Assessment] --> C
+    C[Evaluation of Research Fit] --> D
+    D[Data Extraction Plan] --> E
+    E[Collection and Monitoring] --> F
+    F[Preprocess and Document] --> G
+    G[Update and Maintain] --> H
+    H[Use]
+
+{{< /mermaid>}}
+
 - Choose a software toolkit for data extraction. If you're using an API, does this API have a package available in Python you could use? Or is it more advisable to self-program an interface?
 - For websites, can you read the website's content without actually seeing them (e.g., via BeautifulSoup), or do you need to open a browser and "simulate" user behavior, such as clicking? Or - are there commercial packages available you could use?
 

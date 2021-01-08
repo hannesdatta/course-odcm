@@ -4,55 +4,78 @@ title: "Evaluation of Research Fit"
 description:
 bookHidden: false
 weight: 20
-description: "Not all that glitters is gold. Does the data that's available via a site or API really fit your research purpose?"
+description: "Not all that glitters is gold. Does the data that's available on a site or via an API really fit your research purpose?"
 ---
 
 # Workflow for collecting online data
 
 ## Evaluation of Research Fit
 
-Once you've gotten a better idea of what data is available on the site, you need to assess whether the available information fits your research purpose.
+Once you've gotten a better idea of which data is available, you need to assess whether it fits your research purpose.
 
 ### Sampling
 
-*Evaluating how to sample entities from the site or API. Does your study require a random population sample? If so, how to obtain it? If random sampling is not feasible, would convenience sampling be "good enough" to warrant publication?*
+*Evaluate how to sample entities from the site or API. Does your study require a random population sample? If so, how to obtain it? If random sampling is not feasible, would convenience sampling be "good enough" to inform your research?*
 
-First, determine the *desired sampling procedure* to obtain data from the site or API. Typically, you choose a sampling procedure for your *seeds* - the first entry point to a site, and then obtain complete information on each of your sampled seeds. For example, when scraping pricing data from an e-commerce website, the "seeds" are all products listed under a particular product category (from which you then visit all product detail pages).
+First, determine the *desired sampling procedure* for data extraction. Typically, you choose such sampling procedure for your *"seeds"* - the first entry point to a site. Then, obtain *complete* information on each of your sampled seeds. For example, when scraping pricing data from an e-commerce website, the "seeds" are all products listed under a particular product category page. Take a (random) sample of entities (i.e., products), and visit each product's detail page.
 
-Common sampling procedures to obtain seeds are:
-- population sample (you obtain *all* seeds)
-- random sample (you obtain a list of *all* seeds, and then take a random sample),
-- stratified sample (you obtain a list of *all* seeds, along with some meta data, and then take random samples for stratas of meta dat), and
-- convenience sample (you sample from what is shown on the page)
+Common sampling procedures used in web scraping are:
+- full sampling (i.e., obtain data on *all* entities)
+- random sampling (i.e., obtain a list of *all* entities ("seeds"), and then take a random sample of these seeds),
+- stratified sampling (i.e., obtain a list of *all* entities, along with meta data, and take (random) samples for stratas of meta dat), and
+- convenience sampling (i.e., obtain data on the entities that are shown on the site when you visit the page).
 
-It's mandatory to check whether your desired sampling procedure is also *feasible*. For example, in order for you to be able to draw a random sample from entities on the site, you need to either collect data on all entities first (and then take a random sample of those), *or* find a way to make the website or API obtain a quasi-random sample.
+After choosing a sampling procedure, check whether it is *technically feasible*. For example, in order for you to be able to draw a random sample from entities on the site, you need to be *able to collect data on all entities first* (and then take a random sample of those). Probably, the site will detect your scraper, and block you.
 
 {{< hint info>}}
-__Quasi random sampling__
+__Quasi-random sampling as a remedy to full random sampling__
 
-To obtain data on the music listening behavior of users, I scraped the profile pages of customers on a social media site. Of course, it was infeasible to obtain a list of *all* users of the site (from which I could have drawn a random sample). That's why I looked around on the site, and found a page which listed the user names of *recently active users* from the site. That site was also updated in real-time, i.e., upon refreshing the browser, I was able to retrieve a new list of recently active users. While arguably not a random sample from *all users* of the site, this was - indeed - a random sample of *recently active users* of the site.
+To obtain data on the music listening behavior of (a random sample of) users, I needed to scrap the profile pages of customers of a social media site. It was technically infeasible to obtain a list of *all* users of the site (from which I could then have drawn a random sample). That's why I looked around on the site, and found a section in which it listed the profiles of the site's *recently active users*. That site was also updated in real-time, i.e., upon refreshing the browser, I was able to retrieve yet another list of recently active users. While arguably not a random sample from *all users* of the site, this was - indeed - a random sample of *recently active users* of the site - or, in other words, a quasi-random sample of users.
+{{< /hint >}}
 
-__Assess need for random sampling__
+{{< hint info>}}
+__Is random sampling always required?__
 
-Many times, early work in a particular domain doesn't care that much about generalizability, but in the overall phenomena, so it would be defendable to sample from the site, even though you can't guarantee it's randomly sampled. Maybe even you can come up with a quick fix to that problem: suppose you generate a list of random product numbers, and then look at Amazon.com whether these products actually exist, you'd probably build an even stronger case for the randomization of your sample.
+Random sampling is an honourable goal, but sometimes just not attainable. Luckily, early work in a particular domain cares more about the overall phenomenon than about full generalizability. In other words, it may be defendable to sample from a site, even though you randomness cannot be guaranteed. In the study described above, the sample was a quasi-random sample from the site's users, but the users, in turn, were not a generalizable sample of the *population of all music listeners* (their average age was 25, and there were 75% males).
+
 {{< /hint>}}
 
 #### Effective sample size
 
-Important to consider is also the minimum sample size that you require to satisfy statistical power requirements, or conform with practice in your field of research (e.g., if "everybody" else has sampled 1,000 users, a study with merely 10 users will probably be a hard sell to reviewers).
+Important to consider is also the minimum sample size to satisfy statistical power requirements (e.g., to maximize your chance of detecting a statistically significant effect when it is actually present) or conform with conventions in your field of research (e.g., if everybody else has sampled 1,000 users, a study with merely 10 users will probably be a hard sell to reviewers).
 
-What makes sampling in web scraping difficult is that you also need to take into account the *technically feasible sample size*.
+What makes sampling in web scraping difficult is that you also need to take into account the *technically feasible sample size*. Let me give an example: suppose you require data on at least 10,000 users, scraped once per hour, and the website's fair use policy imposes a retrieval limit of 1,000 requests per hour. You probably notice that such a collection is infeasible - already visiting the profile pages of 10,000 users would take 10 hours (which doesn't even account for timeouts!). So, given the sampling frequency and potential limits to making retrieval requests, your effective sample size can severely shrink.
 
-Let me give an example: suppose you need to obtain data on at least 10,000 users, who you would like to scrape once per hour, and the website's fair use policy requires you to limit your data scraping to max. 
+{{< hint info>}}
+
+__Calculating technically feasible sample sizes__
+
+Your study's technically feasible sample size (or any other parameter) can be calculated using the following formula:
+
+{{< katex display  >}}
+req \times S = N \times r \times freq
+{{< / katex >}}
+
+whereby
+- req = number of requests per time unit per scraper,
+- S = number of scrapers (e.g., computers, API tokens),
+- N = number of entities to extract data from (i.e., sample size),
+- r = number of requests to collect data for each entity, and
+- freq = desired sampling frequency per time unit.
+
+Note you can rearrange the formula to solve it for any target parameter of interest. For example,
+
+{{< katex display  >}}
+N = \frac{req \times S}{r \times freq}
+{{< / katex >}}
+
+would solve for the maximum sample size, given the number of requests you can make on a day per scraper (retrieval limit *req* by the site), the number *S* of scrapers you're employing (e.g., you're running the scraper on multiple computers), the number of requests *r* you make per entity (e.g., visiting two product pages per sampled unit), and - finally - the desired sampling frequency *freq*.
+
+{{< /hint>}}
 
 
-Number of requests per day = Sample size * Number of requests per entity * Number of visits per day
 
-
-
-
-
-Given the sampling frequency and potential limits to making retrieval requests, your effective sample size can severely shrink.
+<!--
 
 
 Let's start with sample size first: it's good practice to first motivate your sample size theoretically by means of calculating statistical power, or motivating sample size by checking comparable studies in the literature.
@@ -65,6 +88,7 @@ Second, in what frequency do you need to obtain data
 how can you actually obtain such a sample? And how large does your sample need to be, e.g., to meet statistical power requirements? And what are the implications of sample size on the necessary sampling frequency?
 
 Here's an example: I worked on a study on music behavior on Spotify, but I only had access to a sample of users who listen music on a social network - arguably not a random sample of the population. The site was updated in real-time, and I had to visit each user profile pages every 15 minutes. As the fair use policy of the site implied no more than 5 requests per second, that limited be to about 5000 users that I could include - which were enough to meet statistical power requirements.
+-->
 
 <!--
 - Sampling procedure

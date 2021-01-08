@@ -42,7 +42,9 @@ Random sampling is an honourable goal, but sometimes just not attainable. Luckil
 
 #### Effective sample size
 
-Important to consider is also the minimum sample size to satisfy statistical power requirements (e.g., to maximize your chance of detecting a statistically significant effect when it is actually present) or conform with conventions in your field of research (e.g., if everybody else has sampled 1,000 users, a study with merely 10 users will probably be a hard sell to reviewers).
+*Sampling from web sites and APIs can be tricky: limits to server load ("retrieval limits") or snowballing effects (e.g., seed of 100 users, sample 100 of their peers (100 x 100), and obtain all of their peers' consumption patterns for 50 weeks already yields 100 + 100 x 100 + 100 x 100 x 50 requests = !)*
+
+Important to consider is the minimum sample size to satisfy statistical power requirements (e.g., to maximize your chance of detecting a statistically significant effect when it is actually present) or conform with conventions in your field of research (e.g., if everybody else has sampled 1,000 users, a study with merely 10 users will probably be a hard sell to reviewers).
 
 What makes sampling in web scraping difficult is that you also need to take into account the *technically feasible sample size*. Let me give an example: suppose you require data on at least 10,000 users, scraped once per hour, and the website's fair use policy imposes a retrieval limit of 1,000 requests per hour. You probably notice that such a collection is infeasible - already visiting the profile pages of 10,000 users would take 10 hours (which doesn't even account for timeouts!). So, given the sampling frequency and potential limits to making retrieval requests, your effective sample size can severely shrink.
 
@@ -73,46 +75,29 @@ would solve for the maximum sample size, given the number of requests you can ma
 
 {{< /hint>}}
 
-
-
 <!--
-
-
-Let's start with sample size first: it's good practice to first motivate your sample size theoretically by means of calculating statistical power, or motivating sample size by checking comparable studies in the literature.
-
-Second, in what frequency do you need to obtain data
-
-
-
-
-how can you actually obtain such a sample? And how large does your sample need to be, e.g., to meet statistical power requirements? And what are the implications of sample size on the necessary sampling frequency?
-
-Here's an example: I worked on a study on music behavior on Spotify, but I only had access to a sample of users who listen music on a social network - arguably not a random sample of the population. The site was updated in real-time, and I had to visit each user profile pages every 15 minutes. As the fair use policy of the site implied no more than 5 requests per second, that limited be to about 5000 users that I could include - which were enough to meet statistical power requirements.
+I studied music behavior on Spotify a while ago, but only had access to a sample of users who listened to music on a social network - arguably not a random sample of the population. The site was updated in real-time, and I visited each user profile page every 15 minutes. As the fair use policy of the site implied no more than 5 requests per second, that limited me to around 5,000 users to include in my study - which were enough to meet statistical power requirements.
 -->
-
-<!--
-- Sampling procedure
-- Sample size
-- Sampling frequency
--->
-
 
 ### Construct measurement
 
-*Think about how actually to measure the constructs you're interested in. Websites and APIs provide a lot of information, but which one do you capture, and how do you convert the data into variables you can use in your analysis? Do these variables measure what you're interested in?*
+*Websites and APIs provide a lot of information, but which one do you capture, and how do you convert the data into variables you can use in your analysis? Do these variables really measure what you're interested in?*
 
-The second dimension to consider concerns construct operationalization. In other words, can the constructs that you're interested in actually be measured with the data available on the site or API. The most typical extraction method when scraping is to capture text. However, information can also be extracted from the *presence* or *absence* of certain images (e.g., the "Top Reviewer Badge", that's displayed alongside a review, allowing you to potentially detect commercial reviewing activity).
+Can the constructs that you're interested in actually be measured with the data available on the site or API. The most typical extraction method when scraping is to capture text. However, information can also be extracted from the *presence* or *absence* of certain images (e.g., the "Top Reviewer Badge", that's displayed alongside a review, allowing you to potentially detect commercial reviewing activity).
 
-Then, ask yourself whether the construct you're interested in can actually be measured with sufficient validity. Do the data points *really* capture the construct of interest? Are there any biases (e.g., algorithmic interference) present, and is it clear how the metric is computed (e.g., lack of transparency)?
+Ask yourself whether the construct you're interested in can actually be measured with sufficient validity. Do the data points *really* capture the construct of interest? Are there any biases (e.g., algorithmic interference) present, and is it clear how the metric is computed (e.g., transparent reporting about the method)?
 
 {{< hint info>}}
 
-Suppose you're interested in measuring the number of views for Netflix movies, given the public Netflix website. Well, statistics on the number of views aren't even available to the directors that have *made* a movie or series, so it's hard to make that claim in a paper. Yet, what *is* available on the Netflix site are daily lists of the top 10 movies and series people in a geographic territory have watched. So ask yourself the question on whether you can *still* study the popularity of, let's say, movies and series on Netflix, using such a Top 10 list! It's not views, but it's not too bad afterall. Recognize the limitations, and seize opportunities!
+Suppose you're interested in measuring the number of views for Netflix movies on the public Netflix website (the one you see when you log in). Statistics on the number of views aren't even available to the directors that have *made* a movie or series, so getting this data is impossible. Yet, Netflix shows daily lists of the *top 10 movies and series people in a geographic territory have watched*. Ask yourself: can you *still* study the popularity of, let's say, movies and series on Netflix, using such a Top 10 list? My answer is: it's not views, but somewhat good enough to proxy viewing behavior. Recognize its limitations, but seize the opportunity of collecting such data!
+
 {{< /hint>}}
 
 ### Data structure and mergeability
 
-*Data on a website is typically flat - it's not particularly well arranged to be put into spreadsheets that you need for analysis. So ask yourself: Can the data that's on the site actually be structured in rows and columns so that you can analyze it? And how would you do that?*
+*Data on a website is typically not arranged in "rows and columns", and mostly not available at the unit of analysis that you need for your study. How can the data that's on the site  be structured for analysis? Is it even feasible?*
+
+The basic thought exercise you have to do is to think about the format of the raw data (e.g., an HTML page with an identifier like a product ID, plus some product meta), and the structure of target data (e.g., a cross sectional dataset, time series, or panel data set). How do you get from the raw data to the target data?
 
 -	Structure of raw data (e.g., review ID; enhance with dates)
 -	Structure of target data (e.g., cross section, time series, panel data, network data)

@@ -9,7 +9,9 @@ bookCollapseSection: true
 
 # Workflow for collecting online data
 
-To guide you in *conceptually developing your online data collection for academic research*, we have developed a step-by-step guide, which we call "the workflow for collecting online data".
+To guide you in *planning and executing your online data collection for academic research*, we have developed a step-by-step guide, which we call "the workflow for collecting online data". Throughout the course, you will work through each of the workflow's steps. Already curious what it's all about? Then start with the [overview](overview.md) right away!
+
+## Section overview
 
 {{<section>}}
 

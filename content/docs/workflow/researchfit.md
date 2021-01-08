@@ -11,13 +11,58 @@ description: "Not all that glitters is gold. Does the data that's available via 
 
 ## Evaluation of Research Fit
 
-Once you've gotten a better idea of what data is available on the site, you need to assess whether the information that's there actually fits your research purpose.
+Once you've gotten a better idea of what data is available on the site, you need to assess whether the available information fits your research purpose.
 
 ### Sampling
 
-*Start with evaluating how you could obtain a valid sample from the entities on the site or API. Can you get a random sample? If not, would convenience sampling be "good enough" or pose a serious threat to your study's generalizability?*
+*Evaluating how to sample entities from the site or API. Does your study require a random population sample? If so, how to obtain it? If random sampling is not feasible, would convenience sampling be "good enough" to warrant publication?*
 
-First, consider how you could obtain your study sample from the website. If your requirement is to obtain a random sample from the site, how can you actually obtain a random sample? What's the size of that sample, e.g., to meet statistical requirements of power? And what are the implications of sample size on the necessary sampling frequency?
+First, determine the *desired sampling procedure* to obtain data from the site or API. Typically, you choose a sampling procedure for your *seeds* - the first entry point to a site, and then obtain complete information on each of your sampled seeds. For example, when scraping pricing data from an e-commerce website, the "seeds" are all products listed under a particular product category (from which you then visit all product detail pages).
+
+Common sampling procedures to obtain seeds are:
+- population sample (you obtain *all* seeds)
+- random sample (you obtain a list of *all* seeds, and then take a random sample),
+- stratified sample (you obtain a list of *all* seeds, along with some meta data, and then take random samples for stratas of meta dat), and
+- convenience sample (you sample from what is shown on the page)
+
+It's mandatory to check whether your desired sampling procedure is also *feasible*. For example, in order for you to be able to draw a random sample from entities on the site, you need to either collect data on all entities first (and then take a random sample of those), *or* find a way to make the website or API obtain a quasi-random sample.
+
+{{< hint info>}}
+__Quasi random sampling__
+
+To obtain data on the music listening behavior of users, I scraped the profile pages of customers on a social media site. Of course, it was infeasible to obtain a list of *all* users of the site (from which I could have drawn a random sample). That's why I looked around on the site, and found a page which listed the user names of *recently active users* from the site. That site was also updated in real-time, i.e., upon refreshing the browser, I was able to retrieve a new list of recently active users. While arguably not a random sample from *all users* of the site, this was - indeed - a random sample of *recently active users* of the site.
+
+__Assess need for random sampling__
+
+Many times, early work in a particular domain doesn't care that much about generalizability, but in the overall phenomena, so it would be defendable to sample from the site, even though you can't guarantee it's randomly sampled. Maybe even you can come up with a quick fix to that problem: suppose you generate a list of random product numbers, and then look at Amazon.com whether these products actually exist, you'd probably build an even stronger case for the randomization of your sample.
+{{< /hint>}}
+
+#### Effective sample size
+
+Important to consider is also the minimum sample size that you require to satisfy statistical power requirements, or conform with practice in your field of research (e.g., if "everybody" else has sampled 1,000 users, a study with merely 10 users will probably be a hard sell to reviewers).
+
+What makes sampling in web scraping difficult is that you also need to take into account the *technically feasible sample size*.
+
+Let me give an example: suppose you need to obtain data on at least 10,000 users, who you would like to scrape once per hour, and the website's fair use policy requires you to limit your data scraping to max. 
+
+
+Number of requests per day = Sample size * Number of requests per entity * Number of visits per day
+
+
+
+
+
+Given the sampling frequency and potential limits to making retrieval requests, your effective sample size can severely shrink.
+
+
+Let's start with sample size first: it's good practice to first motivate your sample size theoretically by means of calculating statistical power, or motivating sample size by checking comparable studies in the literature.
+
+Second, in what frequency do you need to obtain data
+
+
+
+
+how can you actually obtain such a sample? And how large does your sample need to be, e.g., to meet statistical power requirements? And what are the implications of sample size on the necessary sampling frequency?
 
 Here's an example: I worked on a study on music behavior on Spotify, but I only had access to a sample of users who listen music on a social network - arguably not a random sample of the population. The site was updated in real-time, and I had to visit each user profile pages every 15 minutes. As the fair use policy of the site implied no more than 5 requests per second, that limited be to about 5000 users that I could include - which were enough to meet statistical power requirements.
 
@@ -27,9 +72,6 @@ Here's an example: I worked on a study on music behavior on Spotify, but I only 
 - Sampling frequency
 -->
 
-{{< hint info>}}
-Many times, early work in a particular domain doesn't care that much about generalizability, but in the overall phenomena, so it would be defendable to sample from the site, even though you can't guarantee it's randomly sampled. Maybe even you can come up with a quick fix to that problem: suppose you generate a list of random product numbers, and then look at Amazon.com whether these products actually exist, you'd probably build an even stronger case for the randomization of your sample.
-{{< /hint>}}
 
 ### Construct measurement
 

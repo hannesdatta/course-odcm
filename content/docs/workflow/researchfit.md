@@ -142,4 +142,4 @@ If you deem the data collection infeasible, you have several opportunities to lo
 
 {{< /hint>}}
 
-{{< button relref="/dataextraction.md" >}}Next{{< /button >}}
+{{< button relref="./extraction-plan-prototyping.md" >}}Next{{< /button >}}

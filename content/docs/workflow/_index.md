@@ -20,13 +20,15 @@ To guide you in *planning and executing your online data collection for academic
 {{< mermaid class="text-left">}}
 
 graph TD
-    A[Opportunity Identification] --> B
-    B[Data Availability Assessment] --> C
-    C[Evaluation of Research Fit] --> D
-    D[Data Extraction Plan] --> E
-    E[Collection and Monitoring] --> F
-    F[Preprocess and Document] --> G
-    G[Update and Maintain] --> H
-    H[Use]
+    A[1. Opportunity Identification] --> B
+    B[2. Data Availability Assessment] --> C
+    C[3. Evaluation of Research Fit] --> D
+    D[4. Technical Extraction Plan and Prototyping] --> E
+    E[5. Evaluate Legal and Ethical Concerns] --> F
+    F[6. Collection and Monitoring] --> G
+    G[7. Preprocessing and Documentation] --> H
+    H[8. Using, Sharing and Maintaining]
 
 {{< /mermaid>}}
+
+{{< button relref="./overview.md" >}}Start the Tutorial{{< /button >}}

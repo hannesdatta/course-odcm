@@ -82,7 +82,7 @@ Note that your dataset won't be perfect instantaneously. While you're working on
 
 {{< /hint >}}
 
-## 7. Use
+## 7. Use, Share, and Maintain
 
 The last step is why you've gone down the route of collecting data in the first place: to *put it into productive use* - probably for an academic paper. Disseminate the data to your team members, use the data in your analysis, and report the results in your paper.
 

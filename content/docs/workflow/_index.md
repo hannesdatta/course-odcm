@@ -9,7 +9,10 @@ bookCollapseSection: true
 
 # Workflow for collecting online data
 
-To guide you in *planning and executing your online data collection for academic research*, we have developed a step-by-step guide, which we call "the workflow for collecting online data". Throughout the course, you will work through each of the workflow's steps. Already curious what it's all about? Then start with the [overview](overview.md) right away!
+To guide you in *planning and executing your online data collection for academic research*, we have developed a step-by-step guide, which we call "the workflow for collecting online data". Throughout the course, you will work through each of the workflow's steps. Already curious what it's all about? Then start with the tutorial right away.
+
+
+{{< button relref="./overview.md" >}}Start the Tutorial{{< /button >}}
 
 ## Section overview
 
@@ -30,5 +33,3 @@ graph TD
     H[8. Using, Sharing and Maintaining]
 
 {{< /mermaid>}}
-
-{{< button relref="./overview.md" >}}Start the Tutorial{{< /button >}}

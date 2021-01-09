@@ -8,27 +8,25 @@ description: "See the big picture & familiarize yourself with each stage of the 
 
 # Workflow for collecting online data
 
-## Overview
-
 Gathering data from the web requires careful planning and execution, to a similar degree that econometricians calibrate statistical models, or consumer psychologists opt for a particular design for their experimental study.
 
 The numerous decisions you need to make when collecting data from the web affect your study's *relevance* and *rigor*. *Relevance* means that managers or public policymakers can make better decisions based on your findings. *Rigor* implies that your study does not contain any errors or inaccuracies.
 
 To guide you in making the right decisions when collecting online data, we provide you with a toolkit that helps you *think conceptually* about how to gather data from the web. We call this toolkit the "workflow for collecting web data".
 
-### 1. Opportunity Identification
+## 1. Opportunity Identification
 
 Start by identifying an opportunity for gathering data from the web. Such an opportunity could arise from a research project you're already working on (but where you may just not have managed to find useful field data yet). Alternatively, you may just have a vague feeling that a particular data context may soon become important to study, which may motivate the start of this workflow.
 
 Once you've identified an opportunity, make a list of potential websites to scrape or APIs to retrieve data from.
 
-### 2. Data Availability Assessment
+## 2. Data Availability Assessment
 
 From your list of websites and APIs, pick your best candidate and assess what data can be extracted from it.
 
 A typical e-commerce website, for example, lists information on products and its reviews. Yet, such sites *also* offer information on other, less obvious entities, such as the *users* that have written product reviews (e.g., where they are from), or the *sellers* of products (e.g., in which other product categories they are active in). Also check for what period the website or API offers data, and try to understand how algorithms - such as ranking or recommendation algorithms - may affect which data you can retrieve.
 
-### 3. Research Fit Evaluation
+## 3. Research Fit Evaluation
 
 After becoming aware of the available data, you need to evaluate whether the data *fits your research purpose*. For example, you may have learned that the website or API does not provide historical data that fits your study's requirements. Suppose such a requirement amounts to at least two years of data, is it feasible to run a real-time data collection for that long?
 
@@ -42,7 +40,7 @@ If the available data fits your research purpose, you can proceed to step 4 - ma
 Re-conduct your data availability assessment and evaluate the research fit of the alternative data source.
 {{< /hint>}}
 
-### 4. Extraction Plan and Prototype Development
+## 4. Extraction Plan and Prototype Development
 
 Once you've chosen (one or multiple) websites or APIs for data extraction, make a plan on how to specifically retrieve data from it. We recommend you prototype the extraction plan concurrently to assess its technical feasibility.
 
@@ -63,11 +61,11 @@ Sometimes websites prohibit the use of scrapers, but with a good research purpos
 
 {{< /hint>}}
 
-### 5. Collection
+## 5. Collection
 
 After planning your data collection, it's finally time to start collecting the data. In this phase of your research, monitor the data collection regularly. Also subscribe to the service's social media and news feeds (e.g., Twitter, Google News), and keep an eye on its blog to stay up-to-date about server downtimes or service announcements that may impact your data collection.
 
-### 6. Preprocessing and documentation
+## 6. Preprocessing and documentation
 
 After you've collected your data, it's time to preprocess and document it. When working on a live data collection, preprocessing and documenting the data typically takes place already while the data is being collected.
 
@@ -84,7 +82,7 @@ Note that your dataset won't be perfect instantaneously. While you're working on
 
 {{< /hint >}}
 
-### 7. Use
+## 7. Use
 
 The last step is why you've gone down the route of collecting data in the first place: to *put it into productive use* - probably for an academic paper. Disseminate the data to your team members, use the data in your analysis, and report the results in your paper.
 

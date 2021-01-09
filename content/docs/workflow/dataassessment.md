@@ -7,15 +7,13 @@ weight: 10
 description: "Learn to critically look at a website or API, and really try to understand which data you can retrieve, and which not."
 ---
 
-# Workflow for collecting online data
-
-## Data Availability Assessment
+# Data Availability Assessment
 
 Let's say you've narrowed down your search to just a few websites or APIs. A common mistake done by many is to directly go ahead and scraping that data without actually thinking through *which* particular data is available on the site or API. However, a critical assessment of data availability may surface additional, more suitable data, or offer the opportunity to address multiple stakeholders of a particular business setting. Also, a more rigorous analysis may show problems with actual research - e.g., if algorithms are detected that may invalidate the author's supposed identification strategy.
 
 Therefore, we recommend you to first take stock about the *actual* data that's available, on each site or API that may be relevant.
 
-### Entity Coverage and Linkages
+## Entity Coverage and Linkages
 
 *What entities are actually available? A typical e-commerce website, for example, not only displays information on products and their reviews, but also allows you to extract information on the sellers of products and the users that have written the reviews. Check out how these entities could potentially be linked to one another or even to a dataset you're already working on.*
 
@@ -56,7 +54,7 @@ Other studies use "external" lists, such as the New York Times book best seller 
 
 Yet others use a website's search function to search for potential seeds. Like with Google Trends, specific brand keywords can be entered, which then serve as linking points.
 
-### Time Coverage
+## Time Coverage
 
 *Check for what time period the data is available on the site or API. Some sources only display data in real-time, while others have historical data available. In the case of historical data, how long can you go back in time?*
 
@@ -98,7 +96,7 @@ __How often is the site/endpoint refreshed?__
 When you plan to scrape data in real-time from a website, try to get a feeling for how often the site is actually refreshed. This may inform the frequency of data collection later on.
 
 
-### Algorithmic transparency
+## Algorithmic transparency
 
 *Think about why the site or API displays certain content and hides others. In other words, are there any algorithms in place that could potentially distort your data collection?*
 

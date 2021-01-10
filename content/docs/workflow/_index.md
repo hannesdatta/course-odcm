@@ -26,7 +26,7 @@ graph TD
     A[1. Opportunity Identification] --> B
     B[2. Data Availability Assessment] --> C
     C[3. Evaluation of Research Fit] --> D
-    D[4. Technical Extraction Plan and Prototyping] --> E
+    D[4. Technical Extraction Plan and Prototype Development] --> E
     E[5. Evaluate Legal and Ethical Concerns] --> F
     F[6. Collection and Monitoring] --> G
     G[7. Preprocessing and Documentation] --> H

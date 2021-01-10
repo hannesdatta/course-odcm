@@ -40,7 +40,7 @@ If the available data fits your research purpose, you can proceed to step 4 - ma
 Re-conduct your data availability assessment and evaluate the research fit of the alternative data source.
 {{< /hint>}}
 
-## 4. Extraction Plan and Prototype Development
+## 4. Technical Extraction Plan and Prototype Development
 
 Once you've chosen (one or multiple) websites or APIs for data extraction, make a plan on how to specifically retrieve data from it. We recommend you prototype the extraction plan concurrently to assess its technical feasibility.
 

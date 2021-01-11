@@ -5,7 +5,7 @@ description: Make a plan how to extract data from a website or API.
 bookCollapseSection: true
 ---
 
-# Planning your data collection
+# Week 4: Planning your data collection
 
 ## Meetup
 
@@ -40,3 +40,7 @@ Deployment in practice *prerecorded guest lecture*
   - Structured and Unstructured databases
   - "Polishing" Code
 -->
+
+<br>
+{{< button relref="week3" >}}Previous week{{< /button >}}
+{{< button relref="week5" >}}Next week{{< /button >}}

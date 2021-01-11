@@ -11,3 +11,6 @@ bookCollapseSection: true
 
 - Presentation of research / business projects
 - Course summary and exam preparation questions
+
+<br>
+{{< button relref="week7" >}}Previous week{{< /button >}}

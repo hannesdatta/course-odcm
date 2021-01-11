@@ -5,7 +5,7 @@ description: Learn how to preprocess, validate, document and distribute your dat
 bookCollapseSection: true
 ---
 
-# Data Packaging and Distribution
+# Week 6: Data Packaging and Distribution
 
 ## Meetup
 - Feedback on coding up the data collection
@@ -19,3 +19,7 @@ bookCollapseSection: true
 ## Exercises and activities
 - ...
 - ...
+
+<br>
+{{< button relref="week5" >}}Previous week{{< /button >}}
+{{< button relref="week7" >}}Next week{{< /button >}}

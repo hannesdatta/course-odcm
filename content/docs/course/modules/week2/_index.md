@@ -5,7 +5,7 @@ description: Learn how to assess data quality and website/API structure, and dec
 bookCollapseSection: true
 ---
 
-# Data availability and research fit
+# Week 2: Data availability and research fit
 
 ## Meetup
 
@@ -60,3 +60,7 @@ Discussion: Structuring potential research and business ideas
 
 <!--- Ethics in scraping and APIs *live*
 -->
+
+<br>
+{{< button relref="week1" >}}Previous week{{< /button >}}
+{{< button relref="week3" >}}Next week{{< /button >}}

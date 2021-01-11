@@ -5,7 +5,7 @@ description: Work on your projects, with a focus on running the data collection 
 bookCollapseSection: true
 ---
 
-# Skill-building <!--+ feedback-->
+# Week 5: Skill-building <!--+ feedback-->
 
 ## Meetup
 - Present data extraction plan for chosen website + feedback
@@ -30,3 +30,6 @@ bookCollapseSection: true
   - Structured and Unstructured databases
   - "Polishing" Code
 -->
+<br>
+{{< button relref="week4" >}}Previous week{{< /button >}}
+{{< button relref="week6" >}}Next week{{< /button >}}

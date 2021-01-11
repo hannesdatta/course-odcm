@@ -5,7 +5,7 @@ description: Learn the basics concepts of retrieving data using web scraping and
 bookCollapseSection: true
 ---
 
-# Skill-building
+# Week 3: Skill-building
 
 
 ## Meetup
@@ -21,3 +21,7 @@ This week, there is no live contact moment. Instead, you are required to work th
 <!--
 - Please collect questions on our board on XXXX; we will answer with updates in the notebooks to resolve questions
 -->
+
+<br>
+{{< button relref="week2" >}}Previous week{{< /button >}}
+{{< button relref="week4" >}}Next week{{< /button >}}

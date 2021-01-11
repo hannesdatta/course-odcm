@@ -5,7 +5,7 @@ description: Recognize research and business opportunities from using web data.
 bookCollapseSection: true
 ---
 
-# Identifying Research and Business Opportunities From Online Data Collections
+# Week 1: Identifying Research and Business Opportunities From Online Data Collections
 
 ## Meetup
 - Introduction to the course *live* <!-- add zoom link-->
@@ -21,6 +21,13 @@ bookCollapseSection: true
 ## Activities (individual exercises or team project)
 - Generate ideas for academic research <!-- develop activity (@Hannes: post some inspiration: Work out inspiration), or new business ([inspiration](https://www.youtube.com/watch?v=qljvs_ttgl0))  extend to business-->
 - Practice questions for "Web data retrieval for dummies"
+
+
+<br>
+{{< button relref="prep" >}}Previous week{{< /button >}}
+{{< button relref="week2" >}}Next week{{< /button >}}
+
+
 <!--  - Any remaining questions, please post them by DEADLINE on XXXX-->
 
 <!--

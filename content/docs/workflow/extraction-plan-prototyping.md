@@ -12,6 +12,14 @@ description: "Make a technical plan for data extraction and storage, and prototy
 
 Once you’ve chosen (one or multiple) websites or APIs for data extraction, define the exact data that you would like to get, how to retrieve it (e.g., using software running on your local computer), and where to store it (e.g., files, databases in the cloud). Throughout, build a prototype to reassure yourself about the technical feasibility.
 
+{{< hint info >}}
+__Hiring a programmer or consultant__
+
+Conducting web scraping does require good coding skills, and it's definitely advisable to ask an experienced programmer for help. When doing so, brief the programmer about your research purpose, and provide details with regard to the decisions explained below. Remember that a programmer is likely *not* a researcher, so verify whether the data has been collected properly, and still fits your research purpose. The same holds for commercial data providers: a firm can easily promise to deliver "customer review data", but can you defend sampling choices in a paper, let alone know whether the data collection threw some errors (you don't have their log files)?
+
+{{< /hint >}}
+
+
 ## Data extraction
 
 ### Entities and extraction frequency
@@ -50,7 +58,7 @@ If you haven't written code up to this point, it's high time you start prototypi
 
 ### Select data
 
-Finally, for each entity, select the data you would like to extract. Determine how to "tell" your scrapeR where the particular data is located on a page. This process of making searchable a website's content or the results of an API call is called *parsing*. We give details on parsing data from websites and APIs next.
+Finally, for each entity, select the data you would like to extract. Determine how to "tell" your scraper where the particular data is located on a page. This process of making searchable a website's content or the results of an API call is called *parsing*. We give details on parsing data from websites and APIs next.
 
 #### Data from websites
 
@@ -75,6 +83,27 @@ Extraction from data provided via APIs is much easier than extracting data from 
 Parsing becomes more demanding when encountering *lists* rather than single values (this occurs in so-called *nested* JSON trees). Carefully think about *how* to extract and store the information. For example, you could concatenate multiple values, using commas as separators. In some situations, this could create a mess - especially when you're concatenating strings that contain the separation character you've used to tell them apart!). The rule of thumb here is that if information stored in arrays is individually important (i.e., each value of it), it's much safer to store it *normalized* (i.e., in its own table).
 
 {{< /hint >}}
+
+### Preprocessing on-the-fly
+
+#### Cleaning
+
+Some data that you extract from websites isn't "clean". For example, it may still contain HTML tag words, and you can decide to remove those before you store your data. Also, reassure yourself that your storage format is universal. For example, in The Netherlands, the meaning of commas and dots in numbers is reversed: 10,000 means ten, and 10.000 means ten thousand. When storing data for (potentially international) use, it's wise adhering to the English notation, which will also ease importing the data to your statistical software packages.
+
+{{< hint info >}}
+__Why should I clean my data on-the-fly?__
+
+The type of cleaning we advise you to do at this stage concerns "practical cleaning decisions" that guarantee your data is interpreted the way it *should*. We do not suggest to *fully* clean your data at this stage (e.g., such as aggregating the data or removing certain observations which may limit the use of your data for modified or new research questions).
+
+In practice, cleaning on-the-fly is achieved with extracting substrings, or simply by (programmatic) search-and-replace.
+
+{{< /hint  >}}
+
+#### Enrichment
+
+Suppose you are building a panel data set on prices at an e-commerce website. In particular, you're extracting prices and product IDs for smartphones. That data alone is insufficient for your analyze - you're missing the single one component that *makes* it a panel data set in the first place: timestamps!
+
+When scraping data, you need to consider about adding variables already during the scraping process to enrich the data, or provide context to it. Next to timestamps (either of when the data was observed, or when your scraper was initiated; choose UTC time, or adhere to the American encoding YYYY/MM/DD hh:mm:ss), storing the IP address of your scraper or derivates like locational details may be advisable under certain circumstances for certain research purposes.
 
 ## Storage and deployment
 
@@ -101,32 +130,39 @@ If you decide to separate data collection from storage, think *where* to store t
 
 ### Software toolkit
 
-Pick the software tool to execute your scraper. If you’re capturing data from an API, does this API have a package available in Python you could use? Or is it more advisable to self-program your data collection? If you’re using a website, can you reliably extract data without actually seeing the website, or do you need to (virtually) open a browser and simulate user behavior, such as clicking?
+Pick the software tool to run your data collection. The basic choice is between ready-made scraping toolkits (e.g., point-and-click interfaces), packages that require some coding (e.g., scraply in Python), or self-developed code that interface with some high-level scraping libraries (e.g., selenium, BeautifulSoup).
+
+With increasing complexity of your data collection, self-developed code is recommendable. While developing a scraper can adhere significant investments of time and effort, you can be reassured about the data quality and fit with your research purpose.
+
+APIs frequently provide some higher-level libraries, and we recommend you to check them out before writing your data collection code from scratch.
+
+{{< hint info >}}
+__Visible versus headless scraping__
+
+You may be familiar with the concept of "what you see is what you get". For example, compare Microsoft Word to a coding editor: when typing text in Word, you can be (almost) sure it renders the exact same way on paper or as a PDF (hence: "what you see [on the screen] is what you get [on paper or in a PDF]"). When typing text in a coding editor, instead, the visual rendering depends on the software program you use for printing or converting it to PDF.
+
+A similar concept holds when scraping websites. You can either use a *visible browser instance* (so that "what you see is what you scrape"), or an *invisible, so-called "headless" browser instance* (in which you do not see what you scrape).
+
+Looking "over the shoulder" of your (visible) browser is great for prototyping your code or developing new features. We recommend this mode for visually complex websites that require user interaction (such as accepting cookies); also, we generally recommend beginners to use visible browser instances, as it eases the understanding of how data extraction code affects the type of information displayed. Our recommendation is the `selenium` package in Python, which essentially remote-controls Chrome (`chromium`). We recommend headless browsers, in turn, for simple websites, any type of API, or data collections that need to be optimized in speed.
+
+{{< /hint >}}
 
 ### Deployment infrastructure
 
-Choose the hardware infrastructure on which to deploy your scraper. Your laptop may be cheap (you already own it), but probably you will have to restart it once a while, or its Wifi connection may drop - making it an error-prone tool. Even local office computers have reportedly been cut off from power for several days… Especially for long data collections, therefore, a remote computer, such as a computer in the cloud, may be much safer.
+Choose from where to run your data collection. As with choosing your storage location, you need to choose for local deployment (e.g., on your local office computer or laptop), or remote deployment (which in turn can be remotely but on-campus, or somewhere in the cloud). Your own computer may be preceived "as free" (after all, you already own it), but local equipment performs very poorly over time. For example, you may have to restart your laptop once in a while, or its Wifi connection may drop when you hop on a train. Even local office computers have reportedly been cut off from power for several days... Especially for long data collections, therefore, a remote computer, such as a computer in the cloud, may be much safer.
 
 ### Monitoring
 
-Decide how to monitor the data collection while it is running. That’s particularly important for real-time data collections that run over extended periods. Still, even one-shot data collections may benefit from monitoring, e.g., to verify that all requested data, in fact, has been obtained.
+Finally, decide how to monitor your data collection for any unforeseen errors. For one-shot data collections, it may be advisable to generate log files that record the website URL or API call, along with a timestamp and the server's status code (e.g., 200 for ok, 404 for not found, etc.). That way, you may be able to detect errors after your collection. For example, timeouts or exceeding your API retrieval limit may cause dozens of consecutive requests to fail (i.e., return error codes or no data). If the site starts with serving data, but stops eventually, it may be a sign of being blocked from it.
+
+For real-time data collectinos that run over extended periods, it's extremely important to implement a monitoring system to check whether (a) the data collection is still running, and (b) whether the data it is extracting is valid. Note that a local computer whose power has been cut for a short while will unlikely be able to serve as a "monitoring tool" (after all, also *that* code snippet has been stopped). In other words, we advise you to set up a monitor using a second computer.
+
+{{< hint info >}}
+__Send push messages to your smartphone__
+
+In a recent implementation, our real-time scraper is deployed in the cloud, and stores the collected raw data - HTML files of each page that we have captured - on a remote server. Our monitoring script runs on our local office computer, and checks daily for the *most recent time stamp* of *any file larger than 300 KB*. If time stamps are too old (i.e., older than a day), or too small (i.e., the website returned an error rather than the actual website), we know something went wrong. Finally, the script sends a push message to our smartphone, and plays back a sound (either a (positive-sounding) wizard sound, or a noisy alarm tone) at 8.30am every day. Over time, you get used to receiving that push message daily, and are "at ease" that everything is running as planned.
+
+{{< /hint >}}
+
 
 {{< button relref="./legalfit.md" >}}Next{{< /button >}}
-
-
-
-<!--
-
-
-d.	Step 4. Select data for extraction
-i.	Identify the location of the required content (e.g., CSS, XPATH, regular expressions)
-ii.	Decide which specific data to extract (e.g., text on the page, attributes from source code, images or file names to download)
-iii.	Convert data in appropriate form (e.g., removing ,000 separators, swapping . with ,. This can be achieved by cleaning or extracting substrings, searching and replacing, etc.)
-iv.	Enrich with meta data (e.g., time stamp of scrape, timestamp of job initiation, IP address or derivatives like location details)
-
-e.	Step 5. Determine storage of extracted data
-i.	Data structure (structured/flat, versus unstructured JSON)
-ii.	Files versus databases
-iii.	Location (local versus remote)
-
--->

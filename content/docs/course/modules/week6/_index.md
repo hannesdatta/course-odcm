@@ -11,11 +11,9 @@ bookCollapseSection: true
 - Feedback on coding up the data collection
 
 ## Self-study
-- Data packaging and distribution *prerecorded*
-  - Preprocessing
-  - Validation
-  - Documentation
-  - Distribution
+- Workflow for collecting online data (Tutorial)
+  - [Preprocessing and Documentation](docs/tutorials/workflow/preprocessing.md)
+  - [Using, Sharing, and Maintaining](docs/tutorials/workflow/use-and-maintain.md)
 - Tutorial: Data packaging and distribution
 
 ## Exercises and activities

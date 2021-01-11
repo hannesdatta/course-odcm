@@ -18,10 +18,12 @@ bookCollapseSection: true
 -->
 
 ## Self-study
-- Data extraction plan
+- Workflow for collecting online data (Tutorial)
+  - [Technical Extraction Plan and Prototyping](docs/tutorials/workflow/extraction-plan-prototyping.md)
+  - [Evaluate Legal and Ethical Concerns](docs/tutorials/workflow/legalfit.md)
   <!--- Design choices: modularity and storage *prerecorded*
   - Data capture and enrichment *prerecorded*
-  - Deployment *prerecorded*-->
+  - Deployment *prerecorded*
 - Legal and ethical considerations when scraping <!-- *reading* [tba]-->
 
 ## Activities (individual exercises or team project)

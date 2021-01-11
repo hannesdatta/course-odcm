@@ -1,11 +1,11 @@
 ---
 weight: 3
-title: Week 2) Data availability assessment
+title: Week 2) Data availability and research fit
 description: Learn how to assess data quality and website/API structure, and decide whether the data fits your research question or business idea.
 bookCollapseSection: true
 ---
 
-# Data availability assessment
+# Data availability and research fit
 
 ## Meetup
 
@@ -50,11 +50,12 @@ Discussion: Structuring potential research and business ideas
 -->
 
 ## Self-study
-- Data availability and research fit assessment <!--*prerecorded*-->
-- Exploration of alternative data sources <!--*prerecorded*-->
+- Workflow for collecting online data (Tutorial)
+  - [Data Availability Assessment](docs/tutorials/workflow/dataassessment.md)
+  - [Evaluation of Research Fit](docs/tutorials/workflow/researchfit.md)
 
 ## Activities (individual exercises or team project)
-- [Project] Conduct your own data availability assessment using a template with your team <!-- *download* generate template to fill in or a slide deck -->
+- [Project] Conduct your own data availability assessment and evaluation of research fit using a template with your team <!-- *download* generate template to fill in or a slide deck -->
 
 
 <!--- Ethics in scraping and APIs *live*

@@ -13,11 +13,10 @@ bookCollapseSection: true
   - Course objectives and practical arrangements <!-- to do -->
 
 ## Self-study
+- Workflow for collecting online data (Tutorial)
+  - [Overview](docs/tutorials/workflow/overview.md)
+  - [Opportunity Identification](docs/tutorials/workflow/opportunities.md)
 - [Web data retrieval for dummies (Tutorial)](docs/tutorials/webdata-for-dummies)
-- Workflow for collecting online data <!-- to do *"hannes in the office" + diagram in beeld*prerecorded*-->
-- Common benefits and use cases of web scraping...
-  - for doing academic research <!-- to *prerecorded* -->
-  - for developing new business ideas and conducting marketing research [*video*](https://www.youtube.com/watch?v=2XfA0e4Bzkk)
 
 ## Activities (individual exercises or team project)
 - Generate ideas for academic research <!-- develop activity (@Hannes: post some inspiration: Work out inspiration), or new business ([inspiration](https://www.youtube.com/watch?v=qljvs_ttgl0))  extend to business-->

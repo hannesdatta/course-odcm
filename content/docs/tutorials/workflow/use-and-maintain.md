@@ -20,4 +20,11 @@ a.	Re-validate updates to “existing” data
 b.	Add documentation for newly added data
 b.	Workflow (where to inform users about an update; how to “automize” the updating procedure)
 
+
+- Data packaging and distribution *prerecorded*
+  - Preprocessing
+  - Validation
+  - Documentation
+  - Distribution
+
 -->

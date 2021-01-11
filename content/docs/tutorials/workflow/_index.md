@@ -1,10 +1,8 @@
 ---
-bookFlatSection: true
-title: "Workflow"
-bookHidden: false
-weight: 20
+weight: 30
+title: Workflow for collecting online data
+description: ...
 bookCollapseSection: true
-
 ---
 
 # Workflow for collecting online data

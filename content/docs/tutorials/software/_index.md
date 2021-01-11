@@ -1,5 +1,5 @@
 ---
-weight: 1
+weight: 10
 title: Software installation
 description: Learn how to install Python and Anaconda to get started with web scraping and APIs
 bookCollapseSection: true

@@ -1,5 +1,5 @@
 ---
-weight: 2
+weight: 20
 title: Python Bootcamp
 description: Learn the basics of using Python
 bookCollapseSection: true

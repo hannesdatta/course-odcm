@@ -1,5 +1,5 @@
 ---
-weight: 20
+weight: 70
 title: APIs 101
 description: Learn how to make a connection to an API, retrieve data, and parse it to CSV files
 bookCollapseSection: true

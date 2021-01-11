@@ -65,9 +65,9 @@ Sometimes websites prohibit the use of scrapers, but with a good research purpos
 
 After planning your data collection, it's finally time to start collecting the data. In this phase of your research, monitor the data collection regularly. Also subscribe to the service's social media and news feeds (e.g., Twitter, Google News), and keep an eye on its blog to stay up-to-date about server downtimes or service announcements that may impact your data collection.
 
-## 6. Preprocessing and documentation
+## 6. Preprocessing, documentation, and distribution
 
-After you've collected your data, it's time to preprocess and document it. When working on a live data collection, preprocessing and documenting the data typically takes place already while the data is being collected.
+After you've collected your data, it's time to preprocess and document it. When working on a live data collection, preprocessing and documenting the data typically takes place already while the data is being collected. Finally, you can distribute the data to team members, or post it on a public data repository.
 
 1. __Clean__ the data so that it can be used in your project. For example, you may have to remove unnecessary HTML tags from it, or disguise users' identities to make data storage GDPR-compliant.
 
@@ -82,9 +82,12 @@ Note that your dataset won't be perfect instantaneously. While you're working on
 
 {{< /hint >}}
 
-## 7. Use, Share, and Maintain
+5. __Distribute__
+Distribute your data to team members, or post it at a public data repository.
 
-The last step is why you've gone down the route of collecting data in the first place: to *put it into productive use* - probably for an academic paper. Disseminate the data to your team members, use the data in your analysis, and report the results in your paper.
+## 7. Use and Maintain
+
+The last step is why you've gone down the route of collecting data in the first place: to *put it into productive use* - probably for an academic paper. Use the data in your analysis, and report the results in your paper.
 
 {{< hint summary >}}
 
@@ -93,4 +96,5 @@ Scraping involves numerous decisions that impact the rigor and relevance of your
 {{< /hint >}}
 
 
+{{< button relref="./_index.md" >}}Previous{{< /button >}}
 {{< button relref="./opportunities.md" >}}Next{{< /button >}}

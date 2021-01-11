@@ -125,4 +125,5 @@ For some, the researcher can make active decisions (e.g., sort in alphabetical o
 
 When working with an API, carefully screen the API documentation for possibilities to exert control over data display. Also compare the output of an API with what the service itself publishes on the website - that way, you can detect any remaining errors or inaccuracies in your data.
 
+{{< button relref="/opportunities.md" >}}Previous{{< /button >}}
 {{< button relref="/researchfit.md" >}}Next{{< /button >}}

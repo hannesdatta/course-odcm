@@ -4,13 +4,15 @@ title: "Using, Sharing, and Maintaining"
 description:
 bookHidden: false
 weight: 60
-description: "Use your data in your research project, distribute your data to team members and the public, and maintain the data set and its documentation."
+description: "Use your data in your research project, and maintain its documentation it whenever necessary."
 ---
 
 
 # Using, Sharing and Maintaining
 
 *Work in progress.*
+
+{{< button relref="/collection.md" >}}Previous{{< /button >}}
 
 <!--
 4.5.1	Update and maintain

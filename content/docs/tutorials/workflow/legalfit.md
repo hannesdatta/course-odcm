@@ -12,7 +12,8 @@ description: "Scraping data is not always permitted by firms, so you need to eva
 
 *Work in progress.*
 
-{{< button relref="./collection.md" >}}Next{{< /button >}}
+{{< button relref="/researchfit.md" >}}Previous{{< /button >}}
+{{< button relref="/collection.md" >}}Next{{< /button >}}
 
 
 <!--

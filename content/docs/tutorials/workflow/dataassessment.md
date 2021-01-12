@@ -66,6 +66,7 @@ What time period does your website or API cover? Some websites, such as Amazon.c
 __Be aware of "false friends"__
 
 Even if a website makes available historical data, that does *not* mean *all* of the data is historically available. For example, Amazon.com reports the current review valence (the average of all customer reviews) and current price on their product pages. Yet, that data changes over time. While you can re-construct review valence from historical review data, you won't be able to re-construct pricing data (at least not entirely on Amazon.com).
+
 {{< /hint >}}
 
 
@@ -81,15 +82,15 @@ Verify whether you can trust the data's timestamps. For example, social media tr
 
 __Can data be modified after it has been published?__
 
-What looks like archival data does not need to be strictly archival. For example, some e-commerce websites allow users to *change* their review, after it was posted. Do you find any traces of such events on the page? Sometimes, reviews or comments are also deleted, and this can only be detected when comparing reviews or comments over time. Other websites explicitly report when data has been deleted or reset, such as the social music network Last.fm (in their API, they set the `bootstrap` flag to 1 in the case users have reset their profiles, which may render their historical data incomplete).
+What looks like archival data does not need to be strictly archival. For example, some e-commerce websites allow users to *change* their review, after it was posted (check out [the blog post by Yelp](https://www.yelp-support.com/article/How-do-I-edit-one-of-my-reviews?l=en_US)). Do you find any traces of such events on the page? Sometimes, reviews or comments are also deleted, and this can only be detected when comparing reviews or comments over time. Other websites explicitly report when data has been deleted or reset, such as the social music network Last.fm (in their API, they set the `bootstrap` flag to 1 in the case users have reset their profiles, which may render their historical data incomplete).
 
 
 {{< hint info >}}
 __Recognize research opportunities__
 
-The fact that reviews are deleted without posting a notice may sound like bad news. However, it creates amazing research opportunities. For example, scraping a page that *looks* historical twice, you can compare which (fake) reviews have been deleted, and then analyze the factors of that predict whether a review is fake, or not.
-{{< /hint>}}
+The fact that reviews are deleted without posting a notice may sound like bad news. However, it creates amazing research opportunities. For example, scraping a page that *looks* historical twice, you can compare which (fake) reviews have been deleted, and then analyze the factors of that predict whether a review is fake, or not. [Check out how identifying fake reviews has led to published work!](https://www.nytimes.com/2020/11/19/technology/fake-reviews-amazon.html).
 
+{{< /hint>}}
 
 __How often is the site/endpoint refreshed?__
 

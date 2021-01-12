@@ -167,7 +167,14 @@ Finally, decide how to monitor your data collection for any unforeseen errors. F
 For real-time data collectinos that run over extended periods, it's extremely important to implement a monitoring system to check whether (a) the data collection is still running, and (b) whether the data it is extracting is valid. Note that a local computer whose power has been cut for a short while will unlikely be able to serve as a "monitoring tool" (after all, also *that* code snippet has been stopped). In other words, we advise you to set up a monitor using a second computer.
 
 {{< hint info >}}
-__Send push messages to your smartphone__
+__How I lost data when I went on vacation (without monitoring)__
+
+A few years ago, I scraped data from a social network for listening to music, think of this like an early version of Spotify. My scraper ran on my office computer, and extracted data from the profile pages of about 5,000 users of the site, every 15 minutes, for about 1.5 years. I once went on a short holiday while the scraper was running, and when I returned to my office, my computer was off. Turns out there was a power cut in the building over the weekend. I switched my computer back on, checked the files on the disk, and shockingly noticed that the power cut happened early Saturday morning. I returned back to office after a long weekend on a Wednesday - so I lost four days of valuable data - data that I can't recover because the site doesn't list users' historical profile pages.
+
+{{< /hint >}}
+
+{{< hint info >}}
+__Monitoring data collections via push messages to your smartphone__
 
 In a recent implementation, our real-time scraper is deployed in the cloud, and stores the collected raw data - HTML files of each page that we have captured - on a remote server. Our monitoring script runs on our local office computer, and checks daily for the *most recent time stamp* of *any file larger than 300 KB*. If time stamps are too old (i.e., older than a day), or too small (i.e., the website returned an error rather than the actual website), we know something went wrong. Finally, the script sends a push message to our smartphone, and plays back a sound (either a (positive-sounding) wizard sound, or a noisy alarm tone) at 8.30am every day. Over time, you get used to receiving that push message daily, and are "at ease" that everything is running as planned.
 

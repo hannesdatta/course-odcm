@@ -12,6 +12,17 @@ description: "Learn when using web scraping or APIs pays off to increase the rel
 
 *Work in progress.*
 
+## For Academics
+
+{{< hint info >}}
+
+https://www.nature.com/articles/d41586-018-04190-5
+
+{{< /hint>}}
+
+## For Business
+
+
 {{< button relref="/overview.md" >}}Previous{{< /button >}}
 {{< button relref="/dataassessment.md" >}}Next{{< /button >}}
 

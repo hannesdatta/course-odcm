@@ -27,7 +27,7 @@ graph TD
     D[4. Technical Extraction Plan and Prototype Development] --> E
     E[5. Evaluate Legal and Ethical Concerns] --> F
     F[6. Collection and Monitoring] --> G
-    G[7. Preprocessing, Documentation, and Distribution] --> H
-    H[8. Using and Maintaining]
+    G[7. Preprocessing und Documentation] --> H
+    H[8. Using, Distribution, and Maintenance]
 
 {{< /mermaid>}}

@@ -12,18 +12,18 @@ description: "Scraping data is not always permitted by firms, so you need to eva
 
 *Work in progress.*
 
+{{< hint info >}}
+__Legality of scraping for businesses__
+
+Watch this video which explains the conditions under which web scraping for business purposes can be considered legal.
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/tcMdWM8wmqs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+{{< /hint >}}
+
 {{< button relref="/researchfit.md" >}}Previous{{< /button >}}
 {{< button relref="/collection.md" >}}Next{{< /button >}}
 
-
-<!--
-
-Assess legality/terms of use on collecting, storing, combining, analyzing, reporting and data in an anonymized form.
-
-•	Overview about applicable laws, business practices, and journal policies (US, Europe)
-•	Curbing the risks of scraping
-o	Obtain permission, and keep a record of your communication
-o	Avoid collection of privacy-sensitive information
-o	Frequency of execution
-
+<!-- Conditions: - publicly available data, users have made data public, no account required for access, not blocked by robots.txt. Also good references to hiQ labs and craiglist cases. Conclusion: web scraping publicly available information (for business purpose) isn't a crime.
+  sheds light on the legality of web scraping for the
 -->

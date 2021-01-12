@@ -27,7 +27,7 @@ When browsing the web, I found that amazing social network for music - it's been
 
 Web scraping is also a technique that's commonly used to retrieve data for business purposes. For example, the business model of search engines heavily hinges on two things: great algorithms to crunch large amounts of data, and *data collected via web scraping* - namely data on what's on the internet. Web scrapers that index the web are commonly referred to as "bots" or "web crawlers", or "web spiders", automatically visit sites as they encounter new links, and store this information in a large database.
 
-Today, the business model of many firms hinges on web scraping. For example, businesses monitor the prices of competitors (see, e.g., the Dutch firm [InPrijsVerhoogd](https://www.ipvdata.com/en/), or gather data on the social media performance of influencers (see, e.g., [SocialBlade](https://socialblade.com) or music artists (see, e.g., [Chartmetric](https://chartmetric.com).    
+Today, the business model of many firms hinges on web scraping. For example, businesses monitor prices and share those with firms (see, e.g., the Dutch firm [InPrijsVerhoogd](https://www.ipvdata.com/en/) and consumers (see, e.g., [Skyscanner](https://skyscanner.com)), or gather data on the social media performance of influencers (see, e.g., [SocialBlade](https://socialblade.com) or music artists (see, e.g., [Chartmetric](https://chartmetric.com). 
 
 As APIs are a more official way to exchange data with partners, many firms use APIs to exchange data or provide functionality. For example, the API of financial service provider [Stripe](https://stripe.com) allows developers to add payment functionality to their services.
 

@@ -86,7 +86,15 @@ Parsing becomes more demanding when encountering *lists* rather than single valu
 
 ### Dealing with technical hurdles
 
-The likelihood of encountering technical difficulties when scraping data is high. Some of these difficulties just arise from the way the website is built - e.g., "getting at some data" that's hidden in the website's source code. Other difficulties have been specifically built in to check that the site's data is *not* scraped, such as CAPTCHAs.
+The likelihood of encountering technical difficulties when scraping data is high. A hurdle which is easy to deal with has to do with the maximum retrieval limit from a site. To limit server load (and keep the site running well for users), web sites typically limit the amount of requests that you can do via scraping or APIs. As a consequence, you need to build in timers in your script, so that you don't run over your limits.
+
+{{< hint info>}}
+__Giving your scraper a break__
+
+It's crucial to build in pauses when requesting data from websites to prevent being blocked - sometimes even permanently!
+{{< /hint >}}
+
+Other difficulties may arise from the way the website is built - e.g., "getting at some data" that's hidden in the website's source code. Other difficulties have been specifically built in to check that the site's data is *not* scraped, such as CAPTCHAs.
 
 {{< hint info >}}
 Check out this [interview with a PhD student in *Nature*](https://www.nature.com/articles/d41586-018-04190-5) on how a team of researchers has dealt with CAPTCHAs encountered when scraping data from [Google Scholar](https://scholar.google.com).
@@ -104,7 +112,8 @@ __Why should I clean my data on-the-fly?__
 
 The type of cleaning we advise you to do at this stage concerns "practical cleaning decisions" that guarantee your data is interpreted the way it *should*. We do not suggest to *fully* clean your data at this stage (e.g., such as aggregating the data or removing certain observations which may limit the use of your data for modified or new research questions).
 
-In practice, cleaning on-the-fly is achieved with extracting substrings, or simply by (programmatic) search-and-replace.
+
+In practice, cleaning on-the-fly is achieved by stripping out unnecessary characters ("$", ",", non-printing characters), extracting substrings, or simply by (programmatic) search-and-replace. If you're a bit more advanced already, regular expressions provide a powerful interface for extracting the type of information you need.
 
 {{< /hint  >}}
 
@@ -125,6 +134,14 @@ Storage format refers to the structure of the data. For example, image data is b
 Location consists of two main "types" of locations: first, the geography of data storage (e.g., within the EU), and whether you're storing the data locally (e.g., on your office PC), or remotely (e.g., in the cloud).
 
 Finally, choose how to organize your data. The choice is between a file-based system, versus a database. For example, if you're extracting image data, you may decide to store them as files. Also tabular CSV files belong to this category. Alternatively, you can store data in databases, which are collections of tables with clearly defined relationships to one another. Databases are more durable than file systems, and they allow you to easily separate extraction (e.g., on remote computers on AWS), from storage (e.g., in a safely secured database on campus).
+
+
+{{< hint info >}}
+__Store data immediately as it comes in__
+
+The basic rule of thumb here is that you store data immediately after its retrieval. Never ever write data to a variable in, let's say Python, and wait for your whole scraping script to have finished before writing it to a file. The likelihood of loosing data would be just too high!
+
+{{< hint >}}
 
 {{< hint info >}}
 __Should you store the raw data during collection?__

@@ -101,6 +101,15 @@ Check out this [interview with a PhD student in *Nature*](https://www.nature.com
 
 {{< /hint>}}
 
+{{< hint info >}}
+__Interacting with a website__
+
+As sites require interaction (e.g., clicking, scrolling, filling in forms), we recommend you use a library that allows you to *see* the browser while the scraper is running. That way, you can check how content is dynamically loading. `Selenium` is our preferred library in Python for this. It launches an actual instance of Chrome (called Chrome driver). You can then either use the selenium library to extract information, or use `BeautifulSoup`, a package you may already be familiar with.
+
+{{< /hint >}}
+
+
+
 ### Preprocessing on-the-fly
 
 #### Cleaning
@@ -108,6 +117,7 @@ Check out this [interview with a PhD student in *Nature*](https://www.nature.com
 Some data that you extract from websites isn't "clean". For example, it may still contain HTML tag words, and you can decide to remove those before you store your data. Also, reassure yourself that your storage format is universal. For example, in The Netherlands, the meaning of commas and dots in numbers is reversed: 10,000 means ten, and 10.000 means ten thousand. When storing data for (potentially international) use, it's wise adhering to the English notation, which will also ease importing the data to your statistical software packages.
 
 {{< hint info >}}
+
 __Why should I clean my data on-the-fly?__
 
 The type of cleaning we advise you to do at this stage concerns "practical cleaning decisions" that guarantee your data is interpreted the way it *should*. We do not suggest to *fully* clean your data at this stage (e.g., such as aggregating the data or removing certain observations which may limit the use of your data for modified or new research questions).
@@ -141,10 +151,10 @@ __Store data immediately as it comes in__
 
 The basic rule of thumb here is that you store data immediately after its retrieval. Never ever write data to a variable in, let's say Python, and wait for your whole scraping script to have finished before writing it to a file. The likelihood of loosing data would be just too high!
 
-{{< hint >}}
+{{< /hint >}}
 
 {{< hint info >}}
-__Should you store the raw data during collection?__
+__Should you store the *raw data*, or preprocessed data during collection?__
 
 We have encountered two predominant "scraping philosophies" among researchers. The first group scrapes from websites, and directly saves the required and parsed data in files or to databases. Such a data collection is optimized for simplicity, speed and storage usage.
 

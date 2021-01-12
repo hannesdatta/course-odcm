@@ -26,18 +26,7 @@ This site collects links to web scrapers and API retrieval projects.
 ## Podcasts and Tutorials
 - [Listen to a podcast with Kimberly Fessel](https://realpython.com/podcasts/rpp/12/) who shares some best practices on scraping the web. She also has shared a [fantastic tutorial on YouTube](https://www.youtube.com/watch?v=RUQWPJ1T6Zc&t=190s)
 
-Tutorial
 
-
-Write as a csv or store as pickle files
-Start out in Jupyter Notebooks to make sure you have the right syntax to get the data → convert to a Python script → set-up scheduling
-Stripping out characters ("$", ",", non-printing characters)
-Importance of regular expressions (start out with replace() initially
-Convert dates and times to pandas timeseries
-Limitations of BeautifulSoup and request
-Does not work for sites that are dynamically loading content (hitting a database and pulling in information).
-Mostly JavaScript websites (YouTube, Open Table)
-Selenium is the solution; launches a Google Chrome driver; sometimes it as simple as launching the site with selenium and then processing the data with request and Beautifulsoup.
 Other advantages: clicking on things and filling out fields
 Scrapy - cloud deployment and built a "spider" (scraper that keeps on going and look for new links)
 Importance of visualising your results dynamically/interactively (D3, Plotly, Tableau)

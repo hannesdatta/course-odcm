@@ -19,7 +19,7 @@ bookCollapseSection: true
 - [Web data retrieval for dummies (Tutorial)](docs/tutorials/webdata-for-dummies)
 
 ## Activities (individual exercises or team project)
-- Generate ideas for academic research <!-- develop activity (@Hannes: post some inspiration: Work out inspiration), or new business ([inspiration](https://www.youtube.com/watch?v=qljvs_ttgl0))  extend to business-->
+- Generate ideas for academic research 
 - Practice questions for "Web data retrieval for dummies"
 
 

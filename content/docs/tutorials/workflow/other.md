@@ -36,34 +36,7 @@ graph TD
 
 
 
-### Opportunity identification
 
- Our goal is to help you plan a data collection properly to gather relevant data, that improve research rigor, while at the same time balancing resource use. We'll come back to the concepts of relevance, rigor, and resource use throughout this process.
-
-
-It may sound simple, but it is actually not. How to identify an opportunity for scraping data? Unlike what many researchers think, you don't really have to have a research question ready to get started. Sometimes, a mere feeling for a hot data context may be enough to warrant investigating scraping the data.
-#
-
-
-First, you need to check what data *really* is available on the site. This step sounds simple, but you'd be amazed to take a closer look at the data.
-
-This is a screenshot of Amazon.com.
-
-and you may browse the site to get an idea on *what exactly* is listed on the site. We call those objects "entities". For example, Amazon.com's (predominant) entity is products like books or movies, but they also have information on not so apparent entities that are tucked away on the site. For example, they list reviewers of their products on the product detail pages, or information about the suppliers of products, such as their assortment.
-
-
-Many researchers that gather data from websites or APIs more or less re-invent the process of gathering such data. In fact, some researchers even consider web scraping to be nothing more than a technical skill, which merely requires writing a bit of computer code.
-
-[...]
-
-To make matters even worse, it could also mean you're scraping *your very own personal product recommendations*, which would severely threaten the generalizability of any finding derived from your data. A remedy to this is to understand what algorithms are potentially in place, and how you could make simple tweaks to your code to reduce the likelihood of introducing biases. To avoid scraping only the most popular products, you could turn off the "filter by popularity" option on the site. To avoid scraping your own personal product recommendations, you could delete cookies before turning on your scraper, so that Amazon.com cannot link your visit to your profile.
-
-[...]
-
-
-When you carefully think about entities, it will help you to broaden your ideas on what potential data a website has to offer. Also, it will allow you to understand how the data could be potentially linked to other data sets - such as via ISBN numbers or UPCs available on a products' page, or the website URLs of third-party sellers. We call this <linkages> that you need to assess.
-
-[...]
 
 ###
 

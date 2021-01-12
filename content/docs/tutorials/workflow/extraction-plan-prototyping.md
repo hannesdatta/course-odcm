@@ -84,6 +84,15 @@ Parsing becomes more demanding when encountering *lists* rather than single valu
 
 {{< /hint >}}
 
+### Dealing with technical hurdles
+
+The likelihood of encountering technical difficulties when scraping data is high. Some of these difficulties just arise from the way the website is built - e.g., "getting at some data" that's hidden in the website's source code. Other difficulties have been specifically built in to check that the site's data is *not* scraped, such as CAPTCHAs.
+
+{{< hint info >}}
+Check out this [interview with a PhD student in *Nature*](https://www.nature.com/articles/d41586-018-04190-5) on how a team of researchers has dealt with CAPTCHAs encountered when scraping data from [Google Scholar](https://scholar.google.com).
+
+{{< /hint>}}
+
 ### Preprocessing on-the-fly
 
 #### Cleaning

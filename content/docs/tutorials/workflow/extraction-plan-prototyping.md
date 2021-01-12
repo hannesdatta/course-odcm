@@ -86,7 +86,7 @@ Parsing becomes more demanding when encountering *lists* rather than single valu
 
 ### Dealing with technical hurdles
 
-The likelihood of encountering technical difficulties when scraping data is high. A hurdle which is easy to deal with has to do with the maximum retrieval limit from a site. To limit server load (and keep the site running well for users), web sites typically limit the amount of requests that you can do via scraping or APIs. As a consequence, you need to build in timers in your script, so that you don't run over your limits.
+The likelihood of encountering technical difficulties when scraping data is high. A hurdle which is easy to deal with has to do with the maximum retrieval limit from a site. To limit server load (and keep the site running well for users), web sites typically limit the amount of requests that you can do via scraping or APIs. As a consequence, you need to build in timers in your script, so that you don't run over your limits. Some websites even seem to make it their top priority to block scrapers from monitoring their sites (e.g., see [this interesting example from Amsterdam](https://dirkmjk.nl/en/86/scraping-airbnb)).
 
 {{< hint info>}}
 __Giving your scraper a break__

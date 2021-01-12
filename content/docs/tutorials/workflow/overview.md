@@ -10,9 +10,9 @@ description: "See the big picture & familiarize yourself with each stage of the 
 
 Gathering data from the web requires careful planning and execution, to a similar degree that econometricians calibrate statistical models, or consumer psychologists opt for a particular design for their experimental study.
 
-The numerous decisions you need to make when collecting data from the web affect your study's *relevance* and *rigor*. *Relevance* means that managers or public policymakers can make better decisions based on your findings. *Rigor* implies that your study does not contain any errors or inaccuracies.
+The numerous decisions you need to make when collecting data from the web affect your study's *relevance* and *rigor*. *Relevance* means that managers or public policymakers can make better decisions based on your findings. *Rigor* implies that your study does not contain any errors or inaccuracies to increase the degree of confidence that other researchers can place in the generated knowledge.
 
-To guide you in making the right decisions when collecting online data, we provide you with a toolkit that helps you *think conceptually* about how to gather data from the web. We call this toolkit the "workflow for collecting web data".
+To guide you in making optimal decisions when collecting online data, we provide you with a toolkit that helps you *think conceptually* about how to gather data from the web. We call this toolkit the "workflow for collecting web data".
 
 ## 1. Opportunity Identification
 
@@ -35,7 +35,7 @@ When evaluating research fit, also think about how to obtain a sample from the w
 {{< hint info >}}
 __Does the available data fit your research purpose?__
 
-If the available data fits your research purpose, you can proceed to step 4 - making a data extraction plan. If not, you should explore alternative data sources, e.g., data aggregators, commercial APIs, similar websites, or even published and publicly accessible data sets that have been well-documented (e.g., on Kaggle.com).
+If the available data fits your research purpose, you can proceed to step 4 - making a data extraction plan. If not, you should explore alternative data sources, e.g., data aggregators, commercial APIs, similar websites, or even published and publicly accessible data sets (e.g., on Kaggle.com). Be aware though that pre-existing datasets may have been insufficiently documented or formatted, which may compromise your study's rigor.
 
 Re-conduct your data availability assessment and evaluate the research fit of the alternative data source.
 {{< /hint>}}

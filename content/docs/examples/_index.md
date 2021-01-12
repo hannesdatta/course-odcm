@@ -22,9 +22,9 @@ This site collects links to web scrapers and API retrieval projects.
 ## APIs
 - [Documenting data collected via APIs (Chartmetric)](https://github.com/hannesdatta/data-spotify-playlist-ecosystem)
 
-## Tools
+## Tools and frameworks
 - [Code to monitor the health of online data collections via Push Messages](https://github.com/hannesdatta/healthmonitor)
-- [Scrapy](https://scrapy.com) is a comprehensive framework to conduct web scraping, and it's deployed in the cloud
+- [Scrapy](https://scrapy.com) and [Morph.io](https://morph.io) are comprehensive, code-based frameworks that collect the data for you in the cloud
 - Try visualizing your results dynamically/interactively, for example with D3, Plotly, ShinyApps, or Tableau
 
 ## Podcasts and Tutorials

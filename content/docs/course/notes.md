@@ -2,58 +2,100 @@
 draft: true
 ---
 
-Teamwork
-For some assignments, students will work in teams of 4 (± 1) people. There are two enrollment options: (1) self-defined teams (if you have strong preferences to work with specific students), and (2) random assignment (if you do not have any preference, and desire to be mixed at random). The team registration will be done on Canvas. Watch the announcements closely.
+# Notes
 
-Note that it is your responsibility to get in touch with team members and make proper arrangements to work on the assignments. We recommend you to have your own WhatsApp group for communication, and we will also make available opportunities for discussion and file exchange here on Canvas.
+## Forms of interaction
+
+*Interactive, immersive and student-centred*
+
+- live coding
+- debates
+- open-source content contributions
+
+- scraping real websites and accessing real APIs
+
+-	Motiveren: nut en motivatie brengen; intrinsiek gemotiveerd (!!!)
+-	Live sessie met elkaar / peers gaan overleggen.
+-	Entertaining zijn!
+
+-	Bv break out groups per topic
+-	Vragen individueel voorbereiden
+
+-	“Mind map maken online?”
+-	Gast college
+-	Community
+-	Overleg om projecten
+-	Inhoud van de cursussen
+-	Inspiratie leveren voor projecten
+
+-	Inclusion of poorly performing students  uitleg momentje voor problems
+
+
+## other forms
+
+- presentation
+- pitch & defense (argument)
+- searching for open data sets
+- posting websites they like in the chat, organize those
+- RQ
+  - what are societally important research questions?
+- interview w/ firms
+- writing building blocks
+
+- start projects with templates from GitHub
+- share screens
+- solve problems
 
 
 
-Evaluation and grading
-Assignments (40%)
-Objective: Learn the methodological skills needed to conduct social media research
-Form: Individual + Team (mixed)
-Time frame: throughout the course
-Weight of your final grade: 40%
-Peer assessment: yes, for team assignments. If a student does not submit his/her peer assessment on time, two full grade points will be subtracted from the team grade for that particular student, for all team assignments.
-Passing norm: Not applicable
-If failed: no resit
-Exam (60%)
-Objective: Evaluate your research skills and your understanding of the current literature
-Form: individual (computer exam on-site); should the shutdown at Tilburg University still be active, we will host this exam online
-Time frame: After the course
-Content: Multiple choice and open questions; exam conducted partly on the computer
-Weight of your final grade: 60%
-Passing norm: ≥ 5.5
-If failed: Resit
-Course passing norm: Students pass this course if the final course grade (i.e., the weighted average of quizzes, team reports, and exam; weights indicated above) is ≥ 5.5, and the exam is passed (≥ 5.5).
-Details on Assignments
-There are two assessment forms for assignments: quizzes (assessing your individual performance), and team reports (assessing the team performance).
+- Modern content: copy-paste code snippets and demos from the course page, access code on GitHub, start projects with templates from GitHub, share screens and solve problems
 
-Individual quizzes (10% of final grade)
-Quizzes will be conducted or submitted online, and may be limited in the available time to solve them.
-If you forget to take part in a quiz, this will be graded with 0 points.
-Team reports (30% of your final grade)
-You will work on two team assignments; together, you are responsible of writing a team report, preparing data, or writing source code.
-The team grade is subject to peer assessment, i.e., your grade will be corrected upwards or downwards, depending on your contribution to the overall team effort.
-You need to submit your evaluation online (link TBA)
-If you fail to provide this evaluation by the deadline, your grade for all team reports is equal to the team grade less two full grade points.
-An explanation of how to compute your corrected grade is listed below.
-Details on exam and repeater policy
-See the page Exam and repeater information
 
-Course material
 
-The material for this course (everything will be available on Canvas) consists of:
+- add cronjobs
 
-This syllabus
-Lecture slides
-Data sets and access to databases
-Assignments for the computer lab sessions
-Software packages
-Please download and install the necessary software before the start of the course. On the course’s website, we provide web clips that guide you through the installation process.
+## Future editions
+- add MongoDB and MySQL
+- add AWS
 
-Literature (academic articles, book chapters; see modules)
+<!-- take home exercise: just submit; you get "DONE" on it as per the deadline -- make sure students stay up-to-date w/ the content
+
+
+-->
+
+
+
+
+
+
+
+- Building blocks
+  - Logging in and out
+  - Looping through seeds
+  - Parsing
+  - File remotes: pushing to S3 (e.g. HTML, sync)
+  - automated zipping and wiping
+  - making screenshots of sites or HTML files
+  - Reconnect to open browser; versus open a new one / Keeping cookies / logins alive
+
+- Questions/decision rules
+  - assess space requirements (# files, HD space); storage may be transitory (e.g., database to support extraction); or permanent (CSV) -> if permanent, choose files
+
+- Add to workflows
+  - Job scheduling on Windows, Linux
+    - of executing one job,
+    - of executing multiple jobs;
+    dynamic nature? (e.g., dynamic seeds, querying)
+  - killing interfering processes
+  - Monitoring: Server capacity, billing, diskspace
+  - increasing limits (&limit=100), or elements on pages.
+  - what other "relevant" data to capture?
+    - monitor the firms' blogs, and put it in the paper.
+    - save screenshots
+
+
+# Legacy teaching notes
+
 
 
 Appendix: A few notes to make this course a success

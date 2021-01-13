@@ -54,9 +54,10 @@ Discussion: Structuring potential research and business ideas
   - [Data Availability Assessment](docs/tutorials/workflow/dataassessment.md)
   - [Evaluation of Research Fit](docs/tutorials/workflow/researchfit.md)
 
-## Activities (individual exercises or team project)
-- [Project] Conduct your own data availability assessment and evaluation of research fit using a template with your team <!-- *download* generate template to fill in or a slide deck -->
-
+## Activities
+*individual exercises or team project*
+<!--- [Project] Conduct your own data availability assessment and evaluation of research fit using a template with your team <!-- *download* generate template to fill in or a slide deck -->
+- to be announced
 
 <!--- Ethics in scraping and APIs *live*
 -->

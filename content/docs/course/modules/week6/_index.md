@@ -8,18 +8,25 @@ bookCollapseSection: true
 # Week 6: Data Packaging and Distribution
 
 ## Meetup
-- Feedback on coding up the data collection
+- To be announced
 
+<!--- Feedback on coding up the data collection
+-->
 ## Self-study
 - Workflow for collecting online data (Tutorial)
   - [Preprocessing and Documentation](docs/tutorials/workflow/preprocessing.md)
   - [Using, Sharing, and Maintaining](docs/tutorials/workflow/use-and-maintain.md)
-- Tutorial: Data packaging and distribution
+<!--- Tutorial: Data packaging and distribution-->
 
+## Activities
+*individual exercises or team project*
+- To be announced
+
+<!--
 ## Exercises and activities
 - ...
 - ...
-
+-->
 <br>
 {{< button relref="week5" >}}Previous week{{< /button >}}
 {{< button relref="week7" >}}Next week{{< /button >}}

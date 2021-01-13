@@ -18,10 +18,14 @@ bookCollapseSection: true
   - [Opportunity Identification](docs/tutorials/workflow/opportunities.md)
 - [Web data retrieval for dummies (Tutorial)](docs/tutorials/webdata-for-dummies)
 
-## Activities (individual exercises or team project)
-- Generate ideas for academic research 
-- Practice questions for "Web data retrieval for dummies"
+## Activities
+*individual exercises or team project*
+- To be announced
 
+<!--
+- Generate ideas for academic research
+- Practice questions for "Web data retrieval for dummies"
+-->
 
 <br>
 {{< button relref="prep" >}}Previous week{{< /button >}}

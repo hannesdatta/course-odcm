@@ -8,8 +8,9 @@ bookCollapseSection: true
 # Week 4: Planning your data collection
 
 ## Meetup
+- To be announced
 
-- Finalizing project scopes *live* <!-- link here-->
+<!--- Finalizing project scopes *live* <!-- link here-->
 <!--: __which website and API?__ *live; in two groups + one PhD session*
   - Presentation of research fit assessment by teams: 2 timeslots? [5 minutes; define slide titles; template]
   - Modifications to data collection/research question
@@ -26,7 +27,11 @@ bookCollapseSection: true
   - Deployment *prerecorded*
 - Legal and ethical considerations when scraping <!-- *reading* [tba]-->
 
-## Activities (individual exercises or team project)
+## Activities
+*individual exercises or team project*
+- To be announced
+
+<!--## Activities (individual exercises or team project)
 - [Project] Make a data extraction plan for your website, taking into account legal and ethical concerns <!-- develop -->
 
 

@@ -8,9 +8,12 @@ bookCollapseSection: true
 # Week 8: Course summary
 
 ## Meetup
+- to be announced
 
-- Presentation of research / business projects
+
+<!--- Presentation of research / business projects
 - Course summary and exam preparation questions
+-->
 
 <br>
 {{< button relref="week7" >}}Previous week{{< /button >}}

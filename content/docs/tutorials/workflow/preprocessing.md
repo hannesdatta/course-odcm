@@ -33,7 +33,7 @@ Next, choose how to store data in a logical and consistent way. For example, pic
 
 Choose a durable data format. CSV files are more durable than Excel files (CSV files have been around for decades, and its definition has not changed ever since; Excel updates its storage format once every few years, which requires users to use recent versions of Excel to read your data).
 
-Also choose a durable storage technology. A database may be ideal to use during your research project, but it's impractical to keep it up and running after the project completes. Even if you were to export your data from the database after the project has ended, then your code wouldn't replicate as it is contingent on the database that you just shut down. In our experience, plain old CSV files or new-line separated JSON files are best suited for long-term storage.
+Also, choose a durable storage technology. A database may be ideal to use during your research project, but it's impractical to keep it up and running after the project completes. Even if you were to export your data from the database after the project has ended, then your code wouldn't replicate as it is contingent on the database that you just shut down. In our experience, plain old CSV files or new-line separated JSON files are best suited for long-term storage.
 
 ## Validation
 
@@ -55,9 +55,9 @@ Finally, document the data for potential users. Even if you're working on a proj
 
 Provide the readme in a simple `.txt` format, or compile it as a PDF file (i.e., make it "durable"). Have at least the following sections in your documentation:
 - Composition (i.e., which data have you collected, for which entities? Include any material you've produced for assessing data availability and evaluating research fit)
-- Collection process (i.e., describe how you have technically implemented your data collection; include details on any errors that may have occured while collecting the data. Include any material you've produced for extracting the data.)
-- Preprocessing (i.e., provide details how you have prepared the raw data for analysis)
-- Institutional background (e.g., provide screen shots, the API documentation or relevant articles from the firm's blog as a PDF files)
+- Collection process (i.e., describe how you have technically implemented your data collection; include details on any errors that may have occurred while collecting the data. Include any material you've produced for extracting the data.)
+- Preprocessing (i.e., provide details on how you have prepared the raw data for analysis)
+- Institutional background (e.g., provide screenshots, the API documentation, or relevant articles from the firm's blog as a PDF-files)
 
 If you are planning on sharing the data with the public, or future teams of co-authors, also explain why you have collected the data in the first place ("motivation"), and how you think the data should be used, or not used ("uses and no-uses")
 

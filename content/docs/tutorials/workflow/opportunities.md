@@ -20,7 +20,7 @@ __How attending a party in Hamburg led to a [publication on music streaming](htt
 
 For example, long before online music streaming was the default, I met a friend's friend at a house party, who told me about this fantastic app called Spotify, which had just launched in The Netherlands at the time. I was amazed by the amount of new music I discovered when using the app. I also noticed my music taste was slowly gravitating from rock music to electronic dance, and - as a researcher - I wondered why? So, I decided to look for data that tracks users' digital music consumption on the web, so that I could study that behavior later.
 
-When browsing the web, I found that amazing social network for music - it's been around for ages, long before Spotify came into existence. That website provided an API which allowed me to extract users' consumption histories. [Check out the website](https://last.fm) and its [API](https://last.fm/api)!
+When browsing the web, I found that amazing social network for music - it's been around for ages, long before Spotify came into existence. That website provided an API that allowed me to extract users' consumption histories. [Check out the website](https://last.fm) and its [API](https://last.fm/api)!
 
 {{< /hint >}}
 
@@ -34,7 +34,7 @@ Today, the business model of many firms hinges on web scraping. For example, bus
 
 As APIs are a more official way to exchange data with partners, many firms use APIs to exchange data or provide functionality. For example, the API of financial service provider [Stripe](https://stripe.com) allows developers to add payment functionality to their services.
 
-Finally, note that web scraping and APIs can be used for retrieving *and* posting data. For example, firms have employed scraping to transfer data from old systems to new databases. In essence, that entails the firm scraping their own data, and making it more usuable in one way or another.
+Finally, note that web scraping and APIs can be used for retrieving *and* posting data. For example, firms have employed scraping to transfer data from old systems to new databases. In essence, that entails the firm scraping their own data, and making it more usable in one way or another.
 
 {{< hint info >}}
 

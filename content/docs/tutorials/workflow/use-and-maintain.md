@@ -28,7 +28,7 @@ When you would like to publish your data to the journal's office (e.g., for repr
 
 First, you need to choose how to host the data. In the past, many researchers have hosted data on their personal websites, but such hosting is not very durable (e.g., you may forget to pay your server bills, so there's a chance the data may get offline), or accessible (e.g., your personal website is likely not indexed by Google Scholar). Therefore, we recommend you use publicly recognized data repositories, such as [Dataverse](https://dataverse.nl).
 
-Second, you need to choose __when to make public the data__. For example, you could deposit your data set already at a publicly available repository *during the research*, but only make it *public* after an embargo period like a year, or after publication of your study. The benefit of keeping data stored at a public repository is that you have a backup copy stored at a secure location.
+Second, you need to choose __when to make public the data__. For example, you could deposit your data set already at a publicly available repository *during the research*, but only make it *public* after an embargo period like a year, or after the publication of your study. The benefit of keeping data stored at a public repository is that you have a backup copy stored at a secure location.
 
 Finally, you need to decide under which license to publish your data. Sometimes there are restrictions as to which license you need to pick. For example, if you scraped data from Wikipedia, then the resulting data set "inherits" the license under which Wikipedia has made available their content.
 

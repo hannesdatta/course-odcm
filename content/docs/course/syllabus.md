@@ -24,7 +24,8 @@ The internet offers abundant possibilities to collect data (e.g., from social ne
 ## Grading
 
 - Team project (4-5 team members) (40% + 10% individual assessment on the basis of self- and peer assessment[^2])
-- Share individual progress and learnings (e.g., open science contributions like tutorials or code snippets in the form of pull requests to GitHub, maintaining a public FAQ/blog, sharing one's progress with the group) (10%)
+- Share individual progress and learnings (10%)
+<!-- (e.g., open science contributions like tutorials or code snippets in the form of pull requests to GitHub, maintaining a public FAQ/blog, sharing one's progress with the group)-->
 - Computer exam (40%)
 
 Students pass this course if the final course grade (i.e., the weighted average of the individual components; weights indicated above) is ≥ 5.5, and the exam is passed (≥ 5.5).

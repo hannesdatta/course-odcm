@@ -7,7 +7,7 @@ bookCollapseSection: true
 
 # Week 8: Course summary
 
-## Meetup
+## Live stream 8
 - to be announced
 
 

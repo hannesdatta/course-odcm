@@ -21,7 +21,7 @@ Welcome to the course website of oDCM. This course teaches you the nuts and bolt
 
 This website is the backbone of the course, and features the following main sections.
 
-- The __course__ section holds a list of weekly [modules](docs/course/modules), consisting of live streams, readings, and prerecorded clips. Even if you're not enrolled in this course, you can watch these clips, but interaction with the course instructor is reserved for enrolled students only.
+- The [__course__](docs/course) section holds a list of weekly [modules](docs/course/modules), consisting of live streams, readings, and prerecorded clips. Even if you're not enrolled in this course, you can watch these clips, but interaction with the course instructor is reserved for enrolled students only.
 
 - The [__tutorial__](docs/tutorials) section offers a workflow for collecting online data, and self-guided Jupyter Notebooks that teach the *basics* of data retrieval via web scraping and APIs. Use these to start your own scraping projects!
 

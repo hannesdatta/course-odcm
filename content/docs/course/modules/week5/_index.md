@@ -7,9 +7,6 @@ bookCollapseSection: true
 
 # Week 5: Skill-building <!--+ feedback-->
 
-## Meetup
-- To be announced
-
 <!--- Present data extraction plan for chosen website + feedback
 <!--*live; same "smaller" groups like before*-->
 
@@ -24,6 +21,13 @@ bookCollapseSection: true
 ## Activities
 *individual exercises or team project*
 - To be announced
+
+## Live stream 6a
+- Tutorial Q&A for Advanced Web Scraping
+
+## Live stream 6b
+- Tutorial Q&A for Advanced APIs
+
 
 <br>
 {{< button relref="week4" >}}Previous week{{< /button >}}

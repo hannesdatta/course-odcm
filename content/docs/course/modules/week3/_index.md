@@ -5,12 +5,8 @@ description: Learn the basics concepts of retrieving data using web scraping and
 bookCollapseSection: true
 ---
 
-# Week 3: Skill-building
+# Week 3: Skill-building (self-study week)
 
-
-## Meetup
-
-This week, there is no live contact moment. Instead, you are required to work through a set of tutorials to build your scraping and API skills.
 
 ## Self-study
 - [Web scraping 101 (Tutorial)](docs/tutorials/webscraping101)

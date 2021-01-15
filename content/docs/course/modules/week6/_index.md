@@ -7,9 +7,6 @@ bookCollapseSection: true
 
 # Week 6: Data Packaging and Distribution
 
-## Meetup
-- To be announced
-
 <!--- Feedback on coding up the data collection
 -->
 ## Self-study
@@ -21,6 +18,10 @@ bookCollapseSection: true
 ## Activities
 *individual exercises or team project*
 - To be announced
+
+## Live stream 7
+- Tutorial Q&A
+
 
 <!--
 ## Exercises and activities

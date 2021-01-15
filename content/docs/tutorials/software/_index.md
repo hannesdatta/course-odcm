@@ -10,10 +10,12 @@ draft: false
 
 ## Learning goals
 
-- Set up your computer for conducting web scraping in Python
-  - Install Anaconda/Python 3
+
+- Install Anaconda/Python 3
+  <!--
+  - Set up your computer for conducting web scraping in Python
   - Install Chrome
-  - Install chromedriver and configure environment variables
+  - Install chromedriver and configure environment variables -->
 - Understand the need for a local setup (vis-a-vis a cloud-based setup, which we strongly disadvise for this class)
 - Get introduced to Jupyter Notebook and Spyder
   - Learn various ways to launch Jupyter Notebook and Spyder (command prompt, Navigator), and implications for the current working directory

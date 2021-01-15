@@ -6,18 +6,33 @@ bookCollapseSection: true
 draft: true
 ---
 
-# Skill-building <!--+ feedback-->
+# Week 5: Skill-building <!--+ feedback-->
 
-## Meetup
-- Present data extraction plan for chosen website + feedback
+<!--- Present data extraction plan for chosen website + feedback
 <!--*live; same "smaller" groups like before*-->
 
 ## Self-study
-- Debugging <!--*prerecorded* / clip structuur werken-->
-- Tutorials (choose at least one, on the basis of your group project)
+
+- Workflow for collecting online data (Tutorial)
+  - [Data Collection and Debugging](docs/tutorials/workflow/collection.md)
+- Skill development (choose at least one tutorial, on the basis of your group project)
   - [Advanced Web Scraping](docs/tutorials/webscrapingadvanced)
   - [Advanced APIs](docs/tutorials/apisadvanced)
 
+## Activities
+*individual exercises or team project*
+- To be announced
+
+## Live stream 6a
+- Tutorial Q&A for Advanced Web Scraping
+
+## Live stream 6b
+- Tutorial Q&A for Advanced APIs
+
+
+<br>
+{{< button relref="week4" >}}Previous week{{< /button >}}
+{{< button relref="week6" >}}Next week{{< /button >}}
   <!--- ...
 ## Exercises and activities
 -->

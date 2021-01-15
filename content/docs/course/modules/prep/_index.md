@@ -15,3 +15,6 @@ bookCollapseSection: true
 <!-- ## Register for *Pulse*
 
 -->
+
+<br>
+{{< button relref="week1" >}}Next week{{< /button >}}

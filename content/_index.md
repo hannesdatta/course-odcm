@@ -1,5 +1,5 @@
 ---
-title: Introduction
+title: Online Data Collection and Management
 type: docs
 ---
 

@@ -7,10 +7,47 @@ description: " "
 
 # Team Project
 
-## Motivation
+## Goal
 
-Collecting data via web scraping and APIs requires practice, and this final team project is a great way to learn more about collecting and managing online data collection.
+Collecting data via web scraping and APIs requires practice. Together with your team members, you plan and execute an online data collection throughout the course, and submit your collected (and documented) data at the end of the course. [Check out our tips for interesting research contexts](projectideas.md).
 
+The focus lies on *completing the complete [workflow for collection online data](../../tutorials/workflow)*. Therefore, keep each stage of your project *manageable* and *feasible*.
+
+## Team composition
+
+- between four to five students per team
+- you need to subscribe to a team yourself (be present in the live streams for that!)
+- we recommend teams to have at least one-two students with coding expertise in Python on their team
+
+## Planning
+
+*preliminary*
+
+- Week 1: Seek inspiration for data sources and interesting ideas to conduct academic research or business/entrepreneurship
+<!--; the result of that session is a list of project ideas (i.e., with NEW ideas) that students can potentially work on; updates-->
+- Week 2: Finalize team compositions, discuss data availability and research fit
+- Weeks 3-5: Build skills (APIs, web scraping), prototype data collection
+- Weeks 6-8: Collect your data, and document it for reuse
+
+<!--
+
+- Week 2: Share data sources with the whole group; based upon common interest, form teams
+          - Conduct your own data availability assessment using a template with your team.
+- Week 3-4: Start working as a team
+    - Build a prototype of the scraper
+    - Run various test runs and check for stability
+- Week 5-6:
+  - Run the actual data collection (iterate if necesarry!)
+  - Transform data into a format ready for analysis
+  - Double check whether you have collected all data to answer your reserach question
+- Week 7:
+  - Document your data set starting from the template
+  - Publish your raw and cleaned datasets on [DataverseNL](https://dataverse.nl)
+-->
+
+
+
+<!--
 ## Tasks
 
 
@@ -36,33 +73,19 @@ Describe your raw data by filling out the Datasheets for datasets [template](htt
 #### 5. Data Distribution
 Since the amount of data may well exceed file size limits of email, we ask you to distribute your data using [DataverseNL](https://dataverse.nl). This is an platform for storing, sharing, and publishing research data sets. You should login with your Tilburg University credentials, create an account (if you have never done so before), and add your data to your account. Please upload both the raw and cleaned data files there.
 
-<!--
+
+-->
 
 ## Deadline and submission
-- 22nd of March 2021, 9AM
-- Submission via [email](mailto:h.datta@tilburguniversity.edu) to course coordinator (one email per team).
+- 26 March 2021, 6pm
+<!--- Submission via [email](mailto:h.datta@tilburguniversity.edu) to course coordinator (one email per team).
+-->
 
+<!--
 ## Deliverables
 - Please send one email per team to the course coordinator, containing
   - Link to published data at [DataverseNL](https://dataverse.nl)
   - Documentation, attached as a PDF file
-
-## Schedule
-
-- Week 1: Seek inspiration for data sources (individually)
-- Week 2: Share data sources with the whole group; based upon common interest, form teams
-          - Conduct your own data availability assessment using a template with your team.
-- Week 3-4: Start working as a team
-    - Build a prototype of the scraper
-    - Run various test runs and check for stability
-- Week 5-6:
-  - Run the actual data collection (iterate if necesarry!)
-  - Transform data into a format ready for analysis
-  - Double check whether you have collected all data to answer your reserach question
-- Week 7:
-  - Document your data set starting from the template
-  - Publish your raw and cleaned datasets on [DataverseNL](https://dataverse.nl)
-
 
 <!--
 o	Pursue to hand in a high-quality code (e.g., have a clear structure, annotate it using Markdown cells, try to formulate every command well, and make sure it contributes to the actual outcome – your parsed data). Aim to make your script free of mistakes, so that it directly runs on our computers, too. Use efficient error handlings (i.e., don’t wrap everything in a big try/except), and name your input and output files. We have made available coding tips on http://tilburgsciencehub.com/tips/coding/.

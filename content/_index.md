@@ -5,7 +5,7 @@ type: docs
 
 # Online Data Collection and Management (oDCM)
 
-**Use web scraping and APIs to mine the web**
+**Use web scraping and APIs to collect data for your empirical research project**
 
 <!--, and database management-->
 
@@ -19,20 +19,19 @@ Welcome to the course website of oDCM. This course teaches you the nuts and bolt
 
 ## This website
 
-This website is the backbone of the course, and features the following main sections.
+This website is the backbone of the course.
 
-- The [__course__](docs/course) section holds a list of weekly [modules](docs/course/modules), consisting of live streams, readings, and prerecorded clips. Even if you're not enrolled in this course, you can watch these clips, but interaction with the course instructor is reserved for enrolled students only.
+- The [__course__](docs/course) section holds a list of weekly [modules](docs/course/modules), consisting of live streams, self-study material, and activities.
 
-- The [__tutorial__](docs/tutorials) section offers a workflow for collecting online data, and self-guided Jupyter Notebooks that teach the *basics* of data retrieval via web scraping and APIs. Use these to start your own scraping projects!
+- The [__tutorial__](docs/tutorials) section offers a workflow for collecting online data, and self-guided Jupyter Notebooks that teach the basics of data retrieval via web scraping and APIs. Use these to start your own scraping projects!
 
 <!--- Finally, the [__building block__](docs/snippets) section offers a collection of code snippets in Python that you can use to build and extend your own scrapers and API retrieval projects.
 -->
 - Finally, the [__example__](docs/examples) section offers links to publicly available data collection projects, which you can use as an inspiration.
 
-
 ## Enroll in this class
 
-- Head over to the [course syllabus](docs/course/syllabus) for all the details. The course offers seats to Research Master and PhD students from outside of Tilburg University.
+- Head over to the [course syllabus](docs/course/syllabus) for all the details. The course offers seats to Research Master and PhD students from outside of Tilburg University. Even if you're not enrolled in this course, you can use our material! However, interaction with the course instructor is reserved to enrolled students.
 
 - Curious about obtaining a MSc degree? Then explore the [Marketing Analytics program](https://www.tilburguniversity.edu/education/masters-programmes/marketing-analytics), offered by faculty of Tilburg University's [Marketing Department](https://tilburguniversity.edu/marketing).
 

@@ -36,6 +36,7 @@ Describe your raw data by filling out the Datasheets for datasets [template](htt
 #### 5. Data Distribution
 Since the amount of data may well exceed file size limits of email, we ask you to distribute your data using [DataverseNL](https://dataverse.nl). This is an platform for storing, sharing, and publishing research data sets. You should login with your Tilburg University credentials, create an account (if you have never done so before), and add your data to your account. Please upload both the raw and cleaned data files there.
 
+<!--
 
 ## Deadline and submission
 - 22nd of March 2021, 9AM

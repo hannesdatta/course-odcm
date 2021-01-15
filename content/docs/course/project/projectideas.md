@@ -9,7 +9,7 @@ weight: 3
 
 *preliminary; list will be extended in week 1*
 
-Here's a list with a couple of research ideas. __Don't feel restricted by these options, though!__ There are plenty of other great ideas, and we encourage you to think of applications in which you use two or more APIs, or in which you combine web scraping with relevant APIs.
+Here's a list with a couple of project ideas. __Don't feel restricted by these options, though!__ There are plenty of other great ideas (e.g., see the [examples section](../../../examples)), and we encourage you to think of applications in which you use two or more APIs, or in which you combine web scraping with relevant APIs.
 
 When using a proprietary data sources requiring login credentials (e.g., Netflix), make sure your team members have access to the account.
 

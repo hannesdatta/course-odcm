@@ -5,17 +5,11 @@ description: Make a plan how to extract data from a website or API.
 bookCollapseSection: true
 ---
 
-# Week 4: Planning your data collection
+# Week 4: Data Extraction Plan
 
-## Meetup
+## Live stream 4
+- Tutorial Q&A for [web scraping 101](docs/tutorials/webscraping101) and [APIs 101](docs/tutorials/apis101)
 
-- Finalizing project scopes *live* <!-- link here-->
-<!--: __which website and API?__ *live; in two groups + one PhD session*
-  - Presentation of research fit assessment by teams: 2 timeslots? [5 minutes; define slide titles; template]
-  - Modifications to data collection/research question
-  - Goal: "final goal for project"
-(comment Roy: have other groups give feedback)
--->
 
 ## Self-study
 - Workflow for collecting online data (Tutorial)
@@ -26,7 +20,15 @@ bookCollapseSection: true
   - Deployment *prerecorded*
 - Legal and ethical considerations when scraping <!-- *reading* [tba]-->
 
-## Activities (individual exercises or team project)
+## Activities
+*individual exercises or team project*
+- To be announced
+
+## Live stream 5
+- Making a data extraction plan
+- Debate on legal and ethical concerns
+
+<!--## Activities (individual exercises or team project)
 - [Project] Make a data extraction plan for your website, taking into account legal and ethical concerns <!-- develop -->
 
 

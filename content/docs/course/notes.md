@@ -2,58 +2,162 @@
 draft: true
 ---
 
-Teamwork
-For some assignments, students will work in teams of 4 (± 1) people. There are two enrollment options: (1) self-defined teams (if you have strong preferences to work with specific students), and (2) random assignment (if you do not have any preference, and desire to be mixed at random). The team registration will be done on Canvas. Watch the announcements closely.
+# Notes
 
-Note that it is your responsibility to get in touch with team members and make proper arrangements to work on the assignments. We recommend you to have your own WhatsApp group for communication, and we will also make available opportunities for discussion and file exchange here on Canvas.
+## Commitment to students
+- I communicate to you within three days.
+- I respect your level of knowledge - whether advanced, or a beginner having troubles with my content
+- I want to make the course relevant to you, and listen to what you need
+
+## Forms of interaction
+
+*Interactive, immersive and student-centred*
+
+- live coding
+- debates
+- open-source content contributions
+
+- scraping real websites and accessing real APIs
+
+-	Motiveren: nut en motivatie brengen; intrinsiek gemotiveerd (!!!)
+-	Live sessie met elkaar / peers gaan overleggen.
+-	Entertaining zijn!
+
+-	Bv break out groups per topic
+-	Vragen individueel voorbereiden
+
+-	“Mind map maken online?”
+-	Gast college
+-	Community
+-	Overleg om projecten
+-	Inhoud van de cursussen
+-	Inspiratie leveren voor projecten
+
+-	Inclusion of poorly performing students  uitleg momentje voor problems
+
+
+# Week activity draft
+
+## 0. Introduction to the course
+- Lecture
+  - What is web scraping? What are APIs? <!-- to do -->
+  - Course objectives and practical arrangements <!-- to do -->
+  - Visualize course structure (week start is the end of the last module)
+
+## 1. Exploration of research and business opportunities
+- preparation: reading, and a few questions?
+- in-class discussion
+
+<!-- post link here
+Discussion: Structuring potential research and business ideas
+
+<!--
+
+- Generate groups on the fly: academic versus business; API vs. web scraping; substantive areas in which you're interested; initial research ideas
+
+- Create break-out groups: 20-30m of discussion
+- Leading questions:
+  - What's hot right now?
+  - What are important phenomena?
+  - What excites you about research?
+  - Which websites do you spend a lot of time on?
+  - What websites would be cool to monitor today?
+  - Have you used an API before?
+  - Have you stumbled upon some interesting documentation?
+
+  - What excites you?
+  - Search for websites: what do they show?
+  - Search for APIs: what do they show? Are they accessible?
+  - Why is it an important phenomena, whom does it affect?
+
+- Come back in the "big room" + quick presentation + feedback
+
+- The result is a board with websites, and people that are interested in it
+- Subscribe to at least 3 data sources.
+
+- Together with other team members, fill in the "steckbrief" of these sites
+
+<!--[split by academic research/ topic, vs. business): generating ideas for potential data sources / phenomena ("what's hot right now? What are important phenomena?", "what excites you about a potential area? what would be cool websites to monitor today?"
+
+- Discuss: in which area does it fall? are people monitoring that site already? what capture would you hope to achieve? is this more "investment in data?"/"timeliness", or more robustness? is this more a covariate or a key thing?
+
+- breakout groups: academia/business
+- presentation to the entire group
+- generate list of websites and APIs, and allocation to teams (4-5 students)
+
+-->
+
+## Data availability and research fit
+- Preparation
+- Check data availability
 
 
 
-Evaluation and grading
-Assignments (40%)
-Objective: Learn the methodological skills needed to conduct social media research
-Form: Individual + Team (mixed)
-Time frame: throughout the course
-Weight of your final grade: 40%
-Peer assessment: yes, for team assignments. If a student does not submit his/her peer assessment on time, two full grade points will be subtracted from the team grade for that particular student, for all team assignments.
-Passing norm: Not applicable
-If failed: no resit
-Exam (60%)
-Objective: Evaluate your research skills and your understanding of the current literature
-Form: individual (computer exam on-site); should the shutdown at Tilburg University still be active, we will host this exam online
-Time frame: After the course
-Content: Multiple choice and open questions; exam conducted partly on the computer
-Weight of your final grade: 60%
-Passing norm: ≥ 5.5
-If failed: Resit
-Course passing norm: Students pass this course if the final course grade (i.e., the weighted average of quizzes, team reports, and exam; weights indicated above) is ≥ 5.5, and the exam is passed (≥ 5.5).
-Details on Assignments
-There are two assessment forms for assignments: quizzes (assessing your individual performance), and team reports (assessing the team performance).
+## other forms
 
-Individual quizzes (10% of final grade)
-Quizzes will be conducted or submitted online, and may be limited in the available time to solve them.
-If you forget to take part in a quiz, this will be graded with 0 points.
-Team reports (30% of your final grade)
-You will work on two team assignments; together, you are responsible of writing a team report, preparing data, or writing source code.
-The team grade is subject to peer assessment, i.e., your grade will be corrected upwards or downwards, depending on your contribution to the overall team effort.
-You need to submit your evaluation online (link TBA)
-If you fail to provide this evaluation by the deadline, your grade for all team reports is equal to the team grade less two full grade points.
-An explanation of how to compute your corrected grade is listed below.
-Details on exam and repeater policy
-See the page Exam and repeater information
+- presentation
+- pitch & defense (argument)
+- searching for open data sets
+- posting websites they like in the chat, organize those
+- RQ
+  - what are societally important research questions?
+- interview w/ firms
+- writing building blocks
 
-Course material
+- start projects with templates from GitHub
+- share screens
+- solve problems
 
-The material for this course (everything will be available on Canvas) consists of:
 
-This syllabus
-Lecture slides
-Data sets and access to databases
-Assignments for the computer lab sessions
-Software packages
-Please download and install the necessary software before the start of the course. On the course’s website, we provide web clips that guide you through the installation process.
 
-Literature (academic articles, book chapters; see modules)
+- Modern content: copy-paste code snippets and demos from the course page, access code on GitHub, start projects with templates from GitHub, share screens and solve problems
+
+
+
+- add cronjobs
+
+## Future editions
+- add MongoDB and MySQL
+- add AWS
+
+<!-- take home exercise: just submit; you get "DONE" on it as per the deadline -- make sure students stay up-to-date w/ the content
+
+
+-->
+
+
+
+
+
+
+
+- Building blocks
+  - Logging in and out
+  - Looping through seeds
+  - Parsing
+  - File remotes: pushing to S3 (e.g. HTML, sync)
+  - automated zipping and wiping
+  - making screenshots of sites or HTML files
+  - Reconnect to open browser; versus open a new one / Keeping cookies / logins alive
+
+- Questions/decision rules
+  - assess space requirements (# files, HD space); storage may be transitory (e.g., database to support extraction); or permanent (CSV) -> if permanent, choose files
+
+- Add to workflows
+  - Job scheduling on Windows, Linux
+    - of executing one job,
+    - of executing multiple jobs;
+    dynamic nature? (e.g., dynamic seeds, querying)
+  - killing interfering processes
+  - Monitoring: Server capacity, billing, diskspace
+  - increasing limits (&limit=100), or elements on pages.
+  - what other "relevant" data to capture?
+    - monitor the firms' blogs, and put it in the paper.
+    - save screenshots
+
+
+# Legacy teaching notes
+
 
 
 Appendix: A few notes to make this course a success

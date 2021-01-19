@@ -7,10 +7,8 @@ bookCollapseSection: true
 
 # Week 1: Identifying Research and Business Opportunities From Online Data Collections
 
-## Meetup
-- Introduction to the course *live* <!-- add zoom link-->
-  - What is web scraping? What are APIs? <!-- to do -->
-  - Course objectives and practical arrangements <!-- to do -->
+## Livestream 1
+- Introduction to the course <!-- add zoom link-->
 
 ## Self-study
 - Workflow for collecting online data (Tutorial)
@@ -18,10 +16,18 @@ bookCollapseSection: true
   - [Opportunity Identification](docs/tutorials/workflow/opportunities.md)
 - [Web data retrieval for dummies (Tutorial)](docs/tutorials/webdata-for-dummies)
 
-## Activities (individual exercises or team project)
-- Generate ideas for academic research 
-- Practice questions for "Web data retrieval for dummies"
+## Activities
+*individual exercises or team project*
+- To be announced
 
+## Livestream 2
+- Exploration business and research ideas
+- Tutorial Q&A
+
+<!--
+- Generate ideas for academic research
+- Practice questions for "Web data retrieval for dummies"
+-->
 
 <br>
 {{< button relref="prep" >}}Previous week{{< /button >}}

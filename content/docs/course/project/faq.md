@@ -1,15 +1,17 @@
 ---
 bookFlatSection: true
-title: "FAQ for Documentation"
+title: "FAQs"
 bookHidden: false
 weight: 4
 ---
 
-# FAQ for Documentation
+# FAQs
+
+## Documentation
 
 To document your data collection, please start from the [template](http://tilburgsciencehub.com/workflow/documenting-data/).
 
-## Tips for filling in the documentation
+### Tips for filling in the documentation
 -	Try to answer the questions to the best of your ability.
     - Imagine you would have to work with this data in the future – how would you write up the documentation so that you (and your future self) may understand it?
     - In your writing, be as concise as possible. We’ve had some recent experience using tools like Grammarly to improve our writing (there is a free version available), but there are certainly alternatives available!
@@ -18,7 +20,7 @@ To document your data collection, please start from the [template](http://tilbur
     - Good text editors will also indicate to you where new lines should occur (to make sure that the text stays readable).
 - Next to the .txt, please convert the readme to a PDF file, which we can easily use to grade your readmes on Canvas.
 
-## Specific guidance for each section
+### Specific guidance for each section
 1. __Name of the dataset/database__:
 Please pick a good name for your dataset. This name will be the first thing potential users of your data will see.
 

@@ -8,6 +8,9 @@ description: " "
 
 # Final exam
 
+*to be announced*
+
+<!--
 ## Structure
 
 The exam covers both a theoretical and practical component. The former involves a set of multiple choice questions to be completed on TestVision. The latter tests students' ability to scrape specified fields from an interactive website, quickly get up to a speed with an API they have never used before, read its documentation, and go through a series of multi-step problems.

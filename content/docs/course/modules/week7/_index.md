@@ -7,15 +7,19 @@ bookCollapseSection: true
 
 # Week 7: Lab week
 
-## Meetup
-- Live coding / feedback sessions for teams
+## Coaching sessions
+- Individual meetings for teams, on request
+- Scheduling to be announced
+
+<!--- Live coding / feedback sessions for teams
+-->
 
 ## Self-study
-- Exam preparation *prerecorded*
-- ...
+- Exam preparation (to be announced)
 
-## Exercises and activities
-- Prepare group presentation on data collection
+<!--- Exam preparation *prerecorded*
+- ...
+-->
 
 
 <br>

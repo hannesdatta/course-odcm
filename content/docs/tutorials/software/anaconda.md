@@ -9,7 +9,7 @@ weight: 1
 
 ### Setup procedure
 
-Please follow this tutorial, which walks you through the installation procedure of Anaconda.
+Please follow this tutorial, which walks you through the installation procedure of Anaconda (click on the thumbnail below to open the video).
 
 [![Anaconda Install Tutorial](https://img.youtube.com/vi/hGZSAuDcmQc/0.jpg)](https://www.youtube.com/watch?v=hGZSAuDcmQc)
 

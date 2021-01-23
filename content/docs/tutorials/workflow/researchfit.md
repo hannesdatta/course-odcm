@@ -40,7 +40,7 @@ Random sampling is an honorable goal, but sometimes just not attainable. Luckily
 
 ### Effective sample size
 
-*Sampling from web sites and APIs can be tricky: limits to server load ("retrieval limits") or snowballing effects (e.g., seed of 100 users, sample 100 of their peers (100 x 100), and obtain all of their peers' consumption patterns for 50 weeks already yields 100 + 100 x 100 + 100 x 100 x 50 requests = !)*
+*Sampling from web sites and APIs can be tricky: limits to server load ("retrieval limits") or snowballing effects (e.g., seed of 100 users, sample 100 of their peers (100 x 100), and obtain all of their peers' consumption patterns for 50 weeks already yields 100 + 100 x 100 + 100 x 100 x 50 requests = 510,100 requests)*
 
 Important to consider is the minimum sample size to satisfy statistical power requirements (e.g., to maximize your chance of detecting a statistically significant effect when it is actually present) or conform with conventions in your field of research (e.g., if everybody else has sampled 1,000 users, a study with merely 10 users will probably be a hard sell to reviewers).
 
@@ -93,27 +93,28 @@ Suppose you're interested in measuring the number of views for Netflix movies on
 
 ## Data structure and mergeability
 
-*Data on a website is typically not arranged in "rows and columns", and mostly not available at the unit of analysis that you need for your study. How can the data that's on the site  be structured for analysis? Is it even feasible?*
+*Data on a website is typically not arranged in "rows and columns", and mostly not available at the unit of analysis that you need for your study. How can the data that's on the site be structured for analysis? Is it even feasible?*
 
-The basic thought exercise you have to do is to think about the format of the raw data (e.g., an HTML page with an identifier like a product ID, plus some product meta), and the structure of target data.
+Understand how your raw data is formatted (e.g., an HTML page with an identifier like a product ID, plus some product meta), and what the structure of your target dataset is.
 
-- __Cross-sectional data__ is probably the easiest case when scraping data, as you likely have to visit your entities' pages once.
-- When interested in __time series data__, you may have to take into account your desired sampling frequency. If your target data set is at the daily level, when and how often do you need to visit the target website to prepare such data? And does the website's updating frequency correspond with your level of aggregation? (e.g., if the website or API only refreshes data once a month, you can't claim it's daily data - even if you've scraped it daily!).
-- If you are building a __panel data set__, things get more complicated. How do you need to gather data from the website, so that you can aggregate it at the entity-day level? You probably realize there are many options. For example, you could decide to visit each entity's page once a day, but then the earlier entities are likely to be visited by your scraper in the morning, while the later entities are likely to be visited in the evening or night. Would that introduce any bias - and are you able to circumvent it, e.g., by either randomizing entities every day that your scraper is running, *or*, instead, visiting your entities *several times a day*?
-- Another commonly scraped data set "type" is __network data__, e.g., the "peers"/"friends" of your seed users. How do you plan to analyze the data? Aggregated at your focal users' level (e.g., "count of focal user's friends"), or do you also have to retrieve user behavior from the peers, and directly model it (making your data set being indexed at the user-pair, and maybe also time level).
+- Building a __cross-sectional dataset__ is probably the easiest case when scraping data, as you likely have to visit your entities' pages only once.
+- When interested in building a __time series dataset__, you may have to take into account your desired sampling frequency. If your target data set is at the daily level, when and how often do you need to visit the website to prepare such data? And does the website's updating frequency correspond with your level of aggregation? (e.g., if the website or API only refreshes data once a month, you can't claim it's daily data - even if you've scraped it daily!).
+- If you are building a __panel dataset__, things get more complicated. How do you need to gather data from the website, so that you can aggregate it at the entity-day level? You probably realize there are many options. For example, you could decide to visit each entity's page once a day, but then the earlier entities are likely to be visited by your scraper in the morning, while the later entities are likely to be visited in the evening or night. Would that introduce any bias - and are you able to circumvent it, e.g., by either randomizing entities every day that your scraper is running, *or*, instead, visiting your entities *several times a day*?
+- Another commonly scraped data set "type" is __network data__, e.g., the "peers"/"friends" of your seed users. How do you plan to analyze the data? Aggregated at your focal users' level (e.g., "count of focal user's friends"), or do you also have to retrieve user behavior from the peers, and directly model it (making your data set being indexed at the user-pair, and maybe also time level)?
 
 ## Resource use
 
 *As "browsing the web" is largely free, scraping by many is mistakenly considered as free data.*
 
-Developing and operating a scraper can become quite costly. When evaluating research fit, it's important to also consider the monetary and non-monetary costs of your project, and whether the investment is justified by your potential use of the data.
+Developing and operating a scraper can become quite costly. When evaluating research fit, it's important to also consider the monetary and non-monetary costs of your project, and whether the investment is justified given the potential use of the data.
 
 ### Development costs
 
 Chance is you have your first scraper running in a matter of hours, but you will soon realize it probably doesn't work as intended. To overcome technical obstacles (such as logging in to a site, wiping cookies, setting up a proxy server, dealing with interactive java scripts, etc.), you need to invest a significant amount of time and effort (by the way: build your network of "fellow scrapers" to solicit for feedback on your code!). Using well-documented packages/libraries that are widely used may make quite a difference in terms of development efforts. Even if you're not writing your own code, plan in enough time for code audits and revisions. The developer likely doesn't know much about academic research and high demands for data quality, so you need to check the code and its output rigorously.
 
 ### Legal and ethical clearance
-Scraping by many is considered a legal grey area, and depending on your institution's web scraping policy, you may require legal support before you can go ahead scraping and using data collected from the web. Also, plan in time for your research proposal to get approved by your institutional review board or ethics review board.
+
+Scraping by many is considered a legal grey area, and depending on your institution's web scraping policy, you may require legal support before you can go ahead scraping and using data collected from the web. Also, plan in time for your research proposal to get approved by your institutional review board or ethics committee.
 
 ### Operating costs
 Operating costs encompass the direct costs (e.g., license fees for the API, given your projected running time), and indirect costs (e.g., costs of deployment and storage infrastructure). Note you already incur these costs when developing the scraper!
@@ -123,12 +124,11 @@ Finally, consider your scraper's maintenance costs. Especially if you plan on co
 
 
 {{< hint info >}}
-More than any other data collection method known to us, the costs of failure are completely on your account. Suppose you need data for at least one year, but two months into the data collection, the API you're using gets bought by another firm and is made proprietary (no joke: this happened recently when Facebook bought the streaming service Mixr, rendering our code and the research project useless). With live data collections, there's also no way for you to "go back in time" if you find out too late that your scraper didn't work. Try to map out "worst-case scenarios", and come up with ways to mitigate the risks.
+More than any other data collection method known to us, the costs of failure are completely on you. Suppose you need to collect data for at least one year, but ten months into the data collection, the API you're using gets bought by another firm and is made proprietary (no joke: this happened recently when Facebook bought the streaming service Mixr, rendering our code and the research project useless). With live data collections, there's also no way for you to "go back in time" if you find out too late that your scraper didn't work. Try to map out "worst-case scenarios", and come up with ways to mitigate the risks.
 {{< /hint >}}
 
 ### Opportunity costs
 Last, consider your opportunity costs. If you were to buy comparable data from official sources, how much would that cost?
-
 
 {{< hint warning>}}
 __Go or no-go? Avenues to look for alternative data sources__

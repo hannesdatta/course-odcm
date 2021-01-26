@@ -30,4 +30,4 @@ bookCollapseSection: true
 2. Get access to [datacamp.com](https://datacamp.com) (available via a Campus license by Tilburg University); external students are recommended to buy a membership for the duration of the course [activation may take a couple of days]
 3. Complete the [Datacamp course "Introduction to Python"](https://learn.datacamp.com/courses/intro-to-python-for-data-science) [only Modules 1-3, about 3-4 hours]
 4. [Get familiar with Jupyter Notebook](https://www.youtube.com/watch?v=HW29067qVWk) [30 minutes]
-5. Download the [tutorial](python-bootcamp.ipynb) (right-click, download linked file as…). Then, open the file in Jupyter Notebook and start the tutorial! [Jupyter Notebook, 2-3 hours]
+5. Download the [tutorial files](python-bootcamp.zip) and open the `.ipynb` file in Jupyter Notebook to start the tutorial! [Jupyter Notebook, 3-4 hours]

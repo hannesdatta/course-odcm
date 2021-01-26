@@ -3,3 +3,5 @@ resources/*
 public/*
 .ipynb_checkpoints/
 *.csv
+content/docs/tutorials/exam/Untitled.ipynb
+content/docs/tutorials/pythonbootcamp/two_lines.txt

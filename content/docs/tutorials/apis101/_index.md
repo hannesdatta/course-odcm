@@ -18,4 +18,4 @@ draft: false
 
 ## Getting started
 
-- [Download the tutorial](apis-101.ipynb) (right-click, download linked file as...). Then, open the file in Jupyter Notebook and start the tutorial!
+- [Download the tutorial](api-101.ipynb) (right-click, download linked file as...). Then, open the file in Jupyter Notebook and start the tutorial!

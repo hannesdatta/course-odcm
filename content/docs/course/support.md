@@ -23,3 +23,47 @@ For quick questions, please use *WhatsApp* to get in touch with us (+31 13 466 8
 
 **Email**
 h.datta@tilburguniversity.edu
+
+
+## FAQ
+
+**Python Bootcamp**
+*What's the difference between `if` and `elif`?*
+It's simply a matter of the order. `if` refers to the first condition and `elif` to the condition(s) that follow. There can be 0, 1 or many `elif` statements.
+
+*What is `[]`?*
+It's an empty list. More often than not, it's defined at the top of a function after which items are appended to it.
+
+*How should I interpret `discount_rate += 0.10`?*
+It means take the current value of `discount_rate` and and 0.10 to it. So, say that `discount_rate = 0.10` and run `discount_rate += 0.10` its value becomes `0.20`.
+
+*Why is indenting code especially important in for-loops?*
+It tells the computer when to break out of a loop. The function below already returns its value after 1 iteration because the `return` statement is part of the loop.
+
+```
+sum = 0
+for counter in range(10):
+   sum += counter
+   return sum
+```
+
+Actually, it makes more more sense to first finish the loop and only then return the value of `sum`. Like this (i.e., `return` is unindented here!):
+
+```
+sum = 0
+for counter in range(10):
+   sum += counter
+return sum
+```
+
+---
+
+**Webdata for Dummies**
+*Question*
+Answer
+
+---
+
+**Webscraping 101**
+*Question*
+Answer

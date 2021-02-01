@@ -42,4 +42,4 @@ Encountering problems? Check the [sign-up instructions provided by the Universit
 1. Complete the [software installation](../software) [1 hour]
 2. Complete the [Datacamp course "Introduction to Python"](https://learn.datacamp.com/courses/intro-to-python-for-data-science) [only Modules 1-3, about 3-4 hours]
 3. [Get familiar with Jupyter Notebook](https://www.youtube.com/watch?v=HW29067qVWk) [30 minutes]
-4. Download the [tutorial](python-bootcamp.ipynb) (right-click, download linked file as…). Then, open the file in Jupyter Notebook and start the tutorial! [Jupyter Notebook, 2-3 hours]
+4. Download the [tutorial](python-bootcamp.zip) (right-click, download linked file as…). Then, open the file in Jupyter Notebook and start the tutorial! [Jupyter Notebook, 2-3 hours] <!-- the zip file also includes the data they need for the last few exercises --> 

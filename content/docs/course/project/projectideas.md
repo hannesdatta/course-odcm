@@ -22,6 +22,7 @@ Skilling up in web scraping and APIs requires practice, and conducting a group p
 - Data sources
   - [spotifycharts](https://spotifycharts.com/regional)
   - [Spotify Web API](https://developer.spotify.com/documentation/web-api/)
+<!--
 - Potential research questions
   - Compare the rankings across countries throughout time (2017-2021)
       - How long do tracks typically stay in the top 200?
@@ -30,16 +31,19 @@ Skilling up in web scraping and APIs requires practice, and conducting a group p
       - Can tracks that fell off the track, bounce back and climb up the rankings again?
       - Do the total number of streams significantly fluctuate throughout time?
     - Can you find clusters of countries that share the same music taste?
+-->
 
 ## E-commerce
 - Data sources
   - [bol.com](bol.com)
   - [Coolblue](coolblue.nl)
+<!--
 - Potential business questions
    - Are our tech products priced lower than our competitors?
    - Are the same products on sale at the same time?
    - Are customer reviews comparable across platforms?
    - How are products ordered by default?
+-->
 
 ## Social media
 - Data sources
@@ -51,17 +55,21 @@ Skilling up in web scraping and APIs requires practice, and conducting a group p
 - Data sources
   - [Netflix](https://www.netflix.com/browse)
   - [IMDb](https://www.imdb.com)
+<!--
 - Potential research questions
   - Which movie genres are most popular, and are most likely to be trending?
   - Are Netflix originals promoted more often on the homescreen than other movies?
   - Are the highest rated movies also the ones most popular on Netflix?
+-->
 
 ## Online videos, user-generated content
 - Data sources
   - [YouTube API](https://developers.google.com/youtube/v3)
+<!--
 - Potential research questions
   - What are the most popular types of YouTube channels in terms of views?
   - Did watchtime and views go up for these channels since the COVID-19 outbreak?
   - Do the channels with the most subscribers also earn the most? (e.g., see [Socialblade](https://socialblade.com/youtube/))
   - What factors play a role in determining the "Socialblade" channel grade?
   - How can you identify upcoming Youtubers that show great potential for an advertising partnership?
+-->

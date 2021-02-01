@@ -10,19 +10,16 @@ bookCollapseSection: true
 ## Livestream 1
 - Introduction to the course <!-- add zoom link-->
 
-## Self-study
+## Self-study and activities
 - Workflow for collecting online data (Tutorial)
   - [Overview](docs/tutorials/workflow/overview.md)
   - [Opportunity Identification](docs/tutorials/workflow/opportunities.md)
 - [Web data retrieval for dummies (Tutorial)](docs/tutorials/webdata-for-dummies)
 
-## Activities
-*individual exercises or team project*
-- To be announced
-
 ## Livestream 2
-- Exploration business and research ideas
-- Tutorial Q&A
+- Exploration of business and research ideas
+- Initial group formation for team projects
+- Q&A/walk-through for tutorial
 
 <!--
 - Generate ideas for academic research

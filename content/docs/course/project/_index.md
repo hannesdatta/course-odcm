@@ -16,14 +16,12 @@ The focus lies on *completing the complete [workflow for collection online data]
 ## Team composition
 
 - between four to five students per team
-- you need to subscribe to a team yourself (be present in the live streams for that!)
+- you need to subscribe to a team yourself (be present in the live streams for that; registration on Canvas!)
 - we recommend teams to have at least one-two students with coding expertise in Python on their team
 
 ## Planning
 
-*preliminary*
-
-- Week 1: Seek inspiration for data sources and interesting ideas to conduct academic research or business/entrepreneurship
+- Week 1: Seek inspiration for data sources and interesting ideas to conduct academic research or invest into new business opportunities
 <!--; the result of that session is a list of project ideas (i.e., with NEW ideas) that students can potentially work on; updates-->
 - Week 2: Finalize team compositions, discuss data availability and research fit
 - Weeks 3-5: Build skills (APIs, web scraping), prototype data collection
@@ -78,8 +76,7 @@ Since the amount of data may well exceed file size limits of email, we ask you t
 
 ## Deadline and submission
 - 26 March 2021, 6pm
-<!--- Submission via [email](mailto:h.datta@tilburguniversity.edu) to course coordinator (one email per team).
--->
+- Submission via [Surf Filesender](https://filesender.surf.nl); send to h.datta@tilburguniversity.edu in one zip file (one email per team).
 
 <!--
 ## Deliverables

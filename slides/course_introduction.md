@@ -31,6 +31,16 @@ If you haven't done so, navigate to the course page at [odcm.hannesdatta.com](ht
 - Course framework and learning goals
 - Agenda and practical arrangements
 
+## Disclaimer
+
+> - Slow me down & use the chat
+- Streams are complements, not substitutes for self-study & course website
+- Minimal use of slides; will post
+- Course runs for the first time (buggy!)
+- Mix of students at various levels; public (but streams are not)
+- I'm a marketer, not a data or computer scientist
+- Consider me your coach, not your *distant professor*
+
 # About myself
 
 ## Background
@@ -39,8 +49,9 @@ If you haven't done so, navigate to the course page at [odcm.hannesdatta.com](ht
 - moved to NL 12 years ago
 - married, 2 kids (2 and 5 years old)
 - streaming from 'de zolderkamer' in 's-Hertogenbosch
-- geek at heart (got a 3D printer for Christmas), love listening & playing music, start new hobbies every few months...
+- geek at heart (got a 3D printer for Christmas), love listening & playing music, starting new hobbies every few months...
 - now Associate Prof at Tilburg University
+
 <!--
 ## Professional background
 
@@ -61,14 +72,16 @@ If you haven't done so, navigate to the course page at [odcm.hannesdatta.com](ht
 - Method
     - data management of structured and unstructured data
     - online data collection via APIs and web scraping
-    - causality in observational data
+    - causal effects with observational data
 
 ## Teaching activities
 
 - MSc Marketing Analytics and Management
+    - Data preparation and workflow management (*new*, dprep.hannesdatta.com)
+    - Online data collection and management (*new*, odcm.hannesdatta.com)
+    - MSc Thesis supervision (thesis.hannesdatta.com)
     - Research in Social Media (*legacy*)
-    - Data preparation and workflow management (*new*)
-    - Online data collection and management (*new*)
+- Tilburg Science Hub (http://tilburgsciencehub.com)
 
 ::: notes
 
@@ -77,7 +90,7 @@ If you haven't done so, navigate to the course page at [odcm.hannesdatta.com](ht
 
 
 :::
-
+<!--
 ## Current research interest
 
 __Impact of digitization on consumers, producers__
@@ -90,11 +103,13 @@ __Impact of digitization on consumers, producers__
     - Platform incentives & production of music
 - More: see [website](https://hannesdatta.com)
 
+-->
 
 # About you
 
 ## Getting to know you
 
+<!--
 > - Where are you located? (city, country)
 > - Why are you interested in Marketing *Analytics*?
 > - Where do you see yourself in a few years from now (professionally)?
@@ -108,56 +123,43 @@ __Impact of digitization on consumers, producers__
 
 Consider using polling software for these questions (to increase response rate)
 
+- Who's taking only this course (and not dprep)
 - What stage are you in?
 - What are you working on right now?
 - What's your ambition with your study program?
 
 ## Covid-19
 - Where are you at right now?
-- Home office, on a scale from 1 to 10...?
-- Wanna have
--    the last half-an-hour of this with a borrel? ;)
+- How much do you like your home office, on a scale from 1 to 10...?
+- How lonely are you?
+- Wanna have the last half-an-hour of this with a borrel (eventually) - we can plan it? ;)
 
 :::
 
 # Motivation for course
 
-## Disclaimer
-
-> - Course runs for the first time (buggy!)
-- Course is public, live streams are not
-- Streams are complements, not substitutes for working through self-study material
-- Mix of students at various levels
-- Consider me your coach, not your professor
-- Slow me down
-- Know the course website inside-out
-- I'm a marketer, not a data or computer scientist
-
-::: notes
-
-
-- I'm a marketer
-    - I do marketing analytics
-    - It’s close to data science in terms of data acquisition, but...
-    - rather distant in terms of methods (e.g., ML methods only enter the field gradually; we’re mostly applied econometricians)
-
-- In the (spontaneous) exercises, I may not know all the answers all the time – but will deliver later if required
-
-:::
-
 ## Mr. Spotify
+
+- started out as a PhD student without data
+- was interested in music, and found website with data (https://last.fm)
+- no best practices in scraping; learnt all by myself and made many mistakes
+- scraping undervalued in academic job market, __but__, key role in shaping relevance and rigor of your work
 
 
 ::: notes
 
 - The story about the legal issues you faced (prior to switching to Chartmetric)
+
 - Show example of Chartmetric API output (a website with lots of text)
+
 - Unfortunately, not every websites provides an API
 
 :::
 
+## Bol.com - scraping
 
-## Opportunities for Web Scraping
+A demo of a simple __web scraper__ on Bol.com
+
 
 ::: notes
   - In principle, everything you see can be obtained
@@ -165,70 +167,117 @@ Consider using polling software for these questions (to increase response rate)
 
 :::
 
+## Getting inspired...
+
+What are cool websites/services you always wanted to get data from?
+
+What for?
+
+
+## Chartmetric.com - APIs
+
+A demo of a simple __API__
+
+## Opportunities from web scraping
+
+- Increase relevance
+  - e.g., be more timely, address a wider set of stakeholders (e.g., firms, markets, consumers, products, brands)
+
+- Increase rigor
+  - e.g., from cross-sectional studies to longitudinal studies
+  - e.g., meet more rigorous identification requirements, think about biases
+
 
 # This course
 
-## Course objectives
+## Course objectives (I)
 
 - Identify online data sources and evaluate their value in the context of a specific research question or business problem
 - Assess the terms and conditions for collecting, storing, and sharing data
 - Collect data via web scraping and Application Protocol Interfaces (APIs) by mixing, extending and repurposing code snippets
+
+## Course objectives (II)
+
 - Transform semi-structured JSON data to structured data sets for statistical analysis (“parsing”)
 - Store and manage data using file-based systems
 - Draft, execute, monitor and audit online data collections locally and remotely
 - Document and archive collected data, and make it available for public (re)use
 
-## Modules
-1. Research and business opportunities
-2. Data availability and research fit
-3. Skill-building
-4. Data extraction plan
-5. Skill-building
-6. Data collection & packaging
-7. Project
-8. Course summary
+## Course structure
 
+- Weekly modules, structured along the *workflow for online data collections*
+  - Self-study
+  - Tutorial
+  - Live stream for feedback & immersive activities
 
-::: notes
+- Project in which you put into practice your skills from the weekly modules
 
+## Workflow for collecting online data
 
-
-:::
+1. Opportunity Identification
+2. Data Availability Assessment
+3. Evaluation of Research Fit and Resource Use
+4. Technical Extraction Plan and Prototyping
+5. Evaluating legal and ethical concerns
+6. Collecting and monitoring
+7. Preprocessing and Documentation
+8. Using, Distributing and Maintaining
 
 ## Tutorials
 
-- Software Installation & Python Bootcamp
-- Webdata for dummies
-- Web scraping 101 & APIs 101 (both)
-- Web scraping Advanced & APIs Advanced (one of both)
+- Themes
+  - Software Installation & Python Bootcamp
+  - Webdata for dummies
+  - Web scraping 101 & APIs 101 (both)
+  - Web scraping & APIs Advanced (one of both)
+  - Documentation and Packaging
+
+- Structure: Importance, Let's try it out, Exercises, Wrap-up
 
 ::: notes
 choice for web scraping & apis depends on group project
 
-structure:
-* Importance
-* Let's try it out!
-* Exercises
-* Wrap-up
-*
 :::
 
+## Course positioning
+
+<img width="1000" alt="Course framework" src="odcm_positioning.png">
+
+## Course website
+
+odcm.hannesdatta.com
+
+::: notes
+
+- Will show you the course website now
+* show on the website where they can find the information they need
+* how to download the files (right click)
+
+:::
 
 ## Canvas versus the web
 
-- Canvas is only used for
+- The course website is your #1 resource
+
+- Canvas only used for
   - posting important announcements,
   - sign up for teams,
   - submitting data challenges/projects, and
   - discussion board.
 
-- The course website shows the syllabus and grading details
+::: notes
+
+all students have Canvas access?
+
+:::
 
 ## Live streams
 
-- use the public chat (tell me if I don't see it! who can take that role?)
-- maybe share screen (install [TeamViewer](http://tilburgsciencehub.com/setup/teamviewer))
-- if you have, use two screens (one to program, one to view slides/others)
+- use the public chat
+- use it like on Twitch or YT (massively); question to me: prefix with `???`
+- help me as a moderator if I miss questions
+- maybe share screen (install [TeamViewer](http://tilburgsciencehub.com/building-blocks/configure-your-computer/automation-and-workflows/teamviewer/))
+- if you have, use two screens (one to code, one to view colleagues/slides)
 
 
 ## Python Bootcamp
@@ -241,16 +290,15 @@ From zero to hero
 - really try to solve the exercises on your own before looking at the solutions
 - If you're new to Python important to schedule time for this course (in week 1 also the Webdata for dummies tutorial kicks off)
 
-
 - Demo: View preview of notebooks on Github (without having to download it first)
-  - Sometimes you may  need to refresh the page
+- Sometimes you may  need to refresh the page
+
 :::
 
 ## Project
 
 - specifics to be made available on the course website
 - self- and peer assessment
-  - "proof of investment in skills" (submitted tutorials/data challenges)
   - written feedback to team members (tba)
   - assessment of own performance and that of team members
 
@@ -264,13 +312,13 @@ From zero to hero
 
 ## Grading
 
-  - Team project (50%)
-  - Share individual progress and learnings (10%)
-  - Computer exam (40%)
+- Team project (50%)
+- Share individual progress and learnings (10%)
+- Computer exam (40%)
 
 ::: notes
 * 50% team project = (40% + 10% individual assessment on the basis of self- and peer assessment)
-* What do you mean with "Share individual progress and learnings "
+* What do you mean with "Share individual progress and learnings"?
 * Both multiple choice and open questions (you can't pass this course if you don't learn programming -> make sure you actively participate in the team project so that you can replicate it individually)
 
 :::
@@ -280,29 +328,24 @@ From zero to hero
 
 - Get up to speed with both web scraping and APIs (and know when to pick which one!)
 - Learn Python, __but__, becoming an expert requires years of practice
-- Discuss own work and ideas
-- __But__: requires interaction, talking to me, working hard
+- Discuss own work and ideas, __but__ requires interaction, talking to me, working hard
 
 
 ::: notes
 
-- Other's efficiency
-    - Not recollect what has been collected
-    - Not reprogram what has been programmed
-    - Learn from one's code, etc.
-    - Share ideas
 - Light-weight structure: no commercial tools, readily implementable, do not need admin rights [...]
 
 :::
 
-## Comments on coding
+## Brain-dead by coding
 
 - Coding can be extremely frustrating if you're starting out
-- You will learn from your mistakes
+- I tend to become semi-"brain-dead" after a day of coding
 - Take breaks! Stop coding. Go for a run. Start again.
-- Use cheat sheets. See course site.
-- [Support section](https://odcm.hannesdatta.com/docs/course/support/)
+- You will learn from your mistakes
+- Use cheat sheets and our support section.
 
+&#8594; quick feedback loops in first few weeks
 
 ::: notes
 
@@ -310,16 +353,14 @@ Mention how we aim to remedy this initial hurdle? (quick feedback loops especial
 
 :::
 
+## Steps of escalation & getting in touch
 
-## Help
+When you run into trouble, this is your way out!
 
-Make computer throws an error. What now?
-1. Google
-2. Ask a friend/classmate
-3. Google
-4. Ask a friend/classmate
-5. Ask course instructor
-
+1. Ask Google and Stackoverflow
+2. Ask friend/classmate (form groups!)
+3. Can it wait? Defer to live streams.
+4. If it can't wait: be in touch with me
 
 ::: notes
 
@@ -328,22 +369,27 @@ Make computer throws an error. What now?
 * Comment on experiment with live coding sessions (start a call - talk to fellow classmates who're facing the same struggles)
 
 
-
 :::
+
+## Use of WhatsApp
+
+- Please use WhatsApp for short questions: +31 13 466 8938.
+- Send me your names (first and last names) now (so I can create contacts on my phone and know whom I'm talking to)
+- More info on the support section of the course website
+- Email is not so optimal
+
 
 ## What's in for you?
 
-- Essential job market skills
-  - get the jargon, know your tools
-  - marketing is much more than blabla - high-tech!
+- Essential skills for entrepreneurs
+  - e.g., have your own company on the basis of web data and APIs
+  - be the linking pin (interface between marketing and analytics)
 
-- Essential to show expertise
-  - potential for follow-ups here in Tilburg and beyond
+- Investment in research skills
+  - e.g., collect own data & shape its creation to create relevant and rigorous research
 
-- Exiting area
-  - new business models
-  - new methods
-  - new technologies
+- Showcast expertise in coding
+
 
 ## Success factors
 
@@ -355,22 +401,33 @@ Please tell me __what would make this course a success__ for you
 
 :::
 
-## Being in touch
-
-- WhatsApp
-  - Please use WhatsApp for short questions: +31 13 466 8938
-  - Submit your name and telephone number on Canvas (so I can create contacts on my phone and know whom I'm talking to)
-- More info on the support section of the course website
-
-
 ## Getting started
 
-- Install Python/Anaconda an do the Python Bootcamp
-- Web data retrieval for dummies (tutorial)
+- Install Python/Anaconda and do the Python Bootcamp (all done?)
 
-- Any questions?! If not -- I'll see you in the live stream on Friday! (--> course schedule).
+- This week
+  - Tutorial for "web data retrieval for dummies"
+  - First part of the "web scraping workflow" (overview & opportunities)
 
-- Installation issues: stay on Zoom.
+- Preparation for Friday
+
+## Next session
+
+Friday, 5 February, 2021 (08:45 - 10:30)
+Prepare a list of research and business ideas (in the realm of web scraping and APIs)
+
+::: notes
+
+See Opportunity identification section on the website
+
+:::
+
+
+## Any questions?
+
+Stick around now if you have questions.
+
+(e.g., installation issues, prep week)
 
 ::: notes
 
@@ -381,46 +438,9 @@ Please tell me __what would make this course a success__ for you
 
 :::
 
-## Any questions?
-
-
-# Wrap-up
-
-## Summary
-
-What are __your__ takeaways?
-
-## Met the objective?
-
-Apply web scraping and API parsing strategies to collect data from a variety of online sources
-
-## Your feedback
-
-- About this course
-    - About me
-    - The format of this course
-    - Communication
-- About Tilburg Science Hub
-    - About the text mining tutorial
-    - About the installation instructions
-    - About the overall workflows
-- ...anything else
-
-
-## Next session
-
-Friday, 5 February, 2021 (08:45 - 10:30)
-Prepare a list of research and business ideas (in the realm of web scraping and APIs)
-
-
-::: notes
-
-See Opportunity identification section on the website
-
-:::
-
-
 ## Contact
+
+Thanks a lot, and have fun with the course!
 
 Hannes Datta
 

@@ -5,3 +5,6 @@ public/*
 *.csv
 content/docs/tutorials/exam/Untitled.ipynb
 content/docs/tutorials/pythonbootcamp/two_lines.txt
+slides/reveal.js/
+slides/gen/
+./reveal.js

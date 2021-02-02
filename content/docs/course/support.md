@@ -36,7 +36,7 @@ It's simply a matter of the order. `if` refers to the first condition and `elif`
 It's an empty list. More often than not, it's defined at the top of a function after which items are appended to it.
 
 *How should I interpret `discount_rate += 0.10`?*  
-It means take the current value of `discount_rate` and and 0.10 to it. So, say that `discount_rate = 0.10` and run `discount_rate += 0.10` its value becomes `0.20`.
+It means take the current value of `discount_rate` and add 0.10 to it. So, say that `discount_rate = 0.10` and you run `discount_rate += 0.10` its value becomes `0.20`.
 
 *Why is indenting code especially important in for-loops?*       
 It tells the computer when to break out of a loop. The function below already returns its value after 1 iteration because the `return` statement is part of the loop.
@@ -48,7 +48,7 @@ for counter in range(10):
    return sum
 ```
 
-Actually, it makes more more sense to first finish the loop and only then return the value of `sum`. Like this (i.e., `return` is unindented here!):
+Actually, in this case it makes more sense to first finish the `for` loop and only then return the value of `sum`. Like this (i.e., `return` is unindented here!):
 
 ```
 sum = 0

@@ -7,6 +7,7 @@
 ## Hi there!
 
 Please turn on your camera :)
+The chat is open - use it like on Twitch/YouTube to also talk to each other; use prefix `???` to ask a question to me, or `!!!` to shout something to me ("hey, slow down!")
 
 If you haven't done so, navigate to the course page at [odcm.hannesdatta.com](https://odcm.hannesdatta.com)
 
@@ -169,9 +170,9 @@ A demo of a simple __web scraper__ on Bol.com
 
 ## Getting inspired...
 
-What are cool websites/services you always wanted to get data from?
+What are cool websites/services you're currently using a lot?!
 
-What for?
+Put them in the chat now!
 
 
 ## Chartmetric.com - APIs
@@ -190,28 +191,6 @@ A demo of a simple __API__
 
 # This course
 
-## Course objectives (I)
-
-- Identify online data sources and evaluate their value in the context of a specific research question or business problem
-- Assess the terms and conditions for collecting, storing, and sharing data
-- Collect data via web scraping and Application Protocol Interfaces (APIs) by mixing, extending and repurposing code snippets
-
-## Course objectives (II)
-
-- Transform semi-structured JSON data to structured data sets for statistical analysis (“parsing”)
-- Store and manage data using file-based systems
-- Draft, execute, monitor and audit online data collections locally and remotely
-- Document and archive collected data, and make it available for public (re)use
-
-## Course structure
-
-- Weekly modules, structured along the *workflow for online data collections*
-  - Self-study
-  - Tutorial
-  - Live stream for feedback & immersive activities
-
-- Project in which you put into practice your skills from the weekly modules
-
 ## Workflow for collecting online data
 
 1. Opportunity Identification
@@ -223,16 +202,42 @@ A demo of a simple __API__
 7. Preprocessing and Documentation
 8. Using, Distributing and Maintaining
 
+
+## Course objectives (I)
+
+- __Identify__ online data sources and __evaluate their value__ in the context of a specific research question or business problem
+- Assess the __terms and conditions for collecting, storing, and sharing data__
+- Collect data via web scraping and Application Protocol Interfaces (APIs) by __mixing, extending and repurposing code snippets__
+
+## Course objectives (II)
+
+- __Transform__ semi-structured JSON data to structured data sets for statistical analysis (“parsing”)
+- __Store and manage__ data using file-based systems
+- __Draft, execute, monitor and audit__ online data collections locally and remotely
+- __Document and archive collected data__, and make it available for public (re)use
+
+## Course structure
+
+- Weekly modules, structured along the *workflow for online data collections*
+  - Self-study
+  - Tutorial
+  - Live stream for feedback & immersive activities
+
+- Project in which you put into practice your skills from the weekly modules
+
 ## Tutorials
 
 - Themes
   - Software Installation & Python Bootcamp
   - Webdata for dummies
-  - Web scraping 101 & APIs 101 (both)
-  - Web scraping & APIs Advanced (one of both)
+  - Web scraping 101 & APIs 101 (*both*)
+  - Web scraping & APIs Advanced (*one of both*)
   - Documentation and Packaging
 
-- Structure: Importance, Let's try it out, Exercises, Wrap-up
+- Structure
+  - Importance of what you'll learn
+  - Some simple try-outs
+  - Exercises (with solutions)
 
 ::: notes
 choice for web scraping & apis depends on group project
@@ -246,6 +251,8 @@ choice for web scraping & apis depends on group project
 ## Course website
 
 odcm.hannesdatta.com
+
+TiU Open Education, spread the word
 
 ::: notes
 
@@ -262,7 +269,7 @@ odcm.hannesdatta.com
 - Canvas only used for
   - posting important announcements,
   - sign up for teams,
-  - submitting data challenges/projects, and
+  - submitting quizzes, and
   - discussion board.
 
 ::: notes
@@ -274,7 +281,7 @@ all students have Canvas access?
 ## Live streams
 
 - use the public chat
-- use it like on Twitch or YT (massively); question to me: prefix with `???`
+- use it like on Twitch or YT (massively); question to me: prefix with `???`, shout to me, use `!!!`
 - help me as a moderator if I miss questions
 - maybe share screen (install [TeamViewer](http://tilburgsciencehub.com/building-blocks/configure-your-computer/automation-and-workflows/teamviewer/))
 - if you have, use two screens (one to code, one to view colleagues/slides)
@@ -297,11 +304,17 @@ From zero to hero
 
 ## Project
 
-- specifics to be made available on the course website
-- self- and peer assessment
-  - written feedback to team members (tba)
-  - assessment of own performance and that of team members
+- goals
+  - scrape data via web sites or APIs
+  - work through the entire workflow
+  - receive feedback by students and me (your coach)
 
+- evaluation
+  - specifics are on the course website
+  - we'll have a grading rubric
+  - self- and peer assessment used
+    - written feedback to team members (tba)
+    - assessment of own performance and that of team members (tba)
 
 ::: notes
 - Emphasize that (contrary to dPrep) the group project already starts in week 1
@@ -312,13 +325,16 @@ From zero to hero
 
 ## Grading
 
-- Team project (50%)
+- Team project (50%, including self- and peer assessment)
 - Share individual progress and learnings (10%)
+  - weekly self-evaluation (Quiz on Canvas to indicate your progress); all but one submitted
+  - share learnings in the form of building blocks at Tilburg Science Hub (if requested, or suggested by you)
 - Computer exam (40%)
 
 ::: notes
+
 * 50% team project = (40% + 10% individual assessment on the basis of self- and peer assessment)
-* What do you mean with "Share individual progress and learnings"?
+
 * Both multiple choice and open questions (you can't pass this course if you don't learn programming -> make sure you actively participate in the team project so that you can replicate it individually)
 
 :::
@@ -357,10 +373,11 @@ Mention how we aim to remedy this initial hurdle? (quick feedback loops especial
 
 When you run into trouble, this is your way out!
 
-1. Ask Google and Stackoverflow
-2. Ask friend/classmate (form groups!)
-3. Can it wait? Defer to live streams.
-4. If it can't wait: be in touch with me
+1. Try to find the info on the course website (+ updates!)
+2. Ask Google and Stackoverflow
+3. Ask friend/classmate (form learning groups, e.g., coordinate via discussion board)
+4. Can it wait? Defer to live streams.
+5. If it can't wait: be in touch with me
 
 ::: notes
 
@@ -368,15 +385,17 @@ When you run into trouble, this is your way out!
 * Live demonstration of how to search on Google and Stackoverflow
 * Comment on experiment with live coding sessions (start a call - talk to fellow classmates who're facing the same struggles)
 
-
 :::
 
 ## Use of WhatsApp
 
-- Please use WhatsApp for short questions: +31 13 466 8938.
-- Send me your names (first and last names) now (so I can create contacts on my phone and know whom I'm talking to)
-- More info on the support section of the course website
+- Please use WhatsApp: +31 13 466 8938.
+
+<img width="200" alt="Course framework" src="wa_qr.png">
+
+- Onboarding (names needed!)
 - Email is not so optimal
+- Check out the course's support section
 
 
 ## What's in for you?
@@ -409,7 +428,7 @@ Please tell me __what would make this course a success__ for you
   - Tutorial for "web data retrieval for dummies"
   - First part of the "web scraping workflow" (overview & opportunities)
 
-- Preparation for Friday
+- Preparation for Friday: browse the web for some cool websites/services, identify business opportunities (used for group formation!)
 
 ## Next session
 

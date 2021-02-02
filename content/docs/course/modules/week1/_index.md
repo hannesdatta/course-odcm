@@ -8,7 +8,7 @@ bookCollapseSection: true
 # Week 1: Identifying Research and Business Opportunities From Online Data Collections
 
 ## Livestream 1
-- Introduction to the course <!-- add zoom link-->
+- Introduction to the course ([re-watch](https://youtu.be/b3Fiq3mrsb4))<!-- add zoom link-->
 
 ## Self-study and activities
 - Workflow for collecting online data (Tutorial)

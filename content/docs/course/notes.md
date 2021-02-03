@@ -36,56 +36,17 @@ draft: true
 -	Inclusion of poorly performing students  uitleg momentje voor problems
 
 
-# Week activity draft
+# Notes / edits
 
-## 0. Introduction to the course
-- Lecture
-  - What is web scraping? What are APIs? <!-- to do -->
-  - Course objectives and practical arrangements <!-- to do -->
-  - Visualize course structure (week start is the end of the last module)
+## Live stream 1
 
-## 1. Exploration of research and business opportunities
-- preparation: reading, and a few questions?
-- in-class discussion
+- have screenshots about APIs and webscrapers
+- have a video in which I show a scraper at work
 
-<!-- post link here
-Discussion: Structuring potential research and business ideas
+## Live stream 2
 
-<!--
 
-- Generate groups on the fly: academic versus business; API vs. web scraping; substantive areas in which you're interested; initial research ideas
 
-- Create break-out groups: 20-30m of discussion
-- Leading questions:
-  - What's hot right now?
-  - What are important phenomena?
-  - What excites you about research?
-  - Which websites do you spend a lot of time on?
-  - What websites would be cool to monitor today?
-  - Have you used an API before?
-  - Have you stumbled upon some interesting documentation?
-
-  - What excites you?
-  - Search for websites: what do they show?
-  - Search for APIs: what do they show? Are they accessible?
-  - Why is it an important phenomena, whom does it affect?
-
-- Come back in the "big room" + quick presentation + feedback
-
-- The result is a board with websites, and people that are interested in it
-- Subscribe to at least 3 data sources.
-
-- Together with other team members, fill in the "steckbrief" of these sites
-
-<!--[split by academic research/ topic, vs. business): generating ideas for potential data sources / phenomena ("what's hot right now? What are important phenomena?", "what excites you about a potential area? what would be cool websites to monitor today?"
-
-- Discuss: in which area does it fall? are people monitoring that site already? what capture would you hope to achieve? is this more "investment in data?"/"timeliness", or more robustness? is this more a covariate or a key thing?
-
-- breakout groups: academia/business
-- presentation to the entire group
-- generate list of websites and APIs, and allocation to teams (4-5 students)
-
--->
 
 ## Data availability and research fit
 - Preparation

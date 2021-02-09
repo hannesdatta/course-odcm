@@ -108,7 +108,7 @@ Since the amount of data may well exceed file size limits of email, we ask you t
 - Submission via [Surf Filesender](https://filesender.surf.nl); send to h.datta@tilburguniversity.edu in one zip file (one email per team).
 
 - If you are also taking ["Data Preparation and Workflow Management" (dPrep)](https://dprep.hannesdatta.com)...
-  - You can use the data collected in this course for the team project in dPrep, under the condition that at least *three* team members participate in both the oDCM and dPrep teams.
+  - You can use the data collected in this course for the team project in dPrep. The team project in dPrep runs in weeks 6-8, but you definitely need your raw data in week 5 at the latest (to prep well for week 6). In other words: generating some synergies between dPrep and oDCM comes at the cost of working on this project soon enough!
   - Please submit your entire workflow ("the same submissions") for each of the two courses, consisting of
     - your data collection, the raw data, and its documentation (focus of oDCM), and
     - the entire project pipeline (focus of dPrep, consisting of data exploration, data preparation, automation and deployment).

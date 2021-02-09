@@ -23,9 +23,9 @@ The focus lies on *completing the complete [workflow for collection online data]
 
 - Week 1: Seek inspiration for data sources and interesting ideas to conduct academic research or invest into new business opportunities
 <!--; the result of that session is a list of project ideas (i.e., with NEW ideas) that students can potentially work on; updates-->
-- Week 2: Finalize team compositions, discuss data availability and research fit
+- Week 2: Finalize team compositions, assess data availability and evaluate research fit & resource use
 - Weeks 3-5: Build skills (APIs, web scraping), prototype data collection
-- Weeks 6-8: Collect your data, and document it for reuse
+- Weeks 6-8: Collect your data, and [document it for reuse](faq.md)
 
 <!--
 
@@ -76,7 +76,45 @@ Since the amount of data may well exceed file size limits of email, we ask you t
 
 ## Deadline and submission
 - 26 March 2021, 6pm
+- Please prepare a data package, consisting of
+  - the raw data files,
+  - the code you used to collect the raw data (i.e., your scraper/API collection script)
+  - the documentation,
+  - and any source code files required to report statistics/preliminary insights in the documentation.
+
+  ```
+  readme.txt <-- your documentation,
+                 either in the form of a plain txt file,
+                 or a formatted PDF document
+
+  docs\api_documentation.pdf <-- any supporting files
+  docs\screenshot.pdf            for the documentation
+                                 (e.g., API documentation,
+                                 screenshots from the website,
+                                 relevant blog articles)
+
+  data\file1.csv <-- your raw data files
+  data\file2.csv
+  data\file3.csv
+
+  src\collection\collect.py <-- final source code used
+                                for collecting the data
+
+  src\reporting\analysis.R <-- final source code used
+                       to generate statistics/insights documented
+                       in the readme.
+
+  ```
 - Submission via [Surf Filesender](https://filesender.surf.nl); send to h.datta@tilburguniversity.edu in one zip file (one email per team).
+
+- If you are also taking ["Data Preparation and Workflow Management" (dPrep)](https://dprep.hannesdatta.com)...
+  - You can use the data collected in this course for the team project in dPrep, under the condition that at least *three* team members participate in both the oDCM and dPrep teams.
+  - Please submit your entire workflow ("the same submissions") for each of the two courses, consisting of
+    - your data collection, the raw data, and its documentation (focus of oDCM), and
+    - the entire project pipeline (focus of dPrep, consisting of data exploration, data preparation, automation and deployment).
+  - For oDCM, please *zip* your entire pipeline (so we're sure to get all the files for grading).
+  - For dPrep, please only provide us with the link to your GitHub repository.
+
 
 <!--
 ## Deliverables

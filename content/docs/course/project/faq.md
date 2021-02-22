@@ -2,14 +2,16 @@
 bookFlatSection: true
 title: "FAQs"
 bookHidden: false
-weight: 4
+weight: 5
 ---
 
 # FAQs
 
 ## Documentation
 
-To document your data collection, please start from the [template](http://tilburgsciencehub.com/workflow/documenting-data/).
+To document your data collection, please start from the [template](../Datasheets_for_DataSets.zip).
+
+
 
 ### Tips for filling in the documentation
 -	Try to answer the questions to the best of your ability.
@@ -39,3 +41,5 @@ Please answer all questions.
 Please answer all questions.
 
 7. __Section 6 (Distribution) and section 7 (Maintenance):__ Please skip these sections, but leave them unanswered in the document.
+
+

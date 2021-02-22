@@ -1,6 +1,6 @@
 ---
 bookFlatSection: true
-title: "Project Ideas"
+title: "Project ideas"
 bookHidden: false
 weight: 3
 ---

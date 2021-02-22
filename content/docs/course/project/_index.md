@@ -25,7 +25,7 @@ The focus lies on *completing the complete [workflow for collection online data]
 <!--; the result of that session is a list of project ideas (i.e., with NEW ideas) that students can potentially work on; updates-->
 - Week 2: Finalize team compositions, assess data availability and evaluate research fit & resource use
 - Weeks 3-5: Build skills (APIs, web scraping), prototype data collection
-- Weeks 6-8: Collect your data, and [document it for reuse](faq.md)
+- Weeks 6-8: Collect your data, and document it for reuse
 
 <!--
 
@@ -76,7 +76,7 @@ Since the amount of data may well exceed file size limits of email, we ask you t
 
 ## Deadline and submission
 - 26 March 2021, 6pm
-- Please prepare a data package, consisting of
+- Please prepare a [data package](grading_details), consisting of
   - the raw data files,
   - the code you used to collect the raw data (i.e., your scraper/API collection script)
   - the documentation,
@@ -106,6 +106,7 @@ Since the amount of data may well exceed file size limits of email, we ask you t
 
   ```
 - Submission via [Surf Filesender](https://filesender.surf.nl); send to h.datta@tilburguniversity.edu in one zip file (one email per team).
+- Check out the [grading details before starting to work on your project](grading_details).
 
 - If you are also taking ["Data Preparation and Workflow Management" (dPrep)](https://dprep.hannesdatta.com)...
   - You can use the data collected in this course for the team project in dPrep. The team project in dPrep runs in weeks 6-8, but you definitely need your raw data in week 5 at the latest (to prep well for week 6). In other words: generating some synergies between dPrep and oDCM comes at the cost of working on this project soon enough!

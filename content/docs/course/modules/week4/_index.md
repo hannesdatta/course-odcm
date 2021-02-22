@@ -23,7 +23,7 @@ bookCollapseSection: true
 ## Activities
 
 - Please work on your [technical extraction plan](docs/tutorials/workflow/extraction-plan-prototyping.md), and assess the [legal and ethical concerns](docs/tutorials/workflow/legalfit.md) of your data collection project.
-- You can submit - for live feedback - one or more of the following works:
+- You *can* submit - for live feedback - one or more of the following works. Note that it is not *mandatory* to upload material. Instead, the submissions should be seen as a way to receive feedback on your projects.
 
   - A short slide deck (max. 2 slides), in which you show which __entities you plan on getting (+ its extraction frequency)__, and what __particular variables__ you plan on selecting.
     - When submitting, please label your files as `entities_teamXX.pptx` and `entities_teamXX.pdf`.

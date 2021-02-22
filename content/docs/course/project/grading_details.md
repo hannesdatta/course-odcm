@@ -8,14 +8,11 @@ weight: 4
 # Grading details
 
 ## Overview
-The team project is submitted as a so-called “data package”, consisting of the following three elements: 
+The team project is submitted as a so-called “data package”, consisting of the following three elements:
 
 1. Documentation (60% of the final grade)
 2. Source code for the scraper(s) (30% of the final grade)
 3. Overall quality of the data package (10% of the final grade)
-
-Please follow [Datasheets for Datasets](https://arxiv.org/pdf/1803.09010.pdf) (2018) in writing your documentation. An [empty template](../Datasheets_for_DataSets.zip) is available on the course website. In the grading details below, numbers (#1, #1.4, etc.) refer to sections in the final documentation.
-
 
 ## Calculation of team grades
 Weights for each component of the grading rubric below are indicated in brackets (e.g., 5%). In calculating your final grade, percentages are converted to grade points on a ten-point scale (e.g., 5% make up 0.5 grade points on a 10-point scale), weighted by the following percentages:
@@ -39,6 +36,8 @@ Weights for each component of the grading rubric below are indicated in brackets
 
 ### **1. Documentation**
 
+Please follow [Datasheets for Datasets](https://arxiv.org/pdf/1803.09010.pdf) (2018) in writing your documentation. Use the [template](../Datasheets_for_DataSets.zip) to get started! In the grading details below, numbers (#1, #1.4, etc.) refer to sections in the final documentation.
+
 #### 1.1 Motivation (10%)
 - *Motivation for data context (5%)*  
 Clear explanation of the value in collecting the data (“task in mind”), either in the context of a specific research question or business problem. The data collection potentially generates insights into new phenomena. There is clearly value to the larger research community in using the data. Comparable data sets are not available at all, or not publicly available.
@@ -51,7 +50,7 @@ A range of relevant websites and APIs pertaining to the data context is assessed
 The composition of the data is described in detail and accessible to novel users of the data. Potential users learn about which entities are available in the data set, for what time period, and how they are linked to each other. Potential linkages to external data sets are made explicit (e.g., by means of links to external websites or sources that explain more about the used identifiers). Potential algorithmic biases have been identified and clearly explained.
 
 - *Sampling, construct measurement and data structure (5%)*  
-For each entity, it is explained how the data was sampled, and how variables are measured. Details are given how the data is available (e.g., by means of CSV files per entity, as a combined data set, etc.). 
+For each entity, it is explained how the data was sampled, and how variables are measured. Details are given how the data is available (e.g., by means of CSV files per entity, as a combined data set, etc.).
 
 - *Data inspection per entity (10%)*  
 Each set of entities is accompanied by meaningful summary statistics (e.g., the number of units per entity, means/SD for continuous variables, and frequency distributions per variable, for each entity). Missingness has been investigated (e.g., for individual entities, but also for the collected variables). Any redundancies, errors, or sources of noise have been clearly described. Identified subpopulations are labeled, so that users of the data can more easily get started using the data.
@@ -60,7 +59,7 @@ Each set of entities is accompanied by meaningful summary statistics (e.g., the 
 #### 1.3 Collection process (15%)
 - *Technical extraction plan (10%)*   
 The technical extraction plan has been described in a way that the data collection could be replicated. This encompasses providing a solid argumentation on why a particular data extraction technology used (e.g., selenium versus Beautifulsoup for websites, a package versus self-coded requests for APIs). It is clear how entities were sampled from the site, and how the navigation scheme was implemented. In particular, users of the data learn about the technical hurdles that needed to be overcome, and which monitoring was in place to guarantee (and validate) data quality. Finally, details are given on how (deployment infrastructure) and when the data collection was executed (e.g., by meaningful summaries of the timestamps in log files), and where the final data set was stored during the collection.
-Legal and ethical concerns (5%): For #3.6, the potential legal and/or ethical concerns that may be relevant for the collected data are carefully described. 
+Legal and ethical concerns (5%): For #3.6, the potential legal and/or ethical concerns that may be relevant for the collected data are carefully described.
 
 
 #### 1.4 Preprocessing (10%)
@@ -74,7 +73,7 @@ The files have a correct data structure, and variables are of the correct type (
 * *Users of the data learn about tasks the data set could be used for (5%)*  
 From the description, it is clear how the composition of the data set or the way it was preprocessed might affect future use. A clear indication is given for what the data should not be used for, e.g., relating to any of the legal or ethical concerns identified before.
 
-  
+
  ### **2. Source Code**
 - *Quality of the submitted source code (10%)*  
   - Present and clearly readable (e.g., variable names that are meaningful)
@@ -82,14 +81,14 @@ From the description, it is clear how the composition of the data set or the way
   - Well structured code (e.g., functions)
   - Adhere to DRY principles (e.g., for-loops and functions)
   - Concise code (e.g., list and dictionary comprehensions)
-  - With comments and docstrings 
+  - With comments and docstrings
   - Code blocks run in a linear fashion (i.e., top to bottom execution runs without issues)
   - File paths are specified relative to the current script, no absolute paths used
   -  Error-handling incorporated (e.g., does the scraper still run if the API changes)
 
-- *Quality of the technical implementation (15%)* 
+- *Quality of the technical implementation (15%)*
   - The quality of the technical implementation is judged for web scraping and APIs, as per some of the following dimensions.
-  
+
   - **Web scraping**
     - A single vs multiple entities / web pages
     - Degree of complexity required to obtain data (e.g., static websites with a fixed class name vs social media which requires more dynamic approaches such as clicking on buttons and navigating across pages)
@@ -98,7 +97,7 @@ From the description, it is clear how the composition of the data set or the way
     - Uniqueness (e.g., a combination of data collected through an API and web scraping)
 
   - **APIs**
-    - A single vs multiple API endpoints 
+    - A single vs multiple API endpoints
     - Making complex API queries (e.g., chaining a multitude of parameters)
     - Applying pagination strategies (e.g., API results are spread across multiple pages)
     - Just using a package (“plugging in API key, that’s it”), versus actually written code
@@ -115,5 +114,14 @@ From the description, it is clear how the composition of the data set or the way
 * No unnecessary files
 * Inclusion of meaningful supportive files (e.g., API documentation, screenshots, a video of the scraper in action)
 * Raw data files all present
-* Documentation properly formatted 
+* Documentation properly formatted
 
+
+### Tips for filling in the documentation
+-	Try to answer the questions to the best of your ability.
+    - Imagine you would have to work with this data in the future – how would you write up the documentation so that you (and your future self) may understand it?
+    - In your writing, be as concise as possible. We’ve had some recent experience using tools like Grammarly to improve our writing (there is a free version available), but there are certainly alternatives available!
+    - The original paper on which the readme template is based on provides a few helpful (filled in) examples that may provide some inspiration.
+
+- Please pick a good name for your dataset. This name will be the first thing potential users of your data will see.
+- Please skip sections 6 and 7 of the documentation (distribution and maintenance). Please get rid of the example text though.

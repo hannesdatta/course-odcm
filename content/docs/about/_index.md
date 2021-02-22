@@ -37,6 +37,11 @@ The content of the tutorials has been inspired by a variety of online resources:
 
 -->
 
+## Open Science
+This course adheres to the principles of the [Open Science Community](https://www.tilburguniversity.edu/research/open-science-community) of Tilburg University. This initiative advocates for transparency and accessibility in research and teaching to all levels of society and thus creating more accountability and impact.
+
+[![](open-science-logo.png)](https://www.tilburguniversity.edu/research/open-science-community)
+
 
 ## License
 

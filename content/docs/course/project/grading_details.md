@@ -109,7 +109,7 @@ From the description, it is clear how the composition of the data set or the way
 
 
 
-### **3. Submission Format & Style**
+### **3. Data Package**
 * Submitted in the right way (zip file)
 * Correct / accessible directory structure
 * No unnecessary files

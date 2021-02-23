@@ -9,7 +9,9 @@ bookCollapseSection: true
 
 ## Live stream 4
 - Tutorial Q&A for [web scraping 101](docs/tutorials/webscraping101) and [APIs 101](docs/tutorials/apis101)
-
+  - Re-watch [part 1 - introduction](https://youtu.be/GtkOC28O25I)
+  - Re-watch [part 2 - web scraping 101](https://youtu.be/DpiLsc62f0E)
+  - Re-watch [part 3 - APIs 101](https://youtu.be/e8sLCx1HXnY))
 
 ## Self-study
 - Workflow for collecting online data (Tutorial)

@@ -23,7 +23,7 @@ After browsing the web for a while, I found this amazing social network for musi
 
 {{< /hint >}}
 
-Rather than a mere gut feeling, researchers may also have specific goals on their mind to improve the relevance or rigor of their research. For example, including data collected from the web in one's study allows researchers to __observe behavior *that occurred in the real world**__. Such behavioral data may complement experimental data generated (e.g., such as generated in labs or via online surveys), and hence improve the external validity of their research. Also, data collected via web scraping or APIs allows researchers to __increase the timeliness of their work__. Researchers that use data collected via web scraping or APIs can capture information that otherwise has not been structured or observed yet by commercial data suppliers.
+Rather than a mere gut feeling, researchers may also have specific goals on their mind to improve the relevance or rigor of their research. For example, including data collected from the web in one's study allows researchers to __observe behavior that occurred in the real world__. Such behavioral data may complement experimental data generated (e.g., such as generated in labs or via online surveys), and hence improve the external validity of their research. Also, data collected via web scraping or APIs allows researchers to __increase the timeliness of their work__. Researchers that use data collected via web scraping or APIs can capture information that otherwise has not been structured or observed yet by commercial data suppliers.
 
 ## For Business
 

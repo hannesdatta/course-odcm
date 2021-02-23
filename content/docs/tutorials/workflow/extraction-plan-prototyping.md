@@ -62,7 +62,7 @@ Finally, for each entity, select the data you would like to extract. Determine h
 
 #### Data from websites
 
-Numerous packages (e.g., `BeautifulSoup` in Python) exist that parse and structure data for you. Still, the challenge is to identify *how to locate the elements* to extract information on. It's not without a good reason that the Python package is called __`BeautifulSoup` - the "soup" of information can easily be overwhelming!
+Numerous packages (e.g., `BeautifulSoup` in Python) exist that parse and structure data for you. Still, the challenge is to identify *how to locate the elements* to extract information on. It's not without a good reason that the Python package is called __`BeautifulSoup`__ - the "soup" of information can easily be overwhelming!
 
 Luckily, unstructured web data is actually pretty organized. The reason is that many years ago, the pioneers of the worldwide web developed a standard for how code is visually rendered on websites. Even decades after the invention of this standard - HTML (or, hypertext markup language) -, the web relies on more or less of the same conventions: elements in your website's HTML source code - such as headers, bodies of texts, links, or images, all have particular characteristics. Once you know the characteristics of your target elements, extracting information from them becomes straightforward.
 

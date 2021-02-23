@@ -21,6 +21,8 @@ bookCollapseSection: true
   - Data capture and enrichment *prerecorded*
   - Deployment *prerecorded*
 - Legal and ethical considerations when scraping <!-- *reading* [tba]-->
+- Optional: Watch this screen cast in which I try to figure out how to [obtain data from an API that I haven't seen before](https://youtu.be/iDA710TPXT0)
+  - The video may be particularly useful to students who wish to extract data from an API for their team projects.
 
 ## Activities
 

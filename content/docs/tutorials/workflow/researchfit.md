@@ -50,26 +50,56 @@ What makes sampling in web scraping difficult is that you also need to take into
 
 __Calculating technically feasible sample sizes__
 
-Your study's technically feasible sample size (or any other parameter) can be calculated using the following formula:
-
-{{< katex display  >}}
-req \times S = N \times r \times freq
-{{< / katex >}}
-
-whereby
-- req = number of requests per time unit per scraper,
-- S = number of scrapers (e.g., computers, API tokens),
-- N = number of entities to extract data from (i.e., sample size),
-- r = number of requests to collect data for each entity, and
-- freq = desired sampling frequency per time unit.
-
-Note you can rearrange the formula to solve it for any target parameter of interest. For example,
+The technically feasible sample size – i.e., the sample size that can be obtained from a website or API while considering resource constraints, can be calculated as:
 
 {{< katex display  >}}
 N = \frac{req \times S}{r \times freq}
 {{< / katex >}}
 
-would solve for the maximum sample size, given the number of requests you can make on a day per scraper (retrieval limit *req* by the site), the number *S* of scrapers you're employing (e.g., you're running the scraper on multiple computers), the number of requests *r* you make per entity (e.g., visiting two product pages per sampled unit), and - finally - the desired sampling frequency *freq*.
+whereby
+- N = sample size (i.e., number of instances of an entity to extract data from),
+- req = retrieval limit (maximum number of requests per time unit, allowed for each scraper or authenticated API user)
+- S = number of scrapers used (e.g., computers with separate IP addresses, or authenticated users of an API),
+- r = number of URL calls to make to obtain data for each instance, and
+- freq = the desired sampling frequency for each entity per time unit.
+
+Convert all input parameters to the same time unit (e.g., the retrieval limit may initially be expressed in fifteen-minute intervals but needs to match the desired sampling frequency, which may be expressed in hours)!
+
+The formula can be rearranged to solve it for different target parameters (e.g., given the desired sample size, what is the maximum attainable sampling frequency?).
+
+{{< katex display  >}}
+
+freq = \frac{req \times S}{r \times N}
+
+{{< / katex >}}
+
+{{< /hint>}}
+
+
+{{< hint tip >}}
+__Example calculation__
+
+Suppose you wish to know the technically feasible sample size for collecting data from an online social network. In other words, you want to solve for N.
+
+The input parameters are:
+
+- req = 5 requests per second = 5 x 60 x 60 requests per hour (18,000)
+- S = 1 scraper, authenticated via the service's API
+- r = 2 (the scraper needs to visit two URLs: one to obtain users' meta data, and one to obtain suers' usage history)
+- freq = Each user should be vsisited at least once every fifteen minutes (once every 15 minutes = 4 times per hour).
+
+{{< katex display  >}}
+N = \frac{req \times S}{r \times freq} = \frac{18,000 \times 1}{2 \times 4} = 2,250
+
+{{< / katex >}}
+
+Note that in practice, the retrieval limit of 5 requests per second is not always met (e.g., due to server outages, slow reserver response). A downward-correction by about 10% seems warranted (e.g., instead of 18,000 requests, you may expect 18,000-1,800 = 16,200 requests), which limits the technically feasible sample size to 2,025 users.
+
+
+{{< katex display  >}}
+N = \frac{req \times S}{r \times freq} = \frac{16,200 \times 1}{2 \times 4} = 2,025
+
+{{< / katex >}}
 
 {{< /hint>}}
 

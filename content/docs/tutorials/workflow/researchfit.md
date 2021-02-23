@@ -58,12 +58,12 @@ N = \frac{req \times S}{r \times freq}
 
 whereby
 - N = sample size (i.e., number of instances of an entity to extract data from),
-- req = retrieval limit (maximum number of requests per time unit, allowed for each scraper or authenticated API user)
+- req = retrieval limit (maximum number of requests per time unit, allowed for each scraper or authenticated API user),
 - S = number of scrapers used (e.g., computers with separate IP addresses, or authenticated users of an API),
 - r = number of URL calls to make to obtain data for each instance, and
 - freq = the desired sampling frequency for each entity per time unit.
 
-Convert all input parameters to the same time unit (e.g., the retrieval limit may initially be expressed in fifteen-minute intervals but needs to match the desired sampling frequency, which may be expressed in hours)!
+Important: Convert all input parameters to the same time unit (e.g., the retrieval limit may initially be expressed in fifteen-minute intervals but needs to match the desired sampling frequency, which may be expressed in hours)!
 
 The formula can be rearranged to solve it for different target parameters (e.g., given the desired sample size, what is the maximum attainable sampling frequency?).
 

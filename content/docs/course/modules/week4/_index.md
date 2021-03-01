@@ -51,6 +51,7 @@ bookCollapseSection: true
 - Discussing the components of your technical extraction plan
 - Building a first prototype
 - Debating on legal and ethical concerns
+- [Re-watch here](https://youtu.be/CauV5aV0pqo)
 
 <!--## Activities (individual exercises or team project)
 - [Project] Make a data extraction plan for your website, taking into account legal and ethical concerns <!-- develop -->

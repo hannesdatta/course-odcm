@@ -17,7 +17,7 @@ bookCollapseSection: true
 - Skill development (choose at least one tutorial, on the basis of your group project)
   - [Advanced Web Scraping](docs/tutorials/webscrapingadvanced)
   - [Advanced APIs](docs/tutorials/apisadvanced)
-- Check out [Hannes' YouTube channel](https://www.youtube.com/user/hannesd84/videos) for any added screencasts/coaching sessions with other students.
+- Check out [Hannes' YouTube channel](https://www.youtube.com/channel/UCYef2_7EscmOfwl-2G7mIrg) for any added screencasts/coaching sessions with other students.
 
 ## Activities
 

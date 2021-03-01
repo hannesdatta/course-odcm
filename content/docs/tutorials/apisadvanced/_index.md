@@ -6,7 +6,7 @@ bookCollapseSection: true
 draft: false
 ---
 
-# APIs Advanced
+# Tutorial: APIs Advanced
 
 ## Learning goals
 

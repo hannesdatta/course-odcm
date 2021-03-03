@@ -12,5 +12,7 @@ You do not need to understand all the code that is shown in the notebook (0:47; 
 
 [![Anaconda Install Tutorial](https://img.youtube.com/vi/HW29067qVWk/0.jpg)](https://www.youtube.com/watch?v=HW29067qVWk)
 
+Wondering why Jupyter Notebook is such a great tool to use for learning? [Read about it here!](https://jupyter4edu.github.io/jupyter-edu-book/)
+
 Tips:
 - If you followed the [Anaconda Install tutorial](anaconda.md), you should have already installed Jupyter Notebook (2:47).

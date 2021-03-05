@@ -26,6 +26,7 @@ This site collects links to web scrapers and API retrieval projects.
 - [Code to monitor the health of online data collections via Push Messages](https://github.com/hannesdatta/healthmonitor)
 - [Scrapy](https://scrapy.com) and [Morph.io](https://morph.io) are comprehensive, code-based frameworks that collect the data for you in the cloud
 - Try visualizing your results dynamically/interactively, for example with D3, Plotly, ShinyApps, or Tableau
+- [Snscrape]((https://github.com/JustAnotherArchivist/snscrape)) - an amazing Python package to scrape data from social networks like Twitter, Facebook, Instagram, Telegram, VKontakte and Weibo
 
 ## Podcasts and Tutorials
 - [Listen to a podcast with Kimberly Fessel](https://realpython.com/podcasts/rpp/12/) who shares some best practices on scraping the web. She also has shared a [fantastic tutorial on YouTube](https://www.youtube.com/watch?v=RUQWPJ1T6Zc&t=190s)

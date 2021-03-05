@@ -46,6 +46,10 @@ Please join (at least) one of the two live streams:
 - Feedback on prototype submissions (APIs)
 - Tutorial Q&A for Advanced APIs
 
+### Recordings
+- [Part 1](https://youtu.be/nLnaB2XD2MA)
+- [Part 2 - also covers scraping!](https://youtu.be/T5TK_klj89k)
+
 <br>
 {{< button relref="week4" >}}Previous week{{< /button >}}
 {{< button relref="week6" >}}Next week{{< /button >}}

@@ -39,7 +39,7 @@ Please also make use of specific comments in your code to explain the problem. T
 
 **Team Project**     
 *How should I store API keys and personal credentials in my notebook without disclosing it (e.g., on Github)?*  
-With environment variables, you can access variables without literally writing them down in a notebook or script (e.g., `password = "..."`). Follow the steps on in [this](https://tilburgsciencehub.com/building-blocks/store-and-document-your-data/store-data/environment-variables/) building block on Tilburg Science Hub to learn how to configure environment variables. 
+With environment variables, you can access variables without literally writing them down in a notebook or script (e.g., `password = "..."`). Follow the steps on in [this](https://tilburgsciencehub.com/building-blocks/store-and-document-your-data/store-data/environment-variables/) building block on Tilburg Science Hub (TSH) to learn how to configure environment variables. 
 
 *My scraper collects a whole lot of string (i.e., text) data, but I'd like to filter down on specific elements and exclude everything else. The `replace()` function does not suffice, so how can I best process the data?*  
 Regular expressions are specfically designed to find patterns in string data. Have a look at the [building block](https://tilburgsciencehub.com/building-blocks/develop-your-coding-skills/learn-to-code/learn-regular-expressions/) on TSH on how to get started with regex.   

@@ -8,12 +8,12 @@ description: " "
 
 # Final exam
 
-The course content will be tested in the form of a _take-home exam__, to be completed within one working day.
+The course content will be tested in the form of a __take-home exam__, to be completed __within one working day__.
 
 ## Date & time
 
-- Date: Tuesday, 6 April 2021
-- Time: 8am - 10pm (you can start when you want)
+- Date: __Tuesday, 6 April 2021__
+- Time: __8am - 10pm__ (Amsterdam time, you can start when you want)
 - Receiving your exam: via your Tilburg University email address, or Canvas (tba)
 - Submitting your exam: upload on Canvas
 - Registration: you need to officially register for this exam
@@ -30,12 +30,19 @@ The course content will be tested in the form of a _take-home exam__, to be comp
 
 - Example questions will be shared and discussed with students in the final live stream of this course.
 
-{{< hint info >}}
+{{< hint tip >}}
 __Tips & tricks__
 - Know how to zip and unzip files
 - Make use of cheat sheets (e.g., available on this site, or elsewhere) (you can also print them)
 - Take breaks! While the exam questions will be difficult, you do not need the entire day to solve them!
 - Revise your code before submission, so that you ensure it runs from top to bottom without problems.
+
+{{< /hint >}}
+
+{{< hint info >}}
+__Stay up-to-date__
+
+As we develop the exam questions, please keep an eye on the content of this page for important updates (e.g., with regard to the questions asked, any new tips & tricks that will help you to work on the questions, any example questions, etc.)
 
 {{< /hint >}}
 

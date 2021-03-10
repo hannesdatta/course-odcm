@@ -36,11 +36,14 @@ Weights for each component of the grading rubric below are indicated in brackets
 
 ### **1. Documentation**
 
-Please follow [Datasheets for Datasets](https://arxiv.org/pdf/1803.09010.pdf) (2018) in writing your documentation. Please get started by using the [template](../Datasheets_for_DataSets.zip), and fill in all questions in sections 1-5.
+Please follow [Datasheets for Datasets](https://arxiv.org/pdf/1803.09010.pdf) (2018) in writing your documentation. Please get started by using the [template](../Datasheets_for_DataSets.zip), and fill in __all (sub-)questions in sections 1-5__.
 
 In the grading details below, numbers (#1, #1.4, etc.) refer to sections in the final documentation.
 
 #### 1.1 Motivation (section 1 of your documentation, 10%)
+
+From your answers to _all questions in section 1 of the documentation template_, the following points need to be addressed:
+
 - *Motivation for data context (5%)*  
 Clear explanation of the value in collecting the data (“task in mind”), either in the context of a specific research question or business problem. The data collection potentially generates insights into new phenomena. There is clearly value to the larger research community in using the data. Comparable data sets are not available at all, or not publicly available.
 
@@ -48,6 +51,9 @@ Clear explanation of the value in collecting the data (“task in mind”), eith
 A range of relevant websites and APIs pertaining to the data context is assessed in terms of data availability, research fit & resource use. It is clear why the data was ultimately collected from the focal website/API, and not from others (i.e., the website/API emerges as the one that fits best in terms of research fit and resource use; #1.4).
 
 #### 1.2 Composition (section 2 of your documentation, 20%)  
+
+From your answers to _all questions in section 2 of the documentation template_, the following points need to be addressed:
+
 - *Entities, linkages, timeframe and algorithmic biases (5%)*    
 The composition of the data is described in detail and accessible to novel users of the data. Potential users learn about which entities are available in the data set, for what time period, and how they are linked to each other. Potential linkages to external data sets are made explicit (e.g., by means of links to external websites or sources that explain more about the used identifiers). Potential algorithmic biases have been identified and clearly explained.
 
@@ -59,12 +65,18 @@ Each set of entities is accompanied by meaningful summary statistics (e.g., the 
 
 
 #### 1.3 Collection process (section 3 of your documentation, 15%)
+
+From your answers to _all questions in section 3 of the documentation template_, the following points need to be addressed:
+
 - *Technical extraction plan (10%)*   
 The technical extraction plan has been described in a way that the data collection could be replicated. This encompasses providing a solid argumentation on why a particular data extraction technology used (e.g., selenium versus Beautifulsoup for websites, a package versus self-coded requests for APIs). It is clear how entities were sampled from the site, and how the navigation scheme was implemented. In particular, users of the data learn about the technical hurdles that needed to be overcome, and which monitoring was in place to guarantee (and validate) data quality. Finally, details are given on how (deployment infrastructure) and when the data collection was executed (e.g., by meaningful summaries of the timestamps in log files), and where the final data set was stored during the collection.
 Legal and ethical concerns (5%): For #3.6, the potential legal and/or ethical concerns that may be relevant for the collected data are carefully described.
 
 
 #### 1.4 Preprocessing (section 4 of your documentation, 10%)
+
+From your answers to _all questions in section 4 of the documentation template_, the following points need to be addressed:
+
 - *Preprocessing (5%)*  
 Any pre-processing on the fly has been motivated and explained, using a few specific examples. Any further pre-processing after the collection has been described (e.g., such as to anonymize users for privacy concerns, to identify and clean out implausible observations, or to improve data structure for long-term storage, such as rearranging the data structure, relabeling columns into more meaningful and clear variable names).
 
@@ -72,11 +84,15 @@ Any pre-processing on the fly has been motivated and explained, using a few spec
 The files have a correct data structure, and variables are of the correct type (e.g., numbers as integers or floats, not as strings; time stamps properly formatted, or Unixtime used). Application of data enrichment and feature engineering strategies (e.g., to derive new variables from the data, where necessary). Data has been normalized (i.e., preferably multiple tables that can be joined together, rather than a wide table that contains many duplicates on some of the variables). If imputation is used, it is indicated which values have been imputed (e.g., interpolated; for example: followers (without missing), and followers_inputed as a TRUE/FALSE variable, indicating which ones were imputed). Finally, the data set is provided in CSV files, including column names, proper use of delimiters (e.g., a “,” may be inappropriate for textual data involving commas). No row names/index column.
 
 #### 1.5 Uses (section 5 of your documentation, 5%)  
+
+From your answers to _all questions in section 5 of the documentation template_, the following points need to be addressed:
+
 * *Users of the data learn about tasks the data set could be used for (5%)*  
 From the description, it is clear how the composition of the data set or the way it was preprocessed might affect future use. A clear indication is given for what the data should not be used for, e.g., relating to any of the legal or ethical concerns identified before.
 
 
- ### **2. Source Code**
+### **2. Source Code**
+
 - *Quality of the submitted source code (10%)*  
   - Present and clearly readable (e.g., variable names that are meaningful)
   - Inline markdown formatting (e.g., headers, dividers, paragraphs, etc.)
@@ -126,10 +142,11 @@ Before submitting, test your extraction code on a different computer (e.g., by a
 
 
 ### Tips for filling in the documentation
--	Try to answer the questions to the best of your ability.
+-	Try to answer all questions to the best of your ability.
     - Imagine you would have to work with this data in the future – how would you write up the documentation so that you (and your future self) may understand it?
     - In your writing, be as concise as possible. We’ve had some recent experience using tools like Grammarly to improve our writing (there is a free version available), but there are certainly alternatives available!
     - The original paper on which the readme template is based on provides a few helpful (filled in) examples that may provide some inspiration.
+    - If you are familiar with R, you can write your documentation in RMarkdown, which nicely intertwines answers to the questions (e.g., conceptual answers) with details/statistics from the data (i.e., by including code snippets that directly generate overview tables).
 
 - Please pick a good name for your dataset. This name will be the first thing potential users of your data will see. Use it as the *title* of your documentation (don't call your dataset "Datasheets for Datasets"!)
 - Please skip sections 6 and 7 of the documentation (distribution and maintenance). Do get rid of the example text in these sections though.

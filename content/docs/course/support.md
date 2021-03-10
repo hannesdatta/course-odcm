@@ -38,6 +38,7 @@ Please also make use of specific comments in your code to explain the problem. T
 ## FAQ
 
 **Team Project**     
+
 *How should I store API keys and personal credentials in my notebook without disclosing it (e.g., on Github)?*  
 With environment variables, you can access variables without literally writing them down in a notebook or script (e.g., `password = "..."`). Follow the steps on in [this](https://tilburgsciencehub.com/building-blocks/store-and-document-your-data/store-data/environment-variables/) building block on Tilburg Science Hub (TSH) to learn how to configure environment variables. 
 

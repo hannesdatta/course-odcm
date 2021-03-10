@@ -24,6 +24,16 @@ For quick questions, please use *WhatsApp* to get in touch with us (+31 13 466 8
 **Email**
 h.datta@tilburguniversity.edu
 
+{{< hint info >}}
+__Submitting code for feedback__
+
+When submitting code (e.g., as a Jupyter Notebook) for feedback, please ensure that it __runs from top to bottom without errors__ - up to the point where you need feedback. In other words, __don't send "incomplete" code__ in which you ask us to debug a scraper, without actually loading the website.
+
+Please also make use of specific comments in your code to explain the problem. This will help us to help you quicker.
+
+
+{{< /hint >}}
+
 
 ## FAQ
 

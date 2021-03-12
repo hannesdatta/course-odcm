@@ -50,3 +50,6 @@ This course is licensed under a [Creative Commons Attribution-NonCommercial 4.0 
 Spread the word about this open education initiative!
 
 ![Creative Commons Licence](https://i.creativecommons.org/l/by-nc/4.0/88x31.png)
+
+## Disclaimer
+This website has been generated using the [Tilburg Science Hub Hugo template](https://github.com/tilburgsciencehub/hugo-tiu) for open science and education projects. The content of this website does not necessarily reflect the official policy or position of Tilburg University.

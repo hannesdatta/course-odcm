@@ -37,7 +37,10 @@ bookCollapseSection: true
 ## Live stream 7
 - Documentation and preprocessing
 - Questions with regard to your prototypes and the data collection
-
+- Watch the recordings now!
+  - [Introduction of the Live Stream](https://youtu.be/pcvKU7zFCMQ)
+  - [Student coaching sessions - see videos on this playlist](https://www.youtube.com/playlist?list=PLdDbyJQwReWhis9Ns7_NfYzw4YAp91D6G)
+  
 <!--
 ## Exercises and activities
 - ...

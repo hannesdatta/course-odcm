@@ -45,6 +45,8 @@ With environment variables, you can access variables without literally writing t
 *My scraper collects a whole lot of string (i.e., text) data, but I'd like to filter down on specific elements and exclude everything else. The `replace()` function does not suffice. What would you recommend?*  
 Regular expressions are specfically designed to find patterns in string data. Have a look at the [building block](https://tilburgsciencehub.com/building-blocks/develop-your-coding-skills/learn-to-code/learn-regular-expressions/) on TSH on how to get started with regex.  
 
+*How can I run my web scraper repetitevely (e.g., every day)*  
+You can use task scheduling to automate the execution of scripts at specified intervals. Follow the steps in [this](https://tilburgsciencehub.com/building-blocks/automate-and-execute-your-work/automate-your-workflow/task-scheduling/) building block to set-up schedling for your scraper!
 
 **Python Bootcamp**
 

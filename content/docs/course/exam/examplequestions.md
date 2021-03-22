@@ -22,7 +22,7 @@ Scrape the top 1000 lifetime grossing movies (domestic) from [Box Office Mojo](h
 
 
 ## 3. APIs
-As a researcher you're interested in polarity in online communities and therefore collect data on the distribution of up and down votes on Reddit. Extract a random sample of 100 Reddit posts and compare the upvote ratio in the [`politics`](https://www.reddit.com/r/politics) and [`science`](https://www.reddit.com/r/science) communities. 
+As a researcher you're interested in polarity in online communities and therefore collect data on the distribution of up and down votes on Reddit. Extract a random sample of 100 Reddit posts from the [`politics`](https://www.reddit.com/r/politics) and [`science`](https://www.reddit.com/r/science) communities and compare the upvote ratio. Comment on your findings.
 
 ## 4. Workflow 
 

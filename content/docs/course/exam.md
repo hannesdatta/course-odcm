@@ -13,31 +13,76 @@ The course content will be tested in the form of a __take-home exam__, to be com
 ## Date & time
 
 - Date: __Tuesday, 6 April 2021__
-- Time: __8am - 10pm__ (Amsterdam time, you can start when you want)
-- Receiving your exam: via your Tilburg University email address, or Canvas (tba)
-- Submitting your exam: upload on Canvas
-- Registration: you need to officially register for this exam
+- Time: __8am - 10pm__ (Amsterdam time, you can start when you want, but *must* submit before the deadline)
+
+## Technicalities & support
+
+- Receiving your exam: via [TestVision](https://testvision.tilburguniversity.edu) on the day of the exam
+- Working on your exam: on your own computer
+- Submitting your exam: all questions (including file uploads) will be submitted via TestVision
+- Registration: not necessary; enrollment to the Canvas course page is sufficient
+- Support during the exam: preferably WhatsApp [see support section of this website](support); Support only for "unforeseen" errors. No support will be given for technical issues that students *should* have solved during the course (e.g., installation of Anaconda, running Jupyter Notebook, etc.)
 
 ## Form
 
-- Take-home exam, to be completed within one working day (starting 8am, submission by 10pm).
-- Open book (i.e., you can access any material you find helpful, including material you have stored on your computers, or that you find on the internet).
-- Consisting of open and closed questions.
+- Open book take-home exam (i.e., you can access any material you find helpful, including material you have stored on your computers, or that you find on the internet).
+- 10-15 open questions (both in written, or by means of code/file uploads)
 - Some questions will be personalized (i.e., there is only one correct answer per student), others will be randomized (i.e., you will see questions in mixed order, and not all students get to see all questions).
-- __Communication with anybody about the content of the exam is strictly prohibited.__
+
+{{< hint warning >}}
+__Communication with anybody about the content of the exam, during *and after* the take-home exam, is strictly prohibited.__
+
+{{< /hint >}}
 
 ## Content
 
+### Topics
+
+In line with the course's learning goals, the exam covers five broad topic areas:
+
+1. Python bootcamp (about 10%)
+2. Workflow for collecting online data (about 35%)
+3. Conducting web scraping (dummies + 101) (about 20%)
+4. Collecting data via APIs (dummies + 101) (about 20%)
+5. Web scraping OR APIs advanced (you can choose; about 15%)
+
+Each topic area carries a specific weight (i.e., "importance"). For example, questions on the Python bootcamp (about 10%) are much less prominent on the exam than questions about the workflow for collecting online data (about 35%).
+
+### Question types
+
+You will be tested at various levels of complexity (following Bloom's Taxonomy):
+
+- Knowledge (about 10%): Recall facts
+- Comprehension: (about 15%): Show understanding in finding information (e.g., from papers, the web)
+- Application (about 20%): To use in a new situation
+- Analysis (about 20%): To examine in detail
+- Synthesis (about 20%): To change or create into something new
+- Evaluation (about 15%): To justify
+
+### Example questions
+
 - Example questions will be shared and discussed with students in the final live stream of this course.
 
-{{< hint tip >}}
-__Tips & tricks__
+
+## Preparing for the exam
+
+### Make your own example questions
+
+It's impossible to generate example questions for all types of questions that can be asked on the exam. Therefore, we encourage you to generate your own example questions, on top of the example questions we provide. Just start from a combination of topic areas (e.g., "web scraping 101") and question types (e.g., "evaluation"). The mere combination of these two dimensions will help you come up with a creative way of asking a good example question. For example, see [this summary of Bloom's Taxonomy](https://mygrowthmindsethome.files.wordpress.com/2019/03/blooms-taxonomy.pdf) (which we also use to generate exam questions).
+
+### Familiarize yourself with TestVision
+
+- [Take a practice test](https://oefentoetsen.testvision.nl/online/fe/login_ot.htm?campagne=tlb_demo_eng&taal=2) to familiarize yourself with TestVision!
+- Get to know more about TestVision [here](https://www.tilburguniversity.edu/students/studying/exams/e-assessment/testvision)
+
+### Technical tips & beyond
+
+- Verify your software setup (you should be able to run all Jupyter Notebooks/tutorials on your own computer)
 - Know how to zip and unzip files
 - Make use of cheat sheets (e.g., available on this site, or elsewhere) (you can also print them)
 - Take breaks! While the exam questions will be difficult, you do not need the entire day to solve them!
 - Revise your code before submission, so that you ensure it runs from top to bottom without problems.
 
-{{< /hint >}}
 
 {{< hint info >}}
 __Stay up-to-date__

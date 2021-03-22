@@ -1,8 +1,8 @@
 ---
-bookFlatSection: true
 title: "Exam"
-bookHidden: false
 weight: 5
+description: " "
+bookCollapseSection: true
 description: " "
 ---
 
@@ -59,10 +59,12 @@ You will be tested at various levels of complexity (following Bloom's Taxonomy):
 - Synthesis (about 20%): To change or create into something new
 - Evaluation (about 15%): To justify
 
-### Example questions
+{{< hint info >}}
+__Work on the example questions__
 
-- Example questions will be shared and discussed with students in the final live stream of this course.
+Please [view the list of example questions here](examplequestions).
 
+{{< /hint >}}
 
 ## Preparing for the exam
 

@@ -8,12 +8,10 @@ bookCollapseSection: true
 # Week 8: Course summary
 
 ## Live stream 8
-- to be announced
 
-
-<!--- Presentation of research / business projects
-- Course summary and exam preparation questions
--->
+- And now what? The future of using web scraping and APIs for research
+- How to turn your web data project into a commercially viable business model?
+- Course summary and exam preparation
 
 <br>
 {{< button relref="week7" >}}Previous week{{< /button >}}

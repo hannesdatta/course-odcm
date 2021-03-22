@@ -70,7 +70,9 @@ Please [view the list of example questions here](examplequestions).
 
 ### Make your own example questions
 
-It's impossible to generate example questions for all types of questions that can be asked on the exam. Therefore, we encourage you to generate your own example questions, on top of the example questions we provide. Just start from a combination of topic areas (e.g., "web scraping 101") and question types (e.g., "evaluation"). The mere combination of these two dimensions will help you come up with a creative way of asking a good example question. For example, see [this summary of Bloom's Taxonomy](https://mygrowthmindsethome.files.wordpress.com/2019/03/blooms-taxonomy.pdf) (which we also use to generate exam questions).
+- It's impossible to generate example questions for all types of questions that can be asked on the exam. Therefore, we encourage you to generate your own example questions, on top of the example questions we provide. Just start from a combination of topic areas (e.g., "web scraping 101") and question types (e.g., "evaluation"). The mere combination of these two dimensions will help you come up with a creative way of asking a good example question.
+- See [this summary of Bloom's Taxonomy](https://mygrowthmindsethome.files.wordpress.com/2019/03/blooms-taxonomy.pdf), which we also use to generate exam questions.
+- Curious whether your question is "good" - [send it to us via the usual ways](../support) - maybe it will even be part of the exam? ;)
 
 ### Familiarize yourself with TestVision
 
@@ -92,33 +94,3 @@ __Stay up-to-date__
 As we develop the exam questions, please keep an eye on the content of this page for important updates (e.g., with regard to the questions asked, any new tips & tricks that will help you to work on the questions, any example questions, etc.)
 
 {{< /hint >}}
-
-<!--
-## Structure
-
-The exam covers both a theoretical and practical component. The former involves a set of multiple choice questions to be completed on TestVision. The latter tests students' ability to scrape specified fields from an interactive website, quickly get up to a speed with an API they have never used before, read its documentation, and go through a series of multi-step problems.
-
-#### 1. Theory (50%)
-- Mix of multiple choice and open questions
-  - 40 points MC (about 16-20 questions)
-  - 10 points open questions (3-4 questions)
-
-#### 2. Practical (50%)
-- Multi-probems covering both the web scraping and APIs tutorials
-- Question about the team project
-
-
-Note: the exact number of points and questions on the exam may vary slightly.
-
-
-<!-- POST-COVID
-
-* Downloading files (C:\users\[your username]) versus Jupyter’s default startup directory (c:\users\default) – practice that!
-
-* Websites blocked, except [jsonviewer.stack.hu](jsonviewer.stack.hu)
-
-* Be there about 15 minutes earlier to start up your computer
-
-* Find programs via the start menu – do not install Jupyter or any package yourself
-
--->

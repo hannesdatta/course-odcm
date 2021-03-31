@@ -85,7 +85,7 @@ The input parameters are:
 
 - req = 5 requests per second = 5 x 60 x 60 requests per hour (18,000)
 - S = 1 scraper, authenticated via the service's API
-- r = 2 (the scraper needs to visit two URLs: one to obtain users' meta data, and one to obtain suers' usage history)
+- r = 2 (the scraper needs to visit two URLs: one to obtain users' meta data, and one to obtain users' usage history)
 - freq = Each user should be vsisited at least once every fifteen minutes (once every 15 minutes = 4 times per hour).
 
 {{< katex display  >}}

@@ -87,10 +87,11 @@ Please [view the list of example questions here](examplequestions).
 - Take breaks! While the exam questions will be difficult, you do not need the entire day to solve them!
 - Revise your code before submission, so that you ensure it runs from top to bottom without problems.
 
-
+<!--
 {{< hint info >}}
 __Stay up-to-date__
 
 As we develop the exam questions, please keep an eye on the content of this page for important updates (e.g., with regard to the questions asked, any new tips & tricks that will help you to work on the questions, any example questions, etc.)
 
 {{< /hint >}}
+-->

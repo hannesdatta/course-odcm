@@ -17,7 +17,7 @@ The course content will be tested in the form of a __take-home exam__, to be com
 
 ## Technicalities & support
 
-- Receiving your exam: via [TestVision](https://odcm.hannesdatta.com/docs/course/exam/) on the day of the exam
+- Receiving your exam: via [TestVision](https://TilburgU.testvision.nl/online/kandidaten) on the day of the exam
 - Working on your exam: on your own computer
 - Submitting your exam: all questions (including file uploads) will be submitted via TestVision
 - Registration: not necessary; enrollment to the Canvas course page is sufficient

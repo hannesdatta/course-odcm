@@ -11,7 +11,7 @@ weight: 4
 The team project is submitted as a so-called “data package”, consisting of the following three elements:
 
 1. Documentation (60% of the final grade)
-2. Source code for the scraper(s) (30% of the final grade)
+2. Source code for the data collection (30% of the final grade)
 3. Overall quality of the data package (10% of the final grade)
 
 ## Calculation of team grades
@@ -70,7 +70,9 @@ From your answers to _all questions in section 3 of the documentation template_,
 
 - *Technical extraction plan (10%)*   
 The technical extraction plan has been described in a way that the data collection could be replicated. This encompasses providing a solid argumentation on why a particular data extraction technology used (e.g., selenium versus Beautifulsoup for websites, a package versus self-coded requests for APIs). It is clear how entities were sampled from the site, and how the navigation scheme was implemented. In particular, users of the data learn about the technical hurdles that needed to be overcome, and which monitoring was in place to guarantee (and validate) data quality. Finally, details are given on how (deployment infrastructure) and when the data collection was executed (e.g., by meaningful summaries of the timestamps in log files), and where the final data set was stored during the collection.
-Legal and ethical concerns (5%): For #3.6, the potential legal and/or ethical concerns that may be relevant for the collected data are carefully described.
+
+- *Legal and ethical concerns (5%)*
+For #3.6, the potential legal and/or ethical concerns that may be relevant for the collected data are carefully described.
 
 
 #### 1.4 Preprocessing (section 4 of your documentation, 10%)
@@ -91,9 +93,9 @@ From your answers to _all questions in section 5 of the documentation template_,
 From the description, it is clear how the composition of the data set or the way it was preprocessed might affect future use. A clear indication is given for what the data should not be used for, e.g., relating to any of the legal or ethical concerns identified before.
 
 
-### **2. Source Code**
+### **2. Source Code for the Data Collection**
 
-- *Quality of the submitted source code (10%)*  
+- *Quality of the submitted source code (15%)*  
   - Present and clearly readable (e.g., variable names that are meaningful)
   - Inline markdown formatting (e.g., headers, dividers, paragraphs, etc.)
   - Well-structured and modular source code (e.g., use of functions)
@@ -107,23 +109,27 @@ From the description, it is clear how the composition of the data set or the way
 - *Quality of the technical implementation (15%)*
   - The quality of the technical implementation is judged for web scraping and APIs, as per some of the following dimensions.
 
-  - **Web scraping**
-    - A single vs. multiple entities / web pages
-    - Degree of complexity required to obtain data (e.g., static websites with a fixed class name vs social media which requires more dynamic approaches such as clicking on buttons and navigating across pages; self-coded extraction code versus use of a package which extracts data automatically)
-    - Stability of the solution (i.e., navigation path should not be subjective to day-to-day page changes). Can the code be run after submission? Can the code be run on Windows, Mac and Linux?
-    - Obeying retrieval limits (usage of timers to avoid overloading the server and getting blocked and writing efficient code; create a single BeautifulSoup object per page; avoid making redundant requests)
-    - Uniqueness (e.g., a combination of data collected through an API and web scraping)
+  {{< hint >}}
 
-  - **APIs**
-    - A single vs. multiple API endpoints
-    - Making complex API queries (e.g., chaining a multitude of parameters)
-    - Applying pagination strategies (e.g., API results are spread across multiple pages)
-    - Just using a package ("plugging in API key, that’s it"), versus actually written code
-    - Efficient usage of endpoints (e.g., use search API rather than storing all data and manually looking for a field)
-    - Documentation on how to configure API keys, access tokens, and secrets, etc.
-    - Reliance on packages vs. self-coded (appropriateness)
-    - Obeying retrieval limits (e.g., by means of timers)
-    - Uniqueness (e.g., a combination of data collected through an API and web scraping)
+  **Web scraping**
+  - A single vs. multiple entities / web pages
+  - Degree of complexity required to obtain data (e.g., static websites with a fixed class name vs social media which requires more dynamic approaches such as clicking on buttons and navigating across pages; self-coded extraction code versus use of a package which extracts data automatically)
+  - Stability of the solution (i.e., navigation path should not be subjective to day-to-day page changes). Can the code be run after submission? Can the code be run on Windows, Mac and Linux?
+  - Obeying retrieval limits (usage of timers to avoid overloading the server and getting blocked and writing efficient code; create a single BeautifulSoup object per page; avoid making redundant requests)
+  - Uniqueness (e.g., a combination of data collected through an API and web scraping)
+
+  **APIs**
+  - A single vs. multiple API endpoints
+  - Making complex API queries (e.g., chaining a multitude of parameters)
+  - Applying pagination strategies (e.g., API results are spread across multiple pages)
+  - Just using a package ("plugging in API key, that’s it"), versus actually written code
+  - Efficient usage of endpoints (e.g., use search API rather than storing all data and manually looking for a field)
+  - Documentation on how to configure API keys, access tokens, and secrets, etc.
+  - Reliance on packages vs. self-coded (appropriateness)
+  - Obeying retrieval limits (e.g., by means of timers)
+  - Uniqueness (e.g., a combination of data collected through an API and web scraping)
+
+  {{< /hint >}}
 
 {{< hint info >}}
 __Test your extraction code before submission__
@@ -133,12 +139,14 @@ Before submitting, test your extraction code on a different computer (e.g., by a
 {{< /hint >}}
 
 ### **3. Data Package**
-* Submitted as a zip file
-* Accessible and appropriate directory structure
-* No unnecessary files
-* Inclusion of meaningful supportive files (e.g., API documentation, screenshots, a video of the scraper in action)
-* Raw data files all present
-* Documentation properly formatted and no template text ("lorem ips...") remaining
+
+- *Quality of the data package (10%)*  
+  - Submitted as a zip file
+  - Accessible and appropriate directory structure
+  - No unnecessary files
+  - Inclusion of meaningful supportive files (e.g., API documentation, screenshots, a video of the scraper in action)
+  - Raw data files all present
+  - Documentation properly formatted and no template text ("lorem ips...") remaining
 
 
 ### Tips for filling in the documentation

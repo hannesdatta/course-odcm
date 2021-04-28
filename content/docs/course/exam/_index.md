@@ -10,10 +10,19 @@ description: " "
 
 The course content will be tested in the form of a __take-home exam__, to be completed __within one working day__.
 
-## Date & time
+### Main sit
 
 - Date: __Tuesday, 6 April 2021__
 - Time: __8am - 10pm__ (Amsterdam time, you can start when you want, but *must* submit before the deadline)
+- Exam registration: not necessary; enrollment to the Canvas course page is sufficient
+- Inspection: Friday, 30 April 2021, 9.30-10.00 (signup here: https://forms.gle/6y5q66tsJzsGN59b9, Zoom link see Canvas)
+
+### Resit
+
+- Date: __Monday, 28 June 2021__
+- Time: __8am - 10pm__ (Amsterdam time, you can start when you want, but *must* submit before the deadline)
+- Registration: by 7 June 2021 at the latest, via https://forms.gle/KXQBjtTvY9saQQhS8.
+
 
 ## Technicalities & support
 

@@ -48,7 +48,7 @@ The internet offers abundant possibilities to collect data (e.g., from social ne
 - Share individual progress and learnings (10%)
 - Computer exam (40%)
 
-Students pass this course if the final course grade (i.e., the weighted average of the individual components; weights indicated above) is ≥ 5.5, and the exam is passed (≥ 5.5).
+Students pass this course if the final course grade (i.e., the weighted average of the individual components; weights indicated above) is ≥ 5.5, and the exam is passed (≥ 5.5). Final course grades are rounded to multiples of half points (e.g., 6, 6.5, 7, etc.).
 
 ### Team project
 

@@ -3,7 +3,7 @@ title: "Example questions"
 bookFlatSection: true
 bookHidden: false
 weight: 5
-draft: false
+draft: true
 ---
 
 # Example questions
@@ -43,5 +43,3 @@ Review the following text in which a master student describes the institutional 
 **Solutions**  
 The solutions of these example questions can be found [here](https://github.com/hannesdatta/course-odcm/blob/master/content/docs/course/exam/example_questions_solutions.ipynb). Keep in mind that there are often multiple ways to get to the same answer.
 {{< /hint >}}
-
-

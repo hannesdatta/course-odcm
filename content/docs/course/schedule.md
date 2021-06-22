@@ -8,9 +8,29 @@ description: " "
 
 # Schedule
 
-The course runs for a duration of eight weeks, which consists of seven weeks with live streams, and one self-study week without live streams. Click on the course week for details on preparation (extensive self-study material available), and activities.
+The course runs for a duration of seven weeks. Click on the course week for details on preparation (extensive self-study material available), and activities.
 
 Login credentials for the live streams will be made available on the *Canvas page of this course for students from Tilburg University*, and via email to remaining students.
+
+
+
+Course week|Unit|Mon|Tue|Wed|Thu|Fri|Sat|Sun|
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+|*August 2021*
+Week 1|1.1|30|31||||||
+|*September 2021*
+Week 1|1.1|||1|2|3|4|5|
+Week 2|1.2|6|7|8|9|10|11|12
+Week 3|1.3|13|14|15|16|17|18|19
+Week 4|1.4|20|21|22|23|24|25|26
+Week 5|1.5|27|28|29|30|||
+|*October 2021*
+Week 5|1.5|||||1|2|3
+Week 6|1.6|4|5|6|7|8|9|10
+Week 7|1.7|11|12|13|14|15|16|17
+
+
+<!--
 
 Course week|Type|Live stream|Date|Time
 |:-:|---------|---------|-------------|--------------------|
@@ -31,7 +51,7 @@ Course week|Type|Live stream|Date|Time
 
 
 
-
+-->
 
 <!--
 

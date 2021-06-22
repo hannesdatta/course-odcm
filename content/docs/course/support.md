@@ -8,6 +8,13 @@ description: " "
 
 # Support
 
+
+Are you experiencing technical difficulties, e.g., when working through the tutorials?
+
+Contact the course coordinator via email, please: h.datta@tilburguniversity.edu.
+
+
+<!--
 Are you experiencing technical difficulties, e.g., when working through the tutorials?
 
 For quick questions, please use *WhatsApp* to get in touch with us (+31 13 466 8938).
@@ -40,7 +47,7 @@ Please also make use of specific comments in your code to explain the problem. T
 **Team Project**     
 
 *How should I store API keys and personal credentials in my notebook without disclosing them (e.g., on Github)?*  
-With environment variables, you can access variables without literally writing them down in a notebook or script (e.g., `password = "..."`). Follow the steps in [this](https://tilburgsciencehub.com/building-blocks/store-and-document-your-data/store-data/environment-variables/) building block on Tilburg Science Hub (TSH) to learn how to configure environment variables. 
+With environment variables, you can access variables without literally writing them down in a notebook or script (e.g., `password = "..."`). Follow the steps in [this](https://tilburgsciencehub.com/building-blocks/store-and-document-your-data/store-data/environment-variables/) building block on Tilburg Science Hub (TSH) to learn how to configure environment variables.
 
 *My scraper collects a whole lot of string (i.e., text) data, but I'd like to filter down on specific elements and exclude everything else. The `replace()` function does not suffice. What would you recommend?*  
 Regular expressions are specfically designed to find patterns in string data. Have a look at the [building block](https://tilburgsciencehub.com/building-blocks/develop-your-coding-skills/learn-to-code/learn-regular-expressions/) on TSH on how to get started with regex.  

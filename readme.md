@@ -1,18 +1,18 @@
-# Course page for "Online Data Collection and Management (oDCM)"
+# Online Data Collection and Management (oDCM)
 
-This is the course page for "Online Data Collection and Management (oDCM)", a new course taught in the Marketing Analytics Curriculum at [Tilburg University](https://tilburguniversity.edu) by [dr. Hannes Datta](https://hannesdatta.com) in Block 3 (January-March) 2021.
+[![DOI](https://zenodo.org/badge/283504212.svg)](https://zenodo.org/badge/latestdoi/283504212)
 
-## Using the course website and glossary
+This repository hosts all educational materials (e.g., syllabus, tutorials, course website) and associated source code for "Online Data Collection and Management (oDCM)", taught in the Marketing Analytics Curriculum at [Tilburg University](https://tilburguniversity.edu) by [dr. Hannes Datta](https://hannesdatta.com).
 
-This is the source code of the website, and not the website itself. If you're looking for the actual website, please point your browser to [https://odcm.hannesdatta.com](https://odcm.hannesdatta.com).
+**If you're looking for the course website, please point your browser to [https://odcm.hannesdatta.com](https://odcm.hannesdatta.com).**
 
 ## Using this repository
 
 ### Overview
 
-This repository hosts the source code of the website, which you are invited to contribute to.
+This repository hosts the source code of the website and all educational material (e.g., tutorials), which you are invited to contribute to.
 
-New to Git and Markdown? Then please see our sister site at http://tilburgsciencehub.com to learn how to contribute.
+New to Git and Markdown? Then view https://tilburgsciencehub.com to learn how.
 
 ### Contribute to the site!
 
@@ -22,7 +22,3 @@ New to Git and Markdown? Then please see our sister site at http://tilburgscienc
 - Start up the webserver by typing `hugo server`
 - Not sure what to contribute? Head over to the issues page on GitHub to see what are good issues to address. Of course, you're welcome to suggest your own changes.
 - Make your changes in new branches, and issue a PR.
-
-### Documentation
-
-- Hugo `Book` Theme: https://themes.gohugo.io//theme/hugo-book/

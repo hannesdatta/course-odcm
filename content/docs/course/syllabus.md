@@ -19,13 +19,13 @@ The internet offers abundant possibilities to collect data (e.g., from social ne
 - Store and manage data using file-based systems <!--and databases-->
 - Draft, execute, monitor and audit online data collections locally and remotely
 - Document and archive collected data, and make it available for public (re)use
-- Track and share progress on the course's learning goals
 
 ## Format
 
-- Hybrid format: Jupyter notebooks or pre-recorded web clips for preparation and self-paced lab sessions; live streams on Zoom for feedback and joint coding sessions (recordings will be made available)
-- Modern content: copy-paste code snippets and demos from the course page, access code on GitHub, start projects with templates from GitHub, share screens and solve problems
-- Interactive, immersive and student-centred: live coding, debates, open-source content contributions, scraping real websites and accessing real APIs
+- Online-only
+- Combination of self-paced tutorials (e.g., using Jupyter Notebooks or pre-recorded clips), and interactive live streams for feedback and coaching
+- Learn state-of-the-art tools popular among scientists, marketing analysts and data scientists (e.g., Python), and collect data from real websites and APIs
+- Open education & open science (all material is open; publicly accessible course page that stays with you, even after the end of the course)
 
 <!--, simulations, hackathon-->
 <!-- work on VMs on AWS, code in SQL and R, compete on Kaggle, or work on own computer--; Coding Dojo student-=led analysis; while sharing screens-->
@@ -43,12 +43,10 @@ The internet offers abundant possibilities to collect data (e.g., from social ne
 
 ## Grading
 
-- [Team project](project) (40%)
-- Individual contribution to team project (10%)
-- Share individual progress and learnings (10%)
-- Computer exam (40%)
+- Team project (4-5 team members) with self- and peer assessment (see below) (50%)
+- Computer exam (50%)
 
-Students pass this course if the final course grade (i.e., the weighted average of the individual components; weights indicated above) is ≥ 5.5, and the exam is passed (≥ 5.5). Final course grades are rounded to multiples of half points (e.g., 6, 6.5, 7, etc.).
+Students pass this course if the final course grade (i.e., the weighted average of the group project and exam; weights indicated above) is ≥ 5.5, and the exam is passed (≥ 5.5). Final course grades are rounded to multiples of half points (e.g., 6, 6.5, 7, etc.).
 
 Grades are made available on Canvas.
 
@@ -56,6 +54,8 @@ Grades are made available on Canvas.
 
 Students will submit a [final team project (4-5 team members)](project) at the end of the course.
 
+Students' individual grades will be corrected upwards or downwards, depending on their individual contribution to the overall team effort (e.g., measured by means of scoring themselves and their team members on, among others, the quantity and quality of their contributions).
+<!--
 ### Individual contribution to team project
 
 Students individual contribution to the team project will be equal to the overall team grade, corrected upwards or downwards depending on
@@ -94,9 +94,4 @@ Works encompass:
 
 Students receive a pass on this component for submitting at least one piece of work during the course, via Canvas.
 
-## Enrollment and Obtaining Course Credits
-
-- The course (3 ECTS) will be taught in the Marketing Analytics Program at Tilburg University (please check Osiris for the specifics). The course code is 328060-M-3.
-- Interested Research Master or PhD students who seek to advance their data collection skills are encouraged to apply for a seat.
-  - Students from Tilburg University can enroll in this course upon the approval of [the instructor](mailto:h.datta@tilburguniversity.edu) and their coordinator (please notify the course coordinator by 15 December 2020).
-  - Students outside of Tilburg University are invited to audit this course. For admission, please [email](mailto:h.datta@tilburguniversity.edu) a brief research statement and motivation of why you want to join this class, and your CV by 15 December 2020. Eligible candidates will be notified via email by 22 December 2021.
+-->

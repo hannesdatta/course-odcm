@@ -12,17 +12,15 @@ The course content will be tested in the form of a __take-home exam__, to be com
 
 ### Main sit
 
-- Date: __Tuesday, 6 April 2021__
+- Date: __tba__
 - Time: __8am - 10pm__ (Amsterdam time, you can start when you want, but *must* submit before the deadline)
 - Exam registration: not necessary; enrollment to the Canvas course page is sufficient
-- Inspection: Friday, 30 April 2021, 9.30-10.00 (signup here: https://forms.gle/6y5q66tsJzsGN59b9, Zoom link see Canvas)
+- Inspection: tba <!--(signup here: https://forms.gle/6y5q66tsJzsGN59b9, Zoom link see Canvas)-->
 
 ### Resit
-- cancelled, given we received no registrations
-<!--- Date: __Monday, 28 June 2021__
+- Date: __tba__
 - Time: __8am - 10pm__ (Amsterdam time, you can start when you want, but *must* submit before the deadline)
-- Registration: by 7 June 2021 at the latest, via https://forms.gle/KXQBjtTvY9saQQhS8.
--->
+- Registration: tba <!--by 7 June 2021 at the latest, via https://forms.gle/KXQBjtTvY9saQQhS8.-->
 
 ## Technicalities & support
 
@@ -43,6 +41,7 @@ __Communication with anybody about the content of the exam, during *and after* t
 
 {{< /hint >}}
 
+<!--
 ## Content
 
 ### Topics

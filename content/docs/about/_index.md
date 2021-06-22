@@ -13,13 +13,15 @@ We've used web scraping and APIs in our research for more than 10 years. And we'
 
 Feedback is appreciated always.
 
-## Contributors
 
-This course has been created by [Hannes Datta](https://hannesdatta.com) and [Roy Klaasse Bos](http://royklaassebos.nl/) from Tilburg University.
+## Instructors and Creators
+
+The course is coordinated and instructed by [Hannes Datta](https://hannesdatta.com). Course material, if not indicated otherwise, has been developed by [Hannes Datta](https://hannesdatta.com) and [Roy Klaasse Bos](http://royklaassebos.nl/) from Tilburg University.
 
 ## Acknowledgements
 
-The content of the tutorials has been inspired by a variety of online resources:
+In developing this course, we have borrowed from some of the finest (open) content on the web, among others:
+
 * Adam Williamson. (2020). [Python coding - How to access the Reddit API tutorial](https://www.youtube.com/watch?v=Mw-dsY8UKVs).
 * Brian C. Keegan. (2019). [Web Data Scraping S2019](https://github.com/CU-ITSS/Web-Data-Scraping-S2019).
 * Colt Steele. (2020). [The Modern Python 3 Bootcamp](https://www.udemy.com/course/the-modern-python3-bootcamp/).

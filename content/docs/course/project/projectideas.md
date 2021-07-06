@@ -20,10 +20,13 @@ When using a proprietary data sources requiring login (e.g., Netflix) or API cre
 Skilling up in web scraping and APIs requires practice, and conducting a group project is a great way to learn more about any facet of data- or computer science. Choose one of the following questions to explore further or pitch your own one during one of the live meetings in the course!
 -->
 
-## Online music streaming
+## Online music streaming and podcasts
 - Data sources
   - [spotifycharts](https://spotifycharts.com/regional)
   - [Spotify Web API](https://developer.spotify.com/documentation/web-api/)
+  - [Last.fm](https://last.fm)
+  - [Listennotes](https://listennotes.com) and [Listennotes Realtime](https://listennotes.com/realtime)
+  
 <!--
 - Potential research questions
   - Compare the rankings across countries throughout time (2017-2021)

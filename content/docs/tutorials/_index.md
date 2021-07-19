@@ -12,7 +12,7 @@ bookCollapseSection: true
 {{< hint info >}}
 __Tutorials still to be updated__
 
-The structure of the tutorials will be updated for the Fall 2021 edition of the course.
+The content of some of the tutorials will still be updated for the Fall 2021 edition of the course.
 
 {{< /hint >}}
 

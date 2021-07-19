@@ -3,6 +3,7 @@ weight: 30
 title: Workflow for collecting online data
 description: Plan and prototype your data collection, and reassure yourself the data fits your research purpose.
 bookCollapseSection: true
+draft: true
 ---
 
 # Workflow for collecting online data

@@ -5,14 +5,20 @@ bookHidden: false
 weight: 2
 ---
 
-## Jupyter Notebook
+# Install Jupyter Notebook
 
-This video walks you through the user interface of Jupyter Notebook.
-You do not need to understand all the code that is shown in the notebook (0:47; 18:02; 22:48).
+Jupyter Notebook is a handy tool popular for teaching Python. Wonder why? [Read about it here!](https://jupyter4edu.github.io/jupyter-edu-book/)
 
-[![Anaconda Install Tutorial](https://img.youtube.com/vi/HW29067qVWk/0.jpg)](https://www.youtube.com/watch?v=HW29067qVWk)
+## Getting started
 
-Wondering why Jupyter Notebook is such a great tool to use for learning? [Read about it here!](https://jupyter4edu.github.io/jupyter-edu-book/)
+This tutorial walks you through Jupyter's user interface.
 
-Tips:
-- If you followed the [Anaconda Install tutorial](anaconda.md), you should have already installed Jupyter Notebook (2:47).
+[![Jupyter Notebooks Walkthrough](https://img.youtube.com/vi/HW29067qVWk/0.jpg)](https://www.youtube.com/watch?v=HW29067qVWk)
+
+{{< hint info >}}
+**Tips**
+
+- You do not need to understand all the code that is shown in the notebook (0:47; 18:02; 22:48).
+- If you followed the [Anaconda Installation tutorial](anaconda.md), you should have already installed Jupyter Notebook (2:47).
+
+{{< /hint >}}

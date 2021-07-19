@@ -1,12 +1,10 @@
 ---
-title: Activities
+title: Activity 1) Project Ideas
 draft: false
 date: 2021-02-04
 ---
 
-# Live Stream Activity: Ideation
-
-You will perform this activity during live stream #2.
+# Activity #1: Generating Project Ideas
 
 ## Overview
 - Type: Breakout activity
@@ -16,6 +14,13 @@ You will perform this activity during live stream #2.
   - facilitate getting to know each other
   - start the group formation process (but do not have to commit at this moment)
   - summarize the result of your discussion for the entire group
+
+## Preparation before the breakout activity
+
+- Read ["Fields of Gold"](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3820666) and learn how to identify impactful and novel web data!
+- During the live stream, you'll be allocated to three groups: society, business, and trendsetter. Can you think of relevant data sources (e.g., websites, APIs) that spark your interest?
+- Take some notes, and be prepared to pitch a site or context to other students. Your input will be used to facilitate group formation for the team project.
+
 
 ## Breakout session structure
 

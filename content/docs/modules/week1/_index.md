@@ -1,29 +1,37 @@
 ---
 weight: 2
-title: Week 1) Research and business opportunities
-description: Recognize research and business opportunities from using web data.
-bookCollapseSection: true
+title: Week 1) Getting started with Python
+description: Learn to code in Python, so you can eventually collect online data using web scraping and APIs.
+bookCollapseSection: false
 ---
 
-# Week 1: Identifying Research and Business Opportunities From Online Data Collections
+# Week 1: Getting started with scraping and APIs in Python
 
 ## Livestream 1
-- Introduction to the course ([re-watch](https://youtu.be/b3Fiq3mrsb4))<!-- add zoom link-->
+- Introduction to the course <!-- add link ([re-watch](https://youtu.be/b3Fiq3mrsb4))<!-- add zoom link-->
+- Walk-through of [web data retrieval for dummies (Tutorial)](docs/tutorials/webdata-for-dummies)
+
+<!--- Recognizing research and business opportunities from web data-->
 
 ## Self-study and activities
+
+- [Python Bootcamp (Tutorial)](docs/tutorials/pythonbootcamp)
+
+<!--
 - Workflow for collecting online data (Tutorial)
   - [Overview](docs/tutorials/workflow/overview.md)
   - [Opportunity Identification](docs/tutorials/workflow/opportunities.md)
-- [Web data retrieval for dummies (Tutorial)](docs/tutorials/webdata-for-dummies)
+-->
 
 ## Livestream 2
-- Exploration of business and research ideas
-- Initial group formation for team projects
-- Q&A/walk-through for tutorial
+- Q&A/walk-through for this week's tutorials
 
 <!--
 - Generate ideas for academic research
 - Practice questions for "Web data retrieval for dummies"
+- Exploration of business and research ideas
+- Initial group formation for team projects
+
 -->
 
 <br>

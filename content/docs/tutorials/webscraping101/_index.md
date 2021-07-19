@@ -1,7 +1,7 @@
 ---
 weight: 50
 title: Web scraping 101
-description: Learn how to make HTTP requests to a site, loop through multiple pages, and parse content to a CSV file
+description: Learn how to make HTTP requests to a site, loop through multiple pages, and parse content to a CSV file.
 bookCollapseSection: true
 draft: false
 ---

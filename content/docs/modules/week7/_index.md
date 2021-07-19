@@ -1,27 +1,24 @@
 ---
 weight: 60
-title: Week 7) Project
-description: Work on your projects, with a focus on preprocessing, validating, and documenting your data.
+title: Week 7) Finalizing Data Collection
+description: Work on your project, with a focus on documenting your data collection.
 bookCollapseSection: true
 ---
 
 # Week 7: Lab week
 
-## Coaching sessions
-- Individual meetings for teams, on request
-- Scheduling to be announced
+## Self-study
+- Notes on exam preparation
 
+## Coaching sessions
+- [Coaching sessions with teams, on request](../../../docs/course/project/workplan/coaching.md).
+- Recorded coaching sessions (from previous editions of this course, and also the current edition) are available [on this YouTube playlist](https://www.youtube.com/playlist?list=PLdDbyJQwReWhis9Ns7_NfYzw4YAp91D6G).
 <!--- Live coding / feedback sessions for teams
 -->
 
-## Self-study
-- Exam preparation (to be announced)
-
-<!--- Exam preparation *prerecorded*
-- ...
--->
-
+## Live stream #7
+- Course summary
+- Exam preparation
 
 <br>
 {{< button relref="week6" >}}Previous week{{< /button >}}
-{{< button relref="week8" >}}Next week{{< /button >}}

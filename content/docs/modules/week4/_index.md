@@ -1,11 +1,35 @@
 ---
 weight: 4
-title: Week 4) Data extraction plan
-description: Make a plan how to extract data from a website or API.
-bookCollapseSection: true
+title: Week 4) Data Availability and Research Fit
+description: Assess which data is available at your chosen data source, and whether it fits your research purpose.
+bookCollapseSection: false
 ---
 
-# Week 4: Data Extraction Plan
+# Week 4: Data Availability Assessment, Research Fit, Legal Audit
+
+## Self-study
+- Review the previous tutorials, and start fiddling around with accessing your chosen website or API.
+- Conduct some background search/research on the current legal situation on using web scraping and APIs
+
+{{< hint tip >}}
+__Looking for a challenge? [optional]__
+
+If you feel you don't just want to stick with the basics but would like to learn *more*, then you can choose to follow some of the tutorials below. This material will *not* be covered on the exam, but you can certainly use it for your projects.
+  - [Advanced Web Scraping](docs/tutorials/webscrapingadvanced)
+  - [Advanced APIs](docs/tutorials/apisadvanced)
+- Check out [Hannes' YouTube channel](https://www.youtube.com/channel/UCYef2_7EscmOfwl-2G7mIrg) for any added screencasts/coaching sessions with other students, either from this year, or from previous years.
+
+{{< /hint >}}
+
+## Activities
+- Please prepare [Team Activity #3](../../../docs/course/project/workplan/activity3.md).
+- If you've got some spare time left, try fiddling around with code to extract some data from your chosen website or API.
+
+## Live stream 5
+- [Team Activity #3](../../../docs/course/project/workplan/activity3.md)
+
+
+<!--
 
 ## Live stream 4
 - Tutorial Q&A for [web scraping 101](docs/tutorials/webscraping101) and [APIs 101](docs/tutorials/apis101)
@@ -17,41 +41,19 @@ bookCollapseSection: true
 - Workflow for collecting online data (Tutorial)
   - [Technical Extraction Plan and Prototyping](docs/tutorials/workflow/extraction-plan-prototyping.md)
   - [Evaluate Legal and Ethical Concerns](docs/tutorials/workflow/legalfit.md)
+
+  -->
+
   <!--- Design choices: modularity and storage *prerecorded*
   - Data capture and enrichment *prerecorded*
   - Deployment *prerecorded*
 - Legal and ethical considerations when scraping <!-- *reading* [tba]-->
+
+<!--
 - Optional: Watch this screen cast in which I try to figure out how to [obtain data from an API that I haven't seen before](https://youtu.be/iDA710TPXT0)
   - The video may be particularly useful to students who wish to extract data from an API for their team projects.
 
-## Activities
-
-- Please work on your [technical extraction plan](docs/tutorials/workflow/extraction-plan-prototyping.md), and assess the [legal and ethical concerns](docs/tutorials/workflow/legalfit.md) of your data collection project.
-- You *can* submit - for live feedback - one or more of the following works. Note that it is not *mandatory* to upload material. Instead, the submissions should be seen as a way to receive feedback on your projects.
-
-  - A short slide deck (max. 2 slides), in which you show which __entities you plan on getting (+ its extraction frequency)__, and what __particular variables__ you plan on selecting.
-    - When submitting, please label your files as `entities_teamXX.pptx` and `entities_teamXX.pdf`.
-  - A short slide deck (max. 2 slides), in which you explain the __seeding strategy and sampling procedure__.
-    - When submitting, please label your files as `seeding_teamXX.pptx` and `seeding_teamXX.pdf`.
-  - A short slide deck (max. 2 slides), in which you detail any __ethical or legal concerns__ of your data collection.
-      - When submitting, please label your files as `legal_teamXX.pptx` and `legal_teamXX.pdf`.
-  - A __short screencast__ (max. 2 minutes), in which you *visualize* your __navigation path__. Your raw recording can be longer than 2 minutes, BUT, you are required to trim it to 2 minutes in the final submission. In other words - we recommend you cut "silent moments" (e.g., when a website is being loaded).
-      - When submitting, please label your file as `navigation_teamXX.mp4` (or any other video format).
-  - A __prototype script__ (Jupyter Notebook, or `.py` file) that demonstrates the first steps in writing your data extraction/scraping code. You can also use your script to illustrate some of the technical hurdles you are facing. Please test whether the script/Notebook runs correctly (e.g., open it on another computer, and run it top to down). Upload the files in a compressed archive, please. Make use of comments in your code to point users to problems.
-      - When submitting, please label your file as `scraper_teamXX.ipynb` or `scraper_teamXX.py`.
-
-- Submission
-  - Please upload your work in one zip file by Friday, 8.00am (Canvas).
-  - Tips
-      - Slides will not be used for *presenting*, so they can be relatively text-heavy ("McKinsey slides", rather than presentable "five bullets max")
-      - Slide decks, screencasts and code will be used in the interactive live stream. Make sure others can understand your work (e.g., by using comments, being sufficiently elaborate)!
-      - Indicate your team number in the file names.
-
-## Live stream 5
-- Discussing the components of your technical extraction plan
-- Building a first prototype
-- Debating on legal and ethical concerns
-- [Re-watch here](https://youtu.be/CauV5aV0pqo)
+-->
 
 <!--## Activities (individual exercises or team project)
 - [Project] Make a data extraction plan for your website, taking into account legal and ethical concerns <!-- develop -->

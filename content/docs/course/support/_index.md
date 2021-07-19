@@ -1,8 +1,7 @@
 ---
-bookFlatSection: true
-title: "Support"
-bookHidden: false
 weight: 6
+title: "Support"
+bookCollapseSection: true
 description: " "
 ---
 

@@ -14,6 +14,32 @@ The team project is submitted as a so-called “data package”, consisting of t
 2. Source code for the data collection (30% of the final grade)
 3. Overall quality of the data package (10% of the final grade)
 
+In preparing your submission, please use the following directory structure.
+
+```
+readme.txt <-- your documentation,
+               either in the form of a plain txt file,
+               or a formatted PDF document
+
+docs\api_documentation.pdf <-- any supporting files
+docs\screenshot.pdf            for the documentation
+                               (e.g., API documentation,
+                               screenshots from the website,
+                               relevant blog articles)
+
+data\file1.csv <-- your raw data files
+data\file2.csv
+data\file3.csv
+
+src\collection\collect.py <-- final source code used
+                              for collecting the data
+
+src\reporting\analysis.R <-- final source code used
+                     to generate statistics/insights documented
+                     in the readme.
+
+```
+
 ## Calculation of team grades
 Weights for each component of the grading rubric below are indicated in brackets (e.g., 5%). In calculating your final grade, percentages are converted to grade points on a ten-point scale (e.g., 5% make up 0.5 grade points on a 10-point scale), weighted by the following percentages:
 

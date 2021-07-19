@@ -60,6 +60,7 @@ Skilling up in web scraping and APIs requires practice, and conducting a group p
 - Data sources
   - [Netflix](https://www.netflix.com/browse)
   - [IMDb](https://www.imdb.com)
+  - [The Numbers](https://www.the-numbers.com/) (check here for daily top 10 lists for home video and Netflix, going back about 1.5 years) 
 <!--
 - Potential research questions
   - Which movie genres are most popular, and are most likely to be trending?

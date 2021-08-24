@@ -1,3 +1,5 @@
+googleAnalytics = "G-NBDE8J4CFM"
+
 baseURL = "https://datacollections.hannesdatta.com/"
 languageCode = "en-us"
 title = "Online Data Collections (oDCM)"
@@ -58,7 +60,7 @@ enableGitInfo = true
 
   # Set source repository location.
   # Used for 'Last Modified' and 'Edit this page' links.
-  BookRepo = 'https://github.com/hannesdatta/course-datacollections'
+  BookRepo = 'https://github.com/hannesdatta/course-odcm'
 
   # Enable "Edit this page" links for 'doc' page type.
   # Disabled by default. Uncomment to enable. Requires 'BookRepo' param.

@@ -40,6 +40,16 @@ The internet offers abundant possibilities to collect data (e.g., from social ne
 <!--We will review the basics during induction week, but the pace will be very brisk.
 -->
 
+{{< hint info >}}
+__We value diversity and inclusion__
+
+In this course, we embrace diversity and stimulate integration. We encourage students to be proud of their background (e.g., ethnicity, nationality), their personal interest (e.g., hobbies), or any other thing that characterizes them who they are. One way for students to bring in *their perspective* is the choice with (a) whom to collaborate (e.g., purposefully bring in people of diverse backgrounds or technical skill levels), and (b) which topic to choose for the team project (e.g., spending sufficient time getting to know each other, creating a safe space, and being open to work on topics off the main stream).
+
+Please feel invited to talk to the course coordinator at any point in time if you hesitate about how to integrate your views!
+
+Curious to learn more? Check out [Tilburg's Diversity & Inclusion Policy](https://www.tilburguniversity.edu/about/working/gender-policy), and learn how Tilburg [supports student diversity](https://www.tilburguniversity.edu/students/studying/campus/diversity).
+
+{{< /hint >}}
 
 ## Grading
 

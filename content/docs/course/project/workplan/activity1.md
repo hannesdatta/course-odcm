@@ -42,8 +42,8 @@ Please also check out the [syllabus for some more information on how diversity &
     - "What's your biggest (personal, business or study) challenge right now?"
 
 3. Explore your "breakout challenge" (about 10 minutes)
-    - Group "society": Come up with a list of the three most important *societal challenges* of today. Find challenges that you also personally find important. Get inspired, e.g., by the UN Sustainable Development Goals, but feel free to go in a completely different direction!
-    - Group "business": Come up with a list of the three most important *business challenges* of today. Discuss challenges that you also personally care about. Seek inspiration, e.g., in the business press, at the websites of agencies (e.g., Accenture, etc.).
+    - Group "society": Come up with a list of what you consider the most important *societal challenges* of today. Find challenges that you also personally find important. Get inspired, e.g., by the UN Sustainable Development Goals, but feel free to go in a completely different direction!
+    - Group "business": Come up with a list of what you consider the most important *business challenges* of today. Discuss challenges that you also personally care about. Seek inspiration, e.g., in the business press, at the websites of agencies (e.g., Accenture, etc.).
     - Group "trendsetter": Discuss in your group about trends that *you* think will become extremely big in the near future! Think Google in 2006, Twitter in 2010, Spotify in 2012, self-driving cars in 202x?, etc. "What's still small but will become *big* and important (e.g., revenue, impact on society, etc.) soon?!"
 4. Have your team members do some background research and come up with a list of websites and APIs in a joint Google Docs/Slides (about 15 minutes). Think about ways in which such websites or APIs could __help you as marketers to contribute to solving those__.
 5. Be able to summarize and present the result of your work (i.e., the challenges/trends, with corresponding websites and APIs) to the entire group.

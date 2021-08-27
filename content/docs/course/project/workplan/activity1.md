@@ -18,8 +18,18 @@ date: 2021-02-04
 ## Preparation before the breakout activity
 
 - Read ["Fields of Gold"](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3820666) and learn how to identify impactful and novel web data!
-- During the live stream, you'll be allocated to three groups: society, business, and trendsetter. Can you think of relevant data sources (e.g., websites, APIs) that spark your interest?
+- During the live stream, you can choose an initial theme: society (e.g., societal impact), business (e.g., new business model), and trendsetter (e.g., new digital platform). Can you think of relevant data sources (e.g., websites, APIs) that spark your interest?
 - Take some notes, and be prepared to pitch a site or context to other students. Your input will be used to facilitate group formation for the team project.
+
+{{< hint info >}}
+__Diversity & inclusion matters!__
+
+While we try to start the conversation about potential topics to work on around specific themes, we ask you not to feel restricted by those. In fact, what really matters here is that you bring in your passion (e.g., hobby), background (e.g., nationality, ethnicity), or any other thing that you consider part of yourself. In other words, let's bring alive Tilburg's statement of diversity and inclusion. If you're really into scraping Amazon.com, that's fine. But if you're more interested in that niche platform that you and some of your friends hang out on, feel welcome to do that! We're not just here to do what others have done in the past, but we're here to move our field along. And we won't be able to do that without talking about and doing the things that you truely care about.
+
+Please also check out the [syllabus for some more information on how diversity & inclusion matters in this class](../../../syllabus).
+
+
+{{< /hint >}}
 
 
 ## Breakout session structure

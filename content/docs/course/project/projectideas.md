@@ -26,7 +26,7 @@ Skilling up in web scraping and APIs requires practice, and conducting a group p
   - [Spotify Web API](https://developer.spotify.com/documentation/web-api/)
   - [Last.fm](https://last.fm)
   - [Listennotes](https://listennotes.com) and [Listennotes Realtime](https://listennotes.com/realtime)
-  
+
 <!--
 - Potential research questions
   - Compare the rankings across countries throughout time (2017-2021)
@@ -60,7 +60,7 @@ Skilling up in web scraping and APIs requires practice, and conducting a group p
 - Data sources
   - [Netflix](https://www.netflix.com/browse)
   - [IMDb](https://www.imdb.com)
-  - [The Numbers](https://www.the-numbers.com/) (check here for daily top 10 lists for home video and Netflix, going back about 1.5 years) 
+  - [The Numbers](https://www.the-numbers.com/) (check here for daily top 10 lists for home video and Netflix, going back about 1.5 years)
 <!--
 - Potential research questions
   - Which movie genres are most popular, and are most likely to be trending?

@@ -10,11 +10,36 @@ description: " "
 
 Are you experiencing technical difficulties, e.g., when working through the tutorials?
 
+<!--
 Contact the course coordinator via email, please: h.datta@tilburguniversity.edu.
+-->
+
+<!--
+{{< hint info >}}
+
+__Before sending an email, please...__
+- let us know who you are (e.g., your first and last name)
+- if it concerns a team issue, please always CC your entire team (or, in case of WhatsApp, create a group and add us to it). We will always reply to all.
+-	If it concerns a question about programming or data… have you tried to solve your issue independently first?
+o	No… not yet…
+▪	Please first talk to fellow students about it
+▪	Please first search on the web (e.g., on Google, on Stackoverflow.com)
+o	Yes, I tried to
+▪	Please provide a concise description of what you have tried already
+▪	Please provide some screenshots and/or videos
+▪	Please provide us with code and data, so that we can actually experiment with your specific problem to find a solution
+-	you can send us your files via https://send.uvt.nl (data transfers of up to 10 GB); of course, wetransfer.com, Dropbox or Google Drive works, too
+-	we may choose to setup a TeamViewer session to help you– please download (the free version of) TeamViewer and have your ID and password ready should we request it from you (https://www.teamviewer.com/nl/teamviewer-automatisch-downloaden/)
+
+There is a three-day answer policy for both e-mail and WhatsApp. If you do not get a reply, please re-send your request.
+
+Note that e-mails to any personal account of the course coordinator or lecturers concerning questions are not subject to the three-day answer policy, and may be left unanswered.
+
 
 
 <!--
 Are you experiencing technical difficulties, e.g., when working through the tutorials?
+-->
 
 For quick questions, please use *WhatsApp* to get in touch with us (+31 13 466 8938).
 
@@ -22,7 +47,8 @@ For quick questions, please use *WhatsApp* to get in touch with us (+31 13 466 8
 - Informal language is perfectly fine.
 - Please write to us in English.
 - Be prepared that we call you back.
-- We may ask you for permission to share the conversation with other students on the course's FAQ page. Names/etc. are of course taken out! If you don't wish your issue to be shared with others, simply say so!
+<!--- We may ask you for permission to share the conversation with other students on the course's FAQ page. Names/etc. are of course taken out! If you don't wish your issue to be shared with others, simply say so!
+-->
 
 **WhatsApp**
 +31 13 466 8938
@@ -39,69 +65,3 @@ Please also make use of specific comments in your code to explain the problem. T
 
 
 {{< /hint >}}
-
-
-## FAQ
-
-**Team Project**     
-
-*How should I store API keys and personal credentials in my notebook without disclosing them (e.g., on Github)?*  
-With environment variables, you can access variables without literally writing them down in a notebook or script (e.g., `password = "..."`). Follow the steps in [this](https://tilburgsciencehub.com/building-blocks/store-and-document-your-data/store-data/environment-variables/) building block on Tilburg Science Hub (TSH) to learn how to configure environment variables.
-
-*My scraper collects a whole lot of string (i.e., text) data, but I'd like to filter down on specific elements and exclude everything else. The `replace()` function does not suffice. What would you recommend?*  
-Regular expressions are specfically designed to find patterns in string data. Have a look at the [building block](https://tilburgsciencehub.com/building-blocks/develop-your-coding-skills/learn-to-code/learn-regular-expressions/) on TSH on how to get started with regex.  
-
-*How can I run my web scraper repetitevely (e.g., every day)*  
-You can use task scheduling to automate the execution of scripts at specified intervals. Follow the steps in [this](https://tilburgsciencehub.com/building-blocks/automate-and-execute-your-work/automate-your-workflow/task-scheduling/) building block to set-up schedling for your scraper!
-
-**Python Bootcamp**
-
-*What's the difference between `if` and `elif`?*  
-It's simply a matter of the order. `if` refers to the first condition and `elif` to the condition(s) that follow. There can be 0, 1 or many `elif` statements.
-
-*What is `[]`?*  
-It's an empty list. More often than not, it's defined at the top of a function after which items are appended to it.
-
-*How should I interpret `discount_rate += 0.10`?*  
-It means take the current value of `discount_rate` and add 0.10 to it. So, say that `discount_rate = 0.10` and you run `discount_rate += 0.10` its value becomes `0.20`.
-
-*Why is indenting code especially important in for-loops?*       
-It tells the computer when to break out of a loop. The function below already returns its value after 1 iteration because the `return` statement is part of the loop.
-
-```
-sum = 0
-for counter in range(10):
-   sum += counter
-   return sum
-```
-
-Actually, in this case it makes more sense to first finish the `for` loop and only then return the value of `sum`. Like this (i.e., `return` is unindented here!):
-
-```
-sum = 0
-for counter in range(10):
-   sum += counter
-return sum
-```
-
-<!--
-
----
-
-**Webdata for Dummies**  
-*Question*  
-Answer  
-
----
-
-**Webscraping 101**  
-*I get an error message that a function or variable is undefined, how can I solve that?*
-The code blocks often build on each other. That is to say, we use code defined earlier in a cell below that. Even though, the code may already be written there for you, you still need to run it so that the computer also stores it in the memory. Therefore, work your way through the notebook from top to bottom and run each and every cell to avoid problems!
-
-*What does `url_book[6:]` mean?*  
-It takes the url_book string and starts at index 6 and continues to the end of the string (so 6 and further). In other words, it skips the first few characters.
-
-*My Spider script looks different than the one in the screenshot, how come?*  
-Most likely, you accidentally opened the `.ipynb` file rather than the `.py` script. Jupyter Notebooks are stored as JSON files and therefore store a lot of ancillary data (like cell_type, meta data etc.). Download the `.py` from the website, store it in the same directory as your notebook and try again.
-
--->

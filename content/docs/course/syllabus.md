@@ -23,7 +23,7 @@ The internet offers abundant possibilities to collect data (e.g., from social ne
 ## Format
 
 - Online-only
-- Combination of self-paced tutorials (e.g., using Jupyter Notebooks or pre-recorded clips), and interactive live streams for feedback and coaching
+- Combination of self-paced tutorials (e.g., using Jupyter Notebooks or pre-recorded clips), and interactive live streams for feedback and coaching (recordings are shared with students)
 - Learn state-of-the-art tools popular among scientists, marketing analysts and data scientists (e.g., Python), and collect data from real websites and APIs
 - Open education & open science (all material is open; publicly accessible course page that stays with you, even after the end of the course)
 

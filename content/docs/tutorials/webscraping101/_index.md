@@ -21,3 +21,4 @@ draft: false
 ## Getting started
 
 - [Download the tutorial](webscraping-101.ipynb) (right-click, download linked file as...). Then, open the file in Jupyter Notebook and start the tutorial!
+- [View & run the tutorial in Google Colab](https://colab.research.google.com/github/hannesdatta/course-odcm/blob/master/content/docs/tutorials/webscraping101/webscraping-101.ipynb)

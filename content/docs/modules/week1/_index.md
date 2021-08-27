@@ -8,13 +8,13 @@ bookCollapseSection: false
 # Week 1: Getting started with scraping and APIs in Python
 
 ## Livestream 1
-- Introduction to the course <!-- add link ([re-watch](https://youtu.be/b3Fiq3mrsb4))<!-- add zoom link-->
-- Walk-through of [web data retrieval for dummies (Tutorial)](docs/tutorials/webdata-for-dummies)
+- Introduction to the course ([slides](slides.html))<!-- add link ([re-watch](https://youtu.be/b3Fiq3mrsb4))<!-- add zoom link-->
 
 <!--- Recognizing research and business opportunities from web data-->
 
 ## Self-study and activities
 
+- [What is web scraping and what are Application Programming Interfaces (APIs)?](https://videocollege.uvt.nl/Mediasite/Play/41afff385bd74db2af5fb8507350ea521d)
 - [Python Bootcamp (Tutorial)](docs/tutorials/pythonbootcamp)
 
 <!--
@@ -24,7 +24,7 @@ bookCollapseSection: false
 -->
 
 ## Livestream 2
-- Q&A/walk-through for this week's tutorials
+- Q&A/walk-through for this week's tutorial
 
 <!--
 - Generate ideas for academic research

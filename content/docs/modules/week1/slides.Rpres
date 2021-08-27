@@ -1,0 +1,370 @@
+oDCM - Live stream 1
+========================================================
+author: Hannes Datta
+date: 
+autosize: true
+
+<!--#
+
+https://support.rstudio.com/hc/en-us/articles/200486468
+-->
+
+Welcome to oDCM!
+========================================================
+
+We're about to start with the first livestream of this class.
+
+- Please **turn on** your camera; it helps us to interact better!
+- The **chat** is open - use it like on Twitch/YouTube to also talk to each other (or to me).
+- If you haven't done so, please **explore the course page** at [https://odcm.hannesdatta.com]().
+
+<!--
+--- drafted this course for a very long time
+- finally got the chance to teaching it now
+- what is it about: radical change in the way to work on data-intensive projects
+- While you can find tons of resources online on how to scrape, or how to access data from APIs, none of these tutorials will actually teach you how the way you scrape affects your research. This is the void we will.
+
+- happy to share that vision, and share practical tips
+-->
+
+
+Agenda
+========================================================
+
+- Getting to know each other
+- Motivation for the course
+- Course framework and learning goals
+- Agenda and practical arrangements
+
+Disclaimer
+========================================================
+incremental: true
+
+- Slow me down & use the chat
+- Live streams are *complements*, not substitutes for self-study & course website
+- Minimal use of slides; will post
+- This is not a class that merely teaches you Python (but, if you invest time, you'll learn Python on the way!)
+- Mix of students at various levels (e.g., beginners, advanced Python users)
+- I'm a marketer, not a data or computer scientist
+- Consider me your coach, not your *distant professor*
+- Course is online-first (i.e., it won't work offline)
+
+About myself
+========================================================
+
+- born and raised in Germany
+- married, 2 kids (3 and 6 years old)
+- streaming from 'de zolderkamer' in 's-Hertogenbosch
+- geek at heart (3D printing, coding), recently started skateboarding (surfskating, actually)
+- now Associate Prof at Tilburg University
+
+Key areas of expertise
+========================================================
+
+- Substantive interests
+  - new business models (e.g., subscriptions)
+  - marketing-mix modeling and optimization
+
+- Methodological interests
+  - data management of structured and unstructured data
+  - online data collection via APIs and web scraping
+  - causal effects with observational data
+
+Teaching activities (all openly available)
+========================================================
+
+- MSc Marketing Analytics
+    - Data preparation and workflow management (*new*, https://dprep.hannesdatta.com)
+    - Online data collection and management (*new*, https://odcm.hannesdatta.com)
+    - MSc Thesis supervision (https://thesis.hannesdatta.com)
+    - Research in Social Media (*legacy*)
+- Other inititatives
+  - Tilburg Science Hub (https://tilburgsciencehub.com)
+  - YouTube channel (https://youtube.com/c/hannesdatta)
+  - My public code (https://github.com/hannesdatta)
+  - More about my work (https://hannesdatta.com)
+  
+
+Getting to know you
+========================================================
+
+Please answer in the chat directly...
+
+<!--
+
+Ask questions live, await response in the chat
+
+- Where are you located? (city, country)
+- Is this your first class? (or have you been enrolled before)
+- Experience in R?
+- What are you working on right now? (e.g., project, study, thesis)
+- Where do you want to work when you finish the program?
+
+-->
+
+Motivation for course 
+========================================================
+
+- started out as a PhD student without data
+- was interested in music, and found website with data (https://last.fm)
+- no best practices in scraping; learnt all by myself and made many mistakes
+- scraping undervalued in academic job market, __but__, key role in shaping relevance and rigor of your work
+- now scraping is a large part of defines me...
+
+Selection of scraping projects I've undertaken
+========================================================
+
+- investigate music streaming ([How did music consumption change with Spotify?](https://tiu.nu/spotify))
+- monitored Spotify's user interface and make lists of new releases
+- investigate playlist ecosystem with APIs
+- scraped reviews at Amazon.com
+- investigate "video streaming wars" (e.g., Netflix versus Disney+, when do consumers use multiple streaming services?)
+- share code [on GitHub](https://github.com/hannesdatta)
+- wrote [tutorial paper on scraping/APIs](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3820666) (which we use in this class)
+
+
+<!--
+- The story about the legal issues you faced (prior to switching to Chartmetric)
+
+- Show example of Chartmetric API output (a website with lots of text)
+
+- Unfortunately, not every websites provides an API
+-->
+
+What is scraping, and what are APIs?
+========================================================
+
+*With web scraping, you can essentially capture anything you can view in a web browser*
+
+- pricing data at [bol.com](https://bol.com)
+- reviews at [Amazon.com](https://amazon.com)
+
+Opportunities from web scraping
+========================================================
+
+- discover/document novel phenomena (e.g., new platforms/technologies)
+- improved data access & quality (e.g., address wider set of stakeholders)
+- improve methods (e.g., get data to try out new methods)
+- boost relevance for managers 
+
+Getting inspired...
+========================================================
+
+*What are cool websites/services you're currently using a lot?!*
+
+Put them in the chat now!
+
+Workflow for collecting web data
+========================================================
+
+1. Data Source Exploration
+2. Data Availability Assessment
+3. Evaluation of Research Fit and Resource Use
+4. Prototype Development
+5. Collecting and Monitoring
+6. Preprocessing, Documentation and Distribution
+
+
+Learning Goals
+========================================================
+incremental: true
+
+- Identify online data sources and evaluate their value in the context of a specific research question or business problem
+- Assess the terms and conditions for collecting, storing, and sharing data
+Collect data via web scraping and Application Protocol Interfaces (APIs) by mixing, extending and repurposing code snippets
+- Transform semi-structured JSON data to structured data sets for statistical analysis (“parsing”)
+- Store and manage data using file-based systems
+- Draft, execute, monitor and audit online data collections locally and remotely
+- Document and archive collected data, and make it available for public (re)use
+
+Positioning
+========================================================
+
+![odcm](odcm_positioning.png)
+
+Course structure
+========================================================
+
+- Weekly modules, structured along the *workflow for online data collections*
+  - Self-study
+  - Tutorials
+  - Live stream for feedback & immersive activities
+
+- Project in which you put into practice your skills from the weekly modules
+
+
+Tutorials
+========================================================
+
+- Themes
+  - Software Installation & Python Bootcamp
+  - Webdata for dummies
+  - Web scraping 101 & APIs 101 
+  - Web scraping & APIs Advanced 
+  
+- Structure
+  - Importance of what you'll learn
+  - Some simple try-outs
+  - Exercises with solutions
+
+Team project
+========================================================
+
+- goals
+  - scrape data via web sites or APIs
+  - work through the entire workflow
+  - receive feedback by students and me (your coach)
+  - [project ideas!](https://odcm.hannesdatta.com/docs/course/project/projectideas)
+
+- evaluation
+  - specifics are on the [course website](https://odcm.hannesdatta.com/docs/course/project)
+  - we'll have a grading rubric (which is already available)
+  - self- and peer assessment used
+
+
+
+Course website
+========================================================
+
+Visit [https://odcm.hannesdatta.com]()!
+
+- It's open education, so spread the word!
+- Course website is your #1 resource, Canvas only used for
+  - posting important announcements,
+  - sign up for teams,
+  - submitting data challenges/projects, and
+  - discussion board.
+
+<!--
+::: notes
+
+all students have Canvas access?
+
+:::
+
+-->
+
+Live streams
+========================================================
+
+- use the public chat
+- use it like on Twitch or YT (massively)!
+- help me as a moderator if I miss questions
+- maybe share screen (install Teamviewer via [tilburgsciencehub.com/get/teamviewer]())
+- if you have, use two screens (one to code, one to view colleagues/slides)
+
+Grading
+========================================================
+
+- Team project, with self- and peer assessment (50%)
+- (Online) computer exam (50%)
+
+<!--
+::: notes
+
+* Exam: Both multiple choice and open questions (you can't pass this course if you don't learn programming  make sure you actively participate in the team project so that you can replicate it individually)
+- more specs on exam later
+
+:::
+-->
+
+My commitment
+========================================================
+
+- Get up to speed with both web scraping and APIs (and know when to pick which one!)
+- Learn Python, __but__, becoming an expert requires years of practice
+- Discuss own work and ideas, __but__ requires interaction, talking to me, working hard
+- Open software only (usable right away, no admin rights required)
+- Diversity & inclusion - bring in your own ideas, don't be afraid to study topics off the main stream!
+
+Brain-dead by coding
+========================================================
+
+- Coding can be extremely frustrating if you're starting out
+- I tend to become semi-"brain-dead" after a day of coding
+- Take breaks! Stop coding. Go for a run. Start again.
+- You will learn from your mistakes
+- Use cheat sheets and our support section.
+
+&#8594; quick feedback loops in first few weeks
+
+<!--
+::: notes
+
+Mention how we aim to remedy this initial hurdle? (quick feedback loops especially in the first few weeks)
+
+:::
+-->
+
+Steps of escalation & getting in touch
+========================================================
+
+When you run into trouble, this is your way out!
+
+1. Try to find the info on the course website (+ updates!)
+2. Ask Google and Stackoverflow
+3. Ask friend/classmate (form learning groups, e.g., coordinate via discussion board)
+4. Can it wait? Defer to live streams.
+5. If it can't wait: be in touch with me
+
+<!--
+::: notes
+
+* Google/Stackoverflow are your best friends
+* Live demonstration of how to search on Google and Stackoverflow
+* Comment on experiment with live coding sessions (start a call - talk to fellow classmates who're facing the same struggles)
+
+
+:::
+-->
+
+Use of WhatsApp
+========================================================
+
+- Please use WhatsApp: +31 13 466 8938.
+
+![WhatsApp](wa_qr.png)
+
+- Onboarding (names needed!)
+- Email is not so optimal
+- Check out the course's support section
+
+
+What's in for you?
+========================================================
+
+- Essential skills for entrepreneurs
+  - e.g., have your own company on the basis of web data and APIs
+  - be the linking pin (interface between marketing and analytics)
+
+- Investment in research skills
+  - e.g., collect own data & shape its creation to create relevant and rigorous research
+
+- Showcast expertise in coding
+
+
+Success factors
+========================================================
+
+Please tell me __what would make this course a success__ for you
+
+<!--
+::: notes
+
+(for me): become more efficient, use Tilburg Science Hub, give me feedback
+
+:::
+-->
+
+Getting started
+========================================================
+
+- Install Python/Anaconda and do the Python Bootcamp (all done - this was required preparation before the course started?)
+
+- Watch a summary video on what web scraping and APIs are
+
+- Do the Python Bootcamp (Tutorial)
+
+- Work hard...
+
+- ...and be in touch on WhatsApp for questions/feedback!

@@ -8,18 +8,11 @@ bookCollapseSection: false
 # Week 4: Data Availability Assessment, Research Fit, Legal Audit
 
 ## Self-study
-- Review the previous tutorials, and start fiddling around with accessing your chosen website or API.
+
+- [APIs 101 (Tutorial)](docs/tutorials/apis101)
+- Start fiddling around with accessing your chosen website or API.
 - Conduct some background search/research on the current legal situation on using web scraping and APIs
 
-{{< hint tip >}}
-__Looking for a challenge? [optional]__
-
-If you feel you don't just want to stick with the basics but would like to learn *more*, then you can choose to follow some of the tutorials below. This material will *not* be covered on the exam, but you can certainly use it for your projects.
-  - [Advanced Web Scraping](docs/tutorials/webscrapingadvanced)
-  - [Advanced APIs](docs/tutorials/apisadvanced)
-- Check out [Hannes' YouTube channel](https://www.youtube.com/channel/UCYef2_7EscmOfwl-2G7mIrg) for any added screencasts/coaching sessions with other students, either from this year, or from previous years.
-
-{{< /hint >}}
 
 ## Activities
 - Please prepare [Team Activity #3](../../../docs/course/project/workplan/activity3.md).

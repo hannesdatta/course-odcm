@@ -17,4 +17,4 @@ draft: false
 - Learn how to save the retrieved data as tabular files (e.g., CSV)
 
 ## Getting started
-- [Download the tutorial](webscraping-advanced.ipynb) (right-click, download linked file as...). Then, open the file in Jupyter Notebook and start the tutorial!
+- [Download the tutorial](webscraping-advanced.ipynb) (right-click, download linked file as...). Then, open the file in Jupyter Notebook and start the tutorial! __Note that this tutorial does not run on Google Colab__.

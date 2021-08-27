@@ -37,4 +37,4 @@ Learn here [how to log in to unlock the content!](../../../docs/course/support/d
 
 1. Complete the [Datacamp course "Introduction to Python"](https://learn.datacamp.com/courses/intro-to-python-for-data-science) [only Modules 1-3, about 3-4 hours]. If you haven't [installed the software](../software) yet, make sure to do so before getting started.
 3. [Get familiar with Jupyter Notebook](https://www.youtube.com/watch?v=HW29067qVWk) [30 minutes]
-4. Download the [tutorial](python-bootcamp.zip) (right-click, download linked file as…). Then, open the file in Jupyter Notebook and start the tutorial! [Jupyter Notebook, 2-3 hours] <!-- the zip file also includes the data they need for the last few exercises -->
+4. Download the [tutorial](python-bootcamp.zip) (right-click, download linked file as...). Then, open the file in Jupyter Notebook and start the tutorial! [Jupyter Notebook, 2-3 hours]. Alternatively, open the tutorial in [Google Colab](https://colab.research.google.com/github/hannesdatta/course-odcm/blob/master/content/docs/tutorials/pythonbootcamp/python-bootcamp.ipynb). <!-- the zip file also includes the data they need for the last few exercises -->

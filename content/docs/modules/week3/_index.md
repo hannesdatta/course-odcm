@@ -9,7 +9,7 @@ bookCollapseSection: false
 
 ## Self-study
 
-- [APIs 101 (Tutorial)](docs/tutorials/apis101)
+- [Web scraping 101 (Tutorial)](docs/tutorials/webscraping101)
 
 ## Activities
 - Finalize teams (sign-up options are on Canvas)

@@ -4,10 +4,22 @@ author: Hannes Datta
 date: 
 autosize: true
 
+<style>
+.small-code pre code {
+  font-size: 1em;
+}
+</style>
+
 <!--#
 
 https://support.rstudio.com/hc/en-us/articles/200486468
 -->
+
+```{r setup, echo = FALSE}
+library(reticulate)
+py_install("requests")
+py_install("bs4")
+```
 
 Welcome to oDCM!
 ========================================================
@@ -113,11 +125,12 @@ Motivation for course
 
 Selection of scraping projects I've undertaken
 ========================================================
+incremental: true
 
 - investigate music streaming ([How did music consumption change with Spotify?](https://tiu.nu/spotify))
-- monitored Spotify's user interface and make lists of new releases
-- investigate playlist ecosystem with APIs
-- scraped reviews at Amazon.com
+- [monitored Spotify's user interface and make lists of new releases](https://github.com/hannesdatta/data-spotify-promotions-releases)
+- investigate [playlist ecosystem](https://github.com/hannesdatta/data-spotify-playlist-ecosystem) with APIs
+- [scraped reviews at Amazon.com](https://journals.sagepub.com/doi/abs/10.1509/jm.11.0560)
 - investigate "video streaming wars" (e.g., Netflix versus Disney+, when do consumers use multiple streaming services?)
 - share code [on GitHub](https://github.com/hannesdatta)
 - wrote [tutorial paper on scraping/APIs](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3820666) (which we use in this class)
@@ -138,14 +151,109 @@ What is scraping, and what are APIs?
 
 - pricing data at [bol.com](https://bol.com)
 - reviews at [Amazon.com](https://amazon.com)
+- movie data at [imdb.com](https://imdb.com) or reviews at Rotten Tomatoes
+
+*With APIs, you obtain official data from a firm in a programmatic way*
+
+- e.g., as a developer, interact with Facebook, Instagram, Twitter
+- as a researcher, construct data set from analytics firms
+
+Quick web scraper (I)
+========================================================
+incremental: true
+class: small-code
+
+* Let's first import some packages
+
+```{python, eval=TRUE}
+import requests
+```
+
+* And then call a particular URL (check it out in your browser!)
+```{python, eval = TRUE}
+url = 'https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html'
+book_request = requests.get(url)
+```
+
+* Finally, let's explore the "content" of the page
+
+```{python, eval = TRUE}
+print(book_request.text[5710:5900]) 
+```
+
+
+Quick web scraper (II)
+========================================================
+incremental: true
+class: small-code
+
+* Extracted text looked jibberish, so let's "get" only the product title (we use "tags" for this)
+
+```{python, eval = TRUE}
+from bs4 import BeautifulSoup
+soup = BeautifulSoup(book_request.text)
+print(soup.find('h1'))
+```
+
+* Or this...
+```{python, eval = TRUE}
+print(soup.find('h2'))
+```
+
+* Works with any website, even anything you see in a browser (e.g., apps)
+
+Quick APIs (I)
+========================================================
+class: small-code
+
+* APIs are official interfaces by firms for programmers to extract or submit data, or obtain access to an algorithm
+
+* They work *like* websites (i.e., you can call them with the same snippets as before), but usually you need to pay or at least sign up for the service
+
+* ...unless it's about skating, of course ;)
+
+```{python, include=FALSE}
+# Let's pretend we're a real user
+headers = {'authority': 'www.reddit.com', 'cache-control': 'max-age=0', 'upgrade-insecure-requests': '1', 'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'navigate', 'sec-fetch-user': '?1', 'sec-fetch-dest': 'document', 'accept-language': 'en-GB,en;q=0.9'}
+```
+
+```{python, eval = TRUE}
+# let's get some data from the skating community
+api_request = requests.get('https://www.reddit.com/r/skating/.json', headers=headers)
+api_request.text[1:100]
+```
+
+Quick (APIs) (II)
+==========================================
+class: small-code
+
+* or let's structure the output in the JSON format
+```{python, eval = TRUE}
+api_request.json().get('data').get('children')[0].get('data').get('selftext')
+```
+
+Quick APIs (II)
+=============================
+class: small-code
+
+* we can now "loop" through all of the page's contents
+
+```{python, eval = TRUE}
+for item_on_page in api_request.json().get('data').get('children'):
+  print(item_on_page.get('data').get('selftext'))
+```
+
+* Creepy?! Relax. You'll learn it all.
+
 
 Opportunities from web scraping
 ========================================================
+incremental: true
 
 - discover/document novel phenomena (e.g., new platforms/technologies)
 - improved data access & quality (e.g., address wider set of stakeholders)
-- improve methods (e.g., get data to try out new methods)
-- boost relevance for managers 
+- improve methods (e.g., get data to try out new methods, such as review data & text analysis)
+- boost relevance for managers (e.g., because of using data *they* care about)
 
 Getting inspired...
 ========================================================
@@ -165,19 +273,55 @@ Workflow for collecting web data
 6. Preprocessing, Documentation and Distribution
 
 
-Learning Goals
+Web data versus other marketing data (I)
+=============================================
+
+*Why do we need a course/workflow on this? Isn't this how research is always done?*
+
+__Yes, but *web data* is different from other data!__
+
+- data exploration
+  - finding the *right* data source may be difficult as __many__ potential alternatives exist
+  - for example, unlike experiments in the lab, field experiments with firms, scanner data from established data providers
+  - differ in delivery formats (website versus API, compared to CSV/databases)
+  - access to data that is *not* available commercially (or that a firm would not like to share)
+  
+Web data versus other marketing data (II)
+=============================================
+
+- data availability
+  - data is not documented, and there is no direct way to ask questions about the data (sampling?! generalizability?)
+  - type of variables (sales is rare; review scores are abundant)
+  - different stakeholders that could potentially be addressed
+  
+- research fit & resource use
+  - development cost and time for code
+  - infrastructure requirements (e.g., storage, number of CPUs)
+  - legal and ethical issues highly unclear but need to be tackled
+  
+Web data versus other marketing data (III)
+=============================================
+
+- prototype development
+  - tackle technological issues
+- collecting and monitoring
+  - how to assess data quality?
+- processing
+  - extra cleaning needs
+
+Learning Goals of this course
 ========================================================
 incremental: true
 
 - Identify online data sources and evaluate their value in the context of a specific research question or business problem
 - Assess the terms and conditions for collecting, storing, and sharing data
-Collect data via web scraping and Application Protocol Interfaces (APIs) by mixing, extending and repurposing code snippets
-- Transform semi-structured JSON data to structured data sets for statistical analysis (“parsing”)
+- Collect data via web scraping and Application Protocol Interfaces (APIs) by mixing, extending and repurposing code snippets
+- Transform semi-structured JSON data to structured data sets for statistical analysis ("parsing")
 - Store and manage data using file-based systems
 - Draft, execute, monitor and audit online data collections locally and remotely
 - Document and archive collected data, and make it available for public (re)use
 
-Positioning
+Positioning in the study program
 ========================================================
 
 ![odcm](odcm_positioning.png)
@@ -185,7 +329,7 @@ Positioning
 Course structure
 ========================================================
 
-- Weekly modules, structured along the *workflow for online data collections*
+- Weekly modules, structured along the [workflow for online data collections](https://tiu.nu/scraping)
   - Self-study
   - Tutorials
   - Live stream for feedback & immersive activities
@@ -200,12 +344,11 @@ Tutorials
   - Software Installation & Python Bootcamp
   - Webdata for dummies
   - Web scraping 101 & APIs 101 
-  - Web scraping & APIs Advanced 
+  - Web scraping & APIs Advanced [optional]
   
-- Structure
-  - Importance of what you'll learn
-  - Some simple try-outs
-  - Exercises with solutions
+- Access
+  - run on your own computer (preferred, as you have to run your data collection for a stable experience on your own PC anyways)
+  - explore/"try out" in Google Colab! (--> example)
 
 Team project
 ========================================================
@@ -221,6 +364,7 @@ Team project
   - we'll have a grading rubric (which is already available)
   - self- and peer assessment used
 
+__Please make this a project you can tell friends & family about. Make it matter.__
 
 
 Course website
@@ -228,21 +372,14 @@ Course website
 
 Visit [https://odcm.hannesdatta.com]()!
 
-- It's open education, so spread the word!
+- It's open education, __so spread the word!__
 - Course website is your #1 resource, Canvas only used for
   - posting important announcements,
   - sign up for teams,
   - submitting data challenges/projects, and
   - discussion board.
 
-<!--
-::: notes
-
-all students have Canvas access?
-
-:::
-
--->
+- Do all students have access to Canvas?
 
 Live streams
 ========================================================
@@ -252,6 +389,7 @@ Live streams
 - help me as a moderator if I miss questions
 - maybe share screen (install Teamviewer via [tilburgsciencehub.com/get/teamviewer]())
 - if you have, use two screens (one to code, one to view colleagues/slides)
+- recordings posted on Canvas (default); alternative is YouTube
 
 Grading
 ========================================================
@@ -270,12 +408,14 @@ Grading
 
 My commitment
 ========================================================
+incremental: true
 
 - Get up to speed with both web scraping and APIs (and know when to pick which one!)
-- Learn Python, __but__, becoming an expert requires years of practice
+- Learn a bit of Python, __but__, becoming an expert requires years of practice
 - Discuss own work and ideas, __but__ requires interaction, talking to me, working hard
-- Open software only (usable right away, no admin rights required)
-- Diversity & inclusion - bring in your own ideas, don't be afraid to study topics off the main stream!
+- Open software (usable right away, no admin rights required)
+- Bring in your own ideas, don't be afraid to study topics off the main stream!
+- I value diversity! Be who you want to be. Say what you want to say.
 
 Brain-dead by coding
 ========================================================
@@ -284,7 +424,7 @@ Brain-dead by coding
 - I tend to become semi-"brain-dead" after a day of coding
 - Take breaks! Stop coding. Go for a run. Start again.
 - You will learn from your mistakes
-- Use cheat sheets and our support section.
+- Use cheat sheets and our support section
 
 &#8594; quick feedback loops in first few weeks
 
@@ -305,7 +445,7 @@ When you run into trouble, this is your way out!
 2. Ask Google and Stackoverflow
 3. Ask friend/classmate (form learning groups, e.g., coordinate via discussion board)
 4. Can it wait? Defer to live streams.
-5. If it can't wait: be in touch with me
+5. If it can't wait: be in touch with me (--> next slide!)
 
 <!--
 ::: notes
@@ -325,9 +465,8 @@ Use of WhatsApp
 
 ![WhatsApp](wa_qr.png)
 
-- Onboarding (names needed!)
+- Let me know youro first names!
 - Email is not so optimal
-- Check out the course's support section
 
 
 What's in for you?
@@ -359,12 +498,15 @@ Please tell me __what would make this course a success__ for you
 Getting started
 ========================================================
 
-- Install Python/Anaconda and do the Python Bootcamp (all done - this was required preparation before the course started?)
+- Install software! (this was required preparation before the course started...)
 
-- Watch a summary video on what web scraping and APIs are
+- Do the Python Bootcamp (after all, you need the know the basics!)
 
-- Do the Python Bootcamp (Tutorial)
+- Learn more about the difference between web scraping and APIs (video)
 
-- Work hard...
+- Work hard...!
 
 - ...and be in touch on WhatsApp for questions/feedback!
+
+
+__Any questions so far?!__

@@ -8,7 +8,17 @@ bookCollapseSection: false
 # Week 1: Getting started with scraping and APIs in Python
 
 ## Livestream 1
-- Introduction to the course ([slides](slides.html))<!-- add link ([re-watch](https://youtu.be/b3Fiq3mrsb4))<!-- add zoom link-->
+- Introduction to the course
+  - [Slides](slides.html)<!-- add link ([re-watch](https://youtu.be/b3Fiq3mrsb4))<!-- add zoom link-->
+  - Recordings
+    - [1 | getting started](https://youtu.be/NhkGSFVHPOE)
+    - [2 | why should you take this class?](https://youtu.be/P0pKMkiceGk)
+    - [3 | course setup](https://youtu.be/IUHtZDAN3kQ)
+
+{{< hint info >}}
+Recordings of the livestreams are published on Hannes' YouTube channel, so ensure you [subscribe to it](http://www.youtube.com/c/hannesdatta?sub_confirmation=1) to stay up-to-date!
+
+{{< /hint >}}
 
 <!--- Recognizing research and business opportunities from web data-->
 

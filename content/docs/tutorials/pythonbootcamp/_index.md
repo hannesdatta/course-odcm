@@ -35,6 +35,17 @@ Learn here [how to log in to unlock the content!](../../../docs/course/support/d
 
 ## Getting started
 
-1. Complete the [Datacamp course "Introduction to Python"](https://learn.datacamp.com/courses/intro-to-python-for-data-science) [only Modules 1-3, about 3-4 hours]. If you haven't [installed the software](../software) yet, make sure to do so before getting started.
-3. [Get familiar with Jupyter Notebook](https://www.youtube.com/watch?v=HW29067qVWk) [30 minutes]
-4. Download the [tutorial](python-bootcamp.zip) (right-click, download linked file as...). Then, open the file in Jupyter Notebook and start the tutorial! [Jupyter Notebook, 2-3 hours]. Alternatively, open the tutorial in [Google Colab](https://colab.research.google.com/github/hannesdatta/course-odcm/blob/master/content/docs/tutorials/pythonbootcamp/python-bootcamp.ipynb). <!-- the zip file also includes the data they need for the last few exercises -->
+The tutorial proceeds in three steps.
+
+1. Get familiar with Python (about 3-4 hours)
+    - Complete the [Datacamp course "Introduction to Python"](https://learn.datacamp.com/courses/intro-to-python-for-data-science) [only Modules 1-3]. If you haven't [installed the software](../software) yet, make sure to do so before getting started.
+2. Get familiar with Jupyter Notebook (about 30 minutes)
+    - [Watch this YouTube video](https://www.youtube.com/watch?v=HW29067qVWk)
+3. Work through this notebook with additional material (about 2-3 hours)
+    - Either [download the tutorial](python-bootcamp.zip) (right-click, download linked file as...). Then, open the file in Jupyter Notebook and start the tutorial!
+    - Alternatively, open the workbook in [Google Colab](https://colab.research.google.com/github/hannesdatta/course-odcm/blob/master/content/docs/tutorials/pythonbootcamp/python-bootcamp.ipynb). <!-- the zip file also includes the data they need for the last few exercises -->
+
+{{< hint info >}}
+__Missed the livestream?__
+
+Head over to Hannes' [YouTube channel](https://youtube.com/c/hannesdatta) for recordings, and check the course's [module section](../../modules/week1) for any links to the material that has been created (e.g., code, working docs, etc.).

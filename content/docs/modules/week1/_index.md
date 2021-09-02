@@ -35,6 +35,16 @@ Recordings of the livestreams are published on Hannes' YouTube channel, so ensur
 
 ## Livestream 2
 - Q&A/walk-through for this week's tutorial
+  - [Teaching notes](livestream2)
+  - Recording [not available yet]
+  - [Initial project ideas](https://docs.google.com/document/d/1hDnIYOrwMgs_L5PsxvAaY-cLiCzb9V6enBSatjsIElY/edit)
+  - [Code written in class](https://colab.research.google.com/drive/1Uo0tEax_Q2G7hEvVZFcOQACctM1-94ug?usp=sharing)
+
+{{< hint warning >}}
+__Problems opening the documents?__
+
+Remember to use your `@tilburguniversity.edu` address to log on to Google to view/edit documents posted to Google Drive or Google Colab.
+{{< /hint >}}
 
 <!--
 - Generate ideas for academic research

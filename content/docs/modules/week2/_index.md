@@ -34,6 +34,7 @@ description: Learn how to assess data quality and website/API structure, and dec
 ## Live stream 3
 - Q&A/walk-through of this week's tutorial
   - Demonstration of scraping from Twitch ([download](twitch.ipynb), [open in Colab](https://colab.research.google.com/github/hannesdatta/course-odcm/blob/master/content/docs/modules/week2/twitch.ipynb))
+  - Using a shortlinking service API ([download](shortlink.ipynb), [open in Colab](https://colab.research.google.com/github/hannesdatta/course-odcm/blob/master/content/docs/modules/week2/shortlink.ipynb))
 - [Breakout activity #1](../../../docs/course/project/workplan/activity1.md)
 - Initial group formation for team projects
 

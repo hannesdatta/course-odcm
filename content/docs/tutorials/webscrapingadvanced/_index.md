@@ -18,3 +18,4 @@ draft: false
 
 ## Getting started
 - [Download the tutorial](webscraping-advanced.ipynb) (right-click, download linked file as...). Then, open the file in Jupyter Notebook and start the tutorial! __Note that this tutorial does not run on Google Colab__.
+- [View & run the tutorial in Google Colab](https://colab.research.google.com/github/hannesdatta/course-odcm/blob/master/content/docs/tutorials/webscrapingadvanced/webscraping-advanced.ipynb)

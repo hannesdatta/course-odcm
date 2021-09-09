@@ -9,10 +9,18 @@ bookHidden: true
 
 - Welcome
   - Today, it's about two things: seeking inspiration for scraping and API projects, and trying to understand more about what scrapers and APIs are and how they work
+  - How has your first two weeks been at Tilburg?
+
+
+  - Agenda
+    - Polling/quiz to get started; don't worry - it's not graded (?) - if I have time! (check on use of article, etc.)
+
   - Team sign-up is by next week, and groups have been made available on Canvas
   - There's a "just auditing group" without grading - sign up for that, too if required!
-- Agenda
-  - Polling/quiz to get started; don't worry - it's not graded (?) - if I have time! (check on use of article, etc.)
+
+  - A few questions from Mila before we start!
+  
+
   - We'll start w/ the tutorial "Web Data for Dummies"
   - After the break, it's our activity (poll for use of breakout rooms)
   - If no breakout: volunteering students and have a discussion w/ them in front of the class (per topic)

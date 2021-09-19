@@ -38,9 +38,10 @@ Course week|Type|Live stream|Date|Time
 |[Week 0](../../modules/prep)      | | Preparation before the course starts   |No live streams
 |[Week 1](../../modules/week1)      |Live stream #1 |Course introduction  |Tuesday, 31 August, 2021|8.45-10.30|
 |      |Live stream #2 |Q&A/walk-through of the Python Bootcamp | Thursday, 2 September, 2021|8.45-10.30|
-|[Week 2](../../modules/week2)     |Live stream #3 |Web scraping 101 & data source exploration (activity #1)|Thursday, 9 September, 2021|8.45-10.30|
-|[Week 3](../../modules/week3)      |Live stream #4 |API 101 & activity #2 |Thursday, 16 September, 2021|8.45-10.30|
-|[Week 4](../../modules/week4)      |Live stream #5 | Activity #3 |Thursday, 23 September, 2021|8.45-10.30|
+|[Week 2](../../modules/week2)     |Live stream #3 |Web scraping for dummies & data source exploration (activity #1)|Thursday, 9 September, 2021|8.45-10.30|
+|[Week 3](../../modules/week3)      |Live stream #4 |Web scraping 101 & activity #2 |Thursday, 16 September, 2021|8.45-10.30|
+|[Week 4](../../modules/week4)      |Optional coaching session |  |Tuesday, 21 September, 2021|8.45-10.30|
+|     |Live stream #5 | API 101 & Activity #3 |Thursday, 23 September, 2021|8.45-10.30|
 |[Week 5](../../modules/week5)      |Live stream #6 | Activity #4 |Thursday, 30 September, 2021|8.45-10.30|
 |[Week 6](../../modules/week6)    |  |Team meetings on request   |Tuesday, 5 October 2021|8.45-10:30
 | |     |Team meetings on request   |Thursday, 7 October 2021|8.45-10:30

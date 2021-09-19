@@ -1,11 +1,11 @@
 ---
 weight: 3
-title: Week 3) Learning how to use APIs
-description: Learn the basics concepts of retrieving data using APIs.
+title: Week 3) Further building your scraping skills
+description: Learn how to use `BeautifulSoup` to extract data from websites.
 bookCollapseSection: false
 ---
 
-# Week 3: Learning how to use APIs
+# Week 3: Further building your scraping skills
 
 ## Self-study
 
@@ -16,8 +16,8 @@ bookCollapseSection: false
 - Please prepare [team activity #2](../../../docs/course/project/workplan/activity2.md).
 
 ## Live stream 4
-- Q&A/walk-through of this week's tutorial
 - Team presentations for [team activity #2](../../../docs/course/project/workplan/activity2.md)
+- Q&A/walk-through of this week's tutorial [Update: Optional feedback session in week 4]
 
 <!--
 [Break-out activity](activity.md) to generate project ideas and getting to know each other

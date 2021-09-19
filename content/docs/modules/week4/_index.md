@@ -1,17 +1,23 @@
 ---
 weight: 4
-title: Week 4) Data Availability and Research Fit
-description: Assess which data is available at your chosen data source, and whether it fits your research purpose.
+title: Week 4) Learn How to Extract Data from APIs
+description: Write code to extract data from Application Programming Interfaces (APIs)
 bookCollapseSection: false
 ---
 
-# Week 4: Data Availability Assessment, Research Fit, Legal Audit
+# Week 4: Learn how to extract data from APIs
+<!--Data Availability Assessment, Research Fit, Legal Audit
+
+Data Availability and Research Fit
+description: Assess which data is available at your chosen data source, and whether it fits your research purpose.
+
+-->
 
 ## Self-study
 
 - [APIs 101 (Tutorial)](docs/tutorials/apis101)
 - Start fiddling around with accessing your chosen website or API.
-- Conduct some background search/research on the current legal situation on using web scraping and APIs
+- Conduct background research on the *current legal situation* on using web scraping and APIs: When is it allowed, and when not? What are ethical boundaries?
 
 
 ## Activities

@@ -18,6 +18,7 @@ bookCollapseSection: false
 ## Live stream 4
 - Team presentations for [team activity #2](../../../docs/course/project/workplan/activity2.md)
 - Q&A/walk-through of this week's tutorial [Update: Optional feedback session in week 4]
+- [Recording](https://youtu.be/E2_0tcagchg)
 
 <!--
 [Break-out activity](activity.md) to generate project ideas and getting to know each other

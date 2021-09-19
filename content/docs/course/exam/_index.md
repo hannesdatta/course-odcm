@@ -8,7 +8,7 @@ description: " "
 
 # Final exam
 
-The course content will be tested in the form of a __take-home exam__, to be completed __within 3.5 hours__.
+The course content will be tested in the form of a __take-home exam__, to be completed __within three hours__.
 
 ### Main sit
 

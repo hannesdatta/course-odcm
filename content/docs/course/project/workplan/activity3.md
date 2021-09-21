@@ -16,8 +16,8 @@ date: 2021-02-04
 
 - Prepare a short document, covering
   - Title page: Team number & brief description of motivation for data context
-  - Section 1: a copy of Table W3.1 from "Fields of Gold" (only keep the basic structure & first two columns; then, fill in the table for your chosen website/API)
-  - Section 2: a copy of Table W3.2 from "Fields of Gold" (only keep the basic structure & the first two columns; then, fill in the table for your chosen website/API)
+  - Section 1: answering the questions for your chosen website/API(s), as shown in Table W3.1 from "Fields of Gold"
+  - Section 2: answering the questions for your chosen website/API(s), as shown in Table W3.2 from "Fields of Gold"
 
 - Prepare an Excel sheet, covering
   - a copy of Table W3.3 from "Fields of Gold", in which you calculate your study's feasible sample size. Alternatively, use the Excel sheet to calibrate the various parameters to make it fit your study (e.g., to calibrate the tradeoff between sampling frequency and sample size).

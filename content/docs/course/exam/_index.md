@@ -33,7 +33,7 @@ The course content will be tested in the form of a __take-home exam__, to be com
 ## Form
 
 - Open book take-home exam (i.e., you can access any material you find helpful, including material you have stored on your computers, or that you find on the internet).
-- 10-15 open questions (both in written, or by means of code/file uploads)
+- Mix of open and closed questions (both in written, or by means of code/file uploads)
 - Some questions will be personalized (i.e., there is only one correct answer per student), others will be randomized (i.e., you will see questions in mixed order, and not all students get to see all questions).
 
 {{< hint warning >}}
@@ -41,44 +41,43 @@ __Communication with anybody about the content of the exam, during *and after* t
 
 {{< /hint >}}
 
-<!--
+
 ## Content
 
-### Topics
+### Part 1: Theory
 
-In line with the course's learning goals, the exam covers five broad topic areas:
+- This part of the exam consists of __personalized open and closed (multiple-choice) questions__, shown in __random order__. The dominant question type is __open questions__.
+- Students __*cannot* go back between questions__ (i.e., questions need to be answered in the order in which they appear).
+- Allocate approximately 45 minutes to work on this part, which predominately focuses on the workflow for collecting web data ("Fields of Gold" paper)
+- Cognitive skills that will be tested are knowledge, comprehension, and analysis.
 
-1. Python bootcamp (about 10%)
-2. Workflow for collecting online data (about 35%)
-3. Conducting web scraping (dummies + 101) (about 20%)
-4. Collecting data via APIs (dummies + 101) (about 20%)
-5. Web scraping OR APIs advanced (you can choose; about 15%)
+### Part 2: Practical
 
-Each topic area carries a specific weight (i.e., "importance"). For example, questions on the Python bootcamp (about 10%) are much less prominent on the exam than questions about the workflow for collecting online data (about 35%).
+- This part of the exam consists of __personalized open questions__, shown in __random order__.
+- Students can go freely back and forth between questions in this part.
+- Allocate approximately 2:15 minutes to work on this part, which focuses on all learning goals of the course.
+- Expect three broad questions
+  - Small coding task (e.g., parsing, fixing errors, running existing code) (20 minutes)
+  - Small essay to form a judgment (e.g., recommend website or API for particular business problem, evaluate terms & conditions, sample size calculations) (20 minutes)
+  - Large(r) coding task (e.g., scrape data from website or retrieve data from API) (remaining time, about 1 hour and 30 minutes)
+- Cognitive skills that will be tested are application, evaluation, and synthesis/creation.
+- All tutorials (except *advanced web scraping* and *advanced APIs* are relevant for this part of the exam).
 
-### Question types
-
-You will be tested at various levels of complexity (following Bloom's Taxonomy):
-
-- Knowledge (about 10%): Recall facts
-- Comprehension: (about 15%): Show understanding in finding information (e.g., from papers, the web)
-- Application (about 20%): To use in a new situation
-- Analysis (about 20%): To examine in detail
-- Synthesis (about 20%): To change or create into something new
-- Evaluation (about 15%): To justify
+<!--
 
 {{< hint info >}}
-__Work on the example questions__
+
 
 Please [view the list of example questions here](examplequestions).
 
 {{< /hint >}}
+-->
 
 ## Preparing for the exam
 
 ### Make your own example questions
 
-- It's impossible to generate example questions for all types of questions that can be asked on the exam. Therefore, we encourage you to generate your own example questions, on top of the example questions we provide. Just start from a combination of topic areas (e.g., "web scraping 101") and question types (e.g., "evaluation"). The mere combination of these two dimensions will help you come up with a creative way of asking a good example question.
+- We encourage you to generate your own example questions. Just start from a combination of learning goals (e.g., learn how to scrape, "web scraping 101") and cognitive skill levels (e.g., "evaluation"). The combination of these two dimensions will help you come up with a creative way of asking a good example question.
 - See [this summary of Bloom's Taxonomy](https://mygrowthmindsethome.files.wordpress.com/2019/03/blooms-taxonomy.pdf), which we also use to generate exam questions.
 - Curious whether your question is "good" - [send it to us via the usual ways](../support) - maybe it will even be part of the exam? ;)
 
@@ -92,8 +91,7 @@ Please [view the list of example questions here](examplequestions).
 - Verify your software setup (you should be able to run all Jupyter Notebooks/tutorials on your own computer)
 - Know how to zip and unzip files
 - Make use of cheat sheets (e.g., available on this site, or elsewhere) (you can also print them)
-- Take breaks! While the exam questions will be difficult, you do not need the entire day to solve them!
-- Revise your code before submission, so that you ensure it runs from top to bottom without problems.
+- Revise your code before submission in part 2, so that you ensure it runs from top to bottom without problems.
 
 <!--
 {{< hint info >}}

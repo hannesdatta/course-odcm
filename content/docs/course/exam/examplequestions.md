@@ -8,7 +8,7 @@ draft: true
 
 # Example questions
 
-Questions will be asked along five topic areas (e.g., "web scraping 101"), and six question types (e.g., "application") (for details, see [here](../exam#content)). Below, you can find a few example questions. Example questions will be discussed with students in the final live stream of this course.
+Questions will be asked along the course's learning goals (e.g., "learn how to scrape") and six cognitive skill levels (e.g., "application") (for details, see [here](../exam#content)). Below, you can find a few example questions. Example questions will be discussed with students in the final live stream of this course.
 
 
 ## 1. Python Bootcamp

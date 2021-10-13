@@ -3,13 +3,82 @@ title: "Example questions"
 bookFlatSection: true
 bookHidden: false
 weight: 5
-draft: true
+draft: false
 ---
 
 # Example questions
 
 Questions will be asked along the course's learning goals (e.g., "learn how to scrape") and six cognitive skill levels (e.g., "application") (for details, see [here](../exam#content)). Below, you can find a few example questions. Example questions will be discussed with students in the final live stream of this course.
 
+## Part 1
+
+{{< hint warning >}}
+
+This part of the exam consists of __personalized open and closed (multiple-choice) questions__, shown in __random order__.
+
+{{< /hint >}}
+
+1. According to "Fields of Gold", what are useful dimensions to distinguish websites when considering them for a scraping project? (*knowledge*)
+
+2. What is the purpose of `beautifulSoup` in the context of web scraping? (*comprehension*)
+
+3. Please describe the difference between the "two scraping philosophies" when it comes to retrieving and storing data by means of web scraping (according to "Fields of Gold"). (*comprehension*)
+
+## Part 2:
+
+{{< hint warning >}}
+
+This part of the exam consists of __personalized open questions__, shown in __random order__. You can freely go back and forth between these questions.
+
+{{< /hint >}}
+
+### Question 1 (small coding task)
+
+Please take a look at the code snippet below, which retrieves data from an API. After running the code, you notice you get a series of non-200 responses. Modify the code so that it runs smoothly and reliably retrieves data for 100 requests.
+
+```
+# example code here
+
+```
+
+### Question 2 (small essay to form a judgment)
+
+Please evaluate the feasibility of this data extraction plan:
+
+{{< hint >}}
+
+*example data extraction plan*
+
+{{< /hint >}}
+
+### Question 3 (large coding task)
+
+#### Web scraping
+
+Please collect the product names and prices for all books listed in this section: https://books.toscrape.com/catalogue/category/books/nonfiction_13/index.html. Please not only list these variables, but also provide timestamps from the moment that you started your data collection.
+
+Submit your (a) Python code (as `.py` or `.ipynb`), along with the collected data (`.csv`).
+
+#### APIs
+
+As a researcher you're interested in polarity in online communities and therefore collect data on the distribution of up and down votes on Reddit. Extract a random sample of at least 100 Reddit posts from the [`politics`](https://www.reddit.com/r/politics) and [`science`](https://www.reddit.com/r/science) communities. Store the original JSON response, along with a parsed CSV dataset with the ID and text of a post.
+
+Submit your (a) Python code (as `.py` or `.ipynb`), along with the collected data (`.json` and `.csv`).
+
+
+<!--
+
+{{< hint info >}}
+
+__This section is still work-in-progress (i.e., we are still adding examples and add code/data where needed).__
+
+{{< /hint >}}
+-->
+
+
+
+
+<!--
 
 ## 1. Python Bootcamp
 
@@ -43,3 +112,4 @@ Review the following text in which a master student describes the institutional 
 **Solutions**  
 The solutions of these example questions can be found [here](https://github.com/hannesdatta/course-odcm/blob/master/content/docs/course/exam/example_questions_solutions.ipynb). Keep in mind that there are often multiple ways to get to the same answer.
 {{< /hint >}}
+-->

@@ -1,0 +1,229 @@
+oDCM - Course Summary & Exam Preparation
+========================================================
+author: Hannes Datta
+date: 
+autosize: true
+
+<style>
+.small-code pre code {
+  font-size: 1em;
+}
+</style>
+
+<!--#
+
+https://support.rstudio.com/hc/en-us/articles/200486468
+-->
+
+Welcome to the final live stream in oDCM!
+========================================================
+
+- Please **turn on** your camera; it helps us to interact better!
+- The **chat** is open
+- If you haven't done so, please **explore the exam page & example questions** at [https://odcm.hannesdatta.com/docs/course/exam]().
+
+<!--
+- Team project:
+
+It's going well so far
+Totally lost, but I know how to get on track
+I lack adequate support - heeeelp!
+
+- How did you like the course format?
+
+scale from 1-10
+
+- How did you like the course content?
+
+scale from 1-10
+
+To be announced:
+- course evaluation: will post link
+- team projects due - anybody still need feedback? sign up for dprep slots
+https://docs.google.com/spreadsheets/d/1Tf9oypJhAlDN4m9JTKYzt66dvmiLdBewF3coWpe97_U/edit#gid=0
+- add me to linkedIn: https://www.linkedin.com/in/hannes-datta/ [crucial to stay in touch]
+
+
+-->
+
+Agenda
+========================================================
+
+- Course summary
+- From here onwards
+  - Recognizing limitations
+  - Seizing research opportunities
+- Course evaluation
+- Exam preparation
+
+Positioning in the study program
+========================================================
+
+![odcm](odcm_positioning.png)
+
+
+Lessons learnt #1: Opportunity Identification
+========================================================
+incremental: true
+
+- Important of "broadening horizon" (e.g., scraper vs. API vs. existing data sets)
+- Identify amazing contexts & have something to say!
+  - Policy making: e.g., housing crisis
+  - Socially relevant: e.g., Covid impact, reading habits
+- Data aggregators are ideal for multi-platform data
+- Biggest platforms are not always best!
+
+Lessons learnt #2: Data Availability Assessment
+========================================================
+incremental: true
+
+- Look out for entities - especially the "surprising ones!"
+- Look out for *variables* (e.g., to compare to other studies), but also to see time availability differences
+- Spend time mapping your navigation path
+- Real-time data collection required?! (e.g., wrong historical data, inaccurate timestamps?)
+- Algorithmic biases present? Can exert control?
+
+Lessons learnt #3: Evaluation of Research Fit & Resource Use
+========================================================
+incremental: true
+
+- Look out for entities - especially the "surprising ones!"
+- Look out for *variables* (e.g., to compare to other studies), but also to see time availability differences
+- Real-time data collection required?! (e.g., wrong historical data, inaccurate timestamps?)
+- Algorithmic biases present? Can exert control?
+
+
+Lessons learnt #4: Technical Extraction Plan and Prototyping
+========================================================
+incremental: true
+
+- Prototyping is extremely important
+  - requests + beautifulSoup vs. selenium/Chromedriver
+  - extraction methodology (e.g., tags, CSS, classes) + stability
+- Writing helper functions, "moving code into production"
+- Can you come up with more feasible navigation paths?
+
+
+Lessons learnt #5: Evaluating legal and ethical concerns
+========================================================
+incremental: true
+
+- Scientific purpose, and run by research institution?
+- Scale and scope? (all data vs. small sample? running time)
+- Location of data provider and users
+- "Go" decision from provider? Technical intrusiveness?
+- Data management & use, commercialization
+
+
+Lessons learnt #6: Collecting and monitoring
+========================================================
+incremental: true
+
+- Scheduling is handy
+- Hiding passwords is even more handy
+- Comment code, make it "understandable" for others
+- Choosing between "scraping philosophies": parsing on-the-fly versus later?
+
+Lessons learnt #7: Documentation
+========================================================
+incremental: true
+
+- Start documentation from a readme template
+- Generate plots to spot errors in collection and "look" at the phenomenon of interest!
+- Think as a "data supplier" rather than narrowly focusing on *one* (research) question
+
+Looking ahead: Recognizing Limitations
+========================================================
+incremental: true
+
+- Web data entails modeling challenges - not covered in this course (e.g., self-selection)
+- Web data can't give you all (i.e., you don't see internal data) --> need for collaboration
+- Legal and ethical issues not fully explored yet
+
+Potential Applications
+========================================================
+incremental: true
+
+- Collecting data for Master thesis
+  - tell my colleagues you have the skills
+  - start now, use later (data collection can take a long time!)
+ 
+- PhD and research master students can "invest" into data collections
+  - maybe *you are* a future PhD student? Start today! ;)
+  - data was crucial to what I study
+
+Academic Opportunities from "what we study"
+========================================================
+incremental: true
+
+1. Scout out emerging phenomena (e.g., TikTok, Clubhouse, ...)
+2. Study phenomena that can't be captured otherwise (i.e., unobtrusively)
+3. Study diverse populations (e.g., moving being *WEIRD*, more socio-economic backgrounds + geographies)
+4. Generating realistic stimuli for experiments (e.g., brand logos)
+
+Academic Opportunities from "how we study" it
+========================================================
+incremental: true
+
+1. Unleashing real-time data collections (cf. historical)
+2. Conduct & support field experiments with a platform's user base
+3. Use APIs to *access algorithms*, rather than data (e.g., Google Cloud Vision)
+4. Build own [research APIs](https://www.jstatsoft.org/article/view/v094i09)
+
+
+Next steps: Official course evaluation
+========================================================
+
+- Course evaluation has been immensely important to this course
+  - Spent more time on Python onboarding
+  - Reduced workload by making "advanced" tutorials optional
+  - Allocated more time to coaching sessions
+  
+- Course evaluation has been critical to my career
+  - Without my past evaluations, I wouldn't be teaching to you today
+  - I will look at all comments
+- Scores are most important to show importance of this course
+
+<!--
+::: notes
+
+  - e.g., new (?) format (live streams rather than lectures)
+  - e.g., new content (e.g., Jupyter Notebooks rather than books)
+  - ...
+-->
+
+Informal feedback
+========================================================
+incremental: true
+
+- live streams versus offline lectures?
+- quality of internet website?
+- quality of Jupyter Notebooks
+- Colab versus own laptops?
+- "innovativeness of material", etc.
+
+<!--
+- open education good or bad?
+- like the presence of external students (or not)?
+-->
+
+Exam preparation
+========================================================
+
+- https://odcm.hannesdatta.com/docs/course/exam/
+- https://odcm.hannesdatta.com/docs/course/exam/examplequestions/
+
+Stay in touch!
+========================================================
+
+
+- Add me! https://www.linkedin.com/in/hannes-datta/
+- App me! +31 13 466 8938
+- See me: K728, mostly Mondays (but send a text to make an appointment)
+<br><br><br>
+- Contribute! 
+  - https://tilburgsciencehub.com as a volunteer
+  - join my team as an RA (e.g., machine learning, data engineering); see also https://tilburgsciencehub.com/onboarding
+<br><br><br>
+- And, finally... let's show to the world how awesome your new skills are!
+

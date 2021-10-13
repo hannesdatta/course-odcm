@@ -8,7 +8,7 @@ bookCollapseSection: true
 # Week 7: Lab week
 
 ## Self-study
-- Notes on exam preparation
+- [Exam preparation](../../../docs/course/exam)
 
 ## Coaching sessions
 - [Coaching sessions with teams, on request](../../../docs/course/project/workplan/coaching.md).
@@ -18,7 +18,9 @@ bookCollapseSection: true
 
 ## Live stream #7
 - Course summary
-- Exam preparation
+  - [Slides](slides.html)
+  - Recording [tba]
+- [Exam preparation](../../../docs/course/exam)
 
 <br>
 {{< button relref="week6" >}}Previous week{{< /button >}}

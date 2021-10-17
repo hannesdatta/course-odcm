@@ -10,6 +10,20 @@ description: " "
 
 The course content will be tested in the form of a __take-home exam__, to be completed __within three hours__.
 
+{{< hint warning >}}
+__The exam consists of two parts.__
+
+On the day of your exam, you find both parts in the exam list when logging into TestVision.
+
+- oDCM Main Sit Part 1/2
+- oDCM Main Sit Part 2/2.
+
+__Please work on part 1 first.__ The first part closes at 10am.
+
+__Only when finishing part 1, please proceed to part 2.__.
+
+{{< /hint >}}
+
 ### Main sit
 
 - Date: __Tuesday, 19 October 2021__
@@ -25,15 +39,18 @@ The course content will be tested in the form of a __take-home exam__, to be com
 ## Technicalities & support
 
 - Receiving your exam: via [TestVision](https://TilburgU.testvision.nl/online/kandidaten) on the day of the exam
+- The exam consists of two parts, which you will have to work on in "separate" exams:
+  - Part 1 is open from 9am - 10am. I.e., it needs to be finished at the latest by 10am.
+  - Part 2 is open from 9am - 11.59am + 1 minute (noon). You should only start working on part 2 after finishing part 1.  
 - Working on your exam: on your own computer
-- Submitting your exam: all questions (including file uploads) will be submitted via TestVision
+- Submitting your exam: all questions (including file uploads) will be submitted via TestVision. Recall: each part of the exam has to be submitted individually.
 - Registration: not necessary; enrollment to the Canvas course page is sufficient
 - Support during the exam: preferably WhatsApp [see the support section of this website](support); Support only for "unforeseen" errors. No support will be given for technical issues that students *should* have solved during the course (e.g., installation of Anaconda, running Jupyter Notebook, etc.)
 
 ## Form
 
 - Open book take-home exam (i.e., you can access any material you find helpful, including the material you have stored on your computers or that you find on the internet).
-- Mix of open and closed questions (both in writing, or by means of code/file uploads)
+- Mix of open and closed questions (both in writing, or by means of code/file uploads). The dominant question type is open.
 - Some questions will be personalized (i.e., there is only one correct answer per student), others will be randomized (i.e., you will see questions in mixed order, and not all students get to see all questions).
 
 {{< hint warning >}}
@@ -46,14 +63,14 @@ __Communication with anybody about the exam content, during *and after* the take
 
 ### Part 1: Theory
 
-- This part of the exam consists of __personalized open and closed (multiple-choice) questions__, shown in __random order__. The dominant question type is __open questions__.
+- This part of the exam (about 30% of your exam grade) consists of __personalized open and closed (multiple-choice) questions__, shown in __random order__. The dominant question type is __open questions__.
 - Students __*cannot* go back between questions__ (i.e., questions need to be answered in the order they appear).
-- Allocate approximately 45 minutes to work on this part, which predominately focuses on the workflow for collecting web data ("Fields of Gold" paper)
+- Allocate approximately 45 minutes to work on this part, which predominately focuses on the workflow for collecting web data ("Fields of Gold" paper).  
 - Cognitive skills that will be tested are knowledge, comprehension, and analysis.
 
 ### Part 2: Practical
 
-- This part of the exam consists of __personalized open questions__, shown in __random order__.
+- This part of the exam (about 70% of your exam grade) consists of __personalized open questions__, shown in __random order__.
 - Students can go freely back and forth between questions in this part.
 - Allocate approximately 2:15 minutes to work on this part, which focuses on all course learning goals.
 - Expect three broad questions

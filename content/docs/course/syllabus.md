@@ -55,44 +55,26 @@ Considering the typical process in which research is carried out, this course is
 
 ## Assessment
 
-- Team project (4-5 team members) with self- and peer assessment (see below) (50%)
-- Computer exam (50%)
+- [Team project](project) (50%, out of which 10% are based on students' individual contribution, measured by [self- and peer assessment](peerassessment))
 
-Students pass this course if the final course grade (i.e., the weighted average of the group project and exam; weights indicated above) is ≥ 5.5, and the exam is passed (≥ 5.5). Final course grades are rounded to multiples of half points (e.g., 6, 6.5, 7, etc.).
+- [Computer exam](exam) (50%)
 
 Grades are made available on Canvas.
 
-### Computer exam
+### Passing requirements
 
-Details on the computer exam can be found [here](exam).
+- Students pass this course if the final course grade (i.e., the weighted average of the group project and exam; weights indicated above) is ≥ 5.5, and the exam is passed (≥ 5.5).
+- Final course grades are rounded to multiples of half points (e.g., 6, 6.5, 7, etc.).
 
-### Team project
+### Resit policy
 
-Students will submit a [final team project (4-5 team members)](project) at the end of the course.
-
-Students' individual grades will be corrected upwards or downwards, depending on their individual contribution to the overall team effort (e.g., measured by means of scoring themselves and their team members on, among others, the quantity and quality of their contributions).
-
-{{< hint info >}}
-__Calculating students' individual contribution to the team project__
-
-1. Students score themselves and other team members on the following questions (answered on a scale between 1 = lowest, and 5 = highest)
-  - How was the pro-active attitude of the student?
-  - How was the student as a team player?
-  - How was the sense of responsibility of the student?
-  - How was the punctuality of the student with respect to internal deadlines?
-  - How was the time and energy devoted of this student?
-  - How was the quantity of the contribution of the student?
-  - How was the quality of the contribution of the student?
-
-2. Compute average score from (1) for each student within a team, across all questions. ("How did team members rate the focal student?")
-
-3. Compute average team effort score, by averaging (within each team) the scores obtained in (2). ("What was the overall team effort?")
-
-4. Compute students' self- and peer assessment score (`SPAscore`), by dividing each student's score by the team average. ("How did the student perform, relative to the overall team effort?"
-
-5. Multiply the team project grade with the `SPAscore`, to arrive at the individual contribution to the team project.
-
-{{< /hint >}}
+Students can fail this course in three situations:
+- If students do not pass the exam, they cannot pass this course.
+  - Required action: Students will have to take the [exam resit](exam).
+- If students are not part of a team, they cannot obtain a grade for the team project, and hence cannot pass this course.
+  - Required action: Re-enroll in this course's next edition, and ensure you are part of a team.
+- If students pass the exam, but fail the team project (after SPA correction), their total course grade may be lower than 5.5, and hence students fail this course.
+  - Required action: Correct team project on the basis of the course coordinator's grading report, and hand it in again within 2 weeks after publication of the final grades in this course (submission on Canvas). __Only students who fail this course are eligible to have their team projects re-graded.__
 
 ## Code of Conduct
 

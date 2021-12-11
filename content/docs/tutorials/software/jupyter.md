@@ -19,6 +19,6 @@ This tutorial walks you through Jupyter's user interface.
 **Tips**
 
 - You do not need to understand all the code that is shown in the notebook (0:47; 18:02; 22:48).
-- If you followed the [Anaconda Installation tutorial](anaconda.md), you should have already installed Jupyter Notebook (2:47).
+- If you followed the [Anaconda Installation tutorial](../anaconda.md), you should have already installed Jupyter Notebook (2:47).
 
 {{< /hint >}}

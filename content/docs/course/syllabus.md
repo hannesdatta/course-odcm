@@ -10,9 +10,7 @@ description: " "
 
 ## Instructor
 
-This course is instructed by [dr. Hannes Datta](https://tiu.nu/datta), Associate Professor at the Marketing Department of Tilburg University.
-
-Find out more about Hannes at [his personal website](https://hannesdatta.com). Hannes is also active on [LinkedIn](https://www.linkedin.com/in/hannes-datta/) (please add!), [YouTube](https://youtube.com/c/hannesdatta), and [GitHub](https://github.com/hannesdatta).
+This course is instructed by [dr. Hannes Datta](https://tiu.nu/datta), Associate Professor at the Marketing Department of Tilburg University. Find out more about Hannes at [his website](https://hannesdatta.com). Hannes is also active on [LinkedIn](https://www.linkedin.com/in/hannes-datta/), [YouTube](https://youtube.com/c/hannesdatta), and [GitHub](https://github.com/hannesdatta).
 
 ## Course description
 
@@ -20,12 +18,10 @@ Find out more about Hannes at [his personal website](https://hannesdatta.com). H
 
 The internet offers abundant possibilities to collect data (e.g., from social networks, from digital media providers, from price comparison websites, from online platforms) that can be used in empirical research projects and/or provide business value. After successful completion of this course, students will be able to:
 
--	Identify online data sources and evaluate their value in the context of a specific research question or business problem
-- Assess the terms and conditions for collecting, storing, and sharing data
+- Explain how web data has been used in the academic marketing literature
+-	Identify web data sources and evaluate their value in the context of a specific research question or business problem
+- Assess research fit, resource use and mitigate any legal or ethical issues before retrieving data
 - Collect data via web scraping and Application Protocol Interfaces (APIs) by mixing, extending and repurposing code snippets
-- Transform semi-structured JSON data to structured data sets for statistical analysis ("parsing")
-- Store and manage data using file-based systems <!--and databases-->
-- Draft, execute, monitor and audit online data collections locally and remotely
 - Document and archive collected data, and make it available for public (re)use
 
 ### Positioning of the course in the study program

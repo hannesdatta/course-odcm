@@ -23,6 +23,9 @@ The internet offers abundant possibilities to collect data (e.g., from social ne
 - Assess research fit, resource use and mitigate any legal or ethical issues before retrieving data
 - Collect data via web scraping and Application Protocol Interfaces (APIs) by mixing, extending, and repurposing code snippets
 - Document and archive collected data and make it available for public (re)use
+- Track, evaluate and share your progress on the course's learning goals[^1]
+
+[^1]: Students use a web app to monitor their progress on the course's learning goals by "ticking off" items from a to-do list (e.g., "I have installed Python," "I have finished Tutorial X," etc.). The instructor can use the app to learn which topics to highlight during live streams. Students, in turn, can use the app to see how far others in the class have already proceeded, giving them direct feedback on their performance.
 
 ### Positioning of the course in the study program
 
@@ -51,9 +54,9 @@ Considering the typical process in which research is carried out, this course is
 
 - [Team project](project) (45%, out of which 10% are based on students' individual contribution, measured by [self- and peer assessment](peerassessment))
 - [Computer exam](exam) (50%)
-- Submitting one's progress on the course's learning goals  (5%)[^3]
+- Submitting one's progress on the course's learning goals  (5%)[^2]
 
-[^1]: In particular, students regularly monitor their progress on the course's learning goals. At least one evaluation per course week is required to obtain points on this component of the course grade.
+[^2]: In particular, students regularly monitor their progress on the course's learning goals. At least one evaluation per course week is required to obtain points on this component of the course grade.
 
 ### Passing requirements
 

@@ -36,12 +36,10 @@ Considering the typical process in which research is carried out, this course is
 - [Preparation material](../modules/prep) is available in the form of Jupyter Notebooks or course recommendations at Datacamp. Novices may further benefit from following other courses at Tilburg University in which Python is used, for example, *Research Skills: Data Processing* and *Research Skills: Data Processing Advanced*.
 - Students are recommended to use their own computer for this course (Windows, Mac or Linux). Android/Chromebook/iOS devices are not supported. Cloud services (e.g., Tilburg's Jupyter server) is not fully supported, because they usually do not allow you to see what happens "outside" of Jupyter Notebook.
 
-<!--We will review the basics during induction week, but the pace will be very brisk.
--->
 
 ## Teaching format
 
-- Online-only (on Zoom)
+- Online-only (on Zoom; first and last lecture may take place on Campus)
 - Combination of self-paced tutorials (e.g., using Jupyter Notebooks or pre-recorded clips), and interactive live streams for feedback and coaching (recordings are shared with students)
 - Learn state-of-the-art tools popular among scientists, marketing analysts and data scientists (e.g., Python), and collect data from real websites and APIs
 - Open education & open science (all material is open; publicly accessible course page that stays with you, even after the end of the course)
@@ -51,26 +49,30 @@ Considering the typical process in which research is carried out, this course is
 
 ## Assessment
 
-- [Team project](project) (50%, out of which 10% are based on students' individual contribution, measured by [self- and peer assessment](peerassessment))
-
+- [Team project](project) (45%, out of which 10% are based on students' individual contribution, measured by [self- and peer assessment](peerassessment))
 - [Computer exam](exam) (50%)
+- Submitting one's progress on the course's learning goals  (5%)[^3]
 
-Grades are made available on Canvas.
+[^1]: In particular, students regularly monitor their progress on the course's learning goals. At least one evaluation per course week is required to obtain points on this component of the course grade.
 
 ### Passing requirements
 
-- Students pass this course if the final course grade (i.e., the weighted average of the group project and exam; weights indicated above) is ≥ 5.5, and the exam is passed (≥ 5.5).
-- Final course grades are rounded to multiples of half points (e.g., 6, 6.5, 7, etc.).
+Students pass this course if
+- the final course grade (i.e., the weighted average of the group project, the exam, and a pass/fail on submitting one's progress on the course's learning goals); weights indicated above) is ≥ 5.5, and
+- the exam grade is higher than or equal to 5.0 (≥ 5.0).
+
+Final course grades are rounded to multiples of half points (e.g., 6, 6.5, 7, etc.).
 
 ### Resit policy
 
-Students can fail this course in three situations:
-- If students do not pass the exam, they cannot pass this course.
+- If students have a grade lower than 5.0 on the exam, they cannot pass this course.
   - Required action: Students will have to take the [exam resit](exam).
-- If students are not part of a team, they cannot obtain a grade for the team project, and hence cannot pass this course.
+- If students are not part of a team, they cannot obtain a grade for the team project and hence cannot pass this course.
   - Required action: Re-enroll in this course's next edition, and ensure you are part of a team.
-- If students pass the exam, but fail the team project (after SPA correction), their total course grade may be lower than 5.5, and hence students fail this course.
-  - Required action: Correct team project on the basis of the course coordinator's grading report, and hand it in again within 2 weeks after publication of the final grades in this course (submission on Canvas). __Only students who fail this course are eligible to have their team projects re-graded.__
+- If students have an exam grade higher or equal to 5.0 but fail the team project (after SPA correction), their total course grade may be lower than 5.5, and hence students fail this course.
+  - Required action: Correct team project based on the course coordinator's grading report, and hand it in again within two weeks after publication of the final grades in this course (submission on Canvas). Only students who fail the team project can have their projects re-graded.
+- Students who have passed the course, but wish to retake the exam, can take the exam resit. The highest exam grade counts. Grades for the team project are retained. In other words, the resit exam still counts for 55% of the final course grade.
+- Students who fail the exam, and wish to re-take the course in the subsequent semester can *retain* their assignment grades upon approval of the course coordinator (grades remain valid for the *next* edition of the course)
 
 ## Code of Conduct
 

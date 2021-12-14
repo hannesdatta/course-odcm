@@ -38,6 +38,10 @@ Skilling up in web scraping and APIs requires practice, and conducting a group p
     - Can you find clusters of countries that share the same music taste?
 -->
 
+## Concerts and events
+- Data sources
+  - [Songkick](https://www.songkick.com/developer) 
+
 ## E-commerce
 - Data sources
   - [bol.com](bol.com)
@@ -55,6 +59,7 @@ Skilling up in web scraping and APIs requires practice, and conducting a group p
   - [Instagram](https://www.instagram.com)
   - [Twitter](https://www.twitter.com) (you can also use their streaming [API](https://developer.twitter.com/en/docs)!)
   - [Reddit](https://www.reddit.com/dev/api/)
+  - [TikTok](https://www.tiktok.com)
 
 ## Movies
 - Data sources
@@ -71,6 +76,8 @@ Skilling up in web scraping and APIs requires practice, and conducting a group p
 ## Online videos, user-generated content
 - Data sources
   - [YouTube API](https://developers.google.com/youtube/v3)
+  - [Twitch API](https://dev.twitch.tv/docs/api)
+
 <!--
 - Potential research questions
   - What are the most popular types of YouTube channels in terms of views?
@@ -78,4 +85,5 @@ Skilling up in web scraping and APIs requires practice, and conducting a group p
   - Do the channels with the most subscribers also earn the most? (e.g., see [Socialblade](https://socialblade.com/youtube/))
   - What factors play a role in determining the "Socialblade" channel grade?
   - How can you identify upcoming Youtubers that show great potential for an advertising partnership?
+  - How does Twitch help creators earn money and build their fandom?
 -->

@@ -28,13 +28,13 @@ __Only when finishing part 1, please proceed to part 2.__.
 
 - Date: __Tuesday, 19 October 2021__
 - Time: __9.00 am - 12pm (i.e., 11.59 am + 1 minute)__ (Amsterdam time, you can start when you want, but *must* submit before the deadline)
-- Exam registration: not necessary; enrollment to the Canvas course page is sufficient
+- Exam registration: at the latest one week prior to the exam via [this form](https://docs.google.com/forms/d/e/1FAIpQLSeJg09VehRpZxkVitKp22hGqvoTLdFT3-CMVZXDpISc0447bg/viewform?usp=sf_link) 
 - Inspection: tba <!--(signup here: https://forms.gle/6y5q66tsJzsGN59b9, Zoom link see Canvas)-->
 
 ### Resit
 - Date: __Monday, 17 January 2022__
 - Time: __9.00am - 12pm (i.e., 11.59am + 1 minute)__ (Amsterdam time, you can start when you want, but *must* submit before the deadline)
-- Registration: tba <!--by 7 June 2021 at the latest, via https://forms.gle/KXQBjtTvY9saQQhS8.-->
+- Registration: at the latest one week prior to the exam via [this form](https://docs.google.com/forms/d/e/1FAIpQLSeJg09VehRpZxkVitKp22hGqvoTLdFT3-CMVZXDpISc0447bg/viewform?usp=sf_link) 
 
 ## Technicalities & support
 
@@ -44,7 +44,6 @@ __Only when finishing part 1, please proceed to part 2.__.
   - Part 2 is open from 9am - 11.59am + 1 minute (noon). You should only start working on part 2 after finishing part 1.  
 - Working on your exam: on your own computer
 - Submitting your exam: all questions (including file uploads) will be submitted via TestVision. Recall: each part of the exam has to be submitted individually.
-- Registration: not necessary; enrollment to the Canvas course page is sufficient
 - Support during the exam: preferably WhatsApp [see the support section of this website](support); Support only for "unforeseen" errors. No support will be given for technical issues that students *should* have solved during the course (e.g., installation of Anaconda, running Jupyter Notebook, etc.)
 
 ## Form

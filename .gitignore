@@ -9,3 +9,4 @@ slides/reveal.js/
 slides/gen/
 ./reveal.js
 slides.md
+.hugo_build.lock

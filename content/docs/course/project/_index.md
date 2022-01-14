@@ -26,7 +26,7 @@ __The focus lies on *completing the complete workflow for collecting web data*. 
 - we recommend teams to have at least one-two students with coding expertise in Python on their team
 
 ## Deadline and submission
-- 17 October 2021, 6pm
+- Deadline: {{< param "Course_Deadline_Project" >}}
 - Submission of your [data package](grading) via [Surf Filesender](https://filesender.surf.nl)
   - send to h.datta@tilburguniversity.edu in one zip file (one email per team)
 

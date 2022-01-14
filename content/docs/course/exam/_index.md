@@ -26,13 +26,13 @@ __Only when finishing part 1, please proceed to part 2.__.
 
 ### Main sit
 
-- Date: __Tuesday, 19 October 2021__
+- Date: __{{< param "Course_Exam_Mainsit" >}}__
 - Time: __9.00 am - 12pm (i.e., 11.59 am + 1 minute)__ (Amsterdam time, you can start when you want, but *must* submit before the deadline)
 - Exam registration: not necessary; enrollment to the Canvas course page is sufficient
 - Inspection: tba <!--(signup here: https://forms.gle/6y5q66tsJzsGN59b9, Zoom link see Canvas)-->
 
 ### Resit
-- Date: __Monday, 17 January 2022__
+- Date: __{{< param "Course_Exam_Resit" >}}__
 - Time: __9.00am - 12pm (i.e., 11.59am + 1 minute)__ (Amsterdam time, you can start when you want, but *must* submit before the deadline)
 - Registration: tba <!--by 7 June 2021 at the latest, via https://forms.gle/KXQBjtTvY9saQQhS8.-->
 

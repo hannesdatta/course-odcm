@@ -12,15 +12,14 @@ Data Availability and Research Fit
 description: Assess which data is available at your chosen data source, and whether it fits your research purpose.
 
 -->
+## Kick-starting your week
+- Watch the kick-off for the week - TBA!
 
-## Self-study
+## Self-study and activities
 
 - [APIs 101 (Tutorial)](docs/tutorials/apis101)
 - Start fiddling around with accessing your chosen website or API.
 - Conduct background research on the *current legal situation* on using web scraping and APIs: When is it allowed, and when not? What are ethical boundaries?
-
-
-## Activities
 - Please prepare [Team Activity #3](../../../docs/course/project/workplan/activity3.md).
 - If you've got some spare time left, try fiddling around with code to extract some data from your chosen website or API.
 

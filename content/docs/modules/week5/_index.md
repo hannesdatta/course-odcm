@@ -11,7 +11,12 @@ bookCollapseSection: false
 <!--- Present data extraction plan for chosen website + feedback
 <!--*live; same "smaller" groups like before*-->
 
-## Self-study
+## Kick-starting your week
+- Watch the kick-off for the week - TBA!
+
+
+## Self-study and activities
+- Please prepare [Team Activity #4](../../../docs/course/project/workplan/activity4.md).
 
 {{< hint tip >}}
 __Looking for a challenge? [optional]__
@@ -24,8 +29,6 @@ If you feel you don't just want to stick with the basics but would like to learn
 {{< /hint >}}
 
 
-## Activities
-- Please prepare [Team Activity #4](../../../docs/course/project/workplan/activity4.md).
 
 ## Live stream #6
 - Team Activity #4

@@ -11,9 +11,15 @@ bookCollapseSection: false
 - Introduction to the course
   - [Slides](slides.html)<!-- add link ([re-watch](https://youtu.be/b3Fiq3mrsb4))<!-- add zoom link-->
   - Recordings
+    - [1 | Getting started - TBA]
+    - [2 | Why should you take this class? - TBA]
+    - [3 | Course setup] - TBA]
+
+<!---
     - [1 | getting started](https://youtu.be/NhkGSFVHPOE)
     - [2 | why should you take this class?](https://youtu.be/P0pKMkiceGk)
     - [3 | course setup](https://youtu.be/IUHtZDAN3kQ)
+-->
 
 {{< hint info >}}
 Recordings of the livestreams are published on Hannes' YouTube channel, so ensure you [subscribe to it](http://www.youtube.com/c/hannesdatta?sub_confirmation=1) to stay up-to-date!
@@ -24,8 +30,10 @@ Recordings of the livestreams are published on Hannes' YouTube channel, so ensur
 
 ## Self-study and activities
 
-- [What is web scraping and what are Application Programming Interfaces (APIs)?](https://videocollege.uvt.nl/Mediasite/Play/41afff385bd74db2af5fb8507350ea521d)
-- [Python Bootcamp (Tutorial)](docs/tutorials/pythonbootcamp)
+- Weblecture
+  - [What is web scraping and what are Application Programming Interfaces (APIs)?](https://videocollege.uvt.nl/Mediasite/Play/41afff385bd74db2af5fb8507350ea521d)
+- Tutorial
+  - [Python Bootcamp](docs/tutorials/pythonbootcamp)
 
 <!--
 - Workflow for collecting online data (Tutorial)

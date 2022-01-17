@@ -10,15 +10,12 @@ bookCollapseSection: true
 <!--- Feedback on coding up the data collection
 -->
 
-## Self-study
+## Self-study and activities
 <!--- Workflow for collecting online data (Tutorial)
   - [Preprocessing and Documentation](docs/tutorials/workflow/preprocessing.md)
   - [Using, Sharing, and Maintaining](docs/tutorials/workflow/use-and-maintain.md)-->
 - Please read (including the web appendix) [Datasheets for Datasets](https://arxiv.org/pdf/1803.09010.pdf)
 <!--- Tutorial: Data packaging and distribution-->
-
-## Activities
-
 - Please continue to work on the development of your prototype. Concurrently, try to start documenting your data collection - either in the Word template, or by using Jupyter Notebook (a combination of markdown cells for the text, and code cells for any analysis).
 
 ## Coaching sessions

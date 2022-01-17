@@ -35,10 +35,12 @@ Learn here [how to log in to unlock the content!](../../../docs/course/support/d
 
 ## Getting started
 
+If you haven't done so, please install the [required software](../software).
+
 The tutorial proceeds in three steps.
 
 1. Get familiar with Python (about 3-4 hours)
-    - Complete the [Datacamp course "Introduction to Python"](https://learn.datacamp.com/courses/intro-to-python-for-data-science) [only Modules 1-3]. If you haven't [installed the software](../software) yet, make sure to do so before getting started.
+    - Complete the [Datacamp course "Introduction to Python"](https://learn.datacamp.com/courses/intro-to-python-for-data-science) (only Modules 1-3). 
 2. Get familiar with Jupyter Notebook (about 30 minutes)
     - [Watch this YouTube video](https://www.youtube.com/watch?v=HW29067qVWk)
 3. Work through this notebook with additional material (about 2-3 hours)

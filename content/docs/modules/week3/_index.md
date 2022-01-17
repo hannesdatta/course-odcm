@@ -7,12 +7,12 @@ bookCollapseSection: false
 
 # Week 3: Further building your scraping skills
 
-## Self-study
+## Kick-starting your week
+- Watch the kick-off for the week - TBA!
 
-- [Web scraping 101 (Tutorial)](docs/tutorials/webscraping101)
-
-## Activities
+## Self-study and activities
 - Finalize teams (sign-up options are on Canvas)
+- [Web scraping 101 (Tutorial)](docs/tutorials/webscraping101)
 - Please prepare [team activity #2](../../../docs/course/project/workplan/activity2.md).
 
 ## Live stream 4

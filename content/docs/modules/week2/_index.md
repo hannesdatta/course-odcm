@@ -34,12 +34,10 @@ description: Learn how to assess data quality and website/API structure, and dec
 
 ## Live stream 3
 - Q&A/walk-through of this week's tutorial (and application to new sites/APIs)
-  - [Recording](https://youtu.be/G2KLbgXBDLE)
   - Demonstration of scraping from Twitch ([download](twitch.ipynb), [open in Colab](https://colab.research.google.com/github/hannesdatta/course-odcm/blob/master/content/docs/modules/week2/twitch.ipynb))
   - Using a shortlinking service API ([download](shortlink.ipynb), [open in Colab](https://colab.research.google.com/github/hannesdatta/course-odcm/blob/master/content/docs/modules/week2/shortlink.ipynb))
 - Narrowing down project ideas
   - [Breakout activity #1](../../../docs/course/project/workplan/activity1.md)
-  - [Recording](https://youtu.be/5WblUBffEVk)
   - Initial group formation for team projects
 
 <!--- Assessing data availability and evaluating research fit-->

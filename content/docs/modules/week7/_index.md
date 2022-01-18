@@ -19,10 +19,9 @@ bookCollapseSection: true
 ## Live stream #7
 - Course summary
   - [Slides](slides.html)
-  - [Recording](https://youtu.be/hpP4Sa3o7bU)
 - Exam preparation
   - [What to expect & how to prepare](../../../docs/course/exam)
-  - [Recording](https://youtu.be/wuSClMxEPrE)
-  
+
+
 <br>
 {{< button relref="week6" >}}Previous week{{< /button >}}

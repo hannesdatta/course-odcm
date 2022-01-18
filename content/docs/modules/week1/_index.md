@@ -43,10 +43,7 @@ Recordings of the livestreams are published on Hannes' YouTube channel, so ensur
 
 ## Livestream 2
 - Q&A/walk-through for this week's tutorial
-  - [Teaching notes](livestream2)
-  - [Recording](https://youtu.be/eqaI9XVPVFA)
-  - [Initial project ideas](https://docs.google.com/document/d/1hDnIYOrwMgs_L5PsxvAaY-cLiCzb9V6enBSatjsIElY/edit)
-  - [Code written in class](https://colab.research.google.com/drive/1Uo0tEax_Q2G7hEvVZFcOQACctM1-94ug?usp=sharing)
+
 
 {{< hint warning >}}
 __Problems opening the documents?__

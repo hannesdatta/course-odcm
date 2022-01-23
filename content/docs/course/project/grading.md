@@ -164,6 +164,8 @@ Before submitting, test your extraction code on a different computer (e.g., by a
 
 {{< /hint >}}
 
+Keep in mind that the goal of the project is not so much focused on conducting in-depth analyses related to your research question, but more on generating the data! 
+
 ### **3. Data Package**
 
 - *Quality of the data package (10%)*  

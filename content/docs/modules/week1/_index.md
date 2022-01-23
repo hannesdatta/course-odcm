@@ -13,7 +13,7 @@ bookCollapseSection: false
   - Recordings
     - [1 | Getting started - TBA]
     - [2 | Why should you take this class? - TBA]
-    - [3 | Course setup] - TBA]
+    - [3 | Course setup - TBA]
 
 <!---
     - [1 | getting started](https://youtu.be/NhkGSFVHPOE)

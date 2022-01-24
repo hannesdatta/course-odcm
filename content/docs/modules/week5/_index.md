@@ -30,7 +30,7 @@ If you feel you don't just want to stick with the basics but would like to learn
 
 
 
-## Live stream #6
+## Live stream #5
 - Team Activity #4
 
 

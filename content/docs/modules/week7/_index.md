@@ -16,7 +16,7 @@ bookCollapseSection: true
 <!--- Live coding / feedback sessions for teams
 -->
 
-## Live stream #7
+## Live stream #6
 - Course summary
   - [Slides](slides.html)
 - Exam preparation

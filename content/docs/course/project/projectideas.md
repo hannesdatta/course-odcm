@@ -20,12 +20,11 @@ When using a proprietary data sources requiring login (e.g., Netflix) or API cre
 Skilling up in web scraping and APIs requires practice, and conducting a group project is a great way to learn more about any facet of data- or computer science. Choose one of the following questions to explore further or pitch your own one during one of the live meetings in the course!
 -->
 
-## Online music streaming and podcasts
-- Data sources
-  - [spotifycharts](https://spotifycharts.com/regional)
-  - [Spotify Web API](https://developer.spotify.com/documentation/web-api/)
-  - [Last.fm](https://last.fm)
-  - [Listennotes](https://listennotes.com) and [Listennotes Realtime](https://listennotes.com/realtime)
+### Online music streaming and podcasts
+- [spotifycharts](https://spotifycharts.com/regional)
+- [Spotify Web API](https://developer.spotify.com/documentation/web-api/)
+- [Last.fm](https://last.fm)
+- [Listennotes](https://listennotes.com) and [Listennotes Realtime](https://listennotes.com/realtime)
 
 <!--
 - Potential research questions
@@ -38,14 +37,12 @@ Skilling up in web scraping and APIs requires practice, and conducting a group p
     - Can you find clusters of countries that share the same music taste?
 -->
 
-## Concerts and events
-- Data sources
-  - [Songkick](https://www.songkick.com/developer) 
+### Concerts and events
+- [Songkick](https://www.songkick.com/developer)
 
-## E-commerce
-- Data sources
-  - [bol.com](bol.com)
-  - [Coolblue](coolblue.nl)
+### E-commerce
+- [bol.com](bol.com)
+- [Coolblue](coolblue.nl)
 <!--
 - Potential business questions
    - Are our tech products priced lower than our competitors?
@@ -54,18 +51,16 @@ Skilling up in web scraping and APIs requires practice, and conducting a group p
    - How are products ordered by default?
 -->
 
-## Social media
-- Data sources
-  - [Instagram](https://www.instagram.com)
-  - [Twitter](https://www.twitter.com) (you can also use their streaming [API](https://developer.twitter.com/en/docs)!)
-  - [Reddit](https://www.reddit.com/dev/api/)
-  - [TikTok](https://www.tiktok.com)
+### Social media
+- [Instagram](https://www.instagram.com)
+- [Twitter](https://www.twitter.com) (you can also use their streaming [API](https://developer.twitter.com/en/docs)!)
+- [Reddit](https://www.reddit.com/dev/api/)
+- [TikTok](https://www.tiktok.com)
 
-## Movies
-- Data sources
-  - [Netflix](https://www.netflix.com/browse)
-  - [IMDb](https://www.imdb.com)
-  - [The Numbers](https://www.the-numbers.com/) (check here for daily top 10 lists for home video and Netflix, going back about 1.5 years)
+### Movies
+- [Netflix](https://www.netflix.com/browse)
+- [IMDb](https://www.imdb.com)
+- [The Numbers](https://www.the-numbers.com/) (check here for daily top 10 lists for home video and Netflix, going back about 1.5 years)
 <!--
 - Potential research questions
   - Which movie genres are most popular, and are most likely to be trending?
@@ -73,10 +68,9 @@ Skilling up in web scraping and APIs requires practice, and conducting a group p
   - Are the highest rated movies also the ones most popular on Netflix?
 -->
 
-## Online videos, user-generated content
-- Data sources
-  - [YouTube API](https://developers.google.com/youtube/v3)
-  - [Twitch API](https://dev.twitch.tv/docs/api)
+### Online videos, user-generated content
+- [YouTube API](https://developers.google.com/youtube/v3)
+- [Twitch API](https://dev.twitch.tv/docs/api)
 
 <!--
 - Potential research questions
@@ -87,3 +81,8 @@ Skilling up in web scraping and APIs requires practice, and conducting a group p
   - How can you identify upcoming Youtubers that show great potential for an advertising partnership?
   - How does Twitch help creators earn money and build their fandom?
 -->
+
+# Projects from previous edition
+To give you an idea of what a good project could look like, we published some of the projects from the Fall 2021 edition. Feel free to check these out and get inspired by them for your own team project!
+
+You can find the projects by [clicking here](https://zenodo.org/record/5902839#.YfAO02DTX0o)

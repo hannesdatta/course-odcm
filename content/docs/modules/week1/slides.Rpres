@@ -54,7 +54,8 @@ Disclaimer
 ========================================================
 incremental: true
 
-- Slow me down & use the chat
+- It's my first live lecture in two years (!)
+- Slow me down & use the chat (need a moderator in class!)
 - Live streams are *complements*, not substitutes for self-study & course website
 - Minimal use of slides; will post
 - This is not a class that merely teaches you Python (but, if you invest time, you'll learn Python on the way!)
@@ -69,8 +70,8 @@ About myself
 - born and raised in Germany
 - married, 2 kids (3 and 6 years old)
 - normally streaming from 'de zolderkamer' in 's-Hertogenbosch
-- geek at heart (3D printing, coding), recently started skateboarding (surfskating, actually)
-- now Associate Prof at Tilburg University
+- geek at heart (3D printing, coding), started skateboarding but broke my arm in October (want to get back on the board though)
+- Associate Prof at Tilburg University
 
 Key areas of expertise
 ========================================================
@@ -123,7 +124,7 @@ Motivation for course
 - was interested in music, and found website with data (https://last.fm)
 - no best practices in scraping; learnt all by myself and made many mistakes
 - scraping undervalued in academic job market, __but__, key role in shaping relevance and rigor of your work
-- now scraping is a large part of defines me...
+- now scraping and APIs are a large part of what defines me...
 
 Selection of scraping projects I've undertaken
 ========================================================

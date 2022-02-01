@@ -62,7 +62,7 @@ incremental: true
 - Mix of students at various levels (e.g., beginners, advanced Python users)
 - I'm a marketer, not a data or computer scientist
 - Consider me your coach, not your *distant professor*
-- Course is online-first (i.e., it won't work offline, except for today)
+- Course is online-first
 
 About myself
 ========================================================
@@ -92,7 +92,6 @@ Teaching activities (all openly available)
     - Data preparation and workflow management (*new*, https://dprep.hannesdatta.com)
     - Online data collection and management (*new*, https://odcm.hannesdatta.com)
     - MSc Thesis supervision (https://thesis.hannesdatta.com)
-    - Research in Social Media (*legacy*)
 - Other inititatives
   - Tilburg Science Hub (https://tilburgsciencehub.com)
   - YouTube channel (https://youtube.com/c/hannesdatta)
@@ -102,6 +101,11 @@ Teaching activities (all openly available)
 
 Getting to know you
 ========================================================
+incremental: true
+
+- Passion, talents
+- Why are you enrolled in this program?
+- Data experience?
 
 <!--Please answer in the chat directly...
 -->
@@ -115,7 +119,6 @@ Ask questions live, await response in the chat
 - What are you working on right now? (e.g., project, study, thesis)
 - Where do you want to work when you finish the program?
 
--->
 
 Motivation for course 
 ========================================================
@@ -285,7 +288,6 @@ __Yes, but collecting *web data* is different from other datasets!__
 
 - data source selection
   - finding the *right* data source may be difficult as __many__ potential alternatives exist
-  - for example, unlike experiments in the lab, field experiments with firms, scanner data from established data providers
   - differ in delivery formats (website versus API, compared to CSV/databases)
   - access to data that is *not* available commercially (or that a firm would not like to share)
   
@@ -294,7 +296,6 @@ Web data versus other marketing data (II)
 
 - extraction design
   - which information to select (which is available?!)
-  - data is not documented, and there is no direct way to ask questions about the data (sampling?! generalizability?)
   - type of variables (sales is rare; review scores are abundant)
   - different stakeholders that could potentially be addressed
   - need to tackle legal and ethical issues 
@@ -305,8 +306,8 @@ Web data versus other marketing data (III)
 - collection data at scale!
   - unprecedent: it's totally automatic (but prone to errors)
   - need to put *monitoring* procedures in place
-  - documentation necessary (doesn't exist yet!)
-
+  - data is not documented, and there is no direct way to ask questions about the data (sampling?! generalizability?)
+  
 Each project is totally unique - that's why there is no universal "best way" to approach things...
 
 Methodological Framework

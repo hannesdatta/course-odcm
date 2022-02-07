@@ -13,7 +13,7 @@ description: Learn how to assess data quality and website/API structure, and dec
 # Week 2: Workflow & learning how to scrape
 
 ## Kick-starting your week
-- Watch the kick-off for the week - TBA!
+- [Watch the kick-off for the week](https://youtu.be/m1yCf09wSa4)
 
 ## Self-study and activities
 

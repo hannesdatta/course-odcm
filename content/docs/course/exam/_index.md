@@ -10,38 +10,24 @@ description: " "
 
 The course content will be tested in the form of a __take-home exam__, to be completed __within three hours__.
 
-{{< hint warning >}}
-__The exam consists of two parts.__
-
-On the day of your exam, you find both parts in the exam list when logging into TestVision.
-
-- oDCM Main Sit Part 1/2
-- oDCM Main Sit Part 2/2.
-
-__Please work on part 1 first.__ The first part closes at 10am.
-
-__Only when finishing part 1, please proceed to part 2.__.
-
-{{< /hint >}}
-
 ### Main sit
 
 - Date: __{{< param "Course_Exam_Mainsit" >}}__
 - Time: __9.00 am - 12pm (i.e., 11.59 am + 1 minute)__ (Amsterdam time, you can start when you want, but *must* submit before the deadline)
-- Exam registration: at the latest one week prior to the exam via [this form](https://docs.google.com/forms/d/e/1FAIpQLSeJg09VehRpZxkVitKp22hGqvoTLdFT3-CMVZXDpISc0447bg/viewform?usp=sf_link) 
+- Exam registration: at the latest one week prior to the exam via [this form](https://docs.google.com/forms/d/e/1FAIpQLSeJg09VehRpZxkVitKp22hGqvoTLdFT3-CMVZXDpISc0447bg/viewform?usp=sf_link)
 - Inspection: tba <!--(signup here: https://forms.gle/6y5q66tsJzsGN59b9, Zoom link see Canvas)-->
 
 ### Resit
 - Date: __{{< param "Course_Exam_Resit" >}}__
 - Time: __9.00am - 12pm (i.e., 11.59am + 1 minute)__ (Amsterdam time, you can start when you want, but *must* submit before the deadline)
-- Registration: at the latest one week prior to the exam via [this form](https://docs.google.com/forms/d/e/1FAIpQLSeJg09VehRpZxkVitKp22hGqvoTLdFT3-CMVZXDpISc0447bg/viewform?usp=sf_link) 
+- Registration: at the latest one week prior to the exam via [this form](https://docs.google.com/forms/d/e/1FAIpQLSeJg09VehRpZxkVitKp22hGqvoTLdFT3-CMVZXDpISc0447bg/viewform?usp=sf_link)
 
 ## Technicalities & support
 
 - Receiving your exam: via [TestVision](https://TilburgU.testvision.nl/online/kandidaten) on the day of the exam
 - The exam consists of two parts, which you will have to work on in "separate" exams:
   - Part 1 is open from 9am - 10am. I.e., it needs to be finished at the latest by 10am.
-  - Part 2 is open from 9am - 11.59am + 1 minute (noon). You should only start working on part 2 after finishing part 1.  
+  - Part 2 is open from 9am - 11.59am + 1 minute (noon). __You should only start working on part 2 after finishing part 1.__
 - Working on your exam: on your own computer
 - Submitting your exam: all questions (including file uploads) will be submitted via TestVision. Recall: each part of the exam has to be submitted individually.
 - Support during the exam: preferably WhatsApp [see the support section of this website](support); Support only for "unforeseen" errors. No support will be given for technical issues that students *should* have solved during the course (e.g., installation of Anaconda, running Jupyter Notebook, etc.)
@@ -53,7 +39,9 @@ __Only when finishing part 1, please proceed to part 2.__.
 - Some questions will be personalized (i.e., there is only one correct answer per student), others will be randomized (i.e., you will see questions in mixed order, and not all students get to see all questions).
 
 {{< hint warning >}}
-__Communication with anybody about the exam content, during *and after* the take-home exam, is strictly prohibited.__
+
+- Communication with anybody about the exam content, during *and after* the take-home exam, is strictly prohibited.
+- Students must not copy-paste from websites, academic papers, etc. when formulating answers to questions.
 
 {{< /hint >}}
 

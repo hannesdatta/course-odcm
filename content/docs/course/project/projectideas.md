@@ -85,4 +85,4 @@ Skilling up in web scraping and APIs requires practice, and conducting a group p
 # Projects from previous edition
 To give you an idea of what a good project could look like, we published some of the projects from the Fall 2021 edition. Feel free to check these out and get inspired by them for your own team project!
 
-You can find the projects by [clicking here](https://zenodo.org/record/5902839#.YfAO02DTX0o)
+You can find the projects by [clicking here!](https://zenodo.org/record/5902839#.YfAO02DTX0o)

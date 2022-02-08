@@ -14,31 +14,24 @@ The team project is submitted as a so-called “data package”, consisting of t
 2. Source code for the data collection (30% of the final grade)
 3. Overall quality of the data package (10% of the final grade)
 
-In preparing your submission, please use the following directory structure.
+In preparing your submission, please closely adhere to the following directory structure.
 
 ```
-readme.txt <-- your documentation,
-               either in the form of a plain txt file,
-               or a formatted PDF document
+readme.txt <-- your documentation, either in the form of a plain txt file or a formatted PDF document
 
-docs\api_documentation.pdf <-- any supporting files
-docs\screenshot.pdf            for the documentation
-                               (e.g., API documentation,
-                               screenshots from the website,
-                               relevant blog articles)
+docs\api_documentation.pdf <-- any supporting files for the documentation (e.g., API documentation,
+docs\screenshot.pdf            screenshots from the website, relevant blog articles)
 
 data\file1.csv <-- your raw data files
 data\file2.csv
 data\file3.csv
 
-src\collection\collect.py <-- final source code used
-                              for collecting the data
+src\collection\collect.py <-- final source code used for collecting the data
 
-src\reporting\analysis.R <-- final source code used
-                     to generate statistics/insights documented
-                     in the readme.
-
+src\reporting\analysis.R <-- final source code used to generate statistics/insights documented in the readme.
 ```
+
+The data sets should be submitted exclusively on canvas. Submit the documentation in such way that the data set is fully anonymized and blank out information that could be considered sensitive, such as names or other personal information.
 
 ## Calculation of team grades
 Weights for each component of the grading rubric below are indicated in brackets (e.g., 5%). In calculating your final grade, percentages are converted to grade points on a ten-point scale (e.g., 5% make up 0.5 grade points on a 10-point scale), weighted by the following percentages:
@@ -70,43 +63,50 @@ In the grading details below, numbers (#1, #1.4, etc.) refer to sections in the 
 
 From your answers to _all questions in section 1 of the documentation template_, the following points need to be addressed:
 
-- *Motivation for data context (5%)*  
-Clear explanation of the value in collecting the data (“task in mind”), either in the context of a specific research question or business problem. The data collection potentially generates insights into new phenomena. There is clearly value to the larger research community in using the data. Comparable data sets are not available at all, or not publicly available.
+- *Motivation for research context (5%)*  
+Clear explanation of the value in collecting the data (“task in mind”), either in the context of a specific research question or business problem. The data collection potentially generates insights into new phenomena, increases the managerial relevance of empirical work, helps to develop new models, or is an efficient way for collecting valuable information. There is clearly value to the larger research community in using the data.
 
-- *Motivation for choice of website/API (5%)*  
-A range of relevant websites and APIs pertaining to the data context is assessed in terms of data availability, research fit & resource use. It is clear why the data was ultimately collected from the focal website/API, and not from others (i.e., the website/API emerges as the one that fits best in terms of research fit and resource use; #1.4).
+- *Motivation for selected data source (5%)*  
+A wide range of relevant websites and APIs pertaining to the data context are assessed. The use of different extractions methods and alternatives to web scraping are considered and the data context is sufficiently scoped to ensure validity and to identify other relevant information that may be valuable. It is clear why the data was ultimately collected from the focal website/API, and not from others (i.e., the website/API emerges as the one that fits best in terms of research fit and resource use; #1.4).
 
-#### 1.2 Composition (section 2 of your documentation, 20%)  
+#### 1.2 Composition (section 2 of your documentation, 25%)  
 
 From your answers to _all questions in section 2 of the documentation template_, the following points need to be addressed:
 
-- *Entities, linkages, timeframe and algorithmic biases (5%)*    
-The composition of the data is described in detail and accessible to novel users of the data. Potential users learn about which entities are available in the data set, for what time period, and how they are linked to each other. Potential linkages to external data sets are made explicit (e.g., by means of links to external websites or sources that explain more about the used identifiers). Potential algorithmic biases have been identified and clearly explained.
+- *Extraction design (10%)*  
+  - The risk of algorithmic interference is taken into account and dealt with accordingly. Furthermore, possible changes to the contents of the website or data aggregator that may influence the results are considered and metadata is collected, if applicable.
+  - The seed selection is valid and clearly explained. Potential linkages to external data sets are made explicit (e.g., by means of links to external websites or sources that explain more about the used identifiers).
+  - The frequency at which the data is the collected and the limitations to this are made explicit. If it is opted to collect data more than once, teams used automatic scheduling to ensure valid and consistent results.
 
-- *Sampling, construct measurement and data structure (5%)*  
-For each entity, it is explained how the data was sampled, and how variables are measured. Details are given how the data is available (e.g., by means of CSV files per entity, as a combined data set, etc.).
+- *How is research validity is balanced with technical feasibility and legal/ethical risks (5%)*  
+The design decision lead to a tradeoff between validity, technical feasibility and exposure legal/ethical risks. The consequences to these are carefully described when making decisions on one of the previous steps (i.e., which information to extract, which seeds to select and at what frequency).
 
-- *Data inspection per entity (10%)*  
-Each set of entities is accompanied by meaningful summary statistics (e.g., the number of units per entity, means/SD for continuous variables, and frequency distributions per variable, for each entity). Missingness has been investigated (e.g., for individual entities, but also for the collected variables). Any redundancies, errors, or sources of noise have been clearly described. Identified subpopulations are labeled, so that users of the data can more easily get started using the data.
+- *Data inspection (10%)*  
+The collected data is accompanied by meaningful summary statistics (e.g., the number of units per entity, means/SD for continuous variables, and frequency distributions per variable, for each entity). Missingness has been investigated (e.g., for individual entities, but also for the collected variables). Any redundancies, errors, or sources of noise have been clearly described. Identified subpopulations are labeled, so that users of the data can more easily get started using the data.
 
 
-#### 1.3 Collection process (section 3 of your documentation, 15%)
+#### 1.3 Collection process (section 3 of your documentation, 10%)
 
 From your answers to _all questions in section 3 of the documentation template_, the following points need to be addressed:
 
-- *Technical extraction plan (10%)*   
-The technical extraction plan has been described in a way that the data collection could be replicated. This encompasses providing a solid argumentation on why a particular data extraction technology used (e.g., selenium versus Beautifulsoup for websites, a package versus self-coded requests for APIs). It is clear how entities were sampled from the site, and how the navigation scheme was implemented. In particular, users of the data learn about the technical hurdles that needed to be overcome, and which monitoring was in place to guarantee (and validate) data quality. Finally, details are given on how (deployment infrastructure) and when the data collection was executed (e.g., by meaningful summaries of the timestamps in log files), and where the final data set was stored during the collection.
+- *Data extraction (10%)*   
+  - The technical extraction plan has been described in a way that the data collection could be replicated. This encompasses providing a solid argumentation on why a particular data extraction technology used (e.g., selenium versus Beautifulsoup for websites, a package versus self-coded requests for APIs). If teams came across technical issues when scaling the data collection, the debugging stage is clearly explained.
+  - Users of the data learn about the technical hurdles that needed to be overcome, and which monitoring was in place to guarantee (and validate) data quality.
+  - Details are given on how (deployment infrastructure) and when the data collection was executed (e.g., by meaningful summaries of the timestamps in log files), and where the final data set was stored during the collection.
 
-- *Legal and ethical concerns (5%)*
-For #3.6, the potential legal and/or ethical concerns that may be relevant for the collected data are carefully described.
+{{< hint info >}}
+__Best practices for documentation__
 
+Feel free to include screenshots and/or an additional recording in your documentation. Not only will this improve interpretability, it also contributes to the accuracy and reproducability of the project!
+
+{{< /hint >}}
 
 #### 1.4 Preprocessing (section 4 of your documentation, 10%)
 
 From your answers to _all questions in section 4 of the documentation template_, the following points need to be addressed:
 
 - *Preprocessing (5%)*  
-Any pre-processing on the fly has been motivated and explained, using a few specific examples. Any further pre-processing after the collection has been described (e.g., such as to anonymize users for privacy concerns, to identify and clean out implausible observations, or to improve data structure for long-term storage, such as rearranging the data structure, relabeling columns into more meaningful and clear variable names).
+Any pre-processing on the fly has been motivated and explained, using a few specific examples. Any further pre-processing after the collection has been described (e.g., such as to anonymize users for privacy concerns, to identify and clean out implausible observations, or to improve data structure for long-term storage, such as rearranging the data structure, relabeling columns into more meaningful and clear variable names). Potential threats that may result from this pre-processing are brought up and elaborated on.
 
 - *Accessibility and structure of final data files (5%)*  
 The files have a correct data structure, and variables are of the correct type (e.g., numbers as integers or floats, not as strings; time stamps properly formatted, or Unixtime used). Application of data enrichment and feature engineering strategies (e.g., to derive new variables from the data, where necessary). Data has been normalized (i.e., preferably multiple tables that can be joined together, rather than a wide table that contains many duplicates on some of the variables). If imputation is used, it is indicated which values have been imputed (e.g., interpolated; for example: followers (without missing), and followers_inputed as a TRUE/FALSE variable, indicating which ones were imputed). Finally, the data set is provided in CSV files, including column names, proper use of delimiters (e.g., a “,” may be inappropriate for textual data involving commas). No row names/index column.
@@ -164,7 +164,7 @@ Before submitting, test your extraction code on a different computer (e.g., by a
 
 {{< /hint >}}
 
-Keep in mind that the goal of the project is not so much focused on conducting in-depth analyses related to your research question, but more on generating the data! 
+Keep in mind that the goal of the project is not so much focused on conducting in-depth analyses related to your research question, but more on generating the data!
 
 ### **3. Data Package**
 
@@ -184,5 +184,5 @@ Keep in mind that the goal of the project is not so much focused on conducting i
     - The original paper on which the readme template is based on provides a few helpful (filled in) examples that may provide some inspiration.
     - If you are familiar with R, you can write your documentation in RMarkdown, which nicely intertwines answers to the questions (e.g., conceptual answers) with details/statistics from the data (i.e., by including code snippets that directly generate overview tables).
 
-- Please pick a good name for your dataset. This name will be the first thing potential users of your data will see. Use it as the *title* of your documentation (don't call your dataset "Datasheets for Datasets"!)
+- Please pick a good name for your dataset. This name will be the first thing potential users of your data will see. Use it as the *title* of your documentation (don't call your dataset "Datasheets for Datasets"!). Moreover, don't forget to include a title page for your documentation.
 - Please skip sections 6 and 7 of the documentation (distribution and maintenance). Do get rid of the example text in these sections though.

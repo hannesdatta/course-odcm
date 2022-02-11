@@ -21,18 +21,18 @@ date: 2021-02-04
 
 ## Breakout session structure
 
-1. Choose a team captain who will take notes and *may* have to present the breakout group's findings to the large group.
+1. Introduction
+    - Choose a team captain who will take notes and *may* have to present the breakout group's findings to the large group.
+    - If you haven't done so - introduce yourselves to each other briefly
+        - "What are you passionate about (e.g., hobbies)?"
+        - "Where do you spend your time online?"
+        - "What's your biggest (personal, business or study) challenge right now?"
 
-2. If you haven't done so - introduce yourselves to each other briefly
-    - "What are you passionate about (e.g., hobbies)?"
-    - "Where do you spend your time online?"
-    - "What's your biggest (personal, business or study) challenge right now?"
+2. Come up with an interesting *data context* that provides researchers with novel data for studying novel phenomena, enhancing ecological value, improving methods, or enhancing inferences.
 
-3. Come up with important *societal or business challenges*. Seek inspiration on the web (e.g., UN Sustainable Development Goals, Accenture/McKinsey reports, etc., your intuition about the future...).
-
-4. Start to broadly identify data sources to solve the societal/business challenge(s).
+3. Start to broadly identify data sources to solve the societal/business challenge(s).
     - In exploring the data universe, beware of the common challenges that occur in data selection: threat of defaulting, only considering web scraping, considering the contextual complexity.
-    - What benefit is your data likely to generate for the marketing discipline? (e.g., exploring novel phenomena, ecological value, method advancement, or enhancing inferences?)
+
 
 {{< hint info >}}
 __Diversity & inclusion matters!__

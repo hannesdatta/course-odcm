@@ -33,13 +33,6 @@ date: 2021-02-04
     - In exploring the data universe, beware of the common challenges that occur in data selection: threat of defaulting, only considering web scraping, considering the contextual complexity.
     - What benefit is your data likely to generate for the marketing discipline? (e.g., exploring novel phenomena, ecological value, method advancement, or enhancing inferences?)
 
-{{< hint > }}
-
-It may be most effective to organize your data selection in a shared Google Docs (so you can all add notes at the same time).
-
-{{< / hint > }}
-
-
 {{< hint info >}}
 __Diversity & inclusion matters!__
 

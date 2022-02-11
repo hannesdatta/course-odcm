@@ -17,6 +17,7 @@ date: 2021-02-04
 ## Preparation before the breakout activity
 
 - Read ["Fields of Gold"](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3820666) and learn how to identify impactful and novel web data!
+- It may be most effective to organize your data selection in a shared Google Document (so you can all add notes at the same time).
 
 ## Breakout session structure
 

@@ -8,7 +8,7 @@ bookCollapseSection: false
 # Week 3: Further building your scraping skills
 
 ## Kick-starting your week
-- Watch the kick-off for the week - TBA!
+- [Watch the kick-off for the week](https://youtu.be/j8DqkHBPuic)
 
 ## Self-study and activities
 - Finalize teams (sign-up options are on Canvas)

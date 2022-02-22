@@ -18,10 +18,9 @@ description: Assess which data is available at your chosen data source, and whet
 ## Self-study and activities
 
 - [APIs 101 (Tutorial)](docs/tutorials/apis101)
-- Start fiddling around with accessing your chosen website or API.
-- Conduct background research on the *current legal situation* on using web scraping and APIs: When is it allowed, and when not? What are ethical boundaries?
+- Start fiddling around with accessing your chosen website or API. If you have time left, start building an initial prototype to extract some data (doesn't need to be the "final" data yet!)
 - Please prepare [Team Activity #3](../../../docs/course/project/workplan/activity3.md).
-- If you've got some spare time left, try fiddling around with code to extract some data from your chosen website or API.
+- Optional: Still wonder why APIs are so powerful? Read [Zalando's take](https://opensource.zalando.com/restful-api-guidelines/#introduction) on APIs
 
 ## Live stream 4
 - [Team Activity #3](../../../docs/course/project/workplan/activity3.md)

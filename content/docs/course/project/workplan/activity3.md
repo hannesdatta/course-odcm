@@ -21,8 +21,15 @@ date: 2021-02-04
         - please include a calculation of your study's feasible sample size.
     - Slide 4: How to process the information during the extraction? (Challenge #2.4)
 
+- Please provide details on how your extraction design balances technical feasibility and exposure to potential legal and ethical risks (cf. Table 3).
 - Please include the calculation of your study's feasible sample size in a separate Excel sheet.
 
 ## Submission
 
 - Please upload the presentation (as a PDF) and Excel sheet (as an Excel file) in one zip file at the latest by 8am on the day of the live stream. Use Canvas.
+
+
+<!--
+
+- Conduct background research on the *current legal situation* on using w)eb scraping and APIs: When is it allowed, and when not? What are ethical boundaries?
+-->

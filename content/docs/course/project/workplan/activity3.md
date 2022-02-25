@@ -1,5 +1,5 @@
 ---
-title: Activity 3) Data Availability and Research Fit
+title: Activity 3) Extraction Design
 draft: false
 date: 2021-02-04
 ---

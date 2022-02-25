@@ -19,8 +19,8 @@ This course is instructed by [dr. Hannes Datta](https://tiu.nu/datta), Associate
 The internet offers abundant possibilities to collect data (e.g., from social networks, digital media providers, price comparison websites, online platforms) that can be used in empirical research projects and/or provide business value. After successful completion of this course, students will be able to:
 
 - Explain how web data has been used in the academic marketing literature
--	Identify web data sources and evaluate their value in the context of a specific research question or business problem
-- Assess research fit, resource use and mitigate any legal or ethical issues before retrieving data
+-	Select web data sources and evaluate their value in the context of a specific research question or business problem
+- Design the web data collection while balancing validity, technical feasibility and exposure to legal/ethical risks
 - Collect data via web scraping and Application Protocol Interfaces (APIs) by mixing, extending, and repurposing code snippets
 - Document and archive collected data and make it available for public (re)use
 - Track, evaluate and share your progress on the course's learning goals[^1]

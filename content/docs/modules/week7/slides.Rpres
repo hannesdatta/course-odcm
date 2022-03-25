@@ -62,50 +62,54 @@ Positioning in the study program
 
 ![odcm](odcm_positioning.png)
 
-
-Lessons learnt #1: Opportunity Identification
+Lessons learnt #1: Why to use web data?
 ========================================================
 incremental: true
 
-- Important of "broadening horizon" (e.g., scraper vs. API vs. existing data sets)
-- Identify amazing contexts & have something to say!
-  - Policy making: e.g., housing crisis
-  - Socially relevant: e.g., Covid impact, reading habits
-- Data aggregators are ideal for multi-platform data
-- Biggest platforms are not always best!
-
-Lessons learnt #2: Data Availability Assessment
+- Research is by far more impactful than non-webdata-based research
+  - Explore novel phenomena, be timely!
+  - Boost ecological value
+  - Facilitate methodological advancement
+  - Enhance inferences / better measurement
+- But: challenging!
+  - Programming knowledge to master technical challenges
+  - Conceptual thinking to navigate design choices & legal risks
+  
+Lessons learnt #2: Staying in balance
 ========================================================
 incremental: true
 
-- Look out for entities - especially the "surprising ones!"
-- Look out for *variables* (e.g., to compare to other studies), but also to see time availability differences
+![odcm](methodological_framework.png)
+
+Lessons learnt #3: Data Source Selection
+========================================================
+incremental: true
+
+- Important of "broadening horizon" (e.g., assume perspective of various stakeholders, exceed geopgrahical boundaries, use aggregators rather than primary data providers)
+- Consider alternatives to scraping (i.e., avoid defaulting! e.g., APIs, but also ready-made datasets)
+- Scope the data context (i.e., understand how the data is generated, assess reliability of the data, explore user conversations about the data, etc.)
+
+Lessons learnt #4: Design Challenges (I)
+========================================================
+incremental: true
+
+- Look out for information - especially the "surprising ones!"
+- Look out for *variables* (e.g., to compare to other studies), but also to see *time availability* differences
 - Spend time mapping your navigation path
 - Real-time data collection required?! (e.g., wrong historical data, inaccurate timestamps?)
 - Algorithmic biases present? Can exert control?
 
-Lessons learnt #3: Evaluation of Research Fit & Resource Use
+Lessons learnt #5: Design Challenges (II)
 ========================================================
 incremental: true
 
-- Look out for entities - especially the "surprising ones!"
-- Look out for *variables* (e.g., to compare to other studies), but also to see time availability differences
-- Real-time data collection required?! (e.g., wrong historical data, inaccurate timestamps?)
-- Algorithmic biases present? Can exert control?
+- How long does the data collection run?
+- How to seed?
+- To which population do the seeds generalize?
+- At what frequency to extract the data (e.g., once? multiple times?)
+- How to process the data on-the-fly? (e.g., first store as JSON, then parse; pandas-based parsing)
 
-
-Lessons learnt #4: Technical Extraction Plan and Prototyping
-========================================================
-incremental: true
-
-- Prototyping is extremely important
-  - requests + beautifulSoup vs. selenium/Chromedriver
-  - extraction methodology (e.g., tags, CSS, classes) + stability
-- Writing helper functions, "moving code into production"
-- Can you come up with more feasible navigation paths?
-
-
-Lessons learnt #5: Evaluating legal and ethical concerns
+Lessons learnt #6: Design Challenges (III)
 ========================================================
 incremental: true
 
@@ -116,29 +120,26 @@ incremental: true
 - Data management & use, commercialization
 
 
-Lessons learnt #6: Collecting and monitoring
+Lessons learnt #7: Extraction
 ========================================================
 incremental: true
 
-- Scheduling is handy
-- Hiding passwords is even more handy
-- Comment code, make it "understandable" for others
-- Choosing between "scraping philosophies": parsing on-the-fly versus later?
-
-Lessons learnt #7: Documentation
-========================================================
-incremental: true
-
+- Prototyping is extremely important
+  - requests + beautifulSoup vs. selenium/Chromedriver
+  - extraction methodology (e.g., tags, CSS, classes) + stability
+  - scheduling, hiding passwords
+  - revise navigation paths
+  - add comments to code (make it understandable for others!)
 - Start documentation from a readme template
-- Generate plots to spot errors in collection and "look" at the phenomenon of interest!
-- Think as a "data supplier" rather than narrowly focusing on *one* (research) question
+  - Generate plots, descriptive stats
+  - Think as a "data supplier" rather than narrowly focusing on *one* (research) question
 
 Looking ahead: Recognizing Limitations
 ========================================================
 incremental: true
 
-- Web data entails modeling challenges - not covered in this course (e.g., self-selection)
-- Web data can't give you all (i.e., you don't see internal data) --> need for collaboration
+- Web data entails modeling challenges - not covered in this course (e.g., self-selection, endogeneity, "messy" data)
+- Web data can't give you all (i.e., you don't see internal data such as clickstream data) 
 - Legal and ethical issues not fully explored yet
 
 Potential Applications
@@ -157,7 +158,7 @@ Academic Opportunities from "what we study"
 ========================================================
 incremental: true
 
-1. Scout out emerging phenomena (e.g., TikTok, Clubhouse, ...)
+1. Scout out emerging phenomena 
 2. Study phenomena that can't be captured otherwise (i.e., unobtrusively)
 3. Study diverse populations (e.g., moving being *WEIRD*, more socio-economic backgrounds + geographies)
 4. Generating realistic stimuli for experiments (e.g., brand logos)
@@ -172,20 +173,21 @@ incremental: true
 4. Build own [research APIs](https://www.jstatsoft.org/article/view/v094i09)
 
 
-Next steps: Official course evaluation (11 - 18 October!)
+Next steps: Official course evaluation
 ========================================================
 
 - Course evaluation has been immensely important to this course
   - Spent more time on Python onboarding
   - Reduced workload by making "advanced" tutorials optional
   - Allocated more time to coaching sessions
+  - Developed Pulse
   
 - Course evaluation has been critical to my career
   - Without my past evaluations, I wouldn't be teaching to you today
   - I will look at all comments
 - Scores are most important to show importance of this course
 
-- You will be invited via Evalytics.
+- You will be invited via Evalytics (evaluate [here](https://app.evalytics.nl/#/login?evaluationId=104069)).
 
 <!--
 ::: notes
@@ -195,15 +197,31 @@ Next steps: Official course evaluation (11 - 18 October!)
   - ...
 -->
 
+Next steps: Projects & SPA
+========================================================
+
+- Please hand in in a way that I can make available the data package publicly!
+
+  - Take out any passwords (store as environment variables instead)
+  - Remove any unnecessary files
+  - Want to keep your names on the documentation or anonymize them? 
+  - Don't make statements that are too bold?
+
+- Re-read the [grading rubric on the course site](https://odcm.hannesdatta.com/docs/course/project/grading/)!
+
+- You will receive __invite to self- and peer assessment__
+
+
 Informal feedback
 ========================================================
 incremental: true
 
 - live streams versus offline lectures?
-- quality of internet website?
+- quality of website?
 - quality of Jupyter Notebooks
 - Colab versus own laptops?
 - "innovativeness of material", etc.
+- Pulse?
 
 <!--
 - open education good or bad?
@@ -220,14 +238,15 @@ Stay in touch!
 ========================================================
 
 
-- Add me! https://www.linkedin.com/in/hannes-datta/
-- Subscribe to my channel! https://www.youtube.com/c/hannesdatta
-- App me! +31 13 466 8938
-- See me: K728, mostly Mondays (but send a text to make an appointment)
-<br><br><br>
-- Contribute! 
+- Add me on [LinkedIn](https://www.linkedin.com/in/hannes-datta/) to stay up to date with job opportunities & skill development! 
+- Subscribe to my [YouTube channel](https://www.youtube.com/c/hannesdatta)
+- Stay in touch on WhatsApp! +31 13 466 8938
+- See me on campus: K728, mostly Mondays (but send a text to make an appointment)
+<br><br>
+- Contribute to Tilburg's Open Science initiatives! 
   - https://tilburgsciencehub.com as a volunteer
   - join my team as an RA (e.g., machine learning, data engineering); see also https://tilburgsciencehub.com/onboarding
-<br><br><br>
-- And, finally... let's show to the world how awesome your new skills are!
+  - change this course at https://github.com/hannesdatta/course-odcm
+<br><br>
+- __And, finally... let's show to the world how awesome your new skills are!__
 

@@ -31,7 +31,16 @@ src\collection\collect.py <-- final source code used for collecting the data
 src\reporting\analysis.R <-- final source code used to generate statistics/insights documented in the readme.
 ```
 
-The data sets should be submitted exclusively on canvas. Submit the documentation in such way that the data set is fully anonymized and blank out information that could be considered sensitive, such as names or other personal information.
+
+{{< hint info>}}
+***Be ready for publication**
+
+Please submit the data package in such way that it can be made publicly available on the internet. 
+
+For example, you need to fully anonymize information that could be considered sensitive or personal, such as names or other personal information. Also, you must not store any of your personal passwords in code. Do you want to keep your names on a public data package or would you rather prefer to blank out your names (in that case, just take them out - I'll be able to match your grade using your team number). Finally, do a check on whether the statements made in your documentation are realistic.
+
+{{< /hint>}}
+
 
 ## Calculation of team grades
 Weights for each component of the grading rubric below are indicated in brackets (e.g., 5%). In calculating your final grade, percentages are converted to grade points on a ten-point scale (e.g., 5% make up 0.5 grade points on a 10-point scale), weighted by the following percentages:

@@ -50,15 +50,15 @@ The course content will be tested in the form of a __take-home exam__, to be com
 
 ### Part 1: Theory
 
-- This part of the exam (about 30% of your exam grade) consists of __personalized open and closed (multiple-choice) questions__, shown in __random order__. The dominant question type is __open questions__.
+- This part of the exam (about 30% of your exam grade) consists of __personalized open and closed (multiple-choice) questions__, shown in __random order__ (i.e., not in order of difficulty or weight/points). The dominant question type is __open questions__.
 - Students __*cannot* go back between questions__ (i.e., questions need to be answered in the order they appear).
 - Allocate approximately 45 minutes to work on this part, which predominately focuses on the workflow for collecting web data ("Fields of Gold" paper).  
 - Cognitive skills that will be tested are knowledge, comprehension, and analysis.
 
 ### Part 2: Practical
 
-- This part of the exam (about 70% of your exam grade) consists of __personalized open questions__, shown in __random order__.
-- Students can go freely back and forth between questions in this part.
+- This part of the exam (about 70% of your exam grade) consists of __personalized open questions__, shown in __random order__ (i.e., not in order of difficulty or weight/points).
+- Students can go __*freely back and forth between questions*__ in this part.
 - Allocate approximately 2:15 minutes to work on this part, which focuses on all course learning goals.
 - Expect three broad questions
   - Small coding task (e.g., parsing, fixing errors, running existing code) (20 minutes)

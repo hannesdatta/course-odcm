@@ -5,11 +5,13 @@ type: docs
 
 # Online Data Collection and Management (oDCM)
 
-_Instructor: [dr. Hannes Datta](https://hannesdatta.com)_
+_Instructor: [dr. Hannes Datta](https://hannesdatta.com)_ 
 
 _Course codes: 328060-M3 (fall, block 1) and 328061-M3 (spring, block 3)_
 
 _This edition: February - April 2022 | Next edition: August - October 2022_
+
+<a class="github-button" href="https://github.com/hannesdatta" aria-label="Follow @hannesdatta on GitHub">Follow @hannesdatta</a>
 
 -------
 

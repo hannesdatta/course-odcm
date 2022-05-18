@@ -33,6 +33,8 @@ The course is instructed to MSc students in the Marketing Analytics (TiSEM) prog
 
 Considering the typical process in which research is carried out, this course is positioned *at the beginning of a research project* (i.e., when the research question is being defined and the data being collected). This course does not zoom in on *how to analyze* data collected from the web but focuses on the process of collecting data for later use (e.g., for thesis or PhD projects). Therefore, students are recommended to follow this course before embarking on thesis projects.
 
+To illustrate the wide range of applications of web data, the course introduces both national and international websites and APIs. For example, the Dutch price comparison website inprijsverhoogd.nl monitors prices across a wide range of retailers on a global scale. When collecting web data for their research, students mostly rely on a mix of both Dutch and international data sources, ranging from Dutch e-retailers (e.g., Coolblue, Bol, Albert Heijn) and marketplaces (e.g., Autoscout) to globally available platforms (e.g., Reddit, Twitch, Kayak).
+ 
 ## Prerequisites
 
 - The course uses Python for the technical implementation of collecting web data. The course welcomes novices, of whom a significant investment of effort and time is required to learn the necessary skills.

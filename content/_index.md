@@ -9,7 +9,7 @@ _Instructor: [dr. Hannes Datta](https://hannesdatta.com)_ <a class="github-butto
 
 _Course codes: 328060-M3 (fall, block 1) and 328061-M3 (spring, block 3)_
 
-_This edition: February - April 2022 | Next edition: August - October 2022_
+_This edition: August - October 2022 | Next edition: February - April 2023_
 
 
 -------

@@ -25,6 +25,8 @@ The internet offers abundant possibilities to collect data (e.g., from social ne
 - Document and archive collected data and make it available for public (re)use
 - Track, evaluate and share your progress on the course's learning goals[^1]
 
+The specification matrix for this course can be [downloaded here](../specification_tables_odcm.pdf). This matrix gives an overview of all the learning goals and their weights in each graded component of the course (i.e., in the final exam, team project and Pulse). 
+
 [^1]: Students use a web app to monitor their progress on the course's learning goals by "ticking off" items from a to-do list (e.g., "I have installed Python," "I have finished Tutorial X," etc.). The instructor can use the app to learn which topics to highlight during live streams. Students, in turn, can use the app to see how far others in the class have already proceeded, giving them direct feedback on their performance.
 
 ### Positioning of the course in the study program
@@ -34,7 +36,7 @@ The course is instructed to MSc students in the Marketing Analytics (TiSEM) prog
 Considering the typical process in which research is carried out, this course is positioned *at the beginning of a research project* (i.e., when the research question is being defined and the data being collected). This course does not zoom in on *how to analyze* data collected from the web but focuses on the process of collecting data for later use (e.g., for thesis or PhD projects). Therefore, students are recommended to follow this course before embarking on thesis projects.
 
 To illustrate the wide range of applications of web data, the course introduces both national and international websites and APIs. For example, the Dutch price comparison website inprijsverhoogd.nl monitors prices across a wide range of retailers on a global scale. When collecting web data for their research, students mostly rely on a mix of both Dutch and international data sources, ranging from Dutch e-retailers (e.g., Coolblue, Bol, Albert Heijn) and marketplaces (e.g., Autoscout) to globally available platforms (e.g., Reddit, Twitch, Kayak).
- 
+
 ## Prerequisites
 
 - The course uses Python for the technical implementation of collecting web data. The course welcomes novices, of whom a significant investment of effort and time is required to learn the necessary skills.

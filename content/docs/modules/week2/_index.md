@@ -17,7 +17,7 @@ description: Learn how to assess data quality and website/API structure, and dec
 
 ## Self-study and activities
 
-- Please carefully read ["Fields of Gold: Generating Relevant and Credible Insights Via Web Scraping and APIs"](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3820666).
+- Please carefully read ["Fields of Gold: Generating Relevant and Credible Insights Via Web Scraping and APIs"](http://dx.doi.org/10.2139/ssrn.3820666).
   - This paper will be your guiding framework for the rest of this course, and chance is you'll have to read it a couple of times (e.g., first to get an overview, and later to appreciate and use the details in your project). The web appendix contains valuable tables, so don't skip them.
 
 - [Web data retrieval for dummies (Tutorial)](docs/tutorials/webdata-for-dummies)

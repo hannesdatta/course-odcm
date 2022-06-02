@@ -16,14 +16,14 @@ This course is instructed by [dr. Hannes Datta](https://tiu.nu/datta), Associate
 
 ### Learning goals
 
-The internet offers abundant possibilities to collect data (e.g., from social networks, digital media providers, price comparison websites, online platforms) that can be used in empirical research projects and/or provide business value. After successful completion of this course, students will be able to:
+Web scraping and Application Programming Interfaces are among the must-have skills of marketing analysts and data scientists. The internet offers abundant possibilities to collect data used in empirical research projects and provide business value (e.g., social networks, digital media providers, price comparison websites, and online platforms). After successful completion of this course, students will be able to:
 
-- Explain how web data has been used in the academic marketing literature
--	Select web data sources and evaluate their value in the context of a specific research question or business problem
-- Design the web data collection while balancing validity, technical feasibility and exposure to legal/ethical risks
-- Collect data via web scraping and Application Protocol Interfaces (APIs) by mixing, extending, and repurposing code snippets
+- Explain how to use web data for creating marketing insight
+- Select web data sources and evaluate their value to inform a specific research context or business problem
+- Design the web data collection while balancing validity, technical feasibility, and exposure to legal/ethical risks
+- Collect data via web scraping and Application Programming Interfaces (APIs) by mixing, extending, and repurposing code snippets
 - Document and archive collected data and make it available for public (re)use
-- Track, evaluate and share your progress on the course's learning goals[^1]
+- Track, evaluate, and share progress on the course’s learning goals[^1]
 
 The specification matrix for this course can be [downloaded here](../specification_tables_odcm.pdf). This matrix gives an overview of all the learning goals and their weights in each graded component of the course (i.e., in the final exam, team project and Pulse). 
 
@@ -46,7 +46,7 @@ To illustrate the wide range of applications of web data, the course introduces 
 
 ## Teaching format
 
-- Online-only (on Zoom; first and last lecture may take place on Campus)
+- Blended (a mix of online lectures and tutorials, and online/offline coaching sessions)
 - Combination of self-paced tutorials (e.g., using Jupyter Notebooks or pre-recorded clips), and interactive live streams for feedback and coaching (recordings are shared with students)
 - Learn state-of-the-art tools popular among scientists, marketing analysts, and data scientists (e.g., Python), and collect data from real websites and APIs
 - Open education & open science (all material is open; publicly accessible course page that stays with you, even after the end of the course)

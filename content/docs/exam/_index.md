@@ -31,7 +31,7 @@ The course content will be tested in the form of a __take-home exam__, to be com
   - Part 2 is open from 9am - 11.59am + 1 minute (noon). __You should only start working on part 2 after finishing part 1.__
 - Working on your exam: on your own computer
 - Submitting your exam: all questions (including file uploads) will be submitted via TestVision. Recall: each part of the exam has to be submitted individually.
-- Support during the exam: preferably WhatsApp [see the support section of this website](support); Support only for "unforeseen" errors. No support will be given for technical issues that students *should* have solved during the course (e.g., installation of Anaconda, running Jupyter Notebook, etc.)
+- Support during the exam: preferably WhatsApp [see the support section of this website](../course/support); Support only for "unforeseen" errors. No support will be given for technical issues that students *should* have solved during the course (e.g., installation of Anaconda, running Jupyter Notebook, etc.)
 
 ## Form
 
@@ -88,7 +88,7 @@ Please [view the list of example questions here](examplequestions).
 
 - We encourage you to generate your own example questions. Just start from a combination of learning goals (e.g., learn how to scrape, "web scraping 101") and cognitive skill levels (e.g., "evaluation"). Combining these two dimensions will help you come up with a creative way of asking a good example question.
 - See [this summary of Bloom's Taxonomy](https://mygrowthmindsethome.files.wordpress.com/2019/03/blooms-taxonomy.pdf), which we also use to generate exam questions.
-- Curious whether your question is "good" - [send it to us via the usual ways](../support) - maybe it will even be part of the exam? ;)
+- Curious whether your question is "good" - [send it to us via the usual ways](../course/support) - maybe it will even be part of the exam? ;)
 
 ### Familiarize yourself with TestVision
 

@@ -1,10 +1,11 @@
 ---
+bookFlatSection: true
 title: "Exam"
-weight: 5
-description: " "
+bookHidden: false
+weight: 45
 bookCollapseSection: true
-description: " "
 ---
+
 
 # Final exam
 

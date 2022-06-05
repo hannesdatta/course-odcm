@@ -2,7 +2,7 @@
 bookFlatSection: true
 title: "Student acknowledgement"
 bookHidden: false
-weight: 1
+weight: 7
 description: " "
 ---
 

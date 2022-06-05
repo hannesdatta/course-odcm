@@ -1,6 +1,6 @@
 ---
 bookFlatSection: true
-title: "Old projects"
+title: "Past Projects"
 bookHidden: false
 weight: 3
 ---

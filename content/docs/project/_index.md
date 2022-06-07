@@ -1,9 +1,11 @@
 ---
-weight: 3
+bookFlatSection: true
 title: "Team Project"
+bookHidden: false
+weight: 35
 bookCollapseSection: true
-description: " "
 ---
+
 
 # Team Project
 
@@ -15,7 +17,7 @@ __The focus lies on *completing the complete workflow for collecting web data*. 
 
 ## Getting started
 
-- [Seek inspiration for project ideas](projectideas), and [explore the examples](../../examples)
+- [Seek inspiration for project ideas](projectideas), and [explore the examples](../examples)
 - [Discover how to submit your project, and how you will be graded](grading)
 - [Check out the workplan and team activities](workplan)
 

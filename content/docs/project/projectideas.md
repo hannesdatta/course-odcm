@@ -9,7 +9,7 @@ weight: 3
 
 *Note: The final team projects (and team allocations) are available on the course's (non-public) Canvas page.*
 
-Here's a list with a couple of project ideas. __Don't feel restricted by these options, though!__ There are plenty of other great ideas (e.g., see the [examples section](../../../examples)), and we encourage you to think of applications in which you use two or more APIs, or in which you combine web scraping with relevant APIs.
+Here's a list with a couple of project ideas. __Don't feel restricted by these options, though!__ There are plenty of other great ideas (e.g., see the [examples section](../../examples)), and we encourage you to think of applications in which you use two or more APIs, or in which you combine web scraping with relevant APIs.
 
 When using a proprietary data sources requiring login (e.g., Netflix) or API credentials (e.g., Twitter API), make sure you can *actually* get access to the accounts (and potentially share those with team members).
 

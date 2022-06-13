@@ -119,3 +119,26 @@ In addition to these projects, other good examples from previous editions can be
 
 ### Podcasts and Tutorials
 - [Listen to a podcast with Kimberly Fessel](https://realpython.com/podcasts/rpp/12/) who shares some best practices on scraping the web. She also has shared a [fantastic tutorial on YouTube](https://www.youtube.com/watch?v=RUQWPJ1T6Zc&t=190s)
+
+# 4. Tips & Tricks
+
+### Coding
+- Using separate lists vs. lists of dictionaries
+  - Don’t break the structure of what belongs to what!
+- Looping: while loops are also an option!
+- Try & except: just use it for one part each, not for many things at the same time
+- Break up code into smaller modules (e.g., first seeds, then getting the data)
+- Cleanup code (e.g., comments, etc.)
+- Modularizing code (so that it works on multiple categories, pages, etc.)
+- Make “class names” flexible so that you don’t have to repeat yourself over and over again
+- For anonymization: use a [hash function](https://nitratine.net/blog/post/how-to-hash-passwords-in-python/) (salted!)
+- Read paper and align code / update code (e.g., meta data enrichment)
+
+### Data collection
+- Store raw data as JSON - parse in a second step
+- Separate “seeding” from “collecting information” stage
+- Write the data as soon as you can to a file (e.g., JSON) - not only at the end of a long (1.5 days!) scraping session (minimize data loss)
+- For extended data collections - consider saving the raw html files first - then only parse!
+- How to find max. page numbers? You can do some calculations with information from the site (e.g., for AH.nl —> 1077/36 items on the page = 29.x pages)
+- Storing all of the JSON, then only preprocess
+- Use selenium for dynamic websites

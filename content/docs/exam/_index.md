@@ -1,6 +1,6 @@
 ---
 bookFlatSection: true
-title: "Exam"
+title: "Final Exam"
 bookHidden: false
 weight: 45
 bookCollapseSection: true

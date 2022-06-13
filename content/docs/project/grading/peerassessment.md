@@ -3,7 +3,7 @@ weight: 10
 bookFlatSection: true
 title: "Self- and peer assessment"
 bookHidden: false
-description: " "
+description: "See how your contribution to the team project affects your grade. "
 ---
 
 # Self- and peer assessment

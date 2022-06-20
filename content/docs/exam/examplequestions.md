@@ -20,7 +20,7 @@ This part of the exam consists of __personalized open and closed (multiple-choic
 
 ![](../exam-part-1.png)
 
-*Note: the number of questions may vary. The overview during the final exam may slightly vary, so make sure to still read it accordingly.*
+*Note: the number of questions depends on the points awarded to each question. The instructions during the final exam may slightly vary, so make sure to still read it accordingly.*
 
 1. According to "Fields of Gold", what are useful dimensions to distinguish websites when considering them for a scraping project? (*knowledge*)
 
@@ -42,7 +42,7 @@ This part of the exam consists of __personalized open questions__, shown in __ra
 
 ![](../exam-part-2.png)
 
-*Note: the number of questions may vary. The overview during the final exam may slightly vary, so make sure to still read it accordingly.*
+*Note: the instructions during the final exam may slightly vary, so make sure to still read it accordingly.*
 
 ### Question 1 (small coding task)
 

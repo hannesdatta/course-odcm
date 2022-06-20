@@ -18,11 +18,19 @@ This part of the exam consists of __personalized open and closed (multiple-choic
 
 {{< /hint >}}
 
+![](../exam-part-1.png)
+
+*Note: the number of questions may vary. The overview during the final exam may slightly vary, so make sure to still read it accordingly.*
+
 1. According to "Fields of Gold", what are useful dimensions to distinguish websites when considering them for a scraping project? (*knowledge*)
 
 2. What is the purpose of `beautifulSoup` in the context of web scraping? (*comprehension*)
 
 3. Please describe the difference between the "two scraping philosophies" when it comes to retrieving and storing data by means of web scraping (according to "Fields of Gold"). (*comprehension*)
+
+
+![](../exam-overview.png)
+
 
 ## Part 2:
 
@@ -31,6 +39,10 @@ This part of the exam consists of __personalized open and closed (multiple-choic
 This part of the exam consists of __personalized open questions__, shown in __random order__. You can freely go back and forth between these questions.
 
 {{< /hint >}}
+
+![](../exam-part-2.png)
+
+*Note: the number of questions may vary. The overview during the final exam may slightly vary, so make sure to still read it accordingly.*
 
 ### Question 1 (small coding task)
 

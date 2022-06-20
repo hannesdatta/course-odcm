@@ -16,7 +16,7 @@ bookCollapseSection: false
 
 
 ## Self-study and activities
-- Please prepare [Team Activity #4](../../../docs/course/project/workplan/activity4.md).
+- Please prepare [Team Activity #4](../../../docs/project/workplan/activity4.md).
 
 {{< hint tip >}}
 __Looking for a challenge? Or working on a website or API that requires a more advanced skillset? [optional]__
@@ -31,7 +31,7 @@ If you feel you don't just want to stick with the basics but would like to learn
 
 
 ## Live stream #5
-- [Team Activity #4](../../../docs/course/project/workplan/activity4.md)
+- [Team Activity #4](../../../docs/project/workplan/activity4.md)
 
 
 <br>

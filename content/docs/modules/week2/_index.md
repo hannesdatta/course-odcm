@@ -21,7 +21,7 @@ description: Learn how to assess data quality and website/API structure, and dec
   - This paper will be your guiding framework for the rest of this course, and chance is you'll have to read it a couple of times (e.g., first to get an overview, and later to appreciate and use the details in your project). The web appendix contains valuable tables, so don't skip them.
 
 - [Web data retrieval for dummies (Tutorial)](docs/tutorials/webdata-for-dummies)
-- Please prepare [breakout activity #1](../../../docs/course/project/workplan/activity1.md).
+- Please prepare [breakout activity #1](../../../docs/project/workplan/activity1.md).
 
 <!--
 
@@ -38,7 +38,7 @@ description: Learn how to assess data quality and website/API structure, and dec
   - Demonstration of scraping from Twitch ([download](twitch.ipynb), [open in Colab](https://colab.research.google.com/github/hannesdatta/course-odcm/blob/master/content/docs/modules/week2/twitch.ipynb))
   - Using a shortlinking service API ([download](shortlink.ipynb), [open in Colab](https://colab.research.google.com/github/hannesdatta/course-odcm/blob/master/content/docs/modules/week2/shortlink.ipynb))
 - Narrowing down project ideas
-  - [Breakout activity #1](../../../docs/course/project/workplan/activity1.md)
+  - [Breakout activity #1](../../../docs/project/workplan/activity1.md)
   - Initial group formation for team projects
 
 <!--- Assessing data availability and evaluating research fit-->

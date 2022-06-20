@@ -13,10 +13,10 @@ bookCollapseSection: false
 ## Self-study and activities
 - Finalize teams (sign-up options are on Canvas)
 - [Web scraping 101 (Tutorial)](docs/tutorials/webscraping101)
-- Please prepare [team activity #2](../../../docs/course/project/workplan/activity2.md).
+- Please prepare [team activity #2](../../../docs/project/workplan/activity2.md).
 
 ## Live stream 3
-- Team presentations for [team activity #2](../../../docs/course/project/workplan/activity2.md)
+- Team presentations for [team activity #2](../../../docs/project/workplan/activity2.md)
 - Q&A/walk-through of this week's tutorial [Update: Optional feedback session in week 4]
 
 

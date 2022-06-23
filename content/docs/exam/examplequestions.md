@@ -28,6 +28,7 @@ This part of the exam consists of __personalized open and closed (multiple-choic
 
 3. Please describe the difference between the "two scraping philosophies" when it comes to retrieving and storing data by means of web scraping (according to "Fields of Gold"). (*comprehension*)
 
+4. What conclusions can you draw with regard to the accuracy of the timestamps provided in the user review section of metacritic (e.g., https://www.metacritic.com/movie/the-godfather/user-reviews )? Provide a short answer in less than 50 words. (*analysis*)
 
 ![](../exam-overview.png)
 

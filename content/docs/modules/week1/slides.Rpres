@@ -1,7 +1,7 @@
 oDCM - Opening Lecture 1
 ========================================================
 author: Hannes Datta
-date: 
+date:
 autosize: true
 
 <style>
@@ -97,7 +97,7 @@ Teaching activities (all openly available)
   - YouTube channel (https://youtube.com/c/hannesdatta)
   - My public code (https://github.com/hannesdatta)
   - More about my work (https://hannesdatta.com)
-  
+
 
 Getting to know you
 ========================================================
@@ -108,7 +108,7 @@ incremental: true
 - Data experience?
 
 
-Motivation for course 
+Motivation for course
 ========================================================
 
 - started out as a PhD student without data
@@ -127,7 +127,7 @@ incremental: true
 - [scraped reviews at Amazon.com](https://journals.sagepub.com/doi/abs/10.1509/jm.11.0560)
 - investigating "video streaming wars" (e.g., Netflix versus Disney+, when do consumers use multiple streaming services?), see [trakt.tv]()
 - share code [on GitHub](https://github.com/hannesdatta)
-- developed a [methodological framework on scraping/APIs](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3820666) (which we use in this class)
+- developed a [methodological framework on scraping/APIs](https://doi.org/10.1177%2F00222429221100750) (which we use in this class)
 - Faced legal battles...
 
 <!--
@@ -172,7 +172,7 @@ book_request = requests.get(url)
 * Finally, let's explore the "content" of the page
 
 ```{python, eval = TRUE}
-print(book_request.text[5710:5900]) 
+print(book_request.text[5710:5900])
 ```
 
 
@@ -278,7 +278,7 @@ __Yes, but collecting *web data* is different from other datasets!__
   - finding the *right* data source may be difficult as __many__ potential alternatives exist
   - differ in delivery formats (website versus API, compared to CSV/databases)
   - access to data that is *not* available commercially (or that a firm would not like to share)
-  
+
 Web data versus other marketing data (II)
 =============================================
 
@@ -286,8 +286,8 @@ Web data versus other marketing data (II)
   - which information to select (which is available?!)
   - type of variables (sales is rare; review scores are abundant)
   - different stakeholders that could potentially be addressed
-  - need to tackle legal and ethical issues 
-  
+  - need to tackle legal and ethical issues
+
 Web data versus other marketing data (III)
 =============================================
 
@@ -295,7 +295,7 @@ Web data versus other marketing data (III)
   - unprecedent: it's totally automatic (but prone to errors)
   - need to put *monitoring* procedures in place
   - data is not documented, and there is no direct way to ask questions about the data (sampling?! generalizability?)
-  
+
 Each project is totally unique - that's why there is no universal "best way" to approach things...
 
 Methodological Framework
@@ -338,9 +338,9 @@ Tutorials
 - Themes
   - Software Installation & Python Bootcamp
   - Webdata for dummies
-  - Web scraping 101 & APIs 101 
+  - Web scraping 101 & APIs 101
   - Web scraping & APIs Advanced [optional]
-  
+
 - Access
   - run on your own computer (preferred, as you have to run your data collection for a stable experience on your own PC anyways)
   - explore/"try out" in Google Colab! (--> example)
@@ -388,7 +388,7 @@ Common struggles & Tips
   -	Start preparing early on (the first weeks will be the most challenging!)
   -	Have the same group members across courses
   -	Collaborate with each other and try to help one another!
-  
+
 Live streams
 ========================================================
 

@@ -16,7 +16,7 @@ date: 2021-02-04
 
 ## Preparation before the breakout activity
 
-- Read ["Fields of Gold"](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3820666) and learn how to identify impactful and novel web data!
+- Read ["Fields of Gold"](https://doi.org/10.1177%2F00222429221100750) and learn how to identify impactful and novel web data!
 - During the live stream, you can choose an initial theme: society (e.g., societal impact) or business (e.g., new business models/platforms). Can you think of relevant data sources (e.g., websites, APIs) that spark your interest?
 - Take some notes, and be prepared to pitch a site or context to other students. Your input will be used to facilitate group formation for the team project.
 

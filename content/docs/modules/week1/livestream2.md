@@ -8,13 +8,15 @@ bookHidden: true
 # Teaching Notes for livestream #2
 
 1. Welcome!
-  1. Sign-up to Canvas completed?
-  2. Still looking for TA for video editing - let me know in the chat
-  3. I posted a link to the student WhatsApp group on Canvas
+  1. Sign-up to Canvas completed? Need for registration
+  2. Time to help me w/ editing videos? Let me know in the chat
+  3. Student whatsapp groups / discord: post link now
+  4. Pulse is out there: login at pulse.tilburg-digital.com [beware: in dev.]
 2. Today’s topic: the tutorials and self-study
   1. We’ll start with a little activity (5 minutes, breakout)
-      1. Mix in breakout groups at random: tell each other what sites you’re on / you would love to scrape
-      2. Discuss commonalities and differences between web scraping and APIs
+      1. Mix in breakout groups at random: tell each other what sites you’re on / you would love to scrape / insights you'd like to generate
+      2. Do a little search what OTHER websites are available
+      3. Discuss commonalities and differences between web scraping and APIs
   2. Gather thoughts in a joint document.
 3. Take questions on material so far
 4. Python Bootcamp (Tutorial)

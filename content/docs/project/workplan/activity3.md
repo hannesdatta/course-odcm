@@ -9,7 +9,7 @@ date: 2021-02-04
 ## Overview
 - Type: Team presentation with screen shots from the website/API that illustrate the design choices
 - Duration: 3 minutes per team + 2 minutes discussion (please pick one person to present/lead the discussion)
-- Before starting, carefully reread the relevant sections in ["Fields of Gold"](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3820666) (in particular, stage 2 in the manuscript, and Figure 2 and Table 3)
+- Before starting, carefully reread the relevant sections in ["Fields of Gold"](https://doi.org/10.1177%2F00222429221100750) (in particular, stage 2 in the manuscript, and Figure 2 and Table 3)
 
 ## Tasks
 

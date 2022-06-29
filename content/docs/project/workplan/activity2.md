@@ -15,7 +15,7 @@ date: 2021-02-04
 - During your first meeting, spend a good amount of time getting to know each other, *welcoming* new members to the group (e.g., those that signed up later), and telling about the result of your personality test (and whether you agree or disagree!)
 
 ## Presentation
-- As per the methodological framework for collecting web data (see ["Fields of Gold"](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3820666)), please create a 3-slide presentation per team.
+- As per the methodological framework for collecting web data (see ["Fields of Gold"](https://doi.org/10.1177%2F00222429221100750)), please create a 3-slide presentation per team.
     - Slide 1: Motivation for data context & explanation on its importance
     - Slide 2: Data source selection
         - Which data sources were explored? (challenge #1.1)

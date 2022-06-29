@@ -47,11 +47,26 @@ This part of the exam consists of __personalized open questions__, shown in __ra
 
 ### Question 1 (small coding task)
 
-Please take a look at the code snippet below, which retrieves data from an API. After running the code, you notice you get a series of non-200 responses. Modify the code so that it runs smoothly and reliably retrieves data for 100 requests.
+Please take a look at the code snippet below, which retrieves data on the title and number of comments for posts on the 'marketing' subreddit. Please modify the code such that this data is extracted for the 'digitalmarketing' and 'socialmedia' subreddits, in addition to the 'marketing' subreddit. The output should be a list with dictionaries including the subreddit name, title and number of comments for each post.
+
 
 ```
-# example code here
+import requests
+headers = {'authority': 'www.reddit.com', 'cache-control': 'max-age=10', 'upgrade-insecure-requests': '1', 'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'navigate', 'sec-fetch-user': '?1', 'sec-fetch-dest': 'document', 'accept-language': 'en-GB,en;q=0.9'}
 
+def get_users(subreddit):
+    url = f'https://www.reddit.com/r/{subreddit}.json'
+    response = requests.get(url,
+                            headers=headers)
+    json_response = response.json()
+    users = []
+    for item in json_response['data']['children']:
+        users.append({'title': item['data']['title'],
+                    'number of comments:': item['data']['num_comments']})
+    return users
+
+users = get_users('marketing')
+users
 ```
 
 ### Question 2 (small essay to form a judgment)

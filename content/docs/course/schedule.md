@@ -33,22 +33,25 @@ Week 7|1.7|11|12|13|14|15|16|17
 
 <!--|[Week 2](./modules/week2)     |Informal meetup|Finalize teams and receive informal feedback on project ideas|Tuesday, 9 February, 2021|9.30-10.30-->
 
-Course week|Type|Live stream|Date|Time
-|:-:|---------|---------|-------------|--------------------|
-|[Week 0](../../modules/prep)      | | Preparation before the course starts   |No live streams
-|[Week 1](../../modules/week1)      |College on campus - Cube 219 |Course introduction  |||
-|      |Live stream #1 |Q&A/walk-through of the Python Bootcamp |||
-|[Week 2](../../modules/week2)     |Live stream #2 |Web scraping for dummies & data source exploration (activity #1)|||
-|[Week 3](../../modules/week3)      |Live stream #3 |Web scraping 101 & activity #2 |||
-|[Week 4](../../modules/week4)      |Coaching #1 |See [workplan for project](docs/course/project/workplan)  |||
-|     |Live stream #4 | API 101 & Activity #3 |||
-|[Week 5](../../modules/week5)      |Live stream #5 | Activity #4 |||
-|[Week 6](../../modules/week6)    |Coaching #2  |See [workplan for project](docs/course/project/workplan)   |||
-| |Coaching #3     |See [workplan for project](docs/course/project/workplan)   |||
-|[Week 7](../../modules/week6)    |Coaching #4  |See [workplan for project](docs/course/project/workplan)   |||
-|      |Live stream #6 | Course summary and exam preparation  |||
 
-The course schedule for edition August - October 2022 will be announced soon!
+Course week|Date|Time|Location|Content|
+|:-:|---------|---------|-------------|--------------------|
+|[Week 0](../../modules/prep)  | | | | Preparation before the course starts   
+|[Week 1](../../modules/week1) |Tue 30 Aug | 10.45-13.30 | On campus | Course Introduction & Python Bootcamp
+|[Week 2](../../modules/week2) |Thu 8 Sep | 12.45-14.30 | On campus | Tutorial: Web scraping for dummies 
+|[Week 3](../../modules/week3) |Tue 13 Sep | 10.45-12.30 | Online | [Team coaching #1]((docs/course/project/workplan))
+|                              |Thu 15 Sep | 14.45-16.30 | On campus | Tutorial: Web scraping 101 
+|[Week 4](../../modules/week4) |Tue 20 Sep | 10.45-12.30 | Online | [Team coaching #2]((docs/course/project/workplan))
+|                              |Thu 22 Sep | 14.45-16.30 | On campus | Tutorial: APIs 101
+|[Week 5](../../modules/week5) |Tue 27 Sep | 11.45-14.30 | On campus | [Team coaching #3]((docs/course/project/workplan)) & Coding camp
+|[Week 6](../../modules/week6) |Tue 4 Oct  | 10.45-12.30 | Online | [Team coaching #4]((docs/course/project/workplan))
+|                              |Thu 6 Oct  | 10.45-12.30 | On campus | [Team coaching #5]((docs/course/project/workplan))
+|[Week 7](../../modules/week6) |Tue 11 Oct | 10.45-12.30 | Online | [Team coaching #6]((docs/course/project/workplan))
+|                              |Thu 11 Oct | 10.45-12.30 | On campus | Course summary and exam preparation 
+
+{{% hint warning %}}
+The schedule can also be viewed in Tilburg University's [MyTimetable](https://rooster.uvt.nl).
+{{% /hint %}}
 
 <!--
 

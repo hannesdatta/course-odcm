@@ -1,6 +1,7 @@
 ---
 title: Online Data Collection and Management
 type: docs
+
 ---
 
 # Online Data Collection and Management (oDCM)
@@ -18,16 +19,19 @@ _This edition: {{< param "Course_Edition_Current" >}} | Next edition: {{< param 
 
 Welcome to the course website of oDCM.
 
-This course teaches you the nuts and bolts about collecting web data using web scraping and APIs. Unlike most other courses on this topic, this course not only teaches you the *technicalities* of using web scraping and Application Protocol Interfaces (APIs), but also introduces a *comprehensive framework* that helps you to *think* about scraping - specifically with regard to its application in empirical marketing research.
+This course teaches you the nuts and bolts about collecting web data. You learn about the *technicalities* of using web scraping and Application Programming Interfaces (APIs), but also learn to *design* your data collection -- specifically with regard to collecting high-quality web data for use in empirical marketing research projects.
 
+Please use the navigation bar and buttons below to access the course material.
 
-{{< button relref="./docs/course/syllabus.md" >}}Check out the course syllabus & learning objectives {{< /button >}}
-{{< button relref="./docs/course/schedule.md" >}}View the schedule{{< /button >}}
+{{< button relref="./docs/course/syllabus.md" >}}Syllabus & learning objectives {{< /button >}}
+{{< button relref="./docs/course/schedule.md" >}}Course schedule{{< /button >}}
 {{< button relref="./docs/course/enroll.md" >}}Enroll now!{{< /button >}}
 
+
+<!--
 ## This website
 
-This website is the backbone of the course, and features the following main sections.
+This website is the backbone of the course, and features the following sections.
 
 - The [__course__](docs/course) section features the syllabus, schedule, and grading details.
 
@@ -36,3 +40,4 @@ This website is the backbone of the course, and features the following main sect
 - The [__tutorial__](docs/tutorials) section offers a workflow for collecting online data, and self-guided Jupyter Notebooks that teach the basics of data retrieval via web scraping and APIs. Use these to start your own scraping projects!
 
 - Finally, the [__example__](docs/examples) section offers links to publicly available data collection projects, which you can use as an inspiration.
+-->

@@ -33,5 +33,8 @@ bookCollapseSection: false
 -->
 
 <br>
+
+<div style="text-align: right">
 {{< button relref="week2" >}}Previous week{{< /button >}}
 {{< button relref="week4" >}}Next week{{< /button >}}
+</div>

@@ -44,5 +44,8 @@ description: Learn how to assess data quality and website/API structure, and dec
 <!--- Assessing data availability and evaluating research fit-->
 
 <br>
+
+<div style="text-align: right">
 {{< button relref="week1" >}}Previous week{{< /button >}}
 {{< button relref="week3" >}}Next week{{< /button >}}
+</div>

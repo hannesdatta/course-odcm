@@ -10,7 +10,11 @@ description: " "
 
 ## Instructor
 
-This course is instructed by [dr. Hannes Datta](https://tiu.nu/datta), Associate Professor at the Marketing Department of Tilburg University. Find out more about Hannes at [his website](https://hannesdatta.com). Hannes is also active on [LinkedIn](https://www.linkedin.com/in/hannes-datta/), [YouTube](https://youtube.com/c/hannesdatta), and [GitHub](https://github.com/hannesdatta).
+This course is instructed by [dr. Hannes Datta](https://hannesdatta.com), Associate Professor at the Marketing Department of Tilburg University. 
+
+{{< hint info >}}
+Join Hannes' professional network on [LinkedIn](https://www.linkedin.com/in/hannes-datta/), subscribe to his [YouTube Channel](https://youtube.com/c/hannesdatta), and start following him on [GitHub](https://github.com/hannesdatta) and [Twitter](https://twitter.com/hannesdatta) to stay up-to-date!
+{{< /hint >}}
 
 ## Course description
 
@@ -35,19 +39,19 @@ The course is instructed to MSc students in the Marketing Analytics (TiSEM) prog
 
 Considering the typical process in which research is carried out, this course is positioned *at the beginning of a research project* (i.e., when the research question is being defined and the data being collected). This course does not zoom in on *how to analyze* data collected from the web but focuses on the process of collecting data for later use (e.g., for thesis or PhD projects). Therefore, students are recommended to follow this course before embarking on thesis projects.
 
-To illustrate the wide range of applications of web data, the course introduces both national and international websites and APIs. For example, the Dutch price comparison website inprijsverhoogd.nl monitors prices across a wide range of retailers on a global scale. When collecting web data for their research, students mostly rely on a mix of both Dutch and international data sources, ranging from Dutch e-retailers (e.g., Coolblue, Bol, Albert Heijn) and marketplaces (e.g., Autoscout) to globally available platforms (e.g., Reddit, Twitch, Kayak).
+To illustrate the wide range of applications of web data, the course introduces both national and international websites and APIs. For example, the Dutch analytics firm[InPrijsVerhoogd](https://inprijsverhoogd.nl) monitors prices across a wide range of retailers on a global scale. When collecting web data for their research, students mostly rely on a mix of both Dutch and international data sources, ranging from Dutch e-retailers (e.g., [Coolblue](https://coolblue.com), [Bol.com](https://bol.com), [Albert Heijn](https://ah.nl)) and marketplaces (e.g., [Autoscout](https://autoscout.nl)) to globally available platforms (e.g., [Reddit](https://reddit.com), [Twitch](https://twitch.com), [Kayak](https://kayak.com)).
 
 ## Prerequisites
 
 - The course uses Python for the technical implementation of collecting web data. The course welcomes novices, of whom a significant investment of effort and time is required to learn the necessary skills.
 - [Preparation material](../modules/prep) is available in the form of Jupyter Notebooks or course recommendations at Datacamp. Novices may further benefit from following other courses at Tilburg University in which Python is used, for example, *Research Skills: Data Processing* and *Research Skills: Data Processing Advanced*.
-- Students are recommended to use their computer for this course (Windows, Mac, or Linux). Android/Chromebook/iOS devices are not supported. Cloud services (e.g., Tilburg's Jupyter server) is not fully supported because they usually do not allow you to see what happens "outside" of Jupyter Notebook.
+- Students are recommended to use their computer for this course (Windows, Mac, or Linux). Android/Chromebook/iOS devices are not supported. Cloud services (e.g., Tilburg's Jupyter server) may not be fully supported (because you can usually not see what happens "outside" of Jupyter Notebook).
 
 
 ## Teaching format
 
-- Blended (a mix of online lectures and tutorials, and online/offline coaching sessions)
-- Combination of self-paced tutorials (e.g., using Jupyter Notebooks or pre-recorded clips), and interactive live streams for feedback and coaching (recordings are shared with students)
+- Blended (a mix of online/offline lectures and tutorials, and online/offline coaching sessions)
+- Combination of self-paced tutorials (e.g., using Jupyter Notebooks or pre-recorded clips), and interactive live streams for feedback and coaching <!--(recordings are shared with students)-->
 - Learn state-of-the-art tools popular among scientists, marketing analysts, and data scientists (e.g., Python), and collect data from real websites and APIs
 - Open education & open science (all material is open; publicly accessible course page that stays with you, even after the end of the course)
 
@@ -78,30 +82,33 @@ Final course grades are rounded to multiples of half points (e.g., 6, 6.5, 7, et
   - Required action: Re-enroll in this course's next edition, and ensure you are part of a team.
 - If students have an exam grade higher or equal to 5.0 but fail the team project (after SPA correction), their total course grade may be lower than 5.5, and hence students fail this course.
   - Required action: Correct team project based on the course coordinator's grading report, and hand it in again within two weeks after publication of the final grades in this course (submission on Canvas). Only students who fail the team project can have their projects re-graded.
-- Students who have passed the course, but wish to retake the exam, can take the exam resit. The highest exam grade counts. Grades for the team project are retained. In other words, the resit exam still counts for 55% of the final course grade.
-- Students who fail the exam and wish to re-take the course in the subsequent semester can *retain* their assignment grades upon approval of the course coordinator (grades remain valid for the *next* edition of the course)
+- Students who have passed the course, but wish to retake the exam, can take the exam resit. The highest exam grade counts. Grades for the team project are retained. In other words, the resit exam still counts for 50% of the final course grade.
+- Students who fail the exam and wish to re-take the course in the subsequent semester can *retain* their assignment grades upon approval of the course coordinator (grades remain valid for the *next* edition of the course).
 
 ## Code of Conduct
 
 - When meeting on Zoom, please turn on your camera, which will facilitate interaction with the course instructor and other students.
 - Please always use English as the default language so that non-Dutch speakers can follow the conversations, even if it concerns topics not directly related to the class (e.g., during breaks).
 - Please head over the course's [support section](support) to solve problems or get in touch with the instructor.
-- Stay up-to-date by checking this website, Canvas, and watch out for [updates/polls on LinkedIn](https://www.linkedin.com/in/hannes-datta/) and videos on [YouTube](https://youtube.com/c/hannesdatta).
+- Stay up-to-date by checking this website, Canvas, and watch out for updates on Hannes' social media channels.
 - Be on time, and start on time
-- Feel invited always to provide informal feedback!
-- It's totally fine calling the instructor by his first name. Also, add your instructor
+- Feel invited to provide informal feedback!
+- It's totally fine calling the instructor by his first name. 
 
 {{< hint info >}}
 __We value diversity and inclusion__
 
-We do our best to embrace diversity and stimulate integration in this course. We encourage students to be proud of their background (e.g., ethnicity, nationality), personal interest (e.g., hobbies), or any other thing that characterizes them. Two ways for students to bring in *their perspective* is choosing (a) with whom to collaborate (e.g., purposefully bring in people of diverse backgrounds or technical skill levels to a team), and (b) which topic to work on in the team project (e.g., spending sufficient time getting to know each other, creating a safe space, and being open to work on topics off the mainstream).
+We do our best to embrace diversity and stimulate integration in this course. We encourage students to be proud of their background (e.g., ethnicity, nationality), personal interest (e.g., hobbies), or any other thing that characterizes them. 
 
-Please feel invited to talk to the course coordinator at any point in time!
+Two ways in which students can bring in *their perspective* is 
 
-Curious to learn more? Check out [Tilburg's Diversity & Inclusion Policy](https://www.tilburguniversity.edu/about/working/gender-policy), and learn how Tilburg [supports student diversity](https://www.tilburguniversity.edu/students/studying/campus/diversity).
+- choosing with whom to collaborate (e.g., purposefully bring in people of diverse backgrounds or technical skill levels to a team), and 
+- choosing which topic to work on in the team project (e.g., spending sufficient time getting to know each other, creating a safe space, and being open to work on topics off the mainstream).
+
+Curious to learn more? Check out [Tilburg's Diversity & Inclusion Policy](https://www.tilburguniversity.edu/about/working/gender-policy), and learn how Tilburg [supports student diversity](https://www.tilburguniversity.edu/students/studying/campus/diversity). Also feel invited to talk to the course coordinator at any point in time!
 
 {{< /hint >}}
 
 ### Structure of the course
 
-Please head over to the course's [modules](../modules) and check out the [weekly schedule](schedule).to manage empirical marketing research projects efficiently
+Please head over to the course's [modules](../modules) and check out the [weekly schedule](schedule).

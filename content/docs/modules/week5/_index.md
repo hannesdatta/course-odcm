@@ -35,8 +35,11 @@ If you feel you don't just want to stick with the basics but would like to learn
 
 
 <br>
+
+<div style="text-align: right">
 {{< button relref="week4" >}}Previous week{{< /button >}}
 {{< button relref="week6" >}}Next week{{< /button >}}
+</div>
   <!--- ...
 ## Exercises and activities
 -->

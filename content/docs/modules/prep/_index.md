@@ -11,10 +11,9 @@ In this class, you'll learn the basics of Python, and how to use it to collect d
 
 It's important to spend some time *before the beginning of the class* to install the required software, and familiarize yourself with Python.
 
-## Tutorials
+{{< button relref="../../../docs/tutorials/software" >}}Get started now!{{< /button >}}  
 
-- [Software Installation](docs/tutorials/software)
-- [Obtain access to premium content for Datacamp.com](docs/course/support/datacamp)
+{{< datacamp >}}
 
 <br>
-{{< button relref="week1" >}}Next week{{< /button >}}
+<div style="text-align: right">{{< button relref="week1" >}}Next week{{< /button >}}</div>

@@ -9,11 +9,19 @@ description: " "
 
 ## General
 
+*I can't access documents and code stored on Google Drive or Google Colab!*
+
+Please use your `@tilburguniversity.edu` address to log on to Google to view/edit documents posted to Google Drive or Google Colab. Your private `@gmail` addresses won't work.
+
+-------
+
+<!-->
 *Will the live streams be recorded?*
 
 Yes, we'll either post them on Canvas (for internal use), or edit them for publication on [YouTube](https://youtube.com/c/hannesdatta).
 
 -------
+-->
 
 ## Team Project
 

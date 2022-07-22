@@ -68,5 +68,8 @@ Deployment in practice *prerecorded guest lecture*
 -->
 
 <br>
+
+<div style="text-align: right">
 {{< button relref="week3" >}}Previous week{{< /button >}}
 {{< button relref="week5" >}}Next week{{< /button >}}
+</div>

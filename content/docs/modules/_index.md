@@ -16,6 +16,10 @@ Click on each course week for details.
 The course consists of weekly modules, which will gradually develop your coding skills that will enable you to work productively on your team project.
 -->
 
+{{% hint warning %}}
+__Please always bring a laptop to class__. Lectures and  tutorials are not scheduled in computer rooms, but you require a computer to follow the classes.
+{{% /hint %}}
+
 Course week|Date|Time|Location|Content|
 |:-:|---------|---------|-------------|--------------------|
 |{{< button relref="prep" >}}Week 0{{< /button >}}  | | | | Preparation before the course starts   
@@ -35,7 +39,6 @@ Course week|Date|Time|Location|Content|
 __Tips__
 - The schedule can also be viewed in Tilburg University's [MyTimetable](https://rooster.uvt.nl).
 - Login credentials for the live streams will be made available on the *Canvas page of this course for students from Tilburg University*, and via email to remaining students.
-
 - If recordings are made, you will find them on Hannes' YouTube channel. [Subscribe to it now](http://www.youtube.com/c/hannesdatta?sub_confirmation=1) to stay up-to-date!
 
 {{< /hint >}}

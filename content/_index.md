@@ -23,8 +23,8 @@ This course teaches you the nuts and bolts about collecting web data. You learn 
 
 Please use the navigation bar and buttons below to access the course material.
 
-{{< button relref="./docs/course/syllabus.md" >}}Syllabus & learning objectives {{< /button >}}
-{{< button relref="./docs/course/schedule.md" >}}Course schedule{{< /button >}}
+{{< button relref="./docs/course/" >}}Syllabus & learning objectives {{< /button >}}
+{{< button relref="./docs/modules" >}}Course schedule and modules{{< /button >}}
 {{< button relref="./docs/course/enroll.md" >}}Enroll now!{{< /button >}}
 
 

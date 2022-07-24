@@ -1,45 +1,57 @@
 ---
-title: Activity 1) Project Ideas
+title: Activity 1) Generating project ideas and data sources
 draft: false
 date: 2021-02-04
 ---
 
-# Activity #1: Generating Project Ideas
+# Activity #1: Generating project ideas and data sources
 
 ## Overview
-- Type: Breakout activity
-- Duration: 15 minutes in breakout group, 15-20 minutes post-discussion with the entire group.
+- Type: Meetup with your team (e.g., online[^1] or on campus)
 - Goals
   - identify online data sources and evaluate their value in the context of a specific societal or business problem
-  - start the group formation process (but do not have to commit at this moment)
-  - summarize the result of your discussion for the entire group
+  - start the group formation process 
+- Deliverable
+  - Brief description of data context (and classification into four pathways of knowledge generation) + List of potential data sources for your team project (uploaded to Canvas)
 
-## Preparation before the breakout activity
+[^1]: You can schedule unlimited calls when logging in with your Tilburg University account on Zoom.
 
-- Read ["Fields of Gold"](https://doi.org/10.1177%2F00222429221100750) and learn how to identify impactful and novel web data!
-- It may be most effective to organize your data selection in a shared Google Document (so you can all add notes at the same time).
 
-## Breakout session structure
+## Preparation before the activity
+
+- Take [a personality test](https://www.123test.com/team-roles-test/)
+  - Before meeting, please individually takewill you be the team's *driver*, or rather perform important tasks as an *analyst*?
+- Read the diversity statement below on this page & take it to heart in your team project!
+- Ensure that you have worked through the [self-study material](/docs/modules/week2) of this week before meeting as a team
+
+## Session structure
 
 1. Introduction
-    - Choose a team captain who will take notes and *may* have to present the breakout group's findings to the large group.
-    - If you haven't done so - introduce yourselves to each other briefly
-        - "What are you passionate about (e.g., hobbies)?"
-        - "Where do you spend your time online?"
-        - "What's your biggest (personal, business or study) challenge right now?"
+    -  Introduce yourselves to each other (e.g., what hobbies are you passionate about? what's your biggest personal (business, study-related) challenge right now? what are the results of your [personality test](https://www.123test.com/team-roles-test/)?)
+    - Ensure you have enrolled to a project team on Canvas, and meet all requirements (e.g., number of team members). Inform the [course coordinator](/docs/course/support) in case of doubts.
 
-2. Come up with an interesting *data context* that provides researchers with novel data for studying novel phenomena, enhancing ecological value, improving methods, or enhancing inferences.
+2. Come up with an interesting *data context* that addresses one (or multiple) of the __four central pathways__ through which web data has advanced marketing thought (see paper for the details and typology).
 
-3. Start to broadly identify data sources to solve the societal/business challenge(s).
-    - In exploring the data universe, beware of the common challenges that occur in data selection: threat of defaulting, only considering web scraping, considering the contextual complexity.
+3. Start to broadly identify data sources in your particular *data context*, by working through __challenge #1.1-1.2 in the paper and corresponding parts in table 2__. 
 
+
+4. Submit a brief document on canvas (PDF), containing two sections
+    - Motivation of your data context (why do you think it's important?!), and explanation which four pthways are being addressed [100 words]
+    - A list of data sources (including links) that you are considering to use (does not need to be your final decision!). Explicitly mention web scraping vs. APIs for each source. [max. 10]
+
+{{% hint info %}}
+__Challenge each other!__
+
+The challenges are called "challenges" for a good reason. Putting them into action is really difficult! So please be critical when working on this activity. One way to achieve this is to take turns in suggesting data sources, after which all team members use questions/checks from Table 2 to assess whether the team members has thought deeply enough about a particular data source. Then, move on to the next team member and repeat.
+
+After some time, you will notice that your ideas continue to change substantially.
+{{% /hint %}}
 
 {{< hint info >}}
 __Diversity & inclusion matters!__
 
 While we try to start the conversation about potential topics to work on around specific themes, we ask you not to feel restricted by those. In fact, what really matters here is that you bring in your passion (e.g., hobby), background (e.g., nationality, ethnicity), or any other thing that you consider part of yourself. In other words, let's bring alive Tilburg's statement of diversity and inclusion. If you're really into scraping Amazon.com, that's fine. But if you're more interested in that niche platform that you and some of your friends hang out on, feel welcome to do that! We're not just here to do what others have done in the past, but we're here to move our field along. And we won't be able to do that without talking about and doing the things that you truely care about.
 
-Please also check out the [syllabus for some more information on how diversity & inclusion matters in this class](../../../course/syllabus).
-
+Please also check out the [syllabus for some more information on how diversity & inclusion matters in this class](/docs/course/).
 
 {{< /hint >}}

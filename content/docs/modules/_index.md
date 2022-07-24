@@ -8,22 +8,23 @@ bookCollapseSection: true
 
 # Schedule and Course Material
 
-The course runs for a duration of seven weeks. Each week starts with an energizing kickstarter, material for self-study, and a tutorial. Gradually, you will develop your coding skills, enabling you to work productively on your [team project](../project).
+The course runs for a duration of seven weeks. Each week starts with an energizing kickstarter, material for self-study, a tutorial, and exercises/activities. Gradually, you will develop your coding skills, enabling you to work productively on your [team project](../project).
 
-Click on each course week for details.
+__Click on each course week for details.__
 
 <!--
 The course consists of weekly modules, which will gradually develop your coding skills that will enable you to work productively on your team project.
 -->
 
 {{% hint warning %}}
-__Please always bring a laptop to class__. Lectures and  tutorials are not scheduled in computer rooms, but you require a computer to follow the classes.
+- __Please always bring a laptop to class__. Lectures and  tutorials are not scheduled in computer rooms, but you require a computer to follow the classes.
+- The course material is based on Boegershausen et al. (2022), ["Fields of Gold: Scraping Web Data for Marketing Insight"](https://doi.org/10.1177/00222429221100750). __Study the paper and apply its learnings throughout__. Visit the [companion website](https://web-scraping.org) for extra material.
 {{% /hint %}}
 
 Course week|Date|Time|Location|Content|
 |:-:|---------|---------|-------------|--------------------|
 |{{< button relref="prep" >}}Week 0{{< /button >}}  | | | | Preparation before the course starts   
-|{{< button relref="week1" >}}Week 1{{< /button >}} |Tue 30 Aug | 10.45-13.30 | On campus | Course Introduction & Python Bootcamp
+|{{< button relref="week1" >}}Week 1{{< /button >}} |Tue 30 Aug | 10.45-13.30 | On campus | Getting started with Python & web data
 |{{< button relref="week2" >}}Week 2{{< /button >}}|Thu 8 Sep | 12.45-14.30 | On campus | Tutorial: Web scraping for dummies 
 |{{< button relref="week3" >}}Week 3{{< /button >}}|Tue 13 Sep | 10.45-12.30 | Online | [Team coaching #1]((docs/course/project/workplan))
 |                              |Thu 15 Sep | 14.45-16.30 | On campus | Tutorial: Web scraping 101 

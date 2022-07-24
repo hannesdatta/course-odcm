@@ -1,61 +1,62 @@
 ---
 bookFlatSection: true
-title: "Student acknowledgements"
+title: "Testimonials"
 bookHidden: false
 weight: 7
-description: " "
+description: "Taking this course is challenging. So, read about what other students have to say about its usefulness!"
+date: 2020-07-24
 ---
 
-# Student acknowledgement
+# Testimonials
 
-To get an idea of how students of previous editions of this course thought of this course, we included some of main points that were mentioned in the course evaluation by them below.
+To get an idea of how students of previous editions of this course thought of it, we included some of the main points mentioned in the course evaluation by them below.
 
 ## About the course
 - _This course has significantly improved my
 coding skills. Hannes took the time to look at our
 code in multiple coaching sessions. He was also
 always available through Whatsapp etc. I also
-appreciate the effort he took into making pulse (a
+appreciate his effort in making pulse (a
 website tracking your progress). The example code
-in Google Colab was also very helpful. Also,
+in Google Colab was also beneficial. Also,
 Hannes is a very inspiring teacher who really
-encouraged us to go the extra mile_
+encouraged us to go the extra mile._
 
-- _Its relevant and the contents are closely linked
-to what is expected later on in the programme, this
-fit makes the course in my opinion an excellent fit
-with marketing analytics and it is very usefull later
-in life, compared to other courses that fully focus
-on theoretical learning_
+- _It is relevant, and the content is closely linked
+to what is expected later on in the program. This
+fit makes the course, in my opinion, an excellent fit
+with marketing analytics, and it is very useful later
+in life, compared to other classes that entirely focus
+on theoretical learning._
 
 - _I was positively surprised that Tilburg
-University teaches scraping skills. I’ve never heard
-of any other university teaching that. It’s also
-forward-thinking: these skills will be useful in the
-future. I’d never start learning scraping on my own
-because I always though it’s very complicated but
-it turns out to be doable. Pulse is a nice a nice
-addition to the course since there isn’t a book that
-would teach us that. Team consults were useful
+University teaches scraping skills. I've never heard
+of any other university teaching that. It's also
+forward-thinking: these skills will be helpful in the
+future. I'd never started learning scraping on my own
+because I always thought it was very complicated, but
+it turned out to be doable. Pulse is an excellent
+addition to the course since there isn't a book that
+would teach us that. Team consults were helpful
 with solving the code issues. I like that the teacher
 is passionate about what he teaches._
 
 - _Pretty cool skills I obtained from this class.
-Couldn't imagine I would know how to scrape data
-online_
+I couldn't imagine I would know how to scrape data
+online._
 
 ## About the team project and tutorials
 
 - _I really liked the setup of this course. Figuring
-out what to do for the project yourselves really
+out what to do for the project really
 inspired and motivated everyone to do their best._
 
 - _The structure was really nice. The assignments
 and tutorials aligned very well with the project. It
-was really nice to put things in practice._
+was nice to put things into practice._
 
 - _The course has clear objectives and is a great
-introduction on data collection with scraping and
-APi's. The google colabs give a very nice
-structured assignment to prepare and get familiar
+introduction to data collection with scraping and
+APIs. With Google Colab, I could access 
+structured assignments to prepare and get familiar
 with the material._

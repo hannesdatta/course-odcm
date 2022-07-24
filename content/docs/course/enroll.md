@@ -3,7 +3,7 @@ weight: 4
 bookFlatSection: true
 title: "Enroll"
 bookHidden: false
-description: " "
+description: "Find out how to enroll to this class"
 ---
 
 # Enrollment and Obtaining Course Credits

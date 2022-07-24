@@ -1,6 +1,6 @@
 ---
 weight: 2
-title: Week 1) Getting started with Python
+title: Week 1) Getting started with Python and web data
 description: Learn to code in Python, so you can eventually collect online data using web scraping and APIs.
 bookCollapseSection: false
 ---
@@ -11,14 +11,14 @@ bookCollapseSection: false
 - [Watch the kick-off for the week](https://youtu.be/6lGyBkvl0JY)!
 
 ## Opening lecture and Python bootcamp
-- Introduction to the course ([slides](slides.html)) 
-<!-- add link ([re-watch](https://youtu.be/b3Fiq3mrsb4))<!-- add zoom link-->
-- [Python Bootcamp](docs/tutorials/pythonbootcamp)
-
+{{% laptop %}}
+- Introduction to the course ([slides](slides.html)) <!-- add link ([re-watch](https://youtu.be/b3Fiq3mrsb4))add zoom link-->
+- Brainstorm for ground-breaking data collections
+- [Tutorial: Python bootcamp for web data](docs/tutorials/pythonbootcamp)
 
 ## Self-study and activities
-- [What is web scraping and what are Application Programming Interfaces (APIs)?](https://videocollege.uvt.nl/Mediasite/Play/41afff385bd74db2af5fb8507350ea521d)
-- Exercises
+
+- Exercises after class
 
 
 <!--

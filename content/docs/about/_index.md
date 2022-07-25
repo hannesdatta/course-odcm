@@ -16,7 +16,7 @@ Feedback is appreciated always.
 
 ## Instructors and Creators
 
-The course is coordinated and instructed by [Hannes Datta](https://hannesdatta.com). Course material, if not indicated otherwise, has been developed by [Hannes Datta](https://hannesdatta.com) and [Roy Klaasse Bos](http://royklaassebos.nl/) from Tilburg University.
+The course is coordinated and instructed by [Hannes Datta](https://hannesdatta.com). Course material, if not indicated otherwise, has been developed by [Hannes Datta](https://hannesdatta.com) from Tilburg University, with the support of [Roy Klaasse Bos](http://royklaassebos.nl/) and Ralph Delsing.
 
 ## Acknowledgements
 

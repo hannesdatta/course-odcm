@@ -3,10 +3,14 @@ resources/*
 public/*
 .ipynb_checkpoints/
 *.csv
-content/docs/tutorials/exam/Untitled.ipynb
-content/docs/tutorials/pythonbootcamp/two_lines.txt
+Untitled**.ipynb
 slides/reveal.js/
 slides/gen/
 ./reveal.js
 slides.md
 .hugo_build.lock
+.Rhistory
+**.ipynb_checkpoints**
+**slides_files**
+**node_modules**
+**package-lock.json**

@@ -2,7 +2,7 @@
 weight: 6
 title: "Support"
 bookCollapseSection: true
-description: " "
+description: "Experiencing technical difficulties or need to be in touch with the course coordinator for other reasons?"
 ---
 
 # Support

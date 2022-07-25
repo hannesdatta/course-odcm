@@ -1,6 +1,6 @@
 ---
 weight: 3
-title: Week 2) Workflow & learning how to scrape
+title: Week 2) Method framework & first scraper
 description: Get to know the workflow for collecting web data, and run your first web scraper!
 bookCollapseSection: false
 ---
@@ -17,14 +17,26 @@ description: Learn how to assess data quality and website/API structure, and dec
 
 ## Self-study and activities
 
-- Please carefully read ["Fields of Gold: Generating Relevant and Credible Insights Via Web Scraping and APIs"](http://dx.doi.org/10.2139/ssrn.3820666).
-  - This paper will be your guiding framework for the rest of this course, and chance is you'll have to read it a couple of times (e.g., first to get an overview, and later to appreciate and use the details in your project). The web appendix contains valuable tables, so don't skip them.
+- [What is web scraping and what are Application Programming Interfaces (APIs)?](https://videocollege.uvt.nl/Mediasite/Play/41afff385bd74db2af5fb8507350ea521d) (30 minutes)
 
-- [Web data retrieval for dummies (Tutorial)](docs/tutorials/webdata-for-dummies)
-- Please prepare [breakout activity #1](../../../docs/project/workplan/activity1.md).
+- "Fields of Gold: Scraping Web Data for Marketing Insights"
+  - Please [watch the webinar](https://youtu.be/KiyFyLEkqNk) (1 hour)
+  - Please carefully [read the paper](https://journals.sagepub.com/doi/abs/10.1177/00222429221100750?journalCode=jmxa) (2 hours)
+  
+  {{% hint info %}}
+  This paper will provide a guiding framework for the rest of this course, and chance is you'll have to read it a couple of times (e.g., first to get an overview, and later to appreciate and use the details in your project). The web appendix contains valuable tables, so don't skip them.
+  {{% /hint %}}
+
+- Please prepare [team activity #1](../../../docs/project/workplan/activity1.md) (2 hours)
 
 <!--
+  {{% hint warning %}}
+  __Deliverables are due ONE DAY prior to the tutorial session, and need to be submitted on Canvas by 9am)__.
+{{% /hint %}}
+-->
+<!--
 
+- [Web data retrieval for dummies (Tutorial)](docs/tutorials/webdata-for-dummies)
 
 *individual exercises or team project*
 <!--- [Project] Conduct your own data availability assessment and evaluation of research fit using a template with your team <!-- *download* generate template to fill in or a slide deck -->
@@ -32,7 +44,14 @@ description: Learn how to assess data quality and website/API structure, and dec
 <!--- Ethics in scraping and APIs *live*
 -->
 
-## Live stream 2
+## Tutorial
+{{% laptop %}}
+- [In-class tutorial: Web data for dummies](/docs/tutorials/webdata-for-dummies) and after-class exercises
+
+<!--
+
+## Activities after class
+
 - Q&A/walk-through of this week's tutorial (and application to new sites/APIs)
   - Looping through pages at books.toscrape ([download](books_to_scrape_looping.ipynb), [open in Colab](https://colab.research.google.com/github/hannesdatta/course-odcm/blob/master/content/docs/modules/week2/books_to_scrape_looping.ipynb))
   - Demonstration of scraping from Twitch ([download](twitch.ipynb), [open in Colab](https://colab.research.google.com/github/hannesdatta/course-odcm/blob/master/content/docs/modules/week2/twitch.ipynb))
@@ -44,5 +63,8 @@ description: Learn how to assess data quality and website/API structure, and dec
 <!--- Assessing data availability and evaluating research fit-->
 
 <br>
+
+<div style="text-align: right">
 {{< button relref="week1" >}}Previous week{{< /button >}}
 {{< button relref="week3" >}}Next week{{< /button >}}
+</div>

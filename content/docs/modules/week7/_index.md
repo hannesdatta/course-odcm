@@ -1,28 +1,27 @@
 ---
 weight: 60
-title: Week 7) Finalizing Data Collection
+title: Week 7) Finalizing data collection
 description: Work on your project, with a focus on documenting your data collection.
 bookCollapseSection: true
 ---
 
 # Week 7: Lab week
 
+## Kick-starting your week
+- Watch the kick-off for the week
+
 ## Self-study
-- [Exam preparation](../../../docs/course/exam)
+- Please work through the [exam preparation material](docs/exam) and note down any question that you may have. You can raise these questions in the final lecture.
 
-## Coaching sessions
-- [Coaching sessions with teams, on request](../../../docs/course/project/workplan/coaching.md).
-- Recorded coaching sessions (from previous editions of this course, and also the current edition) are available [on this YouTube playlist](https://www.youtube.com/playlist?list=PLdDbyJQwReWhis9Ns7_NfYzw4YAp91D6G). Code snippets are shared on [gist.github.com](https://gist.github.com/hannesdatta).
-<!--- Live coding / feedback sessions for teams
--->
+## Online coaching session (optional)
+- Feedback on team project ([activity #4](../../project/workplan/activity4)) (at this point, ideally a working data collection software that can be scheduled automatically)
 
-## Live stream #6
-- Course summary
-  - [Slides](slides.html)
-- Exam preparation
-  - [What to expect & how to prepare](../../../docs/course/exam)
-- [Recording](https://youtu.be/qoBg6DMcxNQ)
-
+## Final lecture
+- Course summary ([slides](slides.html))
+- [Exam preparation](/docs/exam)
+- Final questions
 
 <br>
+<div style="text-align: right">
 {{< button relref="week6" >}}Previous week{{< /button >}}
+</div>

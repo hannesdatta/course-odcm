@@ -2,24 +2,30 @@
 bookFlatSection: true
 title: "Team Project"
 bookHidden: false
-weight: 35
+weight: 40
 bookCollapseSection: true
 ---
 
 
 # Team Project
 
-## Goal
+## Overview and project goal
 
-Collecting data via web scraping and APIs requires practice. Together with your team members, you plan and execute an online data collection throughout the course, and submit your collected (and documented) data at the end of the course.
+Collecting data via web scraping and APIs requires practice. Together with your team members, you plan and execute an online data collection throughout the course by closely following the recommendations in "Fields of Gold".
 
-__The focus lies on *completing the complete workflow for collecting web data*. Keep each stage of your project *manageable* and *feasible*.__
+At the end of the course, you will submit your collected data, code, and a documentation.
+
+{{% hint info %}}
+__The focus lies on *completing an entire data collection project*. Keep each stage of your project *manageable* and *feasible*.__
+{{% /hint %}}
+
 
 ## Getting started
 
-- [Seek inspiration for project ideas](projectideas), and [explore the examples](../examples)
-- [Discover how to submit your project, and how you will be graded](grading)
-- [Check out the workplan and team activities](workplan)
+{{< button relref="workplan" >}}Workplan, deliverables and coaching{{< /button >}}
+{{< button relref="grading" >}}Grading requirements{{< /button >}}
+{{< button relref="pastprojects" >}}Past projects{{< /button >}}
+{{< button relref="examples" >}}Tips and examples{{< /button >}}
 
 ## Team composition
 

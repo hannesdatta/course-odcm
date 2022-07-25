@@ -35,8 +35,8 @@ date: 2021-02-04
 3. Start to broadly identify data sources in your particular *data context*, by working through __challenge #1.1-1.2 in the paper and corresponding parts in table 2__. 
 
 
-4. Submit a brief document on canvas (PDF), containing two sections
-    - Motivation of your data context (why do you think it's important?!), and explanation which four pthways are being addressed [100 words]
+4. Submit a brief document on Canvas (PDF), containing your team number and two sections:
+    - Motivation of your data context (why do you think it's important?!), and explanation which four pathways are being addressed [100 words]
     - A list of data sources (including links) that you are considering to use (does not need to be your final decision!). Explicitly mention web scraping vs. APIs for each source. [max. 10]
 
 {{% hint info %}}

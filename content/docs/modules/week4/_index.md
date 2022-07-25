@@ -1,6 +1,6 @@
 ---
 weight: 4
-title: Week 4) Learn How to Extract Data from APIs
+title: Week 4) Building your API skills
 description: Write code to extract data from Application Programming Interfaces (APIs)
 bookCollapseSection: false
 ---
@@ -13,17 +13,19 @@ description: Assess which data is available at your chosen data source, and whet
 
 -->
 ## Kick-starting your week
-- Watch the kick-off for the week - TBA!
+- Watch the kick-off for the week
+
+## Online coaching session
+- Feedback on team submissions ([activity #2](../../project/workplan/activity2))
 
 ## Self-study and activities
+- Please prepare [team activity #3](../../../docs/project/workplan/activity3.md).
+- Please work through challenges #3.1-#3.3 in "Fields of Gold".
 
-- [APIs 101 (Tutorial)](docs/tutorials/apis101)
-- Start fiddling around with accessing your chosen website or API. If you have time left, start building an initial prototype to extract some data (doesn't need to be the "final" data yet!)
-- Please prepare [Team Activity #3](../../../docs/project/workplan/activity3.md).
-- Optional: Still wonder why APIs are so powerful? Read [Zalando's take](https://opensource.zalando.com/restful-api-guidelines/#introduction) on APIs
 
-## Live stream 4
-- [Team Activity #3](../../../docs/project/workplan/activity3.md)
+## Tutorial
+{{% laptop %}}
+- [In-class tutorial: APIs 101](docs/tutorials/apis101) and after-class exercises
 
 
 <!--

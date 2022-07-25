@@ -2,7 +2,7 @@
 weight: 90
 title: APIs Advanced
 description: Learn how to obtain data from APIs that require authentication.
-bookCollapseSection: true
+bookCollapseSection: false
 draft: false
 ---
 

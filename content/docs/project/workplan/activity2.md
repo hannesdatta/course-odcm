@@ -1,10 +1,33 @@
 ---
-title: Activity 2) Data Source Exploration
+title: Activity 2) Data Source Selection
 draft: false
 date: 2021-02-04
 ---
 
-# Activity #2: Data Source Exploration
+# Activity #2: Data source selection
+
+## Overview
+- Type: Meetup with your team (e.g., online[^1] or on campus)
+- Goal: building on [activity #1](activity1) and the received feedback, refine your data context and select (typically one) data source
+
+[^1]: You can schedule unlimited calls when logging in with your Tilburg University account on Zoom.
+
+
+## Preparation before the activity
+
+- Work through the "Fields of Gold" paper (at least up to challenge #1.3). Make use of the  relevant tables in the paper as you work on this activity.
+
+
+## Deliverable
+
+Submit a document on Canvas (PDF), containing your team number and three sections:
+    
+- Section 1: Updated motivation of your data context (why do you think it's important?!), and explanation which four pathways are being addressed [100 words]
+- Section 2: An updated list of data sources (including links) that you are considering to use, explicitly mention web scraping vs. APIs for each source. Explain how you addressed challenges #1.1-#1.2, leading to your __selected data source__ [About 10 sources + explanation of max. 250 words]
+- Section 3: Mapping the data context, as explained in challenge #1.3 [max. 300 words]
+
+
+<!--
 
 ## Overview
 - Type: Team presentation
@@ -35,3 +58,5 @@ date: 2021-02-04
 
 ## Submission
   - Please upload the slide deck both as a PDF and as a Powerpoint (in one zip file) on Canvas at the latest by 8am on the day of the live stream.
+
+-->

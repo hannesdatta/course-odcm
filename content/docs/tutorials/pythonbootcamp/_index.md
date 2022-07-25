@@ -2,10 +2,10 @@
 weight: 20
 title: Python Bootcamp
 description: Learn the basics of coding in Python.
-bookCollapseSection: true
+bookCollapseSection: false
 ---
 
-# Tutorial: Python Bootcamp
+# Tutorial: Python Bootcamp for Collecting Web Data 
 
 ## Learning goals
 
@@ -18,10 +18,18 @@ bookCollapseSection: true
 The tutorial proceeds in two steps.
 
 1. In-class tutorial ([download](python-bootcamp-in-class.ipynb), [Google Colab](https://colab.research.google.com/github/hannesdatta/course-odcm/blob/master/content/docs/tutorials/pythonbootcamp/python-bootcamp-in-class.ipynb))
-2. After-class self-study (exercises, about 2-3 hours; [download and then unzip](python-bootcamp.zip), [Google Colab](https://colab.research.google.com/github/hannesdatta/course-odcm/blob/master/content/docs/tutorials/pythonbootcamp/python-bootcamp.ipynb))
+2. After-class exercises (about 2-3 hours; [download](python-bootcamp.zip), [Google Colab](https://colab.research.google.com/github/hannesdatta/course-odcm/blob/master/content/docs/tutorials/pythonbootcamp/python-bootcamp.ipynb))
 <!-- the zip file also includes the data they need for the last few exercises -->
 
+{{% hint info %}}
+__Downloading to and starting the tutorial on your computer__
 
+- Right-click on the download link and select "download linked file as...)".
+- Move the file to a convenient file location (e.g., somewhere in your course folder)
+- If the downloaded file is a `.zip` (compressed) file, unzip it.
+- Open Jupyter Notebook (e.g., using the terminal or the Anaconda Navigator), navigate to the folder where you stored the downloaded files, and open the `.ipynb` file from within Jupyter Notebook.
+- Start with the tutorial!
+{{% /hint %}}
 
 <!--
 - Enable you to write and execute simple code in Python

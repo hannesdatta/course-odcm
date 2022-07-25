@@ -1,6 +1,6 @@
 ---
 weight: 3
-title: Week 2) Methodological framework & learning how to scrape
+title: Week 2) Method framework & first scraper
 description: Get to know the workflow for collecting web data, and run your first web scraper!
 bookCollapseSection: false
 ---
@@ -30,6 +30,11 @@ description: Learn how to assess data quality and website/API structure, and dec
 - Please prepare [team activity #1](../../../docs/project/workplan/activity1.md) (2 hours)
 
 <!--
+  {{% hint warning %}}
+  __Deliverables are due ONE DAY prior to the tutorial session, and need to be submitted on Canvas by 9am)__.
+{{% /hint %}}
+-->
+<!--
 
 - [Web data retrieval for dummies (Tutorial)](docs/tutorials/webdata-for-dummies)
 
@@ -40,9 +45,8 @@ description: Learn how to assess data quality and website/API structure, and dec
 -->
 
 ## Tutorial
-
-- [Tutorial: Web data for dummies](/docs/tutorials/webdata-for-dummies)
-- Exercises after class
+{{% laptop %}}
+- [In-class tutorial: Web data for dummies](/docs/tutorials/webdata-for-dummies) and after-class exercises
 
 <!--
 

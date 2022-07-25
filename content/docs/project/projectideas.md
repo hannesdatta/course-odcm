@@ -2,26 +2,13 @@
 bookFlatSection: true
 title: "Project ideas"
 bookHidden: false
-weight: 3
+weight: 20
+draft: true
 ---
 
-# 1. Projects from previous editions
-To give you an idea of what a good project could look like, we published some of the projects from the previous course editions. Feel free to check these out and get inspired by them for your own team project!
+# Project ideas
 
-### Web scraping
-- Scraping reviews about KLM (airlines) - [Click here!](https://zenodo.org/record/5902839/files/Airline%20reviews.zip?download=1)
-- Scraping data about popular beers from the Untappd website - [Click here!](https://zenodo.org/record/5902839/files/Beer%20craft.zip?download=1)
-- Scraping user data from the Goodreads website - [Click here!](https://zenodo.org/record/5902839/files/Goodreads.zip?download=1)
-- Scraping data about second-hand clothing from Zalando  - [Click here!](https://zenodo.org/record/6641811/files/zalando.zip?download=1)
-### APIs
-- Using the Reddit and WallStreetBets APIs to collect data that can be used to measure its impact on stock prices - [Click here!](https://zenodo.org/record/5902839/files/Reddit%20api.zip?download=1)
-- Collecting software available for sale using Steam's API - [Click here!](https://zenodo.org/record/6641811/files/steam_api.zip?download=1)
-
-In addition to these projects, other good examples from previous editions can be found on Zenodo by [clicking here](https://zenodo.org/record/5902839#.YfAO02DTX0o) and [here](https://doi.org/10.5281/zenodo.6641811) (Fall 2021 and Spring 2022 edition, respectively).
-
-# 2. Project ideas
-
-*Note: The final team projects (and team allocations) are available on the course's (non-public) Canvas page.*
+To generate project ideas, it's best to go through the relevant sections of the "Fields of Gold" paper.
 
 Here's a list with a couple of project ideas. __Don't feel restricted by these options, though!__ There are plenty of other great ideas (e.g., see the examples in section 3 below), and we encourage you to think of applications in which you use two or more APIs, or in which you combine web scraping with relevant APIs.
 

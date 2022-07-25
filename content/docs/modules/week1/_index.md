@@ -1,7 +1,7 @@
 ---
 weight: 2
-title: Week 1) Getting started with Python and web data
-description: Learn to code in Python, so you can eventually collect online data using web scraping and APIs.
+title: Week 1) Getting started 
+description: Learn to code in Python, so you can eventually collect web data using web scraping and APIs.
 bookCollapseSection: false
 ---
 

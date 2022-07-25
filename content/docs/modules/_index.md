@@ -41,6 +41,7 @@ __Tips__
 - The schedule can also be viewed in Tilburg University's [MyTimetable](https://rooster.uvt.nl).
 - Login credentials for the live streams will be made available on the *Canvas page of this course for students from Tilburg University*, and via email to remaining students.
 - If recordings are made, you will find them on Hannes' YouTube channel. [Subscribe to it now](http://www.youtube.com/c/hannesdatta?sub_confirmation=1) to stay up-to-date!
+- If code is shared, you will typically find it on [Hannes' GitHub Gists](https://gist.github.com/hannesdatta).
 
 {{< /hint >}}
 

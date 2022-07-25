@@ -43,6 +43,17 @@ You can use task scheduling to automate the execution of scripts at specified in
 
 -------
 
+*Are there (code) examples from previous years?*
+
+Yes, some code examples are available [here](../../project/projectideas).
+
+*How can I get additional support?*
+
+A good starting point are recorded coaching sessions from previous years, which are available [on this YouTube playlist](https://www.youtube.com/playlist?list=PLdDbyJQwReWhis9Ns7_NfYzw4YAp91D6G). 
+
+Also, Hannes collects useful code snippets on GitHub, see [gist.github.com](https://gist.github.com/hannesdatta).
+
+
 ## Python Bootcamp
 
 *What's the difference between `if` and `elif`?*  

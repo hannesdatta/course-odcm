@@ -1,6 +1,6 @@
 ---
-weight: 10
-title: "Grading details"
+weight: 50
+title: "Grading"
 bookCollapseSection: true
 description: ""
 draft: false

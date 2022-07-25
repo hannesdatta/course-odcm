@@ -7,7 +7,7 @@ weight: 70
 
 # About
 
-Web scraping and APIs have become one of the most important data collection methods in academic (marketing) research. While you can find tons of resources online on *how to scrape*, or *how to access data from APIs*, none of these tutorials will actually teach you how the way you scrape affects your research. This is the void we will.
+Web scraping and APIs have become one of the most important data collection methods in academic (marketing) research. While you can find many resources on *how to scrape*, or *how to access data from APIs*, none of these tutorials will teach you how the way you scrape affects your research. This is the void we will.
 
 We've used web scraping and APIs in our research for more than 10 years. And we're (finally) ready to pass on the knowledge to you. Even if you're not enrolled in our class, you can make use of our material.
 
@@ -16,7 +16,9 @@ Feedback is appreciated always.
 
 ## Instructors and Creators
 
-The course is coordinated and instructed by [Hannes Datta](https://hannesdatta.com). Course material, if not indicated otherwise, has been developed by [Hannes Datta](https://hannesdatta.com) from Tilburg University, with the support of [Roy Klaasse Bos](http://royklaassebos.nl/) and Ralph Delsing.
+The course is coordinated and instructed by [Hannes Datta](https://hannesdatta.com). Want to get in touch with him during the course? Visit [the support section](../course/support). 
+
+The course material, if not indicated otherwise, has been developed by [Hannes Datta](https://hannesdatta.com) from Tilburg University, with the support of [Roy Klaasse Bos](http://royklaassebos.nl/) and Ralph Delsing.
 
 ## Acknowledgements
 

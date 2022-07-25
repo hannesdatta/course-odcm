@@ -18,5 +18,5 @@ draft: false
 
 ## Getting started
 
-- [Download the tutorial](api-101.ipynb) (right-click, download linked file as...). Then, open the file in Jupyter Notebook and start the tutorial!
-- [View & run the tutorial in Google Colab](https://colab.research.google.com/github/hannesdatta/course-odcm/blob/master/content/docs/tutorials/apis101/api-101.ipynb)
+1. In-class tutorial (<a href = 'api-101.ipynb' download>download</a>, [Google Colab](https://colab.research.google.com/github/hannesdatta/course-odcm/blob/master/content/docs/tutorials/api101/api-101.ipynb))
+2. After-class exercises (about 1-2 hours; contained at the end of the tutorial)

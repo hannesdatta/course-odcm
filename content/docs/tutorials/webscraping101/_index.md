@@ -10,15 +10,20 @@ draft: false
 
 ## Learning goals
 
-* Generate lists of entities to scrape data from
-* Map navigation path on a website using URLs, and understand how to use parameters to modify results
-* Select data for extraction on a website using tags, class names and attributes
-* Write data to CSV file, and enrich with relevant metadata
-* Bundle data capture in Python functions and modularize extraction code
-* Loop through a list of URLs to capture data in bulk, using functions
-* Understand the difference between Jupyter Notebooks and “raw” Python files, and run collection via the command line/terminal
+
+* Understand the difference between headless and browser emulation and ability to apply both methods (using `requests` and `selenium`)
+* Generate seeds (“sampling”) 
+* Navigating on a website using URLs and clicking
+* Implement timers and modularise extraction code
+* Write loops to execute data collections in bulk using functions
+* Store data in CSV or JSON files, and enrich with relevant metadata
 
 ## Getting started
 
-- [Download the tutorial](webscraping-101.ipynb) (right-click, download linked file as...). Then, open the file in Jupyter Notebook and start the tutorial!
-- [View & run the tutorial in Google Colab](https://colab.research.google.com/github/hannesdatta/course-odcm/blob/master/content/docs/tutorials/webscraping101/webscraping-101.ipynb)
+1. In-class tutorial (<a href = 'webscraping-101.ipynb' download>download</a>, [Google Colab](https://colab.research.google.com/github/hannesdatta/course-odcm/blob/master/content/docs/tutorials/webscraping101/webscraping-101.ipynb))
+2. After-class exercises (about 1-2 hours; contained at the end of the tutorial)
+
+{{% hint info %}}
+Would you like to advance your scraping skills for __dynamic websites__ such as Instagram that involves a lot of user interaction like scrolling and clicking? Follow the ["Web Scraping Advanced" tutorial](../webscrapingadvanced/).
+
+{{% /hint %}}

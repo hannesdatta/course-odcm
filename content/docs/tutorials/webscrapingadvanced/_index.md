@@ -9,13 +9,13 @@ draft: false
 # Tutorial: Web scraping Advanced
 
 ## Learning goals
-- Understand the difference between headless and browser emulation and ability to apply both methods (using Selenium)
-- Emulate user interaction with a site using timers, clicks, scrolling, and filling in forms
+
+- Make more advanced use of `selenium`, emulating user interaction on a site (e.g., scrolling and filling in forms)
 - Access data that is hidden behind a login-screen
 - Apply search parameters to obtain subsets of data
-- Scrape and store images from the internet locally
-- Learn how to save the retrieved data as tabular files (e.g., CSV)
+- Capture and store images from the web
+- Save the retrieved data as tabular files (e.g., CSV)
 
 ## Getting started
-- [Download the tutorial](webscraping-advanced.ipynb) (right-click, download linked file as...). Then, open the file in Jupyter Notebook and start the tutorial! __Note that this tutorial does not run on Google Colab__.
-- [View & run the tutorial in Google Colab](https://colab.research.google.com/github/hannesdatta/course-odcm/blob/master/content/docs/tutorials/webscrapingadvanced/webscraping-advanced.ipynb)
+
+- Start with this optional tutorial (<a href = 'webscraping-advanced.ipynb' download>download</a>, [Google Colab](https://colab.research.google.com/github/hannesdatta/course-odcm/blob/master/content/docs/tutorials/webscrapingadvanced/webscraping-advanced.ipynb.ipynb))

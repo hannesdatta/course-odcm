@@ -1,13 +1,13 @@
 ---
 bookFlatSection: true
-title: "Final Exam"
+title: "Exam"
 bookHidden: false
 weight: 45
 bookCollapseSection: true
 ---
 
 
-# Final exam
+# Exam
 
 The course content will be tested in the form of a __take-home exam__, to be completed __within three hours__.
 

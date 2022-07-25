@@ -1,7 +1,7 @@
 ---
 weight: 20
 title: Python Bootcamp
-description: Learn the basics of coding in Python.
+description: Learn the basics on how to retrieve web data using Python
 bookCollapseSection: false
 ---
 

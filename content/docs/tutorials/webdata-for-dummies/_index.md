@@ -22,8 +22,8 @@ bookCollapseSection: false
 
 ## Getting started
 
-1. In-class tutorial ([download](webdata-for-dummies-in-class.ipynb), [Google Colab](https://colab.research.google.com/github/hannesdatta/course-odcm/blob/master/content/docs/tutorials/webdata-for-dummies/webdata-for-dummies-in-class.ipynb))
-2. After-class exercises (about 1-2 hours; [download](web-data-for-dummies-exercises.ipynb), [Google Colab](https://colab.research.google.com/github/hannesdatta/course-odcm/blob/master/content/docs/tutorials/webdata-for-dummies/webdata-for-dummies-exercises.ipynb))
+1. In-class tutorial (<a href = 'webdata-for-dummies-in-class.ipynb' download>download</a>, [Google Colab](https://colab.research.google.com/github/hannesdatta/course-odcm/blob/master/content/docs/tutorials/webdata-for-dummies/webdata-for-dummies-in-class.ipynb))
+2. After-class exercises (about 1-2 hours; contained at the end of the tutorial)
 
 
 
@@ -31,7 +31,7 @@ bookCollapseSection: false
 {{% hint info %}}
 __Downloading to and starting the tutorial on your computer__
 
-- Right-click on the download link and select "download linked file as...)".
+- Click on the download button. If the file opens in your browser, right-click on the download link instead and select "download linked file as...)".
 - Move the file to a convenient file location (e.g., somewhere in your course folder)
 - If the downloaded file is a `.zip` (compressed) file, unzip it.
 - Open Jupyter Notebook (e.g., using the terminal or the Anaconda Navigator), navigate to the folder where you stored the downloaded files, and open the `.ipynb` file from within Jupyter Notebook.

@@ -31,7 +31,7 @@ Web scraping and Application Programming Interfaces are among the must-have skil
 
 The specification matrix for this course can be [downloaded here](../specification_tables_odcm.pdf). This matrix gives an overview of all the learning goals and their weights in each graded component of the course (i.e., in the final exam, team project and Pulse). 
 
-[^1]: Based on Boegershausen, Johannes, Hannes Datta, Abhishek Borah, and Andrew T. Stephen. "Fields of Gold: Scraping Web Data for Marketing Insights.” *Journal of Marketing*, (July 2022). https://doi.org/10.1177/00222429221100750. Web companion available at [https://web-scraping.org](https://web-scraping.org).
+[^1]: Based on Boegershausen, Johannes, Hannes Datta, Abhishek Borah, and Andrew T. Stephen (2022). “Fields of Gold: Scraping Web Data for Marketing Insights.” *Journal of Marketing*. [Download paper](https://doi.org/10.1177/00222429221100750). [Visit web companion](https://web-scraping.org).
 
 [^2]: Students use a web app to monitor their progress on the course's learning goals by "ticking off" items from a to-do list (e.g., "I have installed Python," "I have finished Tutorial X," etc.). The instructor can use the app to learn which topics to highlight during live streams. Students, in turn, can use the app to see how far others in the class have already proceeded, giving them direct feedback on their performance.
 
@@ -62,8 +62,8 @@ To illustrate the wide range of applications of web data, the course introduces 
 
 ## Assessment
 
-- [Team project](project) (45%, out of which 10% are based on students' individual contribution, measured by [self- and peer assessment](peerassessment))
-- [Computer exam](exam) (50%)
+- [Team project](project) (45%, out of which 10% are based on students' individual contribution, measured by [self- and peer assessment](../project/grading/peerassessment))
+- [Computer exam](/docs/exam) (50%)
 - Submitting one's progress on the course's learning goals  (5%)[^3]
 
 [^3]: In particular, students regularly monitor their progress on the course's learning goals. At least one evaluation per course week is required to obtain points on this component of the course grade.
@@ -89,13 +89,13 @@ Final course grades are rounded to multiples of half points (e.g., 6, 6.5, 7, et
 
 ## Code of Conduct
 
-- When meeting on Zoom, please turn on your camera, which will facilitate interaction with the course instructor and other students.
 - Please always use English as the default language so that non-Dutch speakers can follow the conversations, even if it concerns topics not directly related to the class (e.g., during breaks).
 - Please head over the course's [support section](support) to solve problems or get in touch with the instructor.
 - Stay up-to-date by checking this website, Canvas, and watch out for updates on Hannes' social media channels.
 - Be on time, and start on time
 - Feel invited to provide informal feedback!
 - It's totally fine calling the instructor by his first name. 
+- When meeting on Zoom, please turn on your camera, which will facilitate interaction with the course instructor and other students.
 
 {{< hint info >}}
 __We value diversity and inclusion__

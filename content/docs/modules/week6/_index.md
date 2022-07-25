@@ -22,7 +22,7 @@ bookCollapseSection: true
 - Feedback on team project ([activity #4](../../project/workplan/activity4)) (e.g., prototype code, code that is more advanced, scheduling, etc.)
 
 ## Coaching sessions
-- This week, there is no livestream. Instead, there will be [coaching sessions with teams, on request](../../../docs/course/project/workplan/coaching.md).
+- This week, there is no livestream. Instead, there will be [coaching sessions with teams, on request](../../../docs/project/workplan).
 - Recorded coaching sessions (from previous editions of this course, and also the current edition) are available [on this YouTube playlist](https://www.youtube.com/playlist?list=PLdDbyJQwReWhis9Ns7_NfYzw4YAp91D6G).
 
 

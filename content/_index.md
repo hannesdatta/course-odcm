@@ -19,7 +19,7 @@ _This edition: {{< param "Course_Edition_Current" >}} | Next edition: {{< param 
 
 Welcome to the course website of oDCM.
 
-This course teaches you the nuts and bolts about collecting web data. You learn about the *technicalities* of using web scraping and Application Programming Interfaces (APIs), but also learn to *design* your data collection -- specifically with regard to collecting high-quality web data for use in empirical marketing research projects.
+This course teaches you the nuts and bolts about collecting web data. You learn about the *technicalities* of using web scraping and Application Programming Interfaces (APIs), but also learn to address the challenges in *designing* your data collection along the three stages of collecting web data for use in empirical marketing research projects[^1].
 
 Please use the navigation bar and buttons below to access the course material.
 
@@ -27,7 +27,7 @@ Please use the navigation bar and buttons below to access the course material.
 {{< button relref="./docs/modules" >}}Course schedule and modules{{< /button >}}
 {{< button relref="./docs/course/enroll.md" >}}Enroll now!{{< /button >}}
 
-
+[^1]: Based on Boegershausen, Johannes, Hannes Datta, Abhishek Borah, and Andrew T. Stephen (2022). “Fields of Gold: Scraping Web Data for Marketing Insights.” *Journal of Marketing*. [Download paper](https://doi.org/10.1177/00222429221100750). [Visit web companion](https://web-scraping.org).
 <!--
 ## This website
 

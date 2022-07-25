@@ -2,7 +2,7 @@
 bookFlatSection: true
 title: "Team Project"
 bookHidden: false
-weight: 20
+weight: 40
 bookCollapseSection: true
 ---
 

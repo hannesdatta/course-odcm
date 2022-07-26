@@ -27,6 +27,21 @@ Please use the navigation bar and buttons below to access the course material.
 {{< button relref="./docs/modules" >}}Course schedule and modules{{< /button >}}
 {{< button relref="./docs/course/enroll.md" >}}Enroll now!{{< /button >}}
 
+{{< hint info >}}
+__Why should you take this course?__
+
+Ever had this fantastic research idea but didn't have the data to study it? 
+
+Well, it's high time you get familiar with web data gathered by web scraping and APIs! Web data is ideally suited to study questions for which commercial datasets are either unavailable or too expensive to purchase. Yes, we're talking TikTok, Instagram, Socialblade - literally any website you can open in your browser!
+
+Of course, you could just follow some technical tutorials on the web. But researchers face unique challenges as they select data sources for extraction, design their scrapers, and ultimately proceed to turn their prototype into a productive software tool. 
+
+This course is for you if you want to collect and manage your online data collections professionally!
+
+{{< /hint >}}
+
+
+
 [^1]: Based on Boegershausen, Johannes, Hannes Datta, Abhishek Borah, and Andrew T. Stephen (2022). “Fields of Gold: Scraping Web Data for Marketing Insights.” *Journal of Marketing*. [Download paper](https://doi.org/10.1177/00222429221100750). [Visit web companion](https://web-scraping.org).
 
 <!--

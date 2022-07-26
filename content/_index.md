@@ -19,7 +19,7 @@ _This edition: {{< param "Course_Edition_Current" >}} | Next edition: {{< param 
 
 Welcome to the course website of oDCM.
 
-This course teaches you the nuts and bolts about collecting web data. You learn about the *technicalities* of using web scraping and Application Programming Interfaces (APIs), but also learn to address the challenges in *designing* your data collection along the three stages of collecting web data for use in empirical marketing research projects[^1].
+This course teaches you the nuts and bolts about collecting web data. You learn about the *technicalities* of web scraping and Application Programming Interfaces (APIs), but also how to *design* your data collection for use in empirical (marketing) research projects[^1].
 
 Please use the navigation bar and buttons below to access the course material.
 

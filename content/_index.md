@@ -28,6 +28,7 @@ Please use the navigation bar and buttons below to access the course material.
 {{< button relref="./docs/course/enroll.md" >}}Enroll now!{{< /button >}}
 
 [^1]: Based on Boegershausen, Johannes, Hannes Datta, Abhishek Borah, and Andrew T. Stephen (2022). “Fields of Gold: Scraping Web Data for Marketing Insights.” *Journal of Marketing*. [Download paper](https://doi.org/10.1177/00222429221100750). [Visit web companion](https://web-scraping.org).
+
 <!--
 ## This website
 

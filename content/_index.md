@@ -34,9 +34,7 @@ Ever had this fantastic research idea but didn't have the data to study it?
 
 Well, it's high time you get familiar with web data gathered by web scraping and APIs! Web data is ideally suited to study questions for which commercial datasets are either unavailable or too expensive to purchase. Yes, we're talking TikTok, Instagram, Socialblade - literally any website you can open in your browser!
 
-Of course, you could just follow some technical tutorials on the web. But researchers face unique challenges as they select data sources for extraction, design their scrapers, and ultimately proceed to turn their prototype into a productive software tool. 
-
-This course is for you if you want to collect and manage your online data collections professionally!
+Of course, you could just follow some technical tutorials on the web. But researchers face unique challenges as they select data sources for extraction, design their scrapers, and ultimately proceed to turn their prototype into a productive software tool. In this course, you will learn how to solve each of these challenges, and put your scraping and API skills into practice.
 
 {{< /hint >}}
 

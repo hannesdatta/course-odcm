@@ -68,15 +68,6 @@ The course content will be tested in the form of a __take-home exam__, to be com
 - Cognitive skills that will be tested are application, evaluation, and synthesis/creation.
 - All tutorials (except *advanced web scraping* and *advanced APIs* are relevant for this part of the exam).
 
-<!--
-
-{{< hint info >}}
-
-
-Please [view the list of example questions here](examplequestions).
-
-{{< /hint >}}
--->
 
 ## Preparing for the exam
 

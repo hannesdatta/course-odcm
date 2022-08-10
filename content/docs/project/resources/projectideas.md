@@ -4,6 +4,7 @@ title: "Project ideas"
 bookHidden: false
 weight: 20
 draft: false
+description: Seek inspiration for your team projects.
 ---
 
 # Project ideas

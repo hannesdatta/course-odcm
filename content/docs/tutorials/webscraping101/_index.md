@@ -24,6 +24,6 @@ draft: false
 2. After-class exercises (about 1-2 hours; contained at the end of the tutorial)
 
 {{% hint info %}}
-Would you like to advance your scraping skills for __dynamic websites__ such as Instagram that involves a lot of user interaction like scrolling and clicking? Follow the ["Web Scraping Advanced" tutorial](../webscrapingadvanced/).
+Would you like to advance your scraping skills for __dynamic websites__ such as Instagram that involves a lot of user interaction like scrolling and clicking? Follow the ["Web Scraping Advanced" tutorial](/docs/tutorials/webscrapingadvanced).
 
 {{% /hint %}}

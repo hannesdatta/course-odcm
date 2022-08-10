@@ -6,7 +6,7 @@ type: docs
 
 # Online Data Collection and Management (oDCM)
 
-_Instructor: [dr. Hannes Datta](https://hannesdatta.com)_ <a class="github-button" href="https://github.com/hannesdatta" aria-label="Follow @hannesdatta on GitHub">Follow @hannesdatta</a>
+_Instructor: [dr. Hannes Datta](https://hannesdatta.com)_ <a class="github-button" href="https://github.com/hannesdatta" aria-label="Follow @hannesdatta on GitHub">Follow @hannesdatta</a> <a href="https://twitter.com/hannesdatta?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @hannesdatta</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 _Course codes: 328060-M3 (fall, block 1) and 328061-M3 (spring, block 3)_
 
@@ -19,7 +19,7 @@ _This edition: {{< param "Course_Edition_Current" >}} | Next edition: {{< param 
 
 Welcome to the course website of oDCM.
 
-This course teaches you the nuts and bolts about collecting web data. You learn about the *technicalities* of using web scraping and Application Programming Interfaces (APIs), but also learn to address the challenges in *designing* your data collection along the three stages of collecting web data for use in empirical marketing research projects[^1].
+This course teaches you the nuts and bolts about collecting web data. You learn about the __technicalities of using web scraping and Application Programming Interfaces (APIs)__, but also learn to address the challenges in __designing your data collection__ along the three stages of collecting web data for use in empirical marketing research projects[^1].
 
 Please use the navigation bar and buttons below to access the course material.
 

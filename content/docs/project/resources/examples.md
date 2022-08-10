@@ -4,6 +4,7 @@ title: "Tips and examples"
 bookHidden: false
 weight: 30
 draft: false
+description: Apply useful (technical) tips.
 ---
 
 # Tips and examples

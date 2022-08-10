@@ -3,6 +3,7 @@ bookFlatSection: true
 title: "Past projects"
 bookHidden: false
 weight: 10
+description: Seek inspiration from projects submitted during previous editions of this course.
 ---
 
 # Projects from previous editions

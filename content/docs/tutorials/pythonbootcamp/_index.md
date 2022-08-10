@@ -71,7 +71,7 @@ The tutorial proceeds in three steps.
 {{< hint info >}}
 __Missed the livestream?__
 
-Head over to Hannes' [YouTube channel](https://youtube.com/c/hannesdatta) for recordings, and check the course's [module section](../../modules/week1) for any links to the material that has been created (e.g., code, working docs, etc.).
+Head over to Hannes' [YouTube channel](https://youtube.com/c/hannesdatta) for recordings, and check the course's module section for any links to the material that has been created (e.g., code, working docs, etc.).
 -->
 
 <!--

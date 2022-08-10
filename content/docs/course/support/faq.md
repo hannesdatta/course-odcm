@@ -45,7 +45,7 @@ You can use task scheduling to automate the execution of scripts at specified in
 
 *Are there (code) examples from previous years?*
 
-Yes, some code examples are available [here](../../project/projectideas).
+Yes, some code examples are available [here](../../project/resources/projectideas).
 
 *How can I get additional support?*
 

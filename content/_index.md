@@ -19,7 +19,7 @@ _This edition: {{< param "Course_Edition_Current" >}} | Next edition: {{< param 
 
 Welcome to the course website of oDCM.
 
-This course teaches you the nuts and bolts about collecting web data. You learn about the __technicalities of using web scraping and Application Programming Interfaces (APIs)__, but also learn to address the challenges in __designing your data collection__ along the three stages of collecting web data for use in empirical marketing research projects[^1].
+This course teaches you the nuts and bolts about collecting web data. You learn about the *technicalities* of web scraping and Application Programming Interfaces (APIs), but also how to *design* your data collection for use in empirical (marketing) research projects[^1].
 
 Please use the navigation bar and buttons below to access the course material.
 
@@ -27,7 +27,21 @@ Please use the navigation bar and buttons below to access the course material.
 {{< button relref="./docs/modules" >}}Course schedule and modules{{< /button >}}
 {{< button relref="./docs/course/enroll.md" >}}Enroll now!{{< /button >}}
 
+{{< hint info >}}
+__Why should you take this course?__
+
+Ever had this fantastic research idea but didn't have the data to study it? 
+
+Well, it's high time you get familiar with web data gathered by web scraping and APIs! Web data is ideally suited to study questions for which commercial datasets are either unavailable or too expensive to purchase. Yes, we're talking TikTok, Instagram, Socialblade - literally any website you can open in your browser!
+
+Of course, you could just follow some technical tutorials on the web. But researchers face unique challenges as they select data sources for extraction, design their scrapers, and ultimately proceed to turn their prototype into a productive software tool. In this course, you will learn how to solve each of these challenges, and put your scraping and API skills into practice.
+
+{{< /hint >}}
+
+
+
 [^1]: Based on Boegershausen, Johannes, Hannes Datta, Abhishek Borah, and Andrew T. Stephen (2022). “Fields of Gold: Scraping Web Data for Marketing Insights.” *Journal of Marketing*. [Download paper](https://doi.org/10.1177/00222429221100750). [Visit web companion](https://web-scraping.org).
+
 <!--
 ## This website
 

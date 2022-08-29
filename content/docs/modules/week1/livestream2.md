@@ -1,11 +1,23 @@
 ---
 weight: 2
-title: Teaching notes (livestream 3)
+title: Teaching notes
 bookHidden: true
 ---
 
 
-# Teaching Notes for livestream #2
+# Teaching Notes for opening lecture
+
+10.45-1.30
+
+10.45-11.45 Opening lecture + brain storm for data collections
+
+Break
+
+12.00-01.30 Python Bootcamp
+
+
+
+
 
 1. Welcome!
   1. Sign-up to Canvas completed? Need for registration

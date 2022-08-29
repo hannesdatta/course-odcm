@@ -1,4 +1,4 @@
-oDCM - Opening Lecture 1
+oDCM - Opening Lecture
 ========================================================
 author: Hannes Datta
 date:
@@ -27,51 +27,61 @@ Welcome to oDCM!
 
 We're about to start with the first lecture of this class.
 
+<!--
 - If you're joining on Zoom...
 - Please **turn on** your camera; it helps us to interact better!
 - The **chat** is open - use it like on Twitch/YouTube to also talk to each other (or to me).
-- If you haven't done so, please **explore the course page** at [https://odcm.hannesdatta.com]().
+-->
+
+If you haven't done so, please 
+
+- **explore the course page** at [https://odcm.hannesdatta.com]().
+- login at [http://pulse.tilburg-digital.com]() to explore this week's to do's
 
 <!--
---- drafted this course for a very long time
-- finally got the chance to teaching it now
-- what is it about: radical change in the way to work on data-intensive projects
-- While you can find tons of resources online on how to scrape, or how to access data from APIs, none of these tutorials will actually teach you how the way you scrape affects your research. This is the void we will.
 
+- Drafted this course for a very long time
+- Finally got the chance to teaching it now
+
+- While you can find tons of resources online on how to scrape, or how to access data from APIs, none of these tutorials will actually teach you how the way you scrape affects your research. This is the void we will.
 - happy to share that vision, and share practical tips
+
 -->
 
 
 Agenda
 ========================================================
 
-- Getting to know each other
-- Motivation for the course
-- Course framework and learning goals
-- Agenda and practical arrangements
+- Part 1 (10.45 to about 11.45)
+  - Getting to know each other
+  - Motivation for the course
+  - Course framework and learning goals
+  - Agenda and practical arrangements
+- Break
+- Part 2: Python Bootcamp on your laptops (about 12.00 - 13.30)
 
 Disclaimer
 ========================================================
 incremental: true
 
-- It's my first live lecture in two years (!)
-- Slow me down & use the chat (need a moderator in class!)
-- Live streams are *complements*, not substitutes for self-study & course website
-- Minimal use of slides; will post
 - This is not a class that merely teaches you Python (but, if you invest time, you'll learn Python on the way!)
+- You can also extract web data using other software packages (e.g., R)
 - Mix of students at various levels (e.g., beginners, advanced Python users)
-- I'm a marketer, not a data or computer scientist
 - Consider me your coach, not your *distant professor*
-- Course is online-first
+- Course is blended; attendance is not mandatory but strongly encouraged
+- Slow me down if you need to
+- I will not record any online or offline sessions (but you can make your own recordings if you like); slides will be posted always
+
+<!--- Streamed sessions Live streams are *complements*, not substitutes for self-study & course website-->
 
 About myself
 ========================================================
+incremental: true
 
-- born and raised in Germany
-- married, 2 kids (3 and 6 years old)
-- normally streaming from 'de zolderkamer' in 's-Hertogenbosch
-- geek at heart (3D printing, coding), started skateboarding but broke my arm in October (want to get back on the board though)
-- Associate Prof at Tilburg University
+- scraping nerd --- started in 2008 using Visual Basic in Excel
+- started doing my own research with scraped and API-extracted data in 2012 (so, 10+ years experience)
+- left Germany around your age, now many years in NL
+- Associate Professor at Tilburg University
 
 Key areas of expertise
 ========================================================
@@ -81,7 +91,6 @@ Key areas of expertise
   - marketing-mix modeling and optimization
 
 - Methodological interests
-  - data management of structured and unstructured data
   - online data collection via APIs and web scraping
   - causal effects with observational data
 
@@ -89,13 +98,13 @@ Teaching activities (all openly available)
 ========================================================
 
 - MSc Marketing Analytics
-    - Data preparation and workflow management (*new*, https://dprep.hannesdatta.com)
-    - Online data collection and management (*new*, https://odcm.hannesdatta.com)
+    - Data preparation and workflow management (https://dprep.hannesdatta.com)
+    - Online data collection and management (https://odcm.hannesdatta.com)
     - MSc Thesis supervision (https://thesis.hannesdatta.com)
 - Other inititatives
   - Tilburg Science Hub (https://tilburgsciencehub.com)
   - YouTube channel (https://youtube.com/c/hannesdatta)
-  - My public code (https://github.com/hannesdatta)
+  - My code (https://github.com/hannesdatta)
   - More about my work (https://hannesdatta.com)
 
 
@@ -103,9 +112,9 @@ Getting to know you
 ========================================================
 incremental: true
 
-- Passion, talents
-- Why are you enrolled in this program?
-- Data experience?
+- What's your background - previous education (e.g., program)?
+- Any experience in Python (or other programming languages)?
+- What are your passions & talents? (+ why I am asking you this...)
 
 
 Motivation for course
@@ -123,7 +132,7 @@ incremental: true
 
 - investigate music streaming ([How did music consumption change with Spotify?](https://tiu.nu/spotify))
 - [monitored Spotify's user interface and make lists of new releases](https://github.com/hannesdatta/data-spotify-promotions-releases)
-- investigate [playlist ecosystem](https://github.com/hannesdatta/data-spotify-playlist-ecosystem) with APIs (tune in to Radio 1 today at 2pm...)
+- investigate [playlist ecosystem](https://github.com/hannesdatta/data-spotify-playlist-ecosystem) with APIs
 - [scraped reviews at Amazon.com](https://journals.sagepub.com/doi/abs/10.1509/jm.11.0560)
 - investigating "video streaming wars" (e.g., Netflix versus Disney+, when do consumers use multiple streaming services?), see [trakt.tv]()
 - share code [on GitHub](https://github.com/hannesdatta)
@@ -152,7 +161,7 @@ What is scraping, and what are APIs?
 - e.g., as a developer, interact with Facebook, Instagram, Twitter
 - as a researcher, construct data set from analytics firms
 
-Quick web scraper (I)
+Quick web scraper in Python
 ========================================================
 incremental: true
 class: small-code
@@ -169,19 +178,7 @@ url = 'https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html
 book_request = requests.get(url)
 ```
 
-* Finally, let's explore the "content" of the page
-
-```{python, eval = TRUE}
-print(book_request.text[5710:5900])
-```
-
-
-Quick web scraper (II)
-========================================================
-incremental: true
-class: small-code
-
-* Extracted text looked jibberish, so let's "get" only the product title (we use "tags" for this)
+* Finally, let's retrieve the product title (we use HTML tags for this)
 
 ```{python, eval = TRUE}
 from bs4 import BeautifulSoup
@@ -196,15 +193,13 @@ print(soup.find('h2'))
 
 * Works with any website, even anything you see in a browser (e.g., apps)
 
-Quick APIs (I)
+Quick APIs in Python
 ========================================================
 class: small-code
 
 * APIs are official interfaces by firms for programmers to extract or submit data, or obtain access to an algorithm
 
 * They work *like* websites (i.e., you can call them with the same snippets as before), but usually you need to pay or at least sign up for the service
-
-* ...unless it's about skating, of course ;)
 
 ```{python, include=FALSE}
 # Let's pretend we're a real user
@@ -213,34 +208,15 @@ headers = {'authority': 'www.reddit.com', 'cache-control': 'max-age=0', 'upgrade
 
 ```{python, eval = TRUE}
 # let's get some data from the skating community
-api_request = requests.get('https://www.reddit.com/r/skating/.json', headers=headers)
-api_request.text[1:100]
+api_request = requests.get('https://www.reddit.com/r/skating/about/.json', headers=headers)
 ```
 
-Quick (APIs) (II)
-==========================================
-class: small-code
-
-* or let's structure the output in the JSON format
+* let's structure the output in the JSON format
 ```{python, eval = TRUE}
-api_request.json().get('data').get('children')[0].get('data').get('selftext')
+api_request.json().get('data').get('subscribers')
 ```
 
-Quick APIs (II)
-=============================
-class: small-code
-
-* we can now "loop" through all of the page's contents
-
-```{python, eval = TRUE}
-for item_on_page in api_request.json().get('data').get('children'):
-  print(item_on_page.get('data').get('selftext'))
-```
-
-* Creepy?! Relax. You'll learn it all.
-
-
-Opportunities from web scraping
+Opportunities with web data
 ========================================================
 incremental: true
 
@@ -252,9 +228,20 @@ incremental: true
 Getting inspired...
 ========================================================
 
-*What are cool websites/services you're currently using a lot?!*
+- *What are cool websites/services you're using often?!*
+
+- *What are important societal issues right now that directly or indirectly affect your lives?*
+
+- *As a marketer, what do you feel will shape our lives in 2-5 years?*
 
 Let's talk about it right now...
+
+
+<!-- 
+
+bring in post its and put them on a board
+
+-->
 
 Why to care (as a marketer...) (I)
 ========================================================
@@ -291,7 +278,7 @@ Web data versus other marketing data (II)
 Web data versus other marketing data (III)
 =============================================
 
-- collection data at scale!
+- collecting data at scale!
   - unprecedent: it's totally automatic (but prone to errors)
   - need to put *monitoring* procedures in place
   - data is not documented, and there is no direct way to ask questions about the data (sampling?! generalizability?)
@@ -308,12 +295,19 @@ Learning Goals of this course
 ========================================================
 incremental: true
 
-- Explain how web data has been used in the __academic marketing literature__
--	__Identify web data sources__ and evaluate their value in the context of a specific research question or business problem
-- Assess research fit, resource use and mitigate any legal or ethical issues before retrieving data, i.e., __extraction design__
-- __Collect data__ via web scraping and Application Protocol Interfaces (APIs) by mixing, extending, and repurposing code snippets
-- __Document and archive collected data__ and make it available for public (re)use
-- __Track__, evaluate and share your progress on the course's learning goals
+- **Explain** how to use web data for **creating marketing insight**
+- **Select web data sources** and evaluate their value to inform a specific research context or business problem
+- **Design the web data collection** while balancing validity, technical feasibility, and exposure to legal/ethical risks
+- **Collect data** via web scraping and Application Programming Interfaces (APIs) by mixing, extending, and repurposing code snippets
+- **Document and archive collected data** and make it available for public (re)use
+- **Track, evaluate, and share progress** on the course’s learning goals
+
+Welcome to Pulse!
+========================================================
+
+- Login at [http://pulse.tilburg-digital.com]() (live demonstration)
+
+![Pulse screenshot](pulse.png)
 
 
 Positioning in the study program
@@ -321,29 +315,19 @@ Positioning in the study program
 
 ![odcm](odcm_positioning.png)
 
-Course structure
+Course structure and grading
 ========================================================
 
-- Weekly modules, structured along the [methodological framework](https://tiu.nu/scraping)
+- Weekly modules, structured along the methodological framework
+  - On-campus lectures and tutorials
   - Self-study
-  - Tutorials
-  - Live stream for feedback & immersive activities
+  - Online feedback and coaching sessions
+  
+- Project in which you put into practice your skills (45% of your grade)
 
-- Project in which you put into practice your skills from the weekly modules
+- Online computer exam (50% of your grade)
 
-
-Tutorials
-========================================================
-
-- Themes
-  - Software Installation & Python Bootcamp
-  - Webdata for dummies
-  - Web scraping 101 & APIs 101
-  - Web scraping & APIs Advanced [optional]
-
-- Access
-  - run on your own computer (preferred, as you have to run your data collection for a stable experience on your own PC anyways)
-  - explore/"try out" in Google Colab! (--> example)
+- Tracking learning process in Pulse (5% of your grade)
 
 Team project
 ========================================================
@@ -352,11 +336,10 @@ Team project
   - scrape data via web sites or APIs
   - work through the entire method framework
   - receive feedback by students and me (your coach)
-  - [project ideas!](https://odcm.hannesdatta.com/docs/course/project/projectideas)
+  - [project ideas](https://odcm.hannesdatta.com/docs/project/resources/projectideas/) and [past projects](https://odcm.hannesdatta.com/docs/project/resources/pastprojects/)
 
 - evaluation
-  - specifics are on the [course website](https://odcm.hannesdatta.com/docs/course/project)
-  - we'll have a grading rubric (which is already available)
+  - [grading rubric available](https://odcm.hannesdatta.com/docs/project/grading/)
   - self- and peer assessment used
 
 __Please make this a project you can tell friends & family about. Make it matter.__
@@ -370,41 +353,24 @@ Visit [https://odcm.hannesdatta.com]()!
 - It's open education, __so spread the word!__
 - Course website is your #1 resource, Canvas only used for
   - posting important announcements,
-  - sign up for teams,
-  - submitting data challenges/projects, and
-  - discussion board.
+  - sign up for teams, and
+  - submitting data challenges/projects.
 
 - Do all students have access to Canvas?
 
-Common struggles & Tips
+- Can all students login into [http://pulse.tilburg-digital.com]()?
+
+Common struggles & tips
 ========================================================
 
-- Take time to become acquainted with the format (e.g., no Canvas but website & Pulse)
-- Can be tough at first, but you will become more experienced rapidly!
--	It may be very difficult to follow DPREP and ODCM simultaneously, but the skills you learn will be very useful for your coming courses, Master Thesis & future career!
-
-<br><br>
--	Some useful tips:
+- Take time to become acquainted with the course (e.g., no Canvas but website and Pulse)
+- Can be tough at first, but you will gain experience rapidly!
+-	It can be overwhelming to follow dPrep and oDCM simultaneously, but the skills you learn are important for your course work, Master Thesis & future career!
+-	Easing your start-up pain
   -	Start preparing early on (the first weeks will be the most challenging!)
-  -	Have the same group members across courses
-  -	Collaborate with each other and try to help one another!
-
-Live streams
-========================================================
-
-- use the public chat
-- use it like on Twitch or YT (massively)!
-- help me as a moderator if I miss questions
-- maybe share screen (install Teamviewer via [tilburgsciencehub.com/get/teamviewer]())
-- if you have, use two screens (one to code, one to view colleagues/slides)
-- recordings posted on Canvas (default); alternative is YouTube
-
-Grading
-========================================================
-
-- Team project, with self- and peer assessment (45%)
-- (Online) computer exam (50%)
-- Tracking learning process (5%)
+  -	Have the same group members across dPrep and oDCM
+  -	Collaborate with each other and try to help one another, also across teams!
+  - Be in touch via WhatsApp, and [install TeamViewer](https://tilburgsciencehub.com/get/teamviewer)
 
 <!--
 ::: notes
@@ -450,10 +416,10 @@ Steps of escalation & getting in touch
 
 When you run into trouble, this is your way out!
 
-1. Try to find the info on the course website (+ updates!)
+1. Try to find the info on the course website or Pulse
 2. Ask Google and Stackoverflow
-3. Ask friend/classmate (form learning groups, e.g., coordinate via discussion board)
-4. Can it wait? Defer to live streams.
+3. Ask friend/classmate (form learning groups)
+4. Can it wait? Defer to lecturer or feedback sessions.
 5. If it can't wait: be in touch with me (--> next slide!)
 
 <!--
@@ -474,8 +440,8 @@ Use of WhatsApp
 
 ![WhatsApp](wa_qr.png)
 
-- Let me know youro first names!
-- Email is not so optimal
+- Let me know your first names!
+- Being in touch via email is not so optimal (unless for official matters)
 
 
 What's in for you?
@@ -504,9 +470,14 @@ Please tell me __what would make this course a success__ for you
 :::
 -->
 
-Getting started
+Next steps
 ========================================================
 
+- We will continue with our Python bootcamp after a break
+- Haven't followed the installation guide? Check it out on the course page now! (tutorials -- software installation)
+
+<!--
+- We w
 - Install software! (this was required preparation before the course started...)
 
 - Do the Python Bootcamp (after all, you need the know the basics!)
@@ -516,6 +487,6 @@ Getting started
 - Work hard...!
 
 - ...and be in touch on WhatsApp for questions/feedback!
-
+-->
 
 __Any questions so far?!__

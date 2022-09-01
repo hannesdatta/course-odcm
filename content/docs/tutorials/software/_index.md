@@ -33,6 +33,6 @@ Please follow the installation guide for [Python via Anaconda](https://tilburgsc
 
 ### Step 2) Getting to know Python
 
-Please follow the introduction course to Python on Datacamp, __chapters 1-3__. Novices will need about 3-4 hours.
+Eager to learn more? You can already follow the introduction course to Python on Datacamp, __chapters 1-3__. Novices will need about 3-4 hours. If you don't have the time, don't worry. In your first course week, we have set aside some time to work through the tutorial and exercises.
 
 {{< button href="https://learn.datacamp.com/courses/intro-to-python-for-data-science" >}}Start now!{{< /button >}}

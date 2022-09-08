@@ -1,0 +1,365 @@
+oDCM - Web Data for Dummies (Tutorial)
+========================================================
+author: Hannes Datta
+date:
+autosize: true
+
+<style>
+.small-code pre code {
+  font-size: 1em;
+}
+</style>
+
+<!--#
+
+https://support.rstudio.com/hc/en-us/articles/200486468
+-->
+
+```{r setup, echo = FALSE}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE)
+library(reticulate)
+py_install("requests")
+py_install("bs4")
+```
+
+Welcome to oDCM!
+========================================================
+
+We're about to start with __today's tutorial ("web data for dummies")__.
+
+- If you haven't done so, open https://odcm.hannesdatta.com/docs/tutorials/webdata-for-dummies/
+- Coaching session for team activity #1 at the beginning of next week
+  - did you already enroll? (link on Canvas)
+  - submission on Canvas by Tuesday, 9am
+- Login at [http://pulse.tilburg-digital.com]() to explore this week's to do's
+
+Agenda
+========================================================
+
+- In-class
+  - Go through in-class tutorial ("webdata for dummies in class.ipynb")
+  - Selection of exercises
+  - Will spend some time on "Fields of Gold" as well
+- After class
+  - Complete exercises yourselves
+
+What are differences between web scraping and APIs?
+========================================================
+incremental: true
+
+- official vs. unofficial data access
+- scaling (APIs scale more)
+- web scraping largely free, APIs for-pay
+- APIs are linchpin of internet economy
+- see comparison in [Web Appendix of Fields of Gold](https://journals.sagepub.com/doi/suppl/10.1177/00222429221100750/suppl_file/sj-pdf-1-jmx-10.1177_00222429221100750.pdf)
+
+Framework
+=======
+
+![](https://journals.sagepub.com/na101/home/literatum/publisher/sage/journals/content/jmxa/2022/jmxa_86_5/00222429221100750/20220801/images/large/10.1177_00222429221100750-fig2.jpeg)
+
+- Focus in __team project__ at this stage: source selection
+- Focus in Python tutorial: __collection design__
+
+We get started with web scraping
+=================
+
+- Key elements of websites
+  - HTML
+  - CSS
+  - JS
+<br>
+- Examples: 
+  - inspecting [tilburguniversity.edu]()
+  - toybox at codepen: https://codepen.io/rcyou/pen/QEObEk/
+  - [books.toscrape.com]()
+  
+Find elements in HTML
+================
+
+- Search strategies
+  - tags, e.g., `<table>`, `<h1>`, `<div>`
+  - attributes, e.g., `<table id="example-table">`
+  - classes, e.g., `<table class="striped-table">`
+  - styles, e.g., `<table style="width:95%;">`
+
+
+__One or more of these search strategies need to be combined to extract information.__
+
+__DO__: 
+  - Open https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html
+  - How to locate book title, price, in-stock availability, and number of stars?
+
+Getting the website into Python
+==================
+
+```{python, eval=TRUE}
+import requests
+
+# make a get request to the "A Light in the Attic" webpage
+url = 'https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html'
+user_agent = {'User-agent': 'Mozilla/5.0'} # with the user agent, we let Python know for which browser version to retrieve the website
+book_request = requests.get(url, headers = user_agent)
+
+# return the source code from the request object
+book_source_code = book_request.text
+```
+
+- Let's save the website in a file and take a look at it
+- Let's change the user agent of a mobile device, and look at it again
+
+__Key problem when scraping: What you see while inspecting the site is not what you retrieve in Python!__
+
+Extending scraping code
+==================
+
+(corresponds to exercise 1.4)
+
+1. Let's write a function `def download_website(url)` to download data and print information to screen.
+2. Adapt function to `def save_website(url)`, storing the website in a file.
+3. Write a loop to extract raw HTML source code for [these books](https://books.toscrape.com/catalogue/category/books_1/index.html)
+
+Tips: 
+- Status messages with variables: `print(f'Done retrieving {url}')`
+
+BeautifulSoup 101
+================
+
+- Why? Query the HTML code!
+- Think of it as a pipeline: download data --> pump to BeautifulSoup --> query data
+
+```{python, eval=TRUE}
+import requests
+from bs4 import BeautifulSoup
+url = 'https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html'
+user_agent = {'User-agent': 'Mozilla/5.0'} 
+book_request = requests.get(url, headers = user_agent)
+soup = BeautifulSoup(book_request.text)
+print(soup.find('h1').get_text())
+```
+
+- Change the snippet to __show the price__! Tip: use `.find(class_ = 'classname')`
+
+<!--
+print(soup.find(class_ = 'price_color').get_text())
+-->
+
+DO: BeautifulSoup exercises
+=============
+
+- Write a function to extract the following information:
+  - product title,
+  - price,
+  - in-stock availability, and
+  - the number of stars.
+
+- Tips
+  `.find(class_='class-name')` for classes
+  - `len()` for counting
+  - you may need to use `.find_all()`
+
+Wrapping results into JSON data
+===========
+
+- JSON is most flexible format, supports "hierarchical data"
+- Demonstrate how to create object
+- "Full" JSON objects, vs. __new-line separated JSON objects__
+  - Full: the entire FILE (e.g., `data.json`) is ONE giant JSON object
+  - New line separation: each line in your file has one JSON object
+    
+Writing a complete web scraper
+==============
+
+- Have list of seeds to start up data collection (here, book urls)
+- loop through list of URLs
+  - store raw data for diagnostic purposes
+  - extract relevant data to JSON file with raw data
+- coding practices
+  - modularize code as much as possible
+  - ensure code runs top-down
+
+APIs
+=====
+incremental: true
+
+- Standard way for exchanging data, functions or algorithms
+- __Which APIs did you already encounter/explore?__
+- Reddit is super easy to use - other APIs require advanced authentication procedures
+- Structure corresponds to web scraping
+  - have list of seeds (e.g., community names)
+  - store data in new-line separated JSON files
+  - parse to CSV 
+
+Exercises with Reddit
+======
+
+__Please work on exercise 2.3.__
+
+```{python, eval=FALSE}
+import requests
+url = 'https://www.reddit.com/r/marketing/about/.json'
+headers = {'authority': 'www.reddit.com', 'cache-control': 'max-age=10', 'upgrade-insecure-requests': '1', 'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'navigate', 'sec-fetch-user': '?1', 'sec-fetch-dest': 'document', 'accept-language': 'en-GB,en;q=0.9'}
+response = requests.get(url, headers=headers)
+json_response = response.json()
+```
+
+1. leave out headers - what happens?
+2. wrap in while loop & pausing for five seconds: print out active users
+3. write `get_usercount()` function
+
+Exercises with Reddit
+===============
+
+__Please work on exercise 2.4.__
+
+1. extend to 10 subreddits
+2. enhance JSON data with time stamp 
+
+Next steps
+=============
+
+- Work on team activity #1
+  - online coaching session next week __Tuesday__
+  - sign-up for team slots (link available on Canvas!)
+- 
+
+Quick web scraper in Python
+========================================================
+incremental: true
+class: small-code
+
+* Let's first import some packages
+
+```{python, eval=TRUE}
+import requests
+```
+
+* And then call a particular URL (check it out in your browser!)
+```{python, eval = TRUE}
+url = 'https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html'
+book_request = requests.get(url)
+```
+
+* Finally, let's retrieve the product title (we use HTML tags for this)
+
+```{python, eval = TRUE}
+from bs4 import BeautifulSoup
+soup = BeautifulSoup(book_request.text)
+print(soup.find('h1'))
+```
+
+* Or this...
+```{python, eval = TRUE}
+print(soup.find('h2'))
+```
+
+* Works with any website, even anything you see in a browser (e.g., apps)
+
+Quick APIs in Python
+========================================================
+class: small-code
+
+* APIs are official interfaces by firms for programmers to extract or submit data, or obtain access to an algorithm
+
+* They work *like* websites (i.e., you can call them with the same snippets as before), but usually you need to pay or at least sign up for the service
+
+```{python, include=FALSE}
+# Let's pretend we're a real user
+headers = {'authority': 'www.reddit.com', 'cache-control': 'max-age=0', 'upgrade-insecure-requests': '1', 'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'navigate', 'sec-fetch-user': '?1', 'sec-fetch-dest': 'document', 'accept-language': 'en-GB,en;q=0.9'}
+```
+
+```{python, eval = TRUE}
+# let's get some data from the skating community
+api_request = requests.get('https://www.reddit.com/r/skating/about/.json', headers=headers)
+```
+
+* let's structure the output in the JSON format
+```{python, eval = TRUE}
+api_request.json().get('data').get('subscribers')
+```
+
+Opportunities with web data
+========================================================
+incremental: true
+
+- discover/document novel phenomena (e.g., new platforms/technologies)
+- boost relevance for managers (e.g., because of using data *they* care about)
+- improving methods (e.g., get data to try out new methods, such as review data & text analysis, images, videos)
+- improved inferences (i.e., get more accurate results)
+
+Getting inspired...
+========================================================
+
+- *What are cool websites/services you're using often?!*
+
+- *What are important societal issues right now that directly or indirectly affect your lives?*
+
+- *As a marketer, what do you feel will shape our lives in 2-5 years?*
+
+Let's talk about it right now...
+
+
+<!-- 
+
+bring in post its and put them on a board
+
+-->
+
+Why to care (as a marketer...) (I)
+========================================================
+
+![odcm](use_of_webdata.png)
+
+Why to care (as a marketer...) (II)
+========================================================
+
+![odcm](citations.png)
+
+
+Web data versus other marketing data (I)
+=============================================
+
+*Why do we need a course on this? Isn't this how research is always done?*
+
+__Yes, but collecting *web data* is different from other datasets!__
+
+- data source selection
+  - finding the *right* data source may be difficult as __many__ potential alternatives exist
+  - differ in delivery formats (website versus API, compared to CSV/databases)
+  - access to data that is *not* available commercially (or that a firm would not like to share)
+
+Web data versus other marketing data (II)
+=============================================
+
+- extraction design
+  - which information to select (which is available?!)
+  - type of variables (sales is rare; review scores are abundant)
+  - different stakeholders that could potentially be addressed
+  - need to tackle legal and ethical issues
+
+Web data versus other marketing data (III)
+=============================================
+
+- collecting data at scale!
+  - unprecedent: it's totally automatic (but prone to errors)
+  - need to put *monitoring* procedures in place
+  - data is not documented, and there is no direct way to ask questions about the data (sampling?! generalizability?)
+
+Each project is totally unique - that's why there is no universal "best way" to approach things...
+
+Methodological Framework
+========================================================
+
+![odcm](framework.png)
+
+
+Learning Goals of this course
+========================================================
+incremental: true
+
+- **Explain** how to use web data for **creating marketing insight**
+- **Select web data sources** and evaluate their value to inform a specific research context or business problem
+- **Design the web data collection** while balancing validity, technical feasibility, and exposure to legal/ethical risks
+- **Collect data** via web scraping and Application Programming Interfaces (APIs) by mixing, extending, and repurposing code snippets
+- **Document and archive collected data** and make it available for public (re)use
+- **Track, evaluate, and share progress** on the courseb

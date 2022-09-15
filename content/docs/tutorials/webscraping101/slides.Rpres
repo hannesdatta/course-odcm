@@ -27,22 +27,31 @@ Welcome to oDCM!
 
 We're about to start with __today's tutorial ("web scraping 101")__.
 
-- If you haven't done so, open https://odcm.hannesdatta.com/docs/tutorials/webdata-101/
-- Recap coaching session for team activity #1
-  - explore broadly! ("universe discovery!")
-  - compare sources thoroughly 
-- Prepping for next coaching
-   - get started soon w/ prototyping!
-  
-- Login at [http://pulse.tilburg-digital.com]() to explore this week's to do's
 
-Agenda
+- If you haven't done so, open slides at https://odcm.hannesdatta.com/docs/tutorials/webdata-101/
+- Today's (live) code is available at [tiu.nu/livecoding]() (refresh needed)
+- You will need to use __Jupyter Notebook on your laptops__
+
+
+<!--
+- Login at [http://pulse.tilburg-digital.com]() to explore this week's to do's
+-->
+
+Before we start
 ========================================================
 
+- Recap coaching session for team activity #1
+  - explore broadly! ("universe discovery!") --> check challenge #1.1
+  - compare sources thoroughly --> e.g., comparison table + challenge #1.2
+<br>
+
+- Any other issues?
+
+
+Agenda
+=======
 - In-class
-  - Go through in-class tutorial ("web scraping 101")
-  - Selection of exercises
-  - Will spend some time on "Fields of Gold" as well
+  - Go through selected issues of "web scraping 101"
   - Will use different sites (e.g., Twitch)
 - After class
   - Complete exercises yourselves
@@ -54,8 +63,7 @@ incremental: true
 - So far, we have done this
   - `requests` (to get) --> `beautifulsoup` (to extract information, "parse")
   
-- But... what about dynamic websites?
-  - Run the snippet below and open `amazon.html`  
+- __DO:__ Run the snippet below and open `amazon.html`  
 ```{python, eval=FALSE}
 import requests
 header = 
@@ -63,12 +71,20 @@ f = open('amazon.html', 'w', encoding = 'utf-8')
 f.write(requests.get('https://amazon.com', headers =  {'User-agent': 'Mozilla/5.0'}).text)
 f.close()
 ```
+
+__Can you explain what happened?__
+
+<!--
+But... what about dynamic websites?
+  
   - Some sites block requests from the get-go, even w/ headers.
+-->
 
 Alternative ways to make connections
 ========
 
-- Selenium actually __opens__ a browser, and in so doing simulates browsing behavior.
+- Many dynamic sites require what I call "simulated browsing"
+
 - Try this:
 ```{python, eval=FALSE}
 !pip install webdriver_manager
@@ -85,11 +101,14 @@ url = "https://amazon.com/"
 driver.get(url)
 ```
 
-- See your browser?
-- Beware of rerunning code - a new instance will run
+- See your browser opening up?
+- Beware of rerunning code - a new instance will run each time!
+
 
 Continuing with beautifulsoup
 =========
+
+- We can convert the site's source code (`page_source`) to `BeautifulSoup`, and proceed as always
 
 ```{python, eval=FALSE}
 from bs4 import BeautifulSoup
@@ -100,7 +119,8 @@ for el in soup.find_all(class_ = 'a-section'):
     if title is not None: print(title.text)
 ```
 
-Do: Twitch.tv
+
+Do: Scraping Twitch.tv using `selenium`
 =====
 
 1. Use selenium to open `twitch.tv`
@@ -109,17 +129,20 @@ Do: Twitch.tv
 import time
 url = "https://twitch.tv/"
 driver.get(url)
-time.sleep(3)
+time.sleep(3) # wait for a few seconds for everything to be loaded
 ```
 
 __Tip: Use the code snippet from above first to open the browser window!__.
 
-2. Extend code to be able to use BeautifulSoup, and find all links (tag is `a`). Recall: `soup.find_all()`
+2. Extend code to be able to use BeautifulSoup, and find all links (tag is `a`). Recall you can use `soup.find_all()`
+
 
 Finding more specific links
 ===========
 
-- Suppose we only want streams, let's check out which additional attribute to search for.
+- So far, we only searched for tags (`a`), or classes (`class_='classname'`).
+- We can also search for `attribute values`.
+- Suppose we only want to obtain the links to __streams__, we can filter for values of a particular attribute, e.g., `"data-test-selector"` being `"TitleAndChannel"`.
 
 ```{python, eval = FALSE}
 
@@ -129,7 +152,7 @@ streams = soup.find_all('a', {'data-test-selector':"TitleAndChannel"})
 
 __DO:__
 
-- Write some code to show all the stream names!
+- Write a code snippet to collect all stream names and corresponding URLs (`['href']`), and storing them in a list of dictionaries.
 
 
 Framework
@@ -139,39 +162,62 @@ Framework
 
 Today: zooming in more on __collection design__
 
-Stage 1: Which information to extract
-========
-
-- Challenges in Table 3 (#2.1) in tiu.nu/scraping/Fields of Gold.
-  - Validity
-  - Legal/Ethical
-  - Technical
-  
-__Do:__
-
-1. Which information would you be interested?
-2. Has all of the information always been available? Check archive.org!
-3. Write some code to capture information of interest
-4. Wrap code in a function to parse information of interest, write to dictionary
-
-Stage 2: For which sample?
+Stage 2: How to sample?
 =======
 
-- Challenges in Table 3 (#2.2) in tiu.nu/scraping/Fields of Gold.
+- Many pages on a website (here, Twitch) could serve as starting points for a data collection.
+- For example, starting from the homepage, one samples from *currently active channels on Twitch*.
+- But... such a sample is uninformative of *all* shows available on Twitch.
+- In your web data projects, you need to think about *how to sample from the site*.
 
-__Do:__ What potential sampling frames could you come up with? "How to start your data collection"?
+- __Do: Identifying sampling frames on Twitch__
+  - Using the suggestions for challenge #2.2 (Table 3) in [tiu.nu/scraping](), identify potential sampling frames.
+  
 
-- Let's extract list of currently running shows, using snippet from above. Store URL of stream in dictionary.
+Stage 1: Which information to extract
+========
+incremental: true
+
+- Let's open one of the currently running shows and explore what information we can see
+- Does that trigger any "research ideas"?
+- Let's now broaden our perspective, by considering some of the issues discussed in challenge #2.1 in Table 3.
+  - e.g., live vs. archival data 
+  - e.g., limits to iterating through pages
+  - and many other validity, legal/ethical and technical issues
+
+__DO:__
+
+1. Can you develop a code snippet that extracts some of the desired information?
+2. Let's wrap the code in a function which stores the desired information in a dictionary.
+
 
 Stage 3: At which frequency
 =======
 
+- We can decide how often to capture information from a site
+  - e.g., once, every 5 minutes, every day
+- Potential gains in extracting data multiple times
+- Extraction limits & technically feasible sample size!
+- More issues explained in table 3, challenge #2.3
+
+
+
 Stage 4: How to process data during collection
 ==========
 
-- let's retain raw data
-- let's parse data on the fly
+- value of retaining raw data
+- parsing data on-the-fly
+
+Finalizing scraper
+=======================
+
+Let's wrap the data collection together in one executable file.
+
 
 Next steps
 ===========
 
+- Prepping for next coaching
+   - get started w/ prototyping data extraction
+   - consider selenium!
+   - pitch your idea to friends - do they see value?

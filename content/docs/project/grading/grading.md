@@ -64,7 +64,7 @@ Weights for each component of the grading rubric below are indicated in brackets
 
 ### **1. Documentation**
 
-Please follow [Datasheets for Datasets](https://arxiv.org/pdf/1803.09010.pdf) (2018) in writing your documentation. Please get started by using the [template](../Datasheets_for_DataSets.zip), and fill in __all (sub-)questions in sections 1-5__.
+Please follow [Datasheets for Datasets](https://arxiv.org/pdf/1803.09010.pdf) (2018) in writing your documentation. Please get started by using the [template](/docs/project/Datasheets_for_DataSets.zip), and fill in __all (sub-)questions in sections 1-5__.
 
 In the grading details below, numbers (#1, #1.4, etc.) refer to sections in the final documentation.
 

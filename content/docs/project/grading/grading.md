@@ -35,7 +35,7 @@ src\reporting\analysis.R <-- final source code used to generate statistics/insig
 
 
 {{< hint info>}}
-***Be ready for publication**
+**Be ready for publication**
 
 Please submit the data package in such way that it can be made publicly available on the internet.
 

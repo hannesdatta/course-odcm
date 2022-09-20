@@ -16,7 +16,7 @@ Collecting data via web scraping and APIs requires practice. Together with your 
 At the end of the course, you will submit your collected data, code, and a documentation.
 
 {{% hint info %}}
-__The focus lies on *completing an entire data collection project*. Keep each stage of your project *manageable* and *feasible*.__
+__The focus lies on *completing an entire data collection project*. Keep each stage of your project *manageable* and *feasible*. Your project will ultimately be written up as a proper data documentation, following [this paper](https://arxiv.org/pdf/1803.09010.pdf) and corresponding [template download](Datasheets_for_DataSets.zip).__ Head over to the [grading details](grading) to find out more!
 {{% /hint %}}
 
 

@@ -18,5 +18,5 @@ draft: false
 
 ## Getting started
 
-1. In-class tutorial (<a href = 'api-101.ipynb' download>download</a>, [Google Colab](https://colab.research.google.com/drive/1zGIh489ZPYhy1HVkZoJP1Co3XGGT5gzC?usp=sharing#scrollTo=HQ7TFPJ3OyQX))
+1. In-class tutorial (<a href = 'api-101.ipynb' download>download</a>, [Google Colab](https://colab.research.google.com/drive/16Ikudc5WJBP0kvDJXEjv3ik1aKbAm9Z7)
 2. After-class exercises (about 1-2 hours; contained at the end of the tutorial)

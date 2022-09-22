@@ -1,0 +1,252 @@
+oDCM - APIs 101 (Tutorial)
+========================================================
+author: Hannes Datta
+date:
+autosize: true
+
+<style>
+.small-code pre code {
+  font-size: 1em;
+}
+</style>
+
+<!--#
+
+https://support.rstudio.com/hc/en-us/articles/200486468
+-->
+
+```{r setup, echo = FALSE}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE)
+library(reticulate)
+py_install("requests")
+py_install("bs4")
+```
+
+Welcome to oDCM!
+========================================================
+
+We're about to start with __today's tutorial ("API 101")__.
+
+- If you haven't done so, open slides at https://odcm.hannesdatta.com/docs/tutorials/api-101/
+- Today's (live) code is available at [tiu.nu/livecoding]() (refresh needed)
+- You can work in Google Colab throughout this class
+
+
+<!--
+- Login at [http://pulse.tilburg-digital.com]() to explore this week's to do's
+-->
+
+Before we start
+========================================================
+
+- Webdriver and Selenium -- organizing support?
+- Last week's tutorial
+  - remaining questions?
+  - need specific pointers so I can provide solutions
+- Team projects
+  - enthousiastic about many of your ideas
+  - get started building your prototypes
+  - API authentication will be pain point - highly idiosyncratic!
+- Pulse: great to see so many using it -- feedback appreciated
+<br>
+- Any other issues?
+
+
+Agenda
+=======
+- In-class 
+  - "tutorial-style API" -- https://icanhazdadjoke.com/
+  - real life w/ Reddit -- https://reddit.com
+- After class (complete tutorial yourselves)
+
+What are APIs?
+============
+
+- APIs are connectors within and between platforms and databases
+  - backend to frontend: e.g., database <> Reddit API <> website
+  - backend to backend: e.g., Twitter <> Twitter API <> some trading software
+- Mostly made for developers
+- Available usually only after registration and approval
+
+Technical differences between APIs and web scraping
+============
+
+- Web scraping
+  - not always 100% clear whether allowed
+  - have to structure (unstructured) HTML code
+<br>
+- API
+  - good if you have permission (but, be realistic!)
+  - structured JSON data
+
+Making a connection with an API
+=========
+class: small-code
+
+- Probably the most difficult part w/ APIs is to get authenticated
+  - recall: need platform's permission!
+  - this API doesn't require authentication
+- Find an endpoint (like a page; [check documentation](https://icanhazdadjoke.com/api))
+  
+- __DO:__ Run the snippet below (and again, and again)
+```{python, eval=FALSE}
+import requests
+search_url = "https://icanhazdadjoke.com/search"
+response = requests.get(search_url, 
+                        headers={"Accept": "application/json"}, 
+                        params={"term": "cat"})
+joke_request = response.json()
+print(joke_request)
+```
+
+1. Can you explain what happens?
+2. Modify the search parameter to search for `dog` jokes (rather than `cat` jokes!)
+
+How can we make sense of JSON output?
+========
+
+- JSON data is structured in a hierarchy
+  - use JSONviewer.stack.hu to make sense of it
+  - alternatively, write to a file and view in VS Code
+  - many other possibilities exist (e.g., in-browser) - check what you like best!
+  
+__DO:__ Run this snippet to write JSON output to a file! Inspect it using JSONviewer or VS Code!
+
+```{python, eval=FALSE}
+import json
+f=open('jokes.json', 'w', encoding='utf-8')
+f.write(json.dumps(joke_request))
+f.close()
+```
+
+Understanding parameters in API calls
+===============
+
+- Many ways to "submit" parameters to an API
+  - directly in URL, e.g., `myapi.com/search/cats_and_dogs`
+  - w/ parameters in URL, e.g., `myapi.com/search/query=cats_and_dogs`
+  - in __header__ of request
+<br>
+__The documentation will tell you what is required!__
+
+Do: Iterating through API endpoints
+=========
+
+- Remember iterating through pages on a website to "view" data?
+- APIs know the same concept!
+
+1. Run the snippet below and say how many jokes there are
+2. How many pages you would have to iterate through!
+3. Print the number of pages from (2)
+
+```{python, eval=FALSE}
+import requests
+search_url = "https://icanhazdadjoke.com/search"
+response = requests.get(search_url, 
+                        headers={"Accept": "application/json"})
+joke_request = response.json()
+print(joke_request)
+```
+
+Understanding how to interate
+======
+
+First step is always to understand how to iterate. So let us try it out!
+
+```{python, eval=FALSE}
+import requests
+search_url = "https://icanhazdadjoke.com/search"
+response = requests.get(search_url, 
+                        headers={"Accept": "application/json"},
+                        params={"iteration": 1})
+joke_request = response.json()
+print(joke_request)
+```
+
+__DO:__ 
+
+- Try changing the page numbers to see whether the iteration works!
+- Check the [documentation](https://icanhazdadjoke.com/api) for the endpoint `/search` -- try to debug the snippet!
+
+Looping through all pages
+=====
+
+- Let's first try constructing a loop that counts from `min(pages)` to `max(pages)`
+- I always google myself for snippets - e.g., [here](https://www.google.com/search?client=firefox-b-d&q=loop+through+sequence+python)
+
+```{python, eval=FALSE}
+for x in range(6):
+  print(x)
+```
+
+__Do:__ Modify the snippet below so that it loops through `joke_request['total_pages']`, starting with `1` (and not with `0`)
+
+```{python, eval=FALSE}
+for x in range(joke_request['total_pages']):
+  print(x+1)
+```
+
+Tying everything together
+=============
+
+We can now combine our learnings to build a function that extracts all jokes to new-line separated JSON files.
+
+- Implement it step-by-step
+- Also load packages!
+- Save as `.py` file and test whether it runs from command prompt/terminal
+
+__Solution on next slide...__
+
+
+Solution: Tying everything together
+=============
+class: small-code
+
+```{python, eval=FALSE}
+import requests
+import json
+
+def get_jokes(term='cat'):
+  search_url = "https://icanhazdadjoke.com/search"
+  # get the number of jokes first
+  response = requests.get(search_url, 
+                          headers={"Accept": "application/json"},
+                          params = {"term": term})
+  joke_request = response.json()
+  total_pages = joke_request['total_pages']
+  print(f'Retrieving {total_pages} pages...')
+  
+  joke_collection = []
+  
+  for page in range(total_pages):
+    print(f'  Getting data from page {page+1}')
+    response = requests.get(search_url, 
+                            headers={"Accept": "application/json"},
+                            params = {"term": term,
+                                      "page": page+1})
+    joke_request = response.json()
+    for joke in joke_request['results']:
+      joke_collection.append(joke)
+  return(joke_collection)
+```
+
+=======================
+
+- Reddit uses different headers -- just use the example snippets from the tutorial
+- Learn how to iterate through JSON objects
+- Proceed w/ tutorial now, and I will be available for questions
+
+```{python, eval=FALSE}
+url = 'https://www.reddit.com/r/marketing/about/.json'
+headers = {'authority': 'www.reddit.com', 'cache-control': 'max-age=10', 'user-agent': 'Mozilla/5.0'}
+response = requests.get(url, headers=headers)
+json_response = response.json()
+```
+
+Next steps
+===========
+
+- Team coaching __on campus__
+  - Presentations: check [activity #3](https://odcm.hannesdatta.com/docs/project/workplan/activity3/)
+  - Afterwards: coding camp (you work in teams, I'll walk around to help)
+  

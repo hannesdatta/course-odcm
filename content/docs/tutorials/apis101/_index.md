@@ -19,4 +19,4 @@ draft: false
 ## Getting started
 
 1. In-class tutorial ([view slides](slides.html))
-2. After-class exercises (<a href = 'api-101.ipynb' download>download</a>, [Google Colab](https://colab.research.google.com/github/hannesdatta/course-odcm/blob/master/content/docs/tutorials/api101/api-101.ipynb)
+2. After-class exercises (<a href = 'api-101.ipynb' download>download</a>, [Google Colab](https://colab.research.google.com/github/hannesdatta/course-odcm/blob/master/content/docs/tutorials/api101/api-101.ipynb))

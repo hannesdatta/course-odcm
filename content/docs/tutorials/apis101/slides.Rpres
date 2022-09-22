@@ -27,9 +27,9 @@ Welcome to oDCM!
 
 We're about to start with __today's tutorial ("API 101")__.
 
-- If you haven't done so, open slides at https://odcm.hannesdatta.com/docs/tutorials/api-101/
+- If you haven't done so, open slides at https://odcm.hannesdatta.com/docs/tutorials/apis101/
 - Today's (live) code is available at [tiu.nu/livecoding]() (refresh needed)
-- You can work in Google Colab throughout this class
+- You can work in Google Colab throughout this class (except for Reddit...)
 
 
 <!--
@@ -39,10 +39,10 @@ We're about to start with __today's tutorial ("API 101")__.
 Before we start
 ========================================================
 
+
 - Webdriver and Selenium -- organizing support?
-- Last week's tutorial
+- Last week's tutorial (web scraping 101)
   - remaining questions?
-  - need specific pointers so I can provide solutions
 - Team projects
   - enthousiastic about many of your ideas
   - get started building your prototypes
@@ -62,10 +62,10 @@ Agenda
 What are APIs?
 ============
 
-- APIs are connectors within and between platforms and databases
-  - backend to frontend: e.g., database <> Reddit API <> website
-  - backend to backend: e.g., Twitter <> Twitter API <> some trading software
-- Mostly made for developers
+- APIs are connectors within and between platforms and databases, using the web to talk to each other
+  - backend to frontend: e.g., database <-> Reddit API <-> website
+  - backend to backend: e.g., Twitter <-> Twitter API <-> some trading software
+- Mostly made for developers, rarely for researchers
 - Available usually only after registration and approval
 
 Technical differences between APIs and web scraping
@@ -77,18 +77,27 @@ Technical differences between APIs and web scraping
 <br>
 - API
   - good if you have permission (but, be realistic!)
-  - structured JSON data
+  - *structured* JSON data
 
-Making a connection with an API
+Discovering an API documentation
 =========
-class: small-code
 
 - Probably the most difficult part w/ APIs is to get authenticated
-  - recall: need platform's permission!
-  - this API doesn't require authentication
-- Find an endpoint (like a page; [check documentation](https://icanhazdadjoke.com/api))
+  - recall: need platform's permission (but this API doesn't require authentication)
+- Find an endpoint (aka page)
+
+__Do:__ Browse the [documentation](https://icanhazdadjoke.com/api) of the dad joke API. 
+
+1) Describe which endpoints are available. What do they do?
+
+2) Can you come up w/ reasons why these endpoints are available?
+
+Do: Making a connection with an API
+=================
+class: small-code
   
-- __DO:__ Run the snippet below (and again, and again)
+Run the snippet below (and again, and again)
+
 ```{python, eval=FALSE}
 import requests
 search_url = "https://icanhazdadjoke.com/search"
@@ -96,21 +105,21 @@ response = requests.get(search_url,
                         headers={"Accept": "application/json"}, 
                         params={"term": "cat"})
 joke_request = response.json()
-print(joke_request)
+joke_request
 ```
 
-1. Can you explain what happens?
-2. Modify the search parameter to search for `dog` jokes (rather than `cat` jokes!)
+1. Can you explain what happens when you run this cell (multiple times)?
+2. Modify the search parameter (`term`) to search for `dog` jokes (rather than `cat` jokes!)
 
-How can we make sense of JSON output?
+How can we make sense of JSON data?
 ========
 
 - JSON data is structured in a hierarchy
-  - use JSONviewer.stack.hu to make sense of it
-  - alternatively, write to a file and view in VS Code
+  - use [JSONviewer.stack.hu](http://jsonviewer.stack.hu) to make sense of it
+  - alternatively, write to `.json` file and view in VS Code
   - many other possibilities exist (e.g., in-browser) - check what you like best!
   
-__DO:__ Run this snippet to write JSON output to a file! Inspect it using JSONviewer or VS Code!
+__DO:__ Run this snippet to write JSON output to a file! Inspect it using [JSONviewer](http://jsonviewer.stack.hu) or VS Code!
 
 ```{python, eval=FALSE}
 import json
@@ -124,20 +133,22 @@ Understanding parameters in API calls
 
 - Many ways to "submit" parameters to an API
   - directly in URL, e.g., `myapi.com/search/cats_and_dogs`
-  - w/ parameters in URL, e.g., `myapi.com/search/query=cats_and_dogs`
-  - in __header__ of request
-<br>
-__The documentation will tell you what is required!__
+  - w/ parameters in URL, e.g., `myapi.com/search/?query=cats_and_dogs`
+  - in __header__ of request (think of it like the address [=header] on an envelop [=data])
+
+<br><br>
+
+__The API documentation will tell you what is required!__
 
 Do: Iterating through API endpoints
 =========
+class: small-code
 
-- Remember iterating through pages on a website to "view" data?
-- APIs know the same concept!
+- Remember iterating through pages on a website to "view" data? APIs know the same concept!
 
-1. Run the snippet below and say how many jokes there are
-2. How many pages you would have to iterate through!
-3. Print the number of pages from (2)
+1. Run the snippet below and say how many jokes there are available.
+2. How many pages you would have to iterate through to capture all jokes?
+3. Print the number of pages from (2) to the screen.
 
 ```{python, eval=FALSE}
 import requests
@@ -148,8 +159,9 @@ joke_request = response.json()
 print(joke_request)
 ```
 
-Understanding how to interate
+Understanding how to iterate
 ======
+class: small-code
 
 First step is always to understand how to iterate. So let us try it out!
 
@@ -165,13 +177,13 @@ print(joke_request)
 
 __DO:__ 
 
-- Try changing the page numbers to see whether the iteration works!
-- Check the [documentation](https://icanhazdadjoke.com/api) for the endpoint `/search` -- try to debug the snippet!
+- Try incrementation the `iteration` parameter to verify it works!
+- Re-check the [documentation](https://icanhazdadjoke.com/api) for the endpoint `/search` -- and then debug the code snippet!
 
-Looping through all pages
+Looping through all pages of an endpoint
 =====
 
-- Let's first try constructing a loop that counts from `min(pages)` to `max(pages)`
+- Let's first try constructing a loop that counts from 1 to the end of pages
 - I always google myself for snippets - e.g., [here](https://www.google.com/search?client=firefox-b-d&q=loop+through+sequence+python)
 
 ```{python, eval=FALSE}
@@ -179,9 +191,9 @@ for x in range(6):
   print(x)
 ```
 
-__Do:__ Modify the snippet below so that it loops through `joke_request['total_pages']`, starting with `1` (and not with `0`)
+__Do:__ Modify the snippet below so that it loops through `joke_request['total_pages']`, starting with `1` (and not with `0`)!
 
-```{python, eval=FALSE}
+```{python eval=FALSE, include=FALSE}
 for x in range(joke_request['total_pages']):
   print(x+1)
 ```
@@ -194,6 +206,7 @@ We can now combine our learnings to build a function that extracts all jokes to 
 - Implement it step-by-step
 - Also load packages!
 - Save as `.py` file and test whether it runs from command prompt/terminal
+
 
 __Solution on next slide...__
 
@@ -230,23 +243,59 @@ def get_jokes(term='cat'):
   return(joke_collection)
 ```
 
+Do: Onwards to Reddit.com
 =======================
+class: small-code
 
 - Reddit uses different headers -- just use the example snippets from the tutorial
-- Learn how to iterate through JSON objects
-- Proceed w/ tutorial now, and I will be available for questions
+- If you want, you can change the name of the subreddit (it's `marketing` below)
+- Learning how to iterate through JSON objects is required
 
 ```{python, eval=FALSE}
+import requests
+import json
 url = 'https://www.reddit.com/r/marketing/about/.json'
 headers = {'authority': 'www.reddit.com', 'cache-control': 'max-age=10', 'user-agent': 'Mozilla/5.0'}
 response = requests.get(url, headers=headers)
 json_response = response.json()
 ```
 
+1. Print the `title` of the subreddit!
+2. Print the `public description` of the subreddit.
+3. Store information (1) and (2) in a dictionary, and have it returned by a function.
+
+
+Do: More reddit stuff: Looping
+======
+
+
+```{python, eval=FALSE}
+import requests
+import json
+url = 'https://www.reddit.com/r/marketing/.json'
+headers = {'authority': 'www.reddit.com', 'cache-control': 'max-age=10', 'user-agent': 'Mozilla/5.0'}
+response = requests.get(url, headers=headers)
+json_response = response.json()
+```
+
+1) Loop through all posts, and add their text (`selftext`), timestamp (`created_utc`) and indicator whether it is a video (`is_video`) to a new list of dictionaries.
+2) Parse this list of dictionaries to a csv file, using `pandas`.
+
+```
+import pandas as pd
+df = pd.from_dict(your_dict)
+df.to_csv('filename.csv')
+```
+
 Next steps
 ===========
 
-- Team coaching __on campus__
+- Reflection: wow - no "structuring" (THAT's the key difference compared to web scraping)
+- Spent time trying to get your first data from an API -- authentication __will__ be an issue!
+
+- Next week: Team coaching __on campus__
   - Presentations: check [activity #3](https://odcm.hannesdatta.com/docs/project/workplan/activity3/)
-  - Afterwards: coding camp (you work in teams, I'll walk around to help)
+  - Afterwards: __coding camp__ (you work in teams, I'll walk around to help)
   
+__You can proceed w/ tutorial now, and I will be available for questions (if time is left)...__
+

@@ -19,22 +19,25 @@ The team project is submitted as a so-called “data package”, consisting of t
 In preparing your submission, please closely adhere to the following directory structure.
 
 ```
-readme.txt <-- your documentation, either in the form of a plain txt file or a formatted PDF document
+readme.pdf <-- your documentation, based on the template and rendered as a PDF document
 
 docs\api_documentation.pdf <-- any supporting files for the documentation (e.g., API documentation,
 docs\screenshot.pdf            screenshots from the website, relevant blog articles)
 
-data\file1.csv <-- your raw data files
+data\file1.json <-- your raw data files, as .json or .csv, depending on the optimal storage format
 data\file2.csv
 data\file3.csv
 
-src\collection\collect.py <-- final source code used for collecting the data
+src\collection\collect.py <-- final source code used for collecting the data (can be multiple files)
 
-src\reporting\analysis.R <-- final source code used to generate statistics/insights documented in the readme.
+src\reporting\descriptives.R <-- final source code used to generate statistics/insights documented in the readme.
+                                 Note: you are not required to provide a full-fledged analysis of the data.
+                                 
 ```
 
 
 {{< hint info>}}
+
 **Be ready for publication**
 
 Please submit the data package in such way that it can be made publicly available on the internet.

@@ -27,20 +27,8 @@ enableGitInfo = true
   contentDir = 'content'
   weight = 1
 
-#[languages.dprep]
-#  languageName = 'dPrep'
-#  contentDir = 'content.dataprep'
-#  weight = 2
-
-[menu]
-# [[menu.before]]
-#[[menu.after]]
-#  name = "Github"
-#  url = "https://github.com/hannesdatta/course-datacollections"
-#  weight = 10
-
 [params]
-  Course_Deadline_Project = "Friday, 14 October 2022"
+  Course_Deadline_Project = "Monday, 17 October 2022"
   Course_Exam_Mainsit = "Tuesday, 18 October 2022"
   Course_Exam_Resit = "Tuesday, 10 January 2023"
   Course_Edition_Current = "August - October 2022"

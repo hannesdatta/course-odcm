@@ -15,36 +15,13 @@ autosize: true
 https://support.rstudio.com/hc/en-us/articles/200486468
 -->
 
-Welcome to the final live stream in oDCM!
+Welcome to the final lecture in oDCM!
 ========================================================
 
-- Please **turn on** your camera; it helps us to interact better!
-- The **chat** is open
-- If you haven't done so, please **explore the exam page & example questions** at [https://odcm.hannesdatta.com/docs/course/exam]().
+<br>
+<br>
 
-<!--
-- Team project:
-
-It's going well so far
-Totally lost, but I know how to get on track
-I lack adequate support - heeeelp!
-
-- How did you like the course format?
-
-scale from 1-10
-
-- How did you like the course content?
-
-scale from 1-10
-
-To be announced:
-- course evaluation: will post link
-- team projects due - anybody still need feedback? sign up for dprep slots
-https://docs.google.com/spreadsheets/d/1Tf9oypJhAlDN4m9JTKYzt66dvmiLdBewF3coWpe97_U/edit#gid=0
-- add me to linkedIn: https://www.linkedin.com/in/hannes-datta/ [crucial to stay in touch]
-
-
--->
+If you haven't done so, please **explore the exam page & example questions** at [https://odcm.hannesdatta.com/docs/course/exam]().
 
 Agenda
 ========================================================
@@ -55,7 +32,7 @@ Agenda
   - Seizing research opportunities
 - Course evaluation
 - Exam preparation
-- Remaining Questions from the chat(s)/Q&A
+- Remaining questions
 
 Positioning in the study program
 ========================================================
@@ -126,7 +103,7 @@ incremental: true
 
 - Prototyping is extremely important
   - requests + beautifulSoup vs. selenium/Chromedriver
-  - extraction methodology (e.g., tags, CSS, classes) + stability
+  - extraction methodology (e.g., tags, classes) + stability + hierarchy (!)
   - scheduling, hiding passwords
   - revise navigation paths
   - add comments to code (make it understandable for others!)
@@ -177,17 +154,17 @@ Next steps: Official course evaluation
 ========================================================
 
 - Course evaluation has been immensely important to this course
-  - Spent more time on Python onboarding
-  - Reduced workload by making "advanced" tutorials optional
+  - Introduced on-campus tutorials, spent more time on Python onboarding
+  - Streamlined workload by dropping unnecessary material
   - Allocated more time to coaching sessions
-  - Developed Pulse
+  - Developed Pulse to keep you on track
   
 - Course evaluation has been critical to my career
   - Without my past evaluations, I wouldn't be teaching to you today
   - I will look at all comments
 - Scores are most important to show importance of this course
 
-- You will be invited via Evalytics (evaluate [here](https://app.evalytics.nl/#/login?evaluationId=104069)).
+- You will be invited via Evalytics (evaluate [here](https://app.evalytics.nl/#/login)).
 
 <!--
 ::: notes
@@ -200,52 +177,55 @@ Next steps: Official course evaluation
 Next steps: Projects & SPA
 ========================================================
 
-- Please hand in in a way that I can make available the data package publicly!
-
+- Please hand in so I can makethe data package publicly!
   - Take out any passwords (store as environment variables instead)
   - Remove any unnecessary files
   - Want to keep your names on the documentation or anonymize them? 
   - Don't make statements that are too bold?
+  - Consider uploading datasets & documentation yourselves to Zenodo.org
 
 - Re-read the [grading rubric on the course site](https://odcm.hannesdatta.com/docs/course/project/grading/)!
 
-- You will receive __invite to self- and peer assessment__
+- You will receive __invite to self- and peer assessment__ via email
 
 
 Informal feedback
 ========================================================
 incremental: true
 
-- live streams versus offline lectures?
-- quality of website?
-- quality of Jupyter Notebooks
-- Colab versus own laptops?
-- "innovativeness of material", etc.
-- Pulse?
-
-<!--
-- open education good or bad?
-- like the presence of external students (or not)?
--->
+- alternatives to 10-minute coaching sessions?
+- how to deal w/ dropouts in teams (e.g., workload)
+- keep track of progress on Pulse -- good or not?
+- support
+  - comments in Pulse vs. WhatsApp?
+  - feel you've got enough support?
 
 Exam preparation
 ========================================================
 
-- https://odcm.hannesdatta.com/docs/course/exam/
-- https://odcm.hannesdatta.com/docs/course/exam/examplequestions/
+- https://odcm.hannesdatta.com/docs/exam/
+- https://odcm.hannesdatta.com/docs/exam/examplequestions/
+
+Exam tips
+========================================================
+incremental: true
+
+- Verify Selenium/Chrome works
+- Make your own cheatsheets (also collaboratively, share them beforehand)
+- Practice scraping an unknown website (e.g., tutorials at tilburgsciencehub.com, working with the Reddit API) -- the scraper will account for a larger number of points on the exam!
+- Importance of "Fields of Gold" paper, including the web appendix (+ reason through challenges)
 
 Stay in touch!
 ========================================================
 
 
-- Add me on [LinkedIn](https://www.linkedin.com/in/hannes-datta/) to stay up to date with job opportunities & skill development! 
-- Subscribe to my [YouTube channel](https://www.youtube.com/c/hannesdatta)
-- Stay in touch on WhatsApp! +31 13 466 8938
-- See me on campus: K728, mostly Mondays (but send a text to make an appointment)
+- Stay in touch
+  - Add me on [LinkedIn](https://www.linkedin.com/in/hannes-datta/)
+  - Subscribe to my [YouTube channel](https://www.youtube.com/c/hannesdatta)
+  - WhatsApp! +31 13 466 8938
 <br><br>
 - Contribute to Tilburg's Open Science initiatives! 
-  - https://tilburgsciencehub.com as a volunteer
-  - join my team as an RA (e.g., machine learning, data engineering); see also https://tilburgsciencehub.com/onboarding
+  - https://tilburgsciencehub.com as content developer / community manager
   - change this course at https://github.com/hannesdatta/course-odcm
 <br><br>
 - __And, finally... let's show to the world how awesome your new skills are!__

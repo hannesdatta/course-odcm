@@ -60,3 +60,5 @@ introduction to data collection with scraping and
 APIs. With Google Colab, I could access 
 structured assignments to prepare and get familiar
 with the material._
+
+- _Collecting web data seems like a straightforward process, but during the course you realize there are a lot of things you have to look out for if you want to do it right. I think the methods in this course give a good understanding on how to get there, which feels super useful!_

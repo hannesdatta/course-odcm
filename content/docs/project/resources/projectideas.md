@@ -25,6 +25,10 @@ When using a proprietary data sources requiring login (e.g., Netflix) or API cre
 Skilling up in web scraping and APIs requires practice, and conducting a group project is a great way to learn more about any facet of data- or computer science. Choose one of the following questions to explore further or pitch your own one during one of the live meetings in the course!
 -->
 
+### Television
+- [Vanderbilt Television News Archive](https://tvnews.vanderbilt.edu) (looped over dates in the explore page, extract all info; extension: data-driven categorization)
+- [TV News archive](https://archive.org/details/tv) (including captions & topics)
+
 ### Online music streaming and podcasts
 - [spotifycharts](https://spotifycharts.com/regional)
 - [Spotify Web API](https://developer.spotify.com/documentation/web-api/)

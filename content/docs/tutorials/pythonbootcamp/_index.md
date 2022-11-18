@@ -18,7 +18,7 @@ bookCollapseSection: false
 The tutorial proceeds in two steps.
 
 1. In-class tutorial ([download](python-bootcamp-in-class.ipynb), [Google Colab](https://colab.research.google.com/github/hannesdatta/course-odcm/blob/master/content/docs/tutorials/pythonbootcamp/python-bootcamp-in-class.ipynb))
-2. After-class exercises on Datacamp.com (about 3 hours; [work on the first three chapters only](https://learn.datacamp.com/courses/intro-to-python-for-data-science))
+2. After-class exercises on Datacamp.com (about 3 hours; [work on the first three chapters only](https://datacamp.com/courses/intro-to-python-for-data-science))
 
 <!--
 

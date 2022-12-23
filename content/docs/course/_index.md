@@ -83,7 +83,7 @@ Final course grades are rounded to multiples of half points (e.g., 6, 6.5, 7, et
 - If students are not part of a team, they cannot obtain a grade for the team project and hence cannot pass this course.
   - Required action: Re-enroll in this course's next edition, and ensure you are part of a team.
 - If students have an exam grade higher or equal to 5.0 but fail the team project (after SPA correction), their total course grade may be lower than 5.5, and hence students fail this course.
-  - Required action: Correct team project based on the course coordinator's grading report, and hand it in again within two weeks after publication of the final grades in this course (submission on Canvas). Only students who fail the team project can have their projects re-graded.
+  - Required action: Correct team project based on the course coordinator's grading report, and hand it in again within two weeks after publication of the final grades in this course (submission on Canvas). Only students who fail the team project can have their projects re-graded. The maximum attainable grade on the regraded team project is a 6.0.
 - Students who have passed the course, but wish to retake the exam, can take the exam resit. The highest exam grade counts. Grades for the team project are retained. In other words, the resit exam still counts for 50% of the final course grade.
 - Students who fail the exam and wish to re-take the course in the subsequent semester can *retain* their assignment grades upon approval of the course coordinator (grades remain valid for the *next* edition of the course).
 

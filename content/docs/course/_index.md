@@ -66,7 +66,7 @@ To illustrate the wide range of applications of web data, the course introduces 
 - [Computer exam](/docs/exam) (50%)
 - Submitting one's progress on the course's learning goals  (5%)[^3]
 
-[^3]: In particular, students regularly monitor their progress on the course's learning goals. At least one evaluation per course week is required to obtain points on this component of the course grade.
+[^3]: In particular, students regularly monitor their progress on the course's learning goals. __At least one evaluation per course week is required to obtain points on this component of the course grade.__
 
 ### Passing requirements
 
@@ -86,6 +86,15 @@ Final course grades are rounded to multiples of half points (e.g., 6, 6.5, 7, et
   - Required action: Correct team project based on the course coordinator's grading report, and hand it in again within two weeks after publication of the final grades in this course (submission on Canvas). Only students who fail the team project can have their projects re-graded. The maximum attainable grade on the regraded team project is a 6.0.
 - Students who have passed the course, but wish to retake the exam, can take the exam resit. The highest exam grade counts. Grades for the team project are retained. In other words, the resit exam still counts for 50% of the final course grade.
 - Students who fail the exam and wish to retake the course in a subsequent semester can *retain* their assignment grades upon approval of the course coordinator (grades remain valid for the *next* edition of the course).
+
+### Bonus points
+
+The course is designed as an open education course, with all of its source code publicly available at [the course's GitHub repository](https://github.com/hannesdatta/course-odcm). Students can earn bonus points for contributing to the course in the form of source code (e.g., to provide solutions for assignments, to write a tutorial for a new scraping toolkit, or for debugging code). Some contributions may also qualify for publication at [Tilburg Science Hub](https://tilburgsciencehub.com) (see also [here](https://github.com/tilburgsciencehub/website) for the platform's GitHub repository).
+
+Bonus points are awareded to motivate students and reward excellence (e.g., students shwoing a performance exceeding the normally expected learning outcomes of the course). The award of bonus points can only lead to a mark-up of a sufficient grade, not of an insufficient grade. Moreover, the mark-up is not higher than 0.5 points and is only be awarded once at the level of the final grade. 
+
+Each award of a bonus point is accompanied by an individualized argumentation (i.e. for each student). The award of bonus points is used sparsingly.
+
 
 ## Code of Conduct
 

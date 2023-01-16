@@ -15,17 +15,9 @@ Please use your `@tilburguniversity.edu` address to log on to Google to view/edi
 
 -------
 
-<!-->
-*Will the live streams be recorded?*
-
-Yes, we'll either post them on Canvas (for internal use), or edit them for publication on [YouTube](https://youtube.com/c/hannesdatta).
-
--------
--->
-
 ## Team Project
 
-*How should I store API keys and personal credentials in my notebook without disclosing them (e.g., on Github, or to other students)?*  
+*How should I store API keys and personal credentials in my notebook without disclosing them (e.g., on GitHub, or to other students)?*  
 
 With environment variables, you can access variables without literally writing them down in a notebook or script (e.g., `password = "..."`). Follow the steps [here](https://tilburgsciencehub.com/configure/environment-variables).
 
@@ -37,7 +29,7 @@ Regular expressions are specifically designed to find patterns in string data. H
 
 -------
 
-*How can I run my web scraper repetitevely (e.g., every day)*
+*How can I run my web scraper repetitively (e.g., every day)*
 
 You can use task scheduling to automate the execution of scripts at specified intervals. Follow the steps in [this](https://tilburgsciencehub.com/schedule/task) building block to set-up schedling for your scraper!
 
@@ -46,6 +38,8 @@ You can use task scheduling to automate the execution of scripts at specified in
 *Are there (code) examples from previous years?*
 
 Yes, some code examples are available [here](../../project/resources/projectideas).
+
+---------
 
 *How can I get additional support?*
 

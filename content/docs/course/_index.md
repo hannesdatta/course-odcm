@@ -47,7 +47,7 @@ To illustrate the wide range of applications of web data, the course introduces 
 
 - The course uses Python for the technical implementation of collecting web data. The course welcomes novices, of whom a significant investment of effort and time is required to learn the necessary skills.
 - [Preparation material](../modules/prep) is available in the form of Jupyter Notebooks or course recommendations at Datacamp. Novices may further benefit from following other courses at Tilburg University in which Python is used, for example, *Research Skills: Data Processing* and *Research Skills: Data Processing Advanced*.
-- Students are recommended to use their computer for this course (Windows, Mac, or Linux). Android/Chromebook/iOS devices are not supported. Cloud services (e.g., Tilburg's Jupyter server) may not be fully supported (because you can usually not see what happens "outside" of Jupyter Notebook).
+- Students are recommended to use their computer for this course. Windows and Mac users can typically install all required software easily. Linux users may require some advanced understanding of their operating system to install all required software. Android/Chromebook/iOS devices are not supported. Cloud services (e.g., Tilburg's Jupyter Notebook server) may not be fully supported (because you can usually not see what happens "outside" of Jupyter Notebook). 
 
 
 ## Teaching format
@@ -85,14 +85,14 @@ Final course grades are rounded to multiples of half points (e.g., 6, 6.5, 7, et
 - If students have an exam grade higher or equal to 5.0 but fail the team project (after SPA correction), their total course grade may be lower than 5.5, and hence students fail this course.
   - Required action: Correct team project based on the course coordinator's grading report, and hand it in again within two weeks after publication of the final grades in this course (submission on Canvas). Only students who fail the team project can have their projects re-graded. The maximum attainable grade on the regraded team project is a 6.0.
 - Students who have passed the course, but wish to retake the exam, can take the exam resit. The highest exam grade counts. Grades for the team project are retained. In other words, the resit exam still counts for 50% of the final course grade.
-- Students who fail the exam and wish to re-take the course in the subsequent semester can *retain* their assignment grades upon approval of the course coordinator (grades remain valid for the *next* edition of the course).
+- Students who fail the exam and wish to retake the course in a subsequent semester can *retain* their assignment grades upon approval of the course coordinator (grades remain valid for the *next* edition of the course).
 
 ## Code of Conduct
 
 - Please always use English as the default language so that non-Dutch speakers can follow the conversations, even if it concerns topics not directly related to the class (e.g., during breaks).
 - Please head over the course's [support section](support) to solve problems or get in touch with the instructor.
 - Stay up-to-date by checking this website, Canvas, and watch out for updates on Hannes' social media channels.
-- Be on time, and start on time
+- Be on time, and start on time.
 - Feel invited to provide informal feedback!
 - It's totally fine calling the instructor by his first name. 
 - When meeting on Zoom, please turn on your camera, which will facilitate interaction with the course instructor and other students.

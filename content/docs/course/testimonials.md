@@ -45,6 +45,10 @@ is passionate about what he teaches._
 I couldn't imagine I would know how to scrape data
 online._
 
+- _Truly, one of the best courses I have taken in all my years at Tilburg University. It's super refreshing, it's new, it's modern, it's not a model that hasn't been refined since decades... Prior to the course I was a bit wary of Python due to previous traumas from earlier assignments in my bachelor that rested on a very inadequate knowledge of Python, but this course has definitely helped get me over it. I will definitely use the skills I have learned in this course for life._
+
+- _This course has opened new perspectives for me and now I am eager to try my own projects. I really feel that what I have learned is useful. I felt inspired by the teacher and I really enjoyed listening to him. I wish there was more time to learn things from him._
+
 ## About the team project and tutorials
 
 - _I really liked the setup of this course. Figuring
@@ -62,3 +66,5 @@ structured assignments to prepare and get familiar
 with the material._
 
 - _Collecting web data seems like a straightforward process, but during the course you realize there are a lot of things you have to look out for if you want to do it right. I think the methods in this course give a good understanding on how to get there, which feels super useful!_
+
+- _The teaching style was impeccable. Every single question was promptly answered by the professor who was always present and supportive. The humor used during class made everything more fun and enjoyable._

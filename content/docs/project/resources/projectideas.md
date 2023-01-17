@@ -2,7 +2,7 @@
 bookFlatSection: true
 title: "Project ideas"
 bookHidden: false
-weight: 20
+weight: 10
 draft: false
 description: Seek inspiration for your team projects.
 ---
@@ -48,17 +48,21 @@ Skilling up in web scraping and APIs requires practice, and conducting a group p
 
 ### Concerts and events
 - [Songkick](https://www.songkick.com/developer)
+- [Bandcamp](https://bandcamp.com)
+
+
+<!--
 
 ### E-commerce
 - [bol.com](https://bol.com)
 - [Coolblue](https://coolblue.nl)
-<!--
+
 - Potential business questions
    - Are our tech products priced lower than our competitors?
    - Are the same products on sale at the same time?
    - Are customer reviews comparable across platforms?
    - How are products ordered by default?
--->
+
 
 ### Social media
 - [Instagram](https://www.instagram.com)
@@ -78,8 +82,8 @@ Skilling up in web scraping and APIs requires practice, and conducting a group p
 -->
 
 ### Online videos, user-generated content
-- [YouTube API](https://developers.google.com/youtube/v3)
-- [Twitch API](https://dev.twitch.tv/docs/api)
+- [YouTube](https://developers.google.com/youtube/v3)
+- [Twitch](https://dev.twitch.tv/docs/api)
 
 <!--
 - Potential research questions

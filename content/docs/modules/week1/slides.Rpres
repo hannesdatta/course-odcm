@@ -52,13 +52,13 @@ If you haven't done so, please
 Agenda
 ========================================================
 
-- Part 1 (10.45 to about 11.45)
+- Part 1 (08.45 to about 09.45)
   - Getting to know each other
   - Motivation for the course
   - Course framework and learning goals
   - Agenda and practical arrangements
 - Break
-- Part 2: Python Bootcamp on your laptops (about 12.00 - 13.30)
+- Part 2: Python Bootcamp on your laptops (about 10.00 - 11.30)
 
 Disclaimer
 ========================================================
@@ -67,10 +67,10 @@ incremental: true
 - This is not a class that merely teaches you Python (but, if you invest time, you'll learn Python on the way!)
 - You can also extract web data using other software packages (e.g., R)
 - Mix of students at various levels (e.g., beginners, advanced Python users)
-- Consider me your coach, not your *distant professor*
 - Course is blended; attendance is not mandatory but strongly encouraged
+- I will not record any online or offline sessions; slides will be posted always
+- Consider me your coach, not your *distant professor*
 - Slow me down if you need to
-- I will not record any online or offline sessions (but you can make your own recordings if you like); slides will be posted always
 
 <!--- Streamed sessions Live streams are *complements*, not substitutes for self-study & course website-->
 
@@ -101,7 +101,7 @@ Teaching activities (all openly available)
     - Data preparation and workflow management (https://dprep.hannesdatta.com)
     - Online data collection and management (https://odcm.hannesdatta.com)
     - MSc Thesis supervision (https://thesis.hannesdatta.com)
-- Other inititatives
+- Other initiatives
   - Tilburg Science Hub (https://tilburgsciencehub.com)
   - YouTube channel (https://youtube.com/c/hannesdatta)
   - My code (https://github.com/hannesdatta)
@@ -150,7 +150,7 @@ incremental: true
 What is scraping, and what are APIs?
 ========================================================
 
-*With web scraping, you can essentially capture anything you can view in a web browser*
+*With web scraping, you can capture anything you can view in a web browser*
 
 - pricing data at [bol.com](https://bol.com)
 - reviews at [Amazon.com](https://amazon.com)
@@ -329,6 +329,8 @@ Course structure and grading
 
 - Tracking learning process in Pulse (5% of your grade)
 
+- Bonus points available (max .5 on final course grade)
+
 Team project
 ========================================================
 
@@ -344,6 +346,20 @@ Team project
 
 __Please make this a project you can tell friends & family about. Make it matter.__
 
+This year's focus: Retailing
+============================
+
+- Goal is to focus on __retailing in its broadest sense__
+- Many dimensions
+  - online vs. offline
+  - "platform" vs. traditional retail
+  - categories (say, grocery vs. sport shoes)
+  - new vs. used products
+  - national vs. international
+  - aggregator vs. primary data provider
+- Type of data
+  - main data (say, sales)
+  - meta data (say, product attributes, etc.)
 
 Course website
 ========================================================
@@ -474,7 +490,7 @@ Next steps
 ========================================================
 
 - We will continue with our Python bootcamp after a break
-- Haven't followed the installation guide? Check it out on the course page now! (tutorials -- software installation)
+- Haven't followed the installation guide? Check it out on the course page now! (tutorials -> software installation)
 
 <!--
 - We w

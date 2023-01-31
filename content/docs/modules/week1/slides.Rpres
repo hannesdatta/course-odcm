@@ -161,7 +161,7 @@ What is scraping, and what are APIs?
 - e.g., as a developer, interact with Facebook, Instagram, Twitter
 - as a researcher, construct data set from analytics firms
 
-Quick web scraper in Python
+Quick web scraper in Python (I)
 ========================================================
 incremental: true
 class: small-code
@@ -177,6 +177,12 @@ import requests
 url = 'https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html'
 book_request = requests.get(url)
 ```
+
+
+Quick web scraper in Python (II)
+========================================================
+incremental: true
+class: small-code
 
 * Finally, let's retrieve the product title (we use HTML tags for this)
 
@@ -331,36 +337,55 @@ Course structure and grading
 
 - Bonus points available (max .5 on final course grade)
 
-Team project
+This year's team project: Retailing (I)
+============================
+
+- Retail is the __sale of goods and services to consumers__, in contrast to wholesaling, which is sale to business or institutional customers. 
+
+*Source: https://en.wikipedia.org/wiki/Retail*
+
+__Goals:__
+
+In the context of __retailing__, 
+
+- understand and present "data universe"
+- select one or multiple data source(s) and collect the data (scraping, APIs)
+- document the data for public (re)use
+
+This year's team project: Retailing (II)
+========================================================
+  
+__Find your sweet spot!__
+
+- service vs. products?
+- majorily online vs. offline?
+- "platform" vs. traditional retail?
+- categories (say, grocery vs. sport shoes)?
+- new vs. used products?
+- national vs. international retail?
+- primary data provider vs. aggregator
+
+This year's team project: Retailing (III)
 ========================================================
 
-- goals
+- Specifics
   - scrape data via web sites or APIs
   - work through the entire method framework
   - receive feedback by students and me (your coach)
-  - [project ideas](https://odcm.hannesdatta.com/docs/project/resources/projectideas/) and [past projects](https://odcm.hannesdatta.com/docs/project/resources/pastprojects/)
+  - inspiration for the setup: [past projects](https://odcm.hannesdatta.com/docs/project/resources/pastprojects/)
+  - legacy [project ideas](https://odcm.hannesdatta.com/docs/project/resources/projectideas/) 
 
-- evaluation
+- Evaluation
   - [grading rubric available](https://odcm.hannesdatta.com/docs/project/grading/)
   - self- and peer assessment used
 
-__Please make this a project you can tell friends & family about. Make it matter.__
+<!--__Please make this a project you can tell friends & family about. Make it matter.__
+-->
 
-This year's focus: Retailing
-============================
 
-- Goal is to focus on __retailing in its broadest sense__
-- Many dimensions
-  - online vs. offline
-  - "platform" vs. traditional retail
-  - categories (say, grocery vs. sport shoes)
-  - new vs. used products
-  - national vs. international
-  - aggregator vs. primary data provider
-- Type of data
-  - main data (say, sales)
-  - meta data (say, product attributes, etc.)
+<br>
 
+  
 Course website
 ========================================================
 
@@ -456,19 +481,18 @@ Use of WhatsApp
 
 ![WhatsApp](wa_qr.png)
 
-- Let me know your first names!
-- Being in touch via email is not so optimal (unless for official matters)
+- Being in touch via email is typically slower
 
 
 What's in for you?
 ========================================================
 
+- Investment in research skills
+  - e.g., collect own data & shape its creation to create relevant and rigorous research
+
 - Essential skills for entrepreneurs
   - e.g., have your own company on the basis of web data and APIs
   - be the linking pin (interface between marketing and analytics)
-
-- Investment in research skills
-  - e.g., collect own data & shape its creation to create relevant and rigorous research
 
 - Showcast expertise in coding
 

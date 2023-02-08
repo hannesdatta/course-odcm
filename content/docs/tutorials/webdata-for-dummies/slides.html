@@ -812,8 +812,8 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 <li>Coaching session for team activity #1 at the beginning of next week
 
 <ul>
-<li>did you already enroll? (link on Canvas)</li>
-<li>submission on Canvas by Tuesday, 9am</li>
+<li>did you already enroll to a team? (see Canvas)</li>
+<li>submissions for team activity due Monday at 7.30am (check Canvas for submissions)</li>
 </ul></li>
 <li>Login at <a href="">http://pulse.tilburg-digital.com</a> to explore this week&#39;s to do&#39;s</li>
 </ul>
@@ -829,14 +829,29 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 
 <ul>
 <li>Go through in-class tutorial (&ldquo;webdata for dummies in class.ipynb&rdquo;)</li>
-<li>Selection of exercises</li>
-<li>Will spend some time on &ldquo;Fields of Gold&rdquo; as well</li>
+<li>We&#39;ll work on a <strong>selection of exercises</strong></li>
+<li>Also address some challenges summarized in &ldquo;Fields of Gold&rdquo;
+<br></li>
 </ul></li>
 <li>After class
 
 <ul>
-<li>Complete exercises yourselves</li>
+<li>Complete tutorial and exercises yourselves</li>
+<li>Work on team activity #1</li>
 </ul></li>
+</ul>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Framework</h3>
+<div class="mediaInline slideContent" >
+<p><img src="https://journals.sagepub.com/na101/home/literatum/publisher/sage/journals/content/jmxa/2022/jmxa_86_5/00222429221100750/20220801/images/large/10.1177_00222429221100750-fig2.jpeg" alt=""/></p>
+
+<ul>
+<li>Focus in <strong>team project</strong> at this stage: source selection</li>
+<li>Focus in today&#39;s tutorial: <strong>collection design</strong></li>
 </ul>
 
 </div>
@@ -850,16 +865,8 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 <li class="fragment">scaling (APIs scale more)</li>
 <li class="fragment">web scraping largely free, APIs for-pay</li>
 <li class="fragment">APIs are linchpin of internet economy</li>
-<li class="fragment">see comparison in <a href="https://journals.sagepub.com/doi/suppl/10.1177/00222429221100750/suppl_file/sj-pdf-1-jmx-10.1177_00222429221100750.pdf">Web Appendix of Fields of Gold</a></li>
+<li class="fragment">Detailed comparison in <a href="https://journals.sagepub.com/doi/suppl/10.1177/00222429221100750/suppl_file/sj-pdf-1-jmx-10.1177_00222429221100750.pdf">Web Appendix of Fields of Gold</a>.</li>
 </ul>
-
-</div>
-
-</section>
-<section data-transition="linear" data-transition-speed="default">
-<h3>Framework</h3>
-<div class="mediaOnly slideContent" >
-<p><img src="https://journals.sagepub.com/na101/home/literatum/publisher/sage/journals/content/jmxa/2022/jmxa_86_5/00222429221100750/20220801/images/large/10.1177_00222429221100750-fig2.jpeg" alt=""/></p>
 
 </div>
 
@@ -868,19 +875,19 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 <h3>We get started with web scraping</h3>
 <div class="slideContent" >
 <ul>
-<li><p>Key elements of websites</p>
+<li>To do scraping, we need to understand key elements of websites
 
 <ul>
 <li>HTML</li>
 <li>CSS</li>
-<li>JS</li>
+<li>Javascript
+<br></li>
 </ul></li>
-<li><p>Examples: </p>
+<li>Examples:
 
 <ul>
-<li>inspector of tilburguniversity.edu</li>
-<li>toybox here: <a href="https://codepen.io/rcyou/pen/QEObEk/">https://codepen.io/rcyou/pen/QEObEk/</a></li>
-<li>books.toscrape.com</li>
+<li>toybox at codepen: <a href="https://codepen.io/rcyou/pen/QEObEk/">https://codepen.io/rcyou/pen/QEObEk/</a></li>
+<li>inspecting <a href="">tilburguniversity.edu</a></li>
 </ul></li>
 </ul>
 
@@ -888,26 +895,118 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Find elements in HTML</h3>
+<h3>Which information to extract from a website (challenge #2.1)?</h3>
 <div class="slideContent" >
 <ul>
-<li>Search strategies
+<li>We need to decide which information to extract from a site 
+
+<ul>
+<li>which information to we need to justify construct operationalization?</li>
+<li>is the information publicly accessible or hidden after a login wall?</li>
+<li>can we reliably get the data, even after x iterations on the site?</li>
+</ul></li>
+</ul>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Which information to extract from a website (challenge #2.1)?</h3>
+<div class="slideContent" >
+<ul>
+<li>Best practices
+
+<ul>
+<li>Explore different types of pages</li>
+<li>Really get &ldquo;used&rdquo; to the website, browse a bit (&ldquo;how to navigate&rdquo;)</li>
+<li>Identify roadblocks such as captchas</li>
+<li>Explore limits to iterating through a site</li>
+</ul></li>
+</ul>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>DO: Explore books.toscrape.com</h3>
+<div class="slideContent" >
+<ul>
+<li>Open <a href="">books.toscrape.com</a></li>
+<li>Familiarize yourself with the structure of the site</li>
+<li>Check which information you find and what it could be used for</li>
+</ul>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Finding information in HTML code </h3>
+<div class="slideContent" >
+<ul>
+<li>Now, it&#39;s time to &ldquo;narrow&rdquo; down on the information of interest</li>
+<li>For this, we can employ various extraction techniques
 
 <ul>
 <li>tags, e.g., <code>&lt;table&gt;</code>, <code>&lt;h1&gt;</code>, <code>&lt;div&gt;</code></li>
 <li>attributes, e.g., <code>&lt;table id=&quot;example-table&quot;&gt;</code></li>
 <li>classes, e.g., <code>&lt;table class=&quot;striped-table&quot;&gt;</code></li>
-<li>styles, e.g., <code>&lt;table style=&quot;width:95%;&quot;&gt;</code></li>
+<li>attribute-value pairs, e.g., <code>&lt;table some_field_name = &quot;123&quot;&gt;</code></li>
 </ul></li>
 </ul>
 
-<p><strong>One or more of these search strategies need to be combined to extract information.</strong></p>
+<p><strong>One or more of these extraction techniques need to be combined to extract information.</strong></p>
 
-<p><strong>DO</strong>: </p>
+</div>
 
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>DO: Identifying information on books.toscrape.com</h3>
+<div class="slideContent" >
 <ul>
 <li>Open <a href="https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html">https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html</a></li>
-<li>How to locate book title, price, in-stock availability, and number of stars?</li>
+<li>How would you identify the following information?
+
+<ul>
+<li>book title</li>
+<li>price</li>
+<li>in-stock availability, and </li>
+<li>number of stars?</li>
+</ul></li>
+</ul>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>CSS selectors and XPATHS (I)</h3>
+<div class="slideContent" >
+<ul>
+<li>When following some extra tutorials, some coders advocate for the use of <strong>CSS selectors and XPATHS</strong> to extract information.
+<br></li>
+<li>XPATH
+
+<ul>
+<li>Think of it as the &ldquo;path&rdquo; to the specific data point</li>
+<li>Example for &ldquo;price&rdquo;: <code>html/body/div/div/div[2]/div[2]/article/div[1]/div[2]/p[1]</code></li>
+<li>Likely to break very easily (say, something changes <em>before</em> the particular element)</li>
+</ul></li>
+</ul>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>CSS selectors and XPATHS (II)</h3>
+<div class="slideContent" >
+<ul>
+<li>CSS selector
+
+<ul>
+<li>Example for extracting &ldquo;price&rdquo;: <code>p.price_color:nth-child(2)</code></li>
+<li>Also &ldquo;highly&rdquo; dependent: say, tag &amp; class name + position &ndash; can also break
+<br></li>
+</ul></li>
+<li>So, here, we are sticking mostly to <em>classes</em>, <em>attributes</em>, and <em>attribute-value pairs</em>.</li>
 </ul>
 
 </div>
@@ -915,13 +1014,14 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 </section>
 <section data-transition="linear" data-transition-speed="default">
 <h3>Getting the website into Python</h3>
-<div class="slideContent" >
+<div class="slideContent small-code" >
 <pre><code class="python">import requests
 
 # make a get request to the &quot;A Light in the Attic&quot; webpage
 url = &#39;https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html&#39;
-user_agent = {&#39;User-agent&#39;: &#39;Mozilla/5.0&#39;} # with the user agent, we let Python know for which browser version to retrieve the website
-book_request = requests.get(url, headers = user_agent)
+header = {&#39;User-agent&#39;: &#39;Mozilla/5.0&#39;} # with the user agent, we let Python know for which browser version to retrieve the website
+book_request = requests.get(url, headers = header)
+book_request.encoding = book_request.apparent_encoding
 
 # return the source code from the request object
 book_source_code = book_request.text
@@ -938,28 +1038,8 @@ book_source_code = book_request.text
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Extending scraping code</h3>
-<div class="slideContent" >
-<p>(corresponds to exercise 1.4)</p>
-
-<ol>
-<li>Let&#39;s write a function <code>def download_website(url)</code> to download data and print information to screen.</li>
-<li>Adapt function to <code>def save_website(url)</code>, storing the website in a file.</li>
-<li>Write a loop to extract raw HTML source code for <a href="https://books.toscrape.com/catalogue/category/books_1/index.html">these books</a></li>
-</ol>
-
-<p>Tips: </p>
-
-<ul>
-<li>Status messages with variables: <code>print(f&#39;Done retrieving {url}&#39;)</code></li>
-</ul>
-
-</div>
-
-</section>
-<section data-transition="linear" data-transition-speed="default">
 <h3>BeautifulSoup 101</h3>
-<div class="slideContent" >
+<div class="slideContent small-code" >
 <ul>
 <li>Why? Query the HTML code!</li>
 <li>Think of it as a pipeline: download data &ndash;&gt; pump to BeautifulSoup &ndash;&gt; query data</li>
@@ -968,8 +1048,9 @@ book_source_code = book_request.text
 <pre><code class="python">import requests
 from bs4 import BeautifulSoup
 url = &#39;https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html&#39;
-user_agent = {&#39;User-agent&#39;: &#39;Mozilla/5.0&#39;} 
-book_request = requests.get(url, headers = user_agent)
+header = {&#39;User-agent&#39;: &#39;Mozilla/5.0&#39;} 
+book_request = requests.get(url, headers = header)
+book_request.encoding = book_request.apparent_encoding
 soup = BeautifulSoup(book_request.text)
 print(soup.find(&#39;h1&#39;).get_text())
 </code></pre>
@@ -992,21 +1073,79 @@ print(soup.find(class_ = 'price_color').get_text())
 <h3>DO: BeautifulSoup exercises</h3>
 <div class="slideContent" >
 <ul>
-<li><p>Write a function to extract the following information:</p>
+<li><p>Adapt/extend the code above to extract the following information:</p>
 
 <ul>
-<li>product title,</li>
-<li>price,</li>
-<li>in-stock availability, and</li>
-<li>the number of stars.</li>
+<li>product title, price, in-stock availability, and the number of stars.</li>
 </ul></li>
-<li><p>Tips
-<code>.find(class_=&#39;class-name&#39;)</code> for classes</p>
+<li><p>Tips</p>
 
 <ul>
+<li><code>.find(class_=&#39;class-name&#39;)</code> for classes</li>
+<li><code>.find(attrs={&#39;name_of_attribute&#39;: &#39;value&#39;})</code> for attribute-value pairs</li>
 <li><code>len()</code> for counting</li>
 <li>you may need to use <code>.find_all()</code></li>
 </ul></li>
+</ul>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Wrapping code in a function (I)</h3>
+<div class="slideContent small-code" >
+<ul>
+<li>Functions are extremely useful to &ldquo;reuse&rdquo; code over and over again
+
+<ul>
+<li>Functions have a name (say, def FUNCTIONNAME)</li>
+<li>&hellip;and arguments (say, <code>def FUNCTIONNAME(argument1, argument2)</code>)
+<br></li>
+</ul></li>
+<li>We can now wrap the code above in a function 
+
+<ul>
+<li><code>def download_data(url)</code></li>
+<li>the name of the function is <code>download_data</code>, and it requires <code>url</code> as input</li>
+</ul></li>
+</ul>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Wrapping code in a function (II)</h3>
+<div class="slideContent small-code" >
+<pre><code class="python">import requests
+from bs4 import BeautifulSoup
+
+def download_data(url):
+  book_request = requests.get(url, headers = {&#39;User-agent&#39;: &#39;Mozilla/5.0&#39;} )
+  book_request.encoding = book_request.apparent_encoding
+  soup = BeautifulSoup(book_request.text)
+  print(soup.find(&#39;h1&#39;).get_text())
+</code></pre>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>DO: Wrap code into a function</h3>
+<div class="slideContent small-code" >
+<ol>
+<li>Adapt the function to also extract the other attributes (i.e., price, etc.)</li>
+<li>Write a loop to extract data using this function for the following URLs.</li>
+</ol>
+
+<pre><code>urls = [&#39;https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html&#39;,
+        &#39;https://books.toscrape.com/catalogue/tipping-the-velvet_999/index.html&#39;,
+        &#39;https://books.toscrape.com/catalogue/soumission_998/index.html&#39;]
+</code></pre>
+
+<p>Tips: </p>
+
+<ul>
+<li>Status messages with variables: <code>print(f&#39;Done retrieving {url}&#39;)</code></li>
 </ul>
 
 </div>
@@ -1030,6 +1169,41 @@ print(soup.find(class_ = 'price_color').get_text())
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
+<h3>How to sample? (Challenge #2.2)</h3>
+<div class="slideContent" >
+<ul>
+<li>In the demos above, we just used a hard-coded list of URLs</li>
+<li>In practice, getting to that list of books/products (generally speaking: &ldquo;seeds&rdquo;) is a web scraper in itself!</li>
+<li>Examples
+
+<ul>
+<li>scrape all URLs for books from the category overview page; then loop through them an extract information for each book</li>
+<li>scrape user names from reddit.com; then, use the reddit API to get user metadata</li>
+<li>&hellip;</li>
+</ul></li>
+</ul>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>How to sample? (Challenge #2.2)</h3>
+<div class="slideContent" >
+<ul>
+<li>Many challenges in sampling
+
+<ul>
+<li>sample size? generalizability? panel attrition?</li>
+<li>all of the firm&#39;s data? or just a little bit? are subjects vulnerable (say, kids)?</li>
+<li>can we actually &ldquo;get&rdquo; data on all subjects? can we match data?</li>
+</ul></li>
+<li>Solutions and best practices are discussed in &ldquo;Fields of Gold&rdquo;</li>
+</ul>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
 <h3>Writing a complete web scraper</h3>
 <div class="slideContent" >
 <ul>
@@ -1040,11 +1214,28 @@ print(soup.find(class_ = 'price_color').get_text())
 <li>store raw data for diagnostic purposes</li>
 <li>extract relevant data to JSON file with raw data</li>
 </ul></li>
-<li>coding practices
+</ul>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Wrapping of web scraping</h3>
+<div class="slideContent" >
+<ul>
+<li>Get content from a website</li>
+<li>Since we don&#39;t want &ldquo;everything&rdquo;, we need to &ldquo;find&rdquo; relevant elements on the site using
 
 <ul>
-<li>modularize code as much as possible</li>
-<li>ensure code runs top-down</li>
+<li>classes</li>
+<li>attributes</li>
+<li>attribute-value pairs</li>
+</ul></li>
+<li>We first build a prototype; then gradually improve by
+
+<ul>
+<li>modularizing code as much as possible (using functions, so we can reuse code)</li>
+<li>ensuring code runs top-down</li>
 </ul></li>
 </ul>
 
@@ -1061,9 +1252,8 @@ print(soup.find(class_ = 'price_color').get_text())
 <li class="fragment">Structure corresponds to web scraping
 
 <ul>
-<li class="fragment">have list of seeds (e.g., community names)</li>
-<li class="fragment">store data in new-line separated JSON files</li>
-<li class="fragment">parse to CSV </li>
+<li class="fragment">have list of seeds (e.g., community names; this was &ldquo;URLs&rdquo; for web scraping earlier)</li>
+<li class="fragment">store data in new-line separated JSON files (if necessary: convert back to CSV)</li>
 </ul></li>
 </ul>
 
@@ -1071,13 +1261,13 @@ print(soup.find(class_ = 'price_color').get_text())
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Exercises with Reddit</h3>
-<div class="slideContent" >
+<h3>Exploring JSON objects on Reddit.com</h3>
+<div class="slideContent small-code" >
 <p><strong>Please work on exercise 2.3.</strong></p>
 
 <pre><code class="python">import requests
 url = &#39;https://www.reddit.com/r/marketing/about/.json&#39;
-headers = {&#39;authority&#39;: &#39;www.reddit.com&#39;, &#39;cache-control&#39;: &#39;max-age=10&#39;, &#39;upgrade-insecure-requests&#39;: &#39;1&#39;, &#39;user-agent&#39;: &#39;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36&#39;, &#39;accept&#39;: &#39;text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9&#39;, &#39;sec-fetch-site&#39;: &#39;same-origin&#39;, &#39;sec-fetch-mode&#39;: &#39;navigate&#39;, &#39;sec-fetch-user&#39;: &#39;?1&#39;, &#39;sec-fetch-dest&#39;: &#39;document&#39;, &#39;accept-language&#39;: &#39;en-GB,en;q=0.9&#39;}
+headers = {&#39;authority&#39;: &#39;www.reddit.com&#39;, &#39;cache-control&#39;: &#39;max-age=10&#39;, &#39;upgrade-insecure-requests&#39;: &#39;1&#39;, &#39;user-agent&#39;: &#39;Mozilla/5.0&#39;}
 response = requests.get(url, headers=headers)
 json_response = response.json()
 </code></pre>
@@ -1092,228 +1282,116 @@ json_response = response.json()
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
+<h3>At which frequency to extract the data? (Challenge #2.3)</h3>
+<div class="slideContent" >
+<ul>
+<li>Here, we extracted data every five seconds.</li>
+<li>But, extraction frequency vastly differs by project</li>
+<li>Considerations
+
+<ul>
+<li>archival vs. live data?</li>
+<li>at which frequency does your phenomenon occur?</li>
+<li>what&#39;s the refresh rate of the data source?</li>
+<li>any excessive burden on server&#39;s caused by frequency of extraction?</li>
+</ul></li>
+</ul>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>At which frequency to extract the data? (Challenge #2.3)</h3>
+<div class="slideContent" >
+<ul>
+<li>Some solutions
+
+<ul>
+<li>explore gains of live data collections</li>
+<li>adhere to best practices (say, 1 req per second)</li>
+<li>randomize extraction order</li>
+<li>use automatic schedulers for consistency</li>
+</ul></li>
+</ul>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
 <h3>Exercises with Reddit</h3>
 <div class="slideContent" >
 <p><strong>Please work on exercise 2.4.</strong></p>
 
 <ol>
-<li>extend to 10 subreddits</li>
-<li>enhance JSON data with time stamp </li>
+<li>wrap in function and extend to 10 subreddits</li>
+<li>add timestamp to JSON data</li>
 </ol>
 
 </div>
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Next steps</h3>
+<h3>Processing data during the collection (challenge #2.4)</h3>
+<div class="slideContent" >
+<ul>
+<li>Processing can have various degrees
+
+<ul>
+<li>just &ldquo;save&rdquo; the raw data</li>
+<li>extract only necessary information</li>
+<li>choose data format for saving (say, JSON vs. CSV)</li>
+</ul></li>
+<li>Some selected challenges
+
+<ul>
+<li>GDPR vs value in retaining raw data</li>
+<li>Anonymization or pseudonymization required?</li>
+</ul></li>
+</ul>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Processing data during the collection (challenge #2.4)</h3>
+<div class="slideContent" >
+<ul>
+<li>Solutions
+
+<ul>
+<li>Retain raw when possible</li>
+<li>Parse minimal amount of data on the fly</li>
+<li>Remove sensitive info</li>
+<li>Ensure proper encoding</li>
+</ul></li>
+</ul>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Next steps in this class</h3>
 <div class="slideContent" >
 <ul>
 <li>Work on team activity #1
 
 <ul>
-<li>online coaching session next week <strong>Tuesday</strong></li>
-<li>sign-up for team slots (link available on Canvas!)</li>
+<li>online coaching session next week </li>
+<li>make team allocation definite (see Canvas!)</li>
 </ul></li>
-<li></li>
-</ul>
-
-</div>
-
-</section>
-<section data-transition="linear" data-transition-speed="default">
-<h3>Quick web scraper in Python</h3>
-<div class="slideContent small-code" >
-<ul>
-<li class="fragment">Let&#39;s first import some packages</li>
-</ul>
-
-<pre class="fragment"><code class="python">import requests
-</code></pre>
+<li>If you haven&#39;t done so
 
 <ul>
-<li class="fragment">And then call a particular URL (check it out in your browser!)</li>
-</ul>
-
-<pre class="fragment"><code class="python">url = &#39;https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html&#39;
-book_request = requests.get(url)
-</code></pre>
-
-<ul>
-<li class="fragment">Finally, let&#39;s retrieve the product title (we use HTML tags for this)</li>
-</ul>
-
-<pre class="fragment"><code class="python">from bs4 import BeautifulSoup
-soup = BeautifulSoup(book_request.text)
-print(soup.find(&#39;h1&#39;))
-</code></pre>
-
-<pre class="fragment"><code>&lt;h1&gt;A Light in the Attic&lt;/h1&gt;
-</code></pre>
-
-<ul>
-<li class="fragment">Or this&hellip;</li>
-</ul>
-
-<pre class="fragment"><code class="python">print(soup.find(&#39;h2&#39;))
-</code></pre>
-
-<pre class="fragment"><code>&lt;h2&gt;Product Description&lt;/h2&gt;
-</code></pre>
-
-<ul>
-<li class="fragment">Works with any website, even anything you see in a browser (e.g., apps)</li>
-</ul>
-
-</div>
-
-</section>
-<section data-transition="linear" data-transition-speed="default">
-<h3>Quick APIs in Python</h3>
-<div class="slideContent small-code" >
-<ul>
-<li><p>APIs are official interfaces by firms for programmers to extract or submit data, or obtain access to an algorithm</p></li>
-<li><p>They work <em>like</em> websites (i.e., you can call them with the same snippets as before), but usually you need to pay or at least sign up for the service</p></li>
-</ul>
-
-<pre><code class="python"># let&#39;s get some data from the skating community
-api_request = requests.get(&#39;https://www.reddit.com/r/skating/about/.json&#39;, headers=headers)
-</code></pre>
-
-<ul>
-<li>let&#39;s structure the output in the JSON format</li>
-</ul>
-
-<pre><code class="python">api_request.json().get(&#39;data&#39;).get(&#39;subscribers&#39;)
-</code></pre>
-
-<pre><code>5006
-</code></pre>
-
-</div>
-
-</section>
-<section data-transition="linear" data-transition-speed="default">
-<h3>Opportunities with web data</h3>
-<div class="slideContent" >
-<ul>
-<li class="fragment">discover/document novel phenomena (e.g., new platforms/technologies)</li>
-<li class="fragment">boost relevance for managers (e.g., because of using data <em>they</em> care about)</li>
-<li class="fragment">improving methods (e.g., get data to try out new methods, such as review data &amp; text analysis, images, videos)</li>
-<li class="fragment">improved inferences (i.e., get more accurate results)</li>
-</ul>
-
-</div>
-
-</section>
-<section data-transition="linear" data-transition-speed="default">
-<h3>Getting inspired...</h3>
-<div class="slideContent" >
-<ul>
-<li><p><em>What are cool websites/services you&#39;re using often?!</em></p></li>
-<li><p><em>What are important societal issues right now that directly or indirectly affect your lives?</em></p></li>
-<li><p><em>As a marketer, what do you feel will shape our lives in 2-5 years?</em></p></li>
-</ul>
-
-<p>Let&#39;s talk about it right now&hellip;</p>
-
-<!-- 
-
-bring in post its and put them on a board
-
--->
-
-</div>
-
-</section>
-<section data-transition="linear" data-transition-speed="default">
-<h3>Why to care (as a marketer...) (I)</h3>
-<div class="mediaOnly slideContent" >
-<p><img src="use_of_webdata.png" alt="odcm"/></p>
-
-</div>
-
-</section>
-<section data-transition="linear" data-transition-speed="default">
-<h3>Why to care (as a marketer...) (II)</h3>
-<div class="mediaOnly slideContent" >
-<p><img src="citations.png" alt="odcm"/></p>
-
-</div>
-
-</section>
-<section data-transition="linear" data-transition-speed="default">
-<h3>Web data versus other marketing data (I)</h3>
-<div class="slideContent" >
-<p><em>Why do we need a course on this? Isn&#39;t this how research is always done?</em></p>
-
-<p><strong>Yes, but collecting <em>web data</em> is different from other datasets!</strong></p>
-
-<ul>
-<li>data source selection
-
-<ul>
-<li>finding the <em>right</em> data source may be difficult as <strong>many</strong> potential alternatives exist</li>
-<li>differ in delivery formats (website versus API, compared to CSV/databases)</li>
-<li>access to data that is <em>not</em> available commercially (or that a firm would not like to share)</li>
+<li>go through the self-study material of this week</li>
+<li>update your &#39;status&#39; on Pulse!</li>
 </ul></li>
-</ul>
-
-</div>
-
-</section>
-<section data-transition="linear" data-transition-speed="default">
-<h3>Web data versus other marketing data (II)</h3>
-<div class="slideContent" >
-<ul>
-<li>extraction design
+<li>Stay engaged
 
 <ul>
-<li>which information to select (which is available?!)</li>
-<li>type of variables (sales is rare; review scores are abundant)</li>
-<li>different stakeholders that could potentially be addressed</li>
-<li>need to tackle legal and ethical issues</li>
+<li>discuss ideas, post solutions, identify business opportunities, etc.</li>
+<li>try fiddling with an AI API or use chat GPT for starting code</li>
+<li>be in touch on WhatsApp for any issues/bugs/etc.</li>
 </ul></li>
-</ul>
-
-</div>
-
-</section>
-<section data-transition="linear" data-transition-speed="default">
-<h3>Web data versus other marketing data (III)</h3>
-<div class="slideContent" >
-<ul>
-<li>collecting data at scale!
-
-<ul>
-<li>unprecedent: it&#39;s totally automatic (but prone to errors)</li>
-<li>need to put <em>monitoring</em> procedures in place</li>
-<li>data is not documented, and there is no direct way to ask questions about the data (sampling?! generalizability?)</li>
-</ul></li>
-</ul>
-
-<p>Each project is totally unique - that&#39;s why there is no universal &ldquo;best way&rdquo; to approach things&hellip;</p>
-
-</div>
-
-</section>
-<section data-transition="linear" data-transition-speed="default">
-<h3>Methodological Framework</h3>
-<div class="mediaOnly slideContent" >
-<p><img src="framework.png" alt="odcm"/></p>
-
-</div>
-
-</section>
-<section data-transition="linear" data-transition-speed="default">
-<h3>Learning Goals of this course</h3>
-<div class="slideContent" >
-<ul>
-<li class="fragment"><strong>Explain</strong> how to use web data for <strong>creating marketing insight</strong></li>
-<li class="fragment"><strong>Select web data sources</strong> and evaluate their value to inform a specific research context or business problem</li>
-<li class="fragment"><strong>Design the web data collection</strong> while balancing validity, technical feasibility, and exposure to legal/ethical risks</li>
-<li class="fragment"><strong>Collect data</strong> via web scraping and Application Programming Interfaces (APIs) by mixing, extending, and repurposing code snippets</li>
-<li class="fragment"><strong>Document and archive collected data</strong> and make it available for public (re)use</li>
-<li class="fragment"><strong>Track, evaluate, and share progress</strong> on the courseb</li>
 </ul>
 
 </div>

@@ -30,12 +30,9 @@ We're about to start with __today's tutorial ("web scraping 101")__.
 
 - If you haven't done so, open slides at https://odcm.hannesdatta.com/docs/tutorials/webdata-101/
 - Today's (live) code is available at [tiu.nu/livecoding]() (refresh needed)
-- You will need to use __Jupyter Notebook on your laptops__
-
-
-<!--
+- You can use Google Colab at the beginning of this tutorial, BUT... you will have to use __Jupyter Notebook on your laptops__ towards the end
 - Login at [http://pulse.tilburg-digital.com]() to explore this week's to do's
--->
+
 
 Before we start
 ========================================================
@@ -44,7 +41,8 @@ Before we start
   - explore broadly! ("universe discovery!") --> check challenge #1.1
   - compare sources thoroughly --> e.g., comparison table + challenge #1.2
 <br>
-
+  - Consider example projects (e.g., overview tables, illustrations)
+  
 - Any other issues?
 
 
@@ -55,6 +53,181 @@ Agenda
   - Will use different sites (e.g., Twitch)
 - After class
   - Complete exercises yourselves
+
+Framework
+=======
+
+![](https://journals.sagepub.com/na101/home/literatum/publisher/sage/journals/content/jmxa/2022/jmxa_86_5/00222429221100750/20220801/images/large/10.1177_00222429221100750-fig2.jpeg)
+
+Today: zooming in more on __collection design__
+
+Recap from last week: #2.1 (Which information to extract)
+=======
+
+- We focused on which __information to extract__
+  - e.g., explore a website, navigate broadly to find information that's interesting, etc.
+- We focused on how to extract that information
+  - BeautifulSoup: `.find` function
+  - Use (a combination of) tags, classes, attributes, attribute-value pairs
+
+DO: Recap from last week: #2.1 (which information to extract)
+=====
+class: small-code
+
+__Extend the code snippet below to extract the product's UPC__.
+
+```{python, eval=TRUE}
+import requests
+from bs4 import BeautifulSoup
+url = 'https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html'
+request = requests.get(url, headers =  {'User-agent': 'Mozilla/5.0'})
+soup = BeautifulSoup(request.text)
+soup.find('h3').get_text()
+```
+
+DO: Solution
+=====
+class: small-code
+
+```{python, eval=TRUE}
+soup.find(class_='table-striped').find('tr').find('td').get_text()
+```
+
+__Recommendation:__
+- Practice with extracting new information that you haven't extracted before from this website.
+
+Today's focus: Challenges #2.2 onwards
+================
+
+- We need a "starting point" for a data collection
+  - e.g., product overview pages (books.toscrape.com)
+  - e.g., home page of Twitch (for currently active live streams)
+
+- Let's consider books.toscrape.com
+  - __From where could we start a data collection?__
+
+DO: Starting up a data collection for your own project
+========
+
+__Using your own project ideas__ OR any other website that comes to your mind, tell us how you could __sample__ from the site?
+
+Tips:
+- Make use of the best practices for Challenge #2.2 in [Table 3](https://journals.sagepub.com/doi/full/10.1177/00222429221100750?journalCode=jmxa#table3-00222429221100750)
+
+
+We need some new techniques: Finding MORE content
+===========
+class: small-code
+
+- So far, we only searched for individual items (max. 1!) using the `.find()` function
+- BeautifulSoup also has a `.find_all()` function
+
+```{python, eval=TRUE}
+import requests
+from bs4 import BeautifulSoup
+url = 'https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html'
+request = requests.get(url, headers =  {'User-agent': 'Mozilla/5.0'})
+soup = BeautifulSoup(request.text)
+soup.find('h3').get_text()
+```
+
+
+
+tags (`a`), or classes (`class_='classname'`).
+- We can also search for `attribute values`.
+- Suppose we only want to obtain the links to __streams__, we can filter for values of a particular attribute, e.g., `"data-test-selector"` being `"TitleAndChannel"`.
+
+```{python, eval = FALSE}
+
+streams = soup.find_all('a', {'data-test-selector':"TitleAndChannel"})
+
+```
+
+
+New chapter
+=======
+
+  __How to sample?__ (#2.2)
+
+- Many pages on a website (here, Twitch) could serve as starting points for a data collection.
+- For example, starting from the homepage, one samples from *currently active channels on Twitch*.
+- But... such a sample is uninformative of *all* shows available on Twitch.
+- In your web data projects, you need to think about *how to sample from the site*.
+
+
+
+Stage 1: Which information to extract
+========
+incremental: true
+
+- Let's open one of the currently running shows and explore what information we can see
+- Does that trigger any "research ideas"?
+- Let's now broaden our perspective, by considering some of the issues discussed in challenge #2.1 in Table 3.
+  - e.g., live vs. archival data 
+  - e.g., limits to iterating through pages
+  - and many other validity, legal/ethical and technical issues
+
+
+Stage 2: How to sample?
+=======
+
+- Many pages on a website (here, Twitch) could serve as starting points for a data collection.
+- For example, starting from the homepage, one samples from *currently active channels on Twitch*.
+- But... such a sample is uninformative of *all* shows available on Twitch.
+- In your web data projects, you need to think about *how to sample from the site*.
+
+- __Do: Identifying sampling frames on Twitch__
+  - Using the suggestions for challenge #2.2 (Table 3) in [tiu.nu/scraping](), identify potential sampling frames.
+  
+
+__DO:__
+
+1. Can you develop a code snippet that extracts some of the desired information?
+2. Let's wrap the code in a function which stores the desired information in a dictionary.
+
+
+
+Finding more specific links
+===========
+
+- So far, we only searched for tags (`a`), or classes (`class_='classname'`).
+- We can also search for `attribute values`.
+- Suppose we only want to obtain the links to __streams__, we can filter for values of a particular attribute, e.g., `"data-test-selector"` being `"TitleAndChannel"`.
+
+```{python, eval = FALSE}
+
+streams = soup.find_all('a', {'data-test-selector':"TitleAndChannel"})
+
+```
+
+__DO:__
+
+- Write a code snippet to collect all stream names and corresponding URLs (`['href']`), and storing them in a list of dictionaries.
+
+
+Stage 3: At which frequency
+=======
+
+- We can decide how often to capture information from a site
+  - e.g., once, every 5 minutes, every day
+- Potential gains in extracting data multiple times
+- Extraction limits & technically feasible sample size!
+- More issues explained in table 3, challenge #2.3
+
+
+
+Stage 4: How to process data during collection
+==========
+
+- value of retaining raw data
+- parsing data on-the-fly
+
+Finalizing scraper
+=======================
+
+Let's wrap the data collection together in one executable file.
+
+
 
 Making a connection with a site
 =========
@@ -136,82 +309,6 @@ __Tip: Use the code snippet from above first to open the browser window!__.
 
 2. Extend code to be able to use BeautifulSoup, and find all links (tag is `a`). Recall you can use `soup.find_all()`
 
-
-Finding more specific links
-===========
-
-- So far, we only searched for tags (`a`), or classes (`class_='classname'`).
-- We can also search for `attribute values`.
-- Suppose we only want to obtain the links to __streams__, we can filter for values of a particular attribute, e.g., `"data-test-selector"` being `"TitleAndChannel"`.
-
-```{python, eval = FALSE}
-
-streams = soup.find_all('a', {'data-test-selector':"TitleAndChannel"})
-
-```
-
-__DO:__
-
-- Write a code snippet to collect all stream names and corresponding URLs (`['href']`), and storing them in a list of dictionaries.
-
-
-Framework
-=======
-
-![](https://journals.sagepub.com/na101/home/literatum/publisher/sage/journals/content/jmxa/2022/jmxa_86_5/00222429221100750/20220801/images/large/10.1177_00222429221100750-fig2.jpeg)
-
-Today: zooming in more on __collection design__
-
-Stage 2: How to sample?
-=======
-
-- Many pages on a website (here, Twitch) could serve as starting points for a data collection.
-- For example, starting from the homepage, one samples from *currently active channels on Twitch*.
-- But... such a sample is uninformative of *all* shows available on Twitch.
-- In your web data projects, you need to think about *how to sample from the site*.
-
-- __Do: Identifying sampling frames on Twitch__
-  - Using the suggestions for challenge #2.2 (Table 3) in [tiu.nu/scraping](), identify potential sampling frames.
-  
-
-Stage 1: Which information to extract
-========
-incremental: true
-
-- Let's open one of the currently running shows and explore what information we can see
-- Does that trigger any "research ideas"?
-- Let's now broaden our perspective, by considering some of the issues discussed in challenge #2.1 in Table 3.
-  - e.g., live vs. archival data 
-  - e.g., limits to iterating through pages
-  - and many other validity, legal/ethical and technical issues
-
-__DO:__
-
-1. Can you develop a code snippet that extracts some of the desired information?
-2. Let's wrap the code in a function which stores the desired information in a dictionary.
-
-
-Stage 3: At which frequency
-=======
-
-- We can decide how often to capture information from a site
-  - e.g., once, every 5 minutes, every day
-- Potential gains in extracting data multiple times
-- Extraction limits & technically feasible sample size!
-- More issues explained in table 3, challenge #2.3
-
-
-
-Stage 4: How to process data during collection
-==========
-
-- value of retaining raw data
-- parsing data on-the-fly
-
-Finalizing scraper
-=======================
-
-Let's wrap the data collection together in one executable file.
 
 
 Next steps

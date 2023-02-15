@@ -40,19 +40,9 @@ Before we start
 - Recap coaching session for team activity #1
   - explore broadly! ("universe discovery!") --> check challenge #1.1
   - compare sources thoroughly --> e.g., comparison table + challenge #1.2
-<br>
   - Consider example projects (e.g., overview tables, illustrations)
   
-- Any other issues?
-
-
-Agenda
-=======
-- In-class
-  - Go through selected issues of "web scraping 101"
-  - Will use different sites (e.g., Twitch)
-- After class
-  - Complete exercises yourselves
+- Any issues you would like to address?
 
 Framework
 =======
@@ -61,17 +51,17 @@ Framework
 
 Today: zooming in more on __collection design__
 
-Recap from last week: #2.1 (Which information to extract)
-=======
+Recap from last week's tutorial
+==========
 
-- We focused on which __information to extract__
+- We focused on which __information to extract__ (Challenge #2.1)
   - e.g., explore a website, navigate broadly to find information that's interesting, etc.
-- We focused on how to extract that information
-  - BeautifulSoup: `.find` function
+- We focused on __how to extract__ that information
+  - BeautifulSoup: `.find()` function
   - Use (a combination of) tags, classes, attributes, attribute-value pairs
 
-DO: Recap from last week: #2.1 (which information to extract)
-=====
+DO: Recap from last week's tutorial
+==========
 class: small-code
 
 __Extend the code snippet below to extract the product's UPC__.
@@ -82,34 +72,45 @@ from bs4 import BeautifulSoup
 url = 'https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html'
 request = requests.get(url, headers =  {'User-agent': 'Mozilla/5.0'})
 soup = BeautifulSoup(request.text)
-soup.find('h3').get_text()
+soup.find('h1').get_text()
 ```
 
 DO: Solution
-=====
+==========
 class: small-code
+
+- Use the browser's __inspect__ mode to find the relevant attributes
+- Consecutively develop the code
 
 ```{python, eval=TRUE}
 soup.find(class_='table-striped').find('tr').find('td').get_text()
 ```
 
-__Recommendation:__
-- Practice with extracting new information that you haven't extracted before from this website.
+__Recommendations:__
+- Practice even more, e.g., with __new information__ that you haven't extracted before from this website.
+- Always build code __gradually__, never from scratch
 
-Today's focus: Challenges #2.2 onwards
+Today's focus
 ================
 
-- We need a "starting point" for a data collection
-  - e.g., product overview pages (books.toscrape.com)
-  - e.g., home page of Twitch (for currently active live streams)
+__Remaining challenges for the "design" phase of collecting data.__
 
-- Let's consider books.toscrape.com
-  - __From where could we start a data collection?__
+- How to sample from a website? (Challenge #2.2)
+  - Recall that we do not have access to a firm's database (so we can't sample from a population of, say, customers)
+  - With web scraping, we always need a "starting point" for a data collection
+- Examples for seeds/sample
+  - product overview pages (books.toscrape.com)
+  - home page of Twitch (for currently active live streams)
+<br>
+__Question: From where could we start a data collection on books.toscrape.com?__
 
 DO: Starting up a data collection for your own project
-========
+============
 
-__Using your own project ideas__ OR any other website that comes to your mind, tell us how you could __sample__ from the site?
+__Using your own project ideas__, tell us how you could __sample__ from the site?
+
+<br>
+<br>
 
 Tips:
 - Make use of the best practices for Challenge #2.2 in [Table 3](https://journals.sagepub.com/doi/full/10.1177/00222429221100750?journalCode=jmxa#table3-00222429221100750)
@@ -120,119 +121,291 @@ We need some new techniques: Finding MORE content
 class: small-code
 
 - So far, we only searched for individual items (max. 1!) using the `.find()` function
-- BeautifulSoup also has a `.find_all()` function
+- BeautifulSoup also has a `.find_all()` function - returning __all of the relevant elements__
+- For example, the snippet below *loops* through the attributes table
 
-```{python, eval=TRUE}
+```{python include=FALSE}
 import requests
 from bs4 import BeautifulSoup
 url = 'https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html'
 request = requests.get(url, headers =  {'User-agent': 'Mozilla/5.0'})
+request.encoding = request.apparent_encoding
 soup = BeautifulSoup(request.text)
-soup.find('h3').get_text()
 ```
 
+```{python, eval=TRUE}
+table = soup.find(class_='table-striped')
+rows = table.find_all('tr')
+for row in rows:
+  attribute_name = row.find('th').get_text()
+  value=row.find('td').get_text()
+  print(f'Attribute: {attribute_name}; value: {value}')
 
+```
 
-tags (`a`), or classes (`class_='classname'`).
-- We can also search for `attribute values`.
-- Suppose we only want to obtain the links to __streams__, we can filter for values of a particular attribute, e.g., `"data-test-selector"` being `"TitleAndChannel"`.
+DO: Extract all links
+=======
+class: small-code
+
+__Please use the code snippet below to extract the 'href' attribute of all links on the website.__
+
+- Links are identifiable by the "a" tag. 
+- The relevant attribute is called "href"
+- Build your code consecutively!
 
 ```{python, eval = FALSE}
+url = 'https://books.toscrape.com/catalogue/category/books_1/index.html'
+res = requests.get(url, headers = {'User-agent': 'Mozilla/5.0'})
+res.encoding = res.apparent_encoding
+soup = BeautifulSoup(res.text)
+```
 
-streams = soup.find_all('a', {'data-test-selector':"TitleAndChannel"})
+Solution: Extract all links
+=====
+
+```{python, eval=FALSE}
+for link in soup.find_all("a"): 
+    print(link.attrs["href"])
+```
+
+- But... are all of these links really relevant?
+- Recall: what "seeds" do we need to gather?
+
+Narrowing down our extraction
+============
+
+- Let us explore the site structure a bit more
+- Particularly, can we identify 'other', nested ways to navigate on the site?
+- __Let's open the inspect mode of our browser and come up with a new strategy.__
+
+
+Narrowing down our extraction
+============
+
+- The class `product_pod` identifies individual elements that we're interested in.
+
+```{python, eval=TRUE}
+# return all book containers
+url = 'https://books.toscrape.com/catalogue/category/books_1/index.html'
+res = requests.get(url, headers = {'User-agent': 'Mozilla/5.0'})
+res.encoding = res.apparent_encoding
+soup = BeautifulSoup(res.text)
+
+books = soup.find_all(class_="product_pod")
+len(books)
 
 ```
 
+__DO:__ Can you come up with a way to loop through all of the links WITHIN the classes `product_pod`?
 
-New chapter
-=======
+Solution: Narrowing down our extraction
+============
+class: small-code
 
-  __How to sample?__ (#2.2)
+```{python, eval=TRUE}
+# return all links within book containers
+books = soup.find_all(class_="product_pod")
+for book in books:
+  print(book.find('a').attrs['href'])
 
-- Many pages on a website (here, Twitch) could serve as starting points for a data collection.
-- For example, starting from the homepage, one samples from *currently active channels on Twitch*.
-- But... such a sample is uninformative of *all* shows available on Twitch.
-- In your web data projects, you need to think about *how to sample from the site*.
+```
 
+- Let's now take a look at these links more closely. 
 
-
-Stage 1: Which information to extract
+Modifying the links
 ========
-incremental: true
+class: small-code
 
-- Let's open one of the currently running shows and explore what information we can see
-- Does that trigger any "research ideas"?
-- Let's now broaden our perspective, by considering some of the issues discussed in challenge #2.1 in Table 3.
-  - e.g., live vs. archival data 
-  - e.g., limits to iterating through pages
-  - and many other validity, legal/ethical and technical issues
+- Notice that the links were *relative* links and we won't be able to use them for looping (e.g., try pasting them in your browser - they won't work!)
+- So, let's turn them into absolute links, simply by concatenating (= combining) strings.
 
-
-Stage 2: How to sample?
-=======
-
-- Many pages on a website (here, Twitch) could serve as starting points for a data collection.
-- For example, starting from the homepage, one samples from *currently active channels on Twitch*.
-- But... such a sample is uninformative of *all* shows available on Twitch.
-- In your web data projects, you need to think about *how to sample from the site*.
-
-- __Do: Identifying sampling frames on Twitch__
-  - Using the suggestions for challenge #2.2 (Table 3) in [tiu.nu/scraping](), identify potential sampling frames.
-  
-
-__DO:__
-
-1. Can you develop a code snippet that extracts some of the desired information?
-2. Let's wrap the code in a function which stores the desired information in a dictionary.
-
-
-
-Finding more specific links
-===========
-
-- So far, we only searched for tags (`a`), or classes (`class_='classname'`).
-- We can also search for `attribute values`.
-- Suppose we only want to obtain the links to __streams__, we can filter for values of a particular attribute, e.g., `"data-test-selector"` being `"TitleAndChannel"`.
-
-```{python, eval = FALSE}
-
-streams = soup.find_all('a', {'data-test-selector':"TitleAndChannel"})
+```{python, eval=TRUE}
+# return all book containers
+books = soup.find_all(class_="product_pod")
+for book in books:
+  url = book.find('a').attrs['href']
+  url_cleaned = url.replace('../../','')
+  print('https://books.toscrape.com/catalogue/'+url_cleaned)
 
 ```
 
-__DO:__
+DO: Remember functions?
+======
 
-- Write a code snippet to collect all stream names and corresponding URLs (`['href']`), and storing them in a list of dictionaries.
+Write a function that...
+
+- accepts an input argument, called `url`
+- makes a web request to the particular URL at books.toscrape.com
+- use __this URL__: `https://books.toscrape.com/catalogue/category/books_1/index.html`
+- extract all links to the books and returns them back 
+
+__Do you remember why we like functions so much?__
+
+Solution
+======
+class: small-code
+
+```{python, eval=TRUE}
+# return all book containers
+import requests
+from bs4 import BeautifulSoup
+
+def get_seeds(url = 'https://books.toscrape.com/catalogue/category/books_1/index.html'):
+  request = requests.get(url, headers =  {'User-agent': 'Mozilla/5.0'})
+  request.encoding = request.apparent_encoding
+  soup = BeautifulSoup(request.text)
+  books = soup.find_all(class_="product_pod")
+  urls = []
+  for book in books:
+    url = book.find('a').attrs['href']
+    url_cleaned = url.replace('../../','')
+    urls.append('https://books.toscrape.com/catalogue/'+url_cleaned)
+  return(urls)
+
+# get_seeds() # remove hash to run
+```
+
+- Functions allow us to re-use code; it prevents errors, and helps us structure our code.
+
+Extracting more information, even from the category page
+=========
+
+- Access to the books object gives us convenient access to more data, e.g., valence, price
+- We can already scrape this information directly (and skip the product pages...) -- remember challenge #2.1?
+- Because the data is nested, we ideally store it in dictionaries (important to __prevent array misalignment__)
+
+__Let's explore array misalignment now__ (e.g., on Twitch)
 
 
-Stage 3: At which frequency
+Let's take a step back...
+=======
+
+- What we've learnt so far...
+  - Extract individual information from a product overview page (ch. #2.1)
+  - Collect all links from a category overview page (ch. #2.2)
+  
+- What's missing
+  - MORE THAN ONE overview pages with information
+  - We need to loop through them
+  
+- We can then tie things together in a scraper
+  - "collect" all seeds from all of the category pages (scraper 1)
+  - then collect all product information from individual product pages (scraper 2)
+  
+Navigating on a website
+=========
+class: small-code
+
+- Two strategies
+  - Understand how links are built (prebuilding them; strategy 1)
+  - Understand how to "click" to the next page (consecutively building them; strategy 2)
+  
+```{python, eval=FALSE}
+urls = []
+counter = 1
+while counter <= 50:
+  urls.append(f'https://books.toscrape.com/catalogue/category/books_1/page-{counter}.html')
+  counter = counter  + 1
+urls
+```
+
+Navigating on a Website (strategy 2)
+=========
+class: small-code
+
+```{python, eval=FALSE}
+import requests
+from bs4 import BeautifulSoup
+base_url = 'https://books.toscrape.com/catalogue/category/books_1/'
+url = base_url
+
+while url:
+    print(f'Making request for {url}.')
+    request = requests.get(url, headers = {'User-agent': 'Mozilla/5.0'})
+    # we can direclty start scraping information from the page here
+    soup = BeautifulSoup(request.text)
+    try:
+        next_page = soup.find(class_='next').find('a')['href']
+        url = base_url + next_page
+    except:
+        url = None
+  
+```
+
+__DISCUSS:__ When do we use strategy 1 (prebuilt) vs. strategy 2 (do it on the fly)?
+
+Let's tie things together
+=========
+class: small-code
+
+- It's good practice to separate the "seeding" stage of your scraper from the actual collection stage.
+- For example, you collect seeds once, and then repeatedly collect product data (e.g., challenge #2.3)
+- Let's take a look at some pseudo code!
+
+```
+seeds = []
+for p in overview_pages: # challenge #2.2
+    links = get_all_links(p) 
+    seeds.append(links)
+
+product_data = []
+for s in seeds:
+  product = get_product_info(s) # challenge #2.1
+  product_updated = processing(product) # challenge #2.4
+  time.sleep(1) # challenge #2.3
+  product_data.append(product_updated)
+
+```
+
+Challenge #2.3: At which frequency to extract the data?
 =======
 
 - We can decide how often to capture information from a site
   - e.g., once, every 5 minutes, every day
 - Potential gains in extracting data multiple times
-- Extraction limits & technically feasible sample size!
+- Extraction limits & __technically feasible sample size!__
 - More issues explained in table 3, challenge #2.3
 
-
-
-Stage 4: How to process data during collection
+ 
+Challenge #2.4: How to process data during collection
 ==========
 
 - value of retaining raw data
-- parsing data on-the-fly
 
-Finalizing scraper
-=======================
+```
+product_data = []
+for s in seeds:
+  # store raw html code here
+  store_to_file(s, 'website.html')
+  # continue w/ parsing some information
+  product = get_product_info(s)
+  product_data.append(product)
 
-Let's wrap the data collection together in one executable file.
+```
 
+Challenge #2.4: How to process data during collection
+==========
 
+- parsing data on the fly (vs. after the collection)
 
-Making a connection with a site
+```
+product_data = []
+for s in seeds:
+  product = get_product_info(s) 
+  product_updated = processing(product)
+  time.sleep(1) 
+  product_data.append(product_updated) 
+  # write data to file here (parsing on the fly)
+  
+# write data to file here (after the collection)
+
+```
+
+Scraping more advanced websites
 =========
 incremental: true
-
+class: small-code
+ 
 - So far, we have done this
   - `requests` (to get) --> `beautifulsoup` (to extract information, "parse")
   
@@ -247,18 +420,14 @@ f.close()
 
 __Can you explain what happened?__
 
-<!--
-But... what about dynamic websites?
-  
-  - Some sites block requests from the get-go, even w/ headers.
--->
-
 Alternative ways to make connections
 ========
+class: small-code
 
 - Many dynamic sites require what I call "simulated browsing"
 
 - Try this:
+
 ```{python, eval=FALSE}
 !pip install webdriver_manager
 !pip install selenium
@@ -274,9 +443,8 @@ url = "https://amazon.com/"
 driver.get(url)
 ```
 
-- See your browser opening up?
+- __See your browser opening up?__
 - Beware of rerunning code - a new instance will run each time!
-
 
 Continuing with beautifulsoup
 =========
@@ -292,11 +460,18 @@ for el in soup.find_all(class_ = 'a-section'):
     if title is not None: print(title.text)
 ```
 
+Different ways to open a site
+=========
 
+- Static/easy site: use `requests`
+  - `requests` --> `BeautifulSoup` --> `.find()`
+- Dynamic/difficult site: also use `selenium`
+  - `selenium` --> wait --> `BeautifulSoup` --> `.find()`
+  
 Do: Scraping Twitch.tv using `selenium`
 =====
 
-1. Use selenium to open `twitch.tv`
+1) Use selenium to open `twitch.tv`
 
 ```{python, eval=FALSE}
 import time
@@ -307,14 +482,22 @@ time.sleep(3) # wait for a few seconds for everything to be loaded
 
 __Tip: Use the code snippet from above first to open the browser window!__.
 
-2. Extend code to be able to use BeautifulSoup, and find all links (tag is `a`). Recall you can use `soup.find_all()`
-
+2) Extend code to be able to use BeautifulSoup, and find all links (tag is `a`). Recall you can use `soup.find_all()`
 
 
 Next steps
 ===========
 
-- Prepping for next coaching
-   - get started w/ prototyping data extraction
-   - consider selenium!
-   - pitch your idea to friends - do they see value?
+- It's vacation next week
+  - But: catch up content, prep future content, work on team project
+- Next coaching
+   - settle on extraction design (challenges #1.1-1.3) & pitch idea to friends
+   - get started w/ __prototyping data extraction__
+   - consider `selenium` and APIs (see next tutorials)
+- Contribute to the course (and earn bonus points): https://github.com/hannesdatta/course-odcm/issues
+
+Thanks!
+=======
+
+- Any questions?
+- Be in touch for feedback via WhatsApp.

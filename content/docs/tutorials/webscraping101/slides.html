@@ -810,12 +810,9 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 <ul>
 <li>If you haven&#39;t done so, open slides at <a href="https://odcm.hannesdatta.com/docs/tutorials/webdata-101/">https://odcm.hannesdatta.com/docs/tutorials/webdata-101/</a></li>
 <li>Today&#39;s (live) code is available at <a href="">tiu.nu/livecoding</a> (refresh needed)</li>
-<li>You will need to use <strong>Jupyter Notebook on your laptops</strong></li>
+<li>You can use Google Colab at the beginning of this tutorial, BUT&hellip; you will have to use <strong>Jupyter Notebook on your laptops</strong> towards the end</li>
+<li>Login at <a href="">http://pulse.tilburg-digital.com</a> to explore this week&#39;s to do&#39;s</li>
 </ul>
-
-<!--
-- Login at [http://pulse.tilburg-digital.com]() to explore this week's to do's
--->
 
 </div>
 
@@ -828,29 +825,39 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 
 <ul>
 <li>explore broadly! (&ldquo;universe discovery!&rdquo;) &ndash;&gt; check challenge #1.1</li>
-<li>compare sources thoroughly &ndash;&gt; e.g., comparison table + challenge #1.2
-<br></li>
+<li>compare sources thoroughly &ndash;&gt; e.g., comparison table + challenge #1.2</li>
+<li>Consider example projects (e.g., overview tables, illustrations)</li>
 </ul></li>
-<li><p>Any other issues?</p></li>
+<li><p>Any issues you would like to address?</p></li>
 </ul>
 
 </div>
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Agenda</h3>
+<h3>Framework</h3>
+<div class="mediaInline slideContent" >
+<p><img src="https://journals.sagepub.com/na101/home/literatum/publisher/sage/journals/content/jmxa/2022/jmxa_86_5/00222429221100750/20220801/images/large/10.1177_00222429221100750-fig2.jpeg" alt=""/></p>
+
+<p>Today: zooming in more on <strong>collection design</strong></p>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Recap from last week&#x27;s tutorial</h3>
 <div class="slideContent" >
 <ul>
-<li>In-class
+<li>We focused on which <strong>information to extract</strong> (Challenge #2.1)
 
 <ul>
-<li>Go through selected issues of &ldquo;web scraping 101&rdquo;</li>
-<li>Will use different sites (e.g., Twitch)</li>
+<li>e.g., explore a website, navigate broadly to find information that&#39;s interesting, etc.</li>
 </ul></li>
-<li>After class
+<li>We focused on <strong>how to extract</strong> that information
 
 <ul>
-<li>Complete exercises yourselves</li>
+<li>BeautifulSoup: <code>.find()</code> function</li>
+<li>Use (a combination of) tags, classes, attributes, attribute-value pairs</li>
 </ul></li>
 </ul>
 
@@ -858,8 +865,493 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Making a connection with a site</h3>
+<h3>DO: Recap from last week&#x27;s tutorial</h3>
+<div class="slideContent small-code" >
+<p><strong>Extend the code snippet below to extract the product&#39;s UPC</strong>.</p>
+
+<pre><code class="python">import requests
+from bs4 import BeautifulSoup
+url = &#39;https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html&#39;
+request = requests.get(url, headers =  {&#39;User-agent&#39;: &#39;Mozilla/5.0&#39;})
+soup = BeautifulSoup(request.text)
+soup.find(&#39;h1&#39;).get_text()
+</code></pre>
+
+<pre><code>&#39;A Light in the Attic&#39;
+</code></pre>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>DO: Solution</h3>
+<div class="slideContent small-code" >
+<ul>
+<li>Use the browser&#39;s <strong>inspect</strong> mode to find the relevant attributes</li>
+<li>Consecutively develop the code</li>
+</ul>
+
+<pre><code class="python">soup.find(class_=&#39;table-striped&#39;).find(&#39;tr&#39;).find(&#39;td&#39;).get_text()
+</code></pre>
+
+<pre><code>&#39;a897fe39b1053632&#39;
+</code></pre>
+
+<p><strong>Recommendations:</strong></p>
+
+<ul>
+<li>Practice even more, e.g., with <strong>new information</strong> that you haven&#39;t extracted before from this website.</li>
+<li>Always build code <strong>gradually</strong>, never from scratch</li>
+</ul>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Today&#x27;s focus</h3>
 <div class="slideContent" >
+<p><strong>Remaining challenges for the &ldquo;design&rdquo; phase of collecting data.</strong></p>
+
+<ul>
+<li>How to sample from a website? (Challenge #2.2)
+
+<ul>
+<li>Recall that we do not have access to a firm&#39;s database (so we can&#39;t sample from a population of, say, customers)</li>
+<li>With web scraping, we always need a &ldquo;starting point&rdquo; for a data collection</li>
+</ul></li>
+<li>Examples for seeds/sample
+
+<ul>
+<li>product overview pages (books.toscrape.com)</li>
+<li>home page of Twitch (for currently active live streams)
+<br>
+<strong>Question: From where could we start a data collection on books.toscrape.com?</strong></li>
+</ul></li>
+</ul>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>DO: Starting up a data collection for your own project</h3>
+<div class="slideContent" >
+<p><strong>Using your own project ideas</strong>, tell us how you could <strong>sample</strong> from the site?</p>
+
+<p><br>
+<br></p>
+
+<p>Tips:</p>
+
+<ul>
+<li>Make use of the best practices for Challenge #2.2 in <a href="https://journals.sagepub.com/doi/full/10.1177/00222429221100750?journalCode=jmxa#table3-00222429221100750">Table 3</a></li>
+</ul>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>We need some new techniques: Finding MORE content</h3>
+<div class="slideContent small-code" >
+<ul>
+<li>So far, we only searched for individual items (max. 1!) using the <code>.find()</code> function</li>
+<li>BeautifulSoup also has a <code>.find_all()</code> function - returning <strong>all of the relevant elements</strong></li>
+<li>For example, the snippet below <em>loops</em> through the attributes table</li>
+</ul>
+
+<pre><code class="python">table = soup.find(class_=&#39;table-striped&#39;)
+rows = table.find_all(&#39;tr&#39;)
+for row in rows:
+  attribute_name = row.find(&#39;th&#39;).get_text()
+  value=row.find(&#39;td&#39;).get_text()
+  print(f&#39;Attribute: {attribute_name}; value: {value}&#39;)
+</code></pre>
+
+<pre><code>Attribute: UPC; value: a897fe39b1053632
+Attribute: Product Type; value: Books
+Attribute: Price (excl. tax); value: £51.77
+Attribute: Price (incl. tax); value: £51.77
+Attribute: Tax; value: £0.00
+Attribute: Availability; value: In stock (22 available)
+Attribute: Number of reviews; value: 0
+</code></pre>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>DO: Extract all links</h3>
+<div class="slideContent small-code" >
+<p><strong>Please use the code snippet below to extract the &#39;href&#39; attribute of all links on the website.</strong></p>
+
+<ul>
+<li>Links are identifiable by the &ldquo;a&rdquo; tag. </li>
+<li>The relevant attribute is called &ldquo;href&rdquo;</li>
+<li>Build your code consecutively!</li>
+</ul>
+
+<pre><code class="python">url = &#39;https://books.toscrape.com/catalogue/category/books_1/index.html&#39;
+res = requests.get(url, headers = {&#39;User-agent&#39;: &#39;Mozilla/5.0&#39;})
+res.encoding = res.apparent_encoding
+soup = BeautifulSoup(res.text)
+</code></pre>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Solution: Extract all links</h3>
+<div class="slideContent" >
+<pre><code class="python">for link in soup.find_all(&quot;a&quot;): 
+    print(link.attrs[&quot;href&quot;])
+</code></pre>
+
+<ul>
+<li>But&hellip; are all of these links really relevant?</li>
+<li>Recall: what &ldquo;seeds&rdquo; do we need to gather?</li>
+</ul>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Narrowing down our extraction</h3>
+<div class="slideContent" >
+<ul>
+<li>Let us explore the site structure a bit more</li>
+<li>Particularly, can we identify &#39;other&#39;, nested ways to navigate on the site?</li>
+<li><strong>Let&#39;s open the inspect mode of our browser and come up with a new strategy.</strong></li>
+</ul>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Narrowing down our extraction</h3>
+<div class="slideContent" >
+<ul>
+<li>The class <code>product_pod</code> identifies individual elements that we&#39;re interested in.</li>
+</ul>
+
+<pre><code class="python"># return all book containers
+url = &#39;https://books.toscrape.com/catalogue/category/books_1/index.html&#39;
+res = requests.get(url, headers = {&#39;User-agent&#39;: &#39;Mozilla/5.0&#39;})
+res.encoding = res.apparent_encoding
+soup = BeautifulSoup(res.text)
+
+books = soup.find_all(class_=&quot;product_pod&quot;)
+len(books)
+</code></pre>
+
+<pre><code>20
+</code></pre>
+
+<p><strong>DO:</strong> Can you come up with a way to loop through all of the links WITHIN the classes <code>product_pod</code>?</p>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Solution: Narrowing down our extraction</h3>
+<div class="slideContent small-code" >
+<pre><code class="python"># return all links within book containers
+books = soup.find_all(class_=&quot;product_pod&quot;)
+for book in books:
+  print(book.find(&#39;a&#39;).attrs[&#39;href&#39;])
+</code></pre>
+
+<pre><code>../../a-light-in-the-attic_1000/index.html
+../../tipping-the-velvet_999/index.html
+../../soumission_998/index.html
+../../sharp-objects_997/index.html
+../../sapiens-a-brief-history-of-humankind_996/index.html
+../../the-requiem-red_995/index.html
+../../the-dirty-little-secrets-of-getting-your-dream-job_994/index.html
+../../the-coming-woman-a-novel-based-on-the-life-of-the-infamous-feminist-victoria-woodhull_993/index.html
+../../the-boys-in-the-boat-nine-americans-and-their-epic-quest-for-gold-at-the-1936-berlin-olympics_992/index.html
+../../the-black-maria_991/index.html
+../../starving-hearts-triangular-trade-trilogy-1_990/index.html
+../../shakespeares-sonnets_989/index.html
+../../set-me-free_988/index.html
+../../scott-pilgrims-precious-little-life-scott-pilgrim-1_987/index.html
+../../rip-it-up-and-start-again_986/index.html
+../../our-band-could-be-your-life-scenes-from-the-american-indie-underground-1981-1991_985/index.html
+../../olio_984/index.html
+../../mesaerion-the-best-science-fiction-stories-1800-1849_983/index.html
+../../libertarianism-for-beginners_982/index.html
+../../its-only-the-himalayas_981/index.html
+</code></pre>
+
+<ul>
+<li>Let&#39;s now take a look at these links more closely. </li>
+</ul>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Modifying the links</h3>
+<div class="slideContent small-code" >
+<ul>
+<li>Notice that the links were <em>relative</em> links and we won&#39;t be able to use them for looping (e.g., try pasting them in your browser - they won&#39;t work!)</li>
+<li>So, let&#39;s turn them into absolute links, simply by concatenating (= combining) strings.</li>
+</ul>
+
+<pre><code class="python"># return all book containers
+books = soup.find_all(class_=&quot;product_pod&quot;)
+for book in books:
+  url = book.find(&#39;a&#39;).attrs[&#39;href&#39;]
+  url_cleaned = url.replace(&#39;../../&#39;,&#39;&#39;)
+  print(&#39;https://books.toscrape.com/catalogue/&#39;+url_cleaned)
+</code></pre>
+
+<pre><code>https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html
+https://books.toscrape.com/catalogue/tipping-the-velvet_999/index.html
+https://books.toscrape.com/catalogue/soumission_998/index.html
+https://books.toscrape.com/catalogue/sharp-objects_997/index.html
+https://books.toscrape.com/catalogue/sapiens-a-brief-history-of-humankind_996/index.html
+https://books.toscrape.com/catalogue/the-requiem-red_995/index.html
+https://books.toscrape.com/catalogue/the-dirty-little-secrets-of-getting-your-dream-job_994/index.html
+https://books.toscrape.com/catalogue/the-coming-woman-a-novel-based-on-the-life-of-the-infamous-feminist-victoria-woodhull_993/index.html
+https://books.toscrape.com/catalogue/the-boys-in-the-boat-nine-americans-and-their-epic-quest-for-gold-at-the-1936-berlin-olympics_992/index.html
+https://books.toscrape.com/catalogue/the-black-maria_991/index.html
+https://books.toscrape.com/catalogue/starving-hearts-triangular-trade-trilogy-1_990/index.html
+https://books.toscrape.com/catalogue/shakespeares-sonnets_989/index.html
+https://books.toscrape.com/catalogue/set-me-free_988/index.html
+https://books.toscrape.com/catalogue/scott-pilgrims-precious-little-life-scott-pilgrim-1_987/index.html
+https://books.toscrape.com/catalogue/rip-it-up-and-start-again_986/index.html
+https://books.toscrape.com/catalogue/our-band-could-be-your-life-scenes-from-the-american-indie-underground-1981-1991_985/index.html
+https://books.toscrape.com/catalogue/olio_984/index.html
+https://books.toscrape.com/catalogue/mesaerion-the-best-science-fiction-stories-1800-1849_983/index.html
+https://books.toscrape.com/catalogue/libertarianism-for-beginners_982/index.html
+https://books.toscrape.com/catalogue/its-only-the-himalayas_981/index.html
+</code></pre>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>DO: Remember functions?</h3>
+<div class="slideContent" >
+<p>Write a function that&hellip;</p>
+
+<ul>
+<li>accepts an input argument, called <code>url</code></li>
+<li>makes a web request to the particular URL at books.toscrape.com</li>
+<li>use <strong>this URL</strong>: <code>https://books.toscrape.com/catalogue/category/books_1/index.html</code></li>
+<li>extract all links to the books and returns them back </li>
+</ul>
+
+<p><strong>Do you remember why we like functions so much?</strong></p>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Solution</h3>
+<div class="slideContent small-code" >
+<pre><code class="python"># return all book containers
+import requests
+from bs4 import BeautifulSoup
+
+def get_seeds(url = &#39;https://books.toscrape.com/catalogue/category/books_1/index.html&#39;):
+  request = requests.get(url, headers =  {&#39;User-agent&#39;: &#39;Mozilla/5.0&#39;})
+  request.encoding = request.apparent_encoding
+  soup = BeautifulSoup(request.text)
+  books = soup.find_all(class_=&quot;product_pod&quot;)
+  urls = []
+  for book in books:
+    url = book.find(&#39;a&#39;).attrs[&#39;href&#39;]
+    url_cleaned = url.replace(&#39;../../&#39;,&#39;&#39;)
+    urls.append(&#39;https://books.toscrape.com/catalogue/&#39;+url_cleaned)
+  return(urls)
+
+# get_seeds() # remove hash to run
+</code></pre>
+
+<ul>
+<li>Functions allow us to re-use code; it prevents errors, and helps us structure our code.</li>
+</ul>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Extracting more information, even from the category page</h3>
+<div class="slideContent" >
+<ul>
+<li>Access to the books object gives us convenient access to more data, e.g., valence, price</li>
+<li>We can already scrape this information directly (and skip the product pages&hellip;) &ndash; remember challenge #2.1?</li>
+<li>Because the data is nested, we ideally store it in dictionaries (important to <strong>prevent array misalignment</strong>)</li>
+</ul>
+
+<p><strong>Let&#39;s explore array misalignment now</strong> (e.g., on Twitch)</p>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Let&#x27;s take a step back...</h3>
+<div class="slideContent" >
+<ul>
+<li><p>What we&#39;ve learnt so far&hellip;</p>
+
+<ul>
+<li>Extract individual information from a product overview page (ch. #2.1)</li>
+<li>Collect all links from a category overview page (ch. #2.2)</li>
+</ul></li>
+<li><p>What&#39;s missing</p>
+
+<ul>
+<li>MORE THAN ONE overview pages with information</li>
+<li>We need to loop through them</li>
+</ul></li>
+<li><p>We can then tie things together in a scraper</p>
+
+<ul>
+<li>&ldquo;collect&rdquo; all seeds from all of the category pages (scraper 1)</li>
+<li>then collect all product information from individual product pages (scraper 2)</li>
+</ul></li>
+</ul>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Navigating on a website</h3>
+<div class="slideContent small-code" >
+<ul>
+<li>Two strategies
+
+<ul>
+<li>Understand how links are built (prebuilding them; strategy 1)</li>
+<li>Understand how to &ldquo;click&rdquo; to the next page (consecutively building them; strategy 2)</li>
+</ul></li>
+</ul>
+
+<pre><code class="python">urls = []
+counter = 1
+while counter &lt;= 50:
+  urls.append(f&#39;https://books.toscrape.com/catalogue/category/books_1/page-{counter}.html&#39;)
+  counter = counter  + 1
+urls
+</code></pre>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Navigating on a Website (strategy 2)</h3>
+<div class="slideContent small-code" >
+<pre><code class="python">import requests
+from bs4 import BeautifulSoup
+base_url = &#39;https://books.toscrape.com/catalogue/category/books_1/&#39;
+url = base_url
+
+while url:
+    print(f&#39;Making request for {url}.&#39;)
+    request = requests.get(url, headers = {&#39;User-agent&#39;: &#39;Mozilla/5.0&#39;})
+    # we can direclty start scraping information from the page here
+    soup = BeautifulSoup(request.text)
+    try:
+        next_page = soup.find(class_=&#39;next&#39;).find(&#39;a&#39;)[&#39;href&#39;]
+        url = base_url + next_page
+    except:
+        url = None
+</code></pre>
+
+<p><strong>DISCUSS:</strong> When do we use strategy 1 (prebuilt) vs. strategy 2 (do it on the fly)?</p>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Let&#x27;s tie things together</h3>
+<div class="slideContent small-code" >
+<ul>
+<li>It&#39;s good practice to separate the &ldquo;seeding&rdquo; stage of your scraper from the actual collection stage.</li>
+<li>For example, you collect seeds once, and then repeatedly collect product data (e.g., challenge #2.3)</li>
+<li>Let&#39;s take a look at some pseudo code!</li>
+</ul>
+
+<pre><code>seeds = []
+for p in overview_pages: # challenge #2.2
+    links = get_all_links(p) 
+    seeds.append(links)
+
+product_data = []
+for s in seeds:
+  product = get_product_info(s) # challenge #2.1
+  product_updated = processing(product) # challenge #2.4
+  time.sleep(1) # challenge #2.3
+  product_data.append(product_updated)
+
+</code></pre>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Challenge #2.3: At which frequency to extract the data?</h3>
+<div class="slideContent" >
+<ul>
+<li>We can decide how often to capture information from a site
+
+<ul>
+<li>e.g., once, every 5 minutes, every day</li>
+</ul></li>
+<li>Potential gains in extracting data multiple times</li>
+<li>Extraction limits &amp; <strong>technically feasible sample size!</strong></li>
+<li>More issues explained in table 3, challenge #2.3</li>
+</ul>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Challenge #2.4: How to process data during collection</h3>
+<div class="slideContent" >
+<ul>
+<li>value of retaining raw data</li>
+</ul>
+
+<pre><code>product_data = []
+for s in seeds:
+  # store raw html code here
+  store_to_file(s, &#39;website.html&#39;)
+  # continue w/ parsing some information
+  product = get_product_info(s)
+  product_data.append(product)
+
+</code></pre>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Challenge #2.4: How to process data during collection</h3>
+<div class="slideContent" >
+<ul>
+<li>parsing data on the fly (vs. after the collection)</li>
+</ul>
+
+<pre><code>product_data = []
+for s in seeds:
+  product = get_product_info(s) 
+  product_updated = processing(product)
+  time.sleep(1) 
+  product_data.append(product_updated) 
+  # write data to file here (parsing on the fly)
+
+# write data to file here (after the collection)
+
+</code></pre>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Scraping more advanced websites</h3>
+<div class="slideContent small-code" >
 <ul>
 <li class="fragment"><p>So far, we have done this</p>
 
@@ -878,18 +1370,12 @@ f.close()
 
 <p class="fragment"><strong>Can you explain what happened?</strong></p>
 
-<!--
-But... what about dynamic websites?
-  
-  - Some sites block requests from the get-go, even w/ headers.
--->
-
 </div>
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
 <h3>Alternative ways to make connections</h3>
-<div class="slideContent" >
+<div class="slideContent small-code" >
 <ul>
 <li><p>Many dynamic sites require what I call &ldquo;simulated browsing&rdquo;</p></li>
 <li><p>Try this:</p></li>
@@ -910,7 +1396,7 @@ driver.get(url)
 </code></pre>
 
 <ul>
-<li>See your browser opening up?</li>
+<li><strong>See your browser opening up?</strong></li>
 <li>Beware of rerunning code - a new instance will run each time!</li>
 </ul>
 
@@ -936,11 +1422,28 @@ for el in soup.find_all(class_ = &#39;a-section&#39;):
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
+<h3>Different ways to open a site</h3>
+<div class="slideContent" >
+<ul>
+<li>Static/easy site: use <code>requests</code>
+
+<ul>
+<li><code>requests</code> &ndash;&gt; <code>BeautifulSoup</code> &ndash;&gt; <code>.find()</code></li>
+</ul></li>
+<li>Dynamic/difficult site: also use <code>selenium</code>
+
+<ul>
+<li><code>selenium</code> &ndash;&gt; wait &ndash;&gt; <code>BeautifulSoup</code> &ndash;&gt; <code>.find()</code></li>
+</ul></li>
+</ul>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
 <h3>Do: Scraping Twitch.tv using `selenium`</h3>
 <div class="slideContent" >
-<ol>
-<li>Use selenium to open <code>twitch.tv</code></li>
-</ol>
+<p>1) Use selenium to open <code>twitch.tv</code></p>
 
 <pre><code class="python">import time
 url = &quot;https://twitch.tv/&quot;
@@ -950,119 +1453,7 @@ time.sleep(3) # wait for a few seconds for everything to be loaded
 
 <p><strong>Tip: Use the code snippet from above first to open the browser window!</strong>.</p>
 
-<ol>
-<li>Extend code to be able to use BeautifulSoup, and find all links (tag is <code>a</code>). Recall you can use <code>soup.find_all()</code></li>
-</ol>
-
-</div>
-
-</section>
-<section data-transition="linear" data-transition-speed="default">
-<h3>Finding more specific links</h3>
-<div class="slideContent" >
-<ul>
-<li>So far, we only searched for tags (<code>a</code>), or classes (<code>class_=&#39;classname&#39;</code>).</li>
-<li>We can also search for <code>attribute values</code>.</li>
-<li>Suppose we only want to obtain the links to <strong>streams</strong>, we can filter for values of a particular attribute, e.g., <code>&quot;data-test-selector&quot;</code> being <code>&quot;TitleAndChannel&quot;</code>.</li>
-</ul>
-
-<pre><code class="python">streams = soup.find_all(&#39;a&#39;, {&#39;data-test-selector&#39;:&quot;TitleAndChannel&quot;})
-</code></pre>
-
-<p><strong>DO:</strong></p>
-
-<ul>
-<li>Write a code snippet to collect all stream names and corresponding URLs (<code>[&#39;href&#39;]</code>), and storing them in a list of dictionaries.</li>
-</ul>
-
-</div>
-
-</section>
-<section data-transition="linear" data-transition-speed="default">
-<h3>Framework</h3>
-<div class="mediaInline slideContent" >
-<p><img src="https://journals.sagepub.com/na101/home/literatum/publisher/sage/journals/content/jmxa/2022/jmxa_86_5/00222429221100750/20220801/images/large/10.1177_00222429221100750-fig2.jpeg" alt=""/></p>
-
-<p>Today: zooming in more on <strong>collection design</strong></p>
-
-</div>
-
-</section>
-<section data-transition="linear" data-transition-speed="default">
-<h3>Stage 2: How to sample?</h3>
-<div class="slideContent" >
-<ul>
-<li>Many pages on a website (here, Twitch) could serve as starting points for a data collection.</li>
-<li>For example, starting from the homepage, one samples from <em>currently active channels on Twitch</em>.</li>
-<li>But&hellip; such a sample is uninformative of <em>all</em> shows available on Twitch.</li>
-<li><p>In your web data projects, you need to think about <em>how to sample from the site</em>.</p></li>
-<li><p><strong>Do: Identifying sampling frames on Twitch</strong></p>
-
-<ul>
-<li>Using the suggestions for challenge #2.2 (Table 3) in <a href="">tiu.nu/scraping</a>, identify potential sampling frames.</li>
-</ul></li>
-</ul>
-
-</div>
-
-</section>
-<section data-transition="linear" data-transition-speed="default">
-<h3>Stage 1: Which information to extract</h3>
-<div class="slideContent" >
-<ul>
-<li class="fragment">Let&#39;s open one of the currently running shows and explore what information we can see</li>
-<li class="fragment">Does that trigger any &ldquo;research ideas&rdquo;?</li>
-<li class="fragment">Let&#39;s now broaden our perspective, by considering some of the issues discussed in challenge #2.1 in Table 3.
-
-<ul>
-<li class="fragment">e.g., live vs. archival data </li>
-<li class="fragment">e.g., limits to iterating through pages</li>
-<li class="fragment">and many other validity, legal/ethical and technical issues</li>
-</ul></li>
-</ul>
-
-<p><strong>DO:</strong></p>
-
-<ol>
-<li class="fragment">Can you develop a code snippet that extracts some of the desired information?</li>
-<li class="fragment">Let&#39;s wrap the code in a function which stores the desired information in a dictionary.</li>
-</ol>
-
-</div>
-
-</section>
-<section data-transition="linear" data-transition-speed="default">
-<h3>Stage 3: At which frequency</h3>
-<div class="slideContent" >
-<ul>
-<li>We can decide how often to capture information from a site
-
-<ul>
-<li>e.g., once, every 5 minutes, every day</li>
-</ul></li>
-<li>Potential gains in extracting data multiple times</li>
-<li>Extraction limits &amp; technically feasible sample size!</li>
-<li>More issues explained in table 3, challenge #2.3</li>
-</ul>
-
-</div>
-
-</section>
-<section data-transition="linear" data-transition-speed="default">
-<h3>Stage 4: How to process data during collection</h3>
-<div class="slideContent" >
-<ul>
-<li>value of retaining raw data</li>
-<li>parsing data on-the-fly</li>
-</ul>
-
-</div>
-
-</section>
-<section data-transition="linear" data-transition-speed="default">
-<h3>Finalizing scraper</h3>
-<div class="slideContent" >
-<p>Let&#39;s wrap the data collection together in one executable file.</p>
+<p>2) Extend code to be able to use BeautifulSoup, and find all links (tag is <code>a</code>). Recall you can use <code>soup.find_all()</code></p>
 
 </div>
 
@@ -1071,13 +1462,30 @@ time.sleep(3) # wait for a few seconds for everything to be loaded
 <h3>Next steps</h3>
 <div class="slideContent" >
 <ul>
-<li>Prepping for next coaching
+<li>It&#39;s vacation next week
 
 <ul>
-<li>get started w/ prototyping data extraction</li>
-<li>consider selenium!</li>
-<li>pitch your idea to friends - do they see value?</li>
+<li>But: catch up content, prep future content, work on team project</li>
 </ul></li>
+<li>Next coaching
+
+<ul>
+<li>settle on extraction design (challenges #1.1-1.3) &amp; pitch idea to friends</li>
+<li>get started w/ <strong>prototyping data extraction</strong></li>
+<li>consider <code>selenium</code> and APIs (consider next tutorials)</li>
+</ul></li>
+<li>Contribute to the course (and earn bonus points): <a href="https://github.com/hannesdatta/course-odcm/issues">https://github.com/hannesdatta/course-odcm/issues</a></li>
+</ul>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Thanks!</h3>
+<div class="slideContent" >
+<ul>
+<li>Any questions?</li>
+<li>Be in touch for feedback via WhatsApp.</li>
 </ul>
 
 </div>

@@ -39,18 +39,20 @@ We're about to start with __today's tutorial ("API 101")__.
 Before we start
 ========================================================
 
-
-- Webdriver and Selenium -- organizing support?
-- Last week's tutorial (web scraping 101)
-  - remaining questions?
+- Tech development & extra material
+  - Check "advanced" tutorials for extra code snippets + selenium
+  - [Legality of scraping](https://htmlpreview.github.io/?https://github.com/hannesdatta/legal-situation-of-web-scraping/blob/main/legal-status-of-web-scraping.html#/title-slide)
+    - Use of ChatGPT: experience?
 - Team projects
-  - enthousiastic about many of your ideas
+  - enthusiastic about many of your ideas
   - get started building your prototypes
-  - API authentication will be pain point - highly idiosyncratic!
 - Pulse: great to see so many using it -- feedback appreciated
 <br>
 - Any other issues?
 
+<!--
+- API authentication will be pain point - highly idiosyncratic!
+-->
 
 Agenda
 =======
@@ -90,7 +92,7 @@ __Do:__ Browse the [documentation](https://icanhazdadjoke.com/api) of the dad jo
 
 1) Describe which endpoints are available. What do they do?
 
-2) Can you come up w/ reasons why these endpoints are available?
+2) Can you come up with reasons why these endpoints are available?
 
 Do: Making a connection with an API
 =================
@@ -153,8 +155,7 @@ class: small-code
 ```{python, eval=FALSE}
 import requests
 search_url = "https://icanhazdadjoke.com/search"
-response = requests.get(search_url, 
-                        headers={"Accept": "application/json"})
+response = requests.get(search_url, headers={"Accept": "application/json"})
 joke_request = response.json()
 print(joke_request)
 ```
@@ -177,14 +178,14 @@ print(joke_request)
 
 __DO:__ 
 
-- Try incrementation the `iteration` parameter to verify it works!
+- Try to add 1 to the `iteration` parameter to verify it works!
 - Re-check the [documentation](https://icanhazdadjoke.com/api) for the endpoint `/search` -- and then debug the code snippet!
 
 Looping through all pages of an endpoint
 =====
 
 - Let's first try constructing a loop that counts from 1 to the end of pages
-- I always google myself for snippets - e.g., [here](https://www.google.com/search?client=firefox-b-d&q=loop+through+sequence+python)
+- I always search for snippets - e.g., [here](https://www.google.com/search?client=firefox-b-d&q=loop+through+sequence+python)
 
 ```{python, eval=FALSE}
 for x in range(6):
@@ -207,7 +208,6 @@ We can now combine our learnings to build a function that extracts all jokes to 
 - Also load packages!
 - Save as `.py` file and test whether it runs from command prompt/terminal
 
-
 __Solution on next slide...__
 
 
@@ -222,8 +222,7 @@ import json
 def get_jokes(term='cat'):
   search_url = "https://icanhazdadjoke.com/search"
   # get the number of jokes first
-  response = requests.get(search_url, 
-                          headers={"Accept": "application/json"},
+  response = requests.get(search_url, headers={"Accept": "application/json"},
                           params = {"term": term})
   joke_request = response.json()
   total_pages = joke_request['total_pages']
@@ -268,7 +267,6 @@ json_response = response.json()
 Do: More reddit stuff: Looping
 ======
 
-
 ```{python, eval=FALSE}
 import requests
 import json
@@ -295,7 +293,7 @@ Next steps
 
 - Next week: Team coaching __on campus__
   - Presentations: check [activity #3](https://odcm.hannesdatta.com/docs/project/workplan/activity3/)
-  - Afterwards: __coding camp__ (you work in teams, I'll walk around to help)
+  - Afterwards: __coding camp__ (you work in teams, I'll give support)
   
 __You can proceed w/ tutorial now, and I will be available for questions (if time is left)...__
 

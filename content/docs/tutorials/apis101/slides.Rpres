@@ -19,7 +19,6 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 knitr::opts_chunk$set(warning = FALSE, message = FALSE)
 library(reticulate)
 py_install("requests")
-py_install("bs4")
 ```
 
 Welcome to oDCM!
@@ -246,14 +245,14 @@ Do: Onwards to Reddit.com
 =======================
 class: small-code
 
-- Reddit uses different headers -- just use the example snippets from the tutorial
-- If you want, you can change the name of the subreddit (it's `marketing` below)
+- Reddit uses different headers -- use the example snippets from the tutorial
+- If you want, you can change the name of the subreddit
 - Learning how to iterate through JSON objects is required
 
 ```{python, eval=FALSE}
 import requests
 import json
-url = 'https://www.reddit.com/r/marketing/about/.json'
+url = 'https://www.reddit.com/r/marketing/about/.json' # subreddit is "marketing"
 headers = {'authority': 'www.reddit.com', 'cache-control': 'max-age=10', 'user-agent': 'Mozilla/5.0'}
 response = requests.get(url, headers=headers)
 json_response = response.json()
@@ -264,7 +263,7 @@ json_response = response.json()
 3. Store information (1) and (2) in a dictionary, and have it returned by a function.
 
 
-Do: More reddit stuff: Looping
+Do: More reddit stuff: Looping (I)
 ======
 
 ```{python, eval=FALSE}
@@ -277,6 +276,10 @@ json_response = response.json()
 ```
 
 1) Loop through all posts, and add their text (`selftext`), timestamp (`created_utc`) and indicator whether it is a video (`is_video`) to a new list of dictionaries.
+
+Do: More reddit stuff: Looping (II)
+======
+
 2) Parse this list of dictionaries to a csv file, using `pandas`.
 
 ```
@@ -289,11 +292,13 @@ Next steps
 ===========
 
 - Reflection: wow - no "structuring" (THAT's the key difference compared to web scraping)
-- Spent time trying to get your first data from an API -- authentication __will__ be an issue!
+- Spend time trying to get your first data from an API -- authentication __will__ be an issue!
 
 - Next week: Team coaching __on campus__
   - Presentations: check [activity #3](https://odcm.hannesdatta.com/docs/project/workplan/activity3/)
   - Afterwards: __coding camp__ (you work in teams, I'll give support)
   
-__You can proceed w/ tutorial now, and I will be available for questions (if time is left)...__
+- __You can proceed w/ tutorial now.__
+  - I will be available for questions (if time is left)...
+  - We could also go over some [legal issues](https://htmlpreview.github.io/?https://github.com/hannesdatta/legal-situation-of-web-scraping/blob/main/legal-status-of-web-scraping.html#/title-slide)
 

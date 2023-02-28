@@ -824,23 +824,27 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 <h3>Before we start</h3>
 <div class="slideContent" >
 <ul>
-<li>Webdriver and Selenium &ndash; organizing support?</li>
-<li>Last week&#39;s tutorial (web scraping 101)
+<li>Tech development &amp; extra material
 
 <ul>
-<li>remaining questions?</li>
+<li>Check &ldquo;advanced&rdquo; tutorials for extra code snippets + selenium</li>
+<li><a href="https://htmlpreview.github.io/?https://github.com/hannesdatta/legal-situation-of-web-scraping/blob/main/legal-status-of-web-scraping.html#/title-slide">Legality of scraping</a></li>
+<li>Use of ChatGPT: experience?</li>
 </ul></li>
 <li>Team projects
 
 <ul>
-<li>enthousiastic about many of your ideas</li>
+<li>enthusiastic about many of your ideas</li>
 <li>get started building your prototypes</li>
-<li>API authentication will be pain point - highly idiosyncratic!</li>
 </ul></li>
 <li>Pulse: great to see so many using it &ndash; feedback appreciated
 <br></li>
 <li>Any other issues?</li>
 </ul>
+
+<!--
+- API authentication will be pain point - highly idiosyncratic!
+-->
 
 </div>
 
@@ -916,7 +920,7 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 
 <p>1) Describe which endpoints are available. What do they do?</p>
 
-<p>2) Can you come up w/ reasons why these endpoints are available?</p>
+<p>2) Can you come up with reasons why these endpoints are available?</p>
 
 </div>
 
@@ -1002,8 +1006,7 @@ f.close()
 
 <pre><code class="python">import requests
 search_url = &quot;https://icanhazdadjoke.com/search&quot;
-response = requests.get(search_url, 
-                        headers={&quot;Accept&quot;: &quot;application/json&quot;})
+response = requests.get(search_url, headers={&quot;Accept&quot;: &quot;application/json&quot;})
 joke_request = response.json()
 print(joke_request)
 </code></pre>
@@ -1028,7 +1031,7 @@ print(joke_request)
 <p><strong>DO:</strong> </p>
 
 <ul>
-<li>Try incrementation the <code>iteration</code> parameter to verify it works!</li>
+<li>Try to add 1 to the <code>iteration</code> parameter to verify it works!</li>
 <li>Re-check the <a href="https://icanhazdadjoke.com/api">documentation</a> for the endpoint <code>/search</code> &ndash; and then debug the code snippet!</li>
 </ul>
 
@@ -1040,7 +1043,7 @@ print(joke_request)
 <div class="slideContent" >
 <ul>
 <li>Let&#39;s first try constructing a loop that counts from 1 to the end of pages</li>
-<li>I always google myself for snippets - e.g., <a href="https://www.google.com/search?client=firefox-b-d&amp;q=loop+through+sequence+python">here</a></li>
+<li>I always search for snippets - e.g., <a href="https://www.google.com/search?client=firefox-b-d&amp;q=loop+through+sequence+python">here</a></li>
 </ul>
 
 <pre><code class="python">for x in range(6):
@@ -1077,8 +1080,7 @@ import json
 def get_jokes(term=&#39;cat&#39;):
   search_url = &quot;https://icanhazdadjoke.com/search&quot;
   # get the number of jokes first
-  response = requests.get(search_url, 
-                          headers={&quot;Accept&quot;: &quot;application/json&quot;},
+  response = requests.get(search_url, headers={&quot;Accept&quot;: &quot;application/json&quot;},
                           params = {&quot;term&quot;: term})
   joke_request = response.json()
   total_pages = joke_request[&#39;total_pages&#39;]
@@ -1105,14 +1107,14 @@ def get_jokes(term=&#39;cat&#39;):
 <h3>Do: Onwards to Reddit.com</h3>
 <div class="slideContent small-code" >
 <ul>
-<li>Reddit uses different headers &ndash; just use the example snippets from the tutorial</li>
-<li>If you want, you can change the name of the subreddit (it&#39;s <code>marketing</code> below)</li>
+<li>Reddit uses different headers &ndash; use the example snippets from the tutorial</li>
+<li>If you want, you can change the name of the subreddit</li>
 <li>Learning how to iterate through JSON objects is required</li>
 </ul>
 
 <pre><code class="python">import requests
 import json
-url = &#39;https://www.reddit.com/r/marketing/about/.json&#39;
+url = &#39;https://www.reddit.com/r/marketing/about/.json&#39; # subreddit is &quot;marketing&quot;
 headers = {&#39;authority&#39;: &#39;www.reddit.com&#39;, &#39;cache-control&#39;: &#39;max-age=10&#39;, &#39;user-agent&#39;: &#39;Mozilla/5.0&#39;}
 response = requests.get(url, headers=headers)
 json_response = response.json()
@@ -1128,7 +1130,7 @@ json_response = response.json()
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Do: More reddit stuff: Looping</h3>
+<h3>Do: More reddit stuff: Looping (I)</h3>
 <div class="slideContent" >
 <pre><code class="python">import requests
 import json
@@ -1138,8 +1140,15 @@ response = requests.get(url, headers=headers)
 json_response = response.json()
 </code></pre>
 
-<p>1) Loop through all posts, and add their text (<code>selftext</code>), timestamp (<code>created_utc</code>) and indicator whether it is a video (<code>is_video</code>) to a new list of dictionaries.
-2) Parse this list of dictionaries to a csv file, using <code>pandas</code>.</p>
+<p>1) Loop through all posts, and add their text (<code>selftext</code>), timestamp (<code>created_utc</code>) and indicator whether it is a video (<code>is_video</code>) to a new list of dictionaries.</p>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Do: More reddit stuff: Looping (II)</h3>
+<div class="slideContent" >
+<p>2) Parse this list of dictionaries to a csv file, using <code>pandas</code>.</p>
 
 <pre><code>import pandas as pd
 df = pd.from_dict(your_dict)
@@ -1154,16 +1163,20 @@ df.to_csv(&#39;filename.csv&#39;)
 <div class="slideContent" >
 <ul>
 <li>Reflection: wow - no &ldquo;structuring&rdquo; (THAT&#39;s the key difference compared to web scraping)</li>
-<li><p>Spent time trying to get your first data from an API &ndash; authentication <strong>will</strong> be an issue!</p></li>
+<li><p>Spend time trying to get your first data from an API &ndash; authentication <strong>will</strong> be an issue!</p></li>
 <li><p>Next week: Team coaching <strong>on campus</strong></p>
 
 <ul>
 <li>Presentations: check <a href="https://odcm.hannesdatta.com/docs/project/workplan/activity3/">activity #3</a></li>
-<li>Afterwards: <strong>coding camp</strong> (you work in teams, I&#39;ll walk around to help)</li>
+<li>Afterwards: <strong>coding camp</strong> (you work in teams, I&#39;ll give support)</li>
+</ul></li>
+<li><p><strong>You can proceed w/ tutorial now.</strong></p>
+
+<ul>
+<li>I will be available for questions (if time is left)&hellip;</li>
+<li>We could also go over some <a href="https://htmlpreview.github.io/?https://github.com/hannesdatta/legal-situation-of-web-scraping/blob/main/legal-status-of-web-scraping.html#/title-slide">legal issues</a></li>
 </ul></li>
 </ul>
-
-<p><strong>You can proceed w/ tutorial now, and I will be available for questions (if time is left)&hellip;</strong></p>
 
 </div>
 

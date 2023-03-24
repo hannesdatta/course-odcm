@@ -23,6 +23,9 @@ Welcome to the final lecture in oDCM!
 
 If you haven't done so, please **explore the exam page & example questions** at [https://odcm.hannesdatta.com/docs/exam]().
 
+The __course evaluation__ is live at https://app.evalytics.nl. Please voice your opinions!
+
+
 Agenda
 ========================================================
 
@@ -45,11 +48,11 @@ incremental: true
 
 - Research is by far more impactful than non-webdata-based research
   - Explore novel phenomena, be timely!
-  - Boost ecological value
-  - Facilitate methodological advancement
-  - Enhance inferences / better measurement
+  - Boost ecological value, get closer to what managers are interested in!
+  - Facilitate methodological advancement (e.g., text, video)
+  - Better measurement (e.g., control variables)
 - But: challenging!
-  - Programming knowledge to master technical challenges
+  - Programming skills to master technical challenges
   - Conceptual thinking to navigate design choices & legal risks
   
 Lessons learnt #2: Staying in balance
@@ -58,11 +61,13 @@ incremental: true
 
 ![odcm](methodological_framework.png)
 
+__Let's generate a few examples where validity, legal and technical goals conflict.__
+
 Lessons learnt #3: Data Source Selection
 ========================================================
 incremental: true
 
-- Important of "broadening horizon" (e.g., assume perspective of various stakeholders, exceed geopgrahical boundaries, use aggregators rather than primary data providers)
+- Important of "broadening horizon" (e.g., assume perspective of various stakeholders, exceed geographical boundaries, use aggregators rather than primary data providers)
 - Consider alternatives to scraping (i.e., avoid defaulting! e.g., APIs, but also ready-made datasets)
 - Scope the data context (i.e., understand how the data is generated, assess reliability of the data, explore user conversations about the data, etc.)
 
@@ -81,7 +86,7 @@ Lessons learnt #5: Design Challenges (II)
 incremental: true
 
 - How long does the data collection run?
-- How to seed?
+- How to sample/seed?
 - To which population do the seeds generalize?
 - At what frequency to extract the data (e.g., once? multiple times?)
 - How to process the data on-the-fly? (e.g., first store as JSON, then parse; pandas-based parsing)
@@ -96,14 +101,14 @@ incremental: true
 - "Go" decision from provider? Technical intrusiveness?
 - Data management & use, commercialization
 
-
 Lessons learnt #7: Extraction
 ========================================================
 incremental: true
 
 - Prototyping is extremely important
-  - requests + beautifulSoup vs. selenium/Chromedriver
-  - extraction methodology (e.g., tags, classes) + stability + hierarchy (!)
+  - `requests` + `beautifulSoup` vs. `selenium` (Chromedriver)
+  - extraction methodology (e.g., tags, classes, attribute-values) + stability
+  - array misaligning (obey the hierarchy!)
   - scheduling, hiding passwords
   - revise navigation paths
   - add comments to code (make it understandable for others!)
@@ -150,22 +155,6 @@ incremental: true
 4. Build own [research APIs](https://www.jstatsoft.org/article/view/v094i09)
 
 
-Next steps: Official course evaluation
-========================================================
-
-- Course evaluation has been immensely important to this course
-  - Introduced on-campus tutorials, spent more time on Python onboarding
-  - Streamlined workload by dropping unnecessary material
-  - Allocated more time to coaching sessions
-  - Developed Pulse to keep you on track
-  
-- Course evaluation has been critical to my career
-  - Without my past evaluations, I wouldn't be teaching to you today
-  - I will look at all comments
-- Scores are most important to show importance of this course
-
-- You will be invited via Evalytics (evaluate [here](https://app.evalytics.nl/#/login)).
-
 <!--
 ::: notes
 
@@ -177,43 +166,77 @@ Next steps: Official course evaluation
 Next steps: Projects & SPA
 ========================================================
 
-- Please hand in so I can makethe data package publicly!
+- Please hand in so I can __make the data package public__! 
   - Take out any passwords (store as environment variables instead)
   - Remove any unnecessary files
   - Want to keep your names on the documentation or anonymize them? 
-  - Don't make statements that are too bold?
-  - Consider uploading datasets & documentation yourselves to Zenodo.org
+  - Don't make statements that are too bold!
+  - Consider uploading datasets & documentation yourselves [to Zenodo](https://tilburgsciencehub.com/get/doi/?utm_campaign=referral-short)
 
 - Re-read the [grading rubric on the course site](https://odcm.hannesdatta.com/docs/course/project/grading/)!
 
 - You will receive __invite to self- and peer assessment__ via email
 
 
-Informal feedback
-========================================================
-incremental: true
+Exam overview: Practical part
+=============
 
-- alternatives to 10-minute coaching sessions?
-- how to deal w/ dropouts in teams (e.g., workload)
-- keep track of progress on Pulse -- good or not?
-- support
-  - comments in Pulse vs. WhatsApp?
-  - feel you've got enough support?
+- Organization
+  - When: 3 April, 2pm - 4pm, take home
+  - Work max. 2 hours on this part
+- How?
+  - open book, on your computer
+  - ChatGPT/GitHub Copilot et al. ONLY when explicitly asked for
+- What?
+  - let's look at [some questions now](https://odcm.hannesdatta.com/docs/exam/examplequestions/#practical-part)
+  - prep well - expect new websites, new endpoints of APIs that you know
 
-Exam preparation
-========================================================
+Exam overview: Theoretical part
+=============
 
-- https://odcm.hannesdatta.com/docs/exam/
-- https://odcm.hannesdatta.com/docs/exam/examplequestions/
+- Organization
+  - When: 4 April, 1pm - 3.15pm (jointly w/ dPrep; break of 15 minutes inside)
+  - Work max. 1 hour on this part
+- How?
+  - closed book
+  - I can make selected resources available on the instruction page. __Which ones?__
+- What?
+  - let's look at [some questions now](https://odcm.hannesdatta.com/docs/exam/examplequestions/#theoretical-part)
 
 Exam tips
 ========================================================
 incremental: true
 
-- Verify Selenium/Chrome works
-- Make your own cheatsheets (also collaboratively, share them beforehand)
+- Verify `selenium` and chrome work, next to the "regular" scraping toolkits (`requests`, `BeautifulSoup`)
+- Let us __compile material__ you want to access for the theoretical part of the exam (I'm proposing the web scraping paper -- download via the introduction page)
 - Practice scraping an unknown website (e.g., tutorials at tilburgsciencehub.com, working with the Reddit API) -- the scraper will account for a larger number of points on the exam!
 - Importance of "Fields of Gold" paper, including the web appendix (+ reason through challenges)
+
+
+Next steps: Official course evaluation
+========================================================
+
+- Course evaluation has been immensely important to this course
+  - This edition: streamlined content of tutorials; introduced new format for coaching sessions; 
+  - Last edition: spent one week on Python onboarding; allocated moret ime to coaching sessions; developed Pulse
+
+- Course evaluation has been critical to my career
+  - Without my past evaluations, I wouldn't be teaching to you today
+  - I will look at all comments
+- Scores are most important to show importance of this course
+
+- You will be invited via Evalytics (evaluate [here](https://app.evalytics.nl/#/login)).
+
+Informal feedback
+===============
+
+- is this coure too hard? how can I make it 'easier'/'smoother'?
+  - e.g., what did you find particularly hard? 
+  - what tips would you give to students before they start this course?
+  - more on-campus sessions? (or not?)
+- how should I deal with group dropouts? unfair to the team? or fine?
+- WhatsApp vs. Canvas vs. E-mail? Feel you've got enough support?
+
 
 Stay in touch!
 ========================================================

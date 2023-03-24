@@ -6,69 +6,73 @@ weight: 45
 bookCollapseSection: true
 ---
 
-
 # Exam
 
-The course content will be tested in the form of a __take-home exam__, to be completed __within three hours__.
+The course content will be tested in the form of a computer exam, consisting of a __theoretical part__ (on campus, 1 hour), and a __practical part__ (take-home exam, 2 hours). 
+
+## Date & time
 
 ### Main sit
 
-- Date: __{{< param "Course_Exam_Mainsit" >}}__
-- Time: __9.00 am - 12pm (i.e., 11.59 am + 1 minute)__ (Amsterdam time, you can start when you want, but *must* submit before the deadline)
-- Exam registration: at the latest one week prior to the exam via [this form](https://docs.google.com/forms/d/e/1FAIpQLSeJg09VehRpZxkVitKp22hGqvoTLdFT3-CMVZXDpISc0447bg/viewform?usp=sf_link)
-- Inspection: tba <!--(signup here: https://forms.gle/6y5q66tsJzsGN59b9, Zoom link see Canvas)-->
+- __Theoretical part__ (on campus, max. 1 hour): {{< param "Course_Exam_MainsitTheory" >}}
+- __Practical part__ (take home, max. 2 hours): {{< param "Course_Exam_MainsitPractice" >}}
+- Exam registration: via Osiris
+<!--- Time: __9.00am - 12pm (i.e., 11.59am + 1 minute)__ (Amsterdam time, you can start when you want, but *must* submit before the deadline)-->
 
 ### Resit
-- Date: __{{< param "Course_Exam_Resit" >}}__
-- Time: __9.00am - 12pm (i.e., 11.59am + 1 minute)__ (Amsterdam time, you can start when you want, but *must* submit before the deadline)
-- Registration: at the latest one week prior to the exam via [this form](https://docs.google.com/forms/d/e/1FAIpQLSeJg09VehRpZxkVitKp22hGqvoTLdFT3-CMVZXDpISc0447bg/viewform?usp=sf_link)
+
+- __Theoretical part__ (on campus, max. 1 hour): {{< param "Course_Exam_ResitTheory" >}}
+- __Practical part__ (take home, max. 2 hours): {{< param "Course_Exam_ResitPractice" >}}
+- Exam registration: via Osiris
+
+<!--- Time: __9.00am - 12pm (i.e., 11.59am + 1 minute)__ (Amsterdam time, you can start when you want, but *must* submit before the deadline)-->
 
 ## Technicalities & support
 
-- Receiving your exam: via [TestVision](https://TilburgU.testvision.nl/online/kandidaten) on the day of the exam
+- Receiving your exam: via [TestVision](https://TilburgU.testvision.nl/online/kandidaten) on the examination dates.
 - The exam consists of two parts, which you will have to work on in "separate" exams:
-  - Part 1 is open from 9am - 10am. I.e., it needs to be finished at the latest by 10am.
-  - Part 2 is open from 9am - 11.59am + 1 minute (noon). __You should only start working on part 2 after finishing part 1.__
-- Working on your exam: on your own computer
-- Submitting your exam: all questions (including file uploads) will be submitted via TestVision. Recall: each part of the exam has to be submitted individually.
-- Support during the exam: preferably WhatsApp [see the support section of this website](../course/support); Support only for "unforeseen" errors. No support will be given for technical issues that students *should* have solved during the course (e.g., installation of Anaconda, running Jupyter Notebook, etc.)
+  - The theoretical part needs to be finished within one hour (for timings, see Osiris).
+  - The practical part is open for two hours (exact timing tba).
+- Working on your exam: on a computer at the University (theoretical part, on campus), on your computer (practical part, take-home).
+- Submitting your exam: all questions (including file uploads) will be submitted via TestVision
+- Support during the practical part of the exam: preferably WhatsApp [see support section of this website](/docs/course/support); Support only for "unforeseen" errors. No support will be given for technical issues that students *should* have solved during the course (e.g., installation of R or `make`, installing packages, running Python code in an automated workflow, etc.)
+
 
 ## Form
 
-- Open book take-home exam (i.e., you can access any material you find helpful, including the material you have stored on your computers or that you find on the internet).
-- Mix of open and closed questions (both in writing, or by means of code/file uploads). The dominant question type is open.
-- Some questions will be personalized (i.e., there is only one correct answer per student), others will be randomized (i.e., you will see questions in mixed order, and not all students get to see all questions).
+- On-campus exam (theoretical part, closed book except selected course material that students can download on the instruction page of the exam), and open book take-home exam (practical part; i.e., for this part, you can access any material you find helpful, including material you have stored on your computers, or that you find on the internet).
+- Several sections with subquestions (all open questions; both in written, or by means of code/file uploads)
+- Some questions will be personalized (i.e., there is only one correct answer per student)
 
 {{< hint warning >}}
 
 - Communication with anybody about the exam content, during *and after* the take-home exam, is strictly prohibited.
-- Students must not copy-paste from websites, academic papers, or make use of ChatGPT (or similar AI-based tools) etc. when formulating answers to questions.
-- Students must not mention their names or student numbers in submitted files, except when being explicitly asked to do so. This is to ensure the exam can be graded anonymously as much as possible.
+- Students must not copy-paste from websites, academic papers. The use of ChatGPT or similar AI-based tools is only allowed if stated explicitly for selected questions on the pratical part of the exam.
+- Students must not mention their names or student numbers in any of the submitted files, except when being explicitly asked to do so. This is to ensure the exam can be graded anonymously.
 
 {{< /hint >}}
 
 
 ## Content
 
-### Part 1: Theory
+### Theoretical part
 
-- This part of the exam (about 30% of your exam grade) consists of __personalized open and closed (multiple-choice) questions__, shown in __random order__ (i.e., not in order of difficulty or weight/points). The dominant question type is __open questions__.
-- Students __*cannot* go back between questions__ (i.e., questions need to be answered in the order they appear).
-- Allocate approximately 45 minutes to work on this part, which predominately focuses on the workflow for collecting web data (["Fields of Gold" paper](https://doi.org/10.1177%2F00222429221100750)).  
+- This part of the exam consists of __personalized open and closed (multiple-choice) questions__, shown in __random order__ (i.e., not in order of difficulty or weight/points).
+- The content is predominately focused on the workflow for collecting web data (["Fields of Gold" paper](https://doi.org/10.1177%2F00222429221100750)).  
+- Students can go __*freely back and forth between questions*__ in this part.
 - Cognitive skills that will be tested are knowledge, comprehension, and analysis.
 
-### Part 2: Practical
+### Practical part
 
-- This part of the exam (about 70% of your exam grade) consists of __personalized open questions__, shown in __random order__ (i.e., not in order of difficulty or weight/points).
+- This part of the exam consists of __personalized open questions__, shown in __random order__ (i.e., not in order of difficulty or weight/points).
 - Students can go __*freely back and forth between questions*__ in this part.
-- Allocate approximately 2:15 minutes to work on this part, which focuses on all course learning goals.
+- Allocate 2 hours to work on this part, which focuses on all learning goals of the course as practiced in the tutorials. 
 - Expect three broad questions
   - Small coding task (e.g., parsing, fixing errors, running existing code) (20 minutes)
-  - Small essay to form a judgment (e.g., recommend website or API for a particular business problem, evaluate terms & conditions, sample size calculations) (20 minutes)
-  - Large(r) coding task (e.g., scrape data from a website or retrieve data from API) (remaining time, about 1 hour and 30 minutes)
+  - Small essay to form a judgment (e.g., recommend website or API for a particular business problem, evaluate terms & conditions, sample size calculations) (15 minutes)
+  - Large(r) coding task (e.g., scrape data from a website or retrieve data from API) (remaining time)
 - Cognitive skills that will be tested are application, evaluation, and synthesis/creation.
 - All tutorials (except *advanced web scraping* and *advanced APIs* are relevant for this part of the exam).
-
 
 ## Preparing for the exam
 

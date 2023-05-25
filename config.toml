@@ -1,6 +1,6 @@
 googleAnalytics = "G-NBDE8J4CFM"
 
-baseURL = "https://datacollections.hannesdatta.com/"
+baseURL = "https://odcm.hannesdatta.com/"
 languageCode = "en-us"
 title = "Online Data Collections (oDCM)"
 theme = 'book'

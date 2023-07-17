@@ -15,6 +15,7 @@ Contact the course coordinator via email, please: h.datta@tilburguniversity.edu.
 -->
 
 <!--
+
 {{< hint info >}}
 
 __Before sending an email, please...__
@@ -35,6 +36,7 @@ There is a three-day answer policy for both e-mail and WhatsApp. If you do not g
 
 Note that e-mails to any personal account of the course coordinator or lecturers concerning questions are not subject to the three-day answer policy, and may be left unanswered.
 
+{{< /hint >}}
 
 
 <!--

@@ -27,13 +27,14 @@ Web scraping and Application Programming Interfaces are among the must-have skil
 - Design the web data collection while balancing validity, technical feasibility, and exposure to legal/ethical risks[^1]
 - Collect data via web scraping and Application Programming Interfaces (APIs) by mixing, extending, and repurposing code snippets
 - Document and archive collected data and make it available for public (re)use
-- Track, evaluate, and share progress on the course’s learning goals[^2]
 
 The specification matrix for this course can be [downloaded here](../specification_tables_odcm.pdf). This matrix gives an overview of all the learning goals and their weights in each graded component of the course (i.e., in the final exam, team project and Pulse). 
 
 [^1]: Based on Boegershausen, Johannes, Hannes Datta, Abhishek Borah, and Andrew T. Stephen (2022). “Fields of Gold: Scraping Web Data for Marketing Insights.” *Journal of Marketing*. [Download paper](https://doi.org/10.1177/00222429221100750). [Visit web companion](https://web-scraping.org).
 
+<!--
 [^2]: Students use a web app to monitor their progress on the course's learning goals by "ticking off" items from a to-do list (e.g., "I have installed Python," "I have finished Tutorial X," etc.). The instructor can use the app to learn which topics to highlight during live streams. Students, in turn, can use the app to see how far others in the class have already proceeded, giving them direct feedback on their performance.
+-->
 
 ### Positioning of the course in the study program
 
@@ -62,16 +63,17 @@ To illustrate the wide range of applications of web data, the course introduces 
 
 ## Assessment
 
-- [Team project](project) (45%, out of which 10% are based on students' individual contribution, measured by [self- and peer assessment](../project/grading/peerassessment))
+- [Team project](project) (50%, out of which 10% are based on students' individual contribution, measured by [self- and peer assessment](../project/grading/peerassessment))
 - [Computer exam](/docs/exam) (50%)
-- Submitting one's progress on the course's learning goals  (5%)[^3]
 
+<!--
 [^3]: In particular, students regularly monitor their progress on the course's learning goals. __At least one evaluation per course week is required to obtain points on this component of the course grade.__
+-->
 
 ### Passing requirements
 
 Students pass this course if
-- the final course grade (i.e., the weighted average of the following three components: (1) the group project, (2) the exam, and (3) the pass or fail on submitting one's progress on the course's learning goals); weights indicated above) is ≥ 5.5, and
+- the final course grade (i.e., the weighted average of the following two components: (1) the group project, and (2) the exam; weights indicated above) is ≥ 5.5, and
 - the exam grade is higher than or equal to 5.0 (≥ 5.0).
 
 Final course grades are rounded to multiples of half points (e.g., 6, 6.5, 7, etc.).
@@ -91,7 +93,7 @@ Final course grades are rounded to multiples of half points (e.g., 6, 6.5, 7, et
 
 The course is designed as an open education course, with all of its source code publicly available at [the course's GitHub repository](https://github.com/hannesdatta/course-odcm). Students can earn bonus points for contributing to the course in the form of source code (e.g., to provide solutions for assignments, to write a tutorial for a new scraping toolkit, or for debugging code). Some contributions may also qualify for publication at [Tilburg Science Hub](https://tilburgsciencehub.com) (see also [here](https://github.com/tilburgsciencehub/website) for the platform's GitHub repository).
 
-Bonus points are awareded to motivate students and reward excellence (e.g., students shwoing a performance exceeding the normally expected learning outcomes of the course). The award of bonus points can only lead to a mark-up of a sufficient grade, not of an insufficient grade. Moreover, the mark-up is not higher than 0.5 points and is only be awarded once at the level of the final grade. 
+Bonus points are awareded to motivate students and reward excellence (e.g., students showing a performance exceeding the normally expected learning outcomes of the course). The award of bonus points can only lead to a mark-up of a sufficient grade, not of an insufficient grade. Moreover, the mark-up is not higher than 0.5 points and is only be awarded once at the level of the final grade. 
 
 Each award of a bonus point is accompanied by an individualized argumentation (i.e. for each student). The award of bonus points is used sparsingly.
 

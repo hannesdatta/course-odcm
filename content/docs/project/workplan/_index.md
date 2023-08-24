@@ -28,7 +28,7 @@ __How do coaching sessions work, and how to prepare for them?__
 
 During the course, you will have the opportunity to meet up with the course instructor for coaching sessions. These sessions are meant for you to receive feedback on your ideas and code. Frequently, this also entails problem-solving & debugging.
 
-Teams participating in coaching sessions attend the entire session. They typically work together on the team project, and the course instructor will "walk around" (either in breakout rooms on Zoom, or physically) to address students' questions. There will be approximately 10 minutes per team in total; some teams may prefer to use the entire time at once, while other teams may prefer to ask multiple, short questions over the entire duration of the session.
+Teams participating in coaching sessions attend the entire session. They typically work together on the team project, and the course instructor will "walk around" to address students' questions. When on Zoom, breakout rooms will be created. There will be approximately 10 minutes per team in total; some teams may prefer to use the entire time at once, while other teams may prefer to ask multiple, short questions over the entire duration of the session.
 
 This is how to prepare for coaching sessions:
 

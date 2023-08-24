@@ -2,7 +2,7 @@
 bookFlatSection: true
 title: "Tips and examples"
 bookHidden: false
-weight: 30
+weight: 100
 draft: false
 description: Apply useful (technical) tips.
 ---

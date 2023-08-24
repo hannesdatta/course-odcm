@@ -15,10 +15,19 @@ description: Learn how to assess data quality and website/API structure, and dec
 ## Kick-starting your week
 - [Watch the kick-off for the week](https://youtu.be/m1yCf09wSa4)
 
+## Tutorial
+{{% laptop %}}
+
+- In-class tutorial (view [slides](webdata-for-dummies/slides.html)) 
+
+## Coaching session
+
+- Please start working on [team activity #1](/docs/project/workplan/activity1.md) (2 hours)
+
 ## Self-study and activities
 
+- After-class exercises (about 1-2 hours; contained at the end of the tutorial; <a href = 'webdata-for-dummies/webdata-for-dummies-in-class.ipynb' download>download</a>, [Google Colab](https://colab.research.google.com/github/hannesdatta/course-odcm/blob/master/content/docs/modules/week1/webdata-for-dummies/webdata-for-dummies-in-class.ipynb))
 - [What is web scraping and what are Application Programming Interfaces (APIs)?](https://videocollege.uvt.nl/Mediasite/Play/41afff385bd74db2af5fb8507350ea521d) (30 minutes)
-
 - "Fields of Gold: Scraping Web Data for Marketing Insights"
   - Please [watch the webinar](https://youtu.be/KiyFyLEkqNk) (1 hour)
   - Please carefully [read the paper](https://journals.sagepub.com/doi/abs/10.1177/00222429221100750?journalCode=jmxa) (2 hours)
@@ -26,8 +35,6 @@ description: Learn how to assess data quality and website/API structure, and dec
   {{% hint info %}}
   This paper will provide a guiding framework for the rest of this course, and chance is you'll have to read it a couple of times (e.g., first to get an overview, and later to appreciate and use the details in your project). The web appendix contains valuable tables, so don't skip them.
   {{% /hint %}}
-
-- Please prepare [team activity #1](../../../docs/project/workplan/activity1.md) (2 hours)
 
 <!--
   {{% hint warning %}}
@@ -43,10 +50,6 @@ description: Learn how to assess data quality and website/API structure, and dec
 
 <!--- Ethics in scraping and APIs *live*
 -->
-
-## Tutorial
-{{% laptop %}}
-- [In-class tutorial: Web data for dummies](/docs/tutorials/webdata-for-dummies) and after-class exercises
 
 <!--
 

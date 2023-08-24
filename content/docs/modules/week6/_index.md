@@ -10,16 +10,8 @@ bookCollapseSection: true
 ## Kick-starting your week
 - Watch the kick-off for the week
 
-## Self-study and activities
-- Please read (including the web appendix) [Datasheets for Datasets](https://arxiv.org/pdf/1803.09010.pdf)
-- Please continue to work on the development of your prototype. Concurrently, try to start documenting your data collection - either in the Word template, or by using Jupyter Notebook (a combination of markdown cells for the text, and code cells for any analysis).
-
 ## Online coaching session (optional)
 - Feedback on team project ([activity #4](../../project/workplan/activity4)) (e.g., screencast, prototype code)
-
-## On-campus coaching session (optional) 
-{{% laptop %}}
-- Feedback on team project ([activity #4](../../project/workplan/activity4)) (e.g., prototype code, code that is more advanced, scheduling, etc.)
 
 {{% hint tip %}}
 
@@ -27,6 +19,11 @@ Recorded coaching sessions (from previous editions of this course, and also the 
 
 
 {{% /hint %}}
+
+## Self-study and activities
+- Please read (including the web appendix) [Datasheets for Datasets](https://arxiv.org/pdf/1803.09010.pdf)
+- Please continue to work on the development of your prototype. Concurrently, try to start documenting your data collection - either in the Word template, or by using Jupyter Notebook (a combination of markdown cells for the text, and code cells for any analysis).
+
 
 <br>
 <div style="text-align: right">

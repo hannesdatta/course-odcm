@@ -7,13 +7,37 @@ bookCollapseSection: false
 
 # Preparation before the course starts
 
-In this class, you'll learn the basics of Python, and how to use it to collect data from the internet.
+Obtaining data via web scraping and APIs isn't usually something you do "in your browser". Certainly for continuous data collections, a *local* setup is required. That's why you need to install software on your computer before you can get started. All the software used in this class is available open source, i.e., you don't need to pay for it.
 
 It's important to spend some time *before the beginning of the class* to install the required software, and familiarize yourself with Python.
 
-{{< button relref="../../../docs/tutorials/software" >}}Get started now!{{< /button >}}  
+### 1) Install Python via Anaconda
 
-{{< datacamp >}}
+Please follow the installation guide for [Python via Anaconda](https://tilburgsciencehub.com/get/python).
+
+{{< button href="https://tilburgsciencehub.com/get/python" >}}Start the installation now!{{< /button >}}
+
+{{< hint info >}}
+**Tips**
+- The installation of Anaconda can **easily take half an hour**! Please install it before the start of the class, and ensure you have administrator rights.
+- We recommend installing the Anaconda Individual Edition (Anaconda 64-Bit Graphical Installer; version 3.9), which you find [here](https://www.anaconda.com/products/distribution). Make sure to select the __correct package for your operating system.__
+- In the tutorial (at 2:23), we open the Command Prompt. On Mac, this program is called Terminal (for more information see [this](https://generalassembly.github.io/prework/cl/#/) interactive walkthrough - optional).
+
+{{< /hint >}}
+
+### 2) Obtain access to Premium Content at Datacamp.com
+
+We use material provided by Datacamp.com that otherwise is only available via paid premium subscriptions. Students can use this material with their @tilburguniversity.edu account for free.
+
+{{< button href="/docs/course/support/datacamp/" >}}Unlock Premium content now!{{< /button >}}
+
+
+### 3) Getting to know Python
+
+Eager for more? You can already follow the introduction course to Python on Datacamp, __chapters 1-3__. Novices will need about 3-4 hours. If you don't have the time, don't worry. In your first course week, we have set aside some time to work through the tutorial and exercises.
+
+{{< button href="https://datacamp.com/courses/intro-to-python-for-data-science" >}}Start your first tutorial on Datacamp.com now!{{< /button >}}
+
 
 <br>
 <div style="text-align: right">{{< button relref="week1" >}}Next week{{< /button >}}</div>

@@ -14,7 +14,7 @@ bookCollapseSection: true
 - Please work through the [exam preparation material](docs/exam) and note down any question that you may have. You can raise these questions in the final lecture.
 
 ## Online coaching session (optional)
-- Feedback on team project ([activity #4](../../project/workplan/activity4)) (at this point, ideally a working data collection software that can be scheduled automatically)
+- Feedback on [team project](../../project/workplan/) (at this point, ideally a working data collection software that can be scheduled automatically)
 
 ## Final lecture
 - Course summary ([slides](slides.html))

@@ -15,17 +15,18 @@ description: Assess which data is available at your chosen data source, and whet
 ## Kick-starting your week
 - Watch the kick-off for the week
 
-## Online coaching session
-- Feedback on team submissions ([activity #2](../../project/workplan/activity2))
-
-## Self-study and activities
-- Please prepare [team activity #3](../../../docs/project/workplan/activity3.md).
-- Please work through challenges #3.1-#3.3 in "Fields of Gold".
-
-
 ## Tutorial
 {{% laptop %}}
-- [In-class tutorial: APIs 101](docs/tutorials/apis101) and after-class exercises
+- In-class tutorial ([view slides](apis101/slides.html))
+
+## Coaching session
+- Please start working on [team activity #3](/docs/project/workplan/activity3.md)
+
+## Self-study and activities
+- After-class exercises (<a href = 'apis101/api-101.ipynb' download>download</a>, [Google Colab](https://colab.research.google.com/github/hannesdatta/course-odcm/blob/master/content/docs/modules/week4/apis101/apis101/api-101.ipynb))
+
+- Please prepare [team activity #3](../../../docs/project/workplan/activity3.md).
+- Please work through challenges #3.1-#3.3 in "Fields of Gold".
 
 
 <!--

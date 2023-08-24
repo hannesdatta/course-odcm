@@ -10,18 +10,26 @@ bookCollapseSection: false
 ## Kick-starting your week
 - [Watch the kick-off for the week](https://youtu.be/j8DqkHBPuic)
 
-## Online coaching session
-- Feedback on team submissions ([activity #1](../../project/workplan/activity1))
+## Tutorial
+{{% laptop %}}
+
+- In-class tutorial (view [slides](webscraping101/slides.html))
+
+{{% hint info %}}
+Would you like to advance your scraping skills for __dynamic websites__ such as Instagram that involves a lot of user interaction like scrolling and clicking? Then also follow the ["Web Scraping Advanced" tutorial](/docs/tutorials/webscrapingadvanced).
+
+{{% /hint %}}
+
+## Coaching session
+
+- Please start working on [team activity #2](/docs/project/workplan/activity2.md)
 
 ## Self-study and activities
-- Please prepare [team activity #2](../../../docs/project/workplan/activity2.md).
+- After-class exercises (<a href = 'webscraping101/webscraping-101.ipynb' download>download</a>, [Google Colab](https://colab.research.google.com/github/hannesdatta/course-odcm/blob/master/content/docs/modules/week3/webscraping101/webscraping-101.ipynb))
 - Please work through challenges #2.1-#2.4 in "Fields of Gold".
 <!--- Finalize teams (sign-up options are on Canvas)-->
 
-## Tutorial
-{{% laptop %}}
-- [In-class tutorial: Web scraping 101](docs/tutorials/webscraping101) and after-class exercises
-
+#
 
 <!--
 [Break-out activity](activity.md) to generate project ideas and getting to know each other

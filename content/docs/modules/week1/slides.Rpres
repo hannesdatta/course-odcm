@@ -36,7 +36,6 @@ We're about to start with the first lecture of this class.
 If you haven't done so, please 
 
 - **explore the course page** at [https://odcm.hannesdatta.com]().
-- login at [http://pulse.tilburg-digital.com]() to explore this week's to do's
 
 <!--
 
@@ -52,13 +51,13 @@ If you haven't done so, please
 Agenda
 ========================================================
 
-- Part 1 (08.45 to about 09.45)
+- Part 1 (14.45 to about 15.45)
   - Getting to know each other
   - Motivation for the course
   - Course framework and learning goals
   - Agenda and practical arrangements
 - Break
-- Part 2: Python Bootcamp on your laptops (about 10.00 - 11.30)
+- Part 2: Python Bootcamp on your laptops (about 16.00 - 17.30)
 
 Disclaimer
 ========================================================
@@ -67,7 +66,7 @@ incremental: true
 - This is not a class that merely teaches you Python (but, if you invest time, you'll learn Python on the way!)
 - You can also extract web data using other software packages (e.g., R)
 - Mix of students at various levels (e.g., beginners, advanced Python users)
-- Course is blended; attendance is not mandatory but strongly encouraged
+- Course mostly takes place on campus (based on student feedback); attendance is not mandatory but strongly encouraged
 - I will not record any online or offline sessions; slides will be posted always
 - Consider me your coach, not your *distant professor*
 - Slow me down if you need to
@@ -103,6 +102,7 @@ Teaching activities (all openly available)
     - MSc Thesis supervision (https://thesis.hannesdatta.com)
 - Other initiatives
   - Tilburg Science Hub (https://tilburgsciencehub.com)
+  - Music-to-scrape.org (https://music-to-scrape.org)
   - YouTube channel (https://youtube.com/c/hannesdatta)
   - My code (https://github.com/hannesdatta)
   - More about my work (https://hannesdatta.com)
@@ -174,8 +174,8 @@ import requests
 
 * And then call a particular URL (check it out in your browser!)
 ```{python, eval = TRUE}
-url = 'https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html'
-book_request = requests.get(url)
+url = 'https://music-to-scrape.org/artist?artist-id=AR19SOA1187B98F6E6'
+webrequest = requests.get(url)
 ```
 
 
@@ -184,17 +184,12 @@ Quick web scraper in Python (II)
 incremental: true
 class: small-code
 
-* Finally, let's retrieve the product title (we use HTML tags for this)
+* Finally, let's retrieve the artist name (we use HTML classes for this)
 
 ```{python, eval = TRUE}
 from bs4 import BeautifulSoup
-soup = BeautifulSoup(book_request.text)
-print(soup.find('h1'))
-```
-
-* Or this...
-```{python, eval = TRUE}
-print(soup.find('h2'))
+soup = BeautifulSoup(webrequest.text)
+print(soup.find(class_='artist_info_title').text)
 ```
 
 * Works with any website, even anything you see in a browser (e.g., apps)
@@ -207,19 +202,14 @@ class: small-code
 
 * They work *like* websites (i.e., you can call them with the same snippets as before), but usually you need to pay or at least sign up for the service
 
-```{python, include=FALSE}
-# Let's pretend we're a real user
-headers = {'authority': 'www.reddit.com', 'cache-control': 'max-age=0', 'upgrade-insecure-requests': '1', 'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'navigate', 'sec-fetch-user': '?1', 'sec-fetch-dest': 'document', 'accept-language': 'en-GB,en;q=0.9'}
-```
-
 ```{python, eval = TRUE}
-# let's get some data from the skating community
-api_request = requests.get('https://www.reddit.com/r/skating/about/.json', headers=headers)
+# let's get some data from the API of music-to-scrape
+api_request = requests.get('https://api.music-to-scrape.org/artist/info/?artist=Bob Neuwirth')
 ```
 
 * let's structure the output in the JSON format
 ```{python, eval = TRUE}
-api_request.json().get('data').get('subscribers')
+api_request.json().get('total_plays')
 ```
 
 Opportunities with web data
@@ -227,7 +217,7 @@ Opportunities with web data
 incremental: true
 
 - discover/document novel phenomena (e.g., new platforms/technologies)
-- boost relevance for managers (e.g., because of using data *they* care about)
+- boost relevance for managers (e.g., integrate novel data from ChatGPT)
 - improving methods (e.g., get data to try out new methods, such as review data & text analysis, images, videos)
 - improved inferences (i.e., get more accurate results)
 
@@ -238,7 +228,7 @@ Getting inspired...
 
 - *What are important societal issues right now that directly or indirectly affect your lives?*
 
-- *As a marketer, what do you feel will shape our lives in 2-5 years?*
+- *As a marketer, how could you use the API of OpenAI to automate/invent something new?*
 
 Let's talk about it right now...
 
@@ -306,15 +296,6 @@ incremental: true
 - **Design the web data collection** while balancing validity, technical feasibility, and exposure to legal/ethical risks
 - **Collect data** via web scraping and Application Programming Interfaces (APIs) by mixing, extending, and repurposing code snippets
 - **Document and archive collected data** and make it available for public (re)use
-- **Track, evaluate, and share progress** on the course’s learning goals
-
-Welcome to Pulse!
-========================================================
-
-- Login at [http://pulse.tilburg-digital.com]() (live demonstration)
-
-![Pulse screenshot](pulse.png)
-
 
 Positioning in the study program
 ========================================================
@@ -327,43 +308,36 @@ Course structure and grading
 - Weekly modules, structured along the methodological framework
   - On-campus lectures and tutorials
   - Self-study
-  - Online feedback and coaching sessions
+  - On-campus (sometimes online) coaching sessions
   
-- Project in which you put into practice your skills (45% of your grade)
+- Project in which you put into practice your skills (50% of your grade)
 
 - Online computer exam (50% of your grade)
 
-- Tracking learning process in Pulse (5% of your grade)
-
 - Bonus points available (max .5 on final course grade)
 
-This year's team project: Retailing (I)
-============================
+This year's team project: AI tools and platforms (I)
+=======================================
 
-- Retail is the __sale of goods and services to consumers__, in contrast to wholesaling, which is sale to business or institutional customers. 
-
-*Source: https://en.wikipedia.org/wiki/Retail*
+- We're currently experiencing many new AI-based products/services that are invented/launched.
+- You know way more than I do... so... let's hear some!
 
 __Goals:__
 
-In the context of __retailing__, 
+In the context of __AI-based tools and platforms__, 
 
 - understand and present "data universe"
 - select one or multiple data source(s) and collect the data (scraping, APIs)
 - document the data for public (re)use
 
-This year's team project: Retailing (II)
+This year's team project: AI tools and platforms (II)
 ========================================================
   
 __Find your sweet spot!__
 
-- service vs. products?
-- majorily online vs. offline?
-- "platform" vs. traditional retail?
-- categories (say, grocery vs. sport shoes)?
-- new vs. used products?
-- national vs. international retail?
-- primary data provider vs. aggregator
+- for websites, this is likely going to be an aggregator (e.g., prompt marketplaces)
+- for APIs, this is likely some link between a dataset that you have AND the API of OpenAI
+- brainstorm about it...
 
 This year's team project: Retailing (III)
 ========================================================
@@ -399,19 +373,17 @@ Visit [https://odcm.hannesdatta.com]()!
 
 - Do all students have access to Canvas?
 
-- Can all students login into [http://pulse.tilburg-digital.com]()?
-
 Common struggles & tips
 ========================================================
 
-- Take time to become acquainted with the course (e.g., no Canvas but website and Pulse)
+- Take time to become acquainted with the course (e.g., not using Canvas)
 - Can be tough at first, but you will gain experience rapidly!
 -	It can be overwhelming to follow dPrep and oDCM simultaneously, but the skills you learn are important for your course work, Master Thesis & future career!
 -	Easing your start-up pain
   -	Start preparing early on (the first weeks will be the most challenging!)
   -	Have the same group members across dPrep and oDCM
   -	Collaborate with each other and try to help one another, also across teams!
-  - Be in touch via WhatsApp, and [install TeamViewer](https://tilburgsciencehub.com/get/teamviewer)
+  - Be in touch via WhatsApp for Business (add +31 13 466 8938)
 
 <!--
 ::: notes
@@ -458,7 +430,7 @@ Steps of escalation & getting in touch
 When you run into trouble, this is your way out!
 
 1. Try to find the info on the course website or Pulse
-2. Ask Google and Stackoverflow
+2. Ask Chat GPT / Google / Stackoverflow
 3. Ask friend/classmate (form learning groups)
 4. Can it wait? Defer to lecturer or feedback sessions.
 5. If it can't wait: be in touch with me (--> next slide!)

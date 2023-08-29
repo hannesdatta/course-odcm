@@ -222,8 +222,8 @@ api_request = requests.get('https://api.music-to-scrape.org/charts/top-tracks')
 
 * let's structure the output in the JSON format
 ```{python, eval = TRUE}
-api_request_json = api_request.json()
-for song in api_request_json.get('chart'): print(song.get('name'))
+#api_request_json = api_request.json()
+#for song in api_request_json.get('chart'): print(song.get('name'))
 ```
 
 Opportunities with web data

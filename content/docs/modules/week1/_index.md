@@ -32,7 +32,8 @@ __Downloading to and starting the tutorial on your computer__
 
 ## Self-study and activities
 
-- After-class exercises on Datacamp.com (about 3 hours; [work on the first three chapters only](https://datacamp.com/courses/intro-to-python-for-data-science))
+- Work through the in-class tutorial at your own pace
+- Deepen your understanding of basic programming concepts by completing a tutorial on Datacamp.com (about 3 hours; [work on the first three chapters only](https://datacamp.com/courses/intro-to-python-for-data-science))
 
 {{% datacamp %}}
 

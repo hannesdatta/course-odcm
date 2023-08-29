@@ -38,6 +38,18 @@ Eager for more? You can already follow the introduction course to Python on Data
 
 {{< button href="https://datacamp.com/courses/intro-to-python-for-data-science" >}}Start your first tutorial on Datacamp.com now!{{< /button >}}
 
+### 4) Getting to know the terminal/command line
+
+The command line (also called terminal) is a text-based interface in which you can interact with your computer by entering commands. It's important to know how to use the command line when learning web scraping because many scraping tools and libraries are executed through command-line commands, allowing users to navigate directories, run scripts, and manage data extraction more efficiently.
+
+Never worked with the command line/terminal? Then please develop your command line (Windows) / terminal (Mac) skills!
+
+- Check out the ([Datacamp tutorial - first chapter only](https://www.datacamp.com/courses/introduction-to-shell))
+- Also check out [this presentation about the command line / terminal](https://generalassembly.github.io/prework/cl). 
+    - Though it is targeted to Mac users, it provides a great overview.
+    - Windows users could still follow along using *the same commands* by using Git Bash (or Cygwin). 
+    - The main goal here is to understand how directory structures work and how to navigate in the terminal or command line.
+
 
 <br>
 <div style="text-align: right">{{< button relref="week1" >}}Next week{{< /button >}}</div>

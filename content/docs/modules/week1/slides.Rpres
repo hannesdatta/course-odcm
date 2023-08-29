@@ -35,7 +35,9 @@ We're about to start with the first lecture of this class.
 
 If you haven't done so, please 
 
-- **explore the course page** at [https://odcm.hannesdatta.com]().
+- explore the **course page** at [https://odcm.hannesdatta.com]().
+- complete the **software installation** (https://odcm.hannesdatta.com/docs/modules/prep/)
+- my slides are available here: https://odcm.hannesdatta.com/docs/modules/week1
 
 <!--
 
@@ -46,7 +48,7 @@ If you haven't done so, please
 - happy to share that vision, and share practical tips
 
 -->
-
+ 
 
 Agenda
 ========================================================
@@ -77,7 +79,7 @@ About myself
 ========================================================
 incremental: true
 
-- scraping nerd --- started in 2008 using Visual Basic in Excel
+- scraping nerd --- learned it in 2008 using Visual Basic in Excel
 - started doing my own research with scraped and API-extracted data in 2012 (so, 10+ years experience)
 - left Germany around your age, now many years in NL
 - Associate Professor at Tilburg University
@@ -88,12 +90,13 @@ Key areas of expertise
 - Substantive interests
   - streaming business models (e.g., music, movies)
   - marketing-mix modeling and optimization
+  - open science
 
 - Methodological interests
   - online data collection via APIs and web scraping
   - causal effects with observational data
 
-Teaching activities (all openly available)
+Teaching activities 
 ========================================================
 
 - MSc Marketing Analytics
@@ -158,8 +161,17 @@ What is scraping, and what are APIs?
 
 *With APIs, you obtain official data from a firm in a programmatic way*
 
-- e.g., as a developer, interact with Facebook, Instagram, Twitter
+- e.g., as a developer, interact with Instagram, Twitter/X, ChatGPT / OpenAI, AWS, ...
 - as a researcher, construct data set from analytics firms
+
+Introducting music-to-scrape.org
+================
+
+- Mock-up streaming service
+- Developed in the last few months, now testing with you guys
+- "Save" and controlled environment to learn scraping and APIs
+
+![Screenshot of Music to scrape](musictoscrape.png)
 
 Quick web scraper in Python (I)
 ========================================================
@@ -174,7 +186,7 @@ import requests
 
 * And then call a particular URL (check it out in your browser!)
 ```{python, eval = TRUE}
-url = 'https://music-to-scrape.org/artist?artist-id=AR19SOA1187B98F6E6'
+url = 'https://music-to-scrape.org/'
 webrequest = requests.get(url)
 ```
 
@@ -184,12 +196,13 @@ Quick web scraper in Python (II)
 incremental: true
 class: small-code
 
-* Finally, let's retrieve the artist name (we use HTML classes for this)
+* Finally, let's retrieve the weekly top 15 songs (we use HTML tags and attribute-value pairs for this)
 
 ```{python, eval = TRUE}
 from bs4 import BeautifulSoup
 soup = BeautifulSoup(webrequest.text)
-print(soup.find(class_='artist_info_title').text)
+weekly15 = soup.find('section', {'name':'weekly_15'})
+for song in weekly15.find_all('h5'): print(song.text)
 ```
 
 * Works with any website, even anything you see in a browser (e.g., apps)
@@ -204,23 +217,28 @@ class: small-code
 
 ```{python, eval = TRUE}
 # let's get some data from the API of music-to-scrape
-api_request = requests.get('https://api.music-to-scrape.org/artist/info/?artist=Bob Neuwirth')
+api_request = requests.get('https://api.music-to-scrape.org/charts/top-tracks?week=0')
 ```
 
 * let's structure the output in the JSON format
 ```{python, eval = TRUE}
-api_request.json().get('total_plays')
+api_request_json = api_request.json()
+for song in api_request_json.get('chart'): print(song.get('name'))
 ```
 
 Opportunities with web data
 ========================================================
 incremental: true
 
-- discover/document novel phenomena (e.g., new platforms/technologies)
-- boost relevance for managers (e.g., integrate novel data from ChatGPT)
-- improving methods (e.g., get data to try out new methods, such as review data & text analysis, images, videos)
-- improved inferences (i.e., get more accurate results)
-
+- for businesses
+  - "stitch together" different services (e.g., augment functionality of ChatGPT)
+  - do market research (e.g., pricing data)
+  - initialize recommendation systems
+- for research
+  - discover/document novel phenomena (e.g., new platforms/technologies)
+  - improving methods (e.g., get data to try out new methods, such as review data & text analysis, images, videos)
+  - improved inferences (i.e., get more accurate results)
+  - collect metrics managers care about
 Getting inspired...
 ========================================================
 
@@ -314,7 +332,8 @@ Course structure and grading
 
 - Online computer exam (50% of your grade)
 
-- Bonus points available (max .5 on final course grade)
+- Bonus points available (max .5 on final course grade; contribute to course or Tilburg Science Hub using source code: e.g., solutions for assignments, writing a tutorial for a new pacakge, debugging source code, maintaining course's issue board) - need GitHub for this
+
 
 This year's team project: AI tools and platforms (I)
 =======================================
@@ -328,7 +347,7 @@ In the context of __AI-based tools and platforms__,
 
 - understand and present "data universe"
 - select one or multiple data source(s) and collect the data (scraping, APIs)
-- document the data for public (re)use
+- document the resulting data for public (re)use
 
 This year's team project: AI tools and platforms (II)
 ========================================================
@@ -336,14 +355,14 @@ This year's team project: AI tools and platforms (II)
 __Find your sweet spot!__
 
 - for websites, this is likely going to be an aggregator (e.g., prompt marketplaces)
-- for APIs, this is likely some link between a dataset that you have AND the API of OpenAI
+- for APIs, this is likely some link between a dataset that you have AND the API of OpenAI (or others)
 - brainstorm about it...
 
 This year's team project: AI tools and platforms (III)
 ========================================================
 
 - Specifics
-  - scrape data via web sites or APIs
+  - scrape data via web sites or use APIs
   - work through the entire method framework
   - receive feedback by students and me (your coach)
   - inspiration for the setup: [past projects](https://odcm.hannesdatta.com/docs/project/resources/pastprojects/)
@@ -379,6 +398,7 @@ Common struggles & tips
 - Take time to become acquainted with the course (e.g., not using Canvas)
 - Can be tough at first, but you will gain experience rapidly!
 -	It can be overwhelming to follow dPrep and oDCM simultaneously, but the skills you learn are important for your course work, Master Thesis & future career!
+- Usually not possible to take these courses at a later moment - do get in touch with program coordinator for questions about course enrollment
 -	Easing your start-up pain
   -	Start preparing early on (the first weeks will be the most challenging!)
   -	Have the same group members across dPrep and oDCM
@@ -394,14 +414,14 @@ Common struggles & tips
 :::
 -->
 
-My commitment
+My commitment to you
 ========================================================
 incremental: true
 
-- Get up to speed with both web scraping and APIs (and know when to pick which one!)
-- Learn a bit of Python, __but__, becoming an expert requires years of practice
-- Discuss own work and ideas, __but__ requires interaction, talking to me, working hard
-- Open software (usable right away, no admin rights required)
+- Get you up to speed with both web scraping and APIs (and know when to pick which one!)
+- Teach you a bit of Python, __but__, becoming an expert requires years of practice
+- Discuss own work and ideas, __but__ this requires interaction, talking to me, working hard
+- Use of open software (usable right away, no admin rights required)
 - Bring in your own ideas, don't be afraid to study topics off the main stream!
 - I value diversity! Be who you want to be. Say what you want to say.
 
@@ -412,7 +432,7 @@ Brain-dead by coding
 - I tend to become semi-"brain-dead" after a day of coding
 - Take breaks! Stop coding. Go for a run. Start again.
 - You will learn from your mistakes
-- Use cheat sheets and our support section
+- Use ChatGPT, cheat sheets and our support section
 
 &#8594; quick feedback loops in first few weeks
 
@@ -429,7 +449,7 @@ Steps of escalation & getting in touch
 
 When you run into trouble, this is your way out!
 
-1. Try to find the info on the course website or Pulse
+1. Try to find the info on the course website
 2. Ask Chat GPT / Google / Stackoverflow
 3. Ask friend/classmate (form learning groups)
 4. Can it wait? Defer to lecturer or feedback sessions.
@@ -486,7 +506,7 @@ Next steps
 ========================================================
 
 - We will continue with our Python bootcamp after a break
-- Haven't followed the installation guide? Check it out on the course page now! (tutorials -> software installation)
+- Haven't followed the installation guide? Check it out on the course page now! (modules --> preparation)
 
 <!--
 - We w

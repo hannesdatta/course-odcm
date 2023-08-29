@@ -217,7 +217,7 @@ class: small-code
 
 ```{python, eval = TRUE}
 # let's get some data from the API of music-to-scrape
-api_request = requests.get('https://api.music-to-scrape.org/charts/top-tracks?week=0')
+api_request = requests.get('https://api.music-to-scrape.org/charts/top-tracks')
 ```
 
 * let's structure the output in the JSON format

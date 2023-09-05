@@ -27,11 +27,9 @@ Welcome to oDCM!
 
 We're about to start with __today's tutorial ("web data for dummies")__.
 
-- If you haven't done so, open https://odcm.hannesdatta.com/docs/tutorials/webdata-for-dummies/
-- Coaching session for team activity #1 at the beginning of next week
-  - did you already enroll to a team? (see Canvas)
-  - submissions for team activity due Monday at 7.30am (check Canvas for submissions)
-- Login at [http://pulse.tilburg-digital.com]() to explore this week's to do's
+- If you haven't done so, open this slide deck at https://odcm.hannesdatta.com/docs/modules/week2/webdata-for-dummies/
+- Coaching session start after today's tutorial (we will change rooms)
+- Team assignment final?
 
 Agenda
 ========================================================
@@ -42,8 +40,9 @@ Agenda
   - Also address some challenges summarized in "Fields of Gold"
 <br>
 - After class
-  - Complete tutorial and exercises yourselves
   - Work on team activity #1
+  - Complete tutorial and exercises + be in touch for feedback during coaching hours
+  
 
 Framework
 =======
@@ -62,16 +61,16 @@ incremental: true
 - scaling (APIs scale more)
 - web scraping largely free, APIs for-pay
 - APIs are linchpin of internet economy
-- Detailed comparison in [Web Appendix of Fields of Gold](https://journals.sagepub.com/doi/suppl/10.1177/00222429221100750/suppl_file/sj-pdf-1-jmx-10.1177_00222429221100750.pdf).
+- Learn about other differences and commonalities in the [Web Appendix of "Fields of Gold"](https://journals.sagepub.com/doi/suppl/10.1177/00222429221100750/suppl_file/sj-pdf-1-jmx-10.1177_00222429221100750.pdf).
 
 
 We get started with web scraping
 =================
 
-- To do scraping, we need to understand key elements of websites
-  - HTML
-  - CSS
-  - Javascript
+- To do scraping, we need to understand what websites consist of:
+  - HTML ("what you see and where?")
+  - CSS ("how it looks")
+  - Javascript (capability for advanced interaction)
 <br>
 - Examples:
   - toybox at codepen: https://codepen.io/rcyou/pen/QEObEk/
@@ -81,9 +80,9 @@ Which information to extract from a website (challenge #2.1)?
 ================
 
 - We need to decide which information to extract from a site 
-  - which information to we need to justify construct operationalization?
+  - which information to we need to justify that what we measure is measured well ("construct operationalization")?
   - is the information publicly accessible or hidden after a login wall?
-  - can we reliably get the data, even after x iterations on the site?
+  - can we reliably get the data, even after many iterations on the site?
 
 Which information to extract from a website (challenge #2.1)?
 ================
@@ -97,7 +96,7 @@ Which information to extract from a website (challenge #2.1)?
 DO: Explore books.toscrape.com
 =====
 
-- Open [books.toscrape.com]()
+- Open [music-to-scrape.org]() (fallback option: [books.toscrape.com]())
 - Familiarize yourself with the structure of the site
 - Check which information you find and what it could be used for
 
@@ -113,7 +112,17 @@ Finding information in HTML code
 
 __One or more of these extraction techniques need to be combined to extract information.__
 
-DO: Identifying information on books.toscrape.com
+DO: Identifying information on music-to-scrape.org
+======
+
+- Open https://music-to-scrape.org/artist?artist-id=ARICCN811C8A41750F
+- How would you identify the following information?
+  - name of the artist
+  - number of song plays on the platform
+  - top 10 songs?
+
+
+DO: Identifying information on books.toscrape.com (fall-back option)
 ======
 
 - Open https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html
@@ -151,19 +160,17 @@ class: small-code
 import requests
 
 # make a get request to the "A Light in the Attic" webpage
-url = 'https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html'
+url = 'https://music-to-scrape.org/artist?artist-id=ARICCN811C8A41750F'
 header = {'User-agent': 'Mozilla/5.0'} # with the user agent, we let Python know for which browser version to retrieve the website
-book_request = requests.get(url, headers = header)
-book_request.encoding = book_request.apparent_encoding
+web_request = requests.get(url, headers = header)
 
 # return the source code from the request object
-book_source_code = book_request.text
+web_request_source_code = web_request.text
 ```
 
-- Let's save the website in a file and take a look at it
-- Let's change the user agent of a mobile device, and look at it again
+- Let's save the website in a file and take a look at it.
+- Key problem when scraping: What you see while inspecting the site may not always be what you retrieve in Python!
 
-__Key problem when scraping: What you see while inspecting the site is not what you retrieve in Python!__
 
 BeautifulSoup 101
 ================

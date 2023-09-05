@@ -799,6 +799,12 @@ hljs.initHighlightingOnLoad();
 https://support.rstudio.com/hc/en-us/articles/200486468
 -->
 
+<pre><code>Using virtual environment &#39;/Users/hannesdatta/.virtualenvs/r-reticulate&#39; ...
+</code></pre>
+
+<pre><code>Using virtual environment &#39;/Users/hannesdatta/.virtualenvs/r-reticulate&#39; ...
+</code></pre>
+
 </div>
 
 </section>
@@ -808,14 +814,9 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 <p>We&#39;re about to start with <strong>today&#39;s tutorial (&ldquo;web data for dummies&rdquo;)</strong>.</p>
 
 <ul>
-<li>If you haven&#39;t done so, open <a href="https://odcm.hannesdatta.com/docs/tutorials/webdata-for-dummies/">https://odcm.hannesdatta.com/docs/tutorials/webdata-for-dummies/</a></li>
-<li>Coaching session for team activity #1 at the beginning of next week
-
-<ul>
-<li>did you already enroll to a team? (see Canvas)</li>
-<li>submissions for team activity due Monday at 7.30am (check Canvas for submissions)</li>
-</ul></li>
-<li>Login at <a href="">http://pulse.tilburg-digital.com</a> to explore this week&#39;s to do&#39;s</li>
+<li>If you haven&#39;t done so, open this slide deck at <a href="https://odcm.hannesdatta.com/docs/modules/week2/webdata-for-dummies/">https://odcm.hannesdatta.com/docs/modules/week2/webdata-for-dummies/</a></li>
+<li>Coaching session start after today&#39;s tutorial (we will change rooms)</li>
+<li>Team assignment on Canvas final?</li>
 </ul>
 
 </div>
@@ -836,8 +837,8 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 <li>After class
 
 <ul>
-<li>Complete tutorial and exercises yourselves</li>
 <li>Work on team activity #1</li>
+<li>Complete tutorial and exercises + be in touch for feedback during coaching hours</li>
 </ul></li>
 </ul>
 
@@ -850,8 +851,8 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 <p><img src="https://journals.sagepub.com/na101/home/literatum/publisher/sage/journals/content/jmxa/2022/jmxa_86_5/00222429221100750/20220801/images/large/10.1177_00222429221100750-fig2.jpeg" alt=""/></p>
 
 <ul>
-<li>Focus in <strong>team project</strong> at this stage: source selection</li>
 <li>Focus in today&#39;s tutorial: <strong>collection design</strong></li>
+<li>Focus in <strong>team project</strong>: source selection</li>
 </ul>
 
 </div>
@@ -865,7 +866,7 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 <li class="fragment">scaling (APIs scale more)</li>
 <li class="fragment">web scraping largely free, APIs for-pay</li>
 <li class="fragment">APIs are linchpin of internet economy</li>
-<li class="fragment">Detailed comparison in <a href="https://journals.sagepub.com/doi/suppl/10.1177/00222429221100750/suppl_file/sj-pdf-1-jmx-10.1177_00222429221100750.pdf">Web Appendix of Fields of Gold</a>.</li>
+<li class="fragment">Learn about other differences and commonalities in the <a href="https://journals.sagepub.com/doi/suppl/10.1177/00222429221100750/suppl_file/sj-pdf-1-jmx-10.1177_00222429221100750.pdf">Web Appendix of &ldquo;Fields of Gold&rdquo;</a>.</li>
 </ul>
 
 </div>
@@ -875,12 +876,12 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 <h3>We get started with web scraping</h3>
 <div class="slideContent" >
 <ul>
-<li>To do scraping, we need to understand key elements of websites
+<li>To do scraping, we need to understand what websites consist of:
 
 <ul>
-<li>HTML</li>
-<li>CSS</li>
-<li>Javascript
+<li>HTML (&ldquo;what you see and where?&rdquo;)</li>
+<li>CSS (&ldquo;how it looks&rdquo;)</li>
+<li>Javascript (&ldquo;how it interacts&rdquo;)
 <br></li>
 </ul></li>
 <li>Examples:
@@ -901,11 +902,13 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 <li>We need to decide which information to extract from a site 
 
 <ul>
-<li>which information to we need to justify construct operationalization?</li>
 <li>is the information publicly accessible or hidden after a login wall?</li>
-<li>can we reliably get the data, even after x iterations on the site?</li>
+<li>can we reliably get the data, even after many iterations on the site?</li>
+<li>which information do we need to justify that what we measure is measured well (&ldquo;construct operationalization&rdquo;)?</li>
 </ul></li>
 </ul>
+
+<p><strong>Example:</strong> Suppose you need to get&hellip; data on Spotify&#39;s streaming charts - where would you get it from?</p>
 
 </div>
 
@@ -917,10 +920,10 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 <li>Best practices
 
 <ul>
-<li>Explore different types of pages</li>
-<li>Really get &ldquo;used&rdquo; to the website, browse a bit (&ldquo;how to navigate&rdquo;)</li>
+<li>Explore different types of pages and providers</li>
+<li>Get &ldquo;used&rdquo; to the website, browse a bit (&ldquo;how to navigate&rdquo;), become a customer</li>
 <li>Identify roadblocks such as captchas</li>
-<li>Explore limits to iterating through a site</li>
+<li>Explore limits to iterating through a site (e.g., max. 1000 pages)</li>
 </ul></li>
 </ul>
 
@@ -928,12 +931,13 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>DO: Explore books.toscrape.com</h3>
+<h3>DO: Exploring music-to-scrape</h3>
 <div class="slideContent" >
 <ul>
-<li>Open <a href="">books.toscrape.com</a></li>
+<li>Open <a href="">music-to-scrape.org</a> (fallback option: <a href="">books.toscrape.com</a>)</li>
 <li>Familiarize yourself with the structure of the site</li>
-<li>Check which information you find and what it could be used for</li>
+<li>Check which data you encounter</li>
+<li>Suppose the data was stored in a database, how would you structure it?</li>
 </ul>
 
 </div>
@@ -943,24 +947,42 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 <h3>Finding information in HTML code </h3>
 <div class="slideContent" >
 <ul>
-<li>Now, it&#39;s time to &ldquo;narrow&rdquo; down on the information of interest</li>
-<li>For this, we can employ various extraction techniques
+<li>But&hellip; we don&#39;t have access to the database. All we see is the website.</li>
+<li>So, let&#39;s &ldquo;narrow&rdquo; down on the information of interest</li>
+<li>For this, we can use various extraction techniques on the HTML source code of the site
 
 <ul>
 <li>tags, e.g., <code>&lt;table&gt;</code>, <code>&lt;h1&gt;</code>, <code>&lt;div&gt;</code></li>
-<li>attributes, e.g., <code>&lt;table id=&quot;example-table&quot;&gt;</code></li>
-<li>classes, e.g., <code>&lt;table class=&quot;striped-table&quot;&gt;</code></li>
+<li>attributes, e.g., id <code>&lt;table id=&quot;example-table&quot;&gt;</code></li>
+<li>&ldquo;special&rdquo; attributes such as classes, e.g., <code>&lt;table class=&quot;striped-table&quot;&gt;</code></li>
 <li>attribute-value pairs, e.g., <code>&lt;table some_field_name = &quot;123&quot;&gt;</code></li>
 </ul></li>
 </ul>
 
-<p><strong>One or more of these extraction techniques need to be combined to extract information.</strong></p>
+<p><strong>Frequently, you need to combine several of these methods to extract information.</strong></p>
 
 </div>
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>DO: Identifying information on books.toscrape.com</h3>
+<h3>DO: Identifying information on music-to-scrape.org</h3>
+<div class="slideContent" >
+<ul>
+<li>Open <a href="https://music-to-scrape.org/artist?artist-id=ARICCN811C8A41750F">https://music-to-scrape.org/artist?artist-id=ARICCN811C8A41750F</a></li>
+<li>How could you uniquely capture the following information?
+
+<ul>
+<li>name of the artist</li>
+<li>number of song plays on the platform</li>
+<li>top 10 songs?</li>
+</ul></li>
+</ul>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>DO: Identifying information on books.toscrape.com (fall-back option)</h3>
 <div class="slideContent" >
 <ul>
 <li>Open <a href="https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html">https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html</a></li>
@@ -987,7 +1009,7 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 
 <ul>
 <li>Think of it as the &ldquo;path&rdquo; to the specific data point</li>
-<li>Example for &ldquo;price&rdquo;: <code>html/body/div/div/div[2]/div[2]/article/div[1]/div[2]/p[1]</code></li>
+<li>Example for &ldquo;artist name&rdquo;: <code>/html/body/div[3]/section[1]/div/div[2]/h2</code></li>
 <li>Likely to break very easily (say, something changes <em>before</em> the particular element)</li>
 </ul></li>
 </ul>
@@ -1002,8 +1024,8 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 <li>CSS selector
 
 <ul>
-<li>Example for extracting &ldquo;price&rdquo;: <code>p.price_color:nth-child(2)</code></li>
-<li>Also &ldquo;highly&rdquo; dependent: say, tag &amp; class name + position &ndash; can also break
+<li>Example for extracting &ldquo;artist name&rdquo;: <code>.artist_info_title</code></li>
+<li>Works here, but can be &ldquo;highly&rdquo; dependent: say, tag &amp; class name + position &ndash; can also break
 <br></li>
 </ul></li>
 <li>So, here, we are sticking mostly to <em>classes</em>, <em>attributes</em>, and <em>attribute-value pairs</em>.</li>
@@ -1017,22 +1039,14 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 <div class="slideContent small-code" >
 <pre><code class="python">import requests
 
-# make a get request to the &quot;A Light in the Attic&quot; webpage
-url = &#39;https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html&#39;
+# make a get request to the website
+url = &#39;https://music-to-scrape.org/artist?artist-id=ARICCN811C8A41750F&#39;
 header = {&#39;User-agent&#39;: &#39;Mozilla/5.0&#39;} # with the user agent, we let Python know for which browser version to retrieve the website
-book_request = requests.get(url, headers = header)
-book_request.encoding = book_request.apparent_encoding
+web_request = requests.get(url, headers = header)
 
 # return the source code from the request object
-book_source_code = book_request.text
+web_request_source_code = web_request.text
 </code></pre>
-
-<ul>
-<li>Let&#39;s save the website in a file and take a look at it</li>
-<li>Let&#39;s change the user agent of a mobile device, and look at it again</li>
-</ul>
-
-<p><strong>Key problem when scraping: What you see while inspecting the site is not what you retrieve in Python!</strong></p>
 
 </div>
 
@@ -1047,24 +1061,37 @@ book_source_code = book_request.text
 
 <pre><code class="python">import requests
 from bs4 import BeautifulSoup
-url = &#39;https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html&#39;
+url = &#39;https://music-to-scrape.org/artist?artist-id=ARICCN811C8A41750F&#39;
 header = {&#39;User-agent&#39;: &#39;Mozilla/5.0&#39;} 
-book_request = requests.get(url, headers = header)
-book_request.encoding = book_request.apparent_encoding
-soup = BeautifulSoup(book_request.text)
-print(soup.find(&#39;h1&#39;).get_text())
+web_request = requests.get(url, headers = header)
+
+soup = BeautifulSoup(web_request.text)
+print(soup.find(&#39;h2&#39;).get_text())
 </code></pre>
 
-<pre><code>A Light in the Attic
+<pre><code>Ya Boy
 </code></pre>
 
 <ul>
-<li>Change the snippet to <strong>show the price</strong>! Tip: use <code>.find(class_ = &#39;classname&#39;)</code></li>
+<li>Change the snippet to <strong>show the location and number of plays!</strong> </li>
+<li>Tip: use <code>.find(class_ = &#39;classname&#39;)</code></li>
 </ul>
 
-<!--
-print(soup.find(class_ = 'price_color').get_text())
--->
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>BeautifulSoup 101 (solution)</h3>
+<div class="slideContent small-code" >
+<pre><code class="python">print(soup.find(class_ = &#39;about_artist&#39;).get_text())
+</code></pre>
+
+<pre><code>
+Location:
+United States
+Number of plays:
+54
+</code></pre>
 
 </div>
 
@@ -1073,20 +1100,37 @@ print(soup.find(class_ = 'price_color').get_text())
 <h3>DO: BeautifulSoup exercises</h3>
 <div class="slideContent" >
 <ul>
-<li><p>Adapt/extend the code above to extract the following information:</p>
+<li>So far, we&#39;ve just &#39;lump-extracted&#39; all of the text</li>
+<li><p>Next, let us refine our collection by getting&hellip;</p>
 
 <ul>
-<li>product title, price, in-stock availability, and the number of stars.</li>
+<li>the exact location (&ndash;&gt; stored in <code>location</code>), exact number plays (&ndash;&gt; stored in <code>plays</code>), and the total number of songs in the top 10.</li>
 </ul></li>
 <li><p>Tips</p>
 
 <ul>
 <li><code>.find(class_=&#39;class-name&#39;)</code> for classes</li>
-<li><code>.find(attrs={&#39;name_of_attribute&#39;: &#39;value&#39;})</code> for attribute-value pairs</li>
-<li><code>len()</code> for counting</li>
 <li>you may need to use <code>.find_all()</code></li>
+<li><code>len()</code> for counting</li>
+<li>remember to write code like &ldquo;an onion&rdquo;</li>
 </ul></li>
 </ul>
+
+<!--
+- `.find(attrs={'name_of_attribute': 'value'})` for attribute-value pairs
+  -->
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>DO: BeautifulSoup exercises (solution)</h3>
+<div class="slideContent" >
+<pre><code class="python">location = soup.find(class_ = &#39;about_artist&#39;).find_all(&#39;p&#39;)[0].get_text()
+plays = soup.find(class_ = &#39;about_artist&#39;).find_all(&#39;p&#39;)[1].get_text()
+song_table = soup.find(class_ = &#39;top-songs&#39;)
+number_of_songs = len(song_table.find_all(&#39;tr&#39;))-1
+</code></pre>
 
 </div>
 
@@ -1098,7 +1142,7 @@ print(soup.find(class_ = 'price_color').get_text())
 <li>Functions are extremely useful to &ldquo;reuse&rdquo; code over and over again
 
 <ul>
-<li>Functions have a name (say, def FUNCTIONNAME)</li>
+<li>Functions have a name (say, <code>def functionname</code>)</li>
 <li>&hellip;and arguments (say, <code>def FUNCTIONNAME(argument1, argument2)</code>)
 <br></li>
 </ul></li>
@@ -1120,10 +1164,19 @@ print(soup.find(class_ = 'price_color').get_text())
 from bs4 import BeautifulSoup
 
 def download_data(url):
-  book_request = requests.get(url, headers = {&#39;User-agent&#39;: &#39;Mozilla/5.0&#39;} )
-  book_request.encoding = book_request.apparent_encoding
-  soup = BeautifulSoup(book_request.text)
-  print(soup.find(&#39;h1&#39;).get_text())
+  header = {&#39;User-agent&#39;: &#39;Mozilla/5.0&#39;} 
+  web_request = requests.get(url, headers = header)
+  soup = BeautifulSoup(web_request.text)
+
+  artist_name = soup.find(&#39;h2&#39;).get_text()
+
+  print(f&#39;Artist name: {artist_name}.&#39;)
+
+
+download_data(&#39;https://music-to-scrape.org/artist?artist-id=ARICCN811C8A41750F&#39;)
+</code></pre>
+
+<pre><code>Artist name: Ya Boy.
 </code></pre>
 
 </div>
@@ -1133,13 +1186,11 @@ def download_data(url):
 <h3>DO: Wrap code into a function</h3>
 <div class="slideContent small-code" >
 <ol>
-<li>Adapt the function to also extract the other attributes (i.e., price, etc.)</li>
-<li>Write a loop to extract data using this function for the following URLs.</li>
+<li>Adapt the function to also extract the other attributes (i.e., location, number songs, etc.)</li>
+<li>Write a loop to extract data using this function for the following artist IDs.</li>
 </ol>
 
-<pre><code>urls = [&#39;https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html&#39;,
-        &#39;https://books.toscrape.com/catalogue/tipping-the-velvet_999/index.html&#39;,
-        &#39;https://books.toscrape.com/catalogue/soumission_998/index.html&#39;]
+<pre><code class="python">artist_ids = [&#39;ARICCN811C8A41750F&#39;, &#39;AR1GW0U1187B9B29FD&#39;, &#39;ARZ3U0K1187B999BF4&#39;]
 </code></pre>
 
 <p>Tips: </p>
@@ -1147,6 +1198,34 @@ def download_data(url):
 <ul>
 <li>Status messages with variables: <code>print(f&#39;Done retrieving {url}&#39;)</code></li>
 </ul>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Solution</h3>
+<div class="slideContent small-code" >
+<pre><code class="python">artist_ids = [&#39;ARICCN811C8A41750F&#39;, &#39;AR1GW0U1187B9B29FD&#39;, &#39;ARZ3U0K1187B999BF4&#39;]
+
+def download_data(url):
+  header = {&#39;User-agent&#39;: &#39;Mozilla/5.0&#39;} 
+  web_request = requests.get(url, headers = header)
+  soup = BeautifulSoup(web_request.text)
+
+  artist_name = soup.find(&#39;h2&#39;).get_text()
+  location = soup.find(class_ = &#39;about_artist&#39;).find_all(&#39;p&#39;)[0].get_text()
+  plays = soup.find(class_ = &#39;about_artist&#39;).find_all(&#39;p&#39;)[1].get_text()
+
+  print(f&#39;Artist name: {artist_name} from {location} with {plays} song plays.&#39;)
+
+for id in artist_ids:
+  download_data(f&#39;https://music-to-scrape.org/artist?artist-id={id}&#39;)
+</code></pre>
+
+<pre><code>Artist name: Ya Boy from United States with 54 song plays.
+Artist name: Prince With 94 East from Minneapolis MN with 36 song plays.
+Artist name: Cabas from  with 365 song plays.
+</code></pre>
 
 </div>
 
@@ -1161,9 +1240,54 @@ def download_data(url):
 
 <ul>
 <li>Full: the entire FILE (e.g., <code>data.json</code>) is ONE giant JSON object</li>
-<li>New line separation: each line in your file has one JSON object</li>
+<li><strong>New line separation: each line in your file has one JSON object</strong></li>
 </ul></li>
 </ul>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Wrapping results into JSON data</h3>
+<div class="slideContent" >
+<p>Change the code so it stores artist name, location and plays in the JSON object.</p>
+
+<pre><code class="python">
+def download_data(url):
+  web_request = BeautifulSoup(requests.get(url).text)
+  artist_name = soup.find(&#39;h2&#39;).get_text()
+  location = soup.find(class_ = &#39;about_artist&#39;).find_all(&#39;p&#39;)[0].get_text()
+  plays = soup.find(class_ = &#39;about_artist&#39;).find_all(&#39;p&#39;)[1].get_text()
+
+  out_data = {&#39;artist&#39;: &#39;artist name&#39;,
+            &#39;location&#39;: &#39;store location here&#39;,
+            &#39;plays&#39;: &#39;store plays here&#39;}
+
+  return(out_data)
+</code></pre>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Saving JSON data</h3>
+<div class="slideContent" >
+<p>The final step is to save JSON data in a file.</p>
+
+<p>We can do this with the JSON library.</p>
+
+<pre><code class="python">import json
+
+out_data = {&#39;artist&#39;: &#39;artist name&#39;,
+          &#39;location&#39;: &#39;store location here&#39;,
+          &#39;plays&#39;: &#39;store plays here&#39;}
+
+to_json = json.dumps(out_data)
+
+f=open(&#39;filename.json&#39;,&#39;a&#39;)
+f.write(to_json+&#39;\n&#39;)
+f.close()
+</code></pre>
 
 </div>
 
@@ -1173,11 +1297,12 @@ def download_data(url):
 <div class="slideContent" >
 <ul>
 <li>In the demos above, we just used a hard-coded list of URLs</li>
-<li>In practice, getting to that list of books/products (generally speaking: &ldquo;seeds&rdquo;) is a web scraper in itself!</li>
+<li>In practice, getting to that list of books/products/songs/artists/users (generally speaking: &ldquo;seeds&rdquo;) is a web scraper in itself!</li>
 <li>Examples
 
 <ul>
-<li>scrape all URLs for books from the category overview page; then loop through them an extract information for each book</li>
+<li>scrape all artists featured on the homepage</li>
+<li>then loop through them an extract information for each artist (e.g., total number of)</li>
 <li>scrape user names from reddit.com; then, use the reddit API to get user metadata</li>
 <li>&hellip;</li>
 </ul></li>
@@ -1197,7 +1322,8 @@ def download_data(url):
 <li>all of the firm&#39;s data? or just a little bit? are subjects vulnerable (say, kids)?</li>
 <li>can we actually &ldquo;get&rdquo; data on all subjects? can we match data?</li>
 </ul></li>
-<li>Solutions and best practices are discussed in &ldquo;Fields of Gold&rdquo;</li>
+<li>Some solutions and best practices discussed in &ldquo;Fields of Gold&rdquo;</li>
+<li>Let&#39;s look at the tables in the paper and try to find out&hellip;</li>
 </ul>
 
 </div>
@@ -1207,7 +1333,7 @@ def download_data(url):
 <h3>Writing a complete web scraper</h3>
 <div class="slideContent" >
 <ul>
-<li>Have list of seeds to start up data collection (here, book urls)</li>
+<li>Have list of seeds to start up data collection (here, artist IDs)</li>
 <li>loop through list of URLs
 
 <ul>
@@ -1223,18 +1349,18 @@ def download_data(url):
 <h3>Wrapping of web scraping</h3>
 <div class="slideContent" >
 <ul>
-<li>Get content from a website</li>
+<li>Get content from a <strong>website</strong></li>
 <li>Since we don&#39;t want &ldquo;everything&rdquo;, we need to &ldquo;find&rdquo; relevant elements on the site using
 
 <ul>
 <li>classes</li>
 <li>attributes</li>
-<li>attribute-value pairs</li>
+<li>(attribute-value pairs)</li>
 </ul></li>
-<li>We first build a prototype; then gradually improve by
+<li>We first build a prototype; then gradually improve it by
 
 <ul>
-<li>modularizing code as much as possible (using functions, so we can reuse code)</li>
+<li>modularizing code as much as possible (using functions and loops)</li>
 <li>ensuring code runs top-down</li>
 </ul></li>
 </ul>
@@ -1248,11 +1374,11 @@ def download_data(url):
 <ul>
 <li class="fragment">Standard way for exchanging data, functions or algorithms</li>
 <li class="fragment"><strong>Which APIs did you already encounter/explore?</strong></li>
-<li class="fragment">Reddit is super easy to use - other APIs require advanced authentication procedures</li>
+<li class="fragment">Music to scrape is super easy to use - other APIs require advanced authentication procedures</li>
 <li class="fragment">Structure corresponds to web scraping
 
 <ul>
-<li class="fragment">have list of seeds (e.g., community names; this was &ldquo;URLs&rdquo; for web scraping earlier)</li>
+<li class="fragment">have list of seeds (e.g., artist IDs; this was &ldquo;URLs&rdquo; for web scraping earlier)</li>
 <li class="fragment">store data in new-line separated JSON files (if necessary: convert back to CSV)</li>
 </ul></li>
 </ul>
@@ -1261,22 +1387,40 @@ def download_data(url):
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Exploring JSON objects on Reddit.com</h3>
-<div class="slideContent small-code" >
-<p><strong>Please work on exercise 2.3.</strong></p>
+<h3>Let&#x27;s explore the documentation and a first endpoint</h3>
+<div class="slideContent" >
+<ul>
+<li><p>Let&#39;s view the <a href="https://api.music-to-scrape.org/docs">documentation</a></p></li>
+<li><p>Let&#39;s explore a first endpoint: <a href="https://api.music-to-scrape.org/artists/featured">https://api.music-to-scrape.org/artists/featured</a></p></li>
+</ul>
 
-<pre><code class="python">import requests
-url = &#39;https://www.reddit.com/r/marketing/about/.json&#39;
-headers = {&#39;authority&#39;: &#39;www.reddit.com&#39;, &#39;cache-control&#39;: &#39;max-age=10&#39;, &#39;upgrade-insecure-requests&#39;: &#39;1&#39;, &#39;user-agent&#39;: &#39;Mozilla/5.0&#39;}
-response = requests.get(url, headers=headers)
-json_response = response.json()
-</code></pre>
+<p>&ndash;&gt; we can use the browser to retrieve data from (simple) APIs</p>
 
-<ol>
-<li>leave out headers - what happens?</li>
-<li>wrap in while loop &amp; pausing for five seconds: print out active users</li>
-<li>write <code>get_usercount()</code> function</li>
-</ol>
+<p>Extensions:</p>
+
+<ul>
+<li>time data retrieval (e.g., every five seconds; discuss multiple strategies)</li>
+<li>store featured artists in a list (or file)</li>
+</ul>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Let&#x27;s retrieve some artist meta data</h3>
+<div class="slideContent" >
+<ul>
+<li>Endpoint: <a href="https://api.music-to-scrape.org/artist/info">https://api.music-to-scrape.org/artist/info</a></li>
+<li>Requires parameter: artistid</li>
+<li>Combined call: <a href="https://api.music-to-scrape.org/artist/info?artistid=%7BENTER">https://api.music-to-scrape.org/artist/info?artistid={ENTER</a> ARTIST ID HERE}</li>
+</ul>
+
+<p>DO:</p>
+
+<ul>
+<li>Get some data for an artist of your choice - you find the artist IDs on the site or in previous code</li>
+<li>Wrap code in a function so you can retrieve data for multiple artists</li>
+</ul>
 
 </div>
 
@@ -1285,7 +1429,7 @@ json_response = response.json()
 <h3>At which frequency to extract the data? (Challenge #2.3)</h3>
 <div class="slideContent" >
 <ul>
-<li>Here, we extracted data every five seconds.</li>
+<li>Here, we extracted data every few seconds.</li>
 <li>But, extraction frequency vastly differs by project</li>
 <li>Considerations
 
@@ -1318,13 +1462,14 @@ json_response = response.json()
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Exercises with Reddit</h3>
+<h3>Exercises with music-to-scrape</h3>
 <div class="slideContent" >
 <p><strong>Please work on exercise 2.4.</strong></p>
 
 <ol>
-<li>wrap in function and extend to 10 subreddits</li>
-<li>add timestamp to JSON data</li>
+<li>collect (longer) list of featured artists</li>
+<li>for each of these featured artists, collect meta data</li>
+<li>store data in new-line separated JSON file</li>
 </ol>
 
 </div>
@@ -1376,14 +1521,13 @@ json_response = response.json()
 <li>Work on team activity #1
 
 <ul>
-<li>online coaching session next week </li>
+<li>coaching session following today&#39;s tutorial</li>
 <li>make team allocation definite (see Canvas!)</li>
 </ul></li>
 <li>If you haven&#39;t done so
 
 <ul>
 <li>go through the self-study material of this week</li>
-<li>update your &#39;status&#39; on Pulse!</li>
 </ul></li>
 <li>Stay engaged
 

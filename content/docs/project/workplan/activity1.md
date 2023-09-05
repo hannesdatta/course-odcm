@@ -7,14 +7,13 @@ date: 2021-02-04
 # Activity #1: Generating project ideas and data sources
 
 ## Overview
-- Type: Meetup with your team (e.g., online[^1] or on campus)
+- Type: Meetup with your team during the coaching session 
 - Goals
   - identify online data sources and evaluate their value in the context of a specific societal or business problem
   - start the group formation process 
 - Deliverable
-  - Brief description of data context (and classification into four pathways of knowledge generation) + List of potential data sources for your team project (uploaded to Canvas)
-
-[^1]: You can schedule unlimited calls when logging in with your Tilburg University account on Zoom.
+  - Discussion with coach about data context and potential sources
+  - Brief description of data context (and classification into four pathways of knowledge generation) + list of potential data sources for your team project
 
 
 ## Preparation before the activity
@@ -32,12 +31,13 @@ date: 2021-02-04
 
 2. Come up with an interesting *data context* that addresses one (or multiple) of the __four central pathways__ through which web data has advanced marketing thought (see paper for the details and typology).
 
-3. Start to broadly identify data sources in your particular *data context*, by working through __challenge #1.1-1.2 in the paper and corresponding parts in table 2__. 
+3. Start to broadly identify data sources in your particular *data context*, by working through __challenge #1.1-1.2 in the paper and corresponding parts in table 2__.
 
-
+<!--
 4. Submit a brief document on Canvas (PDF), containing your team number and two sections:
     - Motivation of your data context (why do you think it's important?!), and explanation which four pathways are being addressed [100 words]
     - A list of data sources (including links) that you are considering to use (does not need to be your final decision!). Explicitly mention web scraping vs. APIs for each source. [max. 10]
+-->
 
 {{% hint info %}}
 __Challenge each other!__

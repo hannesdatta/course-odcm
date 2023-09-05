@@ -182,12 +182,12 @@ class: small-code
 ```{python, eval=TRUE}
 import requests
 from bs4 import BeautifulSoup
-url = 'https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html'
+url = 'https://music-to-scrape.org/artist?artist-id=ARICCN811C8A41750F'
 header = {'User-agent': 'Mozilla/5.0'} 
-book_request = requests.get(url, headers = header)
-book_request.encoding = book_request.apparent_encoding
-soup = BeautifulSoup(book_request.text)
-print(soup.find('h1').get_text())
+web_request = requests.get(url, headers = header)
+
+soup = BeautifulSoup(web_request.text)
+print(soup.find('h2').get_text())
 ```
 
 - Change the snippet to __show the price__! Tip: use `.find(class_ = 'classname')`

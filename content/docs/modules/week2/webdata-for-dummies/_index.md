@@ -19,7 +19,7 @@ bookHidden: true
 
 ## Prerequisites
 
-* Basic Python skills, for example by working through the [Python Bootcamp](/docs/modules/weeb1/pythonbootcamp/).
+* Basic Python skills, for example by working through the [Python Bootcamp](/docs/modules/week1/pythonbootcamp/).
 
 {{% hint info %}}
 __Downloading to and starting the tutorial on your computer__

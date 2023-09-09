@@ -13,7 +13,7 @@ bookCollapseSection: false
 ## Tutorial
 {{% laptop %}}
 
-- In-class tutorial (view [slides](webscraping101/slides.html))
+- In-class tutorial (view [slides](webscraping101/slides.Rpres))
 
 {{% hint info %}}
 Would you like to advance your scraping skills for __dynamic websites__ such as Instagram that involves a lot of user interaction like scrolling and clicking? Then also follow the ["Web Scraping Advanced" tutorial](/docs/tutorials/webscrapingadvanced).

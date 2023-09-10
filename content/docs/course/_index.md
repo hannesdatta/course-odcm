@@ -28,7 +28,7 @@ Web scraping and Application Programming Interfaces are among the must-have skil
 - Collect data via web scraping and Application Programming Interfaces (APIs) by mixing, extending, and repurposing code snippets
 - Document and archive collected data and make it available for public (re)use
 
-The specification matrix for this course can be [downloaded here](../specification_tables_odcm.pdf). This matrix gives an overview of all the learning goals and their weights in each graded component of the course (i.e., in the final exam, team project and Pulse). 
+The specification matrix for this course can be [downloaded here](specification_tables_odcm.pdf). This matrix gives an overview of all the learning goals and their weights in each graded component of the course (i.e., in the final exam, team project and Pulse). 
 
 [^1]: Based on Boegershausen, Johannes, Hannes Datta, Abhishek Borah, and Andrew T. Stephen (2022). “Fields of Gold: Scraping Web Data for Marketing Insights.” *Journal of Marketing*. [Download paper](https://doi.org/10.1177/00222429221100750). [Visit web companion](https://web-scraping.org).
 

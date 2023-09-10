@@ -21,10 +21,10 @@ bookHidden: true
 
 ## Getting started
 
-1. In-class tutorial (view [slides](slides.html))
+1. In-class tutorial (view [slides](slides.Rpres))
 2. After-class exercises (<a href = 'webscraping-101.ipynb' download>download</a>, [Google Colab](https://colab.research.google.com/github/hannesdatta/course-odcm/blob/master/content/docs/tutorials/webscraping101/webscraping-101.ipynb))
 
 {{% hint info %}}
-Would you like to advance your scraping skills for __dynamic websites__ such as Instagram that involves a lot of user interaction like scrolling and clicking? Then also follow the ["Web Scraping Advanced" tutorial](/docs/tutorials/webscrapingadvanced).
+Would you like to advance your scraping skills for __dynamic websites__ such as Instagram that involves a lot of user interaction like scrolling and clicking? Then also follow the ["Web Scraping Advanced" tutorial](/docs/project/resources/tutorials/webscrapingadvanced).
 
 {{% /hint %}}

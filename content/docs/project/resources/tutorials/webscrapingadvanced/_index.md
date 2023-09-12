@@ -18,4 +18,4 @@ draft: false
 
 ## Getting started
 
-- Start with this optional tutorial (<a href = 'webscraping-advanced.ipynb' download>download</a>, [Google Colab](https://colab.research.google.com/github/hannesdatta/course-odcm/blob/master/content/docs/tutorials/webscrapingadvanced/webscraping-advanced.ipynb.ipynb))
+- Start with this optional tutorial (<a href = 'webscraping-advanced.ipynb' download>download</a>, [Google Colab](https://colab.research.google.com/github/hannesdatta/course-odcm/blob/master/content/docs/project/resources/tutorials/webscrapingadvanced/webscraping-advanced.ipynb))

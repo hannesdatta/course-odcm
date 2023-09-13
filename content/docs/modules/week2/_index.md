@@ -26,7 +26,7 @@ description: Learn how to assess data quality and website/API structure, and dec
 
 ## Self-study and activities
 
-- After-class exercises (about 1-2 hours; contained at the end of the tutorial; <a href = 'webdata-for-dummies/webdata-for-dummies-in-class.ipynb' download>download</a>, [Google Colab](https://colab.research.google.com/github/hannesdatta/course-odcm/blob/master/content/docs/modules/week1/webdata-for-dummies/webdata-for-dummies-in-class.ipynb))
+- After-class exercises (about 1-2 hours; contained at the end of the tutorial; <a href = 'webdata-for-dummies/webdata-for-dummies-in-class.ipynb' download>download</a>, [Google Colab](https://colab.research.google.com/github/hannesdatta/course-odcm/blob/master/content/docs/modules/week2/webdata-for-dummies/webdata-for-dummies-in-class.ipynb))
 - [What is web scraping and what are Application Programming Interfaces (APIs)?](https://videocollege.uvt.nl/Mediasite/Play/41afff385bd74db2af5fb8507350ea521d) (30 minutes)
 - "Fields of Gold: Scraping Web Data for Marketing Insights"
   - Please [watch the webinar](https://youtu.be/KiyFyLEkqNk) (1 hour)

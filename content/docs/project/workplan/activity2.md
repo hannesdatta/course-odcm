@@ -7,24 +7,27 @@ date: 2021-02-04
 # Activity #2: Data source selection
 
 ## Overview
-- Type: Meetup with your team (e.g., online[^1] or on campus)
-- Goal: building on [activity #1](activity1) and the received feedback, refine your data context and select (typically one) data source
-
-[^1]: You can schedule unlimited calls when logging in with your Tilburg University account on Zoom.
+- Type: Meetup with your team during the coaching session 
+- Goal: building on [activity #1](activity1) and the received feedback, refine your data context and make a final selection for your data source 
 
 
 ## Preparation before the activity
 
 - Work through the "Fields of Gold" paper (at least up to challenge #1.3). Make use of the  relevant tables in the paper as you work on this activity.
 
-
 ## Deliverable
 
-Submit a document on Canvas (PDF), containing your team number and three sections:
+During the coaching session, work on a document that you submit on Canvas as a PDF file, containing your team number and three sections:
     
 - Section 1: Updated motivation of your data context (why do you think it's important?!), and explanation which four pathways are being addressed [100 words]
 - Section 2: An updated list of data sources (including links) that you are considering to use, explicitly mention web scraping vs. APIs for each source. Explain how you addressed challenges #1.1-#1.2, leading to your __selected data source__ [About 10 sources + explanation of max. 250 words]
 - Section 3: Mapping the data context, as explained in challenge #1.3 [max. 300 words]
+
+The document is due at the end of the week.
+
+__Solicit feedback on your ideas from your coach during the coaching session.__
+
+Done early? Then start prototyping your data collection (i.e., prepare for activity #3).
 
 
 <!--

@@ -7,13 +7,19 @@ date: 2021-02-04
 # Activity #3: Extraction Design
 
 ## Overview
-- Type: Team presentation with screen shots from the website/API that illustrate the design choices
-- Duration: 3 minutes per team + 2 minutes discussion (please pick one person to present/lead the discussion)
-- Before starting, carefully reread the relevant sections in ["Fields of Gold"](https://doi.org/10.1177%2F00222429221100750).
+- Type: Meetup with your team during the coaching session 
+- Goal: prepare team presentation with screen shots from the website/API that illustrate the design choices
+- Presentation specifics
+    - please target a presentation time of 3 minutes per team (+ 2 minutes discussion)
+    - please pick one person to present; others can contribute in the discussion
+
+## Preparation before the activity
+
+- Before the session, carefully reread the relevant sections in ["Fields of Gold"](https://doi.org/10.1177%2F00222429221100750).
 
 ## Deliverables
 
-- Prepare a presentation, covering
+During the coaching session, start preparing a presentation, covering
     - Title page: Team number & brief description of (updated) motivation for data context
     - Slide 1: Which information to extract from which pages/endpoints? (Challenge #2.1)
     - Slide 2: Which seeds to use as a starting point of the data collection? (Challenge #2.2)
@@ -25,8 +31,10 @@ date: 2021-02-04
 
 - Please include the calculation of your study's feasible sample size in a separate Excel sheet.
 
-- Please upload the presentation (as a PDF) and Excel sheet (as an Excel file) in one zip file at the latest by 9am on the day prior to the session.
+- Please upload the presentation (as a PDF) and Excel sheet (as an Excel file) in one zip file, at the latest a day before the __presentation sessions__ (see schedule).
 
+
+__Throughout the coaching session, please solicit the feedback of your coach.__
 
 <!--
 

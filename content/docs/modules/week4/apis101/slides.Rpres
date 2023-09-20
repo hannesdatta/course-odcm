@@ -26,28 +26,23 @@ Welcome to oDCM!
 
 We're about to start with __today's tutorial ("API 101")__.
 
-- If you haven't done so, open slides at https://odcm.hannesdatta.com/docs/tutorials/apis101/
-- Today's (live) code is available at [tiu.nu/livecoding]() (refresh needed)
-- You can work in Google Colab throughout this class (except for Reddit...)
+- If you haven't done so, open slides at https://odcm.hannesdatta.com/docs/modules/week4/ (I have just uploaded them)
+- Today's (live) code is available at [https://tiu.nu/livecoding](https://tiu.nu/livecoding) (refresh may be needed)
+- You can work in Google Colab throughout this class
 
-
-<!--
-- Login at [http://pulse.tilburg-digital.com]() to explore this week's to do's
--->
 
 Before we start
 ========================================================
 
 - Tech development & extra material
-  - Check "advanced" tutorials for extra code snippets + selenium
-  - [Legality of scraping](https://htmlpreview.github.io/?https://github.com/hannesdatta/legal-situation-of-web-scraping/blob/main/legal-status-of-web-scraping.html#/title-slide)
-    - Use of ChatGPT: experience?
+  - Selenium?
+  - Note there are "advanced" tutorials for extra code snippets
 - Team projects
   - enthusiastic about many of your ideas
   - get started building your prototypes
-- Pulse: great to see so many using it -- feedback appreciated
+  - still revising template for writing it up
 <br>
-- Any other issues?
+- Any issues so far?
 
 <!--
 - API authentication will be pain point - highly idiosyncratic!
@@ -55,10 +50,14 @@ Before we start
 
 Agenda
 =======
-- In-class 
-  - "tutorial-style API" -- https://icanhazdadjoke.com/
-  - real life w/ Reddit -- https://reddit.com
-- After class (complete tutorial yourselves)
+- In-class: https://api.music-to-scrape.org/docs
+- Coaching session (challenges #2.1-#2.4)
+  - which information to retrieve?
+  - for which seeds?
+  - at what frequency?
+  - how to process the data during the collection
+- After class
+  - complete tutorial yourselves
 
 What are APIs?
 ============
@@ -66,7 +65,7 @@ What are APIs?
 - APIs are connectors within and between platforms and databases, using the web to talk to each other
   - backend to frontend: e.g., database <-> Reddit API <-> website
   - backend to backend: e.g., Twitter <-> Twitter API <-> some trading software
-- Mostly made for developers, rarely for researchers
+- Initially made available for developers, later for researchers (e.g., OpenAI's API)
 - Available usually only after registration and approval
 
 Technical differences between APIs and web scraping
@@ -77,7 +76,7 @@ Technical differences between APIs and web scraping
   - have to structure (unstructured) HTML code
 <br>
 - API
-  - good if you have permission (but, be realistic!)
+  - good if you have permission (but, be realistic about getting access!)
   - *structured* JSON data
 
 Discovering an API documentation
@@ -86,31 +85,35 @@ Discovering an API documentation
 - Probably the most difficult part w/ APIs is to get authenticated
   - recall: need platform's permission (but this API doesn't require authentication)
 - Find an endpoint (aka page)
+- Let's explore the documentation of... [OpenAI](https://platform.openai.com/docs/introduction)!
+  - which endpoints are available?
+  - what could you do with them?
 
-__Do:__ Browse the [documentation](https://icanhazdadjoke.com/api) of the dad joke API. 
+Do: Zooming in on Music-to-scrape's API
+=====
 
-1) Describe which endpoints are available. What do they do?
+__Browse__ the [documentation](https://api.music-to-scrape.org/docs) of music-to-scrape's API.
 
-2) Can you come up with reasons why these endpoints are available?
+1) Describe which endpoints are available. What do they allow you to do?
+
+2) Can you come up with reasons why these endpoints are available? "Why has the API been created" (other than for this class...)
 
 Do: Making a connection with an API
 =================
 class: small-code
   
-Run the snippet below (and again, and again)
+Run the snippet below.
 
 ```{python, eval=FALSE}
 import requests
-search_url = "https://icanhazdadjoke.com/search"
-response = requests.get(search_url, 
-                        headers={"Accept": "application/json"}, 
-                        params={"term": "cat"})
-joke_request = response.json()
-joke_request
+url = "https://api.music-to-scrape.org/users"
+response = requests.get(url)
+request = response.json()
+print(request)
 ```
 
-1. Can you explain what happens when you run this cell (multiple times)?
-2. Modify the search parameter (`term`) to search for `dog` jokes (rather than `cat` jokes!)
+1. Can you explain what happens when you run this cell?
+2. Try adding the limit parameter (`?limit=20`) and run again. What happens?
 
 How can we make sense of JSON data?
 ========
@@ -124,22 +127,96 @@ __DO:__ Run this snippet to write JSON output to a file! Inspect it using [JSONv
 
 ```{python, eval=FALSE}
 import json
-f=open('jokes.json', 'w', encoding='utf-8')
-f.write(json.dumps(joke_request))
+f=open('users.json', 'w', encoding='utf-8')
+f.write(json.dumps(request))
 f.close()
 ```
+
+Getting data from a JSON dictionary
+===========
+class: small-code
+
+- Let's try to only extract a list of user names, rather than the entire dictionary.
+- For this, we need to know how to access nodes of a dictionary.
+  - `['name_of_attribute']`
+  - `.get('name_of_attribute')`
+- Do: Let's try it out
+
+```{python, eval=FALSE}
+request['limit']
+
+# or: 
+
+request.get('limit')
+```
+
+Do: Getting user names
+===========
+
+1. How would you have to modify the snippet below to access the list of user names?
+2. Can you write a loop that extracts user names and puts them to a new list?
+
+```{python, eval=FALSE}
+request['limit'] # this one worked for extracting the value for limit...
+```
+
+Do: Anonymizing data
+====
+
+Suppose we do not want to extract the ages and country names for the users...
+
+__Can you come up with a way to anonymize them (e.g., overwrite them with NA), while keeping the rest of the dictionary intact?__
+
+Difference between `.append()` and `.extend()`
+========
+class: small-code
+
+- `.append()` "adds" one item at a time to an existing list
+```{python, eval=FALSE}
+users = [] # empty list
+users.append('another user')
+users.append('yet another user')
+users
+```
+
+- `extend()` adds multiple items to an existing list
+```{python, eval=FALSE}
+users = []
+new_users = ['another user','yet another user']
+users.extend(new_users)
+users
+```
+
 
 Understanding parameters in API calls
 ===============
 
+- APIs are useful because you can *modify* its search results
+  - say, you want to see the next batch of users (when listing users), or 
+  - search for a particular thing (when searching via the API)
 - Many ways to "submit" parameters to an API
-  - directly in URL, e.g., `myapi.com/search/cats_and_dogs`
-  - w/ parameters in URL, e.g., `myapi.com/search/?query=cats_and_dogs`
+  - directly in URL, e.g., `myapi.com/search/cats_and_dogs` [not the case for music to scrape]
+  - w/ parameters in URL, e.g., `myapi.com/search/?query=cats_and_dogs` 
   - in __header__ of request (think of it like the address [=header] on an envelop [=data])
 
 <br><br>
 
 __The API documentation will tell you what is required!__
+
+Example: submitting parameters in the header via the `params` argument
+======
+
+- `params` requires to be a dictionary with the parameter names and corresponding values
+
+```{python, eval=FALSE}
+import requests
+url = "https://api.music-to-scrape.org/users"
+response = requests.get(url, params = {'limit': 15})
+request = response.json()
+print(request)
+```
+
+Can you __speculate about the benefits__ of submitting parameters in the header (`params`) rather than in the URL?
 
 Do: Iterating through API endpoints
 =========
@@ -147,158 +224,113 @@ class: small-code
 
 - Remember iterating through pages on a website to "view" data? APIs know the same concept!
 
-1. Run the snippet below and say how many jokes there are available.
-2. How many pages you would have to iterate through to capture all jokes?
-3. Print the number of pages from (2) to the screen.
+1. Try to add the `offset` parameter to the snippet below. What happens when you set it to `1`? What happens when you set it to `5`?
+2. To which value would you have to set it to see the next batch of users?
 
 ```{python, eval=FALSE}
+# start with this code
 import requests
-search_url = "https://icanhazdadjoke.com/search"
-response = requests.get(search_url, headers={"Accept": "application/json"})
-joke_request = response.json()
-print(joke_request)
+url = "https://api.music-to-scrape.org/users?limit=10"
+response = requests.get(url)
+request = response.json()
+print(request)
 ```
 
-Understanding how to iterate
+Do: Let's wrap your code in a function
 ======
-class: small-code
 
-First step is always to understand how to iterate. So let us try it out!
+1. Construct a function, called `get_users()`, with parameters `limit` and `offset`, returning the dictionary of users from the API endpoint `/users`.
 
-```{python, eval=FALSE}
-import requests
-search_url = "https://icanhazdadjoke.com/search"
-response = requests.get(search_url, 
-                        headers={"Accept": "application/json"},
-                        params={"iteration": 1})
-joke_request = response.json()
-print(joke_request)
-```
-
-__DO:__ 
-
-- Try to add 1 to the `iteration` parameter to verify it works!
-- Re-check the [documentation](https://icanhazdadjoke.com/api) for the endpoint `/search` -- and then debug the code snippet!
-
-Looping through all pages of an endpoint
+Looping through all result pages of an endpoint
 =====
 
-- Let's first try constructing a loop that counts from 1 to the end of pages
-- I always search for snippets - e.g., [here](https://www.google.com/search?client=firefox-b-d&q=loop+through+sequence+python)
+- Let's try to construct a loop that repeatedly fetches user names.
+- Let us first use a `for` loop.
 
 ```{python, eval=FALSE}
 for x in range(6):
   print(x)
 ```
 
-__Do:__ Modify the snippet below so that it loops through `joke_request['total_pages']`, starting with `1` (and not with `0`)!
+__Do:__ Modify the snippet below so that it calls `get_users()` 10 times, incrementing the offset by 10 at each iteration.
 
-```{python eval=FALSE, include=FALSE}
-for x in range(joke_request['total_pages']):
-  print(x+1)
+For loop vs. while loop
+========
+class: small-code
+
+- Difference between for `for` loops (you usually know beforehand when to stop), and `while` loops (the ending point can change, say when "there is no new data coming in")
+
+```{python, eval=FALSE}
+# for loop
+for x in range(6):
+  print(x)
+```
+
+```{python, eval=FALSE}
+cntr = 0
+while cntr < 6:
+  print(cntr)
+  cntr = cntr+1
+
 ```
 
 Tying everything together
 =============
 
-We can now combine our learnings to build a function that extracts all jokes to new-line separated JSON files.
+We can now combine our learnings to build a function that extracts all user names to new-line separated JSON files.
 
 - Implement it step-by-step
 - Also load packages!
 - Save as `.py` file and test whether it runs from command prompt/terminal
 
-__Solution on next slide...__
 
-
-Solution: Tying everything together
+Solution: 
 =============
 class: small-code
 
 ```{python, eval=FALSE}
-import requests
-import json
-
-def get_jokes(term='cat'):
-  search_url = "https://icanhazdadjoke.com/search"
-  # get the number of jokes first
-  response = requests.get(search_url, headers={"Accept": "application/json"},
-                          params = {"term": term})
-  joke_request = response.json()
-  total_pages = joke_request['total_pages']
-  print(f'Retrieving {total_pages} pages...')
-  
-  joke_collection = []
-  
-  for page in range(total_pages):
-    print(f'  Getting data from page {page+1}')
-    response = requests.get(search_url, 
-                            headers={"Accept": "application/json"},
-                            params = {"term": term,
-                                      "page": page+1})
-    joke_request = response.json()
-    for joke in joke_request['results']:
-      joke_collection.append(joke)
-  return(joke_collection)
+# will develop in class
 ```
 
-Do: Onwards to Reddit.com
+Do: Onwards to more endpoints
 =======================
 class: small-code
 
-- Reddit uses different headers -- use the example snippets from the tutorial
-- If you want, you can change the name of the subreddit
-- Learning how to iterate through JSON objects is required
+The tutorial proceeds by introducing a series of additional endpoints.
+
+- [`user/plays`](https://api.music-to-scrape.org/docs#operation/get_total_plays_for_username_user_plays_get) - get a user's total number of plays
+- [`charts/top-artists`](https://api.music-to-scrape.org/docs#operation/chart_get_top_artists_charts_top_artists_get) - see a list of top-performing artist for this week (and previous weeks)
+
+1. Try fetching data from `user/plays`, following the guidelines in the documentation. Do you succeed?
+2. Now do the same for `charts/top-artists`. Do you get some output?
+
+Let's extract several of these weekly charts
+=======
 
 ```{python, eval=FALSE}
-import requests
-import json
-url = 'https://www.reddit.com/r/marketing/about/.json' # subreddit is "marketing"
-headers = {'authority': 'www.reddit.com', 'cache-control': 'max-age=10', 'user-agent': 'Mozilla/5.0'}
-response = requests.get(url, headers=headers)
-json_response = response.json()
+# code in class
 ```
 
-1. Print the `title` of the subreddit!
-2. Print the `public description` of the subreddit.
-3. Store information (1) and (2) in a dictionary, and have it returned by a function.
 
-
-Do: More reddit stuff: Looping (I)
-======
-
-```{python, eval=FALSE}
-import requests
-import json
-url = 'https://www.reddit.com/r/marketing/.json'
-headers = {'authority': 'www.reddit.com', 'cache-control': 'max-age=10', 'user-agent': 'Mozilla/5.0'}
-response = requests.get(url, headers=headers)
-json_response = response.json()
-```
-
-1) Loop through all posts, and add their text (`selftext`), timestamp (`created_utc`) and indicator whether it is a video (`is_video`) to a new list of dictionaries.
-
-Do: More reddit stuff: Looping (II)
-======
-
-2) Parse this list of dictionaries to a csv file, using `pandas`.
-
-```
-import pandas as pd
-df = pd.from_dict(your_dict)
-df.to_csv('filename.csv')
-```
-
-Next steps
+Reflection
 ===========
 
-- Reflection: wow - no "structuring" (THAT's the key difference compared to web scraping)
+- wow - no "structuring" of HTML "soup" (THAT's the key difference compared to web scraping)
 - Spend time trying to get your first data from an API -- authentication __will__ be an issue!
+- Time left? We could also go over some [legal issues](https://htmlpreview.github.io/?https://github.com/hannesdatta/legal-situation-of-web-scraping/blob/main/legal-status-of-web-scraping.html#/title-slide)
+- After this class: coaching session (focus on [activity #3](https://odcm.hannesdatta.com/docs/project/workplan/activity3/))
+- Next week
+  - presentations about your projects
+  - afterwards: coaching (get your prototype up and running!)
 
-- Next week: Team coaching __on campus__
-  - Presentations: check [activity #3](https://odcm.hannesdatta.com/docs/project/workplan/activity3/)
-  - Afterwards: __coding camp__ (you work in teams, I'll give support)
-  
-- __You can proceed w/ tutorial now.__
-  - I will be available for questions (if time is left)...
-  - We could also go over some [legal issues](https://htmlpreview.github.io/?https://github.com/hannesdatta/legal-situation-of-web-scraping/blob/main/legal-status-of-web-scraping.html#/title-slide)
+Coaching session
+=========
 
+- Coaching session (challenges #2.1-#2.4)
+  - which information to retrieve?
+  - for which seeds?
+  - at what frequency?
+  - how to process the data during the collection
+- Work on your prototypes
+  - Selenium vs. `requests`?
+  - Getting authenticated with the API?

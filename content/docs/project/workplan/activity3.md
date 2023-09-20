@@ -27,7 +27,7 @@ During the coaching session, start preparing a presentation, covering
         - please include a calculation of your study's feasible sample size.
     - Slide 4: How to process the information during the extraction? (Challenge #2.4)
 
-    Throughout, provide details on how your extraction design balances technical feasibility and exposure to potential legal and ethical risks (cf. Table 3 in "Fields of Gold").
+Throughout, provide details on how your extraction design balances technical feasibility and exposure to potential legal and ethical risks (cf. Table 3 in "Fields of Gold").
 
 - Please include the calculation of your study's feasible sample size in a separate Excel sheet.
 

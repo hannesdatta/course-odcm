@@ -67,7 +67,7 @@ Weights for each component of the grading rubric below are indicated in brackets
 
 ### **1. Documentation**
 
-Please follow [Datasheets for Datasets](https://arxiv.org/pdf/1803.09010.pdf) (2018) in writing your documentation. Please get started by using the [template](/docs/project/Datasheets_for_DataSets.zip), and fill in __all (sub-)questions in sections 1-5__.
+Please follow [Datasheets for Datasets](https://arxiv.org/pdf/1803.09010.pdf) (2018) in writing your documentation. Please get started by using the [template](/docs/project/Datasheets_for_DataSets.zip), and fill in __all (sub-)questions in sections 1-6__. If you decide to make the data set publicly available (e.g., on Zenodo or OSF), you also need to fill out sections 7-8.
 
 In the grading details below, numbers (#1, #1.4, etc.) refer to sections in the final documentation.
 
@@ -93,29 +93,30 @@ From your answers to _all questions in section 2 of the documentation template_,
 - *How is research validity is balanced with technical feasibility and legal/ethical risks (5%)*  
 The design decision lead to a tradeoff between validity, technical feasibility and exposure legal/ethical risks. The consequences to these are carefully described when making decisions on one of the previous steps (i.e., which information to extract, which seeds to select and at what frequency).
 
-- *Data inspection (10%)*  
-The collected data is accompanied by meaningful summary statistics (e.g., the number of units per entity, means/SD for continuous variables, and frequency distributions per variable, for each entity). Missingness has been investigated (e.g., for individual entities, but also for the collected variables). Any redundancies, errors, or sources of noise have been clearly described. Identified subpopulations are labeled, so that users of the data can more easily get started using the data.
+#### 1.3 Data inspection (section 3 of your documentation, 10%)
 
+- The collected data is accompanied by meaningful summary statistics (e.g., the number of units per entity, means/SD for continuous variables, and frequency distributions per variable, for each entity). 
+- Missingness has been investigated (e.g., for individual entities, but also for the collected variables). 
+- Any redundancies, errors, or sources of noise have been clearly described. Identified subpopulations are labeled, so that users of the data can more easily get started using the data.
 
-#### 1.3 Collection process (section 3 of your documentation, 10%)
+#### 1.4 Collection process/data extraction (section 4 of your documentation, 10%)
 
-From your answers to _all questions in section 3 of the documentation template_, the following points need to be addressed:
+From your answers to _all questions in section 4 of the documentation template_, the following points need to be addressed:
 
-- *Data extraction (10%)*   
-  - The technical extraction plan has been described in a way that the data collection could be replicated. This encompasses providing a solid argumentation on why a particular data extraction technology used (e.g., selenium versus Beautifulsoup for websites, a package versus self-coded requests for APIs). If teams came across technical issues when scaling the data collection, the debugging stage is clearly explained.
-  - Users of the data learn about the technical hurdles that needed to be overcome, and which monitoring was in place to guarantee (and validate) data quality.
-  - Details are given on how (deployment infrastructure) and when the data collection was executed (e.g., by meaningful summaries of the timestamps in log files), and where the final data set was stored during the collection.
+- The technical extraction plan has been described in a way that the data collection could be replicated. This encompasses providing a solid argumentation on why a particular data extraction technology used (e.g., selenium versus Beautifulsoup for websites, a package versus self-coded requests for APIs). If teams came across technical issues when scaling the data collection, the debugging stage is clearly explained.
+- Users of the data learn about the technical hurdles that needed to be overcome, and which monitoring was in place to guarantee (and validate) data quality.
+- Details are given on how (deployment infrastructure) and when the data collection was executed (e.g., by meaningful summaries of the timestamps in log files), and where the final data set was stored during the collection.
 
 {{< hint info >}}
 __Best practices for documentation__
 
-Feel free to include screenshots and/or an additional recording in your documentation. Not only will this improve interpretability, it also contributes to the accuracy and reproducability of the project!
+Please include screenshots and/or an additional recording in your documentation. Not only will this improve interpretability, it also contributes to the accuracy and reproducability of the project!
 
 {{< /hint >}}
 
-#### 1.4 Preprocessing (section 4 of your documentation, 10%)
+#### 1.5 Preprocessing (section 5 of your documentation, 10%)
 
-From your answers to _all questions in section 4 of the documentation template_, the following points need to be addressed:
+From your answers to _all questions in section 5 of the documentation template_, the following points need to be addressed:
 
 - *Preprocessing (5%)*  
 Any pre-processing on the fly has been motivated and explained, using a few specific examples. Any further pre-processing after the collection has been described (e.g., such as to anonymize users for privacy concerns, to identify and clean out implausible observations, or to improve data structure for long-term storage, such as rearranging the data structure, relabeling columns into more meaningful and clear variable names). Potential threats that may result from this pre-processing are brought up and elaborated on.
@@ -123,9 +124,9 @@ Any pre-processing on the fly has been motivated and explained, using a few spec
 - *Accessibility and structure of final data files (5%)*  
 The files have a correct data structure, and variables are of the correct type (e.g., numbers as integers or floats, not as strings; time stamps properly formatted, or Unixtime used). Application of data enrichment and feature engineering strategies (e.g., to derive new variables from the data, where necessary). Data has been normalized (i.e., preferably multiple tables that can be joined together, rather than a wide table that contains many duplicates on some of the variables). If imputation is used, it is indicated which values have been imputed (e.g., interpolated; for example: followers (without missing), and followers_inputed as a TRUE/FALSE variable, indicating which ones were imputed). Finally, the data set is provided in CSV files, including column names, proper use of delimiters (e.g., a “,” may be inappropriate for textual data involving commas). No row names/index column.
 
-#### 1.5 Uses (section 5 of your documentation, 5%)  
+#### 1.6 Uses (section 6 of your documentation, 5%)  
 
-From your answers to _all questions in section 5 of the documentation template_, the following points need to be addressed:
+From your answers to _all questions in section 6 of the documentation template_, the following points need to be addressed:
 
 * *Users of the data learn about tasks the data set could be used for (5%)*  
 From the description, it is clear how the composition of the data set or the way it was preprocessed might affect future use. A clear indication is given for what the data should not be used for, e.g., relating to any of the legal or ethical concerns identified before.
@@ -192,9 +193,8 @@ Keep in mind that the goal of the project is not so much focused on conducting i
 ### Tips for filling in the documentation
 -	Try to answer all questions to the best of your ability.
     - Imagine you would have to work with this data in the future – how would you write up the documentation so that you (and your future self) may understand it?
-    - In your writing, be as concise as possible. We’ve had some recent experience using tools like Grammarly to improve our writing (there is a free version available), but there are certainly alternatives available!
+    - In your writing, be as concise as possible. 
     - The original paper on which the readme template is based on provides a few helpful (filled in) examples that may provide some inspiration.
     - If you are familiar with R, you can write your documentation in RMarkdown, which nicely intertwines answers to the questions (e.g., conceptual answers) with details/statistics from the data (i.e., by including code snippets that directly generate overview tables).
 
 - Please pick a good name for your dataset. This name will be the first thing potential users of your data will see. Use it as the *title* of your documentation (don't call your dataset "Datasheets for Datasets"!). Moreover, don't forget to include a title page for your documentation.
-- Please skip sections 6 and 7 of the documentation (distribution and maintenance). Do get rid of the example text in these sections though.

@@ -68,7 +68,7 @@ Lessons learnt #3: Data Source Selection
 incremental: true
 
 - Important of "broadening horizon" (e.g., assume perspective of various stakeholders, exceed geographical boundaries, use aggregators rather than primary data providers)
-- Consider alternatives to scraping (i.e., avoid defaulting! e.g., APIs, but also ready-made datasets)
+- Consider alternatives to scraping (i.e., avoid defaulting! e.g., APIs, but also ready-made data sets)
 - Scope the data context (i.e., understand how the data is generated, assess reliability of the data, explore user conversations about the data, etc.)
 
 Lessons learnt #4: Design Challenges (I)
@@ -108,10 +108,10 @@ incremental: true
 - Prototyping is extremely important
   - `requests` + `beautifulSoup` vs. `selenium` (Chromedriver)
   - extraction methodology (e.g., tags, classes, attribute-values) + stability
-  - array misaligning (obey the hierarchy!)
+  - array misalignment (obey the hierarchy of stuff is structured!!!)
   - scheduling, hiding passwords
   - revise navigation paths
-  - add comments to code (make it understandable for others!)
+  - add comments to code (make it understandable for others, e.g., using ChatGPT)
 - Start documentation from a readme template
   - Generate plots, descriptive stats
   - Think as a "data supplier" rather than narrowly focusing on *one* (research) question
@@ -120,7 +120,7 @@ Looking ahead: Recognizing Limitations
 ========================================================
 incremental: true
 
-- Web data entails modeling challenges - not covered in this course (e.g., self-selection, endogeneity, "messy" data)
+- Web data entails modeling challenges - not covered in this course (e.g., self-selection, "messy" data)
 - Web data can't give you all (i.e., you don't see internal data such as clickstream data) 
 - Legal and ethical issues not fully explored yet
 
@@ -133,8 +133,8 @@ incremental: true
   - start now, use later (data collection can take a long time!)
  
 - PhD and research master students can "invest" into data collections
-  - maybe *you are* a future PhD student? Start today! ;)
   - data was crucial to what I study
+  - maybe *you are* a future PhD student? Start today! 
 
 Academic Opportunities from "what we study"
 ========================================================
@@ -151,9 +151,8 @@ incremental: true
 
 1. Unleashing real-time data collections (cf. historical)
 2. Conduct & support field experiments with a platform's user base
-3. Use APIs to *access algorithms*, rather than data (e.g., Google Cloud Vision)
+3. Use APIs to *access algorithms*, rather than data (e.g., Google Cloud Vision, OpenAI)
 4. Build own [research APIs](https://www.jstatsoft.org/article/view/v094i09)
-
 
 <!--
 ::: notes
@@ -177,48 +176,47 @@ Next steps: Projects & SPA
 
 - You will receive __invite to self- and peer assessment__ via email
 
+Exam overview: Theoretical part
+=============
+
+- Organization
+  - When: 18 October, 8.30am - 9.30am 
+  - Work max. 1 hour on this part
+- How?
+  - closed book, only access to TestVision, not any other software
+  - I make selected resources [available on the instruction page](https://github.com/hannesdatta/course-odcm/raw/master/content/docs/exam/exam-material.zip)
+- What?
+  - let's look at [some questions now](https://odcm.hannesdatta.com/docs/exam/examplequestions/#theoretical-part)
+
 
 Exam overview: Practical part
 =============
 
 - Organization
-  - When: 3 April, 2pm - 4pm, take home
+  - When: 18 October, 4pm - 6pm, take home
   - Work max. 2 hours on this part
 - How?
   - open book, on your computer
-  - ChatGPT/GitHub Copilot et al. ONLY when explicitly asked for
+  - ChatGPT/GitHub Copilot and other tools ONLY when explicitly asked for
 - What?
   - let's look at [some questions now](https://odcm.hannesdatta.com/docs/exam/examplequestions/#practical-part)
-  - prep well - expect new websites, new endpoints of APIs that you know
-
-Exam overview: Theoretical part
-=============
-
-- Organization
-  - When: 4 April, 1pm - 3.15pm (jointly w/ dPrep; break of 15 minutes inside)
-  - Work max. 1 hour on this part
-- How?
-  - closed book
-  - I can make selected resources available on the instruction page. __Which ones?__
-- What?
-  - let's look at [some questions now](https://odcm.hannesdatta.com/docs/exam/examplequestions/#theoretical-part)
+  - prep well! Expect new websites (for scraping), new endpoints of APIs (that you know)
 
 Exam tips
 ========================================================
 incremental: true
 
-- Verify `selenium` and chrome work, next to the "regular" scraping toolkits (`requests`, `BeautifulSoup`)
-- Let us __compile material__ you want to access for the theoretical part of the exam (I'm proposing the web scraping paper -- download via the introduction page)
-- Practice scraping an unknown website (e.g., tutorials at tilburgsciencehub.com, working with the Reddit API) -- the scraper will account for a larger number of points on the exam!
-- Importance of "Fields of Gold" paper, including the web appendix (+ reason through challenges)
-
+- Verify `selenium` and Chrome work, next to the "regular" scraping toolkits (`requests`, `BeautifulSoup`
+- Practice scraping an unknown website (e.g., tutorials at tilburgsciencehub.com, working with the music-to-scrape) -- the scraper will account for a larger number of points on the exam!
+- Importance of "Fields of Gold" paper, including the web appendix (+ reason through challenges)!
+- Understand sample size calculations and legal concerns well
 
 Next steps: Official course evaluation
 ========================================================
 
 - Course evaluation has been immensely important to this course
-  - This edition: streamlined content of tutorials; introduced new format for coaching sessions; 
-  - Last edition: spent one week on Python onboarding; allocated moret ime to coaching sessions; developed Pulse
+  - This edition: introduced music-to-scrape.org, have coaching sessions mostly on campus
+  - Last edition(s): streamlined content of tutorials; improved Python onboarding
 
 - Course evaluation has been critical to my career
   - Without my past evaluations, I wouldn't be teaching to you today
@@ -233,10 +231,9 @@ Informal feedback
 - is this coure too hard? how can I make it 'easier'/'smoother'?
   - e.g., what did you find particularly hard? 
   - what tips would you give to students before they start this course?
-  - more on-campus sessions? (or not?)
-- how should I deal with group dropouts? unfair to the team? or fine?
+  - more online coaching sessions? (or not?)
+- how should I deal with group dropouts? it happened again...
 - WhatsApp vs. Canvas vs. E-mail? Feel you've got enough support?
-
 
 Stay in touch!
 ========================================================

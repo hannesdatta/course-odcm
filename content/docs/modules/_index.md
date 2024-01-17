@@ -34,14 +34,14 @@ Course week|Date|Time|Location|Content|
 |{{< button relref="week5" >}}Week 5{{< /button >}}|Wed 6 Mar | 08.45-10.30 | On campus | Presentations for [Team coaching #3](/docs/project/workplan)
 |                                                  |           | 10.45-12.30 | On campus | [Team coaching #4](/docs/project/workplan)
 |{{< button relref="week6" >}}Week 6{{< /button >}} |Thu 14 Mar  | 14:45-16:30 | Online | [Team coaching #5](/docs/project/workplan)
-|{{< button relref="week7" >}}Week 7{{< /button >}}  |Wed 19 Mar | 08.45-10.30 | On campus | Course summary and exam preparation 
-|                              |Fri 21 Mar | 14.45-16.30  | Online | [Team coaching #6](/docs/project/workplan)
+|{{< button relref="week7" >}}Week 7{{< /button >}}  |Tue 19 Mar | 08.45-10.30 | On campus | Course summary and exam preparation 
+|                              |Thu 21 Mar | 14.45-16.30  | Online | [Team coaching #6](/docs/project/workplan)
 
 {{% hint info %}}
 __Tips__
 - We recommend you view the schedule (and associated rooms) in Tilburg University's [MyTimetable](https://rooster.uvt.nl).
 - Login credentials for the live streams will be made available on the *Canvas page of this course for students from Tilburg University*, and via email to remaining students.
-- If recordings are made, you will find them on Hannes' YouTube channel. [Subscribe to it now](http://www.youtube.com/c/hannesdatta?sub_confirmation=1) to stay up-to-date!
+- If recordings are made, you will find them on the Canvas page of the course, shared with students enrolled at Tilburg University. Some videos may also be posted on Hannes' YouTube channel. [Subscribe to it now](http://www.youtube.com/c/hannesdatta?sub_confirmation=1) to stay up-to-date!
 - If code is shared, you will typically find it on [Hannes' GitHub Gists](https://gist.github.com/hannesdatta).
 
 {{< /hint >}}

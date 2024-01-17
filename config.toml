@@ -29,21 +29,25 @@ enableGitInfo = true
 
 [params]
 
-  Course_Edition_Current = "August - October 2023"
-  Course_Edition_Next = "February - April 2024"
+  Course_Edition_Current = "January - April 2024"
+  Course_Edition_Next = "August - October 2024"
   
-  Date_Notify_Coordinator = "15 August, 2023"
-  Date_Send_Motivation = "15 August, 2023"
-  Date_Notified_Candidates = "23 August, 2023"
-  
-  Course_Deadline_Project = "Monday, 16 October (23.59)" 
-  #Course_Deadline_Project = "Monday, 27 March (23.59)" 
 
-  Course_Exam_MainsitTheory = "Wednesday, 18 October (8.30am - 9.30am)"
-  Course_Exam_MainsitPractice = "Wednesday, 18 October (4pm - 6pm)"
+  Date_Notify_Coordinator = "15 January, 2024"
+  Date_Send_Motivation = "15 January, 2024"
+  Date_Notified_Candidates = "23 January, 2024"
+  
+  #Course_Deadline_Project = "Monday, 16 October (23.59)" 
+  Course_Deadline_Project = "Monday, 25 March (23.59)" 
+
+  Course_Exam_MainsitTheory = "tba"
+  Course_Exam_MainsitPractice = "tba"
+  
+  #Course_Exam_MainsitTheory = "Wednesday, 18 October (8.30am - 9.30am)"
+  #Course_Exam_MainsitPractice = "Wednesday, 18 October (4pm - 6pm)"
    
-  Course_Exam_ResitTheory = "Wednesday, 20 December (time tba)"
-  Course_Exam_ResitPractice = "Friday, 12 January 2024 (10am - noon)"
+  Course_Exam_ResitTheory = "tba" # Wednesday, 20 December (time tba)"
+  Course_Exam_ResitPractice = "tba" # Friday, 12 January 2024 (10am - noon)"
 
   #uCourse_Exam_MainsitTheory = "Tuesday, 4 April 2023 (1pm-3.15pm)" # "Tuesday, 18 October 2022"
   #Course_Exam_MainsitPractice = "Monday, 3 April 2023 (2pm-4pm)" # "Tuesday, 18 October 2022"

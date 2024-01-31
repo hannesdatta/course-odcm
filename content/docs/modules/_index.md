@@ -18,7 +18,8 @@ The course consists of weekly modules, which will gradually develop your coding 
 
 {{% hint warning %}}
 - __Please always bring a laptop to class__. Lectures and tutorials are not scheduled in computer rooms, but you require a computer to follow the classes. Remember to bring a charger.
-- The course material is based on Boegershausen et al. (2022), ["Fields of Gold: Scraping Web Data for Marketing Insight"](https://doi.org/10.1177/00222429221100750). __Study the paper and apply its learnings throughout__. Visit the [paper's companion website](https://web-scraping.org) for extra material.
+- The course material is based on two papers: Boegershausen et al. (2022), ["Fields of Gold: Scraping Web Data for Marketing Insight"](https://doi.org/10.1177/00222429221100750), and Guyt et al. (2024), ["Unlocking the Potential of Web Scraping for Retailing Research"](jretailing_jan2024.pdf). __Study the papers and apply learnings throughout the course__. Supplementary information is available at [a companion website](https://web-scraping.org) and [music-to-scrape.org](https://music-to-scrape.org).
+
 {{% /hint %}}
 
 Course week|Date|Time|Location|Content|

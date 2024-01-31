@@ -53,13 +53,13 @@ If you haven't done so, please
 Agenda
 ========================================================
 
-- Part 1 (14.45 to about 15.45)
+- Part 1 (10.45 to about 11.45)
   - Getting to know each other
   - Motivation for the course
   - Course framework and learning goals
   - Agenda and practical arrangements
 - Break
-- Part 2: Python Bootcamp on your laptops (about 16.00 - 17.30)
+- Part 2: Python Bootcamp on your laptops (about 12.00 - 13.30)
 
 Disclaimer
 ========================================================
@@ -105,6 +105,7 @@ Teaching activities
     - MSc Thesis supervision (https://thesis.hannesdatta.com)
 - Other initiatives
   - Tilburg Science Hub (https://tilburgsciencehub.com)
+  - Tilburg.ai (https://tilburg.ai)
   - Music-to-scrape.org (https://music-to-scrape.org)
   - YouTube channel (https://youtube.com/c/hannesdatta)
   - My code (https://github.com/hannesdatta)
@@ -168,7 +169,7 @@ Introducting music-to-scrape.org
 ================
 
 - Mock-up streaming service
-- Developed in the last few months, now testing with you guys
+- Developed last semester, to be launched with Guyt et al. (2024) (final testing phase!)
 - "Save" and controlled environment to learn scraping and APIs
 
 ![Screenshot of Music to scrape](musictoscrape.png)
@@ -232,13 +233,14 @@ incremental: true
 
 - for businesses
   - "stitch together" different services (e.g., augment functionality of ChatGPT)
-  - do market research (e.g., pricing data)
-  - initialize recommendation systems
+  - do market research (e.g., pricing data; see Zyte)
+  - initialize recommendation systems (e.g., music metrics)
 - for research
   - discover/document novel phenomena (e.g., new platforms/technologies)
   - improving methods (e.g., get data to try out new methods, such as review data & text analysis, images, videos)
   - improved inferences (i.e., get more accurate results)
   - collect metrics managers care about
+
 Getting inspired...
 ========================================================
 
@@ -299,7 +301,15 @@ Web data versus other marketing data (III)
 
 Each project is totally unique - that's why there is no universal "best way" to approach things...
 
-Methodological Framework
+
+Pragmatic approach to scraping (Guyt et al. 2024)
+========================================================
+
+
+![Framework by Guyt et al. 2024](framework_guyt2024.png)
+
+
+Detailed guidance by (Boegershausen et al. 2022)
 ========================================================
 
 ![odcm](framework.png)
@@ -335,30 +345,28 @@ Course structure and grading
 - Bonus points available (max .5 on final course grade; contribute to course or Tilburg Science Hub using source code: e.g., solutions for assignments, writing a tutorial for a new package, debugging source code, maintaining course's issue board) - need GitHub for this
 
 
-This year's team project: AI tools and platforms (I)
+This year's team project: Retailing platforms (I)
 =======================================
 
-- We're currently experiencing many new AI-based products/services that are invented/launched.
+- We're currently experiencing many new retailers that are invented/launched.
 - You know way more than I do... so... let's hear some!
 
 __Goals:__
 
-In the context of __AI-based tools and platforms__, 
-
+In the context of __retail-based platforms__,
 - understand and present "data universe"
 - select one or multiple data source(s) and collect the data (scraping, APIs)
 - document the resulting data for public (re)use
 
-This year's team project: AI tools and platforms (II)
+This year's team project: Retailing platforms (II)
 ========================================================
   
 __Find your sweet spot!__
 
-- for websites, this is likely going to be an aggregator (e.g., prompt marketplaces)
-- for APIs, this is likely some link between a dataset that you have AND the API of OpenAI (or others)
+- Read Guyt et al. 2024 and discover exiting data sources (or add your own!)
 - brainstorm about it...
 
-This year's team project: AI tools and platforms (III)
+This year's team project: Retailing platforms (III)
 ========================================================
 
 - Specifics
@@ -471,7 +479,7 @@ Use of WhatsApp
 
 - Please use WhatsApp: +31 13 466 8938.
 
-![WhatsApp](wa_qr.png)
+![WhatsApp](wa_qr.jpeg)
 
 - Being in touch via email is typically slower
 

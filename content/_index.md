@@ -41,7 +41,7 @@ Of course, you could just follow some technical tutorials on the web. But resear
 
 
 
-[^1]: Based on (1) Boegershausen, Johannes, Hannes Datta, Abhishek Borah, and Andrew T. Stephen (2022). “Fields of Gold: Scraping Web Data for Marketing Insights.” *Journal of Marketing*. [Download paper](https://doi.org/10.1177/00222429221100750) and [visit web companion](https://web-scraping.org), and (2) Guyt, Jonne, Hannes Datta, and Johannes Boegershausen (2024). "Unlocking the Potential of Web Scraping for Retailing Research." Working paper. [Download paper](jretailing_jan2024.pdf).
+[^1]: Based on (1) Boegershausen, Johannes, Hannes Datta, Abhishek Borah, and Andrew T. Stephen (2022). “Fields of Gold: Scraping Web Data for Marketing Insights.” *Journal of Marketing*. [Download paper](https://doi.org/10.1177/00222429221100750) and [visit web companion](https://web-scraping.org), and (2) Guyt, Jonne, Hannes Datta, and Johannes Boegershausen (2024). "Unlocking the Potential of Web Scraping for Retailing Research." Working paper. [Download paper](https://github.com/hannesdatta/course-odcm/blob/d136eb5a99f3e5125cc634ce076c506c277f1033/content/docs/course/jretailing_jan2024.pdf).
 
 <!--
 ## This website

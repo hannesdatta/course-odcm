@@ -799,12 +799,6 @@ hljs.initHighlightingOnLoad();
 https://support.rstudio.com/hc/en-us/articles/200486468
 -->
 
-<pre><code>Using virtual environment &#39;/Users/hannesdatta/.virtualenvs/r-reticulate&#39; ...
-</code></pre>
-
-<pre><code>Using virtual environment &#39;/Users/hannesdatta/.virtualenvs/r-reticulate&#39; ...
-</code></pre>
-
 </div>
 
 </section>
@@ -816,7 +810,7 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 <ul>
 <li>If you haven&#39;t done so, open this slide deck at <a href="https://odcm.hannesdatta.com/docs/modules/week2/webdata-for-dummies/">https://odcm.hannesdatta.com/docs/modules/week2/webdata-for-dummies/</a></li>
 <li>Coaching session start after today&#39;s tutorial (we will change rooms)</li>
-<li>Team assignment on Canvas final?</li>
+<li>Team assignment on Canvas </li>
 </ul>
 
 </div>
@@ -829,9 +823,9 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 <li>In-class
 
 <ul>
-<li>Go through in-class tutorial (&ldquo;webdata for dummies in class.ipynb&rdquo;)</li>
-<li>We&#39;ll work on a <strong>selection of exercises</strong></li>
-<li>Also address some challenges summarized in &ldquo;Fields of Gold&rdquo;
+<li>Work through the in-class tutorial (&ldquo;webdata for dummies in class.ipynb&rdquo;)</li>
+<li>We&#39;ll work on a <strong>selection of exercises</strong> on web scraping and APIs</li>
+<li>Address some data selection challenges highlighted in &ldquo;Fields of Gold&rdquo;
 <br></li>
 </ul></li>
 <li>After class
@@ -1090,7 +1084,7 @@ print(soup.find(&#39;h2&#39;).get_text())
 Location:
 United States
 Number of plays:
-54
+9
 </code></pre>
 
 </div>
@@ -1222,9 +1216,9 @@ for id in artist_ids:
   download_data(f&#39;https://music-to-scrape.org/artist?artist-id={id}&#39;)
 </code></pre>
 
-<pre><code>Artist name: Ya Boy from United States with 54 song plays.
-Artist name: Prince With 94 East from Minneapolis MN with 36 song plays.
-Artist name: Cabas from  with 365 song plays.
+<pre><code>Artist name: Ya Boy from United States with 9 song plays.
+Artist name: Prince With 94 East from Minneapolis MN with 7 song plays.
+Artist name: Cabas from  with 98 song plays.
 </code></pre>
 
 </div>
@@ -1340,6 +1334,8 @@ f.close()
 <li>store raw data for diagnostic purposes</li>
 <li>extract relevant data to JSON file with raw data</li>
 </ul></li>
+<li>schedule</li>
+<li>infrastructure</li>
 </ul>
 
 </div>
@@ -1412,7 +1408,7 @@ f.close()
 <ul>
 <li>Endpoint: <a href="https://api.music-to-scrape.org/artist/info">https://api.music-to-scrape.org/artist/info</a></li>
 <li>Requires parameter: artistid</li>
-<li>Combined call: <a href="https://api.music-to-scrape.org/artist/info?artistid=%7BENTER">https://api.music-to-scrape.org/artist/info?artistid={ENTER</a> ARTIST ID HERE}</li>
+<li>Combined call: <a href="https://api.music-to-scrape.org/artist/info?artistid=%60%7BENTER">https://api.music-to-scrape.org/artist/info?artistid={ENTER</a> ARTIST ID HERE}</li>
 </ul>
 
 <p>DO:</p>
@@ -1524,16 +1520,16 @@ f.close()
 <li>coaching session following today&#39;s tutorial</li>
 <li>make team allocation definite (see Canvas!)</li>
 </ul></li>
-<li>If you haven&#39;t done so
+<li>If you haven&#39;t done so&hellip;
 
 <ul>
 <li>go through the self-study material of this week</li>
 </ul></li>
-<li>Stay engaged
+<li>Get engaged!
 
 <ul>
 <li>discuss ideas, post solutions, identify business opportunities, etc.</li>
-<li>try fiddling with an AI API or use chat GPT for starting code</li>
+<li>try fiddling with an AI API or use ChatGPT for starting code</li>
 <li>be in touch on WhatsApp for any issues/bugs/etc.</li>
 </ul></li>
 </ul>

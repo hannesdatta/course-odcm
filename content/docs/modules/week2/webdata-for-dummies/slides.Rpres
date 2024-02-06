@@ -15,9 +15,8 @@ autosize: true
 https://support.rstudio.com/hc/en-us/articles/200486468
 -->
 
-```{r setup, echo = FALSE}
-knitr::opts_chunk$set(warning = FALSE, message = FALSE)
-library(reticulate)
+```{r setup, echo = FALSE, message=FALSE, warning=FALSE, include=FALSE}
+suppressPackageStartupMessages(library(reticulate))
 py_install("requests")
 py_install("bs4")
 ```
@@ -29,15 +28,15 @@ We're about to start with __today's tutorial ("web data for dummies")__.
 
 - If you haven't done so, open this slide deck at https://odcm.hannesdatta.com/docs/modules/week2/webdata-for-dummies/
 - Coaching session start after today's tutorial (we will change rooms)
-- Team assignment on Canvas final?
+- Team assignment on Canvas 
 
 Agenda
 ========================================================
 
 - In-class
-  - Go through in-class tutorial ("webdata for dummies in class.ipynb")
-  - We'll work on a **selection of exercises**
-  - Also address some challenges summarized in "Fields of Gold"
+  - Work through the in-class tutorial ("webdata for dummies in class.ipynb")
+  - We'll work on a **selection of exercises** on web scraping and APIs
+  - Address some data selection challenges highlighted in "Fields of Gold"
 <br>
 - After class
   - Work on team activity #1
@@ -384,7 +383,8 @@ Writing a complete web scraper
 - loop through list of URLs
   - store raw data for diagnostic purposes
   - extract relevant data to JSON file with raw data
-
+- schedule
+- infrastructure
 
 Wrapping of web scraping
 =====================
@@ -428,7 +428,7 @@ Let's retrieve some artist meta data
 
 - Endpoint: https://api.music-to-scrape.org/artist/info
 - Requires parameter: artistid
-- Combined call: https://api.music-to-scrape.org/artist/info?artistid={ENTER ARTIST ID HERE}
+- Combined call: https://api.music-to-scrape.org/artist/info?artistid=`{ENTER ARTIST ID HERE}`
 
 DO:
 - Get some data for an artist of your choice - you find the artist IDs on the site or in previous code
@@ -490,9 +490,9 @@ Next steps in this class
 - Work on team activity #1
   - coaching session following today's tutorial
   - make team allocation definite (see Canvas!)
-- If you haven't done so
+- If you haven't done so...
   - go through the self-study material of this week
-- Stay engaged
+- Get engaged!
   - discuss ideas, post solutions, identify business opportunities, etc.
-  - try fiddling with an AI API or use chat GPT for starting code
+  - try fiddling with an AI API or use ChatGPT for starting code
   - be in touch on WhatsApp for any issues/bugs/etc.

@@ -15,12 +15,12 @@ autosize: true
 https://support.rstudio.com/hc/en-us/articles/200486468
 -->
 
-```{r setup, echo = FALSE}
-knitr::opts_chunk$set(warning = FALSE, message = FALSE)
-library(reticulate)
+```{r setup, echo = FALSE, message=FALSE, warning=FALSE, include=FALSE}
+suppressPackageStartupMessages(library(reticulate))
 py_install("requests")
 py_install("bs4")
 ```
+
 
 Welcome to oDCM!
 ========================================================
@@ -38,24 +38,33 @@ Before we start
 - Recap coaching session for team activity #1
   - explore broadly! ("universe discovery!") --> check challenge #1.1
   - compare sources thoroughly --> e.g., comparison table + challenge #1.2
-  - Consider example projects (e.g., overview tables, illustrations)
+  - use overview tables for comparison, illustrations
 - Previous today's coaching session: __decide__ which website or API to use (challenges #1.1-#1.3)
 - Any questions so far?
 
-A note on my (live) tutorials
+A note on my (live) tutorials (I)
 ===============
 
 - Core material is the (Jupyter Notebook) tutorial of the week
 - It's *written* and illustrated with screenshots -- it gives you all of the necessary information and you can do it at your own time after class.
 - IN CLASS, my ambition is to *preview selected* issues 
-  - do you feel comfortable w/ code: then write code with me and try it out!
-  - if you struggle to code: follow the lecture and *see me code*. Understand concepts, take notes. Then, spend more time on tutorial after class
-  - if you get lost throughout: stop coding, understand concepts.
+- Recordings of these sessions posted on Canvas
+
+
+A note on my (live) tutorials (II)
+===============
   
-- Recordings of these sessions posted on Canvas (non-public)
-
-__I hope this helps.__
-
+- feel comfortable w/ code?
+  - then write code with me and try it out!
+- struggle? 
+    - just *see me code*.
+    - focus on understanding concepts & take notes
+    - spend more time on tutorial after class
+    - keep asking questions!
+- "bored"/too advanced?
+  - flip through slides and work on advanced exercises
+  - ask advanced questions when I walk around (1:1)
+  - today's "klaaropdracht" ("when you're done..." - see end of slide deck)
 
 Framework
 =======
@@ -98,25 +107,20 @@ class: small-code
 
 ```{python, eval=TRUE}
 about.find_all('p')
-year=about.find_all('p')[3].get_text()
+plays=about.find_all('p')[3].get_text()
 ```
 
 __Recommendations:__
 - Practice even more, e.g., with __new information__ that you haven't extracted before from this and other sections of the website.
 - Always build code __gradually__, __never__ from scratch
 
+
 DO: After-class exercise from last week
 ==========
 class: small-code
 
-Any issues you've run into?
-
-__Bonus point__ for a student that
- - adds solution to Jupyter Notebook from last week using GitHub
- - records a video tutorial with the solution
-
-Let me know if you're interested.
-
+- Any issues you've run into? 
+- Solutions posted on the site!
 
 Today's focus
 ================
@@ -128,7 +132,7 @@ __Remaining challenges for the "design" phase of collecting data.__
   - With web scraping, we always need a "starting point" for a data collection
 - Examples for seeds/sample
   - list of recently active users (music-to-scrape.org)
-  - home page of Twitch (for currently active live streams)
+  - homepage of Twitch (for current live streams)
 <br>
  
 DO: Starting up a data collection for your own project
@@ -371,7 +375,6 @@ data
 ```
 
 
-
 Let's take a step back...
 =======
 
@@ -380,7 +383,7 @@ Let's take a step back...
   - Collect all links to user profiles from the homepage (ch. #2.2)
   
 - What's missing
-  - VISIT each fo the profile pages
+  - VISIT each of the profile pages
   - Loop through them
   
 - We can then tie things together in a scraper
@@ -392,7 +395,7 @@ Navigating on a website
 class: small-code
 
 - Two strategies
-  - Understand how links are built (prebuilding them; strategy 1)
+  - Understand how links are built (pre-building them; strategy 1)
   - Understand how to "click" to the next/previous page (consecutively building them; strategy 2)
 
 ```{python, eval=TRUE}
@@ -427,7 +430,7 @@ Solution
 button.attrs['href']
 ```
 
-__DISCUSS:__ When do we use strategy 1 (prebuilt) vs. strategy 2 (do it on the fly)?
+__DISCUSS:__ When do we use strategy 1 (pre-built) vs. strategy 2 (do it on the fly)?
 
 Let's tie things together
 =========
@@ -520,7 +523,6 @@ Can you propose:
 - how to save the information as a JSON dictionary
 
 
-
 Scraping more advanced websites
 =========
 incremental: true
@@ -593,15 +595,20 @@ Next steps
 
 - Focus on self-study material
 - Today's coaching session...!
-  - settle on extraction design (challenges #1.1-1.3) 
-   - get started w/ __prototyping data extraction__
-   - consider `selenium` and APIs (see next tutorials)
+  - sign-off on extraction design (challenges #1.1-1.3) 
+  - working on __prototyping the data extraction__
+  - consider `selenium` and APIs (see next tutorials)
 
 Thanks!
 =======
 
 - Any questions?
 - Be in touch for feedback via WhatsApp.
+
+Today's "klaaropdracht" (when you're totally advanced already)
+=====
+
+Use the code snippets provided on Selenium and BeautifulSoup to collect a list of at least 1,000 products from any of the product pages from Bol.com.
 
 
 Coaching session

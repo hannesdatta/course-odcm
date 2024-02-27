@@ -6,23 +6,21 @@ weight: 45
 bookCollapseSection: true
 ---
 
-# Exam
+# Final exam
 
-The course content will be tested in the form of a computer exam, consisting of a __theoretical part__ (on campus, 1 hour), and a __practical part__ (take-home exam, 2 hours). 
+The course content will be tested in the form of a computer exam, taken on campus (3 hours).
 
 ## Date & time
 
 ### Main sit
 
-- __Theoretical part__ (on campus, max. 1 hour): {{< param "Course_Exam_MainsitTheory" >}}
-- __Practical part__ (take home, max. 2 hours): {{< param "Course_Exam_MainsitPractice" >}}
+- On campus, 3 hours: {{< param "Course_Exam_MainsitTheory" >}}
 - Exam registration: via Osiris
 <!--- Time: __9.00am - 12pm (i.e., 11.59am + 1 minute)__ (Amsterdam time, you can start when you want, but *must* submit before the deadline)-->
 
 ### Resit
 
-- __Theoretical part__ (on campus, max. 1 hour): {{< param "Course_Exam_ResitTheory" >}}
-- __Practical part__ (take home, max. 2 hours): {{< param "Course_Exam_ResitPractice" >}}
+- On campus, 3 hours: {{< param "Course_Exam_ResitTheory" >}}
 - Exam registration: via Osiris
 
 <!--- Time: __9.00am - 12pm (i.e., 11.59am + 1 minute)__ (Amsterdam time, you can start when you want, but *must* submit before the deadline)-->
@@ -30,24 +28,20 @@ The course content will be tested in the form of a computer exam, consisting of 
 ## Technicalities & support
 
 - Receiving your exam: via [TestVision](https://TilburgU.testvision.nl/online/kandidaten) on the examination dates.
-- The exam consists of two parts, which you will have to work on in "separate" exams:
-  - The theoretical part needs to be finished within one hour (for timings, see Osiris).
-  - The practical part is open for two hours (exact timing tba).
-- Working on your exam: on a computer at the University (theoretical part, on campus), on your computer (practical part, take-home).
+- Working on your exam: on a computer at the University.
 - Submitting your exam: all questions (including file uploads) will be submitted via TestVision
-- Support during the practical part of the exam: preferably WhatsApp [see support section of this website](/docs/course/support); Support only for "unforeseen" errors. No support will be given for technical issues that students *should* have solved during the course (e.g., installation of R or `make`, installing packages, running Python code in an automated workflow, etc.)
-
-
+- 
 ## Form
 
-- On-campus exam (theoretical part, closed book except selected course material that students can download on the instruction page of the exam), and open book take-home exam (practical part; i.e., for this part, you can access any material you find helpful, including material you have stored on your computers, or that you find on the internet).
+- On-campus exam (closed book except selected course material that students can download on the instruction page of the exam)
 - Several sections with subquestions (all open questions; both in written, or by means of code/file uploads)
-- Some questions will be personalized (i.e., there is only one correct answer per student)
+<!--- Some questions will be personalized (i.e., there is only one correct answer per student)
+-->
 
 {{< hint warning >}}
 
-- Communication with anybody about the exam content, during *and after* the take-home exam, is strictly prohibited.
-- Students must not copy-paste from websites, academic papers. The use of ChatGPT or similar AI-based tools is only allowed if stated explicitly for selected questions on the pratical part of the exam.
+- Communication with anybody about the exam content is strictly prohibited.
+- Students must not copy-paste from websites, academic papers. The use of ChatGPT or similar AI-based tools is only allowed if stated explicitly for selected questions on the pratical part of the exam (given questions permit the use of the internet).
 - Students must not mention their names or student numbers in any of the submitted files, except when being explicitly asked to do so. This is to ensure the exam can be graded anonymously.
 
 {{< /hint >}}
@@ -55,24 +49,22 @@ The course content will be tested in the form of a computer exam, consisting of 
 
 ## Content
 
-### Theoretical part
+### Theoretical questions
 
 - This part of the exam consists of __personalized open and closed (multiple-choice) questions__, shown in __random order__ (i.e., not in order of difficulty or weight/points).
-- The content is predominately focused on the workflow for collecting web data (["Fields of Gold" paper](https://doi.org/10.1177%2F00222429221100750)).  
-- Students can go __*freely back and forth between questions*__ in this part.
+<!--- Students __*cannot* go back between questions__ (i.e., questions need to be answered in the order in which they appear).-->
+<!--- Allocate approximately 45 minutes to work on this part.-->
 - Cognitive skills that will be tested are knowledge, comprehension, and analysis.
 
-### Practical part
+### Practical questions
 
 - This part of the exam consists of __personalized open questions__, shown in __random order__ (i.e., not in order of difficulty or weight/points).
-- Students can go __*freely back and forth between questions*__ in this part.
-- Allocate 2 hours to work on this part, which focuses on all learning goals of the course as practiced in the tutorials. 
-- Expect three broad questions
+- Expect three questions (potentially w/ smaller subquestions), mixing "mix" various learning goals. For example:
   - Small coding task (e.g., parsing, fixing errors, running existing code) (20 minutes)
   - Small essay to form a judgment (e.g., recommend website or API for a particular business problem, evaluate terms & conditions, sample size calculations) (15 minutes)
   - Large(r) coding task (e.g., scrape data from a website or retrieve data from API) (remaining time)
 - Cognitive skills that will be tested are application, evaluation, and synthesis/creation.
-- All tutorials (except *advanced web scraping* and *advanced APIs* are relevant for this part of the exam).
+- All tutorials are relevant for these questions.
 
 ## Preparing for the exam
 
@@ -93,10 +85,10 @@ Please [view the list of example questions here](examplequestions).
 
 ### Technical tips & beyond
 
-- Verify your software setup (you should be able to run all Jupyter Notebooks/tutorials on your own computer)
+- Verify that you are familiar with the on-campus computers so that you know how to use them (e.g., Windows, how to open Jupyter Notebook, how to navigate on the command prompt, etc.)
 - Know how to zip and unzip files
 - Make use of cheat sheets (e.g., available on this site or elsewhere) (you can also print them)
-- Revise your code before submission in part 2 so that you ensure it runs from top to bottom without problems.
+- Revise your code before submission so that you ensure it runs from top to bottom without problems.
 
 <!--
 {{< hint info >}}

@@ -799,9 +799,6 @@ hljs.initHighlightingOnLoad();
 https://support.rstudio.com/hc/en-us/articles/200486468
 -->
 
-<pre><code>Using virtual environment &#39;/Users/hannesdatta/.virtualenvs/r-reticulate&#39; ...
-</code></pre>
-
 </div>
 
 </section>
@@ -811,9 +808,9 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 <p>We&#39;re about to start with <strong>today&#39;s tutorial (&ldquo;API 101&rdquo;)</strong>.</p>
 
 <ul>
-<li>If you haven&#39;t done so, open slides at <a href="https://odcm.hannesdatta.com/docs/modules/week4/">https://odcm.hannesdatta.com/docs/modules/week4/</a> (I have just uploaded them)</li>
+<li>If you haven&#39;t done so, open slides at <a href="https://odcm.hannesdatta.com/docs/modules/week4/">https://odcm.hannesdatta.com/docs/modules/week4/</a> (I have just updated them)</li>
 <li>Today&#39;s (live) code is available at <a href="https://tiu.nu/livecoding">https://tiu.nu/livecoding</a> (refresh may be needed)</li>
-<li>You can work in Google Colab throughout this class</li>
+<li>You can work in <strong>Google Colab</strong> throughout this class</li>
 </ul>
 
 </div>
@@ -823,21 +820,26 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 <h3>Before we start</h3>
 <div class="slideContent" >
 <ul>
+<li>Exam dates fixed
+
+<ul>
+<li>Tuesday, 2 April (main sit)</li>
+<li>Thursday, 27 June (resit)</li>
+</ul></li>
 <li>Tech development &amp; extra material
 
 <ul>
-<li>Selenium?</li>
-<li>Note there are &ldquo;advanced&rdquo; tutorials for extra code snippets</li>
+<li>Note there are &ldquo;advanced&rdquo; tutorials for extra code snippets (e.g., Selenium)</li>
 </ul></li>
 <li>Team projects
 
 <ul>
 <li>enthusiastic about many of your ideas</li>
-<li>get started building your prototypes</li>
-<li>still revising template for writing it up
+<li>feedback on Canvas</li>
+<li>continue building your prototypes today!
 <br></li>
 </ul></li>
-<li>Any issues so far?</li>
+<li>Any issues at this stage?</li>
 </ul>
 
 <!--
@@ -863,7 +865,7 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 <li>After class
 
 <ul>
-<li>complete tutorial yourselves</li>
+<li>complete tutorial on your own; work on team projects</li>
 </ul></li>
 </ul>
 
@@ -918,7 +920,7 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 <ul>
 <li>recall: need platform&#39;s permission (but this API doesn&#39;t require authentication)</li>
 </ul></li>
-<li>Find an endpoint (aka page)</li>
+<li>Find an endpoint (aka page when scraping)</li>
 <li>Let&#39;s explore the documentation of&hellip; <a href="https://platform.openai.com/docs/introduction">OpenAI</a>!
 
 <ul>
@@ -935,9 +937,9 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 <div class="slideContent" >
 <p><strong>Browse</strong> the <a href="https://api.music-to-scrape.org/docs">documentation</a> of music-to-scrape&#39;s API.</p>
 
-<p>1) Describe which endpoints are available. What do they allow you to do?</p>
+<p>1) Have a look at the various endpoints that are available. <strong>At what unit of analysis</strong> do they allow you to collect data?</p>
 
-<p>2) Can you come up with reasons why these endpoints are available? &ldquo;Why has the API been created&rdquo; (other than for this class&hellip;)</p>
+<p>2) Why would a platform <em>offer</em> an API in the first place?</p>
 
 </div>
 
@@ -1015,7 +1017,7 @@ request.get(&#39;limit&#39;)
 <div class="slideContent" >
 <ol>
 <li>How would you have to modify the snippet below to access the list of user names?</li>
-<li>Can you write a loop that extracts user names and puts them to a new list?</li>
+<li>Can you write a loop that extracts user names and puts them to an array of only user names (not countries, etc.)?</li>
 </ol>
 
 <pre><code class="python">request[&#39;limit&#39;] # this one worked for extracting the value for limit...
@@ -1038,7 +1040,7 @@ request.get(&#39;limit&#39;)
 <h3>Difference between `.append()` and `.extend()`</h3>
 <div class="slideContent small-code" >
 <ul>
-<li><code>.append()</code> &ldquo;adds&rdquo; one item at a time to an existing list</li>
+<li><code>.append()</code> adds <em>one</em> item at a time to an existing list</li>
 </ul>
 
 <pre><code class="python">users = [] # empty list
@@ -1048,7 +1050,7 @@ users
 </code></pre>
 
 <ul>
-<li><code>extend()</code> adds multiple items to an existing list</li>
+<li><code>extend()</code> adds <em>multiple</em> items to an existing list</li>
 </ul>
 
 <pre><code class="python">users = []
@@ -1232,12 +1234,12 @@ while cntr &lt; 6:
 <ul>
 <li>wow - no &ldquo;structuring&rdquo; of HTML &ldquo;soup&rdquo; (THAT&#39;s the key difference compared to web scraping)</li>
 <li>Spend time trying to get your first data from an API &ndash; authentication <strong>will</strong> be an issue!</li>
-<li>Time left? We could also go over some <a href="https://htmlpreview.github.io/?https://github.com/hannesdatta/legal-situation-of-web-scraping/blob/main/legal-status-of-web-scraping.html#/title-slide">legal issues</a></li>
+<li>Time left? Let&#39;s consider some <a href="https://htmlpreview.github.io/?https://github.com/hannesdatta/legal-situation-of-web-scraping/blob/main/legal-status-of-web-scraping.html#/title-slide">legal issues</a></li>
 <li>After this class: coaching session (focus on <a href="https://odcm.hannesdatta.com/docs/project/workplan/activity3/">activity #3</a>)</li>
 <li>Next week
 
 <ul>
-<li>presentations about your projects</li>
+<li><strong>presentations</strong> about your projects</li>
 <li>afterwards: coaching (get your prototype up and running!)</li>
 </ul></li>
 </ul>

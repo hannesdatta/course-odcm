@@ -15,9 +15,8 @@ autosize: true
 https://support.rstudio.com/hc/en-us/articles/200486468
 -->
 
-```{r setup, echo = FALSE}
-knitr::opts_chunk$set(warning = FALSE, message = FALSE)
-library(reticulate)
+```{r setup, echo = FALSE, message=FALSE, warning=FALSE, include=FALSE}
+suppressPackageStartupMessages(library(reticulate))
 py_install("requests")
 ```
 
@@ -26,23 +25,25 @@ Welcome to oDCM!
 
 We're about to start with __today's tutorial ("API 101")__.
 
-- If you haven't done so, open slides at https://odcm.hannesdatta.com/docs/modules/week4/ (I have just uploaded them)
+- If you haven't done so, open slides at https://odcm.hannesdatta.com/docs/modules/week4/ (I have just updated them)
 - Today's (live) code is available at [https://tiu.nu/livecoding](https://tiu.nu/livecoding) (refresh may be needed)
-- You can work in Google Colab throughout this class
+- You can work in __Google Colab__ throughout this class
 
 
 Before we start
 ========================================================
 
+- Exam dates fixed
+  - Tuesday, 2 April (main sit)
+  - Thursday, 27 June (resit)
 - Tech development & extra material
-  - Selenium?
-  - Note there are "advanced" tutorials for extra code snippets
+  - Note there are "advanced" tutorials for extra code snippets (e.g., Selenium)
 - Team projects
   - enthusiastic about many of your ideas
-  - get started building your prototypes
-  - still revising template for writing it up
+  - feedback on Canvas
+  - continue building your prototypes today!
 <br>
-- Any issues so far?
+- Any issues at this stage?
 
 <!--
 - API authentication will be pain point - highly idiosyncratic!
@@ -50,6 +51,7 @@ Before we start
 
 Agenda
 =======
+
 - In-class: https://api.music-to-scrape.org/docs
 - Coaching session (challenges #2.1-#2.4)
   - which information to retrieve?
@@ -57,7 +59,7 @@ Agenda
   - at what frequency?
   - how to process the data during the collection
 - After class
-  - complete tutorial yourselves
+  - complete tutorial on your own; work on team projects
 
 What are APIs?
 ============
@@ -84,7 +86,7 @@ Discovering an API documentation
 
 - Probably the most difficult part w/ APIs is to get authenticated
   - recall: need platform's permission (but this API doesn't require authentication)
-- Find an endpoint (aka page)
+- Find an endpoint (aka page when scraping)
 - Let's explore the documentation of... [OpenAI](https://platform.openai.com/docs/introduction)!
   - which endpoints are available?
   - what could you do with them?
@@ -94,9 +96,9 @@ Do: Zooming in on Music-to-scrape's API
 
 __Browse__ the [documentation](https://api.music-to-scrape.org/docs) of music-to-scrape's API.
 
-1) Describe which endpoints are available. What do they allow you to do?
+1) Have a look at the various endpoints that are available. __At what unit of analysis__ do they allow you to collect data?
 
-2) Can you come up with reasons why these endpoints are available? "Why has the API been created" (other than for this class...)
+2) Why would a platform *offer* an API in the first place?
 
 Do: Making a connection with an API
 =================
@@ -154,7 +156,7 @@ Do: Getting user names
 ===========
 
 1. How would you have to modify the snippet below to access the list of user names?
-2. Can you write a loop that extracts user names and puts them to a new list?
+2. Can you write a loop that extracts user names and puts them to an array of only user names (not countries, etc.)?
 
 ```{python, eval=FALSE}
 request['limit'] # this one worked for extracting the value for limit...
@@ -171,7 +173,7 @@ Difference between `.append()` and `.extend()`
 ========
 class: small-code
 
-- `.append()` "adds" one item at a time to an existing list
+- `.append()` adds *one* item at a time to an existing list
 ```{python, eval=FALSE}
 users = [] # empty list
 users.append('another user')
@@ -179,7 +181,7 @@ users.append('yet another user')
 users
 ```
 
-- `extend()` adds multiple items to an existing list
+- `extend()` adds *multiple* items to an existing list
 ```{python, eval=FALSE}
 users = []
 new_users = ['another user','yet another user']
@@ -317,10 +319,10 @@ Reflection
 
 - wow - no "structuring" of HTML "soup" (THAT's the key difference compared to web scraping)
 - Spend time trying to get your first data from an API -- authentication __will__ be an issue!
-- Time left? We could also go over some [legal issues](https://htmlpreview.github.io/?https://github.com/hannesdatta/legal-situation-of-web-scraping/blob/main/legal-status-of-web-scraping.html#/title-slide)
+- Time left? Let's consider some [legal issues](https://htmlpreview.github.io/?https://github.com/hannesdatta/legal-situation-of-web-scraping/blob/main/legal-status-of-web-scraping.html#/title-slide)
 - After this class: coaching session (focus on [activity #3](https://odcm.hannesdatta.com/docs/project/workplan/activity3/))
 - Next week
-  - presentations about your projects
+  - __presentations__ about your projects
   - afterwards: coaching (get your prototype up and running!)
 
 Coaching session

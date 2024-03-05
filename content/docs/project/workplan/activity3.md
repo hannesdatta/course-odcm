@@ -20,12 +20,13 @@ date: 2021-02-04
 ## Deliverables
 
 During the coaching session, start preparing a presentation, covering
-    - Title page: Team number & brief description of (updated) motivation for data context
-    - Slide 1: Which information to extract from which pages/endpoints? (Challenge #2.1)
-    - Slide 2: Which seeds to use as a starting point of the data collection? (Challenge #2.2)
-    - Slide 3: At which frequency to extract information (Challenge #2.3)
-        - please include a calculation of your study's feasible sample size.
-    - Slide 4: How to process the information during the extraction? (Challenge #2.4)
+
+- Title page: Team number & brief description of (updated) motivation for data context
+- Slide 1: Which information to extract from which pages/endpoints? (Challenge #2.1)
+- Slide 2: Which seeds to use as a starting point of the data collection? (Challenge #2.2)
+- Slide 3: At which frequency to extract information (Challenge #2.3)
+  - please include a calculation of your study's feasible sample size.
+- Slide 4: How to process the information during the extraction? (Challenge #2.4)
 
 Throughout, provide details on how your extraction design balances technical feasibility and exposure to potential legal and ethical risks (cf. Table 3 in "Fields of Gold").
 

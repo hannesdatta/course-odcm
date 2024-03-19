@@ -23,8 +23,8 @@ Welcome to the final lecture in oDCM!
 
 If you haven't done so, please **explore the exam page & example questions** at [https://odcm.hannesdatta.com/docs/exam]().
 
-The __course evaluation__ is live at https://app.evalytics.nl. Please voice your opinions!
-
+<!--The __course evaluation__ is live at https://app.evalytics.nl. Please voice your opinions!
+-->
 
 Agenda
 ========================================================
@@ -61,7 +61,7 @@ incremental: true
 
 ![odcm](methodological_framework.png)
 
-__Let's generate a few examples where validity, legal and technical goals conflict.__
+__Let's generate a few examples where validity, legal and technical goals conflicted in your projects.__
 
 Lessons learnt #3: Data Source Selection
 ========================================================
@@ -108,7 +108,7 @@ incremental: true
 - Prototyping is extremely important
   - `requests` + `beautifulSoup` vs. `selenium` (Chromedriver)
   - extraction methodology (e.g., tags, classes, attribute-values) + stability
-  - array misalignment (obey the hierarchy of stuff is structured!!!)
+  - array misalignment (obey the hierarchy of stuff/how it is structured!!!)
   - scheduling, hiding passwords
   - revise navigation paths
   - add comments to code (make it understandable for others, e.g., using ChatGPT)
@@ -116,13 +116,23 @@ incremental: true
   - Generate plots, descriptive stats
   - Think as a "data supplier" rather than narrowly focusing on *one* (research) question
 
+Lessons learnt #8: Web Scraping in Retailing
+========================================================
+
+- Based on Guyt et al. 2024
+- Research opportunities
+- Hands-on-framework: Extraction, Looping, Timing, Infrastructure
+- Challenges & Opportunities for Retail Scraping
+  - Overcoming matching challenges and time alignment
+  - LLMs for web scraping
+
 Looking ahead: Recognizing Limitations
 ========================================================
 incremental: true
 
 - Web data entails modeling challenges - not covered in this course (e.g., self-selection, "messy" data)
 - Web data can't give you all (i.e., you don't see internal data such as clickstream data) 
-- Legal and ethical issues not fully explored yet
+- Legal and ethical issues not fully explored
 
 Potential Applications
 ========================================================
@@ -134,7 +144,7 @@ incremental: true
  
 - PhD and research master students can "invest" into data collections
   - data was crucial to what I study
-  - maybe *you are* a future PhD student? Start today! 
+  - maybe *you are* a future researcher/PhD student? Start today! 
 
 Academic Opportunities from "what we study"
 ========================================================
@@ -153,6 +163,7 @@ incremental: true
 2. Conduct & support field experiments with a platform's user base
 3. Use APIs to *access algorithms*, rather than data (e.g., Google Cloud Vision, OpenAI)
 4. Build own [research APIs](https://www.jstatsoft.org/article/view/v094i09)
+5. Use aggregators & archive.org
 
 <!--
 ::: notes
@@ -170,70 +181,61 @@ Next steps: Projects & SPA
   - Remove any unnecessary files
   - Want to keep your names on the documentation or anonymize them? 
   - Don't make statements that are too bold!
-  - Consider uploading datasets & documentation yourselves [to Zenodo](https://tilburgsciencehub.com/get/doi/?utm_campaign=referral-short)
+  - Consider uploading datasets & documentation yourselves [to Zenodo](https://tilburgsciencehub.com/get/doi/?utm_campaign=referral-short); counted towards "quality" of data package (10% of assignment grade) 
 
 - Re-read the [grading rubric on the course site](https://odcm.hannesdatta.com/docs/course/project/grading/)!
 
 - You will receive __invite to self- and peer assessment__ via email
 
-Exam overview: Theoretical part
+Exam
 =============
 
 - Organization
-  - When: 18 October, 8.30am - 9.30am 
-  - Work max. 1 hour on this part
+  - When: 2 April (time tba)
+  - Work max. 3 hours on exam
 - How?
-  - closed book, only access to TestVision, not any other software
+  - access to TestVision
+  - access to Jupyter Notebook
   - I make selected resources [available on the instruction page](https://github.com/hannesdatta/course-odcm/raw/master/content/docs/exam/exam-material.zip)
 - What?
-  - let's look at [some questions now](https://odcm.hannesdatta.com/docs/exam/examplequestions/#theoretical-part)
-
-
-Exam overview: Practical part
-=============
-
-- Organization
-  - When: 18 October, 4pm - 6pm, take home
-  - Work max. 2 hours on this part
-- How?
-  - open book, on your computer
-  - ChatGPT/GitHub Copilot and other tools ONLY when explicitly asked for
-- What?
-  - let's look at [some questions now](https://odcm.hannesdatta.com/docs/exam/examplequestions/#practical-part)
-  - prep well! Expect new websites (for scraping), new endpoints of APIs (that you know)
+  - let's look at [some questions now](https://odcm.hannesdatta.com/docs/exam/examplequestions/)
+  - prep well! Expect new websites/blogs (for scraping), new endpoints of APIs (that you know)
+  - will work with whitelist: blog/website/APIs
 
 Exam tips
 ========================================================
 incremental: true
 
-- Verify `selenium` and Chrome work, next to the "regular" scraping toolkits (`requests`, `BeautifulSoup`
-- Practice scraping an unknown website (e.g., tutorials at tilburgsciencehub.com, working with the music-to-scrape) -- the scraper will account for a larger number of points on the exam!
-- Importance of "Fields of Gold" paper, including the web appendix (+ reason through challenges)!
-- Understand sample size calculations and legal concerns well
+- Understand how `selenium` and Chrome work, next to the "regular" scraping toolkits (`requests`, `BeautifulSoup`
+- Practice scraping an unknown website (e.g., tutorials at tilburgsciencehub.com, working with music-to-scrape.org, tilburg.ai, any other blog) -- the scraper will account for a larger number of points on the exam!
+- Cover "Fields of Gold" (2022), including the web appendix, sample size calculations and legal concerns (+ reason through challenges) + Guyt et al. 2024 (J Retailing) 
 
 Next steps: Official course evaluation
 ========================================================
 
 - Course evaluation has been immensely important to this course
-  - This edition: introduced music-to-scrape.org, have coaching sessions mostly on campus
-  - Last edition(s): streamlined content of tutorials; improved Python onboarding
+  - This edition: developed Journal of Retailing (2024) paper with hands-on guide to scraping, complementing Boegershausen et al. (2022); moved exam to campus
+  - Last edition(s): built music-to-scrape.org, host coaching sessions mostly on campus, improved Python onboarding
 
 - Course evaluation has been critical to my career
   - Without my past evaluations, I wouldn't be teaching to you today
   - I will look at all comments
 - Scores are most important to show importance of this course
 
-- You will be invited via Evalytics (evaluate [here](https://app.evalytics.nl/#/login)).
+- You will be invited via Evalytics (evaluate [at the end of the week](https://app.evalytics.nl/#/login)).
 
 Informal feedback
 ===============
 
-- is this coure too hard? how can I make it 'easier'/'smoother'?
+- how to ease onboarding?
+- how to make sure all software (including Chromedriver is installed)?
+- how to handle "switch" from bs4 to selenium?
+- is this course too hard? how can I make it 'easier'/'smoother'?
   - e.g., what did you find particularly hard? 
   - what tips would you give to students before they start this course?
   - more online coaching sessions? (or not?)
-- how should I deal with group dropouts? it happened again...
-- WhatsApp vs. Canvas vs. E-mail? Feel you've got enough support?
+- Feel you've got enough support?
+
 
 Stay in touch!
 ========================================================

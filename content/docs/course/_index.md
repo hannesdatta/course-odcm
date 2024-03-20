@@ -20,7 +20,7 @@ Join Hannes' professional network on [LinkedIn](https://www.linkedin.com/in/hann
 
 ### Learning goals
 
-Web scraping and Application Programming Interfaces are among the must-have skills of marketing analysts and data scientists. The internet offers abundant possibilities to collect data used in empirical research projects and provide business value (e.g., social networks, digital media providers, price comparison websites, and online platforms). After successful completion of this course, students will be able to:
+The internet provides a wealth of information that can be utilized for academic and business purposes. This course is designed to equip students with the skills to collect such “web data” at scale. Through hands-on training, students will learn how to extract valuable data from publicly available websites (e.g., social networks, digital media platforms, or price comparison websites). Specifically, this course will cover the techniques of web scraping and Application Programming Interfaces (APIs) using Python. After successful completion of this course, students will be able to:
 
 - Explain how to use web data for creating marketing insight[^1]
 - Select web data sources and evaluate their value to inform a specific research context or business problem[^1]
@@ -48,13 +48,13 @@ To illustrate the wide range of applications of web data, the course introduces 
 
 - The course uses Python for the technical implementation of collecting web data. The course welcomes novices, of whom a significant investment of effort and time is required to learn the necessary skills.
 - [Preparation material](../modules/prep) is available in the form of Jupyter Notebooks or course recommendations at Datacamp. Novices may further benefit from following other courses at Tilburg University in which Python is used, for example, *Research Skills: Data Processing* and *Research Skills: Data Processing Advanced*.
-- Students are recommended to use their computer for this course. Windows and Mac users can typically install all required software easily. Linux users may require some advanced understanding of their operating system to install all required software. Android/Chromebook/iOS devices are not supported. Cloud services (e.g., Tilburg's Jupyter Notebook server) may not be fully supported (because you can usually not see what happens "outside" of Jupyter Notebook). 
+- Students are recommended to use their computer for this course. Windows and Mac users can typically install all required software easily. Linux users may require some advanced understanding of their operating system to install all required software. Android/Chromebook/iOS devices are not supported. The exam is held on campus, using Windows computers. Mac and Linux users are advised to practice on the on-campus computers before the exam.
 
 
 ## Teaching format
 
 - Blended (a mix of online/offline lectures and tutorials, and online/offline coaching sessions)
-- Combination of self-paced tutorials (e.g., using Jupyter Notebooks or pre-recorded clips), and interactive live streams for feedback and coaching <!--(recordings are shared with students)-->
+-	Combination of self-paced tutorials (e.g., using Jupyter Notebooks or pre-recorded clips), and interactive tutorials or live streams for feedback and coaching 
 - Learn state-of-the-art tools popular among scientists, marketing analysts, and data scientists (e.g., Python), and collect data from real websites and APIs
 - Open education & open science (all material is open; publicly accessible course page that stays with you, even after the end of the course)
 

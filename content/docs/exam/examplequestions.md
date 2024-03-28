@@ -16,7 +16,8 @@ The exam consists of __open (answer boxes, file uploads) and closed (multiple-ch
 
 {{< /hint >}}
 
-![](../exam-part-1.png)
+![](../intro_part1.png)
+![](../intro_part2.png)
 
 *Note: the number of questions depends on the points awarded to each question. The instructions during the final exam may slightly vary, so make sure to still read it accordingly.*
 

@@ -30,7 +30,7 @@ The course content will be tested in the form of a computer exam, taken on campu
 - Receiving your exam: via [TestVision](https://TilburgU.testvision.nl/online/kandidaten) on the examination dates.
 - Working on your exam: on a computer at the University.
 - Submitting your exam: all questions (including file uploads) will be submitted via TestVision
-- 
+
 ## Form
 
 - On-campus exam (closed book except selected course material that students can download on the instruction page of the exam, as well as question-specific downloads such as code or datasets for some questions)
@@ -39,9 +39,13 @@ The course content will be tested in the form of a computer exam, taken on campu
 {{< hint warning >}}
 
 - Communication with anybody about the exam content is strictly prohibited.
-- Students must not copy-paste from websites, academic papers. The use of ChatGPT or similar AI-based tools is only allowed if stated explicitly for selected questions on the pratical part of the exam (given questions permit the use of the internet).
+- Internet access is not available during the exam, except white-listed websites/APIs to scrape.
+- You will be able to download ["cheatsheets"](exam-material.zip) from the exam's introduction page.
 - Students must not mention their names or student numbers in any of the submitted files, except when being explicitly asked to do so. This is to ensure the exam can be graded anonymously.
 
+<!--
+- Students must not copy-paste from websites, academic papers. The use of ChatGPT or similar AI-based tools is only allowed if stated explicitly for selected questions on the pratical part of the exam (given questions permit the use of the internet).
+-->
 {{< /hint >}}
 
 

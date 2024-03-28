@@ -24,7 +24,7 @@ The exam consists of __open (answer boxes, file uploads) and closed (multiple-ch
 
 2. What is the purpose of `beautifulSoup` in the context of web scraping? (*comprehension*)
 
-3. Please describe the difference between the "two scraping philosophies" when it comes to retrieving and storing data by means of web scraping (according to "Fields of Gold"). (*comprehension*)
+3. Please describe the difference between "parsing on the fly" versus "parsing after the data collection" (according to "Fields of Gold"). (*comprehension*)
 
 4. What conclusions can you draw with regard to the accuracy of the timestamps provided in the user review section of metacritic (e.g., https://www.metacritic.com/movie/the-godfather/user-reviews )? Provide a short answer in less than 50 words. (*analysis*)
 

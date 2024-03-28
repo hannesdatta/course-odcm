@@ -33,10 +33,8 @@ The course content will be tested in the form of a computer exam, taken on campu
 - 
 ## Form
 
-- On-campus exam (closed book except selected course material that students can download on the instruction page of the exam)
-- Several sections with subquestions (all open questions; both in written, or by means of code/file uploads)
-<!--- Some questions will be personalized (i.e., there is only one correct answer per student)
--->
+- On-campus exam (closed book except selected course material that students can download on the instruction page of the exam, as well as question-specific downloads such as code or datasets for some questions)
+- Several sections with subquestions (some open questions: both in written, or by means of code/file uploads; also closed questions, such as multiple choice, or ranking questions)
 
 {{< hint warning >}}
 
@@ -49,22 +47,14 @@ The course content will be tested in the form of a computer exam, taken on campu
 
 ## Content
 
-### Theoretical questions
-
-- This part of the exam consists of __personalized open and closed (multiple-choice) questions__, shown in __random order__ (i.e., not in order of difficulty or weight/points).
-<!--- Students __*cannot* go back between questions__ (i.e., questions need to be answered in the order in which they appear).-->
-<!--- Allocate approximately 45 minutes to work on this part.-->
-- Cognitive skills that will be tested are knowledge, comprehension, and analysis.
-
-### Practical questions
-
-- This part of the exam consists of __personalized open questions__, shown in __random order__ (i.e., not in order of difficulty or weight/points).
-- Expect three questions (potentially w/ smaller subquestions), mixing "mix" various learning goals. For example:
-  - Small coding task (e.g., parsing, fixing errors, running existing code) (20 minutes)
-  - Small essay to form a judgment (e.g., recommend website or API for a particular business problem, evaluate terms & conditions, sample size calculations) (15 minutes)
-  - Large(r) coding task (e.g., scrape data from a website or retrieve data from API) (remaining time)
-- Cognitive skills that will be tested are application, evaluation, and synthesis/creation.
-- All tutorials are relevant for these questions.
+- The exam consists of __personalized open and closed (multiple-choice, ranking, matching) questions__, structured along the [learning goals](../course/) of this course, and shown in __random order__.
+- Cognitive skills that will be tested are knowledge, comprehension, analysis, application, synthesis and evaluation.
+- You can expect to work three hours on the exam.
+- Expect coding questions using Jupyter Notebook
+  - Large(r) coding task (e.g., scrape data from a website or retrieve data from API) 
+  - Small(er) coding task (e.g., parsing, fixing errors, running existing code)
+  - Essay questions with indicated word limits to form a judgment (e.g., recommend website or API for a particular business problem, evaluate terms & conditions, sample size calculations)
+- All tutorials - but not advanced web scraping and APIs - are relevant for these questions.
 
 ## Preparing for the exam
 

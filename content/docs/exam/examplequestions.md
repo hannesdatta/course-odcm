@@ -189,8 +189,52 @@ example data extraction plan*
     ```
 
     **Solution**
+  
 
-    To be added by you using PRs on GitHub?
+    ```
+    import requests
+    import csv
+    
+    
+    top_1000=[]
+    
+    for i in range(5):
+        page_url='https://www.boxofficemojo.com/chart/top_lifetime_gross/?offset='+ str(i*200)
+        
+        res = requests.get(page_url)
+        res.encoding = res.apparent_encoding
+        soup = BeautifulSoup(res.text, "html.parser")
+        movies = soup.find('table', class_= 'mojo-body-table')
+       
+        j=0  
+        for movie in movies:
+            
+            if j!=0:
+                
+                ranking= movie.find('td', class_='a-text-right').get_text()
+    
+                title= movie.find('a', class_='a-link-normal').get_text()
+    
+                lifetime_gross=movie.find('td', class_='mojo-field-type-money').get_text()
+    
+                release_year= movie.find('td', class_='mojo-field-type-year').get_text()
+            
+    
+                top_1000.append({'ranking':ranking,
+                                'title': title,
+                                'lifetime_gross': lifetime_gross,
+                                'release_year': release_year})
+    
+            j=j+1
+        
+        
+    with open('top_1000movies.csv', mode='w', newline='', encoding='utf-8') as file:
+        writer = csv.DictWriter(file, fieldnames=['ranking', 'title', 'lifetime_gross', 'release_year'])
+        writer.writeheader()  
+        writer.writerows(top_1000)  
+
+   
+    ```
     
 
 <!--

@@ -39,8 +39,9 @@ The course content will be tested in the form of a computer exam, taken on campu
 {{< hint warning >}}
 
 - Communication with anybody about the exam content is strictly prohibited.
-- Internet access is not available during the exam, except white-listed websites/APIs to scrape.
 - You will be able to download ["cheatsheets"](exam-material.zip) from the exam's introduction page.
+- The exam makes use of the "open book" workspace. This means that technically, you are able to access the internet. However, it is strictly forbidden to use any other material accessible on the internet, other than described on the exam's cover page (which covers all the software used in class such as VS Code, Python, Anaconda, Jupyter Notebook, as well as Chrome, Edge and Firefox).
+- The use of any other website/tool, including AI tools such as ChatGPT, OpenAI APIs, Bing Chat, Copilot, etc. is strictly forbidden.
 - Students must not mention their names or student numbers in any of the submitted files, except when being explicitly asked to do so. This is to ensure the exam can be graded anonymously.
 
 <!--
@@ -51,7 +52,7 @@ The course content will be tested in the form of a computer exam, taken on campu
 
 ## Content
 
-- The exam consists of __personalized open and closed (multiple-choice, ranking, matching) questions__, structured along the [learning goals](../course/) of this course, and shown in __random order__.
+- The exam consists of __open and closed (multiple-choice, ranking, matching) questions__, structured along the [learning goals](../course/) of this course, and shown in __random order__.
 - Cognitive skills that will be tested are knowledge, comprehension, analysis, application, synthesis and evaluation.
 - You can expect to work three hours on the exam.
 - Expect coding questions using Jupyter Notebook
@@ -83,6 +84,7 @@ Please [view the list of example questions here](examplequestions).
 - Know how to zip and unzip files
 - Make use of cheat sheets (e.g., available on this site or elsewhere) (you can also print them)
 - Revise your code before submission so that you ensure it runs from top to bottom without problems.
+- The inspect mode in Chrome and Edge is blocked. However, you can install Firefox on the computers and access the inspect mode there.
 
 <!--
 {{< hint info >}}

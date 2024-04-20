@@ -81,7 +81,7 @@ Clear explanation of the value in collecting the data (“task in mind”), eith
 - *Motivation for selected data source (5%)*  
 A wide range of relevant websites and APIs pertaining to the data context are assessed. The use of different extractions methods and alternatives to web scraping are considered and the data context is sufficiently scoped to ensure validity and to identify other relevant information that may be valuable. It is clear why the data was ultimately collected from the focal website/API, and not from others (i.e., the website/API emerges as the one that fits best in terms of research fit and resource use; #1.4).
 
-#### 1.2 Composition (section 2 of your documentation, 25%)  
+#### 1.2 Composition (section 2 of your documentation, 15%)  
 
 From your answers to _all questions in section 2 of the documentation template_, the following points need to be addressed:
 

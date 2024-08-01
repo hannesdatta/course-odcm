@@ -34,7 +34,7 @@ Course week|Date|Time|Location|Content|
 |                                                  |           | 12.45-14.30 | On campus | [Team coaching #3](/docs/project/workplan)
 |{{< button relref="week5" >}}Week 5{{< /button >}}|Wed 25 Sep | 10.45-12.30 | On campus | Presentations for [Team coaching #3](/docs/project/workplan)
 |                                                  |           | 12.45-14.30 | On campus | [Team coaching #4](/docs/project/workplan)
-|{{< button relref="week6" >}}Week 6{{< /button >}} |Wed 2 Oct | 10:45-12:30 | Online | [Team coaching #5](/docs/project/workplan)
+|{{< button relref="week6" >}}Week 6{{< /button >}} |Wed 2 Oct | 12:45-14:30 | On campus | [Team coaching #5](/docs/project/workplan)
 |{{< button relref="week7" >}}Week 7{{< /button >}}  |Tue 8 Oct | 10.45-12.30 | On campus | Course summary and exam preparation 
 |                              |Fri 11 Oct | 10.45-12.30  | Online | [Team coaching #6](/docs/project/workplan)
 

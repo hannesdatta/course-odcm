@@ -1,5 +1,5 @@
 ---
-weight: 10
+weight: 100
 bookFlatSection: true
 title: "Self- and peer assessment"
 bookHidden: false

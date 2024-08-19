@@ -1,5 +1,5 @@
 ---
-title: "Advanced Tutorials"
+title: "Advanced tutorials"
 weight: 40
 bookCollapseSection: true
 draft: false

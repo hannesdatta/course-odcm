@@ -1,6 +1,6 @@
 ---
 title: Activity 1) Generating project ideas and data sources
-draft: false
+draft: true
 date: 2021-02-04
 ---
 
@@ -47,11 +47,3 @@ The challenges are called "challenges" for a good reason. Putting them into acti
 After some time, you will notice that your ideas continue to change substantially.
 {{% /hint %}}
 
-{{< hint info >}}
-__Diversity & inclusion matters!__
-
-While we try to start the conversation about potential topics to work on around specific themes, we ask you not to feel restricted by those. In fact, what really matters here is that you bring in your passion (e.g., hobby), background (e.g., nationality, ethnicity), or any other thing that you consider part of yourself. In other words, let's bring alive Tilburg's statement of diversity and inclusion. If you're really into scraping Amazon.com, that's fine. But if you're more interested in that niche platform that you and some of your friends hang out on, feel welcome to do that! We're not just here to do what others have done in the past, but we're here to move our field along. And we won't be able to do that without talking about and doing the things that you truely care about.
-
-Please also check out the [syllabus for some more information on how diversity & inclusion matters in this class](/docs/course/).
-
-{{< /hint >}}

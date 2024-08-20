@@ -3,7 +3,7 @@ weight: 1
 title: "Workplan and coaching"
 bookCollapseSection: true
 description: "What to do, when? And when to receive feedback? Check out the workplan!"
-draft: false
+draft: true
 ---
 
 

@@ -1,6 +1,6 @@
 ---
 title: Activity 3) Extraction Design
-draft: false
+draft: true
 date: 2021-02-04
 ---
 

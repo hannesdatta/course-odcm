@@ -7,15 +7,23 @@ bookCollapseSection: false
 
 # Week 1: Getting started with Python and web data
 
-## Kick-starting your week
-- [Watch the kick-off for the week](https://youtu.be/6lGyBkvl0JY)!
+## Learning goals
 
-## Opening lecture and Python bootcamp
+- Get to know Python
+- Launch Jupyter Notebook and run code in Visual Studio Code
+- Know when it’s useful to use Google Colab in the cloud (vs. Jupyter Notebook)
+- Understand basic programming concepts in Python and their applications to collecting web data
+
+## Preparation before the lecture
+
+- Ensure you have completed all preparations, including software installation at Datacamp licenses, before the lecture. [Find out more...](../prep).
+
+## Lecture
+
 {{% laptop %}}
-- Introduction to the course ([slides](slides.html)) <!-- add link ([re-watch](https://youtu.be/b3Fiq3mrsb4))add zoom link-->
-- Brainstorm for ground-breaking data collections
-- Tutorial: Python bootcamp for web data ([download](pythonbootcamp/python-bootcamp-in-class.ipynb), [Google Colab](https://colab.research.google.com/github/hannesdatta/course-odcm/blob/master/content/docs/modules/week1/pythonbootcamp/python-bootcamp-in-class.ipynb), [Learning goals](pythonbootcamp/))
 
+1) Introduction to the course ([slides](slides.html)) <!-- add link ([re-watch](https://youtu.be/b3Fiq3mrsb4))add zoom link-->
+2) Tutorial: Python bootcamp for web data ([download](pythonbootcamp/python-bootcamp-in-class.ipynb), [Google Colab](https://colab.research.google.com/github/hannesdatta/course-odcm/blob/master/content/docs/modules/week1/pythonbootcamp/python-bootcamp-in-class.ipynb))
 
 
 {{% hint info %}}
@@ -28,11 +36,9 @@ __Downloading to and starting the tutorial on your computer__
 - Start with the tutorial!
 {{% /hint %}}
 
+## After the lecture
 
-
-## Self-study and activities
-
-- Work through the in-class tutorial at your own pace
+- Work through the in-class tutorial at your own pace.
 - Deepen your understanding of basic programming concepts by completing a tutorial on Datacamp.com (about 3 hours; [work on the first three chapters only](https://datacamp.com/courses/intro-to-python-for-data-science))
 
 {{% datacamp %}}

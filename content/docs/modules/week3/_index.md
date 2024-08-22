@@ -7,13 +7,16 @@ bookCollapseSection: false
 
 # Week 3: Further building your scraping skills
 
-## Kick-starting your week
-- [Watch the kick-off for the week](https://youtu.be/j8DqkHBPuic)
+## Learning goals
 
-## Tutorial
+- Identifying a strategy to generating seeds (“sampling”)
+- Navigating on a website programmatically
+- Improving extraction design
+- Scraping more advanced, dynamic websites
+
+## Lecture
 {{% laptop %}}
-
-- In-class tutorial (view [slides](webscraping101/slides.html))
+- In-clss tutorial ([slides](webscraping101/slides.html), <a href = 'webscraping101/webscraping-101.ipynb' download>download tutorial</a>, [view tutorial in Google Colab](https://colab.research.google.com/github/hannesdatta/course-odcm/blob/master/content/docs/modules/week3/webscraping101/webscraping-101.ipynb))
 
 {{% hint info %}}
 Would you like to advance your scraping skills for __dynamic websites__ such as Instagram that involves a lot of user interaction like scrolling and clicking? Then also follow the ["Web Scraping Advanced" tutorial](/docs/project/resources/tutorials/webscrapingadvanced).
@@ -22,11 +25,13 @@ Would you like to advance your scraping skills for __dynamic websites__ such as 
 
 ## Coaching session
 
-- Please start working on [team activity #2](/docs/project/workplan/activity2.md)
+- Please check out the [project page](../../project/workplan/#week-3-data-source-selection-coaching-2).
 
-## Self-study and activities
-- After-class exercises (<a href = 'webscraping101/webscraping-101.ipynb' download>download</a>, [Google Colab](https://colab.research.google.com/github/hannesdatta/course-odcm/blob/master/content/docs/modules/week3/webscraping101/webscraping-101.ipynb))
+
+## After the lecture and coaching session
+- Complete the exercises in the tutorial of this week
 - Please work through challenges #2.1-#2.4 in "Fields of Gold".
+
 <!--- Finalize teams (sign-up options are on Canvas)-->
 
 #

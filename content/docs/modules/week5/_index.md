@@ -11,28 +11,27 @@ bookCollapseSection: false
 <!--- Present data extraction plan for chosen website + feedback
 <!--*live; same "smaller" groups like before*-->
 
-## Kick-starting your week
-- [Watch the kick-off for the week](https://youtu.be/u4TD4i_hsl0)
+## Learning goals
 
-## Tutorial
-{{% laptop %}}
+- Improve extraction design for your web scraping projects.
+- Evaluate data extraction plans on the basis of the suggestions in "Fields of Gold"
 
-- Team presentations ([activity #3](../../project/workplan/activity3)) & feedback
+## Lecture
+
+- During the lecture, teams will present their data extraction plans. 
 
 ## Coaching session
 
-- Please start working on [team activity #4](/docs/project/workplan/activity4.md)
+- Please check out the [project page](../../project/workplan/#week-5-prototype-development-coaching-4).
 
 <!--- Optional: Still wonder why APIs are so powerful? Read [Zalando's take](https://opensource.zalando.com/restful-api-guidelines/#introduction) on APIs
 -->
 
-
-## Self-study and activities
+## After the lecture and coaching session
 
 - Keep on refining your project. For example, your team can work on the implementation of the scraping/API extraction while the instructor is providing feedback and help whenever required.
   - Start fiddling around with accessing your chosen website or API. 
   - Start building an initial prototype to extract some data (doesn't need to be the "final" data yet!)
-
 
   {{< hint info >}}
   __Looking for a challenge or working on a website or API requiring a more advanced skillset? [optional]__

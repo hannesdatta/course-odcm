@@ -11,6 +11,11 @@ draft: false
 
 You'll start working on your project in the second course week. The activities below help you to structure your project. Stick to the plan to ensure you can finish the project in time.
 
+{{< hint info >}}
+__Deliverables__ are submitted on Canvas and due by Friday, 7 pm, of the respective course week. The course team will provide short feedback in writing at least a day before the next coaching session.
+
+{{< /hint>}}
+
 ## Week 2: Idea Generation (Coaching #1)
 - **Coaching Support:**  
   - Discuss your research question, business problem, or knowledge gap with your coach (and use Table 2 in Boegershausen et al. 2022 for refinement).
@@ -89,7 +94,6 @@ Please upload the presentation (as a PDF) and Excel sheet (as an Excel file) in 
   - Inspect data, gather feedback on potential plots (section 5), and start discussing initial plots and summary statistics.
 - **Progress on Source Code:**  
   - Resolve technical difficulties and focus on completing data extraction.
-- **Deliverables:**  
   - Continue progressing towards final documentation.
 
 ## Week 7: Final Technical Refinement (Coaching #6, optional)
@@ -98,7 +102,3 @@ Please upload the presentation (as a PDF) and Excel sheet (as an Excel file) in 
   - Aim to complete all remaining tasks.
 - **Progress on Source Code:**  
   - Final debugging and data extraction completion.
-- **Deliverables:**  
-  - **Sections 1-6**: Complete data package submission (final deadline).
-
-

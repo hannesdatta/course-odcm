@@ -45,7 +45,7 @@ Are you experiencing technical difficulties, e.g., when working through the tuto
 
 ## Chatbot
 
-In collaboration with tilburg.ai, we offer a Chatbot trained on course materials. Powered by the latest OpenAI Chat Completion API, it provides an interface similar to ChatGPT. Use it to get quick feedback or ask course-related questions. Start your chat now!
+In collaboration with tilburg.ai, we offer a Chatbot trained on course materials. Powered by the latest OpenAI Chat Completion API, it provides an interface similar to ChatGPT. Use it to get quick feedback or ask course-related questions. [Start your chat now!](https://odcm.tilburgai.nl)
 
 Please note that the Chatbot is in a pilot phase and may make mistakes. Conversations may be monitored anonymously by tilburg.ai and the course coordinator to improve the tool and potentially roll it out to other courses at Tilburg University.
 

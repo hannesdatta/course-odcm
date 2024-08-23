@@ -10,7 +10,7 @@ bookCollapseSection: true
 
 ## Instructor
 
-This course is instructed by [dr. Hannes Datta](https://hannesdatta.com), Associate Professor at the Marketing Department of Tilburg University. 
+This course is instructed by [dr. Hannes Datta](https://hannesdatta.com), Associate Professor at the Marketing Department of Tilburg University and [Msc. Roshini Sudhaharan](https://www.linkedin.com/in/roshinisudhaharan/), Junior Lecturer at the Marketing Department of Tilburg Univeristy.
 
 {{< hint info >}}
 Join Hannes' professional network on [LinkedIn](https://www.linkedin.com/in/hannes-datta/), subscribe to his [YouTube Channel](https://youtube.com/c/hannesdatta), and start following him on [GitHub](https://github.com/hannesdatta) and [Twitter](https://twitter.com/hannesdatta) to stay up-to-date!
@@ -63,8 +63,8 @@ To illustrate the wide range of applications of web data, the course introduces 
 
 ## Assessment
 
-- [Team project](project) (50%, out of which 10% are based on students' individual contribution, measured by [self- and peer assessment](../project/grading/peerassessment))
-- [Computer exam](/docs/exam) (50%)
+- [Team project](project) (40%, out of which 8% are based on students' individual contribution, measured by [self- and peer assessment](../project/grading/peerassessment))
+- [Computer exam](/docs/exam) (60%)
 
 <!--
 [^3]: In particular, students regularly monitor their progress on the course's learning goals. __At least one evaluation per course week is required to obtain points on this component of the course grade.__
@@ -86,8 +86,9 @@ Final course grades are rounded to multiples of half points (e.g., 6, 6.5, 7, et
   - Required action: Re-enroll in this course's next edition, and ensure you are part of a team.
 - If students have an exam grade higher or equal to 5.0 but fail the team project (after SPA correction), their total course grade may be lower than 5.5, and hence students fail this course.
   - Required action: Correct team project based on the course coordinator's grading report, and hand it in again within two weeks after publication of the final grades in this course (submission on Canvas). Only students who fail the team project can have their projects re-graded. The maximum attainable grade on the regraded team project is a 6.0.
-- Students who have passed the course, but wish to retake the exam, can take the exam resit. The highest exam grade counts. Grades for the team project are retained. In other words, the resit exam still counts for 50% of the final course grade.
-- Students who fail the exam and wish to retake the course in a subsequent semester can *retain* their assignment grades upon approval of the course coordinator (grades remain valid for the *next* edition of the course).
+- Students who have passed the course, but wish to retake the exam, can take the exam resit. The last exam grade counts. Grades for the team project are retained. In other words, the resit exam still counts for 50% of the final course grade.
+- Students who fail the exam and wish to retake the course in a subsequent semester can *retain* their assignment grades.
+<!--> upon approval of the course coordinator (grades remain valid for the *next* edition of the course).-->
 
 ### Bonus points
 

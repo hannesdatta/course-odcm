@@ -20,7 +20,7 @@ Please follow the installation guide for [Python via Anaconda](https://tilburgsc
 {{< hint info >}}
 **Tips**
 - The installation of Anaconda can **easily take half an hour**! Please install it before the start of the class, and ensure you have administrator rights.
-- We recommend installing the Anaconda Individual Edition (Anaconda 64-Bit Graphical Installer; version 3.9), which you find [here](https://www.anaconda.com/products/distribution). Make sure to select the __correct package for your operating system.__
+- We recommend installing Anaconda (Anaconda 64-Bit Graphical Installer; version 3.12), which you find [here](https://www.anaconda.com/download/success). Make sure to select the __correct version for your operating system.__
 - In the tutorial (at 2:23), we open the Command Prompt. On Mac, this program is called Terminal (for more information see [this](https://generalassembly.github.io/prework/cl/#/) interactive walkthrough - optional).
 
 {{< /hint >}}

@@ -7,19 +7,20 @@ bookCollapseSection: true
 
 # Week 7: Lab week
 
-## Kick-starting your week
-- Watch the kick-off for the week
+## Learning goals
+- Scaling up the data extractoin
 
-## Self-study
+## Before the lecture
 - Please work through the [exam preparation material](docs/exam) and note down any question that you may have. You can raise these questions in the final lecture.
-
-## Online coaching session (optional)
-- Feedback on [team project](../../project/workplan/) (at this point, ideally a working data collection software that can be scheduled automatically)
 
 ## Final lecture
 - Course summary ([slides](slides.html))
 - [Exam preparation](/docs/exam)
 - Final questions
+
+## Online coaching session (optional)
+- Technical refinement of the team project, for details, [head over to the workplan](../../project/workplan/#week-7-final-technical-refinement-coaching-6-optional).
+
 
 <br>
 <div style="text-align: right">

@@ -7,11 +7,11 @@ bookCollapseSection: true
 
 # Week 6: Prototype Development and Documentation
 
-## Kick-starting your week
-- Watch the kick-off for the week
+## Learning goals
+- Scaling up the data extractoin
 
 ## Online coaching session (optional)
-- Feedback on team project ([activity #4](../../project/workplan/activity4)) (e.g., screencast, prototype code)
+- Technical refinement of the team project, for details, [head over to the workplan](../../project/workplan/#week-6-technical-refinement-coaching-5-optional).
 
 {{% hint tip %}}
 
@@ -20,7 +20,7 @@ Recorded coaching sessions (from previous editions of this course, and also the 
 
 {{% /hint %}}
 
-## Self-study and activities
+## After the coaching session
 - Please read (including the web appendix) [Datasheets for Datasets](https://arxiv.org/pdf/1803.09010.pdf)
 - Please continue to work on the development of your prototype. Concurrently, try to start documenting your data collection - either in the Word template, or by using Jupyter Notebook (a combination of markdown cells for the text, and code cells for any analysis).
 

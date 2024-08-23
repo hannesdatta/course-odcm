@@ -12,29 +12,31 @@ description: Learn how to assess data quality and website/API structure, and dec
 
 # Week 2: Workflow & learning how to scrape
 
-## Kick-starting your week
-- [Watch the kick-off for the week](https://youtu.be/m1yCf09wSa4)
+## Learning goals
+- Differentiate between retrieving data from websites and APIs.
+- Retrieve and store web data in various formats using Python's requests library and browser inspection tools.
+- Extract and manipulate data from websites and APIs using BeautifulSoup and JSON handling techniques.
+- Apply programming concepts to automate data collection and understand the use of Jupyter Notebooks vs. raw Python files.
 
-## Tutorial
+## Lecture
 {{% laptop %}}
 
-- In-class tutorial (view [slides](webdata-for-dummies/slides.html)) 
+- Tutorial ([in-class slides](webdata-for-dummies/slides.html), <a href = 'webdata-for-dummies/webdata-for-dummies-in-class.ipynb' download>download tutorial</a>, [view tutorial in Google Colab](https://colab.research.google.com/github/hannesdatta/course-odcm/blob/master/content/docs/modules/week2/webdata-for-dummies/webdata-for-dummies-in-class.ipynb), solutions provided by students: <a href = 'webdata-for-dummies/webdata-for-dummies-exercise-scheduling.ipynb' download>download</a>, [Google Colab](https://colab.research.google.com/github/hannesdatta/course-odcm/blob/master/content/docs/modules/week2/webdata-for-dummies/webdata-for-dummies-exercise-scheduling.ipynb))
+
 
 ## Coaching session
 
-- Please start working on [team activity #1](/docs/project/workplan/activity1.md) (2 hours)
+- Please check out the [project page](../../project/workplan/#week-2-idea-generation-coaching-1).
 
-## Self-study and activities
+## After the lecture and coaching session
 
-- After-class exercises
-  - Tutorial and after-class exercises (about 1-2 hours; contained at the end of the tutorial; <a href = 'webdata-for-dummies/webdata-for-dummies-in-class.ipynb' download>download</a>, [Google Colab](https://colab.research.google.com/github/hannesdatta/course-odcm/blob/master/content/docs/modules/week2/webdata-for-dummies/webdata-for-dummies-in-class.ipynb))
-  - Solutions (provided by students; <a href = 'webdata-for-dummies/webdata-for-dummies-exercise-scheduling.ipynb' download>download</a>, [Google Colab](https://colab.research.google.com/github/hannesdatta/course-odcm/blob/master/content/docs/modules/week2/webdata-for-dummies/webdata-for-dummies-exercise-scheduling.ipynb))
-
-- [What is web scraping and what are Application Programming Interfaces (APIs)?](https://videocollege.uvt.nl/Mediasite/Play/41afff385bd74db2af5fb8507350ea521d) (30 minutes)
+- Complete the exercises contained at the end of the tutorial (about 1-2 hours)
+- Watch ["What is web scraping and what are Application Programming Interfaces (APIs)?"](https://videocollege.uvt.nl/Mediasite/Play/41afff385bd74db2af5fb8507350ea521d) (30 minutes)
 - "Fields of Gold: Scraping Web Data for Marketing Insights"
   - Please [watch the webinar](https://youtu.be/KiyFyLEkqNk) (1 hour)
   - Please carefully [read the paper](https://journals.sagepub.com/doi/abs/10.1177/00222429221100750?journalCode=jmxa) (2 hours)
-  
+- Finalize team enrollment on Canvas.
+
   {{% hint info %}}
   This paper will provide a guiding framework for the rest of this course, and chance is you'll have to read it a couple of times (e.g., first to get an overview, and later to appreciate and use the details in your project). The web appendix contains valuable tables, so don't skip them.
   {{% /hint %}}

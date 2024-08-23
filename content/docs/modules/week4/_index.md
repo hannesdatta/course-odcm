@@ -6,26 +6,32 @@ bookCollapseSection: false
 ---
 
 # Week 4: Learn how to extract data from APIs
+
+## Learning goals
+
+- Send HTTP requests to a web API, and retrieve JSON responses
+- Use parameters to modify the results of an API call
+- Iterate over multiple pages of JSON responses
+- Extract and store results of an API request in lists of dictionaries, and files
+
+
 <!--Data Availability Assessment, Research Fit, Legal Audit
 
 Data Availability and Research Fit
 description: Assess which data is available at your chosen data source, and whether it fits your research purpose.
 
 -->
-## Kick-starting your week
-- Watch the kick-off for the week
 
-## Tutorial
+## Lecture
+
 {{% laptop %}}
-- In-class tutorial ([view slides](apis101/slides.html))
+- In-class tutorial  ([view slides](apis101/slides.html), <a href = 'apis101/api-101.ipynb' download>download tutorial</a>, [view tutorial in Google Colab](https://colab.research.google.com/github/hannesdatta/course-odcm/blob/master/content/docs/modules/week4/apis101/api-101.ipynb))
 
 ## Coaching session
-- Please start working on [team activity #3](/docs/project/workplan/activity3.md)
+- Please check out the [project page](../../project/workplan/#week-4-extraction-design-coaching-3).
 
-## Self-study and activities
-- After-class exercises (<a href = 'apis101/api-101.ipynb' download>download</a>, [Google Colab](https://colab.research.google.com/github/hannesdatta/course-odcm/blob/master/content/docs/modules/week4/apis101/api-101.ipynb))
-
-- Please prepare [team activity #3](../../../docs/project/workplan/activity3.md).
+## After the lecture and coaching session
+- Complete the exercises in the tutorial of this week
 - Please work through challenges #3.1-#3.3 in "Fields of Gold".
 
 

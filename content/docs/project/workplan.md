@@ -16,6 +16,11 @@ __Deliverables__ are submitted on Canvas and due by Friday, 7 pm, of the respect
 
 {{< /hint>}}
 
+## Week 1: Team Formation
+
+- Explore whom you would like to work with.
+- Register your team on Canvas.
+
 ## Week 2: Idea Generation (Coaching #1)
 - **Coaching Support:**  
   - Discuss your research question, business problem, or knowledge gap with your coach (and use Table 2 in Boegershausen et al. 2022 for refinement).

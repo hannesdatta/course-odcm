@@ -38,7 +38,7 @@ During the course, you will have the opportunity to meet up with the course inst
 
 Teams participating in coaching sessions attend the entire session. They typically work together on the team project, and the course instructor will "walk around" to address students' questions. When on Zoom, breakout rooms will be created. There will be approximately 10 minutes per team in total; some teams may prefer to use the entire time at once, while other teams may prefer to ask multiple, short questions over the entire duration of the session.
 
-Most of the coaching sessions will help the team to work on some deliverables, which are always due at the end of a course week (see submission deadlines on Canvas).
+__Deliverables:__ Most coaching sessions will help the team work on some deliverables, which are always due at the end of a course week and are submitted on Canvas by Friday, 7 pm.
 
 {{% hint info %}}
 

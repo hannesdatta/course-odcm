@@ -48,28 +48,34 @@ If you haven't done so, please
 - happy to share that vision, and share practical tips
 
 -->
- 
 
 Agenda
 ========================================================
 
-- Part 1 (12.45 to about 13.45)
+- Part 1 (10.45 to about 11.45)
   - Getting to know each other
   - Motivation for the course
   - Course framework and learning goals
   - Agenda and practical arrangements
 - Break
-- Part 2: Python Bootcamp on your laptops (about 14.00 - 15.30/15.45)
+- Part 2: Python Bootcamp on your laptops (about 12.00 - 13.30/13.45)
+
+This course in a nutshell
+=====
+
+- You will learn how to __write computer programs that automatically download and structure information from the internet for analysis__.
+- We call these programs "web scrapers" (for any internet pages) and "APIs" (for official data access)
+- Web scraping and APIs are the foundation of Google Search ("web spiders") and ChatGPT (for training)
+- I also almost got sued doing it (more about it later...)
 
 Disclaimer
 ========================================================
 incremental: true
 
-- This is not a class that merely teaches you Python (but, if you invest time, you'll learn Python on the way!)
+- This is predominantly about web scraping and APIs - but you will learn Python on the way as well
 - You can also extract web data using other software packages (e.g., R)
 - Mix of students at various levels (e.g., beginners, advanced Python users)
-- Course mostly takes place on campus (based on student feedback); attendance is not mandatory but strongly encouraged
-- I will not record any online or offline sessions; slides will be posted always
+- I will record sessions and post content immediately after class (but, attendance is strongly encouraged)
 - Consider me your coach, not your *distant professor*
 - Slow me down if you need to
 
@@ -81,7 +87,7 @@ incremental: true
 
 - scraping nerd --- learned it in 2008 using Visual Basic in Excel
 - started doing my own research with scraped and API-extracted data in 2012 (so, 10+ years experience)
-- left Germany around your age, now many years in NL
+- left Germany around your age, now 15+ years in NL
 - Associate Professor at Tilburg University
 
 Key areas of expertise
@@ -95,6 +101,8 @@ Key areas of expertise
 - Methodological interests
   - online data collection via APIs and web scraping
   - causal effects with observational data
+
+<!--
 
 Teaching activities 
 ========================================================
@@ -119,6 +127,7 @@ incremental: true
 - What's your background - previous education (e.g., program)?
 - Any experience in Python (or other programming languages)?
 - What are your passions & talents? (+ why I am asking you this...)
+-->
 
 
 Motivation for course
@@ -127,21 +136,23 @@ Motivation for course
 - started out as a PhD student without data
 - was interested in music, and found website with data (https://last.fm)
 - no best practices in scraping; learnt all by myself and made many mistakes
-- scraping undervalued in academic job market, __but__, key role in shaping relevance and rigor of your work
-- now scraping and APIs are a large part of what defines me...
+- scraping was undervalued in academic job market, __but__, key role in shaping relevance and rigor of your work
+- now scraping and APIs are a large part of what defines my research
 
 Selection of scraping projects I've undertaken
 ========================================================
 incremental: true
 
-- investigate music streaming ([How did music consumption change with Spotify?](https://tiu.nu/spotify))
-- [monitored Spotify's user interface and make lists of new releases](https://github.com/hannesdatta/data-spotify-promotions-releases)
-- investigate [playlist ecosystem](https://github.com/hannesdatta/data-spotify-playlist-ecosystem) with APIs
 - [scraped reviews at Amazon.com](https://journals.sagepub.com/doi/abs/10.1509/jm.11.0560)
+- investigated ([how music consumption changed with Spotify](https://tiu.nu/spotify))
+- [monitored Spotify's user interface and make lists of new releases](https://github.com/hannesdatta/data-spotify-promotions-releases)
+- found a way to estimate ["power imbalances" in the music industry](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4079693)
+- share data on the [playlist ecosystem](https://github.com/hannesdatta/data-spotify-playlist-ecosystem) with APIs
+- downloaded 100k+ images from Amazon, ran Image and Text Analyses using Google Cloud NLP and Vision APIs
 - investigating "video streaming wars" (e.g., Netflix versus Disney+, when do consumers use multiple streaming services?), see [trakt.tv]()
 - share code [on GitHub](https://github.com/hannesdatta)
 - developed a [methodological framework on scraping/APIs](https://doi.org/10.1177%2F00222429221100750) (which we use in this class)
-- Faced legal battles...
+- faced legal battles...
 
 <!--
 - The story about the legal issues you faced (prior to switching to Chartmetric)
@@ -169,7 +180,7 @@ Introducting music-to-scrape.org
 ================
 
 - Mock-up streaming service
-- Developed last semester, to be launched with Guyt et al. (2024) (final testing phase!)
+- Developed last semester, launched with Guyt et al. (2024) 
 - "Save" and controlled environment to learn scraping and APIs
 
 ![Screenshot of Music to scrape](musictoscrape.png)
@@ -246,7 +257,7 @@ Getting inspired...
 
 - *What are cool websites/services you're using often?!*
 
-- *What are important societal issues right now that directly or indirectly affect your lives?*
+- *What are important issues right now that directly or indirectly affect your lives?*
 
 - *As a marketer, how could you use the API of OpenAI to automate/invent something new?*
 
@@ -338,44 +349,20 @@ Course structure and grading
   - Self-study
   - On-campus (sometimes online) coaching sessions
   
-- Project in which you put into practice your skills (50% of your grade)
+- Project in which you put into practice your skills (40% of your grade)
 
-- On-campus computer exam (50% of your grade)
+- On-campus computer exam (60% of your grade)
 
-- Bonus points available (max .5 on final course grade; contribute to course or Tilburg Science Hub using source code: e.g., solutions for assignments, writing a tutorial for a new package, debugging source code, maintaining course's issue board); needs GitHub for this
-
-
-This year's team project: Retailing platforms (I)
-=======================================
-
-- We're currently experiencing many new retailers that are invented/launched.
-- You know way more than I do... so... let's hear some!
-
-__Goals:__
-
-In the context of __retail-based platforms__,
-- understand and present "data universe"
-- select one or multiple data source(s) and collect the data (scraping, APIs)
-- document the resulting data for public (re)use
-
-This year's team project: Retailing platforms (II)
-========================================================
-  
-__Find your sweet spot!__
-
-- Read Guyt et al. 2024 and discover exiting data sources (or add your own!)
-- brainstorm about it...
-
-This year's team project: Retailing platforms (III)
+This year's team project
 ========================================================
 
 - Specifics
   - scrape data via web sites or use APIs
-  - work through the entire method framework
-  - receive feedback by students and me (your coach)
+  - work through the entire method framework of Boegershausen et al. 2022
+  - receive feedback by students and me/Roshini (your coaches)
   - inspiration for the setup: [past projects](https://odcm.hannesdatta.com/docs/project/resources/pastprojects/)
-  - legacy [project ideas](https://odcm.hannesdatta.com/docs/project/resources/projectideas/) 
-
+  - should address a broad research context
+  
 - Evaluation
   - [grading rubric available](https://odcm.hannesdatta.com/docs/project/grading/)
   - self- and peer assessment used
@@ -400,13 +387,24 @@ Visit [https://odcm.hannesdatta.com]()!
 
 - Do all students have access to Canvas?
 
+Using AI
+====================
+
+- I __encourage__ the use of AI to help you learn Python and web scraping/APIs efficiently
+- Note though that, on the exam, you've got to be 'good enough' to do it without AI
+- Resources
+  - Course Chatbot at https://odcm.tilburgai.nl
+  - MANY tutorials and extra resources at https://tilburg.ai
+  - GitHub Copilot for Education ("AI programming guide")
+
+
 Common struggles & tips
 ========================================================
 
 - Take time to become acquainted with the course (e.g., not using Canvas)
 - Can be tough at first, but you will gain experience rapidly!
 -	It can be overwhelming to follow dPrep and oDCM simultaneously, but the skills you learn are important for your course work, Master Thesis & future career!
-- Usually not possible to take these courses at a later moment - do get in touch with program coordinator for questions about course enrollment
+- TWO exam moments per academic year - choose wisely!
 -	Easing your start-up pain
   -	Start preparing early on (the first weeks will be the most challenging!)
   -	Have the same group members across dPrep and oDCM
@@ -457,11 +455,12 @@ Steps of escalation & getting in touch
 
 When you run into trouble, this is your way out!
 
-1. Try to find the info on the course website
-2. Ask Chat GPT / Google / Stackoverflow
-3. Ask friend/classmate (form learning groups)
-4. Can it wait? Defer to lecturer or feedback sessions.
-5. If it can't wait: be in touch with me (--> next slide!)
+1. Use the course's Chatbot (https://odcm.tilburgai.nl)
+2. Try to find the info on the course website or course material
+3. Ask ChatGPT / Google / Stackoverflow
+4. Ask friend/classmate (form learning groups)
+5. Can it wait? Defer to lecturer or feedback sessions.
+6. If it can't wait: be in touch with me (--> next slide!)
 
 <!--
 ::: notes

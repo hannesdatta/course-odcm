@@ -26,22 +26,33 @@ Welcome to oDCM!
 
 We're about to start with __today's tutorial ("web data for dummies")__.
 
-- If you haven't done so, open this slide deck at https://odcm.hannesdatta.com/docs/modules/week2/webdata-for-dummies/
-- Coaching session start after today's tutorial (we will change rooms)
-- Team assignment on Canvas 
+- If you haven't done so, open this slide deck at (course material --> week 2) & corresponding [Jupyter Notebook](https://colab.research.google.com/github/hannesdatta/course-odcm/blob/master/content/docs/modules/week2/webdata-for-dummies/webdata-for-dummies-in-class.ipynb)
+- Coaching sessions start after today's tutorial (with Roshini) + finalize team assignment on Canvas
+- You can work in Google Colab today
 
 Agenda
 ========================================================
 
-- In-class
+- Today's lecture
   - Work through the in-class tutorial ("webdata for dummies in class.ipynb")
-  - We'll work on a **selection of exercises** on web scraping and APIs
+  - We'll work on a selection of exercises on web scraping and APIs
   - Address some data selection challenges highlighted in "Fields of Gold"
 <br>
 - After class
-  - Work on team activity #1
-  - Complete tutorial and exercises + be in touch for feedback during coaching hours
-  
+  - Check out today's [workplan](https://odcm.hannesdatta.com/docs/project/workplan/)
+  - Complete in-class tutorial and exercises; solutions available online
+
+When doing exercises...
+======
+
+__Use your smartphone to indicate your status__.
+
+- Face/screen up: DONE :)
+- Face down: still working.
+
+Thanks.
+
+
 
 Framework
 =======
@@ -60,7 +71,8 @@ incremental: true
 - scaling (APIs scale more)
 - web scraping largely free, APIs for-pay
 - APIs are linchpin of internet economy
-- Learn about other differences and commonalities in the [Web Appendix of "Fields of Gold"](https://journals.sagepub.com/doi/suppl/10.1177/00222429221100750/suppl_file/sj-pdf-1-jmx-10.1177_00222429221100750.pdf).
+
+Source & more details: [Web Appendix of "Fields of Gold"](https://journals.sagepub.com/doi/suppl/10.1177/00222429221100750/suppl_file/sj-pdf-1-jmx-10.1177_00222429221100750.pdf)
 
 
 We get started with web scraping
@@ -73,7 +85,7 @@ We get started with web scraping
 <br>
 - Examples:
   - toybox at codepen: https://codepen.io/rcyou/pen/QEObEk/
-  - inspecting [tilburguniversity.edu]()
+  - inspecting [tilburguniversity.edu](https://tilburguniversity.edu)
   
 Which information to extract from a website (challenge #2.1)?
 ================
@@ -97,7 +109,7 @@ Which information to extract from a website (challenge #2.1)?
 DO: Exploring music-to-scrape
 =========
 
-- Open [music-to-scrape.org]() (fallback option: [books.toscrape.com]())
+- Open [music-to-scrape.org]() 
 - Familiarize yourself with the structure of the site
 - Check which data you encounter
 - Suppose the data was stored in a database, how would you structure it?
@@ -126,21 +138,10 @@ DO: Identifying information on music-to-scrape.org
   - top 10 songs?
 
 
-DO: Identifying information on books.toscrape.com (fall-back option)
-======
-
-- Open https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html
-- How would you identify the following information?
-  - book title
-  - price
-  - in-stock availability, and 
-  - number of stars?
-
-
 CSS selectors and XPATHS (I)
 ========
 
-- When following some extra tutorials, some coders advocate for the use of __CSS selectors and XPATHS__ to extract information.
+- When following tutorials on the web, some coders advocate for the use of __CSS selectors and XPATHS__ to extract information.
 <br>
 - XPATH
   - Think of it as the "path" to the specific data point
@@ -152,16 +153,35 @@ CSS selectors and XPATHS (II)
 
 - CSS selector
   - Example for extracting "artist name": `.artist_info_title`
-  - Works here, but can be "highly" dependent: say, tag & class name + position -- can also break
+  - Works here, but can be "highly" dependent: say, tag & class name + position (sometimes too detailed) & can also break
 <br>
 - So, here, we are sticking mostly to _classes_, _attributes_, and _attribute-value pairs_.
+
+Preview: Technical web scraping setup (I)
+============
+
+- We will use three libraries:
+  - `requests`: downloads data from the web or transmits data ("headless")
+  - `BeautifulSoup`: structures HTML data so we can query it
+  - `selenium` + `chromedriver`: simulates a browser (chrome), can scroll, click, view the site, but can also be headless; also structures HTML so we can query it
+  - `json`: structure and query JSON data
+  
+Preview: Technical web scraping setup (II)
+============
+
+- For basic, "static" websites, we use `requests` + `beautifulSoup` (speed + ease!)
+- For dynamic websites, we use selenium (advanced tutorial), OR: `selenium` (retrieve data) + `beautifulSoup` (structure/query)
+- For APIs, we exclusively use `requests`
+- For data storage, we use `json` (preferred) or CSV files (flat files with rows & columns)
+
+__- Today: `requests` + `BeautifulSoup`__
 
 Getting the website into Python
 ==================
 class: small-code
 
 ```{python, eval=TRUE}
-import requests
+import requests # let's load the requests library
 
 # make a get request to the website
 url = 'https://music-to-scrape.org/artist?artist-id=ARICCN811C8A41750F'
@@ -182,11 +202,15 @@ class: small-code
 ```{python, eval=TRUE}
 import requests
 from bs4 import BeautifulSoup
+
 url = 'https://music-to-scrape.org/artist?artist-id=ARICCN811C8A41750F'
+
 header = {'User-agent': 'Mozilla/5.0'} 
+
 web_request = requests.get(url, headers = header)
 
 soup = BeautifulSoup(web_request.text)
+
 print(soup.find('h2').get_text())
 ```
 
@@ -224,8 +248,11 @@ DO: BeautifulSoup exercises (solution)
 
 ```{python, eval=FALSE}
 location = soup.find(class_ = 'about_artist').find_all('p')[0].get_text()
+
 plays = soup.find(class_ = 'about_artist').find_all('p')[1].get_text()
+
 song_table = soup.find(class_ = 'top-songs')
+
 number_of_songs = len(song_table.find_all('tr'))-1
 ```
 
@@ -251,14 +278,16 @@ from bs4 import BeautifulSoup
 
 def download_data(url):
   header = {'User-agent': 'Mozilla/5.0'} 
+  
   web_request = requests.get(url, headers = header)
+  
   soup = BeautifulSoup(web_request.text)
   
   artist_name = soup.find('h2').get_text()
   
   print(f'Artist name: {artist_name}.')
   
-
+# execute the function
 download_data('https://music-to-scrape.org/artist?artist-id=ARICCN811C8A41750F')
 
 ```
@@ -287,6 +316,7 @@ artist_ids = ['ARICCN811C8A41750F', 'AR1GW0U1187B9B29FD', 'ARZ3U0K1187B999BF4']
 
 def download_data(url):
   header = {'User-agent': 'Mozilla/5.0'} 
+  
   web_request = requests.get(url, headers = header)
   soup = BeautifulSoup(web_request.text)
 
@@ -302,7 +332,7 @@ for id in artist_ids:
   
 ```
 
-Wrapping results into JSON data
+Storing results into JSON data
 ===========
 
 - JSON is most flexible format, supports "hierarchical data"
@@ -311,7 +341,7 @@ Wrapping results into JSON data
   - Full: the entire FILE (e.g., `data.json`) is ONE giant JSON object
   - __New line separation: each line in your file has one JSON object__
   
-Wrapping results into JSON data
+Storing results into JSON data
 ============
 
 Change the code so it stores artist name, location and plays in the JSON object.
@@ -386,7 +416,7 @@ Writing a complete web scraper
 - schedule
 - infrastructure
 
-Wrapping of web scraping
+Wrapping up web scraping
 =====================
 
 - Get content from a __website__
@@ -423,16 +453,21 @@ Extensions:
 - time data retrieval (e.g., every five seconds; discuss multiple strategies)
 - store featured artists in a list (or file)
 
-Let's retrieve some artist meta data
+DO: Let's retrieve some artist meta data
 =========
 
-- Endpoint: https://api.music-to-scrape.org/artist/info
-- Requires parameter: artistid
-- Combined call: https://api.music-to-scrape.org/artist/info?artistid=`{ENTER ARTIST ID HERE}`
+__Get some artist meta data for an artist of your choice!__
 
-DO:
-- Get some data for an artist of your choice - you find the artist IDs on the site or in previous code
-- Wrap code in a function so you can retrieve data for multiple artists
+1.) Find an artist IDs on the site or in previous code
+2.) Try to make a web request (in your browser) to the following URL:
+
+- Endpoint: `https://api.music-to-scrape.org/artist/info`
+- Requires parameter: `artistid`
+- Combined URL: `https://api.music-to-scrape.org/artist/info?artistid={ENTER ARTIST ID HERE}`
+
+3.) Does it work? Then write Python code to retrieve the data.
+
+4.) Finally, wrap your code in a function so you can later retrieve data for multiple artists.
 
 
 At which frequency to extract the data? (Challenge #2.3)
@@ -454,15 +489,6 @@ At which frequency to extract the data? (Challenge #2.3)
   - randomize extraction order
   - use automatic schedulers for consistency
 
-Exercises with music-to-scrape
-===============
-
-__Please work on exercise 2.4.__
-
-1. collect (longer) list of featured artists
-2. for each of these featured artists, collect meta data
-3. store data in new-line separated JSON file
-
 Processing data during the collection (challenge #2.4)
 ========
 
@@ -483,16 +509,21 @@ Processing data during the collection (challenge #2.4)
   - Remove sensitive info
   - Ensure proper encoding
 
+Optional (if time left): exercises with music-to-scrape
+===============
+
+__Please work on exercise 2.4 (see tutorial).__
+
+1. collect (longer) list of featured artists
+2. for each of these featured artists, collect meta data
+3. store data in new-line separated JSON file
 
 Next steps in this class
 =============
 
-- Work on team activity #1
-  - coaching session following today's tutorial
-  - make team allocation definite (see Canvas!)
-- If you haven't done so...
-  - go through the self-study material of this week
-- Get engaged!
-  - discuss ideas, post solutions, identify business opportunities, etc.
-  - try fiddling with an AI API or use ChatGPT for starting code
+- Work on your team project (see workplan on the course website) + make team allocation definite
+- Complete this tutorial at home
+- Get engaged - see the "bigger" picture of web scraping and APIs
+  - discuss ideas & business opportunities (e.g., OpenAI's developer platform?)
+  - use our course chatbot at odcm.tilburgai.nl
   - be in touch on WhatsApp for any issues/bugs/etc.

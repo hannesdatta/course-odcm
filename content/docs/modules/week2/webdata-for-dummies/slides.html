@@ -808,9 +808,9 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 <p>We&#39;re about to start with <strong>today&#39;s tutorial (&ldquo;web data for dummies&rdquo;)</strong>.</p>
 
 <ul>
-<li>If you haven&#39;t done so, open this slide deck at <a href="https://odcm.hannesdatta.com/docs/modules/week2/webdata-for-dummies/">https://odcm.hannesdatta.com/docs/modules/week2/webdata-for-dummies/</a></li>
-<li>Coaching session start after today&#39;s tutorial (we will change rooms)</li>
-<li>Team assignment on Canvas </li>
+<li>If you haven&#39;t done so, open this slide deck at (course material &ndash;&gt; week 2) &amp; corresponding <a href="https://colab.research.google.com/github/hannesdatta/course-odcm/blob/master/content/docs/modules/week2/webdata-for-dummies/webdata-for-dummies-in-class.ipynb">Jupyter Notebook</a></li>
+<li>Coaching sessions start after today&#39;s tutorial (with Roshini) + finalize team assignment on Canvas</li>
+<li>You can work in Google Colab today</li>
 </ul>
 
 </div>
@@ -820,21 +820,36 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 <h3>Agenda</h3>
 <div class="slideContent" >
 <ul>
-<li>In-class
+<li>Today&#39;s lecture
 
 <ul>
 <li>Work through the in-class tutorial (&ldquo;webdata for dummies in class.ipynb&rdquo;)</li>
-<li>We&#39;ll work on a <strong>selection of exercises</strong> on web scraping and APIs</li>
+<li>We&#39;ll work on a selection of exercises on web scraping and APIs</li>
 <li>Address some data selection challenges highlighted in &ldquo;Fields of Gold&rdquo;
 <br></li>
 </ul></li>
 <li>After class
 
 <ul>
-<li>Work on team activity #1</li>
-<li>Complete tutorial and exercises + be in touch for feedback during coaching hours</li>
+<li>Check out today&#39;s <a href="https://odcm.hannesdatta.com/docs/project/workplan/">workplan</a></li>
+<li>Complete in-class tutorial and exercises; solutions available online</li>
 </ul></li>
 </ul>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>When doing exercises...</h3>
+<div class="slideContent" >
+<p><strong>Use your smartphone to indicate your status</strong>.</p>
+
+<ul>
+<li>Face/screen up: DONE :)</li>
+<li>Face down: still working.</li>
+</ul>
+
+<p>Thanks.</p>
 
 </div>
 
@@ -860,8 +875,9 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 <li class="fragment">scaling (APIs scale more)</li>
 <li class="fragment">web scraping largely free, APIs for-pay</li>
 <li class="fragment">APIs are linchpin of internet economy</li>
-<li class="fragment">Learn about other differences and commonalities in the <a href="https://journals.sagepub.com/doi/suppl/10.1177/00222429221100750/suppl_file/sj-pdf-1-jmx-10.1177_00222429221100750.pdf">Web Appendix of &ldquo;Fields of Gold&rdquo;</a>.</li>
 </ul>
+
+<p>Source &amp; more details: <a href="https://journals.sagepub.com/doi/suppl/10.1177/00222429221100750/suppl_file/sj-pdf-1-jmx-10.1177_00222429221100750.pdf">Web Appendix of &ldquo;Fields of Gold&rdquo;</a></p>
 
 </div>
 
@@ -882,7 +898,7 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 
 <ul>
 <li>toybox at codepen: <a href="https://codepen.io/rcyou/pen/QEObEk/">https://codepen.io/rcyou/pen/QEObEk/</a></li>
-<li>inspecting <a href="">tilburguniversity.edu</a></li>
+<li>inspecting <a href="https://tilburguniversity.edu">tilburguniversity.edu</a></li>
 </ul></li>
 </ul>
 
@@ -928,7 +944,7 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 <h3>DO: Exploring music-to-scrape</h3>
 <div class="slideContent" >
 <ul>
-<li>Open <a href="">music-to-scrape.org</a> (fallback option: <a href="">books.toscrape.com</a>)</li>
+<li>Open <a href="">music-to-scrape.org</a> </li>
 <li>Familiarize yourself with the structure of the site</li>
 <li>Check which data you encounter</li>
 <li>Suppose the data was stored in a database, how would you structure it?</li>
@@ -976,28 +992,10 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>DO: Identifying information on books.toscrape.com (fall-back option)</h3>
-<div class="slideContent" >
-<ul>
-<li>Open <a href="https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html">https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html</a></li>
-<li>How would you identify the following information?
-
-<ul>
-<li>book title</li>
-<li>price</li>
-<li>in-stock availability, and </li>
-<li>number of stars?</li>
-</ul></li>
-</ul>
-
-</div>
-
-</section>
-<section data-transition="linear" data-transition-speed="default">
 <h3>CSS selectors and XPATHS (I)</h3>
 <div class="slideContent" >
 <ul>
-<li>When following some extra tutorials, some coders advocate for the use of <strong>CSS selectors and XPATHS</strong> to extract information.
+<li>When following tutorials on the web, some coders advocate for the use of <strong>CSS selectors and XPATHS</strong> to extract information.
 <br></li>
 <li>XPATH
 
@@ -1019,7 +1017,7 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 
 <ul>
 <li>Example for extracting &ldquo;artist name&rdquo;: <code>.artist_info_title</code></li>
-<li>Works here, but can be &ldquo;highly&rdquo; dependent: say, tag &amp; class name + position &ndash; can also break
+<li>Works here, but can be &ldquo;highly&rdquo; dependent: say, tag &amp; class name + position (sometimes too detailed) &amp; can also break
 <br></li>
 </ul></li>
 <li>So, here, we are sticking mostly to <em>classes</em>, <em>attributes</em>, and <em>attribute-value pairs</em>.</li>
@@ -1029,9 +1027,41 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
+<h3>Preview: Technical web scraping setup (I)</h3>
+<div class="slideContent" >
+<ul>
+<li>We will use three libraries:
+
+<ul>
+<li><code>requests</code>: downloads data from the web or transmits data (&ldquo;headless&rdquo;)</li>
+<li><code>BeautifulSoup</code>: structures HTML data so we can query it</li>
+<li><code>selenium</code> + <code>chromedriver</code>: simulates a browser (chrome), can scroll, click, view the site, but can also be headless; also structures HTML so we can query it</li>
+<li><code>json</code>: structure and query JSON data</li>
+</ul></li>
+</ul>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Preview: Technical web scraping setup (II)</h3>
+<div class="slideContent" >
+<ul>
+<li>For basic, &ldquo;static&rdquo; websites, we use <code>requests</code> + <code>beautifulSoup</code> (speed + ease!)</li>
+<li>For dynamic websites, we use selenium (advanced tutorial), OR: <code>selenium</code> (retrieve data) + <code>beautifulSoup</code> (structure/query)</li>
+<li>For APIs, we exclusively use <code>requests</code></li>
+<li>For data storage, we use <code>json</code> (preferred) or CSV files (flat files with rows &amp; columns)</li>
+</ul>
+
+<p><strong>- Today: <code>requests</code> + <code>BeautifulSoup</code></strong></p>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
 <h3>Getting the website into Python</h3>
 <div class="slideContent small-code" >
-<pre><code class="python">import requests
+<pre><code class="python">import requests # let&#39;s load the requests library
 
 # make a get request to the website
 url = &#39;https://music-to-scrape.org/artist?artist-id=ARICCN811C8A41750F&#39;
@@ -1055,11 +1085,15 @@ web_request_source_code = web_request.text
 
 <pre><code class="python">import requests
 from bs4 import BeautifulSoup
+
 url = &#39;https://music-to-scrape.org/artist?artist-id=ARICCN811C8A41750F&#39;
+
 header = {&#39;User-agent&#39;: &#39;Mozilla/5.0&#39;} 
+
 web_request = requests.get(url, headers = header)
 
 soup = BeautifulSoup(web_request.text)
+
 print(soup.find(&#39;h2&#39;).get_text())
 </code></pre>
 
@@ -1084,7 +1118,7 @@ print(soup.find(&#39;h2&#39;).get_text())
 Location:
 United States
 Number of plays:
-9
+36
 </code></pre>
 
 </div>
@@ -1121,8 +1155,11 @@ Number of plays:
 <h3>DO: BeautifulSoup exercises (solution)</h3>
 <div class="slideContent" >
 <pre><code class="python">location = soup.find(class_ = &#39;about_artist&#39;).find_all(&#39;p&#39;)[0].get_text()
+
 plays = soup.find(class_ = &#39;about_artist&#39;).find_all(&#39;p&#39;)[1].get_text()
+
 song_table = soup.find(class_ = &#39;top-songs&#39;)
+
 number_of_songs = len(song_table.find_all(&#39;tr&#39;))-1
 </code></pre>
 
@@ -1159,14 +1196,16 @@ from bs4 import BeautifulSoup
 
 def download_data(url):
   header = {&#39;User-agent&#39;: &#39;Mozilla/5.0&#39;} 
+
   web_request = requests.get(url, headers = header)
+
   soup = BeautifulSoup(web_request.text)
 
   artist_name = soup.find(&#39;h2&#39;).get_text()
 
   print(f&#39;Artist name: {artist_name}.&#39;)
 
-
+# execute the function
 download_data(&#39;https://music-to-scrape.org/artist?artist-id=ARICCN811C8A41750F&#39;)
 </code></pre>
 
@@ -1203,6 +1242,7 @@ download_data(&#39;https://music-to-scrape.org/artist?artist-id=ARICCN811C8A4175
 
 def download_data(url):
   header = {&#39;User-agent&#39;: &#39;Mozilla/5.0&#39;} 
+
   web_request = requests.get(url, headers = header)
   soup = BeautifulSoup(web_request.text)
 
@@ -1216,16 +1256,16 @@ for id in artist_ids:
   download_data(f&#39;https://music-to-scrape.org/artist?artist-id={id}&#39;)
 </code></pre>
 
-<pre><code>Artist name: Ya Boy from United States with 9 song plays.
-Artist name: Prince With 94 East from Minneapolis MN with 7 song plays.
-Artist name: Cabas from  with 98 song plays.
+<pre><code>Artist name: Ya Boy from United States with 36 song plays.
+Artist name: Prince With 94 East from Minneapolis MN with 42 song plays.
+Artist name: Cabas from  with 352 song plays.
 </code></pre>
 
 </div>
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Wrapping results into JSON data</h3>
+<h3>Storing results into JSON data</h3>
 <div class="slideContent" >
 <ul>
 <li>JSON is most flexible format, supports &ldquo;hierarchical data&rdquo;</li>
@@ -1242,7 +1282,7 @@ Artist name: Cabas from  with 98 song plays.
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Wrapping results into JSON data</h3>
+<h3>Storing results into JSON data</h3>
 <div class="slideContent" >
 <p>Change the code so it stores artist name, location and plays in the JSON object.</p>
 
@@ -1342,7 +1382,7 @@ f.close()
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Wrapping of web scraping</h3>
+<h3>Wrapping up web scraping</h3>
 <div class="slideContent" >
 <ul>
 <li>Get content from a <strong>website</strong></li>
@@ -1403,20 +1443,22 @@ f.close()
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Let&#x27;s retrieve some artist meta data</h3>
+<h3>DO: Let&#x27;s retrieve some artist meta data</h3>
 <div class="slideContent" >
-<ul>
-<li>Endpoint: <a href="https://api.music-to-scrape.org/artist/info">https://api.music-to-scrape.org/artist/info</a></li>
-<li>Requires parameter: artistid</li>
-<li>Combined call: <a href="https://api.music-to-scrape.org/artist/info?artistid=%60%7BENTER">https://api.music-to-scrape.org/artist/info?artistid={ENTER</a> ARTIST ID HERE}</li>
-</ul>
+<p><strong>Get some artist meta data for an artist of your choice!</strong></p>
 
-<p>DO:</p>
+<p>1.) Find an artist IDs on the site or in previous code
+2.) Try to make a web request (in your browser) to the following URL:</p>
 
 <ul>
-<li>Get some data for an artist of your choice - you find the artist IDs on the site or in previous code</li>
-<li>Wrap code in a function so you can retrieve data for multiple artists</li>
+<li>Endpoint: <code>https://api.music-to-scrape.org/artist/info</code></li>
+<li>Requires parameter: <code>artistid</code></li>
+<li>Combined URL: <code>https://api.music-to-scrape.org/artist/info?artistid={ENTER ARTIST ID HERE}</code></li>
 </ul>
+
+<p>3.) Does it work? Then write Python code to retrieve the data.</p>
+
+<p>4.) Finally, wrap your code in a function so you can later retrieve data for multiple artists.</p>
 
 </div>
 
@@ -1453,20 +1495,6 @@ f.close()
 <li>use automatic schedulers for consistency</li>
 </ul></li>
 </ul>
-
-</div>
-
-</section>
-<section data-transition="linear" data-transition-speed="default">
-<h3>Exercises with music-to-scrape</h3>
-<div class="slideContent" >
-<p><strong>Please work on exercise 2.4.</strong></p>
-
-<ol>
-<li>collect (longer) list of featured artists</li>
-<li>for each of these featured artists, collect meta data</li>
-<li>store data in new-line separated JSON file</li>
-</ol>
 
 </div>
 
@@ -1511,25 +1539,30 @@ f.close()
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
+<h3>Optional (if time left): exercises with music-to-scrape</h3>
+<div class="slideContent" >
+<p><strong>Please work on exercise 2.4 (see tutorial).</strong></p>
+
+<ol>
+<li>collect (longer) list of featured artists</li>
+<li>for each of these featured artists, collect meta data</li>
+<li>store data in new-line separated JSON file</li>
+</ol>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
 <h3>Next steps in this class</h3>
 <div class="slideContent" >
 <ul>
-<li>Work on team activity #1
+<li>Work on your team project (see workplan on the course website) + make team allocation definite</li>
+<li>Complete this tutorial at home</li>
+<li>Get engaged - see the &ldquo;bigger&rdquo; picture of web scraping and APIs
 
 <ul>
-<li>coaching session following today&#39;s tutorial</li>
-<li>make team allocation definite (see Canvas!)</li>
-</ul></li>
-<li>If you haven&#39;t done so&hellip;
-
-<ul>
-<li>go through the self-study material of this week</li>
-</ul></li>
-<li>Get engaged!
-
-<ul>
-<li>discuss ideas, post solutions, identify business opportunities, etc.</li>
-<li>try fiddling with an AI API or use ChatGPT for starting code</li>
+<li>discuss ideas &amp; business opportunities (e.g., OpenAI&#39;s developer platform?)</li>
+<li>use our course chatbot at odcm.tilburgai.nl</li>
 <li>be in touch on WhatsApp for any issues/bugs/etc.</li>
 </ul></li>
 </ul>

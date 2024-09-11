@@ -39,15 +39,15 @@ Before we start
   - explore broadly! ("universe discovery!") --> check challenge #1.1
   - compare sources thoroughly --> e.g., comparison table + challenge #1.2
   - use overview tables for comparison, illustrations
-- Previous today's coaching session: __decide__ which website or API to use (challenges #1.1-#1.3)
-- Any questions so far?
+- Today's coaching session: __decide__ which website or API to use (challenges #1.1-#1.3)
+
 
 A note on my (live) tutorials (I)
 ===============
 
 - Core material is the (Jupyter Notebook) tutorial of the week
 - It's *written* and illustrated with screenshots -- it gives you all of the necessary information and you can do it at your own time after class.
-- IN CLASS, my ambition is to *preview selected* issues 
+- IN CLASS, my ambition is to preview selected issues 
 - Recordings of these sessions posted on Canvas
 
 
@@ -80,7 +80,7 @@ Recap from last week's tutorial
   - e.g., explore a website, navigate broadly to find information that's interesting, etc.
 - We focused on __how to extract__ that information
   - BeautifulSoup: `.find()` and `.find_all()` functions
-  - Use (a combination of) tags, classes, attributes, attribute-value pairs
+  - Use (a combination of) tags or attributes (e.g., classes; particularly attribute-value pairs)
 
 DO: Recap from last week's tutorial
 ==========
@@ -114,7 +114,6 @@ __Recommendations:__
 - Practice even more, e.g., with __new information__ that you haven't extracted before from this and other sections of the website.
 - Always build code __gradually__, __never__ from scratch
 
-
 DO: After-class exercise from last week
 ==========
 class: small-code
@@ -134,17 +133,8 @@ __Remaining challenges for the "design" phase of collecting data.__
   - list of recently active users (music-to-scrape.org)
   - homepage of Twitch (for current live streams)
 <br>
- 
-DO: Starting up a data collection for your own project
-============
 
-__Using your own project ideas__, tell us how you could __sample__ from the site?
-
-<br>
-<br>
-
-Tips:
-- Make use of the best practices for Challenge #2.2 in [Table 3](https://journals.sagepub.com/doi/full/10.1177/00222429221100750?journalCode=jmxa#table3-00222429221100750)
+__Using your own project ideas__, tell us how you could __sample__ from the site? (--> see [table 3 in "Fields of Gold"](https://journals.sagepub.com/doi/full/10.1177/00222429221100750?journalCode=jmxa#table3-00222429221100750))
 
 
 Sampling users
@@ -230,7 +220,7 @@ Modifying the links
 class: small-code
 
 - Notice that the links were *relative* links and we won't be able to use them for looping (e.g., try pasting them in your browser - they won't work!)
-- So, let's turn them into absolute links, simply by concatenating (= combining) strings.
+- So, let's turn them into *absolute* links, simply by concatenating (= combining) strings.
 
 ```{python, eval=TRUE}
 urls = []
@@ -340,7 +330,7 @@ DO: Preventing array misalignment
 ====
 class: small-code
 
-Which solutions do you see -- by iterating differently through the source code -- to prevent array misalignment?
+How can you capture the song data, such that we can always link the particular song to particular users? (i.e., to prevent array misalignment)?
 
 Tip: Observe how we can first iterate through users, THEN extract links (similar to how we have done it with `relevant_section`).
 
@@ -407,7 +397,7 @@ while counter >= 0:
 urls
 ```
 
-DO: Navigating on a Website (strategy 2)
+DO: Navigating on a website (strategy 2)
 =========
 class: small-code
 
@@ -611,11 +601,3 @@ Today's "klaaropdracht" (when you're totally advanced already)
 Use the code snippets provided on Selenium and BeautifulSoup to collect a list of at least 1,000 products from any of the product pages from Bol.com.
 
 
-Coaching session
-=====
-
-- Decide which website or API to use (challenges #1.1-#1.3)
-- Instructions, see: https://odcm.hannesdatta.com/docs/project/workplan/activity2/
-
-<br>
-- Please actively solicit my feedback!

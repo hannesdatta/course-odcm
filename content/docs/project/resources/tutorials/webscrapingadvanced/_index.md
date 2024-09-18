@@ -15,4 +15,7 @@ draft: false
 
 ## Getting started
 
-- Start with this optional tutorial (<a href = 'webscraping-advanced.ipynb' download>download</a>, [Google Colab](https://colab.research.google.com/github/hannesdatta/course-odcm/blob/master/content/docs/project/resources/tutorials/webscrapingadvanced/webscraping-advanced.ipynb))
+- Start with this optional tutorial (<a href = 'webscraping-advanced.ipynb' download>download</a>)
+
+
+*Note: The advanced tutorial is not compatible with Google Colab. Please use Jupyter Notebook or VS Code on your local machine.*

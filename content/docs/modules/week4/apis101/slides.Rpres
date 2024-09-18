@@ -26,40 +26,33 @@ Welcome to oDCM!
 We're about to start with __today's tutorial ("API 101")__.
 
 - If you haven't done so, open slides at https://odcm.hannesdatta.com/docs/modules/week4/ (I have just updated them)
-- Today's (live) code is available at [https://tiu.nu/livecoding](https://tiu.nu/livecoding) (refresh may be needed)
+- Today's (live) code is available at [https://tiu.nu/livecoding](https://tiu.nu/livecoding) (refresh is needed when I update my code)
 - You can work in __Google Colab__ throughout this class
 
 
-Before we start
+Before we start (I)
 ========================================================
 
-- Exam dates fixed
-  - Tuesday, 2 April (main sit)
-  - Thursday, 27 June (resit)
-- Tech development & extra material
-  - Note there are "advanced" tutorials for extra code snippets (e.g., Selenium)
-- Team projects
-  - enthusiastic about many of your ideas
-  - feedback on Canvas
-  - continue building your prototypes today!
+- Coaching sessions
+  - we start paying attention to 'equal' attention/time; but: help us, this is also your responsibility
+  - it is normal to face complicated'issues that cannot be solved on the spot (not even by myself). Address these issues to us in writing (email: Roshini; WhatsApp: Hannes).
+- Team presentations
+  - during next week's class; both Roshini and I will be present
+
+Before we start (II)
+======================
+
+- Selenium vs. BeautifulSoup
+  - updated material on 'webscraping advanced' (with Selenium); it became easier and more targeted to follow.
+- Extra Q&A session upon your request for oDCM & dPrep
+  - Monday, 23 September, 10.45-12.30 (CubeZ 219).
+- Today's topic: APIs
 <br>
 - Any issues at this stage?
 
 <!--
 - API authentication will be pain point - highly idiosyncratic!
 -->
-
-Agenda
-=======
-
-- In-class: https://api.music-to-scrape.org/docs
-- Coaching session (challenges #2.1-#2.4)
-  - which information to retrieve?
-  - for which seeds?
-  - at what frequency?
-  - how to process the data during the collection
-- After class
-  - complete tutorial on your own; work on team projects
 
 What are APIs?
 ============
@@ -79,7 +72,7 @@ Technical differences between APIs and web scraping
 <br>
 - API
   - good if you have permission (but, be realistic about getting access!)
-  - *structured* JSON data
+  - you obtain *structured* JSON data
 
 Discovering an API documentation
 =========
@@ -320,19 +313,7 @@ Reflection
 - wow - no "structuring" of HTML "soup" (THAT's the key difference compared to web scraping)
 - Spend time trying to get your first data from an API -- authentication __will__ be an issue!
 - Time left? Let's consider some [legal issues](https://htmlpreview.github.io/?https://github.com/hannesdatta/legal-situation-of-web-scraping/blob/main/legal-status-of-web-scraping.html#/title-slide)
-- After this class: coaching session (focus on [activity #3](https://odcm.hannesdatta.com/docs/project/workplan/activity3/))
+- After this class: coaching session (check your workplan)
 - Next week
   - __presentations__ about your projects
   - afterwards: coaching (get your prototype up and running!)
-
-Coaching session
-=========
-
-- Coaching session (challenges #2.1-#2.4)
-  - which information to retrieve?
-  - for which seeds?
-  - at what frequency?
-  - how to process the data during the collection
-- Work on your prototypes
-  - Selenium vs. `requests`?
-  - Getting authenticated with the API?

@@ -207,5 +207,5 @@ In a recent implementation, our real-time scraper is deployed in the cloud, and 
 
 {{< /hint >}}
 
-{{< button relref="/researchfit.md" >}}Previous{{< /button >}}
-{{< button relref="/legalfit.md" >}}Next{{< /button >}}
+{{< button relref="./researchfit.md" >}}Previous{{< /button >}}
+{{< button relref="./legalfit.md" >}}Next{{< /button >}}

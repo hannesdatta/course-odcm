@@ -172,5 +172,5 @@ If you deem the data collection infeasible, you have several opportunities to lo
 
 {{< /hint>}}
 
-{{< button relref="/dataassessment.md" >}}Previous{{< /button >}}
-{{< button relref="/extraction-plan-prototyping.md" >}}Next{{< /button >}}
+{{< button relref="./dataassessment.md" >}}Previous{{< /button >}}
+{{< button relref="./extraction-plan-prototyping.md" >}}Next{{< /button >}}

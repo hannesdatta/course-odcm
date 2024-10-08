@@ -53,8 +53,8 @@ __[Web scraping ideas for businesses](https://www.youtube.com/watch?v=qljvs_ttgl
 Whatever the reason is for you to get started with scraping, we advise you to make a list of potential websites and APIs that may be relevant. In the next step of this tutorial, you will learn how to characterize the type of data that's available via a website or API. That's a crucial ingredient to judging whether the data will match your research purpose, and whether you should go ahead scraping it.
 
 
-{{< button relref="/overview.md" >}}Previous{{< /button >}}
-{{< button relref="/dataassessment.md" >}}Next{{< /button >}}
+{{< button relref="./overview.md" >}}Previous{{< /button >}}
+{{< button relref="./dataassessment.md" >}}Next{{< /button >}}
 
 
 <!--

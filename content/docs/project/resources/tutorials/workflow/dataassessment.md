@@ -136,5 +136,5 @@ When working with an API, carefully compare the output of the API with what is s
 
 {{< /hint >}}
 
-{{< button relref="/opportunities.md" >}}Previous{{< /button >}}
-{{< button relref="/researchfit.md" >}}Next{{< /button >}}
+{{< button relref="./opportunities.md" >}}Previous{{< /button >}}
+{{< button relref="./researchfit.md" >}}Next{{< /button >}}

@@ -19,8 +19,8 @@ It's now time to move your data collection into production. Keep in mind that, e
 
 We recommend you subscribe to the website's or API's social media and news feeds (e.g., Twitter, Google News), and monitor its blog for important announcements on feature changes or service failures, all of which can impact the validity of your data collection.
 
-{{< button relref="/collection.md" >}}Previous{{< /button >}}
-{{< button relref="/preprocessing.md" >}}Next{{< /button >}}
+{{< button relref="./collection.md" >}}Previous{{< /button >}}
+{{< button relref="./preprocessing.md" >}}Next{{< /button >}}
 
 
 <!--

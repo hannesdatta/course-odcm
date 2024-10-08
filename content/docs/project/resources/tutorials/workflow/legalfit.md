@@ -42,8 +42,8 @@ Watch this video which explains the conditions under which web scraping for busi
 
 {{< /hint >}}
 
-{{< button relref="/researchfit.md" >}}Previous{{< /button >}}
-{{< button relref="/collection.md" >}}Next{{< /button >}}
+{{< button relref="./researchfit.md" >}}Previous{{< /button >}}
+{{< button relref="./collection.md" >}}Next{{< /button >}}
 
 <!-- Conditions: - publicly available data, users have made data public, no account required for access, not blocked by robots.txt. Also good references to hiQ labs and craiglist cases. Conclusion: web scraping publicly available information (for business purpose) isn't a crime.
   sheds light on the legality of web scraping for the

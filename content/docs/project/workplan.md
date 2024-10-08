@@ -76,7 +76,7 @@ __Please adhere to the following presentation structure__
 
 Throughout, provide details on how your extraction design balances technical feasibility and exposure to potential legal and ethical risks (cf. Table 3 in "Fields of Gold").
 
-Please upload the presentation (as a PDF) and Excel sheet (as an Excel file) in one zip file, at the latest a day before the __presentation sessions__ (see schedule).
+Please upload the presentation (as a PDF) and Excel sheet (as an Excel file) with the sample size calculations in one zip file, at the latest a day before the __presentation sessions__ (see schedule).
 
 {{< /hint >}}
 

@@ -77,7 +77,7 @@ __Typical issues to discuss in a coaching session__
 
 ### Deadline and submission
 - Deadline: {{< param "Course_Deadline_Project" >}}
-- Submission of your [data package](grading) via Cavas in one zip file.
+- Submission of your [data package](grading) via Canvas in one zip file.
 
 
 <!--

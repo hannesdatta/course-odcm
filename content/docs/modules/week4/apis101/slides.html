@@ -809,7 +809,7 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 
 <ul>
 <li>If you haven&#39;t done so, open slides at <a href="https://odcm.hannesdatta.com/docs/modules/week4/">https://odcm.hannesdatta.com/docs/modules/week4/</a> (I have just updated them)</li>
-<li>Today&#39;s (live) code is available at <a href="https://tiu.nu/livecoding">https://tiu.nu/livecoding</a> (refresh may be needed)</li>
+<li>Today&#39;s (live) code is available at <a href="https://tiu.nu/livecoding">https://tiu.nu/livecoding</a> (refresh is needed when I update my code)</li>
 <li>You can work in <strong>Google Colab</strong> throughout this class</li>
 </ul>
 
@@ -817,57 +817,44 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Before we start</h3>
+<h3>Before we start (I)</h3>
 <div class="slideContent" >
 <ul>
-<li>Exam dates fixed
+<li>Coaching sessions
 
 <ul>
-<li>Tuesday, 2 April (main sit)</li>
-<li>Thursday, 27 June (resit)</li>
-</ul></li>
-<li>Tech development &amp; extra material
-
-<ul>
-<li>Note there are &ldquo;advanced&rdquo; tutorials for extra code snippets (e.g., Selenium)</li>
+<li>we start paying attention to &#39;equal&#39; attention/time; but: help us, <strong>this is also your responsibility</strong></li>
+<li>it is normal to face complicated&#39;issues that <strong>cannot be solved on the spot</strong> (not even by myself). Address these issues to us <strong>in writing, please</strong> (email: Roshini; WhatsApp: Hannes).</li>
 </ul></li>
 <li>Team projects
 
 <ul>
-<li>enthusiastic about many of your ideas</li>
-<li>feedback on Canvas</li>
-<li>continue building your prototypes today!
-<br></li>
+<li>updated material on &#39;webscraping advanced&#39; (with Selenium); it became easier and more targeted to follow</li>
+<li>presentations during next week&#39;s class; both Roshini and I will be present</li>
 </ul></li>
-<li>Any issues at this stage?</li>
 </ul>
-
-<!--
-- API authentication will be pain point - highly idiosyncratic!
--->
 
 </div>
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Agenda</h3>
+<h3>Before we start (II)</h3>
 <div class="slideContent" >
 <ul>
-<li>In-class: <a href="https://api.music-to-scrape.org/docs">https://api.music-to-scrape.org/docs</a></li>
-<li>Coaching session (challenges #2.1-#2.4)
+<li>Extra Q&amp;A session upon your request for oDCM &amp; dPrep
 
 <ul>
-<li>which information to retrieve?</li>
-<li>for which seeds?</li>
-<li>at what frequency?</li>
-<li>how to process the data during the collection</li>
+<li>Monday, 23 September, 10.45-12.30 (CubeZ 219).</li>
 </ul></li>
-<li>After class
-
-<ul>
-<li>complete tutorial on your own; work on team projects</li>
-</ul></li>
+<li>Next week: tutorials take place in computer labs (GZ 106, see schedule)
+<br>
+<br></li>
+<li>Any questions at this stage?</li>
 </ul>
+
+<!--
+- API authentication will be pain point - highly idiosyncratic!
+-->
 
 </div>
 
@@ -904,7 +891,7 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 
 <ul>
 <li>good if you have permission (but, be realistic about getting access!)</li>
-<li><em>structured</em> JSON data</li>
+<li>you obtain <em>structured</em> JSON data</li>
 </ul></li>
 </ul>
 
@@ -921,7 +908,7 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 <li>recall: need platform&#39;s permission (but this API doesn&#39;t require authentication)</li>
 </ul></li>
 <li>Find an endpoint (aka page when scraping)</li>
-<li>Let&#39;s explore the documentation of&hellip; <a href="https://platform.openai.com/docs/introduction">OpenAI</a>!
+<li>Let&#39;s explore the documentation of&hellip; <a href="https://platform.openai.com/docs/overview">OpenAI</a>!
 
 <ul>
 <li>which endpoints are available?</li>
@@ -972,7 +959,7 @@ print(request)
 
 <ul>
 <li>use <a href="http://jsonviewer.stack.hu">JSONviewer.stack.hu</a> to make sense of it</li>
-<li>alternatively, write to <code>.json</code> file and view in VS Code</li>
+<li>alternatively, write to <code>.json</code> file and view in VS Code (install JSON plugin first)</li>
 <li>many other possibilities exist (e.g., in-browser) - check what you like best!</li>
 </ul></li>
 </ul>
@@ -990,13 +977,13 @@ f.close()
 </section>
 <section data-transition="linear" data-transition-speed="default">
 <h3>Getting data from a JSON dictionary</h3>
-<div class="slideContent small-code" >
+<div class="slideContent" >
 <ul>
 <li>Let&#39;s try to only extract a list of user names, rather than the entire dictionary.</li>
 <li>For this, we need to know how to access nodes of a dictionary.
 
 <ul>
-<li><code>[&#39;name_of_attribute&#39;]</code></li>
+<li><code>[&#39;name_of_attribute&#39;]</code> or</li>
 <li><code>.get(&#39;name_of_attribute&#39;)</code></li>
 </ul></li>
 <li>Do: Let&#39;s try it out</li>
@@ -1027,6 +1014,22 @@ request.get(&#39;limit&#39;)
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
+<h3>Solution</h3>
+<div class="slideContent" >
+<pre><code class="python">#Q1: 
+request[&#39;data&#39;]
+
+#Q2:
+user_names = [] # initialize empty array
+for user in request[&#39;data&#39;]: # start loop
+  user_names.append(user[&#39;username&#39;]) # append user name to the list of user_names (initialized above)
+user_names # inspect the result
+</code></pre>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
 <h3>Do: Anonymizing data</h3>
 <div class="slideContent" >
 <p>Suppose we do not want to extract the ages and country names for the users&hellip;</p>
@@ -1037,8 +1040,24 @@ request.get(&#39;limit&#39;)
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
+<h3>Solution: </h3>
+<div class="slideContent" >
+<pre><code class="python">new_dic = []
+
+for user in request[&#39;data&#39;]:
+  obj = user
+  obj[&#39;username&#39;]=&#39;NA&#39;
+  obj[&#39;age&#39;]=&#39;NA&#39;
+  new_dic.append(obj)
+new_dic
+</code></pre>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
 <h3>Difference between `.append()` and `.extend()`</h3>
-<div class="slideContent small-code" >
+<div class="slideContent" >
 <ul>
 <li><code>.append()</code> adds <em>one</em> item at a time to an existing list</li>
 </ul>
@@ -1066,24 +1085,24 @@ users
 <h3>Understanding parameters in API calls</h3>
 <div class="slideContent" >
 <ul>
-<li>APIs are useful because you can <em>modify</em> its search results
+<li class="fragment">APIs are useful because you can <em>modify</em> its search results
 
 <ul>
-<li>say, you want to see the next batch of users (when listing users), or </li>
-<li>search for a particular thing (when searching via the API)</li>
+<li class="fragment">say, you want to see the next batch of users (when listing users), or </li>
+<li class="fragment">search for a particular thing (when searching via the API)</li>
 </ul></li>
-<li>Many ways to &ldquo;submit&rdquo; parameters to an API
+<li class="fragment">Many ways to &ldquo;submit&rdquo; parameters to an API
 
 <ul>
-<li>directly in URL, e.g., <code>myapi.com/search/cats_and_dogs</code> [not the case for music to scrape]</li>
-<li>w/ parameters in URL, e.g., <code>myapi.com/search/?query=cats_and_dogs</code> </li>
-<li>in <strong>header</strong> of request (think of it like the address [=header] on an envelop [=data])</li>
+<li class="fragment">directly in URL, e.g., <code>myapi.com/search/cats_and_dogs</code> [not the case for music to scrape]</li>
+<li class="fragment">w/ parameters in URL, e.g., <code>myapi.com/search/?query=cats_and_dogs</code> </li>
+<li class="fragment">in <strong>header</strong> of request (think of it like the address [=header] on an envelop [=data])</li>
 </ul></li>
 </ul>
 
 <p><br><br></p>
 
-<p><strong>The API documentation will tell you what is required!</strong></p>
+<p class="fragment"><strong>The API documentation will tell you what is required!</strong></p>
 
 </div>
 
@@ -1109,10 +1128,8 @@ print(request)
 </section>
 <section data-transition="linear" data-transition-speed="default">
 <h3>Do: Iterating through API endpoints</h3>
-<div class="slideContent small-code" >
-<ul>
-<li>Remember iterating through pages on a website to &ldquo;view&rdquo; data? APIs know the same concept!</li>
-</ul>
+<div class="slideContent" >
+<p><strong>Remember iterating through pages on a website to &ldquo;view&rdquo; data? APIs know the same concept!</strong></p>
 
 <ol>
 <li>Try to add the <code>offset</code> parameter to the snippet below. What happens when you set it to <code>1</code>? What happens when you set it to <code>5</code>?</li>
@@ -1131,11 +1148,41 @@ print(request)
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
+<h3>Solution:</h3>
+<div class="slideContent" >
+<pre><code class="python"># q1: setting the offset parameter
+import requests
+requests.get(&quot;https://api.music-to-scrape.org/users?limit=10&quot;).json()
+requests.get(&quot;https://api.music-to-scrape.org/users?limit=10&amp;offset=1&quot;).json()
+requests.get(&quot;https://api.music-to-scrape.org/users?limit=10&amp;offset=5&quot;).json()
+
+# q2: 
+requests.get(&quot;https://api.music-to-scrape.org/users?limit=10&amp;offset=10&quot;).json()
+</code></pre>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
 <h3>Do: Let&#x27;s wrap your code in a function</h3>
 <div class="slideContent" >
 <ol>
 <li>Construct a function, called <code>get_users()</code>, with parameters <code>limit</code> and <code>offset</code>, returning the dictionary of users from the API endpoint <code>/users</code>.</li>
 </ol>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Solution:</h3>
+<div class="slideContent" >
+<pre><code class="python">import requests
+  def get_users(limit, offset):
+    obj = requests.get(f&quot;https://api.music-to-scrape.org/users?limit={limit}&amp;offset={offset}&quot;).json()
+    return(obj[&#39;data&#39;])
+
+get_users(10,1)
+</code></pre>
 
 </div>
 
@@ -1153,6 +1200,18 @@ print(request)
 </code></pre>
 
 <p><strong>Do:</strong> Modify the snippet below so that it calls <code>get_users()</code> 10 times, incrementing the offset by 10 at each iteration.</p>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Solution:</h3>
+<div class="slideContent" >
+<pre><code class="python">offset=0
+for x in range(10):
+  print(get_users(limit=10, offset=offset))
+  offset=offset+10
+</code></pre>
 
 </div>
 
@@ -1181,7 +1240,7 @@ while cntr &lt; 6:
 <section data-transition="linear" data-transition-speed="default">
 <h3>Tying everything together</h3>
 <div class="slideContent" >
-<p>We can now combine our learnings to build a function that extracts all user names to new-line separated JSON files.</p>
+<p>We can now combine our learnings to build a function that extracts 100 user names and meta data to new-line separated JSON files.</p>
 
 <ul>
 <li>Implement it step-by-step</li>
@@ -1196,6 +1255,16 @@ while cntr &lt; 6:
 <h3>Solution: </h3>
 <div class="slideContent small-code" >
 <pre><code class="python"># will develop in class
+import requests
+import json
+
+cntr = 0
+f=open(&#39;output.json&#39;, &#39;w&#39;)
+while cntr &lt;= 50:
+  f.write(json.dumps(get_users(limit=10, offset=cntr)))
+  f.write(&#39;\n&#39;)
+  cntr = cntr+10
+f.close()
 </code></pre>
 
 </div>
@@ -1235,35 +1304,12 @@ while cntr &lt; 6:
 <li>wow - no &ldquo;structuring&rdquo; of HTML &ldquo;soup&rdquo; (THAT&#39;s the key difference compared to web scraping)</li>
 <li>Spend time trying to get your first data from an API &ndash; authentication <strong>will</strong> be an issue!</li>
 <li>Time left? Let&#39;s consider some <a href="https://htmlpreview.github.io/?https://github.com/hannesdatta/legal-situation-of-web-scraping/blob/main/legal-status-of-web-scraping.html#/title-slide">legal issues</a></li>
-<li>After this class: coaching session (focus on <a href="https://odcm.hannesdatta.com/docs/project/workplan/activity3/">activity #3</a>)</li>
+<li>After this class: coaching session (check your workplan)</li>
 <li>Next week
 
 <ul>
 <li><strong>presentations</strong> about your projects</li>
 <li>afterwards: coaching (get your prototype up and running!)</li>
-</ul></li>
-</ul>
-
-</div>
-
-</section>
-<section data-transition="linear" data-transition-speed="default">
-<h3>Coaching session</h3>
-<div class="slideContent" >
-<ul>
-<li>Coaching session (challenges #2.1-#2.4)
-
-<ul>
-<li>which information to retrieve?</li>
-<li>for which seeds?</li>
-<li>at what frequency?</li>
-<li>how to process the data during the collection</li>
-</ul></li>
-<li>Work on your prototypes
-
-<ul>
-<li>Selenium vs. <code>requests</code>?</li>
-<li>Getting authenticated with the API?</li>
 </ul></li>
 </ul>
 

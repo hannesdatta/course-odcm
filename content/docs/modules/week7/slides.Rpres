@@ -48,8 +48,8 @@ incremental: true
 
 - Research is by far more impactful than non-webdata-based research
   - Explore novel phenomena, be timely!
-  - Boost ecological value, get closer to what managers are interested in!
-  - Facilitate methodological advancement (e.g., text, video)
+  - Boost ecological value, get closer to what managers use and are interested in!
+  - Facilitate methodological advancement (e.g., text, images, video)
   - Better measurement (e.g., control variables)
 - But: challenging!
   - Programming skills to master technical challenges
@@ -107,7 +107,7 @@ incremental: true
 
 - Prototyping is extremely important
   - `requests` + `beautifulSoup` vs. `selenium` (Chromedriver)
-  - extraction methodology (e.g., tags, classes, attribute-values) + stability
+  - extraction methodology (e.g., tags, classes or other attributes, capturing `.get_text()` vs. the values of attributes) + stability
   - array misalignment (obey the hierarchy of stuff/how it is structured!!!)
   - scheduling, hiding passwords
   - revise navigation paths
@@ -130,8 +130,8 @@ Looking ahead: Recognizing Limitations
 ========================================================
 incremental: true
 
-- Web data entails modeling challenges - not covered in this course (e.g., self-selection, "messy" data)
-- Web data can't give you all (i.e., you don't see internal data such as clickstream data) 
+- Web data entails modeling challenges - not covered in this course (e.g., self-selection, endogeneity, "messy" data)
+- Web data can't give you all (i.e., it *looks* l ike internal clickstream data, but it is not) 
 - Legal and ethical issues not fully explored
 
 Potential Applications
@@ -176,13 +176,12 @@ incremental: true
 Next steps: Projects & SPA
 ========================================================
 
-- Please hand in so I can __make the data package public__! 
+- Please hand in so we can __make the data package public__! 
   - Take out any passwords (store as environment variables instead)
   - Remove any unnecessary files
-  - Want to keep your names on the documentation or anonymize them? 
+  - Want to keep your names on the documentation or anonymize them? Choose.
   - Don't make statements that are too bold!
-  - Consider uploading datasets & documentation yourselves [to Zenodo](https://tilburgsciencehub.com/get/doi/?utm_campaign=referral-short); counted towards "quality" of data package (10% of assignment grade) 
-
+ 
 - Re-read the [grading rubric on the course site](https://odcm.hannesdatta.com/docs/course/project/grading/)!
 
 - You will receive __invite to self- and peer assessment__ via email
@@ -191,31 +190,31 @@ Exam
 =============
 
 - Organization
-  - When: 2 April (time tba)
+  - When: 16 October (time? check Osiris/registration)
   - Work max. 3 hours on exam
 - How?
   - access to TestVision
   - access to Jupyter Notebook
-  - I make selected resources [available on the instruction page](https://github.com/hannesdatta/course-odcm/raw/master/content/docs/exam/exam-material.zip)
+  - I make selected resources [available on the instruction page](https://github.com/hannesdatta/course-odcm/raw/master/content/docs/exam/exam-material.zip); want to submit your own cheatsheet? Do so by *Monday morning* (not paper-based!).
 - What?
   - let's look at [some questions now](https://odcm.hannesdatta.com/docs/exam/examplequestions/)
-  - prep well! Expect new websites/blogs (for scraping), new endpoints of APIs (that you know)
-  - will work with whitelist: blog/website/APIs
+  - prep well! Expect new websites (for scraping), new endpoints of APIs (of sites that you know)
+  - Internet is available; but: no use of sites/tools (e.g., ChatGPT) other than indicated
 
 Exam tips
 ========================================================
 incremental: true
 
-- Understand how `selenium` and Chrome work, next to the "regular" scraping toolkits (`requests`, `BeautifulSoup`
-- Practice scraping an unknown website (e.g., tutorials at tilburgsciencehub.com, working with music-to-scrape.org, tilburg.ai, any other blog) -- the scraper will account for a larger number of points on the exam!
-- Cover "Fields of Gold" (2022), including the web appendix, sample size calculations and legal concerns (+ reason through challenges) + Guyt et al. 2024 (J Retailing) 
+- Practice scraping an unknown website (e.g., tutorials at tilburgsciencehub.com, working with music-to-scrape.org, tilburg.ai; focus on "category overview pages" & array misalignment) -- the scraper will account for a large share of your grade
+- You do not have to use `selenium`, but you need to understand how it is different from "regular" scraping toolkits (`requests`, `BeautifulSoup`)
+- Cover "Fields of Gold" (2022), including the web appendix, sample size calculations and legal concerns (+ reason through challenges) + Guyt et al. 2024 (J. of Retailing) 
 
 Next steps: Official course evaluation
 ========================================================
 
 - Course evaluation has been immensely important to this course
-  - This edition: developed Journal of Retailing (2024) paper with hands-on guide to scraping, complementing Boegershausen et al. (2022); moved exam to campus
-  - Last edition(s): built music-to-scrape.org, host coaching sessions mostly on campus, improved Python onboarding
+  - This edition: onboarded Roshini for etra support, scheduled extra "computer setup" session before class, had some sessions in the computer lab
+  - Last edition: developed Journal of Retailing (2024) paper with hands-on guide to scraping, moved exam to campus, built music-to-scrape.org
 
 - Course evaluation has been critical to my career
   - Without my past evaluations, I wouldn't be teaching to you today
@@ -229,13 +228,7 @@ Informal feedback
 
 - how to ease onboarding?
 - how to make sure all software (including Chromedriver is installed)?
-- how to handle "switch" from bs4 to selenium?
-- is this course too hard? how can I make it 'easier'/'smoother'?
-  - e.g., what did you find particularly hard? 
-  - what tips would you give to students before they start this course?
-  - more online coaching sessions? (or not?)
 - Feel you've got enough support?
-
 
 Stay in touch!
 ========================================================

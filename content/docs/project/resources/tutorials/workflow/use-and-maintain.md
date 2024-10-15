@@ -38,7 +38,7 @@ Especially long-term data collections benefit from rigorous workflows to maintai
 
 
 
-{{< button relref="/preprocessing.md" >}}Previous{{< /button >}}
+{{< button relref="./preprocessing.md" >}}Previous{{< /button >}}
 
 <!--
 4.5.1	Update and maintain

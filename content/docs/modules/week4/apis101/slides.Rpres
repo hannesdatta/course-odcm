@@ -26,40 +26,33 @@ Welcome to oDCM!
 We're about to start with __today's tutorial ("API 101")__.
 
 - If you haven't done so, open slides at https://odcm.hannesdatta.com/docs/modules/week4/ (I have just updated them)
-- Today's (live) code is available at [https://tiu.nu/livecoding](https://tiu.nu/livecoding) (refresh may be needed)
+- Today's (live) code is available at [https://tiu.nu/livecoding](https://tiu.nu/livecoding) (refresh is needed when I update my code)
 - You can work in __Google Colab__ throughout this class
 
 
-Before we start
+Before we start (I)
 ========================================================
 
-- Exam dates fixed
-  - Tuesday, 2 April (main sit)
-  - Thursday, 27 June (resit)
-- Tech development & extra material
-  - Note there are "advanced" tutorials for extra code snippets (e.g., Selenium)
+- Coaching sessions
+  - we start paying attention to 'equal' attention/time; but: help us, __this is also your responsibility__
+  - it is normal to face complicated'issues that __cannot be solved on the spot__ (not even by myself). Address these issues to us __in writing, please__ (email: Roshini; WhatsApp: Hannes).
 - Team projects
-  - enthusiastic about many of your ideas
-  - feedback on Canvas
-  - continue building your prototypes today!
+  - updated material on 'webscraping advanced' (with Selenium); it became easier and more targeted to follow
+  - presentations during next week's class; both Roshini and I will be present
+
+Before we start (II)
+======================
+
+- Extra Q&A session upon your request for oDCM & dPrep
+  - Monday, 23 September, 10.45-12.30 (CubeZ 219).
+- Next week: tutorials take place in computer labs (GZ 106, see schedule)
 <br>
-- Any issues at this stage?
+<br>
+- Any questions at this stage?
 
 <!--
 - API authentication will be pain point - highly idiosyncratic!
 -->
-
-Agenda
-=======
-
-- In-class: https://api.music-to-scrape.org/docs
-- Coaching session (challenges #2.1-#2.4)
-  - which information to retrieve?
-  - for which seeds?
-  - at what frequency?
-  - how to process the data during the collection
-- After class
-  - complete tutorial on your own; work on team projects
 
 What are APIs?
 ============
@@ -79,7 +72,7 @@ Technical differences between APIs and web scraping
 <br>
 - API
   - good if you have permission (but, be realistic about getting access!)
-  - *structured* JSON data
+  - you obtain *structured* JSON data
 
 Discovering an API documentation
 =========
@@ -87,7 +80,7 @@ Discovering an API documentation
 - Probably the most difficult part w/ APIs is to get authenticated
   - recall: need platform's permission (but this API doesn't require authentication)
 - Find an endpoint (aka page when scraping)
-- Let's explore the documentation of... [OpenAI](https://platform.openai.com/docs/introduction)!
+- Let's explore the documentation of... [OpenAI](https://platform.openai.com/docs/overview)!
   - which endpoints are available?
   - what could you do with them?
 
@@ -122,7 +115,7 @@ How can we make sense of JSON data?
 
 - JSON data is structured in a hierarchy
   - use [JSONviewer.stack.hu](http://jsonviewer.stack.hu) to make sense of it
-  - alternatively, write to `.json` file and view in VS Code
+  - alternatively, write to `.json` file and view in VS Code (install JSON plugin first)
   - many other possibilities exist (e.g., in-browser) - check what you like best!
   
 __DO:__ Run this snippet to write JSON output to a file! Inspect it using [JSONviewer](http://jsonviewer.stack.hu) or VS Code!
@@ -136,11 +129,10 @@ f.close()
 
 Getting data from a JSON dictionary
 ===========
-class: small-code
 
 - Let's try to only extract a list of user names, rather than the entire dictionary.
 - For this, we need to know how to access nodes of a dictionary.
-  - `['name_of_attribute']`
+  - `['name_of_attribute']` or
   - `.get('name_of_attribute')`
 - Do: Let's try it out
 
@@ -152,6 +144,7 @@ request['limit']
 request.get('limit')
 ```
 
+
 Do: Getting user names
 ===========
 
@@ -162,6 +155,20 @@ Do: Getting user names
 request['limit'] # this one worked for extracting the value for limit...
 ```
 
+Solution
+=====
+
+```{python, eval=FALSE}
+#Q1: 
+request['data']
+
+#Q2:
+user_names = [] # initialize empty array
+for user in request['data']: # start loop
+  user_names.append(user['username']) # append user name to the list of user_names (initialized above)
+user_names # inspect the result
+```
+
 Do: Anonymizing data
 ====
 
@@ -169,9 +176,23 @@ Suppose we do not want to extract the ages and country names for the users...
 
 __Can you come up with a way to anonymize them (e.g., overwrite them with NA), while keeping the rest of the dictionary intact?__
 
+Solution: 
+====
+
+```{python, eval=FALSE}
+new_dic = []
+
+for user in request['data']:
+  obj = user
+  obj['username']='NA'
+  obj['age']='NA'
+  new_dic.append(obj)
+new_dic
+```
+
 Difference between `.append()` and `.extend()`
 ========
-class: small-code
+
 
 - `.append()` adds *one* item at a time to an existing list
 ```{python, eval=FALSE}
@@ -192,6 +213,7 @@ users
 
 Understanding parameters in API calls
 ===============
+incremental: true
 
 - APIs are useful because you can *modify* its search results
   - say, you want to see the next batch of users (when listing users), or 
@@ -222,9 +244,9 @@ Can you __speculate about the benefits__ of submitting parameters in the header 
 
 Do: Iterating through API endpoints
 =========
-class: small-code
 
-- Remember iterating through pages on a website to "view" data? APIs know the same concept!
+
+__Remember iterating through pages on a website to "view" data? APIs know the same concept!__
 
 1. Try to add the `offset` parameter to the snippet below. What happens when you set it to `1`? What happens when you set it to `5`?
 2. To which value would you have to set it to see the next batch of users?
@@ -238,10 +260,36 @@ request = response.json()
 print(request)
 ```
 
+Solution:
+======
+
+```{python, eval=FALSE}
+# q1: setting the offset parameter
+import requests
+requests.get("https://api.music-to-scrape.org/users?limit=10").json()
+requests.get("https://api.music-to-scrape.org/users?limit=10&offset=1").json()
+requests.get("https://api.music-to-scrape.org/users?limit=10&offset=5").json()
+
+# q2: 
+requests.get("https://api.music-to-scrape.org/users?limit=10&offset=10").json()
+```
+
 Do: Let's wrap your code in a function
 ======
 
 1. Construct a function, called `get_users()`, with parameters `limit` and `offset`, returning the dictionary of users from the API endpoint `/users`.
+
+Solution:
+===
+```{python, eval=FALSE}
+import requests
+  def get_users(limit, offset):
+    obj = requests.get(f"https://api.music-to-scrape.org/users?limit={limit}&offset={offset}").json()
+    return(obj['data'])
+
+get_users(10,1)
+    
+```
 
 Looping through all result pages of an endpoint
 =====
@@ -255,6 +303,17 @@ for x in range(6):
 ```
 
 __Do:__ Modify the snippet below so that it calls `get_users()` 10 times, incrementing the offset by 10 at each iteration.
+
+Solution:
+====
+
+```{python, eval=FALSE}
+offset=0
+for x in range(10):
+  print(get_users(limit=10, offset=offset))
+  offset=offset+10
+```
+
 
 For loop vs. while loop
 ========
@@ -279,7 +338,7 @@ while cntr < 6:
 Tying everything together
 =============
 
-We can now combine our learnings to build a function that extracts all user names to new-line separated JSON files.
+We can now combine our learnings to build a function that extracts 100 user names and meta data to new-line separated JSON files.
 
 - Implement it step-by-step
 - Also load packages!
@@ -292,6 +351,18 @@ class: small-code
 
 ```{python, eval=FALSE}
 # will develop in class
+import requests
+import json
+
+cntr = 0
+f=open('output.json', 'w')
+while cntr <= 50:
+  f.write(json.dumps(get_users(limit=10, offset=cntr)))
+  f.write('\n')
+  cntr = cntr+10
+f.close()
+
+
 ```
 
 Do: Onwards to more endpoints
@@ -320,19 +391,7 @@ Reflection
 - wow - no "structuring" of HTML "soup" (THAT's the key difference compared to web scraping)
 - Spend time trying to get your first data from an API -- authentication __will__ be an issue!
 - Time left? Let's consider some [legal issues](https://htmlpreview.github.io/?https://github.com/hannesdatta/legal-situation-of-web-scraping/blob/main/legal-status-of-web-scraping.html#/title-slide)
-- After this class: coaching session (focus on [activity #3](https://odcm.hannesdatta.com/docs/project/workplan/activity3/))
+- After this class: coaching session (check your workplan)
 - Next week
   - __presentations__ about your projects
   - afterwards: coaching (get your prototype up and running!)
-
-Coaching session
-=========
-
-- Coaching session (challenges #2.1-#2.4)
-  - which information to retrieve?
-  - for which seeds?
-  - at what frequency?
-  - how to process the data during the collection
-- Work on your prototypes
-  - Selenium vs. `requests`?
-  - Getting authenticated with the API?

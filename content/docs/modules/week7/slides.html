@@ -851,8 +851,8 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 
 <ul>
 <li class="fragment">Explore novel phenomena, be timely!</li>
-<li class="fragment">Boost ecological value, get closer to what managers are interested in!</li>
-<li class="fragment">Facilitate methodological advancement (e.g., text, video)</li>
+<li class="fragment">Boost ecological value, get closer to what managers use and are interested in!</li>
+<li class="fragment">Facilitate methodological advancement (e.g., text, images, video)</li>
 <li class="fragment">Better measurement (e.g., control variables)</li>
 </ul></li>
 <li class="fragment">But: challenging!
@@ -938,7 +938,7 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 
 <ul>
 <li class="fragment"><code>requests</code> + <code>beautifulSoup</code> vs. <code>selenium</code> (Chromedriver)</li>
-<li class="fragment">extraction methodology (e.g., tags, classes, attribute-values) + stability</li>
+<li class="fragment">extraction methodology (e.g., tags, classes or other attributes, capturing <code>.get_text()</code> vs. the values of attributes) + stability</li>
 <li class="fragment">array misalignment (obey the hierarchy of stuff/how it is structured!!!)</li>
 <li class="fragment">scheduling, hiding passwords</li>
 <li class="fragment">revise navigation paths</li>
@@ -977,8 +977,8 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 <h3>Looking ahead: Recognizing Limitations</h3>
 <div class="slideContent" >
 <ul>
-<li class="fragment">Web data entails modeling challenges - not covered in this course (e.g., self-selection, &ldquo;messy&rdquo; data)</li>
-<li class="fragment">Web data can&#39;t give you all (i.e., you don&#39;t see internal data such as clickstream data) </li>
+<li class="fragment">Web data entails modeling challenges - not covered in this course (e.g., self-selection, endogeneity, &ldquo;messy&rdquo; data)</li>
+<li class="fragment">Web data can&#39;t give you all (i.e., it <em>looks</em> l ike internal clickstream data, but it is not) </li>
 <li class="fragment">Legal and ethical issues not fully explored</li>
 </ul>
 
@@ -1045,14 +1045,13 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 <h3>Next steps: Projects &amp; SPA</h3>
 <div class="slideContent" >
 <ul>
-<li><p>Please hand in so I can <strong>make the data package public</strong>! </p>
+<li><p>Please hand in so we can <strong>make the data package public</strong>! </p>
 
 <ul>
 <li>Take out any passwords (store as environment variables instead)</li>
 <li>Remove any unnecessary files</li>
-<li>Want to keep your names on the documentation or anonymize them? </li>
+<li>Want to keep your names on the documentation or anonymize them? Choose.</li>
 <li>Don&#39;t make statements that are too bold!</li>
-<li>Consider uploading datasets &amp; documentation yourselves <a href="https://tilburgsciencehub.com/get/doi/?utm_campaign=referral-short">to Zenodo</a>; counted towards &ldquo;quality&rdquo; of data package (10% of assignment grade) </li>
 </ul></li>
 <li><p>Re-read the <a href="https://odcm.hannesdatta.com/docs/course/project/grading/">grading rubric on the course site</a>!</p></li>
 <li><p>You will receive <strong>invite to self- and peer assessment</strong> via email</p></li>
@@ -1068,7 +1067,7 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 <li>Organization
 
 <ul>
-<li>When: 2 April (time tba)</li>
+<li>When: 16 October (time? check Osiris/registration)</li>
 <li>Work max. 3 hours on exam</li>
 </ul></li>
 <li>How?
@@ -1076,14 +1075,14 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 <ul>
 <li>access to TestVision</li>
 <li>access to Jupyter Notebook</li>
-<li>I make selected resources <a href="https://github.com/hannesdatta/course-odcm/raw/master/content/docs/exam/exam-material.zip">available on the instruction page</a></li>
+<li>I make selected resources <a href="https://github.com/hannesdatta/course-odcm/raw/master/content/docs/exam/exam-material.zip">available on the instruction page</a>; want to submit your own cheatsheet? Do so by <em>Monday morning</em> (not paper-based!).</li>
 </ul></li>
 <li>What?
 
 <ul>
 <li>let&#39;s look at <a href="https://odcm.hannesdatta.com/docs/exam/examplequestions/">some questions now</a></li>
-<li>prep well! Expect new websites/blogs (for scraping), new endpoints of APIs (that you know)</li>
-<li>will work with whitelist: blog/website/APIs</li>
+<li>prep well! Expect new websites (for scraping), new endpoints of APIs (of sites that you know)</li>
+<li>Internet is available; but: no use of sites/tools (e.g., ChatGPT) other than indicated</li>
 </ul></li>
 </ul>
 
@@ -1094,9 +1093,9 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 <h3>Exam tips</h3>
 <div class="slideContent" >
 <ul>
-<li class="fragment">Understand how <code>selenium</code> and Chrome work, next to the &ldquo;regular&rdquo; scraping toolkits (<code>requests</code>, <code>BeautifulSoup</code></li>
-<li class="fragment">Practice scraping an unknown website (e.g., tutorials at tilburgsciencehub.com, working with music-to-scrape.org, tilburg.ai, any other blog) &ndash; the scraper will account for a larger number of points on the exam!</li>
-<li class="fragment">Cover &ldquo;Fields of Gold&rdquo; (2022), including the web appendix, sample size calculations and legal concerns (+ reason through challenges) + Guyt et al. 2024 (J Retailing) </li>
+<li class="fragment">Practice scraping an unknown website (e.g., tutorials at tilburgsciencehub.com, working with music-to-scrape.org, tilburg.ai; focus on &ldquo;category overview pages&rdquo; &amp; array misalignment) &ndash; the scraper will account for a large share of your grade</li>
+<li class="fragment">You do not have to use <code>selenium</code>, but you need to understand how it is different from &ldquo;regular&rdquo; scraping toolkits (<code>requests</code>, <code>BeautifulSoup</code>)</li>
+<li class="fragment">Cover &ldquo;Fields of Gold&rdquo; (2022), including the web appendix, sample size calculations and legal concerns (+ reason through challenges) + Guyt et al. 2024 (J. of Retailing) </li>
 </ul>
 
 </div>
@@ -1109,8 +1108,8 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 <li><p>Course evaluation has been immensely important to this course</p>
 
 <ul>
-<li>This edition: developed Journal of Retailing (2024) paper with hands-on guide to scraping, complementing Boegershausen et al. (2022); moved exam to campus</li>
-<li>Last edition(s): built music-to-scrape.org, host coaching sessions mostly on campus, improved Python onboarding</li>
+<li>This edition: onboarded Roshini for etra support, scheduled extra &ldquo;computer setup&rdquo; session before class, had some sessions in the computer lab</li>
+<li>Last edition: developed Journal of Retailing (2024) paper with hands-on guide to scraping, moved exam to campus, built music-to-scrape.org</li>
 </ul></li>
 <li><p>Course evaluation has been critical to my career</p>
 
@@ -1131,14 +1130,6 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 <ul>
 <li>how to ease onboarding?</li>
 <li>how to make sure all software (including Chromedriver is installed)?</li>
-<li>how to handle &ldquo;switch&rdquo; from bs4 to selenium?</li>
-<li>is this course too hard? how can I make it &#39;easier&#39;/&#39;smoother&#39;?
-
-<ul>
-<li>e.g., what did you find particularly hard? </li>
-<li>what tips would you give to students before they start this course?</li>
-<li>more online coaching sessions? (or not?)</li>
-</ul></li>
 <li>Feel you&#39;ve got enough support?</li>
 </ul>
 

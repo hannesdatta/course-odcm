@@ -61,5 +61,5 @@ Provide the readme in a simple `.txt` format, or compile it as a PDF file (i.e.,
 
 If you are planning on sharing the data with the public, or future teams of co-authors, also explain why you have collected the data in the first place ("motivation") and how you think the data should be used or not used ("uses and no-uses")
 
-{{< button relref="/collection.md" >}}Previous{{< /button >}}
-{{< button relref="/use-and-maintain.md" >}}Next{{< /button >}}
+{{< button relref="./collection.md" >}}Previous{{< /button >}}
+{{< button relref="./use-and-maintain.md" >}}Next{{< /button >}}

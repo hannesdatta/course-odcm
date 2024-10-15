@@ -10,12 +10,12 @@ draft: false
 
 ## Learning goals
 
-- Make more advanced use of `selenium`, emulating user interaction on a site (e.g., scrolling and filling in forms)
-- Access data that is hidden behind a login-screen
-- Apply search parameters to obtain subsets of data
-- Capture and store images from the web
-- Save the retrieved data as tabular files (e.g., CSV)
+- Make more advanced use of `selenium`, emulating user interaction on a site (e.g., scrolling, clicking, and filling in forms)
+- Save the retrieved data as JSON files.
 
 ## Getting started
 
-- Start with this optional tutorial (<a href = 'webscraping-advanced.ipynb' download>download</a>, [Google Colab](https://colab.research.google.com/github/hannesdatta/course-odcm/blob/master/content/docs/project/resources/tutorials/webscrapingadvanced/webscraping-advanced.ipynb))
+- Start with this optional tutorial (<a href = 'webscraping-advanced.ipynb' download>download</a>)
+
+
+*Note: The advanced tutorial is not compatible with Google Colab. Please use Jupyter Notebook or VS Code on your local machine.*

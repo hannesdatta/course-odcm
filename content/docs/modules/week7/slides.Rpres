@@ -196,10 +196,19 @@ Exam
   - access to TestVision
   - access to Jupyter Notebook
   - I make selected resources [available on the instruction page](https://github.com/hannesdatta/course-odcm/raw/master/content/docs/exam/exam-material.zip); want to submit your own cheatsheet? Do so by *Monday morning* (not paper-based!).
-- What?
-  - let's look at [some questions now](https://odcm.hannesdatta.com/docs/exam/examplequestions/)
-  - prep well! Expect new websites (for scraping), new endpoints of APIs (of sites that you know)
-  - Internet is available; but: no use of sites/tools (e.g., ChatGPT) other than indicated
+  
+Exam technicalities
+===================
+
+- You have access to a "Demo exam" on TestVision.
+- Let's walk through it!
+
+Exam content
+======
+
+- let's look at [some questions now](https://odcm.hannesdatta.com/docs/exam/examplequestions/)
+- prep well! Expect new websites (for scraping), new endpoints of APIs (of sites that you know)
+- Internet is available; but: no use of sites/tools (e.g., ChatGPT), or our course Chatbot.
 
 Exam tips
 ========================================================

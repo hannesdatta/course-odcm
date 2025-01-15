@@ -25,18 +25,19 @@ The course consists of weekly modules, which will gradually develop your coding 
 Course week|Date|Time|Location|Content|
 |:-:|---------|---------|-------------|--------------------|
 |{{< button relref="prep" >}}Week 0{{< /button >}}  | | | | Preparation before the course starts   
-|{{< button relref="week1" >}}Week 1{{< /button >}} |Wed 29 Jan | 10.45-14.30 | On campus | Getting started with Python & web data
-|{{< button relref="week2" >}}Week 2{{< /button >}}|Tue 4 Feb | 08.45-10.30 | On campus | Tutorial: Web scraping for dummies 
-|               | | 10.30-12.30 | On campus | [Team coaching #1](/docs/project/workplan)
-|{{< button relref="week3" >}}Week 3{{< /button >}}|Tue 11 Feb | 08.45-10.30 | On campus | Tutorial: Web scraping 101 
-|                                                  |           | 10.45-12.30 | On campus | [Team coaching #2](/docs/project/workplan)
-|{{< button relref="week4" >}}Week 4{{< /button >}}|Tue 18 Feb | 08.45-10.30 | On campus | Tutorial: APIs 101
-|                                                  |           | 10.45-12.30 | On campus | [Team coaching #3](/docs/project/workplan)
-|{{< button relref="week5" >}}Week 5{{< /button >}}|Tue 25 Feb | 08.45-10.30 | On campus | Presentations for [Team coaching #3](/docs/project/workplan)
-|                                                  |           | 10.45-12.30 | On campus | [Team coaching #4](/docs/project/workplan)
-|{{< button relref="week6" >}}Week 6{{< /button >}} |Wed 12 Mar | 12:45-14:30 | Online | [Team coaching #5](/docs/project/workplan)
-|{{< button relref="week7" >}}Week 7{{< /button >}}  |Tue 18 Mar | 10.45-12.30 | On campus | Course summary and exam preparation 
-|                              |Wed 19 Mar | 15.45-17.30  | On campus | [Team coaching #6](/docs/project/workplan)
+|{{< button relref="week1" >}}Week 1{{< /button >}} |Wed 29 Jan | 09.45-10.15 | On campus | Q&A to help you fix installation issues (Optional, but recommended!)
+| |  | 10.45-14.30 | On campus | Getting started with Python & web data
+|{{< button relref="week2" >}}Week 2{{< /button >}}|Friday 7 Feb | 08.45-10.30 | On campus | Tutorial: Web scraping for dummies 
+|               | | 12.45-14.30 | On campus | [Team coaching #1](/docs/project/workplan)
+|{{< button relref="week3" >}}Week 3{{< /button >}}|Fri 14 Feb | 08.45-10.30 | On campus | Tutorial: Web scraping 101 
+|                                                  |           | 12.45-14.30 | On campus | [Team coaching #2](/docs/project/workplan)
+|{{< button relref="week4" >}}Week 4{{< /button >}}|Fri 21 Feb | 08.45-10.30 | On campus | Tutorial: APIs 101
+|                                                  |           | 12.45-14.30 | On campus | [Team coaching #3](/docs/project/workplan)
+|{{< button relref="week5" >}}Week 5{{< /button >}}|Fri 28 Feb | 08.45-10.30 | On campus | Presentations for [Team coaching #3](/docs/project/workplan)
+|                                                  |           | 12.45-14.30 | On campus | [Team coaching #4](/docs/project/workplan)
+|{{< button relref="week6" >}}Week 6{{< /button >}} |Wed 12 Mar | 12.45-14.30 | Online | [Team coaching #5](/docs/project/workplan)
+|{{< button relref="week7" >}}Week 7{{< /button >}}  |Tue 18 Mar | 10.45-12.30  | Online | [Team coaching #6](/docs/project/workplan)
+|                              |Wed 19 Mar | 15.45-17.30 | On campus | Course summary and exam preparation 
 
 {{% hint info %}}
 __Tips__

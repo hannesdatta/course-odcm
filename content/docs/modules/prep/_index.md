@@ -13,9 +13,9 @@ It's important to spend some time *before the beginning of the class* to install
 
 ### 1) Install Python via Anaconda
 
-Please follow the installation guide for [Python via Anaconda](https://tilburgsciencehub.com/get/python).
-
-{{< button href="https://tilburgsciencehub.com/get/python" >}}Start the installation now!{{< /button >}}
+Please follow the installation guide for [Python via Anaconda](https://tilburgsciencehub.com/topics/Computer-Setup/software-installation/Python/python/).
+<!-- was: https://tilburgsciencehub.com/get/python -->
+{{< button href="https://tilburgsciencehub.com/topics/Computer-Setup/software-installation/Python/python" >}}Start the installation now!{{< /button >}}
 
 {{< hint info >}}
 **Tips**

@@ -25,7 +25,7 @@ The course consists of weekly modules, which will gradually develop your coding 
 Course week|Date|Time|Location|Content|
 |:-:|---------|---------|-------------|--------------------|
 |{{< button relref="prep" >}}Week 0{{< /button >}}  | | | | Preparation before the course starts   
-|{{< button relref="week1" >}}Week 1{{< /button >}} |Wed 29 Jan | 09.45-10.15 | On campus | Q&A to help you fix installation issues (Optional, but recommended!)
+|{{< button relref="week1" >}}Week 1{{< /button >}} |Wed 29 Jan | 09.30-10.15 | On campus | Q&A to help you fix installation issues (Optional, but recommended!)
 | |  | 10.45-14.30 | On campus | Getting started with Python & web data
 |{{< button relref="week2" >}}Week 2{{< /button >}}|Friday 7 Feb | 08.45-10.30 | On campus | Tutorial: Web scraping for dummies 
 |               | | 12.45-14.30 | On campus | [Team coaching #1](/docs/project/workplan)

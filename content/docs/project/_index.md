@@ -18,6 +18,8 @@ At the end of the course, you will submit a data package, consisting of
 - all [source code](grading/#1-source-code-and-accompanying-files), and 
 - a [documentation](grading/#2-documentation) (following [this template](Datasheets_for_DataSets.zip)).
 
+For inspiration, explore [past team projects](https://odcm.hannesdatta.com/docs/project/resources/pastprojects/). Use these as a starting point, keeping in mind that grading criteria may have changed and these examples are not flawless.
+
 {{% hint info %}}
 __The focus lies on *completing an entire data collection project*. Keep each stage of your project *manageable* and *feasible*. Your project will ultimately be written up as a proper data documentation, following [this paper](https://arxiv.org/pdf/1803.09010.pdf) and corresponding [template download](Datasheets_for_DataSets.zip).__ Head over to the [grading details](grading) to find out more!
 {{% /hint %}}

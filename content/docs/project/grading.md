@@ -132,56 +132,19 @@ src\reporting\descriptives.R <-- final source code used to generate statistics/i
 
 You must use this [template](/docs/project/Datasheets_for_DataSets.zip) to create your documentation and fill in __all (sub-)questions in sections 1-6__. 
 
+Please refer to the [grading rubric](content\docs\other\odcm-project-rubric.pdf) for further details on the assessment criteria for the data documentation.
 
-#### 2.1 Motivation (section 1 of your documentation, 5%)
-
-- Clear explanation of the value in collecting the data (“task in mind”), either in the context of a specific research question or business problem. The data collection potentially generates insights into new phenomena, increases the managerial relevance of empirical work, helps to develop new models, or is an efficient way for collecting valuable information. There is clearly value to the larger research community in using the data.
-
-- A wide range of relevant websites and APIs pertaining to the data context are assessed. The use of different extractions methods and alternatives to web scraping are considered and the data context is sufficiently scoped to ensure validity and to identify other relevant information that may be valuable. It is clear why the data was ultimately collected from the focal website/API, and not from others (i.e., the website/API emerges as the one that fits best in terms of research fit and resource use; #1.4).
-
-- The team provides a rich set of contextually relevant information.
-
-#### 1.2 Data Extraction Plan (section 2 of your documentation, 10%)  
-
-- The risk of algorithmic interference is taken into account and dealt with accordingly. Furthermore, possible changes to the contents of the website or data aggregator that may influence the results are considered and metadata is collected, if applicable.
-- The seed selection is valid and clearly explained. Potential linkages to external data sets are made explicit (e.g., by means of links to external websites or sources that explain more about the used identifiers).
-- The frequency at which the data is the collected and the limitations to this are made explicit. If it is opted to collect data more than once, teams used automatic scheduling to ensure valid and consistent results.
-- The design decision lead to a tradeoff between validity, technical feasibility and exposure legal/ethical risks. The consequences to these are carefully described when making decisions on one of the previous steps (i.e., which information to extract, which seeds to select and at what frequency).
-- Teams explicitly address potential confidentiality or sensitivitiy of the data.
+{{< hint info>}}
+***Disclaimer:***
+The same grading rubric will be used to provide preliminary feedback during the coaching sessions. For these sessions, the sub-criteria are simplified to "Very good", "Sufficient", and "Needs improvement" serving as preliminary feedback to indicate whether the project is on track. The detailed sub-criteria outlined above, however, will be applied for the final grade calculation.
 
 
-#### 1.3 Data Extraction Process (section 3 of your documentation, 10%)
+{{< /hint>}}
 
-- The technical extraction plan has been described in a way that the data collection could be replicated. This encompasses providing a solid argumentation on why a particular data extraction technology used (e.g., selenium versus Beautifulsoup for websites, a package versus self-coded requests for APIs). If teams came across technical issues when scaling the data collection, the debugging stage is clearly explained.
-- Users of the data learn about the technical hurdles that needed to be overcome, and which monitoring was in place to guarantee (and validate) data quality.
-- Details are given on how (deployment infrastructure) and when the data collection was executed (e.g., by meaningful summaries of the timestamps in log files), and where the final data set was stored during the collection.
+## Tips for filling in the documentation
 
-{{< hint info >}}
-__Best practices for documentation__
+- Please include screenshots and/or an additional recording in your documentation. Not only will this improve interpretability, it also contributes to the accuracy and reproducability of the project!
 
-Please include screenshots and/or an additional recording in your documentation. Not only will this improve interpretability, it also contributes to the accuracy and reproducability of the project!
-
-{{< /hint >}}
-
-
-#### 1.4 Preprocessing (section 4 of your documentation, 5%)
-
-- Any pre-processing on the fly has been motivated and explained, using a few specific examples. Any further pre-processing after the collection has been described (e.g., such as to anonymize users for privacy concerns, to identify and clean out implausible observations, or to improve data structure for long-term storage, such as rearranging the data structure, relabeling columns into more meaningful and clear variable names). Potential threats that may result from this pre-processing are brought up and elaborated on.
-
-- The files have a correct data structure, and variables are of the correct type (e.g., numbers as integers or floats, not as strings; time stamps properly formatted, or Unixtime used). Application of data enrichment and feature engineering strategies (e.g., to derive new variables from the data, where necessary). Data has been normalized (i.e., preferably multiple tables that can be joined together, rather than a wide table that contains many duplicates on some of the variables). If imputation is used, it is indicated which values have been imputed (e.g., interpolated; for example: followers (without missing), and followers_inputed as a TRUE/FALSE variable, indicating which ones were imputed). Finally, the data set is provided in CSV files, including column names, proper use of delimiters (e.g., a “,” may be inappropriate for textual data involving commas). No row names/index column.
-
-#### 1.5 Data inspection (section 3 of your documentation, 15%)
-
-- The collected data is accompanied by meaningful summary statistics (e.g., the number of units per entity, means/SD for continuous variables, and frequency distributions per variable, for each entity). 
-- Missingness has been investigated (e.g., for individual entities, but also for the collected variables). 
-- Any redundancies, errors, or sources of noise have been clearly described. Identified subpopulations are labeled, so that users of the data can more easily get started using the data.
-
-#### 1.6 Uses (section 6 of your documentation, 5%)  
-
-- Users of the data learn about tasks the data set could be used for. I.e., from the description, it is clear how the composition of the data set or the way it was preprocessed might affect future use. A clear indication is given for what the data should not be used for, e.g., relating to any of the legal or ethical concerns identified before.
-
-{{< hint info >}}
-### Tips for filling in the documentation
 -	Try to answer all questions to the best of your ability.
     - Imagine you would have to work with this data in the future – how would you write up the documentation so that you (and your future self) may understand it?
     - In your writing, be as concise as possible. 
@@ -190,4 +153,3 @@ Please include screenshots and/or an additional recording in your documentation.
 
 - Please pick a good name for your dataset. This name will be the first thing potential users of your data will see. Use it as the *title* of your documentation (don't call your dataset "Datasheets for Datasets"!). 
 - Don't forget to include a title page for your documentation.
-{{< /hint >}}

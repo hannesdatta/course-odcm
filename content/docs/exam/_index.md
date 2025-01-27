@@ -33,7 +33,7 @@ The course content will be tested in the form of a computer exam, taken on campu
 
 ## Form
 
-- On-campus exam (closed book except selected course material that students can download on the instruction page of the exam, as well as question-specific downloads such as code or datasets for some questions)
+- On-campus computer exam
 - Several sections with subquestions (some open questions: both in written, or by means of code/file uploads; also closed questions, such as multiple choice, or ranking questions)
 
 {{< hint warning >}}

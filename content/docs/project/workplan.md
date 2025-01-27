@@ -11,8 +11,10 @@ draft: false
 
 You'll start working on your project in the second course week. The activities below help you to structure your project. Stick to the plan to ensure you can finish the project in time.
 
+**Structure of Coaching Sessions:** During the first half of the coaching session, each team will have 5–10 minutes to provide an update on their progress and seek your coach's assistance if they encounter any challenges. The second half will be dedicated to addressing specific issues or questions raised by teams on a needs basis. It is, therefore, up to the teams to be proactive in asking for guidance during this time.
+
 {{< hint info >}}
-__Deliverables__ are submitted on Canvas and due by Friday, 7 pm, of the respective course week. The course team will provide short feedback in writing at least a day before the next coaching session.
+**Deliverables** are submitted on Canvas. Please check Canvas for the due dates for each week. The course team will provide short feedback in line with the [grading rubric](content\docs\other\odcm-project-rubric.pdf) at least a day before the next coaching session.
 
 {{< /hint>}}
 
@@ -61,7 +63,7 @@ Please also check out the [syllabus for some more information on how diversity &
   - Capture some data and develop a loop for structured data retrieval (especially for multiple pages).
   - Consider an [advanced tutorial on web scraping (e.g., Selenium) or APIs](../resources/tutorials).
 - **Deliverables:**  
-  - **Sections 1-2** of your data documentation.
+  - No formal deliverable to be uploaded on Canvas.
   - Prepare a presentation for Week 5.
 
 
@@ -92,6 +94,7 @@ Please upload the presentation (as a PDF) and Excel sheet (as an Excel file) wit
   - Further refine data extraction; consider completing advanced tutorials.
 - **Deliverables:**  
   - **Sections 1-3** of your data documentation.
+  - **Sections 4-6** of your data documentation (*optional*)
 
 ## Week 6: Technical Refinement (Coaching #5, optional)
 - **Coaching Support:**  

@@ -16,8 +16,12 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 -->
 
 ```{r setup, echo = FALSE}
-knitr::opts_chunk$set(warning = FALSE, message = FALSE)
-library(reticulate)
+knitr::opts_chunk$set(
+	message = FALSE,
+	warning = FALSE,
+	include = FALSE
+)
+suppressWarnings(library(reticulate))
 py_install("requests")
 py_install("bs4")
 ```
@@ -35,9 +39,9 @@ We're about to start with the first lecture of this class.
 
 If you haven't done so, please 
 
-- explore the **course page** at [https://odcm.hannesdatta.com]().
+- __today's slides__ are available here: https://odcm.hannesdatta.com/docs/modules/week1
+- explore other sections of the **course page** at [https://odcm.hannesdatta.com]().
 - complete the **software installation** (https://odcm.hannesdatta.com/docs/modules/prep/)
-- my slides are available here: https://odcm.hannesdatta.com/docs/modules/week1
 
 <!--
 
@@ -63,21 +67,23 @@ Agenda
 This course in a nutshell
 =====
 
-- You will learn how to __write computer programs that automatically download and structure information from the internet for analysis__.
+- You will learn how to __write code that automatically downloads and structures information from the internet for the purpose of (scientific) analysis__.
 - We call these programs "web scrapers" (for any internet pages) and "APIs" (for official data access)
-- Web scraping and APIs are the foundation of Google Search ("web spiders") and ChatGPT (for training)
-- I also almost got sued doing it (more about it later...)
+- Web scraping are the foundation of Google Search ("web spiders") and ChatGPT (e.g., for training); APIs are at the core of many business models (e.g., Twitter API - back in the days; OpenAI API) 
+- I also almost got sued doing scraping (more about it later...)
 
 Disclaimer
 ========================================================
 incremental: true
 
-- This is predominantly about web scraping and APIs - but you will learn Python on the way as well
-- You can also extract web data using other software packages (e.g., R)
+- This is predominantly about web scraping and APIs - while I teach a bit of Python, becoming an expert requires years of practice
 - Mix of students at various levels (e.g., beginners, advanced Python users)
+- You can also extract web data using other software packages (e.g., R)
 - I will record sessions and post content immediately after class (but, attendance is strongly encouraged)
-- Consider me your coach, not your *distant professor*
+- Consider me your coach, not your distant professor (yes, I respond to WhatsApp messages at +31134668938)
 - Slow me down if you need to
+
+
 
 <!--- Streamed sessions Live streams are *complements*, not substitutes for self-study & course website-->
 
@@ -102,7 +108,6 @@ Key areas of expertise
   - online data collection via APIs and web scraping
   - causal effects with observational data
 
-<!--
 
 Teaching activities 
 ========================================================
@@ -127,7 +132,7 @@ incremental: true
 - What's your background - previous education (e.g., program)?
 - Any experience in Python (or other programming languages)?
 - What are your passions & talents? (+ why I am asking you this...)
--->
+
 
 
 Motivation for course
@@ -180,7 +185,7 @@ Introducting music-to-scrape.org
 ================
 
 - Mock-up streaming service
-- Developed last semester, launched with Guyt et al. (2024) 
+- Developed last year, launched with Guyt et al. (2024) 
 - "Save" and controlled environment to learn scraping and APIs
 
 ![Screenshot of Music to scrape](musictoscrape.png)
@@ -198,6 +203,7 @@ import requests
 
 * And then call a particular URL (check it out in your browser!)
 ```{python, eval = TRUE}
+import requests
 url = 'https://music-to-scrape.org/'
 webrequest = requests.get(url)
 ```
@@ -234,8 +240,8 @@ api_request = requests.get('https://api.music-to-scrape.org/charts/top-tracks')
 
 * let's structure the output in the JSON format
 ```{python, eval = TRUE}
-#api_request_json = api_request.json()
-#for song in api_request_json.get('chart'): print(song.get('name'))
+api_request_json = api_request.json()
+for song in api_request_json.get('chart'): print(song.get('name'))
 ```
 
 Opportunities with web data
@@ -254,14 +260,19 @@ incremental: true
 
 Getting inspired...
 ========================================================
+incremental: true
 
-- *What are cool websites/services you're using often?!*
+- What’s the last app/website that made you say ‘wow’?
 
-- *What are important issues right now that directly or indirectly affect your lives?*
+- If you could only use three apps/websites for the next year, which ones would you pick and why?
 
-- *As a marketer, how could you use the API of OpenAI to automate/invent something new?*
+- What's a niche online community you're part of that most people don’t know about?
 
-Let's talk about it right now...
+- What’s the last thing you saw on TikTok that made you stop scrolling?
+
+- Imagine an AI tool that could make you internet-famous overnight. What would it do?
+
+__Let's talk about it right now...__
 
 
 <!-- 
@@ -270,16 +281,10 @@ bring in post its and put them on a board
 
 -->
 
-Why to care (as a marketer...) (I)
+Why to care (as a marketing researcher...)
 ========================================================
 
 ![odcm](use_of_webdata.png)
-
-Why to care (as a marketer...) (II)
-========================================================
-
-![odcm](citations.png)
-
 
 Web data versus other marketing data (I)
 =============================================
@@ -313,7 +318,7 @@ Web data versus other marketing data (III)
 Each project is totally unique - that's why there is no universal "best way" to approach things...
 
 
-Pragmatic approach to scraping (Guyt et al. 2024)
+Structured approach to data collections (Guyt et al. 2024)
 ========================================================
 
 
@@ -345,9 +350,11 @@ Course structure and grading
 ========================================================
 
 - Weekly modules, structured along the methodological framework
-  - On-campus lectures and tutorials
-  - Self-study
-  - On-campus (sometimes online) coaching sessions
+  - On-campus lectures and tutorials (Hannes)
+  - On-campus (sometimes online) coaching sessions (Roshini)
+      - ~45m check-in with all teams
+      - ~45m "free floating" questions
+  - Self-study (own tutorials (!), Datacamp, readings)
   
 - Project in which you put into practice your skills (40% of your grade)
 
@@ -358,14 +365,15 @@ This year's team project
 
 - Specifics
   - scrape data via web sites or use APIs
-  - work through the entire method framework of Boegershausen et al. 2022
-  - receive feedback by students and me/Roshini (your coaches)
+  - work through the method framework of Boegershausen et al. 2022
+  - receive feedback by students and Roshini (your coach)
   - inspiration for the setup: [past projects](https://odcm.hannesdatta.com/docs/project/resources/pastprojects/)
-  - should address a broad research context
+  - should address a broad __research context__
   
 - Evaluation
-  - [grading rubric available](https://odcm.hannesdatta.com/docs/project/grading/)
+  - [grading rubric available](https://odcm.hannesdatta.com/docs/project/grading/) [show website!]
   - self- and peer assessment used
+  - 5 group members (4 is the exception!)
 
 <!--__Please make this a project you can tell friends & family about. Make it matter.__
 -->
@@ -380,10 +388,11 @@ Course website
 Visit [https://odcm.hannesdatta.com]()!
 
 - It's open education, __so spread the word!__
-- Course website is your #1 resource, Canvas only used for
-  - posting important announcements,
-  - sign up for teams, and
-  - submitting data challenges/projects.
+- Course website is your #1 resource, Canvas used for
+  - posting announcements,
+  - signing up for teams, 
+  - submitting (weekly) deliverables,
+  - receiving grades.
 
 - Do all students have access to Canvas?
 
@@ -392,25 +401,34 @@ Using AI
 
 - I __encourage__ the use of AI to help you learn Python and web scraping/APIs efficiently
 - Note though that, on the exam, you've got to be 'good enough' to do it without AI
-- Resources
-  - Course Chatbot at https://odcm.tilburgai.nl
+- Make use of...
+  - Course Chatbot at https://odcm.tilburgai.nl (old); https://chatbot2.testing.tilburgai.nl/ (new)
   - MANY tutorials and extra resources at https://tilburg.ai
   - GitHub Copilot for Education ("AI programming guide")
 
 
 Common struggles & tips
 ========================================================
+incremental: true
 
 - Take time to become acquainted with the course (e.g., not using Canvas)
 - Can be tough at first, but you will gain experience rapidly!
 -	It can be overwhelming to follow dPrep and oDCM simultaneously, but the skills you learn are important for your course work, Master Thesis & future career!
-- TWO exam moments per academic year - choose wisely!
+- TWO exam moments per academic year - choose what suits you best (but: oDCM will be given annually after the summer)
+- Software
+  - Open (but geeky) (usable right away, no admin rights required)
+  - Computer exam on Windows computers; all students are encouraged to explore using the software on the computers on campus (e.g., library, computer rooms)
+
+Common struggles & tips
+=======
+
 -	Easing your start-up pain
   -	Start preparing early on (the first weeks will be the most challenging!)
   -	Have the same group members across dPrep and oDCM
   -	Collaborate with each other and try to help one another, also across teams!
   - Be in touch via WhatsApp for Business (add +31 13 466 8938)
-
+  
+  
 <!--
 ::: notes
 
@@ -419,17 +437,6 @@ Common struggles & tips
 
 :::
 -->
-
-My commitment to you
-========================================================
-incremental: true
-
-- Get you up to speed with both web scraping and APIs (and know when to pick which one!)
-- Teach you a bit of Python, __but__, becoming an expert requires years of practice
-- Discuss own work and ideas, __but__ this requires interaction, talking to me, working hard
-- Use of open software (usable right away, no admin rights required)
-- Bring in your own ideas, don't be afraid to study topics off the main stream!
-- I value diversity! Be who you want to be. Say what you want to say.
 
 Brain-dead by coding
 ========================================================
@@ -495,11 +502,8 @@ What's in for you?
 
 - Showcast expertise in coding
 
-
-Success factors
+Questions?
 ========================================================
-
-Please tell me __what would make this course a success__ for you
 
 <!--
 ::: notes
@@ -528,4 +532,3 @@ Next steps
 - ...and be in touch on WhatsApp for questions/feedback!
 -->
 
-__Any questions so far?!__

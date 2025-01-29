@@ -38,27 +38,28 @@ __The focus lies on *completing an entire data collection project*. Keep each st
 
 During the course, you will have the opportunity to meet up with the course instructor for coaching sessions. These sessions are meant for you to receive feedback on your ideas and code. Frequently, this also entails problem-solving & debugging.
 
-Teams participating in coaching sessions attend the entire session. They typically work together on the team project, and the course instructor will "walk around" to address students' questions. When on Zoom, breakout rooms will be created. There will be approximately 10 minutes per team in total; some teams may prefer to use the entire time at once, while other teams may prefer to ask multiple, short questions over the entire duration of the session.
+### Structure of Coaching Sessions:
+- **Participation:** All teams attend the full session. Teams typically collaborate on their projects while the course instructor provides support (in-person by walking around or via Zoom breakout rooms).
 
-__Deliverables:__ Most coaching sessions will help the team work on some deliverables, which are always due at the end of a course week and are submitted on Canvas by Friday, 7 pm.
+- **Session Format:**
+    - First Half: Each team gets 5–10 minutes to provide a progress update and seek assistance from the coach.
+    - Second Half: Time is allocated on a needs basis to address specific issues or questions raised by teams.
+
+__Deliverables:__ Most coaching sessions will help the team work on some deliverables, which are always due before the next coaching session. Please refer to Canvas for exact due dates each week.
 
 {{% hint info %}}
+**How to Prepare for Coaching Sessions?**  
 
-This is how to prepare for coaching sessions:
-
-- You get most out of the coaching sessions if you have already done some work on your project.
-- In addition, ensure you have worked through preparation material for the lectures before meeting as a team.
-- Make active use of the academic literature (i.e., Boegershausen et al. 2022 and Guyt et al. 2024)
-- If you encounter technical problems, check whether a solution has been posted already
-    - e.g., on this website, [this YouTube playlist](https://www.youtube.com/playlist?list=PLdDbyJQwReWhis9Ns7_NfYzw4YAp91D6G), or the associated [YouTube channel](https://youtube.com/c/hannesdatta)
-    - also conduct your own Google/Stackoverflow search
-- Start Jupyter Notebook and load your scripts before the start of the coaching session!
-    - your "problem" (e.g., error message) needs to be "on the screen", so that your coach can fiddle around with it. Merely showing a screenshot of an error message does not work.
-- When meeting online...
-    - download & install [TeamViewer](https://tilburgsciencehub.com/get/teamviewer) so that the course instructor can use your keyboard and mouse. Try out a connection with a team member before your first meeting to verify your installation works and you can remote-control your peer's computer.
-    - ensure you are sharing the screen with Jupyter Notebook, and join the scheduled session. 
-    - Share in a private message to the course instructor your TeamViewer ID & temporary password.
-    - Be prepared that the course instructor takes over your screen. Be able to talk (i.e., check your microphone settings before!).
+1. **Complete Weekly Tasks:** Work on your project and submit weekly deliverables to receive constructive feedback.  
+2. **Preparation:** Review lecture materials and relevant academic literature (e.g., Boegershausen et al., 2022; Guyt et al., 2024).  
+3. **Solve Technical Issues:**  
+   - Check for solutions on [this website](https://www.youtube.com/playlist?list=PLdDbyJQwReWhis9Ns7_NfYzw4YAp91D6G) or [YouTube channel](https://youtube.com/c/hannesdatta).  
+   - Perform your own Google or StackOverflow search.  
+4. **Set Up Jupyter Notebook:**  
+   - Load scripts and display any issues (e.g., error messages) on your screen for troubleshooting. Screenshots alone are insufficient.  
+5. **For Online Sessions:**  
+   - Share your screen (Jupyter Notebook) and ensure your microphone is functional.  
+   - Be ready for the instructor to take over your screen if needed.  
 
 {{< hint warning >}}
 __Typical issues to discuss in a coaching session__

@@ -1,0 +1,477 @@
+---
+title: "oDCM opening lecture"
+author: "Hannes Datta"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(reticulate)
+py_install("requests")
+py_install("bs4")
+
+```
+
+
+## Welcome to oDCM!
+
+We're about to start with the first lecture of this class.
+
+<!--
+- If you're joining on Zoom...
+- Please **turn on** your camera; it helps us to interact better!
+- The **chat** is open - use it like on Twitch/YouTube to also talk to each other (or to me).
+-->
+
+If you haven't done so, please 
+
+- __today's slides__ are available here: https://odcm.hannesdatta.com/docs/modules/week1
+- explore other sections of the **course page** at [https://odcm.hannesdatta.com]().
+- complete the **software installation** (https://odcm.hannesdatta.com/docs/modules/prep/)
+
+<!--
+
+- Drafted this course for a very long time
+- Finally got the chance to teaching it now
+
+- While you can find tons of resources online on how to scrape, or how to access data from APIs, none of these tutorials will actually teach you how the way you scrape affects your research. This is the void we will.
+- happy to share that vision, and share practical tips
+
+-->
+
+## Agenda
+
+- Part 1 (10.45 to about 11.45)
+  - Getting to know each other
+  - Motivation for the course
+  - Course framework and learning goals
+  - Agenda and practical arrangements
+- Break
+- Part 2: Python Bootcamp on your laptops (about 12.00 - 13.30/13.45)
+
+## This course in a nutshell
+
+- You will learn how to __write code that automatically downloads and structures information from the internet for the purpose of (scientific) analysis__.
+- We call these programs "web scrapers" (for any internet pages) and "APIs" (for official data access)
+- Web scraping are the foundation of Google Search ("web spiders") and ChatGPT (e.g., for training); APIs are at the core of many business models (e.g., Twitter API - back in the days; OpenAI API) 
+- I also almost got sued doing scraping (more about it later...)
+
+## Disclaimer
+
+
+> - This is predominantly about web scraping and APIs - while I teach a bit of Python, becoming an expert requires years of practice
+> - Mix of students at various levels (e.g., beginners, advanced Python users)
+> - You can also extract web data using other software packages (e.g., R)
+> - I will record sessions and post content immediately after class (but, attendance is strongly encouraged)
+> - Consider me your coach, not your distant professor (yes, I respond to WhatsApp messages at +31134668938)
+> - Slow me down if you need to
+
+<!--- Streamed sessions Live streams are *complements*, not substitutes for self-study & course website-->
+
+## About myself
+
+> - scraping nerd --- learned it in 2008 using Visual Basic in Excel
+> - started doing my own research with scraped and API-extracted data in 2012 (so, 10+ years experience)
+> - left Germany around your age, now 15+ years in NL
+> - Associate Professor at Tilburg University
+
+## Key areas of expertise
+
+- Substantive interests
+  - streaming business models (e.g., music, movies)
+  - marketing-mix modeling and optimization
+  - open science
+
+- Methodological interests
+  - online data collection via APIs and web scraping
+  - causal effects with observational data
+
+
+## Teaching activities 
+
+- MSc Marketing Analytics
+    - Data preparation and workflow management (https://dprep.hannesdatta.com)
+    - Online data collection and management (https://odcm.hannesdatta.com)
+    - MSc Thesis supervision (https://thesis.hannesdatta.com)
+- Other initiatives
+  - Tilburg Science Hub (https://tilburgsciencehub.com)
+  - Tilburg.ai (https://tilburg.ai)
+  - Music-to-scrape.org (https://music-to-scrape.org)
+  - YouTube channel (https://youtube.com/c/hannesdatta)
+  - My code (https://github.com/hannesdatta)
+  - More about my work (https://hannesdatta.com)
+
+
+## Getting to know you
+
+> - What's your background - previous education (e.g., program)?
+> - Any experience in Python (or other programming languages)?
+> - What are your passions & talents? (+ why I am asking you this...)
+
+
+
+## Motivation for course
+
+- started out as a PhD student without data
+- was interested in music, and found website with data (https://last.fm)
+- no best practices in scraping; learnt all by myself and made many mistakes
+- scraping was undervalued in academic job market, __but__, key role in shaping relevance and rigor of your work
+- now scraping and APIs are a large part of what defines my research
+
+## Selection of scraping projects I've undertaken (I)
+
+> - [scraped reviews at Amazon.com](https://journals.sagepub.com/doi/abs/10.1509/jm.11.0560)
+> - investigated ([how music consumption changed with Spotify](https://tiu.nu/spotify))
+> - [monitored Spotify's user interface and make lists of new releases](https://github.com/hannesdatta/data-spotify-promotions-releases)
+> - found a way to estimate ["power imbalances" in the music industry](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4079693)
+> - share data on the [playlist ecosystem](https://github.com/hannesdatta/data-spotify-playlist-ecosystem) with APIs
+
+## Selection of scraping projects I've undertaken (II)
+
+> - downloaded 100k+ images from Amazon, ran Image and Text Analyses using Google Cloud NLP and Vision APIs
+> - investigating "video streaming wars" (e.g., Netflix versus Disney+, when do consumers use multiple streaming services?), see [trakt.tv]()
+> - share code [on GitHub](https://github.com/hannesdatta)
+> - developed a [methodological framework on scraping/APIs](https://doi.org/10.1177%2F00222429221100750) (which we use in this class)
+> - faced legal battles...
+
+<!--
+- The story about the legal issues you faced (prior to switching to Chartmetric)
+
+- Show example of Chartmetric API output (a website with lots of text)
+
+- Unfortunately, not every websites provides an API
+-->
+
+## What is scraping, and what are APIs?
+
+*With web scraping, you can capture anything you can view in a web browser*
+
+- pricing data at [bol.com](https://bol.com)
+- reviews at [Amazon.com](https://amazon.com)
+- movie data at [imdb.com](https://imdb.com) or reviews at Rotten Tomatoes
+
+*With APIs, you obtain official data from a firm in a programmatic way*
+
+- e.g., as a developer, interact with Instagram, Twitter/X, ChatGPT / OpenAI, AWS, ...
+- as a researcher, construct data set from analytics firms
+
+## Introducting music-to-scrape.org
+
+- Mock-up streaming service
+- Developed last year, launched with Guyt et al. (2024) 
+- "Save" and controlled environment to learn scraping and APIs
+
+![Screenshot of Music to scrape](musictoscrape.png)
+
+## Quick web scraper in Python (I)
+
+* Let's first import some packages
+
+```{python, echo=T, eval=TRUE}
+import requests
+```
+
+* And then call a particular URL (check it out in your browser!)
+```{python, echo = T, eval = TRUE}
+import requests
+url = 'https://music-to-scrape.org/'
+webrequest = requests.get(url)
+```
+
+
+## Quick web scraper in Python (II)
+
+- Finally, let's retrieve the weekly top 15 songs (we use HTML tags and attribute-value pairs for this)
+
+```{python, echo = T, eval = TRUE}
+from bs4 import BeautifulSoup
+soup = BeautifulSoup(webrequest.text)
+weekly15 = soup.find('section', {'name':'weekly_15'})
+for song in weekly15.find_all('h5'): print(song.text)
+```
+
+- Works with any website, even anything you see in a browser (e.g., apps)
+
+## Quick APIs in Python (I)
+
+- APIs are official interfaces by firms for programmers to extract or submit data, or obtain access to an algorithm
+
+- They work *like* websites (i.e., you can call them with the same snippets as before), but usually you need to pay or at least sign up for the service
+
+```{python, echo = T, eval = TRUE}
+# let's get some data from the API of music-to-scrape
+url = 'https://api.music-to-scrape.org/charts/top-tracks'
+api_request = requests.get(url)
+```
+
+## Quick APIs in Python (II)
+
+- let's structure the output in the JSON format
+```{python, echo = TRUE, eval = TRUE}
+api_request_json = api_request.json()
+for song in api_request_json.get('chart'): 
+  print(song.get('name'))
+```
+
+## Opportunities with web data
+
+
+- for businesses
+  - "stitch together" different services (e.g., augment functionality of ChatGPT)
+  - do market research (e.g., pricing data; see Zyte)
+  - initialize recommendation systems (e.g., music metrics)
+- for research
+  - discover/document novel phenomena (e.g., new platforms/technologies)
+  - improving methods (e.g., get data to try out new methods, such as review data & text analysis, images, videos)
+  - improved inferences (i.e., get more accurate results)
+  - collect metrics managers care about
+
+## Getting inspired...
+
+> - What’s the last app/website that made you say ‘wow’?
+
+> - If you could only use three apps/websites for the next year, which ones would you pick and why?
+
+> - What's a niche online community you're part of that most people don’t know about?
+
+> - What’s the last thing you saw on TikTok that made you stop scrolling?
+
+> - Imagine an AI tool that could make you internet-famous overnight. What would it do?
+
+__Let's talk about it right now...__
+
+
+<!-- 
+
+bring in post its and put them on a board
+
+-->
+
+## Why to care (as a marketing researcher...)
+
+![odcm](./use_of_webdata.png)
+
+## Web data versus other marketing data (I)
+
+*Why do we need a course on this? Isn't this how research is always done?*
+
+__Yes, but collecting *web data* is different from other datasets!__
+
+- data source selection
+  - finding the *right* data source may be difficult as __many__ potential alternatives exist
+  - differ in delivery formats (website versus API, compared to CSV/databases)
+  - access to data that is *not* available commercially (or that a firm would not like to share)
+
+## Web data versus other marketing data (II)
+
+- extraction design
+  - which information to select (which is available?!)
+  - type of variables (sales is rare; review scores are abundant)
+  - different stakeholders that could potentially be addressed
+  - need to tackle legal and ethical issues
+
+## Web data versus other marketing data (III)
+
+- collecting data at scale!
+  - unprecedent: it's totally automatic (but prone to errors)
+  - need to put *monitoring* procedures in place
+  - data is not documented, and there is no direct way to ask questions about the data (sampling?! generalizability?)
+
+Each project is totally unique - that's why there is no universal "best way" to approach things...
+
+
+## Structured approach to data collections (Guyt et al. 2024)
+
+
+![Framework by Guyt et al. 2024](framework_guyt2024.png)
+
+
+## Detailed guidance by (Boegershausen et al. 2022)
+
+![odcm](framework.png)
+
+
+## Learning Goals of this course
+
+> - **Explain** how to use web data for **creating marketing insight**
+> - **Select web data sources** and evaluate their value to inform a specific research context or business problem
+> - **Design the web data collection** while balancing validity, technical feasibility, and exposure to legal/ethical risks
+> - **Collect data** via web scraping and Application Programming Interfaces (APIs) by mixing, extending, and repurposing code snippets
+> - **Document and archive collected data** and make it available for public (re)use
+
+## Positioning in the study program
+
+![odcm](odcm_positioning.png)
+
+## Course structure and grading
+
+- Weekly modules, structured along the methodological framework
+  - On-campus lectures and tutorials (Hannes)
+  - On-campus (sometimes online) coaching sessions (Roshini)
+      - ~45m check-in with all teams
+      - ~45m "free floating" questions
+  - Self-study (own tutorials (!), Datacamp, readings)
+  
+- Project in which you put into practice your skills (40% of your grade)
+
+- On-campus computer exam (60% of your grade)
+
+## This year's team project
+
+- Specifics
+  - scrape data via web sites or use APIs
+  - work through the method framework of Boegershausen et al. 2022
+  - receive feedback by students and Roshini (your coach)
+  - inspiration for the setup: [past projects](https://odcm.hannesdatta.com/docs/project/resources/pastprojects/)
+  - should address a broad __research context__
+  
+- Evaluation
+  - [grading rubric available](https://odcm.hannesdatta.com/docs/project/grading/) [show website!]
+  - self- and peer assessment used
+  - 5 group members (4 is the exception!)
+
+<!--__Please make this a project you can tell friends & family about. Make it matter.__
+-->
+
+
+<br>
+
+  
+## Course website
+
+Visit [https://odcm.hannesdatta.com]()!
+
+- It's open education, __so spread the word!__
+- Course website is your #1 resource, Canvas used for
+  - posting announcements,
+  - signing up for teams, 
+  - submitting (weekly) deliverables,
+  - receiving grades.
+
+- Do all students have access to Canvas?
+
+## Using AI
+
+- I __encourage__ the use of AI to help you learn Python and web scraping/APIs efficiently
+- Note though that, on the exam, you've got to be 'good enough' to do it without AI
+- Make use of...
+  - Course Chatbot at https://odcm.tilburgai.nl (old); https://chatbot2.testing.tilburgai.nl/ (new)
+  - MANY tutorials and extra resources at https://tilburg.ai
+  - GitHub Copilot for Education ("AI programming guide")
+
+
+## Common struggles & tips 
+
+> - Take time to become acquainted with the course (e.g., not using Canvas)
+> - Can be tough at first, but you will gain experience rapidly!
+> -	It can be overwhelming to follow dPrep and oDCM simultaneously, but the skills you learn are important for your course work, Master Thesis & future career!
+> - TWO exam moments per academic year - choose what suits you best (but: oDCM will be given annually after the summer)
+- Software: open (but geeky) (usable right away, no admin rights required), computer exam on Windows computers; all students are encouraged to explore using the software on the computers on campus (e.g., library, computer rooms)
+
+## Common struggles & tips
+
+
+-	Easing your start-up pain
+  -	Start preparing early on (the first weeks will be the most challenging!)
+  -	Have the same group members across dPrep and oDCM
+  -	Collaborate with each other and try to help one another, also across teams!
+  - Be in touch via WhatsApp for Business (add +31 13 466 8938)
+  
+  
+<!--
+::: notes
+
+* Exam: Both multiple choice and open questions (you can't pass this course if you don't learn programming  make sure you actively participate in the team project so that you can replicate it individually)
+- more specs on exam later
+
+:::
+-->
+
+## Brain-dead by coding
+
+- Coding can be extremely frustrating if you're starting out
+- I tend to become semi-"brain-dead" after a day of coding
+- Take breaks! Stop coding. Go for a run. Start again.
+- You will learn from your mistakes
+- Use ChatGPT, cheat sheets and our support section
+
+&#8594; quick feedback loops in first few weeks
+
+<!--
+::: notes
+
+Mention how we aim to remedy this initial hurdle? (quick feedback loops especially in the first few weeks)
+
+:::
+-->
+
+## Steps of escalation & getting in touch
+
+When you run into trouble, this is your way out!
+
+1. Use the course's Chatbot (https://odcm.tilburgai.nl)
+2. Try to find the info on the course website or course material
+3. Ask ChatGPT / Google / Stackoverflow
+4. Ask friend/classmate (form learning groups)
+5. Can it wait? Defer to lecturer or feedback sessions.
+6. If it can't wait: be in touch with me (--> next slide!)
+
+<!--
+::: notes
+
+* Google/Stackoverflow are your best friends
+* Live demonstration of how to search on Google and Stackoverflow
+* Comment on experiment with live coding sessions (start a call - talk to fellow classmates who're facing the same struggles)
+
+
+:::
+-->
+
+## Use of WhatsApp
+
+- Please use WhatsApp: +31 13 466 8938.
+
+![WhatsApp](wa_qr.jpeg)
+
+- Being in touch via email is typically slower
+
+
+## What's in for you?
+
+- Investment in research skills
+  - e.g., collect own data & shape its creation to create relevant and rigorous research
+
+- Essential skills for entrepreneurs
+  - e.g., have your own company on the basis of web data and APIs
+  - be the linking pin (interface between marketing and analytics)
+
+- Showcast expertise in coding
+
+## Questions?
+
+<!--
+::: notes
+
+(for me): become more efficient, use Tilburg Science Hub, give me feedback
+
+:::
+-->
+
+## Next steps
+
+- We will continue with our Python bootcamp after a break
+- Haven't followed the installation guide? Check it out on the course page now! (modules --> preparation)
+
+<!--
+- We w
+- Install software! (this was required preparation before the course started...)
+
+- Do the Python Bootcamp (after all, you need the know the basics!)
+
+- Learn more about the difference between web scraping and APIs (video)
+
+- Work hard...!
+
+- ...and be in touch on WhatsApp for questions/feedback!
+-->
+

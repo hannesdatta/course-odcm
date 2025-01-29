@@ -132,7 +132,7 @@ src\reporting\descriptives.R <-- final source code used to generate statistics/i
 
 You must use this [template](/docs/project/Datasheets_for_DataSets.zip) to create your documentation and fill in __all (sub-)questions in sections 1-6__. 
 
-Please refer to the [grading rubric](../../other/odcm-project-rubric.pdf) for further details on the assessment criteria for the data documentation.
+Please refer to the [grading rubric](/docs/other/odcm-project-rubric.pdf) for further details on the assessment criteria for the data documentation.
 
 {{< hint info>}}
 ***Disclaimer:***

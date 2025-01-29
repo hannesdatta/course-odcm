@@ -14,7 +14,7 @@ You'll start working on your project in the second course week. The activities b
 
 
 {{< hint info >}}
-**Deliverables** are submitted on Canvas. Please check Canvas for the due dates for each week. The course team will provide short feedback in line with the [grading rubric](../../other/odcm-project-rubric.pdf) at least a day before the next coaching session.
+**Deliverables** are submitted on Canvas. Please check Canvas for the due dates for each week. The course team will provide short feedback in line with the [grading rubric](/docs/other/odcm-project-rubric.pdf) at least a day before the next coaching session.
 
 {{< /hint>}}
 

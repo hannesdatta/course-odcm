@@ -63,7 +63,7 @@ To illustrate the wide range of applications of web data, the course introduces 
 
 ## Assessment
 
-- [Team project](project) (40%, out of which 8% are based on students' individual contribution, measured by [self- and peer assessment](../project/grading/peerassessment))
+- [Team project](/docs/project) (40%, out of which 8% are based on students' individual contribution, measured by [self- and peer assessment](../project/resources/peerassessment))
 - [Computer exam](/docs/exam) (60%)
 
 <!--

@@ -16,12 +16,7 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 -->
 
 ```{r setup, echo = FALSE}
-knitr::opts_chunk$set(
-	message = FALSE,
-	warning = FALSE,
-	include = FALSE
-)
-suppressWarnings(library(reticulate))
+library(reticulate)
 py_install("requests")
 py_install("bs4")
 ```
@@ -197,12 +192,12 @@ class: small-code
 
 * Let's first import some packages
 
-```{python, eval=TRUE}
+```{python, echo = TRUE, eval=TRUE}
 import requests
 ```
 
 * And then call a particular URL (check it out in your browser!)
-```{python, eval = TRUE}
+```{python, echo = TRUE, eval = TRUE}
 import requests
 url = 'https://music-to-scrape.org/'
 webrequest = requests.get(url)
@@ -216,7 +211,7 @@ class: small-code
 
 * Finally, let's retrieve the weekly top 15 songs (we use HTML tags and attribute-value pairs for this)
 
-```{python, eval = TRUE}
+```{python, echo = TRUE, eval = TRUE}
 from bs4 import BeautifulSoup
 soup = BeautifulSoup(webrequest.text)
 weekly15 = soup.find('section', {'name':'weekly_15'})
@@ -233,13 +228,13 @@ class: small-code
 
 * They work *like* websites (i.e., you can call them with the same snippets as before), but usually you need to pay or at least sign up for the service
 
-```{python, eval = TRUE}
+```{python, echo = TRUE, eval = TRUE}
 # let's get some data from the API of music-to-scrape
 api_request = requests.get('https://api.music-to-scrape.org/charts/top-tracks')
 ```
 
 * let's structure the output in the JSON format
-```{python, eval = TRUE}
+```{python, echo = TRUE, eval = TRUE}
 api_request_json = api_request.json()
 for song in api_request_json.get('chart'): print(song.get('name'))
 ```

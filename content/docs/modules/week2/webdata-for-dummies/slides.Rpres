@@ -6,9 +6,14 @@ autosize: true
 
 <style>
 .small-code pre code {
-  font-size: 1em;
+  font-size: 1.0em;
 }
 </style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/languages/python.min.js"></script>
+<script>hljs.highlightAll();</script>
 
 <!--#
 
@@ -23,6 +28,7 @@ py_install("bs4")
 
 Welcome to oDCM!
 ========================================================
+
 
 We're about to start with __today's tutorial ("web data for dummies")__.
 
@@ -73,6 +79,22 @@ incremental: true
 - APIs are linchpin of internet economy
 
 Source & more details: [Web Appendix of "Fields of Gold"](https://journals.sagepub.com/doi/suppl/10.1177/00222429221100750/suppl_file/sj-pdf-1-jmx-10.1177_00222429221100750.pdf)
+
+Consider your options: scraping vs. APIs
+=====
+
+- Many teams "default" to scraping - seems easier ("you can see what you get") and you may have heard about it before
+- Indeed, APIs can be tricky (importantly: getting your first connection sorted out!)
+- But: when that is set - things often go smoothly!
+- Suggestion: explore APIs broadly; maybe even some AI-based APIs you can get access to (e.g., OpenAI's API)
+
+Web scraping
+======
+incremental: true
+
+- Who's ever done it?!
+- Which sites?
+- Which data?
 
 
 We get started with web scraping
@@ -163,18 +185,24 @@ Preview: Technical web scraping setup (I)
 - We will use three libraries:
   - `requests`: downloads data from the web or transmits data ("headless")
   - `BeautifulSoup`: structures HTML data so we can query it
-  - `selenium` + `chromedriver`: simulates a browser (chrome), can scroll, click, view the site, but can also be headless; also structures HTML so we can query it
+  - __later__: `selenium` + `chromedriver`: simulates a browser (chrome), can scroll, click, view the site, but can also be headless; also structures HTML so we can query it
   - `json`: structure and query JSON data
   
 Preview: Technical web scraping setup (II)
 ============
 
-- For basic, "static" websites, we use `requests` + `beautifulSoup` (speed + ease!)
-- For dynamic websites, we use selenium (advanced tutorial), OR: `selenium` (retrieve data) + `beautifulSoup` (structure/query)
-- For APIs, we exclusively use `requests`
-- For data storage, we use `json` (preferred) or CSV files (flat files with rows & columns)
+__Getting the data__
+- Scraping
+  - Basic, "static" websites: `requests` + `beautifulSoup` (speed + ease!)
+  - Dynamic websites: selenium (advanced tutorial), OR: `selenium` (retrieve data) + `beautifulSoup` (structure/query)
+- APIs
+  - Only `requests`
 
-__- Today: `requests` + `BeautifulSoup`__
+__Storing the data__
+- use `json` (preferred) or CSV files (flat files with rows & columns)
+
+<br>
+__Today: `requests` + `BeautifulSoup`__
 
 Getting the website into Python
 ==================
@@ -429,6 +457,7 @@ Wrapping up web scraping
   - ensuring code runs top-down
   
 
+
 APIs
 =====
 incremental: true
@@ -445,29 +474,121 @@ Let's explore the documentation and a first endpoint
 
 - Let's view the [documentation](https://api.music-to-scrape.org/docs)
 
-- Let's explore a first endpoint: https://api.music-to-scrape.org/artists/featured
+- Let's explore a first endpoint in our browser: https://api.music-to-scrape.org/artists/featured
 
---> we can use the browser to retrieve data from (simple) APIs
+- DO: Describe what you see; what does that mean? How does the data link to other sections of the website? Do you "get" the logic?
 
-Extensions:
-- time data retrieval (e.g., every five seconds; discuss multiple strategies)
-- store featured artists in a list (or file)
+Retrieving data in Python
+=====
 
-DO: Let's retrieve some artist meta data
-=========
+```{python}
+import requests
+con = requests.get('https://api.music-to-scrape.org/artists/featured')
 
-__Get some artist meta data for an artist of your choice!__
+# convert to json
+obj = con.json()
 
-1.) Find an artist IDs on the site or in previous code
-2.) Try to make a web request (in your browser) to the following URL:
+obj
+```
 
-- Endpoint: `https://api.music-to-scrape.org/artist/info`
-- Requires parameter: `artistid`
-- Combined URL: `https://api.music-to-scrape.org/artist/info?artistid={ENTER ARTIST ID HERE}`
+Working with JSON objects
+========
 
-3.) Does it work? Then write Python code to retrieve the data.
+- Looking at them (`obj`)
+- Giving them arbitrary names (`obj` &rarr; `anothername`)
+- Accessing "nodes" (`obj['artists']` or `obj.get('artists')`)
+- Accessing items in a list (`obj['artists'][0]`): multiple objects are in that list!
 
-4.) Finally, wrap your code in a function so you can later retrieve data for multiple artists.
+
+DO: Application 1 (loops)
+=====
+
+Remember loops? We can "iterate" through result objects.
+
+```{python}
+for i in obj['artists']:
+  print(i.get('artist'))
+```
+
+DO: Can you also print out the artist IDs?
+
+
+DO: Turning code into a function
+=====
+
+- Please write a function to execute the data collection of featured artists. 
+- Call this function `getdata()`
+
+Starting code:
+
+```python
+def getdata():
+  # YOUR CODE HERE
+  
+  # return some data
+  
+  # return()
+```
+
+Solution:
+===
+
+```{python}
+import requests
+
+def getdata():
+  con = requests.get('https://api.music-to-scrape.org/artists/featured')
+  obj = con.json()
+  return(obj)
+
+```
+
+Let's call the function!
+
+```{python}
+getdata()
+
+```
+
+Timing the data collection
+======
+
+Hints:
+
+1) This makes your computer sleep for 5 seconds
+```python
+import time
+time.sleep(5) # sleeps 5 seconds
+```
+
+2) This makes your computer go on forever...
+```python
+while True:
+  # command here
+```
+
+3) This makes your computer go on forever...
+```{python}
+counter = 0
+while counter < 5:
+  counter = counter + 1
+  print("Hello")
+```
+
+DO: Please execute your data collection every one second seconds, at max. 5 times.
+
+Solution
+=====
+
+```{python, include = FALSE}
+import time
+
+i = 0
+while i < 5:
+  print(getdata())
+  time.sleep(1)
+  i = i + 1
+```
 
 
 At which frequency to extract the data? (Challenge #2.3)
@@ -489,6 +610,14 @@ At which frequency to extract the data? (Challenge #2.3)
   - randomize extraction order
   - use automatic schedulers for consistency
 
+
+Extensions: data storage
+=====
+
+Two options:
+1. store internally in a list (`[...]`)
+2. directly write to a file (`f = open()`, `f.write()`, `f.close()`)
+
 Processing data during the collection (challenge #2.4)
 ========
 
@@ -509,6 +638,24 @@ Processing data during the collection (challenge #2.4)
   - Remove sensitive info
   - Ensure proper encoding
 
+
+DO: Let's retrieve some artist meta data
+=========
+
+__Get some artist meta data for an artist of your choice!__
+
+1.) Find an artist IDs on the site or in previous code
+2.) Try to make a web request (in your browser) to the following URL:
+
+- Endpoint: `https://api.music-to-scrape.org/artist/info`
+- Requires parameter: `artistid`
+- Combined URL: `https://api.music-to-scrape.org/artist/info?artistid={ENTER ARTIST ID HERE}`
+
+3.) Does it work? Then write Python code to retrieve the data.
+
+4.) Finally, wrap your code in a function so you can later retrieve data for multiple artists.
+
+
 Optional (if time left): exercises with music-to-scrape
 ===============
 
@@ -521,9 +668,9 @@ __Please work on exercise 2.4 (see tutorial).__
 Next steps in this class
 =============
 
-- Work on your team project (see workplan on the course website) + make team allocation definite
-- Complete this tutorial at home
+- Complete this tutorial at home - focus equally on scraping __and__ APIs
 - Get engaged - see the "bigger" picture of web scraping and APIs
   - discuss ideas & business opportunities (e.g., OpenAI's developer platform?)
   - use our course chatbot at odcm.tilburgai.nl
-  - be in touch on WhatsApp for any issues/bugs/etc.
+  - be in touch with Roshini (email) or myself (on WhatsApp) for any issues/bugs/etc.
+- __Coaching session__: Work on your team project (see workplan on the course website) + make team allocation definite (with Roshini)

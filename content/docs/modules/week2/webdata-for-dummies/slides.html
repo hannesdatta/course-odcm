@@ -790,9 +790,17 @@ hljs.initHighlightingOnLoad();
 <div class="slideContent" >
 <style>
 .small-code pre code {
-  font-size: 1em;
+  font-size: 1.0em;
 }
 </style>
+
+<p><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css"></p>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/languages/python.min.js"></script>
+
+<script>hljs.highlightAll();</script>
 
 <!--#
 
@@ -878,6 +886,31 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 </ul>
 
 <p>Source &amp; more details: <a href="https://journals.sagepub.com/doi/suppl/10.1177/00222429221100750/suppl_file/sj-pdf-1-jmx-10.1177_00222429221100750.pdf">Web Appendix of &ldquo;Fields of Gold&rdquo;</a></p>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Consider your options: scraping vs. APIs</h3>
+<div class="slideContent" >
+<ul>
+<li>Many teams &ldquo;default&rdquo; to scraping - seems easier (&ldquo;you can see what you get&rdquo;) and you may have heard about it before</li>
+<li>Indeed, APIs can be tricky (importantly: getting your first connection sorted out!)</li>
+<li>But: when that is set - things often go smoothly!</li>
+<li>Suggestion: explore APIs broadly; maybe even some AI-based APIs you can get access to (e.g., OpenAI&#39;s API)</li>
+</ul>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Web scraping</h3>
+<div class="slideContent" >
+<ul>
+<li class="fragment">Who&#39;s ever done it?!</li>
+<li class="fragment">Which sites?</li>
+<li class="fragment">Which data?</li>
+</ul>
 
 </div>
 
@@ -1035,7 +1068,7 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 <ul>
 <li><code>requests</code>: downloads data from the web or transmits data (&ldquo;headless&rdquo;)</li>
 <li><code>BeautifulSoup</code>: structures HTML data so we can query it</li>
-<li><code>selenium</code> + <code>chromedriver</code>: simulates a browser (chrome), can scroll, click, view the site, but can also be headless; also structures HTML so we can query it</li>
+<li><strong>later</strong>: <code>selenium</code> + <code>chromedriver</code>: simulates a browser (chrome), can scroll, click, view the site, but can also be headless; also structures HTML so we can query it</li>
 <li><code>json</code>: structure and query JSON data</li>
 </ul></li>
 </ul>
@@ -1046,14 +1079,30 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 <section data-transition="linear" data-transition-speed="default">
 <h3>Preview: Technical web scraping setup (II)</h3>
 <div class="slideContent" >
+<p><strong>Getting the data</strong></p>
+
 <ul>
-<li>For basic, &ldquo;static&rdquo; websites, we use <code>requests</code> + <code>beautifulSoup</code> (speed + ease!)</li>
-<li>For dynamic websites, we use selenium (advanced tutorial), OR: <code>selenium</code> (retrieve data) + <code>beautifulSoup</code> (structure/query)</li>
-<li>For APIs, we exclusively use <code>requests</code></li>
-<li>For data storage, we use <code>json</code> (preferred) or CSV files (flat files with rows &amp; columns)</li>
+<li>Scraping
+
+<ul>
+<li>Basic, &ldquo;static&rdquo; websites: <code>requests</code> + <code>beautifulSoup</code> (speed + ease!)</li>
+<li>Dynamic websites: selenium (advanced tutorial), OR: <code>selenium</code> (retrieve data) + <code>beautifulSoup</code> (structure/query)</li>
+</ul></li>
+<li>APIs
+
+<ul>
+<li>Only <code>requests</code></li>
+</ul></li>
 </ul>
 
-<p><strong>- Today: <code>requests</code> + <code>BeautifulSoup</code></strong></p>
+<p><strong>Storing the data</strong></p>
+
+<ul>
+<li>use <code>json</code> (preferred) or CSV files (flat files with rows &amp; columns)</li>
+</ul>
+
+<p><br>
+<strong>Today: <code>requests</code> + <code>BeautifulSoup</code></strong></p>
 
 </div>
 
@@ -1118,7 +1167,7 @@ print(soup.find(&#39;h2&#39;).get_text())
 Location:
 United States
 Number of plays:
-36
+10
 </code></pre>
 
 </div>
@@ -1256,9 +1305,9 @@ for id in artist_ids:
   download_data(f&#39;https://music-to-scrape.org/artist?artist-id={id}&#39;)
 </code></pre>
 
-<pre><code>Artist name: Ya Boy from United States with 36 song plays.
-Artist name: Prince With 94 East from Minneapolis MN with 42 song plays.
-Artist name: Cabas from  with 352 song plays.
+<pre><code>Artist name: Ya Boy from United States with 10 song plays.
+Artist name: Prince With 94 East from Minneapolis MN with 7 song plays.
+Artist name: Cabas from  with 83 song plays.
 </code></pre>
 
 </div>
@@ -1427,38 +1476,148 @@ f.close()
 <div class="slideContent" >
 <ul>
 <li><p>Let&#39;s view the <a href="https://api.music-to-scrape.org/docs">documentation</a></p></li>
-<li><p>Let&#39;s explore a first endpoint: <a href="https://api.music-to-scrape.org/artists/featured">https://api.music-to-scrape.org/artists/featured</a></p></li>
-</ul>
-
-<p>&ndash;&gt; we can use the browser to retrieve data from (simple) APIs</p>
-
-<p>Extensions:</p>
-
-<ul>
-<li>time data retrieval (e.g., every five seconds; discuss multiple strategies)</li>
-<li>store featured artists in a list (or file)</li>
+<li><p>Let&#39;s explore a first endpoint in our browser: <a href="https://api.music-to-scrape.org/artists/featured">https://api.music-to-scrape.org/artists/featured</a></p></li>
+<li><p>DO: Describe what you see; what does that mean? How does the data link to other sections of the website? Do you &ldquo;get&rdquo; the logic?</p></li>
 </ul>
 
 </div>
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>DO: Let&#x27;s retrieve some artist meta data</h3>
+<h3>Retrieving data in Python</h3>
 <div class="slideContent" >
-<p><strong>Get some artist meta data for an artist of your choice!</strong></p>
+<pre><code class="python">import requests
+con = requests.get(&#39;https://api.music-to-scrape.org/artists/featured&#39;)
 
-<p>1.) Find an artist IDs on the site or in previous code
-2.) Try to make a web request (in your browser) to the following URL:</p>
+# convert to json
+obj = con.json()
 
+obj
+</code></pre>
+
+<pre><code>{&#39;artists&#39;: [{&#39;artist&#39;: &#39;Kate Clinton&#39;, &#39;artist_id&#39;: &#39;ARR2NH51187B98CE4C&#39;}, {&#39;artist&#39;: &#39;Furry Lewis&#39;, &#39;artist_id&#39;: &#39;ARN7OQ21187FB5A6B3&#39;}, {&#39;artist&#39;: &#39;Grant Geissman&#39;, &#39;artist_id&#39;: &#39;ARIN12F1187FB3E92C&#39;}, {&#39;artist&#39;: &#39;Tigertailz&#39;, &#39;artist_id&#39;: &#39;ARYFAT91187B99FEF5&#39;}, {&#39;artist&#39;: &#39;Tam Tam Go!&#39;, &#39;artist_id&#39;: &#39;ARGNGRI11E2835D567&#39;}]}
+</code></pre>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Working with JSON objects</h3>
+<div class="slideContent" >
 <ul>
-<li>Endpoint: <code>https://api.music-to-scrape.org/artist/info</code></li>
-<li>Requires parameter: <code>artistid</code></li>
-<li>Combined URL: <code>https://api.music-to-scrape.org/artist/info?artistid={ENTER ARTIST ID HERE}</code></li>
+<li>Looking at them (<code>obj</code>)</li>
+<li>Giving them arbitrary names (<code>obj</code> &rarr; <code>anothername</code>)</li>
+<li>Accessing &ldquo;nodes&rdquo; (<code>obj[&#39;artists&#39;]</code> or <code>obj.get(&#39;artists&#39;)</code>)</li>
+<li>Accessing items in a list (<code>obj[&#39;artists&#39;][0]</code>): multiple objects are in that list!</li>
 </ul>
 
-<p>3.) Does it work? Then write Python code to retrieve the data.</p>
+</div>
 
-<p>4.) Finally, wrap your code in a function so you can later retrieve data for multiple artists.</p>
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>DO: Application 1 (loops)</h3>
+<div class="slideContent" >
+<p>Remember loops? We can &ldquo;iterate&rdquo; through result objects.</p>
+
+<pre><code class="python">for i in obj[&#39;artists&#39;]:
+  print(i.get(&#39;artist&#39;))
+</code></pre>
+
+<pre><code>Kate Clinton
+Furry Lewis
+Grant Geissman
+Tigertailz
+Tam Tam Go!
+</code></pre>
+
+<p>DO: Can you also print out the artist IDs?</p>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>DO: Turning code into a function</h3>
+<div class="slideContent" >
+<ul>
+<li>Please write a function to execute the data collection of featured artists. </li>
+<li>Call this function <code>getdata()</code></li>
+</ul>
+
+<p>Starting code:</p>
+
+<pre><code class="python">def getdata():
+  # YOUR CODE HERE
+
+  # return some data
+
+  # return()
+</code></pre>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Solution:</h3>
+<div class="slideContent" >
+<pre><code class="python">import requests
+
+def getdata():
+  con = requests.get(&#39;https://api.music-to-scrape.org/artists/featured&#39;)
+  obj = con.json()
+  return(obj)
+</code></pre>
+
+<p>Let&#39;s call the function!</p>
+
+<pre><code class="python">getdata()
+</code></pre>
+
+<pre><code>{&#39;artists&#39;: [{&#39;artist&#39;: &#39;Billy May &amp; His Orchestra&#39;, &#39;artist_id&#39;: &#39;AR7SVRP1187FB55875&#39;}, {&#39;artist&#39;: &#39;The Honeydogs&#39;, &#39;artist_id&#39;: &#39;ARSWORN1187B991A7B&#39;}, {&#39;artist&#39;: &#39;Milo&#39;, &#39;artist_id&#39;: &#39;ARJ8ZIQ1187FB3FB5A&#39;}, {&#39;artist&#39;: &#39;Eric B. &amp; Rakim&#39;, &#39;artist_id&#39;: &#39;ARWC1WN1187FB516CE&#39;}, {&#39;artist&#39;: &#39;Tam Tam Go!&#39;, &#39;artist_id&#39;: &#39;ARGNGRI11E2835D567&#39;}]}
+</code></pre>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Timing the data collection</h3>
+<div class="slideContent" >
+<p>Hints:</p>
+
+<p>1) This makes your computer sleep for 5 seconds</p>
+
+<pre><code class="python">import time
+time.sleep(5) # sleeps 5 seconds
+</code></pre>
+
+<p>2) This makes your computer go on forever&hellip;</p>
+
+<pre><code class="python">while True:
+  # command here
+</code></pre>
+
+<p>3) This makes your computer go on forever&hellip;</p>
+
+<pre><code class="python">counter = 0
+while counter &lt; 5:
+  counter = counter + 1
+  print(&quot;Hello&quot;)
+</code></pre>
+
+<pre><code>Hello
+Hello
+Hello
+Hello
+Hello
+</code></pre>
+
+<p>DO: Please execute your data collection every one second seconds, at max. 5 times.</p>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Solution</h3>
+<div class="slideContent" >
 
 </div>
 
@@ -1495,6 +1654,16 @@ f.close()
 <li>use automatic schedulers for consistency</li>
 </ul></li>
 </ul>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Extensions: data storage</h3>
+<div class="slideContent" >
+<p>Two options:
+1. store internally in a list (<code>[...]</code>)
+2. directly write to a file (<code>f = open()</code>, <code>f.write()</code>, <code>f.close()</code>)</p>
 
 </div>
 
@@ -1539,6 +1708,27 @@ f.close()
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
+<h3>DO: Let&#x27;s retrieve some artist meta data</h3>
+<div class="slideContent" >
+<p><strong>Get some artist meta data for an artist of your choice!</strong></p>
+
+<p>1.) Find an artist IDs on the site or in previous code
+2.) Try to make a web request (in your browser) to the following URL:</p>
+
+<ul>
+<li>Endpoint: <code>https://api.music-to-scrape.org/artist/info</code></li>
+<li>Requires parameter: <code>artistid</code></li>
+<li>Combined URL: <code>https://api.music-to-scrape.org/artist/info?artistid={ENTER ARTIST ID HERE}</code></li>
+</ul>
+
+<p>3.) Does it work? Then write Python code to retrieve the data.</p>
+
+<p>4.) Finally, wrap your code in a function so you can later retrieve data for multiple artists.</p>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
 <h3>Optional (if time left): exercises with music-to-scrape</h3>
 <div class="slideContent" >
 <p><strong>Please work on exercise 2.4 (see tutorial).</strong></p>
@@ -1556,15 +1746,15 @@ f.close()
 <h3>Next steps in this class</h3>
 <div class="slideContent" >
 <ul>
-<li>Work on your team project (see workplan on the course website) + make team allocation definite</li>
-<li>Complete this tutorial at home</li>
+<li>Complete this tutorial at home - focus equally on scraping <strong>and</strong> APIs</li>
 <li>Get engaged - see the &ldquo;bigger&rdquo; picture of web scraping and APIs
 
 <ul>
 <li>discuss ideas &amp; business opportunities (e.g., OpenAI&#39;s developer platform?)</li>
 <li>use our course chatbot at odcm.tilburgai.nl</li>
-<li>be in touch on WhatsApp for any issues/bugs/etc.</li>
+<li>be in touch with Roshini (email) or myself (on WhatsApp) for any issues/bugs/etc.</li>
 </ul></li>
+<li><strong>Coaching session</strong>: Work on your team project (see workplan on the course website) + make team allocation definite (with Roshini)</li>
 </ul>
 
 </div>

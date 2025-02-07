@@ -58,6 +58,14 @@ __Use your smartphone to indicate your status__.
 
 Thanks.
 
+This room
+======
+
+Meet Windows! :)
+
+- Able to find Anaconda prompt?
+- Able to start up Jupyter Notebook?
+- Try RStudio as well (!) :)
 
 
 Framework
@@ -131,7 +139,7 @@ Which information to extract from a website (challenge #2.1)?
 DO: Exploring music-to-scrape
 =========
 
-- Open [music-to-scrape.org]() 
+- Open [music-to-scrape.org](https://music-to-scrape.org) 
 - Familiarize yourself with the structure of the site
 - Check which data you encounter
 - Suppose the data was stored in a database, how would you structure it?
@@ -144,10 +152,9 @@ Finding information in HTML code
 - So, let's "narrow" down on the information of interest
 - For this, we can use various extraction techniques on the HTML source code of the site
   - tags, e.g., `<table>`, `<h1>`, `<div>`
-  - attributes, e.g., id `<table id="example-table">`
-  - "special" attributes such as classes, e.g., `<table class="striped-table">`
-  - attribute-value pairs, e.g., `<table some_field_name = "123">`
-
+  - attribute-value pairs, e.g., id is equal to "example-table" &rarr; `<table id="example-table">`
+  - "special" attribute-value pairs such as classes, e.g., `<table class="striped-table">`
+  
 __Frequently, you need to combine several of these methods to extract information.__
 
 DO: Identifying information on music-to-scrape.org
@@ -177,7 +184,7 @@ CSS selectors and XPATHS (II)
   - Example for extracting "artist name": `.artist_info_title`
   - Works here, but can be "highly" dependent: say, tag & class name + position (sometimes too detailed) & can also break
 <br>
-- So, here, we are sticking mostly to _classes_, _attributes_, and _attribute-value pairs_.
+- So, here, we are sticking mostly to __tags__, _classes_, and __attribute-value pairs__, defining our "way" to a particular element manually
 
 Preview: Technical web scraping setup (I)
 ============
@@ -203,6 +210,16 @@ __Storing the data__
 
 <br>
 __Today: `requests` + `BeautifulSoup`__
+
+Preview: Technical web scraping setup (III)
+============
+
+A few notes on my code:
+
+- You can copy paste from slides to your own Jupyter Notebooks
+- You can see the code that I write __live__, at https://tiu.nu/livecoding
+- __Variable names can be arbitrarily set__ (but choose names that make sense to you)
+- We're picking up pace; we build upon programming concepts introduced last week (variable assignment, variable types, functions, functions with return values, and loops)
 
 Getting the website into Python
 ==================
@@ -289,8 +306,8 @@ Wrapping code in a function (I)
 class: small-code
 
 - Functions are extremely useful to "reuse" code over and over again
-  - Functions have a name (say, `def functionname`)
-  - ...and arguments (say, `def FUNCTIONNAME(argument1, argument2)`)
+  - Functions have a name (say,  `def functionname`)
+  - ...and arguments (say,  `def FUNCTIONNAME(argument1, argument2)`)
 <br>
 - We can now wrap the code above in a function 
   - `def download_data(url)`
@@ -332,7 +349,11 @@ artist_ids = ['ARICCN811C8A41750F', 'AR1GW0U1187B9B29FD', 'ARZ3U0K1187B999BF4']
 ```
 
 Tips: 
-- Status messages with variables: `print(f'Done retrieving {url}')`
+- Status messages with variables: 
+
+```r
+print(f'Done retrieving {url}')`
+```
 
 Solution
 ==========
@@ -364,10 +385,10 @@ Storing results into JSON data
 ===========
 
 - JSON is most flexible format, supports "hierarchical data"
-- Demonstrate how to create object
-- "Full" JSON objects, vs. __new-line separated JSON objects__
-  - Full: the entire FILE (e.g., `data.json`) is ONE giant JSON object
+- Demonstrate how to create empty object (`obj = {}`)
+- __New-line separated JSON objects__
   - __New line separation: each line in your file has one JSON object__
+  - compare to "full" JSON objects: one entire JSON object per file
   
 Storing results into JSON data
 ============
@@ -395,7 +416,7 @@ Saving JSON data
 
 The final step is to save JSON data in a file.
 
-We can do this with the JSON library.
+We can do this with the `json.dumps` function from the `json` library
 
 ```{python, eval=FALSE}
 import json
@@ -404,6 +425,7 @@ out_data = {'artist': 'artist name',
           'location': 'store location here',
           'plays': 'store plays here'}
           
+# convert dict to "string" that we can save
 to_json = json.dumps(out_data)
 
 f=open('filename.json','a')
@@ -444,14 +466,16 @@ Writing a complete web scraper
 - schedule
 - infrastructure
 
+For details/explanation, see Guyt et al. 2024.
+
 Wrapping up web scraping
 =====================
 
 - Get content from a __website__
 - Since we don't want "everything", we need to "find" relevant elements on the site using
+  - tags 
   - classes
-  - attributes
-  - (attribute-value pairs)
+  - attribute-value pairs
 - We first build a prototype; then gradually improve it by
   - modularizing code as much as possible (using functions and loops)
   - ensuring code runs top-down
@@ -464,7 +488,7 @@ incremental: true
 
 - Standard way for exchanging data, functions or algorithms
 - __Which APIs did you already encounter/explore?__
-- Music to scrape is super easy to use - other APIs require advanced authentication procedures
+- Music to scrape is super easy to use - other APIs require advanced authentication procedures (&rarr; import for project - run checks early)
 - Structure corresponds to web scraping
   - have list of seeds (e.g., artist IDs; this was "URLs" for web scraping earlier)
   - store data in new-line separated JSON files (if necessary: convert back to CSV)
@@ -472,7 +496,7 @@ incremental: true
 Let's explore the documentation and a first endpoint
 =========
 
-- Let's view the [documentation](https://api.music-to-scrape.org/docs)
+- Pretty much all APIs have documentations, see [here](https://api.music-to-scrape.org/docs) for ours
 
 - Let's explore a first endpoint in our browser: https://api.music-to-scrape.org/artists/featured
 
@@ -503,7 +527,7 @@ Working with JSON objects
 DO: Application 1 (loops)
 =====
 
-Remember loops? We can "iterate" through result objects.
+Remember loops from last week's bootcamp? We can "iterate" through result objects.
 
 ```{python}
 for i in obj['artists']:
@@ -545,15 +569,13 @@ def getdata():
 
 Let's call the function!
 
-```{python}
+```{python, echo = FALSE}
 getdata()
 
 ```
 
 Timing the data collection
 ======
-
-Hints:
 
 1) This makes your computer sleep for 5 seconds
 ```python
@@ -568,19 +590,19 @@ while True:
 ```
 
 3) This makes your computer go on forever...
-```{python}
+```python
 counter = 0
 while counter < 5:
   counter = counter + 1
   print("Hello")
 ```
 
-DO: Please execute your data collection every one second seconds, at max. 5 times.
+__DO:__ Please execute your data collection every one second seconds, at max. 5 times.
 
 Solution
 =====
 
-```{python, include = FALSE}
+```python
 import time
 
 i = 0
@@ -606,7 +628,7 @@ At which frequency to extract the data? (Challenge #2.3)
 ======
 - Some solutions
   - explore gains of live data collections
-  - adhere to best practices (say, 1 req per second)
+  - adhere to best practices (say, 1 request per second)
   - randomize extraction order
   - use automatic schedulers for consistency
 
@@ -615,8 +637,9 @@ Extensions: data storage
 =====
 
 Two options:
-1. store internally in a list (`[...]`)
-2. directly write to a file (`f = open()`, `f.write()`, `f.close()`)
+
+1. store internally in a list (`[...]`), then write to file at the end of your script
+2. directly write to a file (`f = open()`, `f.write()`, `f.close()`) ("parsing on the fly")
 
 Processing data during the collection (challenge #2.4)
 ========
@@ -626,7 +649,7 @@ Processing data during the collection (challenge #2.4)
   - extract only necessary information
   - choose data format for saving (say, JSON vs. CSV)
 - Some selected challenges
-  - GDPR vs value in retaining raw data
+  - GDPR vs. value in retaining raw data
   - Anonymization or pseudonymization required?
   
 Processing data during the collection (challenge #2.4)
@@ -639,12 +662,13 @@ Processing data during the collection (challenge #2.4)
   - Ensure proper encoding
 
 
-DO: Let's retrieve some artist meta data
+Optional I (if time left): Artist meta data
 =========
 
 __Get some artist meta data for an artist of your choice!__
 
 1.) Find an artist IDs on the site or in previous code
+
 2.) Try to make a web request (in your browser) to the following URL:
 
 - Endpoint: `https://api.music-to-scrape.org/artist/info`
@@ -656,7 +680,7 @@ __Get some artist meta data for an artist of your choice!__
 4.) Finally, wrap your code in a function so you can later retrieve data for multiple artists.
 
 
-Optional (if time left): exercises with music-to-scrape
+Optional II (if time left): exercises with music-to-scrape
 ===============
 
 __Please work on exercise 2.4 (see tutorial).__
@@ -665,10 +689,13 @@ __Please work on exercise 2.4 (see tutorial).__
 2. for each of these featured artists, collect meta data
 3. store data in new-line separated JSON file
 
+Questions
+====
+
 Next steps in this class
 =============
 
-- Complete this tutorial at home - focus equally on scraping __and__ APIs
+- Complete __this tutorial__ at home - focus equally on scraping __and__ APIs
 - Get engaged - see the "bigger" picture of web scraping and APIs
   - discuss ideas & business opportunities (e.g., OpenAI's developer platform?)
   - use our course chatbot at odcm.tilburgai.nl

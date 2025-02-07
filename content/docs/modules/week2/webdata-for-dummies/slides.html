@@ -863,6 +863,20 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
+<h3>This room</h3>
+<div class="slideContent" >
+<p>Meet Windows! :)</p>
+
+<ul>
+<li>Able to find Anaconda prompt?</li>
+<li>Able to start up Jupyter Notebook?</li>
+<li>Try RStudio as well (!) :)</li>
+</ul>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
 <h3>Framework</h3>
 <div class="mediaInline slideContent" >
 <p><img src="https://journals.sagepub.com/na101/home/literatum/publisher/sage/journals/content/jmxa/2022/jmxa_86_5/00222429221100750/20220801/images/large/10.1177_00222429221100750-fig2.jpeg" alt=""/></p>
@@ -977,7 +991,7 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 <h3>DO: Exploring music-to-scrape</h3>
 <div class="slideContent" >
 <ul>
-<li>Open <a href="">music-to-scrape.org</a> </li>
+<li>Open <a href="https://music-to-scrape.org">music-to-scrape.org</a> </li>
 <li>Familiarize yourself with the structure of the site</li>
 <li>Check which data you encounter</li>
 <li>Suppose the data was stored in a database, how would you structure it?</li>
@@ -996,9 +1010,8 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 
 <ul>
 <li>tags, e.g., <code>&lt;table&gt;</code>, <code>&lt;h1&gt;</code>, <code>&lt;div&gt;</code></li>
-<li>attributes, e.g., id <code>&lt;table id=&quot;example-table&quot;&gt;</code></li>
-<li>&ldquo;special&rdquo; attributes such as classes, e.g., <code>&lt;table class=&quot;striped-table&quot;&gt;</code></li>
-<li>attribute-value pairs, e.g., <code>&lt;table some_field_name = &quot;123&quot;&gt;</code></li>
+<li>attribute-value pairs, e.g., id is equal to &ldquo;example-table&rdquo; &rarr; <code>&lt;table id=&quot;example-table&quot;&gt;</code></li>
+<li>&ldquo;special&rdquo; attribute-value pairs such as classes, e.g., <code>&lt;table class=&quot;striped-table&quot;&gt;</code></li>
 </ul></li>
 </ul>
 
@@ -1053,7 +1066,7 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 <li>Works here, but can be &ldquo;highly&rdquo; dependent: say, tag &amp; class name + position (sometimes too detailed) &amp; can also break
 <br></li>
 </ul></li>
-<li>So, here, we are sticking mostly to <em>classes</em>, <em>attributes</em>, and <em>attribute-value pairs</em>.</li>
+<li>So, here, we are sticking mostly to <strong>tags</strong>, <em>classes</em>, and <strong>attribute-value pairs</strong>, defining our &ldquo;way&rdquo; to a particular element manually</li>
 </ul>
 
 </div>
@@ -1103,6 +1116,21 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 
 <p><br>
 <strong>Today: <code>requests</code> + <code>BeautifulSoup</code></strong></p>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Preview: Technical web scraping setup (III)</h3>
+<div class="slideContent" >
+<p>A few notes on my code:</p>
+
+<ul>
+<li>You can copy paste from slides to your own Jupyter Notebooks</li>
+<li>You can see the code that I write <strong>live</strong>, at <a href="https://tiu.nu/livecoding">https://tiu.nu/livecoding</a></li>
+<li><strong>Variable names can be arbitrarily set</strong> (but choose names that make sense to you)</li>
+<li>We&#39;re picking up pace; we build upon programming concepts introduced last week (variable assignment, variable types, functions, functions with return values, and loops)</li>
+</ul>
 
 </div>
 
@@ -1167,7 +1195,7 @@ print(soup.find(&#39;h2&#39;).get_text())
 Location:
 United States
 Number of plays:
-10
+11
 </code></pre>
 
 </div>
@@ -1222,8 +1250,8 @@ number_of_songs = len(song_table.find_all(&#39;tr&#39;))-1
 <li>Functions are extremely useful to &ldquo;reuse&rdquo; code over and over again
 
 <ul>
-<li>Functions have a name (say, <code>def functionname</code>)</li>
-<li>&hellip;and arguments (say, <code>def FUNCTIONNAME(argument1, argument2)</code>)
+<li>Functions have a name (say,  <code>def functionname</code>)</li>
+<li>&hellip;and arguments (say,  <code>def FUNCTIONNAME(argument1, argument2)</code>)
 <br></li>
 </ul></li>
 <li>We can now wrap the code above in a function 
@@ -1278,8 +1306,11 @@ download_data(&#39;https://music-to-scrape.org/artist?artist-id=ARICCN811C8A4175
 <p>Tips: </p>
 
 <ul>
-<li>Status messages with variables: <code>print(f&#39;Done retrieving {url}&#39;)</code></li>
+<li>Status messages with variables: </li>
 </ul>
+
+<pre><code class="r">print(f&#39;Done retrieving {url}&#39;)`
+</code></pre>
 
 </div>
 
@@ -1305,9 +1336,9 @@ for id in artist_ids:
   download_data(f&#39;https://music-to-scrape.org/artist?artist-id={id}&#39;)
 </code></pre>
 
-<pre><code>Artist name: Ya Boy from United States with 10 song plays.
-Artist name: Prince With 94 East from Minneapolis MN with 7 song plays.
-Artist name: Cabas from  with 83 song plays.
+<pre><code>Artist name: Ya Boy from United States with 11 song plays.
+Artist name: Prince With 94 East from Minneapolis MN with 8 song plays.
+Artist name: Cabas from  with 91 song plays.
 </code></pre>
 
 </div>
@@ -1318,12 +1349,12 @@ Artist name: Cabas from  with 83 song plays.
 <div class="slideContent" >
 <ul>
 <li>JSON is most flexible format, supports &ldquo;hierarchical data&rdquo;</li>
-<li>Demonstrate how to create object</li>
-<li>&ldquo;Full&rdquo; JSON objects, vs. <strong>new-line separated JSON objects</strong>
+<li>Demonstrate how to create empty object (<code>obj = {}</code>)</li>
+<li><strong>New-line separated JSON objects</strong>
 
 <ul>
-<li>Full: the entire FILE (e.g., <code>data.json</code>) is ONE giant JSON object</li>
 <li><strong>New line separation: each line in your file has one JSON object</strong></li>
+<li>compare to &ldquo;full&rdquo; JSON objects: one entire JSON object per file</li>
 </ul></li>
 </ul>
 
@@ -1357,7 +1388,7 @@ def download_data(url):
 <div class="slideContent" >
 <p>The final step is to save JSON data in a file.</p>
 
-<p>We can do this with the JSON library.</p>
+<p>We can do this with the <code>json.dumps</code> function from the <code>json</code> library</p>
 
 <pre><code class="python">import json
 
@@ -1365,6 +1396,7 @@ out_data = {&#39;artist&#39;: &#39;artist name&#39;,
           &#39;location&#39;: &#39;store location here&#39;,
           &#39;plays&#39;: &#39;store plays here&#39;}
 
+# convert dict to &quot;string&quot; that we can save
 to_json = json.dumps(out_data)
 
 f=open(&#39;filename.json&#39;,&#39;a&#39;)
@@ -1427,6 +1459,8 @@ f.close()
 <li>infrastructure</li>
 </ul>
 
+<p>For details/explanation, see Guyt et al. 2024.</p>
+
 </div>
 
 </section>
@@ -1438,9 +1472,9 @@ f.close()
 <li>Since we don&#39;t want &ldquo;everything&rdquo;, we need to &ldquo;find&rdquo; relevant elements on the site using
 
 <ul>
+<li>tags </li>
 <li>classes</li>
-<li>attributes</li>
-<li>(attribute-value pairs)</li>
+<li>attribute-value pairs</li>
 </ul></li>
 <li>We first build a prototype; then gradually improve it by
 
@@ -1459,7 +1493,7 @@ f.close()
 <ul>
 <li class="fragment">Standard way for exchanging data, functions or algorithms</li>
 <li class="fragment"><strong>Which APIs did you already encounter/explore?</strong></li>
-<li class="fragment">Music to scrape is super easy to use - other APIs require advanced authentication procedures</li>
+<li class="fragment">Music to scrape is super easy to use - other APIs require advanced authentication procedures (&rarr; import for project - run checks early)</li>
 <li class="fragment">Structure corresponds to web scraping
 
 <ul>
@@ -1475,7 +1509,7 @@ f.close()
 <h3>Let&#x27;s explore the documentation and a first endpoint</h3>
 <div class="slideContent" >
 <ul>
-<li><p>Let&#39;s view the <a href="https://api.music-to-scrape.org/docs">documentation</a></p></li>
+<li><p>Pretty much all APIs have documentations, see <a href="https://api.music-to-scrape.org/docs">here</a> for ours</p></li>
 <li><p>Let&#39;s explore a first endpoint in our browser: <a href="https://api.music-to-scrape.org/artists/featured">https://api.music-to-scrape.org/artists/featured</a></p></li>
 <li><p>DO: Describe what you see; what does that mean? How does the data link to other sections of the website? Do you &ldquo;get&rdquo; the logic?</p></li>
 </ul>
@@ -1495,7 +1529,7 @@ obj = con.json()
 obj
 </code></pre>
 
-<pre><code>{&#39;artists&#39;: [{&#39;artist&#39;: &#39;Kate Clinton&#39;, &#39;artist_id&#39;: &#39;ARR2NH51187B98CE4C&#39;}, {&#39;artist&#39;: &#39;Furry Lewis&#39;, &#39;artist_id&#39;: &#39;ARN7OQ21187FB5A6B3&#39;}, {&#39;artist&#39;: &#39;Grant Geissman&#39;, &#39;artist_id&#39;: &#39;ARIN12F1187FB3E92C&#39;}, {&#39;artist&#39;: &#39;Tigertailz&#39;, &#39;artist_id&#39;: &#39;ARYFAT91187B99FEF5&#39;}, {&#39;artist&#39;: &#39;Tam Tam Go!&#39;, &#39;artist_id&#39;: &#39;ARGNGRI11E2835D567&#39;}]}
+<pre><code>{&#39;artists&#39;: [{&#39;artist&#39;: &#39;Fred Merpol&#39;, &#39;artist_id&#39;: &#39;ARKIQSL1241B9C90C8&#39;}, {&#39;artist&#39;: &#39;Off Broadway&#39;, &#39;artist_id&#39;: &#39;AR4IYQR1187B98F8F3&#39;}, {&#39;artist&#39;: &#39;A Challenge Of Honour&#39;, &#39;artist_id&#39;: &#39;ARL1QL91187B994B08&#39;}, {&#39;artist&#39;: &#39;Ya Boy&#39;, &#39;artist_id&#39;: &#39;ARICCN811C8A41750F&#39;}, {&#39;artist&#39;: &#39;Milo&#39;, &#39;artist_id&#39;: &#39;ARJ8ZIQ1187FB3FB5A&#39;}]}
 </code></pre>
 
 </div>
@@ -1517,17 +1551,17 @@ obj
 <section data-transition="linear" data-transition-speed="default">
 <h3>DO: Application 1 (loops)</h3>
 <div class="slideContent" >
-<p>Remember loops? We can &ldquo;iterate&rdquo; through result objects.</p>
+<p>Remember loops from last week&#39;s bootcamp? We can &ldquo;iterate&rdquo; through result objects.</p>
 
 <pre><code class="python">for i in obj[&#39;artists&#39;]:
   print(i.get(&#39;artist&#39;))
 </code></pre>
 
-<pre><code>Kate Clinton
-Furry Lewis
-Grant Geissman
-Tigertailz
-Tam Tam Go!
+<pre><code>Fred Merpol
+Off Broadway
+A Challenge Of Honour
+Ya Boy
+Milo
 </code></pre>
 
 <p>DO: Can you also print out the artist IDs?</p>
@@ -1569,10 +1603,7 @@ def getdata():
 
 <p>Let&#39;s call the function!</p>
 
-<pre><code class="python">getdata()
-</code></pre>
-
-<pre><code>{&#39;artists&#39;: [{&#39;artist&#39;: &#39;Billy May &amp; His Orchestra&#39;, &#39;artist_id&#39;: &#39;AR7SVRP1187FB55875&#39;}, {&#39;artist&#39;: &#39;The Honeydogs&#39;, &#39;artist_id&#39;: &#39;ARSWORN1187B991A7B&#39;}, {&#39;artist&#39;: &#39;Milo&#39;, &#39;artist_id&#39;: &#39;ARJ8ZIQ1187FB3FB5A&#39;}, {&#39;artist&#39;: &#39;Eric B. &amp; Rakim&#39;, &#39;artist_id&#39;: &#39;ARWC1WN1187FB516CE&#39;}, {&#39;artist&#39;: &#39;Tam Tam Go!&#39;, &#39;artist_id&#39;: &#39;ARGNGRI11E2835D567&#39;}]}
+<pre><code>{&#39;artists&#39;: [{&#39;artist&#39;: &#39;Grant Geissman&#39;, &#39;artist_id&#39;: &#39;ARIN12F1187FB3E92C&#39;}, {&#39;artist&#39;: &#39;Fred Merpol&#39;, &#39;artist_id&#39;: &#39;ARKIQSL1241B9C90C8&#39;}, {&#39;artist&#39;: &#39;Three-6 Mafia&#39;, &#39;artist_id&#39;: &#39;ARY55LO1187B9A3F17&#39;}, {&#39;artist&#39;: &#39;The Honeydogs&#39;, &#39;artist_id&#39;: &#39;ARSWORN1187B991A7B&#39;}, {&#39;artist&#39;: &#39;Terry Muska&#39;, &#39;artist_id&#39;: &#39;ARMORUX11F50C4EEBF&#39;}]}
 </code></pre>
 
 </div>
@@ -1581,8 +1612,6 @@ def getdata():
 <section data-transition="linear" data-transition-speed="default">
 <h3>Timing the data collection</h3>
 <div class="slideContent" >
-<p>Hints:</p>
-
 <p>1) This makes your computer sleep for 5 seconds</p>
 
 <pre><code class="python">import time
@@ -1603,14 +1632,7 @@ while counter &lt; 5:
   print(&quot;Hello&quot;)
 </code></pre>
 
-<pre><code>Hello
-Hello
-Hello
-Hello
-Hello
-</code></pre>
-
-<p>DO: Please execute your data collection every one second seconds, at max. 5 times.</p>
+<p><strong>DO:</strong> Please execute your data collection every one second seconds, at max. 5 times.</p>
 
 </div>
 
@@ -1618,6 +1640,14 @@ Hello
 <section data-transition="linear" data-transition-speed="default">
 <h3>Solution</h3>
 <div class="slideContent" >
+<pre><code class="python">import time
+
+i = 0
+while i &lt; 5:
+  print(getdata())
+  time.sleep(1)
+  i = i + 1
+</code></pre>
 
 </div>
 
@@ -1649,7 +1679,7 @@ Hello
 
 <ul>
 <li>explore gains of live data collections</li>
-<li>adhere to best practices (say, 1 req per second)</li>
+<li>adhere to best practices (say, 1 request per second)</li>
 <li>randomize extraction order</li>
 <li>use automatic schedulers for consistency</li>
 </ul></li>
@@ -1661,9 +1691,12 @@ Hello
 <section data-transition="linear" data-transition-speed="default">
 <h3>Extensions: data storage</h3>
 <div class="slideContent" >
-<p>Two options:
-1. store internally in a list (<code>[...]</code>)
-2. directly write to a file (<code>f = open()</code>, <code>f.write()</code>, <code>f.close()</code>)</p>
+<p>Two options:</p>
+
+<ol>
+<li>store internally in a list (<code>[...]</code>), then write to file at the end of your script</li>
+<li>directly write to a file (<code>f = open()</code>, <code>f.write()</code>, <code>f.close()</code>) (&ldquo;parsing on the fly&rdquo;)</li>
+</ol>
 
 </div>
 
@@ -1682,7 +1715,7 @@ Hello
 <li>Some selected challenges
 
 <ul>
-<li>GDPR vs value in retaining raw data</li>
+<li>GDPR vs. value in retaining raw data</li>
 <li>Anonymization or pseudonymization required?</li>
 </ul></li>
 </ul>
@@ -1708,12 +1741,13 @@ Hello
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>DO: Let&#x27;s retrieve some artist meta data</h3>
+<h3>Optional I (if time left): Artist meta data</h3>
 <div class="slideContent" >
 <p><strong>Get some artist meta data for an artist of your choice!</strong></p>
 
-<p>1.) Find an artist IDs on the site or in previous code
-2.) Try to make a web request (in your browser) to the following URL:</p>
+<p>1.) Find an artist IDs on the site or in previous code</p>
+
+<p>2.) Try to make a web request (in your browser) to the following URL:</p>
 
 <ul>
 <li>Endpoint: <code>https://api.music-to-scrape.org/artist/info</code></li>
@@ -1729,7 +1763,7 @@ Hello
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Optional (if time left): exercises with music-to-scrape</h3>
+<h3>Optional II (if time left): exercises with music-to-scrape</h3>
 <div class="slideContent" >
 <p><strong>Please work on exercise 2.4 (see tutorial).</strong></p>
 
@@ -1743,10 +1777,17 @@ Hello
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
+<h3>Questions</h3>
+<div class="slideContent" >
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
 <h3>Next steps in this class</h3>
 <div class="slideContent" >
 <ul>
-<li>Complete this tutorial at home - focus equally on scraping <strong>and</strong> APIs</li>
+<li>Complete <strong>this tutorial</strong> at home - focus equally on scraping <strong>and</strong> APIs</li>
 <li>Get engaged - see the &ldquo;bigger&rdquo; picture of web scraping and APIs
 
 <ul>

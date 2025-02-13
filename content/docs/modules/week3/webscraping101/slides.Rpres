@@ -31,27 +31,7 @@ We're about to start with __today's tutorial ("web scraping 101")__.
 - Today's (live) code is available at [tiu.nu/livecoding]() (refresh may be needed)
 - You can use Google Colab at the beginning of this tutorial, BUT... you will have to use __Jupyter Notebook on your laptops__ towards the end
 
-
-Before we start
-========================================================
-
-- Recap coaching session for team activity #1
-  - explore broadly! ("universe discovery!") --> check challenge #1.1
-  - compare sources thoroughly --> e.g., comparison table + challenge #1.2
-  - use overview tables for comparison, illustrations
-- Today's coaching session: __decide__ which website or API to use (challenges #1.1-#1.3)
-
-
-A note on my (live) tutorials (I)
-===============
-
-- Core material is the (Jupyter Notebook) tutorial of the week
-- It's *written* and illustrated with screenshots -- it gives you all of the necessary information and you can do it at your own time after class.
-- IN CLASS, my ambition is to preview selected issues 
-- Recordings of these sessions posted on Canvas
-
-
-A note on my (live) tutorials (II)
+Before we start (I): live coding
 ===============
   
 - feel comfortable w/ code?
@@ -64,23 +44,33 @@ A note on my (live) tutorials (II)
 - "bored"/too advanced?
   - flip through slides and work on advanced exercises
   - ask advanced questions when I walk around (1:1)
-  - today's "klaaropdracht" ("when you're done..." - see end of slide deck)
 
-Framework
-=======
 
-![](https://journals.sagepub.com/na101/home/literatum/publisher/sage/journals/content/jmxa/2022/jmxa_86_5/00222429221100750/20220801/images/large/10.1177_00222429221100750-fig2.jpeg)
+Before we start (II)
+========================================================
 
-Today: zooming in more on __collection design__
+- Recap from last week (`.find()`, `.find_all()`)
+- Part 1: `beautifulSoup` (static websites; works in Colab)
+- Part 2: `selenium` (dynamic websites; only works on your laptops)
 
-Recap from last week's tutorial
-==========
+<br>
+- Today's coaching session: __decide__ which website or API to use (challenges #1.1-#1.3) & start coding your collections
+
+Recap 
+===
 
 - We focused on which __information to extract__ (Challenge #2.1)
   - e.g., explore a website, navigate broadly to find information that's interesting, etc.
 - We focused on __how to extract__ that information
   - BeautifulSoup: `.find()` and `.find_all()` functions
   - Use (a combination of) tags or attributes (e.g., classes; particularly attribute-value pairs)
+
+
+Recap (Framework)
+==========
+
+![](https://journals.sagepub.com/na101/home/literatum/publisher/sage/journals/content/jmxa/2022/jmxa_86_5/00222429221100750/20220801/images/large/10.1177_00222429221100750-fig2.jpeg)
+
 
 DO: Recap from last week's tutorial
 ==========
@@ -114,17 +104,11 @@ __Recommendations:__
 - Practice even more, e.g., with __new information__ that you haven't extracted before from this and other sections of the website.
 - Always build code __gradually__, __never__ from scratch
 
-DO: After-class exercise from last week
-==========
-class: small-code
 
-- Any issues you've run into? 
-- Solutions posted on the site!
+Part 1: `beautifulSoup` (static websites; works in Colab)
+=======
 
-Today's focus
-================
-
-__Remaining challenges for the "design" phase of collecting data.__
+__We use `beautifulSoup` for addressing the remaining challenges for the "design" phase of collecting data.__
 
 - How to sample from a website? (Challenge #2.2)
   - Recall that we do not have access to a firm's database (so we can't sample from a population of, say, users)
@@ -137,20 +121,20 @@ __Remaining challenges for the "design" phase of collecting data.__
 __Using your own project ideas__, tell us how you could __sample__ from the site? (--> see [table 3 in "Fields of Gold"](https://journals.sagepub.com/doi/full/10.1177/00222429221100750?journalCode=jmxa#table3-00222429221100750))
 
 
-Sampling users
+Sampling users (I)
 ===========
 class: small-code
 
-For today's tutorial, we will be sampling users from the main website of music-to-scrape.org
+Let's sample users from the main website of music-to-scrape.org
 
 __Can you propose a strategy to capture them?__ Any attributes/classes you see? 
 
 
-DO: Extract all links
+Sampling users (II)
 =======
 class: small-code
 
-__Please use the code snippet below to extract the 'href' attribute of all links on the website.__
+__DO__: Please use the code snippet below to extract the 'href' attribute of all links on the website.
 
 - Links are identifiable by the "a" tag. 
 - The relevant attribute is called "href"
@@ -167,7 +151,7 @@ homepage = BeautifulSoup(res.text)
 # continue here
 ```
 
-Solution: Extract all links
+Sampling users (III): Solution
 =====
 
 ```{python, eval=TRUE}
@@ -176,13 +160,13 @@ for link in homepage.find_all("a"):
         print(link.attrs["href"])
 ```
 
-Solution: Extract all links
+Narrowing down (I)
 =====
 
 - But... are all of these links really relevant?
 - Recall: what "seeds" do we need to gather?
 
-Narrowing down our extraction
+Narrowing down (II)
 ============
 
 - Let us explore the site structure a bit more
@@ -190,7 +174,7 @@ Narrowing down our extraction
 - Remember, your strategy can be a "multi-step" strategy (first to A, then within A to B)!
 - __Let's open the inspect mode of our browser and come up with an updated strategy.__
 
-DO: Narrowing down our extraction
+Narrowing down (III)
 ============
 
 - The relevant links all reside in the `recent_users` section, starting with `<section`>
@@ -201,7 +185,7 @@ relevant_section = homepage.find('section',attrs={'name':'recent_users'})
 
 __DO:__ Can you come up with a way to loop through all of the links WITHIN `relevant_section` and store them?
 
-Solution: Narrowing down our extraction
+Narrowing down (IV): Solution
 ============
 class: small-code
 
@@ -215,7 +199,7 @@ users
 
 - Let's now take a look at these links more closely. 
 
-Modifying the links
+Narrowing down (V): More extensions
 ========
 class: small-code
 
@@ -231,17 +215,18 @@ for link in relevant_section.find_all("a"):
 urls
 ```
 
-DO: Remember functions?
-======
+Narrowing down (VI): More extensions: Functions
+====
 
-Write a function that...
+__DO:__ Write a function that...
 
 - makes a web request to https://music-to-scrape.org
 - extract all links to the user pages and returns them back (`return()`)
 
 __Do you remember why we like functions so much?__
 
-Solution
+Narrowing down (VII): Solution
+
 ======
 class: small-code
 
@@ -272,7 +257,7 @@ def get_users():
 
 - Functions allow us to __re-use code__; it prevents errors, and helps us structure our code.
 
-JSON data
+JSON data (I)
 =====
 
 - For now, the data is just in memory.
@@ -281,7 +266,7 @@ JSON data
 - Use `json.dumps` to convert JSON to text (and then save it)
 - Use `json.loads` to convert text to JSON (and then use it)
 
-Example: JSON data
+JSON data (II): Example
 =====
 class: small-code
 
@@ -299,14 +284,14 @@ for user in users:
 f.close()
 ```
 
-Preventing array misalignment
+Preventing array misalignment (I)
 ==============
 
 - When extracting web data, it's important to extract information in its "original" (nested) structure
 - For example, hover around the user names and observe the song names that pop up.
 - If you were to extract this information __separately__, you wouldn't be able to know __which one relates to which user__.
 
-Demonstration
+Preventing array misalignment (II): Demo
 =======
 class: small-code
 
@@ -326,11 +311,11 @@ len(links)
 len(songs)
 ```
 
-DO: Preventing array misalignment
+Preventing array misalignment (III): DO
 ====
 class: small-code
 
-How can you capture the song data, such that we can always link the particular song to particular users? (i.e., to prevent array misalignment)?
+__DO:__ How can you capture the song data, such that we can always link the particular song to particular users? (i.e., to prevent array misalignment)?
 
 Tip: Observe how we can first iterate through users, THEN extract links (similar to how we have done it with `relevant_section`).
 
@@ -344,7 +329,7 @@ data
 
 ```
 
-Solution
+Preventing array misalignment (IV): Solution
 ====
 class: small-code
 
@@ -380,7 +365,7 @@ Let's take a step back...
   - "collect" all user seeds (scraper 1)
   - then collect all consumption data from individual user pages (scraper 2)
   
-Navigating on a website
+Navigating on a website (I)
 =========
 class: small-code
 
@@ -397,11 +382,11 @@ while counter >= 0:
 urls
 ```
 
-DO: Navigating on a website (strategy 2)
+Navigating on a website (II): DO (strategy 2)
 =========
 class: small-code
 
-__Run the code below. How to extend the code to extract the LINK of the previous button?__
+__DO__: Run the code below. How to extend the code to extract the LINK of the previous button?
 
 ```{python, eval=TRUE}
 url = 'https://music-to-scrape.org/user?username=StarCoder49&week=36'
@@ -413,7 +398,7 @@ button=userpage.find(class_='page-link', attrs={'type':'previous_page'})
 
 ```
 
-Solution
+Navigating on a website (III): Solution
 ======
 
 ```{python}
@@ -422,7 +407,7 @@ button.attrs['href']
 
 __DISCUSS:__ When do we use strategy 1 (pre-built) vs. strategy 2 (do it on the fly)?
 
-Let's tie things together
+Tying things together
 =========
 class: small-code
 
@@ -495,25 +480,7 @@ for s in seeds:
 
 ```
 
-Extract consumption data
-====
-
-We still need to extract the consumption data from a user's profile page.
-
-Let's start with the snippet below.
-
-```{python}
-url = 'https://music-to-scrape.org/user?username=StarCoder49&week=10'
-soup = BeautifulSoup(requests.get(url).text)
-```
-
-Can you propose:
-- how to find the table?
-- how to iterate through each row?
-- how to save the information as a JSON dictionary
-
-
-Scraping more advanced websites
+Part 2: Scraping more advanced websites
 =========
 incremental: true
 class: small-code
@@ -541,8 +508,8 @@ class: small-code
 - Try this:
 
 ```{python, eval=FALSE}
-!pip install webdriver_manager
-!pip install selenium
+!pip install webdriver_manager --upgrade
+!pip install selenium --upgrade
 
 # Using selenium 4 - ensure you have Chrome installed!
 from selenium import webdriver
@@ -551,7 +518,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
 
-url = "https://amazon.com/" # remember to solve captchas
+url = "https://music-to-scrape.org/"
 driver.get(url)
 ```
 
@@ -567,9 +534,42 @@ Continuing with beautifulsoup
 from bs4 import BeautifulSoup
 soup = BeautifulSoup(driver.page_source)
 
-for el in soup.find_all(class_ = 'a-section'):
-    title = el.find('h2')
-    if title is not None: print(title.text)
+cards = soup.find_all(class_='card-body')
+
+counter = 0
+for card in cards:
+    counter = counter + 1
+    print('Card ' + str(counter) + ': ' + card.get_text())
+
+```
+
+Clicking with selenium
+======
+
+```python
+url = "https://music-to-scrape.org/"
+driver.get(url)
+time.sleep(3) # wait for 3 seconds
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.action_chains import ActionChains
+
+try:
+    cookie_button = driver.find_element(By.ID, "accept-cookies")
+    cookie_button.click()
+except:
+    print('No cookie button found (anymore)!')
+```
+
+Scrolling with selenium
+=====
+
+```python
+scroll_pause_time = 2
+for _ in range(3):  # Scroll down 3 times
+    driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+    time.sleep(scroll_pause_time)
 ```
 
 Different ways to open a site
@@ -594,10 +594,4 @@ Thanks!
 
 - Any questions?
 - Be in touch for feedback via WhatsApp.
-
-Today's "klaaropdracht" (when you're totally advanced already)
-=====
-
-Use the code snippets provided on Selenium and BeautifulSoup to collect a list of at least 1,000 products from any of the product pages from Bol.com.
-
 

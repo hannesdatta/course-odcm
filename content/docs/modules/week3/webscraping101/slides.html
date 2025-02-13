@@ -817,37 +817,7 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Before we start</h3>
-<div class="slideContent" >
-<ul>
-<li>Recap coaching session for team activity #1
-
-<ul>
-<li>explore broadly! (&ldquo;universe discovery!&rdquo;) &ndash;&gt; check challenge #1.1</li>
-<li>compare sources thoroughly &ndash;&gt; e.g., comparison table + challenge #1.2</li>
-<li>use overview tables for comparison, illustrations</li>
-</ul></li>
-<li>Today&#39;s coaching session: <strong>decide</strong> which website or API to use (challenges #1.1-#1.3)</li>
-</ul>
-
-</div>
-
-</section>
-<section data-transition="linear" data-transition-speed="default">
-<h3>A note on my (live) tutorials (I)</h3>
-<div class="slideContent" >
-<ul>
-<li>Core material is the (Jupyter Notebook) tutorial of the week</li>
-<li>It&#39;s <em>written</em> and illustrated with screenshots &ndash; it gives you all of the necessary information and you can do it at your own time after class.</li>
-<li>IN CLASS, my ambition is to preview selected issues </li>
-<li>Recordings of these sessions posted on Canvas</li>
-</ul>
-
-</div>
-
-</section>
-<section data-transition="linear" data-transition-speed="default">
-<h3>A note on my (live) tutorials (II)</h3>
+<h3>Before we start (I): live coding</h3>
 <div class="slideContent" >
 <ul>
 <li>feel comfortable w/ code?
@@ -868,7 +838,6 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 <ul>
 <li>flip through slides and work on advanced exercises</li>
 <li>ask advanced questions when I walk around (1:1)</li>
-<li>today&#39;s &ldquo;klaaropdracht&rdquo; (&ldquo;when you&#39;re done&hellip;&rdquo; - see end of slide deck)</li>
 </ul></li>
 </ul>
 
@@ -876,17 +845,25 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Framework</h3>
-<div class="mediaInline slideContent" >
-<p><img src="https://journals.sagepub.com/na101/home/literatum/publisher/sage/journals/content/jmxa/2022/jmxa_86_5/00222429221100750/20220801/images/large/10.1177_00222429221100750-fig2.jpeg" alt=""/></p>
+<h3>Before we start (II)</h3>
+<div class="slideContent" >
+<ul>
+<li>Recap from last week (<code>.find()</code>, <code>.find_all()</code>)</li>
+<li>Part 1: <code>beautifulSoup</code> (static websites; works in Colab)</li>
+<li>Part 2: <code>selenium</code> (dynamic websites; only works on your laptops)</li>
+</ul>
 
-<p>Today: zooming in more on <strong>collection design</strong></p>
+<p><br></p>
+
+<ul>
+<li>Today&#39;s coaching session: <strong>decide</strong> which website or API to use (challenges #1.1-#1.3) &amp; start coding your collections</li>
+</ul>
 
 </div>
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Recap from last week&#x27;s tutorial</h3>
+<h3>Recap </h3>
 <div class="slideContent" >
 <ul>
 <li>We focused on which <strong>information to extract</strong> (Challenge #2.1)
@@ -901,6 +878,14 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 <li>Use (a combination of) tags or attributes (e.g., classes; particularly attribute-value pairs)</li>
 </ul></li>
 </ul>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Recap (Framework)</h3>
+<div class="mediaOnly slideContent" >
+<p><img src="https://journals.sagepub.com/na101/home/literatum/publisher/sage/journals/content/jmxa/2022/jmxa_86_5/00222429221100750/20220801/images/large/10.1177_00222429221100750-fig2.jpeg" alt=""/></p>
 
 </div>
 
@@ -933,7 +918,7 @@ title = about.find(&#39;p&#39;)
 <pre><code class="python">about.find_all(&#39;p&#39;)
 </code></pre>
 
-<pre><code>[&lt;p&gt;China&lt;/p&gt;, &lt;p&gt;Tito Puente&lt;/p&gt;, &lt;p&gt;1972&lt;/p&gt;, &lt;p&gt;193&lt;/p&gt;]
+<pre><code>[&lt;p&gt;China&lt;/p&gt;, &lt;p&gt;Tito Puente&lt;/p&gt;, &lt;p&gt;1972&lt;/p&gt;, &lt;p&gt;54&lt;/p&gt;]
 </code></pre>
 
 <pre><code class="python">plays=about.find_all(&#39;p&#39;)[3].get_text()
@@ -950,20 +935,9 @@ title = about.find(&#39;p&#39;)
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>DO: After-class exercise from last week</h3>
-<div class="slideContent small-code" >
-<ul>
-<li>Any issues you&#39;ve run into? </li>
-<li>Solutions posted on the site!</li>
-</ul>
-
-</div>
-
-</section>
-<section data-transition="linear" data-transition-speed="default">
-<h3>Today&#x27;s focus</h3>
+<h3>Part 1: `beautifulSoup` (static websites; works in Colab)</h3>
 <div class="slideContent" >
-<p><strong>Remaining challenges for the &ldquo;design&rdquo; phase of collecting data.</strong></p>
+<p><strong>We use <code>beautifulSoup</code> for addressing the remaining challenges for the &ldquo;design&rdquo; phase of collecting data.</strong></p>
 
 <ul>
 <li>How to sample from a website? (Challenge #2.2)
@@ -987,9 +961,9 @@ title = about.find(&#39;p&#39;)
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Sampling users</h3>
+<h3>Sampling users (I)</h3>
 <div class="slideContent small-code" >
-<p>For today&#39;s tutorial, we will be sampling users from the main website of music-to-scrape.org</p>
+<p>Let&#39;s sample users from the main website of music-to-scrape.org</p>
 
 <p><strong>Can you propose a strategy to capture them?</strong> Any attributes/classes you see? </p>
 
@@ -997,9 +971,9 @@ title = about.find(&#39;p&#39;)
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>DO: Extract all links</h3>
+<h3>Sampling users (II)</h3>
 <div class="slideContent small-code" >
-<p><strong>Please use the code snippet below to extract the &#39;href&#39; attribute of all links on the website.</strong></p>
+<p><strong>DO</strong>: Please use the code snippet below to extract the &#39;href&#39; attribute of all links on the website.</p>
 
 <ul>
 <li>Links are identifiable by the &ldquo;a&rdquo; tag. </li>
@@ -1021,7 +995,7 @@ homepage = BeautifulSoup(res.text)
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Solution: Extract all links</h3>
+<h3>Sampling users (III): Solution</h3>
 <div class="slideContent" >
 <pre><code class="python">for link in homepage.find_all(&quot;a&quot;):
     if &#39;href&#39; in link.attrs: 
@@ -1044,45 +1018,45 @@ https://github.com/tilburgsciencehub/music-to-scrape
 https://tilburgsciencehub.com
 /about
 tutorial_scraping
-song?song-id=SONNUHH12A8C133376
-song?song-id=SOLZZPQ12A8C130C70
-song?song-id=SOYQOFI12A6D4F76E1
-song?song-id=SOJSJTR12AB0188131
-song?song-id=SOXCCHE12AAFF43D5D
-song?song-id=SOGCFKE12AB01843C0
-song?song-id=SOIQYOV12A8C143ED6
-song?song-id=SOBYXQS12A8C13FAF6
-song?song-id=SOSEJIQ12AB017E7EB
-song?song-id=SOBUHQT12AB0186C07
-song?song-id=SOJZTXJ12AB01845FB
-song?song-id=SOPZASO12A6D4F6A79
-song?song-id=SOODIJF12A8C13FDBB
-song?song-id=SOGXHEG12AB018653E
-song?song-id=SOQXGVE12CF5F86D20
-song?song-id=SOLNOMM12A8C132AD8
-song?song-id=SOBVAPJ12AB018739D
-song?song-id=SOYYBGR12A8C140F1A
-song?song-id=SOBHHIZ12AB01841E0
-song?song-id=SOQUEQP12A8C1397DE
-song?song-id=SOWHXYS12AC9E177F0
-song?song-id=SOAOXXE12AB0182517
-song?song-id=SOACUYZ12CF54662F1
-song?song-id=SOJLUMZ12AB0186CA1
-song?song-id=SOGXWRE12AC468BE24
-artist?artist-id=ARLYPKH1241B9C7185
-artist?artist-id=ARKIQSL1241B9C90C8
-artist?artist-id=AR0U44O1187B99007C
-artist?artist-id=ARQ76LG1187B9ACD84
-artist?artist-id=ARN7OQ21187FB5A6B3
-artist?artist-id=AR00A6H1187FB5402A
+song?song-id=SOCOMAW12AB017EE59
+song?song-id=SOBMAUD12A6D4F9181
+song?song-id=SOFCKRY12AAF3B2FAF
+song?song-id=SOKHBNW12A8AE48A58
+song?song-id=SOVLTPF12AC46866D7
+song?song-id=SOHTWEG12AB018D11C
+song?song-id=SOGRYWN12AB018C335
+song?song-id=SOGMROZ12A679D8AE9
+song?song-id=SOKFEUT12A6D4FC34C
+song?song-id=SOMKWCF12A8C142BCD
+song?song-id=SOJKNYV12A8C133E9C
+song?song-id=SOAYONI12A6D4F85C8
+song?song-id=SOCLLWU12A8AE47C66
+song?song-id=SOOZDSM12A8C13D39D
+song?song-id=SOEKLNK12A58A7839A
+song?song-id=SODKSMV12A6D4F6922
+song?song-id=SOJRGVK12CF5CFC527
+song?song-id=SOJFLGV12A8C141AB3
+song?song-id=SOCBWVV12A8C13605F
+song?song-id=SOJZWRA12AB018D029
+song?song-id=SOSAMRR12AB018203B
+song?song-id=SOLGUGY12AB01897BE
+song?song-id=SOEOJJA12AB018FCCF
+song?song-id=SOOPVJI12AB0183957
+song?song-id=SOWJRTX12AB0183C28
+artist?artist-id=ARWBL9E1187FB4E695
+artist?artist-id=ARY55LO1187B9A3F17
 artist?artist-id=ARMBTFC1187FB56343
-artist?artist-id=ARQQFIQ1187B99DB43
-user?username=Shadow49
-user?username=Star47
-user?username=Coder43
-user?username=SonicShadow61
-user?username=CoderGeek94
-user?username=StealthWizard02
+artist?artist-id=ARR2NH51187B98CE4C
+artist?artist-id=ARA2ZTN1187B98E3ED
+artist?artist-id=AREFUMW11F4C844D2B
+artist?artist-id=ARMORUX11F50C4EEBF
+artist?artist-id=ARN7OQ21187FB5A6B3
+user?username=Galaxy04
+user?username=StarPanda93
+user?username=Stealth20
+user?username=StarCoder49
+user?username=Geek73
+user?username=Panda38
 /tutorial_scraping
 /tutorial_api
 https://api.music-to-scrape.org/docs
@@ -1097,7 +1071,7 @@ https://twitter.com/tilburgscience
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Solution: Extract all links</h3>
+<h3>Narrowing down (I)</h3>
 <div class="slideContent" >
 <ul>
 <li>But&hellip; are all of these links really relevant?</li>
@@ -1108,7 +1082,7 @@ https://twitter.com/tilburgscience
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Narrowing down our extraction</h3>
+<h3>Narrowing down (II)</h3>
 <div class="slideContent" >
 <ul>
 <li>Let us explore the site structure a bit more</li>
@@ -1121,7 +1095,7 @@ https://twitter.com/tilburgscience
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>DO: Narrowing down our extraction</h3>
+<h3>Narrowing down (III)</h3>
 <div class="slideContent" >
 <ul>
 <li>The relevant links all reside in the <code>recent_users</code> section, starting with <code>&lt;section</code>&gt;</li>
@@ -1136,7 +1110,7 @@ https://twitter.com/tilburgscience
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Solution: Narrowing down our extraction</h3>
+<h3>Narrowing down (IV): Solution</h3>
 <div class="slideContent small-code" >
 <pre><code class="python">users = []
 for link in relevant_section.find_all(&quot;a&quot;):
@@ -1145,7 +1119,7 @@ for link in relevant_section.find_all(&quot;a&quot;):
 users
 </code></pre>
 
-<pre><code>[&#39;user?username=Shadow49&#39;, &#39;user?username=Star47&#39;, &#39;user?username=Coder43&#39;, &#39;user?username=SonicShadow61&#39;, &#39;user?username=CoderGeek94&#39;, &#39;user?username=StealthWizard02&#39;]
+<pre><code>[&#39;user?username=Galaxy04&#39;, &#39;user?username=StarPanda93&#39;, &#39;user?username=Stealth20&#39;, &#39;user?username=StarCoder49&#39;, &#39;user?username=Geek73&#39;, &#39;user?username=Panda38&#39;]
 </code></pre>
 
 <ul>
@@ -1156,7 +1130,7 @@ users
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Modifying the links</h3>
+<h3>Narrowing down (V): More extensions</h3>
 <div class="slideContent small-code" >
 <ul>
 <li>Notice that the links were <em>relative</em> links and we won&#39;t be able to use them for looping (e.g., try pasting them in your browser - they won&#39;t work!)</li>
@@ -1171,16 +1145,16 @@ for link in relevant_section.find_all(&quot;a&quot;):
 urls
 </code></pre>
 
-<pre><code>[&#39;https://music-to-scrape.org/user?username=Shadow49&#39;, &#39;https://music-to-scrape.org/user?username=Star47&#39;, &#39;https://music-to-scrape.org/user?username=Coder43&#39;, &#39;https://music-to-scrape.org/user?username=SonicShadow61&#39;, &#39;https://music-to-scrape.org/user?username=CoderGeek94&#39;, &#39;https://music-to-scrape.org/user?username=StealthWizard02&#39;]
+<pre><code>[&#39;https://music-to-scrape.org/user?username=Galaxy04&#39;, &#39;https://music-to-scrape.org/user?username=StarPanda93&#39;, &#39;https://music-to-scrape.org/user?username=Stealth20&#39;, &#39;https://music-to-scrape.org/user?username=StarCoder49&#39;, &#39;https://music-to-scrape.org/user?username=Geek73&#39;, &#39;https://music-to-scrape.org/user?username=Panda38&#39;]
 </code></pre>
 
 </div>
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>DO: Remember functions?</h3>
+<h3>Narrowing down (VI): More extensions: Functions</h3>
 <div class="slideContent" >
-<p>Write a function that&hellip;</p>
+<p><strong>DO:</strong> Write a function that&hellip;</p>
 
 <ul>
 <li>makes a web request to <a href="https://music-to-scrape.org">https://music-to-scrape.org</a></li>
@@ -1189,12 +1163,14 @@ urls
 
 <p><strong>Do you remember why we like functions so much?</strong></p>
 
+<p>Narrowing down (VII): Solution</p>
+
 </div>
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Solution</h3>
-<div class="slideContent small-code" >
+
+<div class="slideContent noTitle small-code" >
 <pre><code class="python">import requests
 from bs4 import BeautifulSoup
 
@@ -1227,7 +1203,7 @@ def get_users():
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>JSON data</h3>
+<h3>JSON data (I)</h3>
 <div class="slideContent" >
 <ul>
 <li>For now, the data is just in memory.</li>
@@ -1241,7 +1217,7 @@ def get_users():
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Example: JSON data</h3>
+<h3>JSON data (II): Example</h3>
 <div class="slideContent small-code" >
 <pre><code class="python">import json
 
@@ -1257,15 +1233,15 @@ for user in users:
 
 <pre><code>85
 1
-81
+91
 1
-83
-1
-95
+87
 1
 91
 1
-99
+81
+1
+83
 1
 </code></pre>
 
@@ -1276,7 +1252,7 @@ for user in users:
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Preventing array misalignment</h3>
+<h3>Preventing array misalignment (I)</h3>
 <div class="slideContent" >
 <ul>
 <li>When extracting web data, it&#39;s important to extract information in its &ldquo;original&rdquo; (nested) structure</li>
@@ -1288,7 +1264,7 @@ for user in users:
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Demonstration</h3>
+<h3>Preventing array misalignment (II): Demo</h3>
 <div class="slideContent small-code" >
 <pre><code class="python">links = []
 for link in relevant_section.find_all(&quot;a&quot;):
@@ -1310,16 +1286,16 @@ len(links)
 <pre><code class="python">len(songs)
 </code></pre>
 
-<pre><code>4
+<pre><code>3
 </code></pre>
 
 </div>
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>DO: Preventing array misalignment</h3>
+<h3>Preventing array misalignment (III): DO</h3>
 <div class="slideContent small-code" >
-<p>How can you capture the song data, such that we can always link the particular song to particular users? (i.e., to prevent array misalignment)?</p>
+<p><strong>DO:</strong> How can you capture the song data, such that we can always link the particular song to particular users? (i.e., to prevent array misalignment)?</p>
 
 <p>Tip: Observe how we can first iterate through users, THEN extract links (similar to how we have done it with <code>relevant_section</code>).</p>
 
@@ -1331,14 +1307,14 @@ for user in users: # iterate through each user
 data
 </code></pre>
 
-<pre><code>[{&#39;link&#39;: &#39;user?username=Shadow49&#39;}, {&#39;link&#39;: &#39;user?username=Star47&#39;}, {&#39;link&#39;: &#39;user?username=Coder43&#39;}, {&#39;link&#39;: &#39;user?username=SonicShadow61&#39;}, {&#39;link&#39;: &#39;user?username=CoderGeek94&#39;}, {&#39;link&#39;: &#39;user?username=StealthWizard02&#39;}]
+<pre><code>[{&#39;link&#39;: &#39;user?username=Galaxy04&#39;}, {&#39;link&#39;: &#39;user?username=StarPanda93&#39;}, {&#39;link&#39;: &#39;user?username=Stealth20&#39;}, {&#39;link&#39;: &#39;user?username=StarCoder49&#39;}, {&#39;link&#39;: &#39;user?username=Geek73&#39;}, {&#39;link&#39;: &#39;user?username=Panda38&#39;}]
 </code></pre>
 
 </div>
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Solution</h3>
+<h3>Preventing array misalignment (IV): Solution</h3>
 <div class="slideContent small-code" >
 <pre><code class="python">users = relevant_section.find_all(class_=&#39;mobile-user-margin&#39;)
 data = []
@@ -1354,7 +1330,7 @@ for user in users:
 data
 </code></pre>
 
-<pre><code>[{&#39;link&#39;: &#39;user?username=Shadow49&#39;, &#39;song_name&#39;: &#39;John Stewart - Price Of The Fire&#39;}, {&#39;link&#39;: &#39;user?username=Star47&#39;, &#39;song_name&#39;: &#39;NA&#39;}, {&#39;link&#39;: &#39;user?username=Coder43&#39;, &#39;song_name&#39;: &#39;Francis Dunnery - Too Much Saturn&#39;}, {&#39;link&#39;: &#39;user?username=SonicShadow61&#39;, &#39;song_name&#39;: &#39;NA&#39;}, {&#39;link&#39;: &#39;user?username=CoderGeek94&#39;, &#39;song_name&#39;: &#39;Lonnie Johnson - Raining On The Cold_ Cold Ground&#39;}, {&#39;link&#39;: &#39;user?username=StealthWizard02&#39;, &#39;song_name&#39;: &#39;Pitch Black - Harmonia&#39;}]
+<pre><code>[{&#39;link&#39;: &#39;user?username=Galaxy04&#39;, &#39;song_name&#39;: &#39;NA&#39;}, {&#39;link&#39;: &#39;user?username=StarPanda93&#39;, &#39;song_name&#39;: &#39;NA&#39;}, {&#39;link&#39;: &#39;user?username=Stealth20&#39;, &#39;song_name&#39;: &quot;The Fabulous Thunderbirds - Rainin&#39; In My Heart&quot;}, {&#39;link&#39;: &#39;user?username=StarCoder49&#39;, &#39;song_name&#39;: &quot;Jacques Dutronc - L&#39;Homme De Paille&quot;}, {&#39;link&#39;: &#39;user?username=Geek73&#39;, &#39;song_name&#39;: &#39;NA&#39;}, {&#39;link&#39;: &#39;user?username=Panda38&#39;, &#39;song_name&#39;: &#39;Cancer Bats - Sabotage&#39;}]
 </code></pre>
 
 </div>
@@ -1388,7 +1364,7 @@ data
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Navigating on a website</h3>
+<h3>Navigating on a website (I)</h3>
 <div class="slideContent small-code" >
 <ul>
 <li>Two strategies
@@ -1414,9 +1390,9 @@ urls
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>DO: Navigating on a website (strategy 2)</h3>
+<h3>Navigating on a website (II): DO (strategy 2)</h3>
 <div class="slideContent small-code" >
-<p><strong>Run the code below. How to extend the code to extract the LINK of the previous button?</strong></p>
+<p><strong>DO</strong>: Run the code below. How to extend the code to extract the LINK of the previous button?</p>
 
 <pre><code class="python">url = &#39;https://music-to-scrape.org/user?username=StarCoder49&amp;week=36&#39;
 header = {&#39;User-agent&#39;: &#39;Mozilla/5.0&#39;}
@@ -1430,7 +1406,7 @@ button=userpage.find(class_=&#39;page-link&#39;, attrs={&#39;type&#39;:&#39;prev
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Solution</h3>
+<h3>Navigating on a website (III): Solution</h3>
 <div class="slideContent" >
 <pre><code class="python">button.attrs[&#39;href&#39;]
 </code></pre>
@@ -1444,7 +1420,7 @@ button=userpage.find(class_=&#39;page-link&#39;, attrs={&#39;type&#39;:&#39;prev
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Let&#x27;s tie things together</h3>
+<h3>Tying things together</h3>
 <div class="slideContent small-code" >
 <ul>
 <li>We now have a function <code>get_users()</code> to retrieve user names</li>
@@ -1535,29 +1511,7 @@ for s in seeds:
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Extract consumption data</h3>
-<div class="slideContent" >
-<p>We still need to extract the consumption data from a user&#39;s profile page.</p>
-
-<p>Let&#39;s start with the snippet below.</p>
-
-<pre><code class="python">url = &#39;https://music-to-scrape.org/user?username=StarCoder49&amp;week=10&#39;
-soup = BeautifulSoup(requests.get(url).text)
-</code></pre>
-
-<p>Can you propose:</p>
-
-<ul>
-<li>how to find the table?</li>
-<li>how to iterate through each row?</li>
-<li>how to save the information as a JSON dictionary</li>
-</ul>
-
-</div>
-
-</section>
-<section data-transition="linear" data-transition-speed="default">
-<h3>Scraping more advanced websites</h3>
+<h3>Part 2: Scraping more advanced websites</h3>
 <div class="slideContent small-code" >
 <ul>
 <li class="fragment"><p>So far, we have done this</p>
@@ -1588,8 +1542,8 @@ f.close()
 <li><p>Try this:</p></li>
 </ul>
 
-<pre><code class="python">!pip install webdriver_manager
-!pip install selenium
+<pre><code class="python">!pip install webdriver_manager --upgrade
+!pip install selenium --upgrade
 
 # Using selenium 4 - ensure you have Chrome installed!
 from selenium import webdriver
@@ -1598,7 +1552,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
 
-url = &quot;https://amazon.com/&quot; # remember to solve captchas
+url = &quot;https://music-to-scrape.org/&quot;
 driver.get(url)
 </code></pre>
 
@@ -1620,9 +1574,45 @@ driver.get(url)
 <pre><code class="python">from bs4 import BeautifulSoup
 soup = BeautifulSoup(driver.page_source)
 
-for el in soup.find_all(class_ = &#39;a-section&#39;):
-    title = el.find(&#39;h2&#39;)
-    if title is not None: print(title.text)
+cards = soup.find_all(class_=&#39;card-body&#39;)
+
+counter = 0
+for card in cards:
+    counter = counter + 1
+    print(&#39;Card &#39; + str(counter) + &#39;: &#39; + card.get_text())
+</code></pre>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Clicking with selenium</h3>
+<div class="slideContent" >
+<pre><code class="python">url = &quot;https://music-to-scrape.org/&quot;
+driver.get(url)
+time.sleep(3) # wait for 3 seconds
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.action_chains import ActionChains
+
+try:
+    cookie_button = driver.find_element(By.ID, &quot;accept-cookies&quot;)
+    cookie_button.click()
+except:
+    print(&#39;No cookie button found (anymore)!&#39;)
+</code></pre>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Scrolling with selenium</h3>
+<div class="slideContent" >
+<pre><code class="python">scroll_pause_time = 2
+for _ in range(3):  # Scroll down 3 times
+    driver.execute_script(&quot;window.scrollTo(0, document.body.scrollHeight);&quot;)
+    time.sleep(scroll_pause_time)
 </code></pre>
 
 </div>
@@ -1671,14 +1661,6 @@ for el in soup.find_all(class_ = &#39;a-section&#39;):
 <li>Any questions?</li>
 <li>Be in touch for feedback via WhatsApp.</li>
 </ul>
-
-</div>
-
-</section>
-<section data-transition="linear" data-transition-speed="default">
-<h3>Today&#x27;s &quot;klaaropdracht&quot; (when you&#x27;re totally advanced already)</h3>
-<div class="slideContent" >
-<p>Use the code snippets provided on Selenium and BeautifulSoup to collect a list of at least 1,000 products from any of the product pages from Bol.com.</p>
 
 </div>
 

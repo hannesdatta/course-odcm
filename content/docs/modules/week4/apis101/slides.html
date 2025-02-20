@@ -817,50 +817,40 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Before we start (I)</h3>
+<h3>Before we get started</h3>
 <div class="slideContent" >
 <ul>
-<li>Coaching sessions
+<li>Recall: Exam dates have been set
 
 <ul>
-<li>we start paying attention to &#39;equal&#39; attention/time; but: help us, <strong>this is also your responsibility</strong></li>
-<li>it is normal to face complicated&#39;issues that <strong>cannot be solved on the spot</strong> (not even by myself). Address these issues to us <strong>in writing, please</strong> (email: Roshini; WhatsApp: Hannes).</li>
+<li>dPrep: 3 April 2025 (resit 27 June)</li>
+<li>oDCM: 1 April 2025 (resit 26 June)</li>
 </ul></li>
-<li>Team projects
-
-<ul>
-<li>updated material on &#39;webscraping advanced&#39; (with Selenium); it became easier and more targeted to follow</li>
-<li>presentations during next week&#39;s class; both Roshini and I will be present</li>
-</ul></li>
+<li>Mac users: Please familiarize yourselves with R/RStudio on Windows (i.e., try not to use your laptops today)</li>
+<li>Presentations during next week&#39;s class</li>
 </ul>
 
 </div>
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Before we start (II)</h3>
+<h3>Today&#x27;s session</h3>
 <div class="slideContent" >
-<ul>
-<li>Extra Q&amp;A session upon your request for oDCM &amp; dPrep
+<p><strong>Deep-dive on APIs</strong></p>
 
 <ul>
-<li>Monday, 23 September, 10.45-12.30 (CubeZ 219).</li>
-</ul></li>
-<li>Next week: tutorials take place in computer labs (GZ 106, see schedule)
-<br>
-<br></li>
-<li>Any questions at this stage?</li>
+<li>Part 1: API of music-to-scrape &amp; working with JSON data</li>
+<li>Part 2: Parameters in API calls</li>
+<li>Part 3: Looping: <code>for</code> and <code>while</code></li>
 </ul>
 
-<!--
-- API authentication will be pain point - highly idiosyncratic!
--->
+<p><strong>Plus:</strong> as usual, focus on modularization (writing functions)!</p>
 
 </div>
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>What are APIs?</h3>
+<h3>Recap: What are APIs?</h3>
 <div class="slideContent" >
 <ul>
 <li>APIs are connectors within and between platforms and databases, using the web to talk to each other
@@ -877,7 +867,7 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Technical differences between APIs and web scraping</h3>
+<h3>Recap: Technical differences between APIs and web scraping</h3>
 <div class="slideContent" >
 <ul>
 <li>Web scraping
@@ -892,6 +882,7 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 <ul>
 <li>good if you have permission (but, be realistic about getting access!)</li>
 <li>you obtain <em>structured</em> JSON data</li>
+<li>business model!</li>
 </ul></li>
 </ul>
 
@@ -899,7 +890,7 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Discovering an API documentation</h3>
+<h3>Recap: Discovering an API documentation</h3>
 <div class="slideContent" >
 <ul>
 <li>Probably the most difficult part w/ APIs is to get authenticated
@@ -920,21 +911,11 @@ https://support.rstudio.com/hc/en-us/articles/200486468
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Do: Zooming in on Music-to-scrape&#x27;s API</h3>
+<h3>Part 1: API of music-to-scrape &amp; working with JSON data</h3>
 <div class="slideContent" >
-<p><strong>Browse</strong> the <a href="https://api.music-to-scrape.org/docs">documentation</a> of music-to-scrape&#39;s API.</p>
+<p><strong>DO:</strong> Browse the <a href="https://api.music-to-scrape.org/docs">documentation</a> of music-to-scrape&#39;s API.</p>
 
-<p>1) Have a look at the various endpoints that are available. <strong>At what unit of analysis</strong> do they allow you to collect data?</p>
-
-<p>2) Why would a platform <em>offer</em> an API in the first place?</p>
-
-</div>
-
-</section>
-<section data-transition="linear" data-transition-speed="default">
-<h3>Do: Making a connection with an API</h3>
-<div class="slideContent small-code" >
-<p>Run the snippet below.</p>
+<p>Then, run the snippet below. </p>
 
 <pre><code class="python">import requests
 url = &quot;https://api.music-to-scrape.org/users&quot;
@@ -952,19 +933,24 @@ print(request)
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>How can we make sense of JSON data?</h3>
+<h3>Part 1: How can we make sense of JSON data? </h3>
 <div class="slideContent" >
-<ul>
-<li>JSON data is structured in a hierarchy
+<p><strong>JSON data is structured in a hierarchy</strong></p>
+
+<p><strong>DO</strong>:</p>
 
 <ul>
-<li>use <a href="http://jsonviewer.stack.hu">JSONviewer.stack.hu</a> to make sense of it</li>
+<li>Run the snippet below (which saves data to a JSON file)</li>
+<li>Open the snippet in VS Code</li>
+<li>Install the JSON extension (I will show you how)</li>
+<li>Reformat
+
+<ul>
+<li>use VS Code (install the JSON plugin first!)</li>
 <li>alternatively, write to <code>.json</code> file and view in VS Code (install JSON plugin first)</li>
 <li>many other possibilities exist (e.g., in-browser) - check what you like best!</li>
 </ul></li>
 </ul>
-
-<p><strong>DO:</strong> Run this snippet to write JSON output to a file! Inspect it using <a href="http://jsonviewer.stack.hu">JSONviewer</a> or VS Code!</p>
 
 <pre><code class="python">import json
 f=open(&#39;users.json&#39;, &#39;w&#39;, encoding=&#39;utf-8&#39;)
@@ -976,7 +962,7 @@ f.close()
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Getting data from a JSON dictionary</h3>
+<h3>Part 1: Getting data from a JSON dictionary</h3>
 <div class="slideContent" >
 <ul>
 <li>Let&#39;s try to only extract a list of user names, rather than the entire dictionary.</li>
@@ -986,7 +972,8 @@ f.close()
 <li><code>[&#39;name_of_attribute&#39;]</code> or</li>
 <li><code>.get(&#39;name_of_attribute&#39;)</code></li>
 </ul></li>
-<li>Do: Let&#39;s try it out</li>
+<li><strong>Do:</strong> Let&#39;s try it out
+<br></li>
 </ul>
 
 <pre><code class="python">request[&#39;limit&#39;]
@@ -1000,8 +987,10 @@ request.get(&#39;limit&#39;)
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Do: Getting user names</h3>
+<h3>Part 1: Getting user names</h3>
 <div class="slideContent" >
+<p><strong>DO</strong></p>
+
 <ol>
 <li>How would you have to modify the snippet below to access the list of user names?</li>
 <li>Can you write a loop that extracts user names and puts them to an array of only user names (not countries, etc.)?</li>
@@ -1030,9 +1019,9 @@ user_names # inspect the result
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Do: Anonymizing data</h3>
+<h3>Part 1: Anonymizing data</h3>
 <div class="slideContent" >
-<p>Suppose we do not want to extract the ages and country names for the users&hellip;</p>
+<p><strong>DO</strong>: Suppose we do not want to extract the ages and country names for the users&hellip;</p>
 
 <p><strong>Can you come up with a way to anonymize them (e.g., overwrite them with NA), while keeping the rest of the dictionary intact?</strong></p>
 
@@ -1056,7 +1045,7 @@ new_dic
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Difference between `.append()` and `.extend()`</h3>
+<h3>Part 1: Difference between `.append()` and `.extend()`</h3>
 <div class="slideContent" >
 <ul>
 <li><code>.append()</code> adds <em>one</em> item at a time to an existing list</li>
@@ -1082,7 +1071,7 @@ users
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Understanding parameters in API calls</h3>
+<h3>Part 2: Understanding parameters in API calls</h3>
 <div class="slideContent" >
 <ul>
 <li class="fragment">APIs are useful because you can <em>modify</em> its search results
@@ -1108,8 +1097,10 @@ users
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Example: submitting parameters in the header via the `params` argument</h3>
+<h3>Part 2: Submitting parameters in the header via the `params` argument</h3>
 <div class="slideContent" >
+<p><strong>Example</strong></p>
+
 <ul>
 <li><code>params</code> requires to be a dictionary with the parameter names and corresponding values</li>
 </ul>
@@ -1127,14 +1118,16 @@ print(request)
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Do: Iterating through API endpoints</h3>
+<h3>Part 2: Iterating through API endpoints</h3>
 <div class="slideContent" >
-<p><strong>Remember iterating through pages on a website to &ldquo;view&rdquo; data? APIs know the same concept!</strong></p>
+<p><strong>DO</strong></p>
 
 <ol>
 <li>Try to add the <code>offset</code> parameter to the snippet below. What happens when you set it to <code>1</code>? What happens when you set it to <code>5</code>?</li>
 <li>To which value would you have to set it to see the next batch of users?</li>
 </ol>
+
+<p>Tip: Remember iterating through pages on a website to &ldquo;view&rdquo; data? APIs know the same concept!</p>
 
 <pre><code class="python"># start with this code
 import requests
@@ -1164,8 +1157,10 @@ requests.get(&quot;https://api.music-to-scrape.org/users?limit=10&amp;offset=10&
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Do: Let&#x27;s wrap your code in a function</h3>
+<h3>Part 2: Let&#x27;s wrap your code in a function</h3>
 <div class="slideContent" >
+<p><strong>DO</strong></p>
+
 <ol>
 <li>Construct a function, called <code>get_users()</code>, with parameters <code>limit</code> and <code>offset</code>, returning the dictionary of users from the API endpoint <code>/users</code>.</li>
 </ol>
@@ -1188,7 +1183,7 @@ get_users(10,1)
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Looping through all result pages of an endpoint</h3>
+<h3>Part 3: Looping through all result pages of an endpoint</h3>
 <div class="slideContent" >
 <ul>
 <li>Let&#39;s try to construct a loop that repeatedly fetches user names.</li>
@@ -1217,7 +1212,7 @@ for x in range(10):
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>For loop vs. while loop</h3>
+<h3>Part 3: For loop vs. while loop</h3>
 <div class="slideContent small-code" >
 <ul>
 <li>Difference between for <code>for</code> loops (you usually know beforehand when to stop), and <code>while</code> loops (the ending point can change, say when &ldquo;there is no new data coming in&rdquo;)</li>
@@ -1238,7 +1233,7 @@ while cntr &lt; 6:
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Tying everything together</h3>
+<h3>Part 3: Tying everything together</h3>
 <div class="slideContent" >
 <p>We can now combine our learnings to build a function that extracts 100 user names and meta data to new-line separated JSON files.</p>
 
@@ -1271,8 +1266,10 @@ f.close()
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Do: Onwards to more endpoints</h3>
+<h3>Part 3: Onwards to more endpoints</h3>
 <div class="slideContent small-code" >
+<p><strong>DO</strong></p>
+
 <p>The tutorial proceeds by introducing a series of additional endpoints.</p>
 
 <ul>
@@ -1298,18 +1295,18 @@ f.close()
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Reflection</h3>
+<h3>Reflection &amp; next steps</h3>
 <div class="slideContent" >
 <ul>
 <li>wow - no &ldquo;structuring&rdquo; of HTML &ldquo;soup&rdquo; (THAT&#39;s the key difference compared to web scraping)</li>
 <li>Spend time trying to get your first data from an API &ndash; authentication <strong>will</strong> be an issue!</li>
 <li>Time left? Let&#39;s consider some <a href="https://htmlpreview.github.io/?https://github.com/hannesdatta/legal-situation-of-web-scraping/blob/main/legal-status-of-web-scraping.html#/title-slide">legal issues</a></li>
-<li>After this class: coaching session (check your workplan)</li>
+<li>After this class: coaching session (check your work plan)</li>
 <li>Next week
 
 <ul>
 <li><strong>presentations</strong> about your projects</li>
-<li>afterwards: coaching (get your prototype up and running!)</li>
+<li>afterwards: coaching session (get your prototype up and running!!!)</li>
 </ul></li>
 </ul>
 

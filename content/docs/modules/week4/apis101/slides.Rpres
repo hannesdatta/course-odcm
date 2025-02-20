@@ -30,31 +30,28 @@ We're about to start with __today's tutorial ("API 101")__.
 - You can work in __Google Colab__ throughout this class
 
 
-Before we start (I)
-========================================================
+Before we get started
+=====================
 
-- Coaching sessions
-  - we start paying attention to 'equal' attention/time; but: help us, __this is also your responsibility__
-  - it is normal to face complicated'issues that __cannot be solved on the spot__ (not even by myself). Address these issues to us __in writing, please__ (email: Roshini; WhatsApp: Hannes).
-- Team projects
-  - updated material on 'webscraping advanced' (with Selenium); it became easier and more targeted to follow
-  - presentations during next week's class; both Roshini and I will be present
+- Recall: Exam dates have been set
+  - dPrep: 3 April 2025 (resit 27 June)
+  - oDCM: 1 April 2025 (resit 26 June)
+- Mac users: Please familiarize yourselves with R/RStudio on Windows (i.e., try not to use your laptops today)
+- Presentations during next week's class
 
-Before we start (II)
-======================
+Today's session
+======
 
-- Extra Q&A session upon your request for oDCM & dPrep
-  - Monday, 23 September, 10.45-12.30 (CubeZ 219).
-- Next week: tutorials take place in computer labs (GZ 106, see schedule)
-<br>
-<br>
-- Any questions at this stage?
+__Deep-dive on APIs__
 
-<!--
-- API authentication will be pain point - highly idiosyncratic!
--->
+- Part 1: API of music-to-scrape & working with JSON data
+- Part 2: Parameters in API calls
+- Part 3: Looping: `for` and `while`
 
-What are APIs?
+__Plus:__ as usual, focus on modularization (writing functions)!
+
+
+Recap: What are APIs?
 ============
 
 - APIs are connectors within and between platforms and databases, using the web to talk to each other
@@ -63,7 +60,7 @@ What are APIs?
 - Initially made available for developers, later for researchers (e.g., OpenAI's API)
 - Available usually only after registration and approval
 
-Technical differences between APIs and web scraping
+Recap: Technical differences between APIs and web scraping
 ============
 
 - Web scraping
@@ -73,8 +70,10 @@ Technical differences between APIs and web scraping
 - API
   - good if you have permission (but, be realistic about getting access!)
   - you obtain *structured* JSON data
+  - business model!
 
-Discovering an API documentation
+
+Recap: Discovering an API documentation
 =========
 
 - Probably the most difficult part w/ APIs is to get authenticated
@@ -84,20 +83,12 @@ Discovering an API documentation
   - which endpoints are available?
   - what could you do with them?
 
-Do: Zooming in on Music-to-scrape's API
-=====
+Part 1: API of music-to-scrape & working with JSON data
+====
 
-__Browse__ the [documentation](https://api.music-to-scrape.org/docs) of music-to-scrape's API.
-
-1) Have a look at the various endpoints that are available. __At what unit of analysis__ do they allow you to collect data?
-
-2) Why would a platform *offer* an API in the first place?
-
-Do: Making a connection with an API
-=================
-class: small-code
+__DO:__ Browse the [documentation](https://api.music-to-scrape.org/docs) of music-to-scrape's API.
   
-Run the snippet below.
+Then, run the snippet below. 
 
 ```{python, eval=FALSE}
 import requests
@@ -110,15 +101,21 @@ print(request)
 1. Can you explain what happens when you run this cell?
 2. Try adding the limit parameter (`?limit=20`) and run again. What happens?
 
-How can we make sense of JSON data?
+Part 1: How can we make sense of JSON data? 
 ========
 
-- JSON data is structured in a hierarchy
-  - use [JSONviewer.stack.hu](http://jsonviewer.stack.hu) to make sense of it
+__JSON data is structured in a hierarchy__
+
+__DO__:
+
+- Run the snippet below (which saves data to a JSON file)
+- Open the snippet in VS Code
+- Install the JSON extension (I will show you how)
+- Reformat
+  - use VS Code (install the JSON plugin first!)
   - alternatively, write to `.json` file and view in VS Code (install JSON plugin first)
   - many other possibilities exist (e.g., in-browser) - check what you like best!
   
-__DO:__ Run this snippet to write JSON output to a file! Inspect it using [JSONviewer](http://jsonviewer.stack.hu) or VS Code!
 
 ```{python, eval=FALSE}
 import json
@@ -127,15 +124,15 @@ f.write(json.dumps(request))
 f.close()
 ```
 
-Getting data from a JSON dictionary
+Part 1: Getting data from a JSON dictionary
 ===========
 
 - Let's try to only extract a list of user names, rather than the entire dictionary.
 - For this, we need to know how to access nodes of a dictionary.
   - `['name_of_attribute']` or
   - `.get('name_of_attribute')`
-- Do: Let's try it out
-
+- __Do:__ Let's try it out
+<br>
 ```{python, eval=FALSE}
 request['limit']
 
@@ -145,8 +142,10 @@ request.get('limit')
 ```
 
 
-Do: Getting user names
+Part 1: Getting user names
 ===========
+
+__DO__
 
 1. How would you have to modify the snippet below to access the list of user names?
 2. Can you write a loop that extracts user names and puts them to an array of only user names (not countries, etc.)?
@@ -169,10 +168,10 @@ for user in request['data']: # start loop
 user_names # inspect the result
 ```
 
-Do: Anonymizing data
+Part 1: Anonymizing data
 ====
 
-Suppose we do not want to extract the ages and country names for the users...
+__DO__: Suppose we do not want to extract the ages and country names for the users...
 
 __Can you come up with a way to anonymize them (e.g., overwrite them with NA), while keeping the rest of the dictionary intact?__
 
@@ -190,7 +189,7 @@ for user in request['data']:
 new_dic
 ```
 
-Difference between `.append()` and `.extend()`
+Part 1: Difference between `.append()` and `.extend()`
 ========
 
 
@@ -210,8 +209,7 @@ users.extend(new_users)
 users
 ```
 
-
-Understanding parameters in API calls
+Part 2: Understanding parameters in API calls
 ===============
 incremental: true
 
@@ -227,8 +225,10 @@ incremental: true
 
 __The API documentation will tell you what is required!__
 
-Example: submitting parameters in the header via the `params` argument
+Part 2: Submitting parameters in the header via the `params` argument
 ======
+
+__Example__
 
 - `params` requires to be a dictionary with the parameter names and corresponding values
 
@@ -242,14 +242,17 @@ print(request)
 
 Can you __speculate about the benefits__ of submitting parameters in the header (`params`) rather than in the URL?
 
-Do: Iterating through API endpoints
+Part 2: Iterating through API endpoints
 =========
 
+__DO__
 
-__Remember iterating through pages on a website to "view" data? APIs know the same concept!__
 
 1. Try to add the `offset` parameter to the snippet below. What happens when you set it to `1`? What happens when you set it to `5`?
 2. To which value would you have to set it to see the next batch of users?
+
+Tip: Remember iterating through pages on a website to "view" data? APIs know the same concept!
+
 
 ```{python, eval=FALSE}
 # start with this code
@@ -274,8 +277,10 @@ requests.get("https://api.music-to-scrape.org/users?limit=10&offset=5").json()
 requests.get("https://api.music-to-scrape.org/users?limit=10&offset=10").json()
 ```
 
-Do: Let's wrap your code in a function
+Part 2: Let's wrap your code in a function
 ======
+
+__DO__
 
 1. Construct a function, called `get_users()`, with parameters `limit` and `offset`, returning the dictionary of users from the API endpoint `/users`.
 
@@ -291,7 +296,7 @@ get_users(10,1)
     
 ```
 
-Looping through all result pages of an endpoint
+Part 3: Looping through all result pages of an endpoint
 =====
 
 - Let's try to construct a loop that repeatedly fetches user names.
@@ -315,7 +320,7 @@ for x in range(10):
 ```
 
 
-For loop vs. while loop
+Part 3: For loop vs. while loop
 ========
 class: small-code
 
@@ -335,7 +340,7 @@ while cntr < 6:
 
 ```
 
-Tying everything together
+Part 3: Tying everything together
 =============
 
 We can now combine our learnings to build a function that extracts 100 user names and meta data to new-line separated JSON files.
@@ -365,9 +370,11 @@ f.close()
 
 ```
 
-Do: Onwards to more endpoints
+Part 3: Onwards to more endpoints
 =======================
 class: small-code
+
+__DO__
 
 The tutorial proceeds by introducing a series of additional endpoints.
 
@@ -385,13 +392,13 @@ Let's extract several of these weekly charts
 ```
 
 
-Reflection
+Reflection & next steps
 ===========
 
 - wow - no "structuring" of HTML "soup" (THAT's the key difference compared to web scraping)
 - Spend time trying to get your first data from an API -- authentication __will__ be an issue!
 - Time left? Let's consider some [legal issues](https://htmlpreview.github.io/?https://github.com/hannesdatta/legal-situation-of-web-scraping/blob/main/legal-status-of-web-scraping.html#/title-slide)
-- After this class: coaching session (check your workplan)
+- After this class: coaching session (check your work plan)
 - Next week
   - __presentations__ about your projects
-  - afterwards: coaching (get your prototype up and running!)
+  - afterwards: coaching session (get your prototype up and running!!!)

@@ -35,7 +35,8 @@ Course week|Date|Time|Location|Content|
 |                                                  |           | 12.45-14.30 | On campus | [Team coaching #3](/docs/project/workplan)
 |{{< button relref="week5" >}}Week 5{{< /button >}}|Fri 28 Feb | 08.45-10.30 | On campus | Presentations for [Team coaching #3](/docs/project/workplan)
 |                                                  |           | 12.45-14.30 | On campus | [Team coaching #4](/docs/project/workplan)
-|{{< button relref="week6" >}}Week 6{{< /button >}} |Wed 12 Mar | 12.45-14.30 | Online | [Team coaching #5](/docs/project/workplan)
+|{{< button relref="week6" >}}Week 6{{< /button >}}|Mon 10 Mar | 12.45-13.30 | Online | Q&A on exam example questions
+| |Wed 12 Mar | 12.45-14.30 | Online | [Team coaching #5](/docs/project/workplan)
 |{{< button relref="week7" >}}Week 7{{< /button >}}  |Tue 18 Mar | 10.45-12.30  | Online | [Team coaching #6](/docs/project/workplan)
 |                              |Wed 19 Mar | 15.45-17.30 | On campus | Course summary and exam preparation 
 

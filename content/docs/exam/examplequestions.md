@@ -235,7 +235,71 @@ example data extraction plan*
 
    
     ```
-    
+
+
+9. Please use Selenium to open https://infinite-scroll.com/demo/full-page/, and scroll down 10 times. As you proceed, store all H2 titles in a new-line separated JSON file (store not only links, but also the iteration number).
+
+   **Code to start from**
+
+    ```
+    from selenium import webdriver
+    from selenium.webdriver.chrome.service import Service as ChromeService
+    from webdriver_manager.chrome import ChromeDriverManager
+    from selenium.webdriver.common.by import By
+    from selenium.webdriver.common.keys import Keys
+    from bs4 import BeautifulSoup
+    import time
+
+    driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
+
+    url = "https://infinite-scroll.com/demo/full-page/"
+    driver.get(url)
+    time.sleep(4)
+
+    # Scroll down the page
+    scroll_pause_time = 2
+    for _ in range(3):  # Scroll down 3 times
+        driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+        time.sleep(scroll_pause_time)
+
+    ```
+
+    **Solution**
+  
+
+    ```
+    from selenium import webdriver
+    from selenium.webdriver.chrome.service import Service as ChromeService
+    from webdriver_manager.chrome import ChromeDriverManager
+    from selenium.webdriver.common.by import By
+    from selenium.webdriver.common.keys import Keys
+    from bs4 import BeautifulSoup
+    import time
+    import json
+
+    driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
+
+    url = "https://infinite-scroll.com/demo/full-page/"
+    driver.get(url)
+    time.sleep(4)
+
+    f=open('infinite_scroll.json','w',encoding='utf-8')
+
+    # Scroll down the page
+    scroll_pause_time = 2
+    for _ in range(10):  # Scroll down 10 times
+        driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+        soup = BeautifulSoup(driver.page_source)
+        for title in soup.find_all('h2'):
+            obj={'title': title.get_text()}
+            f.write(json.dumps(obj))
+            f.write('\n')
+            
+        time.sleep(scroll_pause_time)
+
+    f.close()    
+    ```
+
 
 <!--
 8. As a researcher you're interested in polarity in online communities and therefore collect data on the distribution of up and down votes on Reddit. Extract a random sample of at least 100 Reddit posts from the [`politics`](https://www.reddit.com/r/politics) and [`science`](https://www.reddit.com/r/science) communities. Store the original JSON response, along with a parsed CSV dataset with the ID and text of a post. Submit your (a) Python code (as `.py` or `.ipynb`), along with the collected data (`.json` and `.csv`).

@@ -301,6 +301,190 @@ example data extraction plan*
     ```
 
 
+10. Scrape all key headlines along with their URLs from the **New York Times homepage (`https://www.nytimes.com/`)**. Since the site has a **cookie consent banner**, use Selenium to automate clicking the **"Accept all" button**. Save the data in a JSON file (`nytimes_articles.json`). 
+
+**Starter Code:**
+```
+import json
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service as ChromeService
+from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.common.by import By
+from bs4 import BeautifulSoup
+import time
+
+# Initialize WebDriver
+driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
+
+# Open New York Times homepage
+url = "https://www.nytimes.com/"
+driver.get(url)
+time.sleep(3)  # Wait for page to load
+
+# Handle cookie banner (Click "Accept all" button)
+try:
+    # TODO: Find and click the "Accept all" button
+    time.sleep(2)
+except:
+    print("No cookie banner found or already accepted.")
+
+# Extract article headlines and URLs
+soup = BeautifulSoup(driver.page_source, 'html.parser')
+articles = []
+
+# TODO: Find all article elements and extract the title and URL
+
+# Save extracted data to a JSON file
+with open('nytimes_articles.json', 'w', encoding='utf-8') as f:
+    # TODO: Write the articles list to the JSON file
+
+# Close WebDriver
+driver.quit()
+```
+
+**Solution:**
+
+```
+import json
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service as ChromeService
+from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.common.by import By
+from bs4 import BeautifulSoup
+import time
+
+# Initialize WebDriver
+driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
+
+# Open NYTimes
+url = "https://www.nytimes.com/"
+driver.get(url)
+time.sleep(3)  
+
+# Handle cookie banner (Click "Accept all" button)
+try:
+    driver.find_element(By.XPATH, '//button[@data-testid="Accept all-btn"]').click()
+    print("Cookie banner accepted.")
+    time.sleep(2)  # Allow time for the banner to close
+except:
+    print("No cookie banner found or already accepted.")
+
+# Extract all articles with titles and URLs
+soup = BeautifulSoup(driver.page_source, 'html.parser')
+articles = []
+
+for section in soup.find_all('section', class_='story-wrapper'):
+    link = section.find('a', class_='css-9mylee')  # Find the article link
+    title_tag = section.find('div', class_='css-xdandi')  # Find the title container
+    
+    if link and title_tag:
+        article_title = title_tag.get_text(strip=True)  # Extract the article title
+        article_url = link['href']  # Extract the article URL
+
+        # Store in dictionary format
+        articles.append({
+            "title": article_title,
+            "url": article_url
+        })
+
+# Save to JSON
+with open('nytimes_articles.json', 'w', encoding='utf-8') as f:
+    json.dump(articles, f, ensure_ascii=False, indent=4)
+
+print("\n Articles saved to 'nytimes_articles.json'")
+
+# Close WebDriver
+driver.quit()
+```
+
+11. Scrape all subheaders and their corresponding article names and links from `https://tilburg.ai/articles/` using BeautifulSoup. Each subheader represents a category, and under each, there are multiple articles with clickable links. Extract information on the sub-catagories along with the article names and links listed within them. Save them in a JSON file called ` tilburg_ai_articles.json`. 
+
+**Starter Code:**
+```
+import requests
+from bs4 import BeautifulSoup
+import json
+
+# URL to scrape
+url = 'https://tilburg.ai/articles/'
+
+# Fetch the page content
+response = requests.get(url)
+
+# Check if the request is successful
+if response.status_code == 200:
+    soup = BeautifulSoup(response.content, 'html.parser')
+    
+    data = []
+
+    # TODO: Find all sections containing subheaders and articles
+
+    # TODO: Loop through each section, extract subheader and articles
+
+    # TODO: Save extracted data in JSON file
+
+    print("Data saved to 'tilburg_ai_articles.json'")
+
+else:
+    print(f"Failed to retrieve the page. Status code: {response.status_code}")
+```
+
+
+
+
+**Solution:**
+
+```
+import requests
+from bs4 import BeautifulSoup
+import json
+
+# URL of the Tilburg.ai Articles page
+url = 'https://tilburg.ai/articles/'
+
+# Send a GET request to the URL
+response = requests.get(url)
+
+# Check if the request was successful
+if response.status_code == 200:
+    # Parse the HTML content of the page
+    soup = BeautifulSoup(response.content, 'html.parser')
+
+    # Initialize a list to hold the data
+    data = []
+
+    # Find all sections that represent subheaders and articles
+    sections = soup.find_all('section', class_='menu-section')
+
+    # Iterate over each section
+    for section in sections:
+        # Extract the subheader (category) name
+        subheader_tag = section.find('h2')
+        if subheader_tag and subheader_tag.a:
+            subheader = subheader_tag.a.get_text(strip=True)
+
+            # Initialize a list to hold articles under this subheader
+            articles = []
+
+            # Find all article links within the section
+            article_tags = section.find_all('a', href=True)
+            for article_tag in article_tags:
+                article_name = article_tag.get_text(strip=True)
+                article_url = article_tag['href']
+                articles.append({'name': article_name, 'url': article_url})
+
+            # Append the subheader and its articles to the data list
+            data.append({'subheader': subheader, 'articles': articles})
+
+    # Save the data to a JSON file
+    with open('tilburg_ai_articles.json', 'w', encoding='utf-8') as f:
+        json.dump(data, f, ensure_ascii=False, indent=4)
+
+    print("Data has been saved to 'tilburg_ai_articles.json'")
+else:
+    print(f"Failed to retrieve the page. Status code: {response.status_code}")
+```
+
 <!--
 8. As a researcher you're interested in polarity in online communities and therefore collect data on the distribution of up and down votes on Reddit. Extract a random sample of at least 100 Reddit posts from the [`politics`](https://www.reddit.com/r/politics) and [`science`](https://www.reddit.com/r/science) communities. Store the original JSON response, along with a parsed CSV dataset with the ID and text of a post. Submit your (a) Python code (as `.py` or `.ipynb`), along with the collected data (`.json` and `.csv`).
 

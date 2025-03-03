@@ -301,7 +301,7 @@ example data extraction plan*
     ```
 
 
-10. Scrape all key headlines along with their URLs from the **New York Times homepage (`https://www.nytimes.com/`)**. Since the site has a **cookie consent banner**, use Selenium to automate clicking the **"Accept all" button**. Save the data in a JSON file (`nytimes_articles.json`). 
+10. Scrape all key headlines along with their URLs from the **New York Times homepage (https://www.nytimes.com/)**. Since the site has a **cookie consent banner**, use Selenium to automate clicking the **"Accept all" button**. Save the data in a JSON file (`nytimes_articles.json`). 
 
 **Starter Code:**
 ```
@@ -323,8 +323,10 @@ time.sleep(3)  # Wait for page to load
 
 # Handle cookie banner (Click "Accept all" button)
 try:
-    # TODO: Find and click the "Accept all" button
-    time.sleep(2)
+    cookie_button = driver.find_element(By.XPATH, 'TODO: Add cookie button path here')
+    cookie_button.click()
+    print("Cookie banner accepted.")
+    time.sleep(2)  # Allow time for the banner to close
 except:
     print("No cookie banner found or already accepted.")
 
@@ -363,7 +365,8 @@ time.sleep(3)
 
 # Handle cookie banner (Click "Accept all" button)
 try:
-    driver.find_element(By.XPATH, '//button[@data-testid="Accept all-btn"]').click()
+    cookie_button = driver.find_element(By.XPATH, '//button[@data-testid="Accept all-btn"]')
+    cookie_button.click()
     print("Cookie banner accepted.")
     time.sleep(2)  # Allow time for the banner to close
 except:
@@ -397,7 +400,7 @@ print("\n Articles saved to 'nytimes_articles.json'")
 driver.quit()
 ```
 
-11. Scrape all subheaders and their corresponding article names and links from `https://tilburg.ai/articles/` using BeautifulSoup. Each subheader represents a category, and under each, there are multiple articles with clickable links. Extract information on the sub-catagories along with the article names and links listed within them. Save them in a JSON file called ` tilburg_ai_articles.json`. 
+11.  Scrape all subheaders and their corresponding article names and links from **Tilburg AI** website (https://tilburg.ai/articles/) using BeautifulSoup. Each subheader represents a category, and under each, there are multiple articles with clickable links. Please extract information on the subheader names along with the article names and links listed within them. Save them in a JSON file called ` tilburg_ai_articles.json`. 
 
 **Starter Code:**
 ```

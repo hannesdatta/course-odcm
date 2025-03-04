@@ -301,7 +301,7 @@ example data extraction plan*
     ```
 
 
-10. Scrape all key headlines along with their URLs from the **New York Times homepage (https://www.nytimes.com/)**. Since the site has a **cookie consent banner**, use Selenium to automate clicking the **"Accept all" button**. Save the data in a JSON file (`nytimes_articles.json`). 
+10. Please scrape all key headlines along with their URLs from the New York Times homepage (https://www.nytimes.com/). Since the site has a cookie consent banner, please use Selenium to automate clicking the "Accept all" button. First, collect your data to a dictionary. Then, save the data to a JSON file (`nytimes_articles.json`). 
 
 **Starter Code:**
 ```
@@ -400,7 +400,7 @@ print("\n Articles saved to 'nytimes_articles.json'")
 driver.quit()
 ```
 
-11.  Scrape all subheaders and their corresponding article names and links from **Tilburg AI** website (https://tilburg.ai/articles/) using BeautifulSoup. Each subheader represents a category, and under each, there are multiple articles with clickable links. Please extract information on the subheader names along with the article names and links listed within them. Save them in a JSON file called ` tilburg_ai_articles.json`. 
+11.  Scrape all category names, (e.g., "academic study applications"), and their corresponding article subcategories (e.g., exam preparation) and links from tilburg.ai (https://tilburg.ai/articles/) using BeautifulSoup. Please extract information on the category names, along with the subcategory names and links listed within them. Save them in *one* JSON object, stored in *one* JSON file called `tilburg_ai_articles.json`.
 
 **Starter Code:**
 ```

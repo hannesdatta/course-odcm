@@ -103,7 +103,7 @@ Please upload the presentation (as a PDF) and Excel sheet (as an Excel file) wit
   - Resolve technical difficulties and focus on completing data extraction.
   - Continue progressing towards final documentation.
 - **Deliverables:**  
-  - **Sections 4-6** of your data documentation
+  - **Sections 4-6** of your data documentation.
 
 
 ## Week 7: Final Technical Refinement (Coaching #6, optional)

@@ -94,7 +94,6 @@ Please upload the presentation (as a PDF) and Excel sheet (as an Excel file) wit
   - Further refine data extraction; consider completing advanced tutorials.
 - **Deliverables:**  
   - **Sections 1-3** of your data documentation.
-  - **Sections 4-6** of your data documentation (*optional*)
 
 ## Week 6: Technical Refinement (Coaching #5, optional)
 - **Coaching Support:**  
@@ -103,6 +102,9 @@ Please upload the presentation (as a PDF) and Excel sheet (as an Excel file) wit
 - **Progress on Source Code:**  
   - Resolve technical difficulties and focus on completing data extraction.
   - Continue progressing towards final documentation.
+- **Deliverables:**  
+  - **Sections 4-6** of your data documentation
+
 
 ## Week 7: Final Technical Refinement (Coaching #6, optional)
 - **Coaching Support:**  

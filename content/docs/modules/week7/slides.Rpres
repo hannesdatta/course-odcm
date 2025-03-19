@@ -23,6 +23,8 @@ Welcome to the final lecture in oDCM!
 
 If you haven't done so, please **explore the exam page & example questions** at [https://odcm.hannesdatta.com/docs/exam]().
 
+The __course evaluation__ is live at https://app.evalytics.nl. Please voice your opinions!
+
 <!--The __course evaluation__ is live at https://app.evalytics.nl. Please voice your opinions!
 -->
 
@@ -182,7 +184,7 @@ Next steps: Projects & SPA
   - Want to keep your names on the documentation or anonymize them? Choose.
   - Don't make statements that are too bold!
  
-- Re-read the [grading rubric on the course site](https://odcm.hannesdatta.com/docs/course/project/grading/)!
+- Re-read the [grading rubric on the course site](https://odcm.hannesdatta.com/docs/project/grading/)!
 
 - You will receive __invite to self- and peer assessment__ via email
 
@@ -190,12 +192,12 @@ Exam
 =============
 
 - Organization
-  - When: 16 October (time? check Osiris/registration)
+  - When: 1 April (time? check Osiris/registration)
   - Work max. 3 hours on exam
 - How?
   - access to TestVision
   - access to Jupyter Notebook
-  - I make selected resources [available on the instruction page](https://github.com/hannesdatta/course-odcm/raw/master/content/docs/exam/exam-material.zip); want to submit your own cheatsheet? Do so by *Monday morning* (not paper-based!).
+  - I make selected resources [available on the instruction page](https://github.com/hannesdatta/course-odcm/raw/master/content/docs/exam/exam-material.zip); want to submit your own cheatsheet? Do so seven days before the exam (see link on Canvas) 
   
 Exam technicalities
 ===================
@@ -207,30 +209,31 @@ Exam content
 ======
 
 - let's look at [some questions now](https://odcm.hannesdatta.com/docs/exam/examplequestions/)
-- prep well! Expect new websites (for scraping), new endpoints of APIs (of sites that you know)
+- prep well! Expect new websites (for scraping), new endpoints of APIs (of sites that you know), selenium
 - Internet is available; but: no use of sites/tools (e.g., ChatGPT), or our course Chatbot.
 
 Exam tips
 ========================================================
 incremental: true
 
-- Practice scraping an unknown website (e.g., tutorials at tilburgsciencehub.com, working with music-to-scrape.org, tilburg.ai; focus on "category overview pages" & array misalignment) -- the scraper will account for a large share of your grade
-- You do not have to use `selenium`, but you need to understand how it is different from "regular" scraping toolkits (`requests`, `BeautifulSoup`)
+- Practice scraping an unknown website
+  - e.g., tutorials at tilburgsciencehub.com, 
+  - working with music-to-scrape.org, tilburg.ai
+  - focus on "category overview pages" & array misalignment -- the scraper will account for a large share of your grade
+- You will be asked to use `selenium` for some subquestions; `BeautifulSoup` will be the base
 - Cover "Fields of Gold" (2022), including the web appendix, sample size calculations and legal concerns (+ reason through challenges) + Guyt et al. 2024 (J. of Retailing) 
 
 Next steps: Official course evaluation
 ========================================================
 
 - Course evaluation has been immensely important to this course
-  - This edition: onboarded Roshini for etra support, scheduled extra "computer setup" session before class, had some sessions in the computer lab
-  - Last edition: developed Journal of Retailing (2024) paper with hands-on guide to scraping, moved exam to campus, built music-to-scrape.org
-
+  - This edition: updated tutorials, refined feedback on coaching support
+  - Last edition: TA support for coaching, new computer setup session, computer lab sessions, developed Journal of Retailing (2024) paper with hands-on guide to scraping, moved exam to campus, built music-to-scrape.org
 - Course evaluation has been critical to my career
   - Without my past evaluations, I wouldn't be teaching to you today
   - I will look at all comments
-- Scores are most important to show importance of this course
-
-- You will be invited via Evalytics (evaluate [at the end of the week](https://app.evalytics.nl/#/login)).
+  - Scores are most important to show importance of this course
+- You will be invited via [Evalytics](https://app.evalytics.nl/)
 
 Informal feedback
 ===============

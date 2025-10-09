@@ -1,0 +1,703 @@
+oDCM - Web Data for Dummies (Tutorial)
+========================================================
+author: Hannes Datta
+date:
+autosize: true
+
+<style>
+.small-code pre code {
+  font-size: 1.0em;
+}
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/languages/python.min.js"></script>
+<script>hljs.highlightAll();</script>
+
+<!--#
+
+https://support.rstudio.com/hc/en-us/articles/200486468
+-->
+
+```{r setup, echo = FALSE, message=FALSE, warning=FALSE, include=FALSE}
+suppressPackageStartupMessages(library(reticulate))
+py_install("requests")
+py_install("bs4")
+```
+
+Welcome to oDCM!
+========================================================
+
+
+We're about to start with __today's tutorial ("web data for dummies")__.
+
+- If you haven't done so, open this slide deck at (course material --> week 2) & corresponding [Jupyter Notebook](https://colab.research.google.com/github/hannesdatta/course-odcm/blob/master/content/docs/modules/week2/webdata-for-dummies/webdata-for-dummies-in-class.ipynb)
+- Coaching sessions start after today's tutorial (with Roshini) + finalize team assignment on Canvas
+- You can work in Google Colab today
+
+Agenda
+========================================================
+
+- Today's lecture
+  - Work through the in-class tutorial ("webdata for dummies in class.ipynb")
+  - We'll work on a selection of exercises on web scraping and APIs
+  - Address some data selection challenges highlighted in "Fields of Gold"
+<br>
+- After class
+  - Check out today's [workplan](https://odcm.hannesdatta.com/docs/project/workplan/)
+  - Complete in-class tutorial and exercises; solutions available online
+
+When doing exercises...
+======
+
+__Use your smartphone to indicate your status__.
+
+- Face/screen up: DONE :)
+- Face down: still working.
+
+Thanks.
+
+This room
+======
+
+Meet Windows! :)
+
+- Able to find Anaconda prompt?
+- Able to start up Jupyter Notebook?
+- Try RStudio as well (!) :)
+
+
+Framework
+=======
+
+![](https://journals.sagepub.com/na101/home/literatum/publisher/sage/journals/content/jmxa/2022/jmxa_86_5/00222429221100750/20220801/images/large/10.1177_00222429221100750-fig2.jpeg)
+
+- Focus in today's tutorial: __collection design__
+- Focus in __team project__: source selection
+
+
+What are differences between web scraping and APIs?
+========================================================
+incremental: true
+
+- official vs. unofficial data access
+- scaling (APIs scale more)
+- web scraping largely free, APIs for-pay
+- APIs are linchpin of internet economy
+
+Source & more details: [Web Appendix of "Fields of Gold"](https://journals.sagepub.com/doi/suppl/10.1177/00222429221100750/suppl_file/sj-pdf-1-jmx-10.1177_00222429221100750.pdf)
+
+Consider your options: scraping vs. APIs
+=====
+
+- Many teams "default" to scraping - seems easier ("you can see what you get") and you may have heard about it before
+- Indeed, APIs can be tricky (importantly: getting your first connection sorted out!)
+- But: when that is set - things often go smoothly!
+- Suggestion: explore APIs broadly; maybe even some AI-based APIs you can get access to (e.g., OpenAI's API)
+
+Web scraping
+======
+incremental: true
+
+- Who's ever done it?!
+- Which sites?
+- Which data?
+
+
+We get started with web scraping
+=================
+
+- To do scraping, we need to understand what websites consist of:
+  - HTML ("what you see and where?")
+  - CSS ("how it looks")
+  - Javascript ("how it interacts")
+<br>
+- Examples:
+  - toybox at codepen: https://codepen.io/rcyou/pen/QEObEk/
+  - inspecting [tilburguniversity.edu](https://tilburguniversity.edu)
+  
+Which information to extract from a website (challenge #2.1)?
+================
+
+- We need to decide which information to extract from a site 
+  - is the information publicly accessible or hidden after a login wall?
+  - can we reliably get the data, even after many iterations on the site?
+  - which information do we need to justify that what we measure is measured well ("construct operationalization")?
+
+__Example:__ Suppose you need to get... data on Spotify's streaming charts - where would you get it from?
+
+Which information to extract from a website (challenge #2.1)?
+================
+
+- Best practices
+  - Explore different types of pages and providers
+  - Get "used" to the website, browse a bit ("how to navigate"), become a customer
+  - Identify roadblocks such as captchas
+  - Explore limits to iterating through a site (e.g., max. 1000 pages)
+
+DO: Exploring music-to-scrape
+=========
+
+- Open [music-to-scrape.org](https://music-to-scrape.org) 
+- Familiarize yourself with the structure of the site
+- Check which data you encounter
+- Suppose the data was stored in a database, how would you structure it?
+
+
+Finding information in HTML code 
+================
+
+- But... we don't have access to the database. All we see is the website.
+- So, let's "narrow" down on the information of interest
+- For this, we can use various extraction techniques on the HTML source code of the site
+  - tags, e.g., `<table>`, `<h1>`, `<div>`
+  - attribute-value pairs, e.g., id is equal to "example-table" &rarr; `<table id="example-table">`
+  - "special" attribute-value pairs such as classes, e.g., `<table class="striped-table">`
+  
+__Frequently, you need to combine several of these methods to extract information.__
+
+DO: Identifying information on music-to-scrape.org
+======
+
+- Open https://music-to-scrape.org/artist?artist-id=ARICCN811C8A41750F
+- How could you uniquely capture the following information?
+  - name of the artist
+  - number of song plays on the platform
+  - top 10 songs?
+
+
+CSS selectors and XPATHS (I)
+========
+
+- When following tutorials on the web, some coders advocate for the use of __CSS selectors and XPATHS__ to extract information.
+<br>
+- XPATH
+  - Think of it as the "path" to the specific data point
+  - Example for "artist name": `/html/body/div[3]/section[1]/div/div[2]/h2`
+  - Likely to break very easily (say, something changes *before* the particular element)
+  
+CSS selectors and XPATHS (II)
+========
+
+- CSS selector
+  - Example for extracting "artist name": `.artist_info_title`
+  - Works here, but can be "highly" dependent: say, tag & class name + position (sometimes too detailed) & can also break
+<br>
+- So, here, we are sticking mostly to __tags__, _classes_, and __attribute-value pairs__, defining our "way" to a particular element manually
+
+Preview: Technical web scraping setup (I)
+============
+
+- We will use three libraries:
+  - `requests`: downloads data from the web or transmits data ("headless")
+  - `BeautifulSoup`: structures HTML data so we can query it
+  - __later__: `selenium` + `chromedriver`: simulates a browser (chrome), can scroll, click, view the site, but can also be headless; also structures HTML so we can query it
+  - `json`: structure and query JSON data
+  
+Preview: Technical web scraping setup (II)
+============
+
+__Getting the data__
+- Scraping
+  - Basic, "static" websites: `requests` + `beautifulSoup` (speed + ease!)
+  - Dynamic websites: selenium (advanced tutorial), OR: `selenium` (retrieve data) + `beautifulSoup` (structure/query)
+- APIs
+  - Only `requests`
+
+__Storing the data__
+- use `json` (preferred) or CSV files (flat files with rows & columns)
+
+<br>
+__Today: `requests` + `BeautifulSoup`__
+
+Preview: Technical web scraping setup (III)
+============
+
+A few notes on my code:
+
+- You can copy paste from slides to your own Jupyter Notebooks
+- You can see the code that I write __live__, at https://tiu.nu/livecoding
+- __Variable names can be arbitrarily set__ (but choose names that make sense to you)
+- We're picking up pace; we build upon programming concepts introduced last week (variable assignment, variable types, functions, functions with return values, and loops)
+
+Getting the website into Python
+==================
+class: small-code
+
+```{python, eval=TRUE}
+import requests # let's load the requests library
+
+# make a get request to the website
+url = 'https://music-to-scrape.org/artist?artist-id=ARICCN811C8A41750F'
+header = {'User-agent': 'Mozilla/5.0'} # with the user agent, we let Python know for which browser version to retrieve the website
+web_request = requests.get(url, headers = header)
+
+# return the source code from the request object
+web_request_source_code = web_request.text
+```
+
+BeautifulSoup 101
+================
+class: small-code
+
+- Why? Query the HTML code!
+- Think of it as a pipeline: download data --> pump to BeautifulSoup --> query data
+
+```{python, eval=TRUE}
+import requests
+from bs4 import BeautifulSoup
+
+url = 'https://music-to-scrape.org/artist?artist-id=ARICCN811C8A41750F'
+
+header = {'User-agent': 'Mozilla/5.0'} 
+
+web_request = requests.get(url, headers = header)
+
+soup = BeautifulSoup(web_request.text)
+
+print(soup.find('h2').get_text())
+```
+
+- Change the snippet to __show the location and number of plays!__ 
+- Tip: use `.find(class_ = 'classname')`
+
+BeautifulSoup 101 (solution)
+================
+class: small-code
+
+```{python, eval=TRUE}
+print(soup.find(class_ = 'about_artist').get_text())
+```
+
+
+DO: BeautifulSoup exercises
+=============
+
+- So far, we've just 'lump-extracted' all of the text
+- Next, let us refine our collection by getting...
+  - the exact location (--> stored in `location`), exact number plays (--> stored in `plays`), and the total number of songs in the top 10.
+
+- Tips
+  - `.find(class_='class-name')` for classes
+  - you may need to use `.find_all()`
+  - `len()` for counting
+  - remember to write code like "an onion"
+  
+<!--
+- `.find(attrs={'name_of_attribute': 'value'})` for attribute-value pairs
+  -->
+  
+DO: BeautifulSoup exercises (solution)
+=============
+
+```{python, eval=FALSE}
+location = soup.find(class_ = 'about_artist').find_all('p')[0].get_text()
+
+plays = soup.find(class_ = 'about_artist').find_all('p')[1].get_text()
+
+song_table = soup.find(class_ = 'top-songs')
+
+number_of_songs = len(song_table.find_all('tr'))-1
+```
+
+Wrapping code in a function (I)
+==================
+class: small-code
+
+- Functions are extremely useful to "reuse" code over and over again
+  - Functions have a name (say,  `def functionname`)
+  - ...and arguments (say,  `def FUNCTIONNAME(argument1, argument2)`)
+<br>
+- We can now wrap the code above in a function 
+  - `def download_data(url)`
+  - the name of the function is `download_data`, and it requires `url` as input
+
+Wrapping code in a function (II)
+==================
+class: small-code
+
+```{python, eval=TRUE}
+import requests
+from bs4 import BeautifulSoup
+
+def download_data(url):
+  header = {'User-agent': 'Mozilla/5.0'} 
+  
+  web_request = requests.get(url, headers = header)
+  
+  soup = BeautifulSoup(web_request.text)
+  
+  artist_name = soup.find('h2').get_text()
+  
+  print(f'Artist name: {artist_name}.')
+  
+# execute the function
+download_data('https://music-to-scrape.org/artist?artist-id=ARICCN811C8A41750F')
+
+```
+
+DO: Wrap code into a function
+==================
+class: small-code
+
+1. Adapt the function to also extract the other attributes (i.e., location, number songs, etc.)
+2. Write a loop to extract data using this function for the following artist IDs.
+
+```{python}
+artist_ids = ['ARICCN811C8A41750F', 'AR1GW0U1187B9B29FD', 'ARZ3U0K1187B999BF4']
+```
+
+Tips: 
+- Status messages with variables: 
+
+```r
+print(f'Done retrieving {url}')`
+```
+
+Solution
+==========
+class: small-code
+
+```{python, eval = TRUE}
+
+artist_ids = ['ARICCN811C8A41750F', 'AR1GW0U1187B9B29FD', 'ARZ3U0K1187B999BF4']
+
+def download_data(url):
+  header = {'User-agent': 'Mozilla/5.0'} 
+  
+  web_request = requests.get(url, headers = header)
+  soup = BeautifulSoup(web_request.text)
+
+  artist_name = soup.find('h2').get_text()
+  location = soup.find(class_ = 'about_artist').find_all('p')[0].get_text()
+  plays = soup.find(class_ = 'about_artist').find_all('p')[1].get_text()
+  
+  print(f'Artist name: {artist_name} from {location} with {plays} song plays.')
+ 
+for id in artist_ids:
+  download_data(f'https://music-to-scrape.org/artist?artist-id={id}')
+  
+  
+```
+
+Storing results into JSON data
+===========
+
+- JSON is most flexible format, supports "hierarchical data"
+- Demonstrate how to create empty object (`obj = {}`)
+- __New-line separated JSON objects__
+  - __New line separation: each line in your file has one JSON object__
+  - compare to "full" JSON objects: one entire JSON object per file
+  
+Storing results into JSON data
+============
+
+Change the code so it stores artist name, location and plays in the JSON object.
+
+```{python}
+
+def download_data(url):
+  web_request = BeautifulSoup(requests.get(url).text)
+  artist_name = soup.find('h2').get_text()
+  location = soup.find(class_ = 'about_artist').find_all('p')[0].get_text()
+  plays = soup.find(class_ = 'about_artist').find_all('p')[1].get_text()
+  
+  out_data = {'artist': 'artist name',
+            'location': 'store location here',
+            'plays': 'store plays here'}
+            
+  return(out_data)
+
+```
+
+Saving JSON data
+=====
+
+The final step is to save JSON data in a file.
+
+We can do this with the `json.dumps` function from the `json` library
+
+```{python, eval=FALSE}
+import json
+
+out_data = {'artist': 'artist name',
+          'location': 'store location here',
+          'plays': 'store plays here'}
+          
+# convert dict to "string" that we can save
+to_json = json.dumps(out_data)
+
+f=open('filename.json','a')
+f.write(to_json+'\n')
+f.close()
+
+```
+
+
+How to sample? (Challenge #2.2)
+==================
+
+- In the demos above, we just used a hard-coded list of URLs
+- In practice, getting to that list of books/products/songs/artists/users (generally speaking: "seeds") is a web scraper in itself!
+- Examples
+  - scrape all artists featured on the homepage
+  - then loop through them an extract information for each artist (e.g., total number of)
+  - scrape user names from reddit.com; then, use the reddit API to get user metadata
+  - ...
+  
+How to sample? (Challenge #2.2)
+==================
+
+- Many challenges in sampling
+  - sample size? generalizability? panel attrition?
+  - all of the firm's data? or just a little bit? are subjects vulnerable (say, kids)?
+  - can we actually "get" data on all subjects? can we match data?
+- Some solutions and best practices discussed in "Fields of Gold"
+- Let's look at the tables in the paper and try to find out...
+
+Writing a complete web scraper
+==============
+
+- Have list of seeds to start up data collection (here, artist IDs)
+- loop through list of URLs
+  - store raw data for diagnostic purposes
+  - extract relevant data to JSON file with raw data
+- schedule
+- infrastructure
+
+For details/explanation, see Guyt et al. 2024.
+
+Wrapping up web scraping
+=====================
+
+- Get content from a __website__
+- Since we don't want "everything", we need to "find" relevant elements on the site using
+  - tags 
+  - classes
+  - attribute-value pairs
+- We first build a prototype; then gradually improve it by
+  - modularizing code as much as possible (using functions and loops)
+  - ensuring code runs top-down
+  
+
+
+APIs
+=====
+incremental: true
+
+- Standard way for exchanging data, functions or algorithms
+- __Which APIs did you already encounter/explore?__
+- Music to scrape is super easy to use - other APIs require advanced authentication procedures (&rarr; import for project - run checks early)
+- Structure corresponds to web scraping
+  - have list of seeds (e.g., artist IDs; this was "URLs" for web scraping earlier)
+  - store data in new-line separated JSON files (if necessary: convert back to CSV)
+
+Let's explore the documentation and a first endpoint
+=========
+
+- Pretty much all APIs have documentations, see [here](https://api.music-to-scrape.org/docs) for ours
+
+- Let's explore a first endpoint in our browser: https://api.music-to-scrape.org/artists/featured
+
+- DO: Describe what you see; what does that mean? How does the data link to other sections of the website? Do you "get" the logic?
+
+Retrieving data in Python
+=====
+
+```{python}
+import requests
+con = requests.get('https://api.music-to-scrape.org/artists/featured')
+
+# convert to json
+obj = con.json()
+
+obj
+```
+
+Working with JSON objects
+========
+
+- Looking at them (`obj`)
+- Giving them arbitrary names (`obj` &rarr; `anothername`)
+- Accessing "nodes" (`obj['artists']` or `obj.get('artists')`)
+- Accessing items in a list (`obj['artists'][0]`): multiple objects are in that list!
+
+
+DO: Application 1 (loops)
+=====
+
+Remember loops from last week's bootcamp? We can "iterate" through result objects.
+
+```{python}
+for i in obj['artists']:
+  print(i.get('artist'))
+```
+
+DO: Can you also print out the artist IDs?
+
+
+DO: Turning code into a function
+=====
+
+- Please write a function to execute the data collection of featured artists. 
+- Call this function `getdata()`
+
+Starting code:
+
+```python
+def getdata():
+  # YOUR CODE HERE
+  
+  # return some data
+  
+  # return()
+```
+
+Solution:
+===
+
+```{python}
+import requests
+
+def getdata():
+  con = requests.get('https://api.music-to-scrape.org/artists/featured')
+  obj = con.json()
+  return(obj)
+
+```
+
+Let's call the function!
+
+```{python, echo = FALSE}
+getdata()
+
+```
+
+Timing the data collection
+======
+
+1) This makes your computer sleep for 5 seconds
+```python
+import time
+time.sleep(5) # sleeps 5 seconds
+```
+
+2) This makes your computer go on forever...
+```python
+while True:
+  # command here
+```
+
+3) This makes your computer go on forever...
+```python
+counter = 0
+while counter < 5:
+  counter = counter + 1
+  print("Hello")
+```
+
+__DO:__ Please execute your data collection every one second seconds, at max. 5 times.
+
+Solution
+=====
+
+```python
+import time
+
+i = 0
+while i < 5:
+  print(getdata())
+  time.sleep(1)
+  i = i + 1
+```
+
+
+At which frequency to extract the data? (Challenge #2.3)
+======
+
+- Here, we extracted data every few seconds.
+- But, extraction frequency vastly differs by project
+- Considerations
+  - archival vs. live data?
+  - at which frequency does your phenomenon occur?
+  - what's the refresh rate of the data source?
+  - any excessive burden on server's caused by frequency of extraction?
+  
+At which frequency to extract the data? (Challenge #2.3)
+======
+- Some solutions
+  - explore gains of live data collections
+  - adhere to best practices (say, 1 request per second)
+  - randomize extraction order
+  - use automatic schedulers for consistency
+
+
+Extensions: data storage
+=====
+
+Two options:
+
+1. store internally in a list (`[...]`), then write to file at the end of your script
+2. directly write to a file (`f = open()`, `f.write()`, `f.close()`) ("parsing on the fly")
+
+Processing data during the collection (challenge #2.4)
+========
+
+- Processing can have various degrees
+  - just "save" the raw data
+  - extract only necessary information
+  - choose data format for saving (say, JSON vs. CSV)
+- Some selected challenges
+  - GDPR vs. value in retaining raw data
+  - Anonymization or pseudonymization required?
+  
+Processing data during the collection (challenge #2.4)
+========
+
+- Solutions
+  - Retain raw when possible
+  - Parse minimal amount of data on the fly
+  - Remove sensitive info
+  - Ensure proper encoding
+
+
+Optional I (if time left): Artist meta data
+=========
+
+__Get some artist meta data for an artist of your choice!__
+
+1.) Find an artist IDs on the site or in previous code
+
+2.) Try to make a web request (in your browser) to the following URL:
+
+- Endpoint: `https://api.music-to-scrape.org/artist/info`
+- Requires parameter: `artistid`
+- Combined URL: `https://api.music-to-scrape.org/artist/info?artistid={ENTER ARTIST ID HERE}`
+
+3.) Does it work? Then write Python code to retrieve the data.
+
+4.) Finally, wrap your code in a function so you can later retrieve data for multiple artists.
+
+
+Optional II (if time left): exercises with music-to-scrape
+===============
+
+__Please work on exercise 2.4 (see tutorial).__
+
+1. collect (longer) list of featured artists
+2. for each of these featured artists, collect meta data
+3. store data in new-line separated JSON file
+
+Questions
+====
+
+Next steps in this class
+=============
+
+- Complete __this tutorial__ at home - focus equally on scraping __and__ APIs
+- Get engaged - see the "bigger" picture of web scraping and APIs
+  - discuss ideas & business opportunities (e.g., OpenAI's developer platform?)
+  - use our course chatbot at odcm.tilburgai.nl
+  - be in touch with Roshini (email) or myself (on WhatsApp) for any issues/bugs/etc.
+- __Coaching session__: Work on your team project (see workplan on the course website) + make team allocation definite (with Roshini)

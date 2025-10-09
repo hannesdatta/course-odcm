@@ -1,0 +1,36 @@
+---
+title: "Schedule"
+format: html
+---
+
+The course runs for a duration of seven weeks.
+- Within the first three weeks, students build coding skills and learn web scraping and APIs (typically using self-study material, tutorials, and exercises). 
+- For the remaining four weeks, students follow weekly lectures, work their team project and attend team coaching sessions.
+
+::: {.callout-note title="Check official Tilburg's Scheduling Information regularly"}
+- The schedule above is subject to change. For updates, please check your official course schedule at [MyTimetable](https://rooster.uvt.nl)
+:::
+
+
+| Week  | Date         | Time           | Location   | Content                                      | Given by           |
+|-------|--------------|----------------|------------|----------------------------------------------| -------------------|
+| 0     |              |                |            | Preparation before the course starts
+| 1     | Mon 20 Oct   | 10:00–10:30    | CZ 112     | Q&A to help fix installation issues (optional) | Sudhaharan |             
+|       |              | 10:45–14:00    | CZ 6       | Opening lecture & Python Bootcamp            | Datta |
+| 2     | Mon 27 Oct   | 12:45–14:30    | GZ 104     | Tutorial: Web scraping (Basic)               | Datta |
+|       | Thu 30 Oct   | 12:45–14:30    | GZ 104     | Tutorial: Web scraping (Advanced             | Datta |
+| 3     | Mon 3 Nov    | 12:45–14:30    | GZ 104     | Tutorial: APIs (Basic)                       | Datta |
+|       | Thu 6 Nov    | 12:45–14:30    | GZ 104     | Tutorial: APIs (Advanced)                    | Datta |
+| 4     | Mon 10 Nov   | 12:45–14:30    | MKZ 111    | Lecture                                      | Datta |
+|       | Wed 12 Nov   | 14:45–16:30    | Cube 216   | Team coaching 1                              | Sudhaharan |
+| 5     | Mon 17 Nov   | 10:45–12:30    | CZ 6       | Lecture                                      | Datta |
+|       | Wed 19 Nov   | 14:45–16:30    | CZ 109     | Team coaching 2                              | Sudhaharan |
+| 6     | Mon 24 Nov   | 09:45–10:30    | Cube 222   | Exam preparation/Q&A                         | Datta |
+|       | Wed 26 Nov   | 14:45–16:30    | CZ 109     | Team coaching 3                              | Sudhaharan |
+| 7     | Mon 1 Dec    | 08:45–10:30    | Cube 216   | Course summary and recap.                    | Datta |
+|       | Fri 5 Dec    | 14:45–16:30    | Online     | Team coaching 4                              | Sudhaharan |
+
+::: {.callout-note title="Recordings of lectures and tutorials"}
+Lectures and tutorial sessions will be usually recorded (except in the case of unexpected technical issues, e.g., loss of the recording before it could be finally saved and uploaded). You will find recordings on the Canvas page of the course.
+:::
+

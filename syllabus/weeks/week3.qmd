@@ -1,0 +1,26 @@
+---
+title: "Week 3) Web scraping 101"
+format: html
+draft: true
+---
+
+__Learning Goals__
+
+- Understand the basics of web scraping
+- Learn how to extract data from static and dynamic websites
+- Explore ethical and legal considerations in web scraping
+
+__Preparation before class__
+
+- Review the materials on web scraping basics.
+- Ensure you have the necessary tools installed (e.g., BeautifulSoup, Selenium).
+
+__Lecture__
+
+- Introduction to web scraping techniques
+- Hands-on tutorial: Scraping data from a sample website
+
+__After the lecture__
+
+- Complete the exercises on extracting data from websites.
+- Begin working on your own web scraping project.

@@ -1,0 +1,25 @@
+---
+title: "Week 4) Building your API skills"
+format: html
+draft: true
+---
+
+__Learning Goals__
+
+- Send HTTP requests to a web API and retrieve JSON responses
+- Use parameters to modify the results of an API call
+- Iterate over multiple pages of JSON responses
+- Extract and store results of an API request in lists of dictionaries and files
+
+__Lecture__
+
+- In-class tutorial on working with APIs
+
+__Coaching session__
+
+- Focus on refining your API data extraction skills
+
+__After the lecture and coaching session__
+
+- Complete the exercises in the tutorial of this week
+- Work through challenges to solidify your understanding of API data extraction

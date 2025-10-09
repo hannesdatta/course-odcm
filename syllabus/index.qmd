@@ -1,0 +1,106 @@
+---
+title: "Syllabus"
+format: html
+editor: visual
+date: 2025-10-10
+author: Hannes Datta
+---
+
+# Syllabus
+
+## Course Description
+
+The internet provides a wealth of information that can be used for academic and business purposes. This course is designed to equip students with the skills to collect such **web data** at scale. Through hands-on training, students will learn how to extract data from publicly available websites (e.g., social networks, digital media platforms, or price comparison websites) through the techniques of **web scraping** and **Application Programming Interfaces (APIs)**. Specifically, this course will cover these techniques using Python, and apply them to real-world data sets from websites and APIs.
+
+### Learning goals
+
+After successful completion of this course, students will be able to:
+
+-   Explain how to use web data for creating marketing insight[^1]
+-   Select web data sources and evaluate their value to inform a specific research context or business problem
+-   Design the web data collection while balancing validity, technical feasibility, and exposure to legal/ethical risks
+-   Collect data via web scraping and APIs by mixing, extending, and repurposing code snippets
+-   Document and archive collected data and make it available for public (re)use
+
+[^1]: Based on (1) Boegershausen, Johannes, Hannes Datta, Abhishek Borah, and Andrew T. Stephen (2022). “Fields of Gold: Scraping Web Data for Marketing Insights.” *Journal of Marketing*. [Download paper](https://doi.org/10.1177/00222429221100750) and (2) Guyt, Jonne, Hannes Datta, and Johannes Boegershausen (2024). "Unlocking the Potential of Web Scraping for Retailing Research." *Journal of Retailing*. [Download paper](https://doi.org/10.1016/j.jretai.2024.02.002).
+
+### Positioning of the course in the study program
+
+The course is instructed to **MSc students in the Marketing Analytics (TiSEM) program**. Seats are also offered to interested Research Master and PhD students.
+
+Considering the typical process in which research is carried out, this course is positioned **at the beginning of a research project** (i.e., when the research question is being defined and the data being collected). This course does not zoom in on *how to analyze* data collected from the web but focuses on the process of collecting data for later use (e.g., for thesis or PhD projects). Therefore, students are recommended to follow this course before embarking on thesis projects.
+
+::: callout
+When collecting web data for their research, students mostly rely on a mix of both Dutch and international data sources, ranging from Dutch e-retailers (e.g., [Coolblue](https://coolblue.com), [Bol.com](https://bol.com), [Albert Heijn](https://ah.nl)) and marketplaces (e.g., [Autoscout](https://autoscout.nl)) to globally available platforms (e.g., [Reddit](https://reddit.com), [Twitch](https://twitch.com), [Kayak](https://kayak.com)). APIs often come from large, international digital platforms (e.g., [Reddit](https://reddit.com)) or APIs of AI providers (e.g., [OpenAI](https://platform.openai.com)).
+:::
+
+## Prerequisites
+
+- The course uses **Python** for the technical implementation of collecting web data. The course welcomes novices, of whom a significant investment of effort and time is required to learn the necessary skills.
+- Preparation material (before the course starts) is available in the form of Jupyter Notebooks or course recommendations at Datacamp. Novices may further benefit from following other courses at Tilburg University in which Python is used, for example, *Research Skills: Data Processing* and *Research Skills: Data Processing Advanced*.
+- Students are recommended to use the their computer for this course. Windows and Mac users can typically install all required software easily. Linux users may require some advanced understanding of their operating system to install all required software. Android/Chromebook/iOS devices are not supported. The exam is held on campus, using Windows computers. Mac and Linux users are strongly advised to practice on the on-campus computers before the exam. Tutorial sessions are usually scheduled in computer rooms exactly for this purpose.
+
+## Teaching format
+
+- Blended learning: a mix of lecturers, tutorials and coaching sessions, mostly on-campus, and sometimes online or prerecorded.
+-  Learn state-of-the-art tools popular among scientists, marketing analysts, and data scientists (e.g., Python), and collect data from real websites and APIs.
+
+## Assessment
+
+- Team project (40%, out of which 8% are based on students' individual contribution, measured by self- and peer assessment)
+- Computer exam (60%)
+
+### Passing requirements
+
+Students pass this course if 
+
+- the final course grade (i.e., the weighted average of the following two components: (1) the group project, and (2) the exam; weights indicated above) is ≥ 5.5, and 
+- the exam grade is higher than or equal to 5.0 (≥ 5.0).
+
+Final course grades are rounded to multiples of half points (e.g., 6, 6.5, 7, etc.).
+
+
+### Resit policy
+
+-   If students have a grade lower than 5.0 on the exam, they cannot pass this course.
+    -   Required action: Students will have to take the exam resit.
+-   If students are not part of a team, they cannot obtain a grade for the team project and hence cannot pass this course.
+    -   Required action: Re-enroll in this course's next edition, and ensure you are part of a team.
+-   If students have an exam grade higher or equal to 5.0 but fail the team project (after SPA correction), their total course grade may be lower than 5.5, and hence students fail this course.
+    -   Required action: Correct team project based on the course coordinator's grading report, and hand it in again within two weeks after publication of the final grades in this course (submission on Canvas). Only students who fail the team project can have their projects re-graded.
+-   Students who have passed the course, but wish to retake the exam, can take the exam resit. The last exam grade counts. Grades for the team project are retained. In other words, the resit exam still counts for 60% of the final course grade.
+-   Students who fail the exam and wish to re-take the course in the subsequent semester can *retain* their assignment grades. <!-- upon approval of the course coordinator (grades remain valid for the *next* edition of the course).-->
+
+## Code of Conduct
+
+-   Please always use English as the default language so that non-Dutch speakers can follow the conversations, even if it concerns topics not directly related to the class (e.g., during breaks).
+-   Please in touch with your instructor early on to signal (and solve) problems jointly.
+-   Stay up-to-date by checking this syllabus, Canvas, and watch out for updates on Hannes' social media channels.
+-   Be on time, and start on time
+-   Feel invited to provide informal feedback!
+-   It's totally fine calling the instructor by his first name.
+-   When meeting online, please turn on your camera, which will facilitate interaction with the course instructor and other students.
+
+::: callout-note
+**We value diversity and inclusion**
+
+We do our best to embrace diversity and stimulate integration in this course. We encourage students to be proud of their background (e.g., ethnicity, nationality), personal interest (e.g., hobbies), or any other thing that characterizes them.
+
+Two ways in which students can bring in *their perspective* is
+
+-   choosing with whom to collaborate (e.g., purposefully bring in people of diverse backgrounds or technical skill levels to a team), and
+-   choosing which topic to work on in the team project (e.g., spending sufficient time getting to know each other, creating a safe space, and being open to work on topics off the mainstream).
+
+Curious to learn more? Check out [Tilburg's Diversity & Inclusion Policy](https://www.tilburguniversity.edu/about/working/gender-policy), and learn how Tilburg [supports student diversity](https://www.tilburguniversity.edu/students/studying/campus/diversity). Also feel invited to talk to the course coordinator at any point in time!
+:::
+
+## Instructors
+
+This course is instructed by
+
+-   [dr. Hannes Datta](https://hannesdatta.com), Associate Professor at the Marketing Department of Tilburg University (**course coordinator, tutorials & lectures**), and
+-   [Roshini Sudhaharan, MSc.](https://www.linkedin.com/in/roshinisudhaharan/), Junior Lecturer at the Marketing Department of Tilburg University (**team project and coaching sessions**).
+
+::: {.callout-note title=""}
+Join Hannes' professional network on [LinkedIn](https://www.linkedin.com/in/hannes-datta/), subscribe to his [YouTube Channel](https://youtube.com/c/hannesdatta), and start following him on [GitHub](https://github.com/hannesdatta).
+:::

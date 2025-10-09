@@ -1,0 +1,36 @@
+---
+title: "Week 1) Getting started"
+format: html
+draft: true
+---
+
+__Learning Goals__
+
+- Get to know Python
+- Launch Jupyter Notebook and run code in Visual Studio Code
+- Know when it’s useful to use Google Colab in the cloud (vs. Jupyter Notebook)
+- Understand basic programming concepts in Python and their applications to collecting web data
+
+__Preparation before class__
+
+- Ensure you have completed all preparations, including software installation at Datacamp licenses, before the lecture. [Find out more...](prep)
+
+__Opening lecture and Python bootcamp__
+
+- Introduction to the course
+- In-class tutorial: Python bootcamp for web data
+
+::: {.callout-note}
+__Downloading to and starting the tutorial on your computer__
+
+- Right-click on the download link and select "download linked file as...".
+- Move the file to a convenient file location (e.g., somewhere in your course folder)
+- If the downloaded file is a `.zip` (compressed) file, unzip it.
+- Open Jupyter Notebook (e.g., using the terminal or the Anaconda Navigator), navigate to the folder where you stored the downloaded files, and open the `.ipynb` file from within Jupyter Notebook.
+- Start with the tutorial!
+:::
+
+__After the lecture__
+
+- Work through the in-class tutorial at your own pace.
+- Deepen your understanding of basic programming concepts by completing a tutorial on Datacamp.com (about 3 hours; [work on the first three chapters only](https://datacamp.com/courses/intro-to-python-for-data-science))

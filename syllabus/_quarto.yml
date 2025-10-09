@@ -1,0 +1,51 @@
+project:
+  type: book
+  output-dir: _syllabus
+book:
+  title: "Online Data Collection & Management (328060-M-6)"
+  author: "Hannes Datta"
+  chapters:
+    - index.qmd
+    - schedule.qmd
+    - chatbot.qmd
+    - part: "Weekly modules"
+      chapters:
+      - weeks/week0.qmd
+      - weeks/week1.qmd
+      - weeks/week2.qmd
+      - weeks/week3.qmd
+      - weeks/week4.qmd
+      - weeks/week5.qmd
+      - weeks/week6.qmd
+      - weeks/week7.qmd
+    - part: "Team project"
+      chapters:
+      - project/index.qmd
+      - project/grading.qmd
+      - project/spa.qmd
+      - project/data.qmd
+      - project/workplan.qmd
+    - part: "Exam"
+      chapters:
+      - exam/_index.qmd
+      - exam/inspection.qmd
+    #  - exam/preparation.qmd
+    #  - exam/examplequestions.qmd
+  search: true
+  sidebar:
+    style: floating     # sticky sidebar with chapter list
+  page-navigation: true # next/previous buttons
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: darkly
+    toc: true           # per-page table of contents (right side)
+    toc-depth: 3
+    code-copy: true
+    number-sections: false
+    df-print: paged
+
+# bibliography: references.bib   # optional
+# csl: apa.csl                 # add if you have a CSL

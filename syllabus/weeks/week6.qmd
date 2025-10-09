@@ -1,0 +1,19 @@
+---
+title: "Week 6) Prototype development and running data collection"
+format: html
+draft: true
+---
+
+__Learning Goals__
+
+- Scale up the data extraction
+
+__Online coaching session (optional)__
+
+- Technical refinement of the team project
+
+__After the coaching session__
+
+- Read "Datasheets for Datasets"
+- Continue working on the development of your prototype
+- Start documenting your data collection

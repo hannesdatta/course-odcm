@@ -1,0 +1,23 @@
+---
+title: "Week 7) Finalizing data collection"
+format: html
+draft: true
+---
+
+__Learning Goals__
+
+- Finalize data collection and documentation
+
+__Before the lecture__
+
+- Work through the exam preparation material
+
+__Final lecture__
+
+- Course summary
+- Exam preparation
+- Final questions
+
+__Online coaching session (optional)__
+
+- Final technical refinement of the team project

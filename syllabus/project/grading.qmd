@@ -1,0 +1,101 @@
+---
+title: "Project Grading"
+format: html
+number-depth: 2
+draft: true
+---
+
+## Overview
+
+The goal of this team project is to collect and document data through web scraping and/or APIs within a self-chosen research context or business idea. The primary focus is on data generation rather than conducting in-depth analyses related to the research question.
+
+The team project is submitted as a so-called “data package”, consisting of the following two elements:
+
+1. Source code and accompanying files (50% of the final grade)  
+2. Documentation of the data collection (50% of the final grade)
+
+Students' team project grades will be corrected upwards or downwards, depending on students' individual contribution to the overall team effort. [Learn more here](resources/peerassessment).
+
+::: {.callout-note}
+### Be ready for publication
+
+Please submit the data package in such a way that it can be made publicly available on the internet.
+
+- Fully anonymize any information that could be considered sensitive or personal, such as names or other personal information.  
+- Do not store any personal passwords in code.  
+- You may remove your names if you prefer anonymity (grades can be matched using your team number).  
+- Ensure the statements in your documentation are realistic.
+:::
+
+## Calculation of team grades
+
+Weights for each component of the grading rubric below are indicated in brackets (e.g., 5%).  
+In calculating your final grade, percentages are converted to grade points on a ten-point scale (e.g., 5% make up 0.5 grade points on a 10-point scale), weighted by the following percentages:
+
+* *High proficiency* and/or exceeds expectations (grade points × 100%)  
+* *Adequate proficiency* (grade points × 80%)  
+* *Some proficiency* (grade points × 60%)  
+* *Insufficient proficiency* (grade points × 30%)  
+* *No proficiency* (grade points × 0%)
+
+::: {.callout-note}
+### Example
+
+A student team has shown adequate proficiency in motivating the context in which the data was collected.  
+The motivation for the data context counts towards 5% of the team project’s final grade.  
+In grade points, this equals 0.5 points on a 10-point scale.  
+The points are weighted with 80% for adequate proficiency.  
+The grade for this part of the data package equals 0.5 × 80% = 0.40.
+:::
+
+## Details
+
+### 1. Source Code and Accompanying Files
+
+- *Quality of the technical implementation (30%)*  
+  The quality of the technical implementation is judged for web scraping and APIs, as per the following dimensions.
+
+::: {.callout-tip}
+#### Web scraping
+- A single vs. multiple entities / web pages  
+- Degree of complexity required to obtain data (e.g., static websites vs. dynamic websites with buttons/navigation; self-coded vs. pre-built extraction tools)  
+- Stability of the solution (can the code be re-run later, on Windows/Mac/Linux?)  
+- Obeying retrieval limits (timers, efficient code, avoiding redundant requests)  
+- Uniqueness (e.g., combining web scraping and API data)
+
+#### APIs
+- A single vs. multiple API endpoints  
+- Complexity of API queries (multiple parameters, pagination, etc.)  
+- Documentation of API keys, tokens, and secrets  
+- Efficient endpoint usage  
+- Appropriateness of package use vs. self-coded elements  
+- Obeying retrieval limits  
+- Uniqueness (e.g., combination of web scraping and API data)
+:::
+
+- *Quality of the submitted data package and source code (20%)*  
+  - Source code present and clearly readable (e.g., meaningful variable names)  
+  - Proper markdown formatting (headers, dividers, etc.)  
+  - Well-structured and modular source code (e.g., functions)  
+  - Adherence to DRY principles  
+  - Concise code (e.g., list/dictionary comprehensions)  
+  - Includes comments and docstrings  
+  - Executable in linear order without errors  
+  - No unnecessary code or packages  
+  - Relative (not absolute) file paths  
+  - Error-handling implemented  
+  - Data package submitted as a ZIP with an organized directory structure  
+  - Temporary/unnecessary files removed
+
+::: {.callout-note}
+### Test your extraction code before submission
+
+Before submitting, test your extraction code on a different computer (e.g., by a team member) and preferably on another operating system (Windows, Mac, Linux).  
+This ensures reproducibility and helps detect missing package dependencies.
+:::
+
+::: {.callout-note}
+### Directory and file structure
+
+In preparing your submission, please closely adhere to the following directory structure:
+

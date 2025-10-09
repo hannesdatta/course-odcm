@@ -1,0 +1,93 @@
+---
+title: "Exam"
+format: html
+---
+
+::: {.callout-note title="**Updates to this page**"}
+This page will be updated throughout the course. Expect a final version with exam preparation material by week 6.
+:::
+
+The exam for this course is a **120-minute on-campus computer exam** (course code 328060-M-6), taken in [TestVision](https://TilburgU.testvision.nl/online/kandidaten). It is an __open-book exam with internet access__; the use of AI is not permitted.
+
+<!--
+Students taking the discontinued 3 ECTS version should prepare using the exam material from the previous semester.
+-->
+
+Key points to keep in mind:
+
+* four exam dates are offered each academic year, of which students may take part in at most two.
+* you will be able to download "cheatsheets" from the exam's introduction page
+* communication with others about the exam is strictly forbidden
+* the use of any other website/tool, including AI tools such as ChatGPT, is strictly forbidden (unless explicitly stated otherwise for selected questions)
+* do not include your name or student number in submitted files unless explicitly asked, to ensure anonymous grading.
+
+
+## Date and Time
+
+- Please view the date & time directly on Osiris.
+
+## Exam Format
+
+The exam consists of a mix of **open questions** (requiring open-text answers or file uploads) and **closed questions** (such as multiple-choice, ranking, or matching). These questions are organized according to the **learning goals of the course**, and the content for each learning goal will be drawn from both **tutorials**, **lectures**, and **readings**.
+
+The exam is worth a total of **120 points**, corresponding to roughly one point per minute of work. This design should help you pace yourself and prioritize your effort during the exam.
+
+In terms of cognitive skills, the exam does not stop at testing factual recall. Instead, it follows **Bloom’s taxonomy of learning objectives**, which means you will be assessed across different levels of thinking:
+
+* **Knowledge & Comprehension** – recalling key concepts and demonstrating understanding of methods and ideas.
+* **Application** – using techniques or code you have learned in tutorials and lectures to solve new problems.
+* **Analysis** – breaking down complex tasks (e.g., a dataset or research workflow) into their component parts and reasoning about them.
+* **Synthesis** – combining different elements (e.g., data, code, and interpretation) to produce a coherent result.
+* **Evaluation** – critically judging the suitability of an approach or comparing alternative solutions.
+
+Together, these levels ensure that the exam does not merely check whether you *remember* material, but also whether you can *apply, integrate, and evaluate* it in realistic scenarios.
+
+<!--
+## Overview of Questions
+
+
+The table below outlines the types of questions you can expect, along with their sources for each learning goal of the course.
+
+| No. | Learning goal | Question type | Questions based on tutorials | Questions based on book |
+|-------------|-------------|-------------|-------------|--------------------|
+| 1 | Use R to clean and transform data for analysis | Synthesis | 20P (2Q) on engineering tutorial | 4P (1Q), ch. 7 |
+| 2 | Use GitHub for managing empirical research projects | Eval. |  | 12P (4Q), ch. 2, 5 |
+| 3 | Use Git/GitHub for versioning files and collaboration | Appl. & Eval. | 24P on GitHub tutorial | 12P (4Q), ch. 6 |
+| 4 | Use R for generating automatic reports | Compreh. & Appli. | 12P on Rmarkdown tutorial | 6P (2Q), ch. 4 |
+| 5 | Use Workflow Management Tools | Appl. & Eval. | 24P on Make tutorial | 6P (2Q), ch. 3, 8 |
+
+-->
+
+<!--
+- Expect coding questions using Jupyter Notebook
+  - Large(r) coding task (e.g., scrape data from a website or retrieve data from API)
+  - Small(er) coding task (e.g., parsing, fixing errors, running existing code)
+  - Essay questions with indicated word limits to form a judgment (e.g., recommend website or API for a particular business problem, evaluate terms & conditions, sample size calculations)
+- All tutorials - but not advanced web scraping and APIs - are relevant for these questions
+
+## Preparing for the exam
+
+### Work on the example questions
+
+Please view the list of example questions [here](examplequestions)
+
+### Make your own example questions
+
+- Generate your own example questions
+- See this [summary of Bloom's Taxonomy](https://mygrowthmindsethome.files.wordpress.com/2019/03/blooms-taxonomy.pdf)
+- Curious whether your question is "good"? Send it to us via the usual ways
+
+### Familiarize yourself with TestVision
+
+- Take a practice test to familiarize yourself with TestVision
+- Get to know more about TestVision [here](https://www.tilburguniversity.edu/students/studying/exams/e-assessment/testvision)
+
+### Technical tips & beyond
+
+- Verify that you are familiar with the on-campus computers
+- Know how to zip and unzip files
+- Make use of cheat sheets
+- Revise your code before submission so that it runs from top to bottom without problems
+- The inspect mode in Chrome and Edge is blocked. However, you can install Firefox on the computers and access the inspect mode there
+
+-->

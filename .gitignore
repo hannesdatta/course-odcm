@@ -15,5 +15,6 @@ slides.md
 **slides_files**
 **node_modules**
 **package-lock.json**
-
 /.quarto/
+*.quarto_ipynb
+*pdf

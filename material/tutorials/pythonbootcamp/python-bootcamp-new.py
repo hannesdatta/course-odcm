@@ -14,13 +14,15 @@
 # ---
 
 # %% [markdown]
-# # 1. Getting Started with Python
+# # 1. Getting Started with Python and Web Scraping/APIs
 #
-# Welcome to your first Python session!  
-# Today, we’ll make sure you can run Python both locally and in the cloud, understand how Jupyter works, and get a first feel for the environment you’ll use throughout this course.
+# Welcome to your first Python session for Web Data!  
 #
-# If you’ve used R or RStudio before, many things will feel familiar — just with slightly different syntax and a few new tricks.  
-# Let’s take it step by step.
+# - In section 1, we’ll make sure you can run Python both locally and in the cloud, understand how Jupyter works, and get a first feel for the environment you’ll use throughout this course. 
+# - In section 2, we go over basic programming concepts in Python. If you’ve used R or RStudio before, many things will feel familiar — just with slightly different syntax and a few new tricks. 
+# - Finally, in section 3, we introduce you to web scraping and APIs, and applying some of the concepts covered in earlier sections.
+#
+# Let's get started!
 
 # %% [markdown]
 # ## 1.1 Why Python (and How to Run It)
@@ -129,11 +131,11 @@ print("Hello, Python!")
 #
 # ---
 #
-# <div class="alert alert-block alert-info">
-# <b>For R users:</b>  
-# Think of <code>install.packages()</code> as Python’s <code>pip install</code>,  
-# and <code>library()</code> as Python’s <code>import</code>.  
-# </div>
+# ::: {.callout-note}
+# __For R users:__  
+# Think of `install.packages()` as Python’s `>pip install`,
+# and `library()` as Python’s `import`.
+# :::
 #
 # ---
 #
@@ -174,11 +176,12 @@ help(csv)
 #
 # ---
 #
-# <div class="alert alert-block alert-info">
-# <b>Need help?</b><br>
-# - You can always ask our <strong>Tilly Chatbot</strong> on Canvas for course-specific questions.  
-# - Or visit <a href="https://tilburgsciencehub.com" target="_blank">Tilburg Science Hub</a> for lots of examples and code snippets.  
-# </div>
+# ::: {.callout-note}
+# __Need help?__
+#
+# - You can always ask our __Tilly Chatbot__ on Canvas for course-specific questions.  
+#
+# :::
 
 # %% [markdown]
 # ## 1.5 Summary
@@ -238,8 +241,8 @@ print(f"My name is {name} and I am {age} years old.")
 #   ```python
 #   url = f"https://api.example.com/users/{user_id}"
 #   ```
-
-
+#
+#
 
 # %% [markdown]
 # ## 2.2 Lists and Dictionaries – Flexible Data Structures
@@ -306,8 +309,8 @@ print(artists)
 # track = {"title": "Hello", "artist": "Adele", "streams": 520000000}
 # ```
 # Tables can’t easily handle this nested structure — dictionaries can.
-
-
+#
+#
 
 # %% [markdown]
 # ## 2.3 Control Flow – Repeating Web Actions
@@ -341,8 +344,8 @@ for artist in artists:
 # - `for artist in artists:` goes through the list one record at a time.  
 # - Inside the loop, we use dictionary keys (`['name']`, `['genre']`) to access each field.  
 # - In real scraping, each iteration could download a different webpage or API response.
-
-
+#
+#
 
 # %% [markdown]
 # ### Exercise 6 – while loops
@@ -366,12 +369,13 @@ while has_more_pages:
 
 print("No more pages left.")
 
+
 # %% [markdown]
 # **Explanation**  
 # The loop keeps going until the condition `has_more_pages` turns False.  
 # This is a common pattern when scraping — you can keep clicking “next” until there is none.
-
-
+#
+#
 
 # %% [markdown]
 # ## 2.4 Functions – Reusing Code
@@ -414,8 +418,8 @@ for u in urls:
 # - We define functions with `def function_name(parameters):`.  
 # - Indentation matters — everything inside the function is indented.  
 # - Functions let us reuse logic (like downloading data from a URL) without copy-pasting it each time.
-
-
+#
+#
 
 # %% [markdown]
 # ## 2.5 Saving Data – CSV and JSON
@@ -453,8 +457,8 @@ with open("artists.csv", "w", newline="", encoding="utf-8") as f:
 # **Explanation**  
 # Each `writerow()` adds a line to the CSV file.  
 # This is exactly how you’ll store scraped data later — one row per record.
-
-
+#
+#
 
 # %% [markdown]
 # ### Exercise 9 – Writing a JSON File
@@ -628,7 +632,7 @@ print(first_song.get_text(strip=True))
 # The next step is to get *all* songs on the page.
 
 # %% [markdown]
-# ### 🧩 Exercise 11 – Collect All Songs
+# ### Exercise 11 – Collect All Songs
 #
 # Your turn!  
 # Modify the code above so it collects **all** songs.
@@ -639,7 +643,7 @@ print(first_song.get_text(strip=True))
 # - Print how many songs you found.
 
 # %% [markdown]
-# **Solution**
+# ### ✅ Solution – Exercise 11
 
 # %%
 songs = []
@@ -677,7 +681,7 @@ print("Current Unix time:", timestamp)
 #
 # ---
 #
-# ### 🧩 Exercise 12 – Add Timestamps and Save to CSV
+# ### Exercise 12 – Add Timestamps and Save to CSV
 #
 # Let’s save our scraped songs to a CSV file — but before writing,  
 # **add a timestamp** to each record.
@@ -687,7 +691,8 @@ print("Current Unix time:", timestamp)
 # - Use the `csv` library to write a header (`title`, `timestamp`) and the rows.
 
 # %% [markdown]
-# **Solution**
+# ### ✅ Solution – Exercise 12
+
 
 # %%
 import csv
@@ -762,7 +767,7 @@ print(data["artists"][0])
 # With an API, the data comes pre-structured in dictionaries and lists — ready for analysis.
 #
 # ---
-# ### 🧩 Exercise 13 – Extract Artist Names
+# ### Exercise 13 – Extract Artist Names
 #
 # Look at the variable `data`. It contains a list under `data["artists"]`.  
 # Each artist is a dictionary with several attributes (e.g., `artist_name`, `artist_id`).
@@ -775,7 +780,7 @@ print(data["artists"][0])
 # *(You can reuse ideas from Section 3.2 where you looped through songs.)*
 
 # %% [markdown]
-# **Solution**
+# ### ✅ Solution – Exercise 13
 
 # %%
 artist_names = []
@@ -829,7 +834,7 @@ for artist in artists:
 # The API directly gives us the data we need.
 #
 # ---
-# ### 🧩 Exercise 14 – Add a Timestamp and Store API Results
+# ### Exercise 14 – Add a Timestamp and Store API Results
 #
 # Your turn!  
 # Extend the loop above so that:
@@ -841,7 +846,7 @@ for artist in artists:
 # **Hint:** Use `json.dump(records, file)` from the `json` module to store the data.
 
 # %% [markdown]
-# **Solution**
+# ### ✅ Solution – Exercise 14
 
 # %%
 import json
@@ -921,6 +926,8 @@ print("✅ Saved artists.json with timestamps.")
 #
 # If yes — you’re ready for the next level.
 #
-# <div class="alert alert-block alert-success"><b>Takeaway:</b>  
+# ::: {.callout-note}
+# __Takeaway__
+#
 #  Every dataset on the web — whether hidden in HTML or exposed through an API — can be reached, understood, and stored with a few lines of clean, reproducible Python code.
-# </div>
+# :::

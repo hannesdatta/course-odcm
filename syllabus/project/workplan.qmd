@@ -3,3 +3,64 @@ title: "Workplan"
 format: html
 draft: true
 ---
+
+# Project Workplan and Coaching
+
+You'll start working on your project in the course week 3 *before* the coaching sessions start in week 4. The activities below help you to structure your project. Stick to the plan to ensure you can finish the project in time.
+
+**Deliverables** are submitted on Canvas. Please check Canvas for the due dates for each week. The course team will provide short feedback in line with the grading rubric at least a day before the next coaching session.
+
+## Coaching 1: *Idea & Extraction Design*
+
+**Prework**
+
+-   Sign up to teams on Canvas.
+-   Identify a potential data source (website/API) that contains data that maybe valueble to the broader research community and industry. Use Table 2 in Boegershausen et al. 2022 for refinement.
+-   Write preliminary code to connect to the data source and determine its accessibility.\
+-   Design your data extraction plan: decide **what to retrieve**, **which seeds to use**, **how frequently to extract**, and **how to process the data**.\
+-   Use *Table 3* in **Boegershausen et al. (2022)** as guidance throughout.
+
+**Deliverable**
+
+-   **Sections 1 and 2** of your data documentation.
+
+------------------------------------------------------------------------
+
+## Coaching 2: *Prototype Development*
+
+**Prework**
+
+-   Finalise a **functional prototype** that can extract at least a sample dataset end-to-end.\
+-   Implement **monitoring tools** (e.g., logging, rate-limit handling) and decide on **infrastructure**.\
+-   Use *Table 4* in **Boegershausen et al. (2022)** throughout.
+
+**Deliverable**
+
+-   **Section 3** of your data documentation.
+
+------------------------------------------------------------------------
+
+## Coaching 3: *Refinement & Data Quality*
+
+**Prework**
+
+-   Continue refining your data collection process and, if feasible, complete the extraction.\
+-   Inspect the data and perform any necessary **preprocessing** (see Section 4 of your data documentation).
+
+**Deliverable**
+
+-   **Sections 4 and 5** of your data documentation.
+
+------------------------------------------------------------------------
+
+## Coaching 4: *Finalise Your Data Package*
+
+**Prework**
+
+-   Finalise your **data documentation** (Sections 1–6).\
+-   Improve **source code quality** and ensure reproducibility.\
+-   Organise the **final submission package** in a clear and consistent directory structure.
+
+**Deliverable**
+
+No deliverables. Prepare for final submission.

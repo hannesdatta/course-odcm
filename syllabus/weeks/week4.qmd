@@ -1,25 +1,29 @@
 ---
-title: "Week 4) Building your API skills"
+title: "Week 4) Web Data in Research Projects"
 format: html
-draft: true
+draft: false
 ---
 
-__Learning Goals__
 
-- Send HTTP requests to a web API and retrieve JSON responses
-- Use parameters to modify the results of an API call
-- Iterate over multiple pages of JSON responses
-- Extract and store results of an API request in lists of dictionaries and files
+## Lecture
 
-__Lecture__
+- On-campus lecture
 
-- In-class tutorial on working with APIs
+::: {.callout-note title="Readings"}
+The papers below provide guiding frameworks for the rest of this course, and chance is you'll have to read it a couple of times (e.g., first to get an overview, and later to appreciate and use the details in your project). 
 
-__Coaching session__
+- ["Fields of Gold: Scraping Web Data for Marketing Insights"](https://doi.org/10.1177/00222429221100750) 
+- ["Unlocking the potential of web data for retailing research"](https://doi.org/10.1016/j.jretai.2024.02.002)
 
-- Focus on refining your API data extraction skills
+Note: The web appendices contain valuable tables, so don't skip them.
 
-__After the lecture and coaching session__
+:::
 
-- Complete the exercises in the tutorial of this week
-- Work through challenges to solidify your understanding of API data extraction
+<!--
+  - Please [watch the webinar](https://youtu.be/KiyFyLEkqNk) (1 hour)
+  - Please carefully [read the paper]
+  -->
+
+## Coaching
+
+- Online coaching session (#1)

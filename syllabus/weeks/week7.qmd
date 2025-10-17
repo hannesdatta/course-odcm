@@ -1,8 +1,21 @@
 ---
-title: "Week 7) Finalizing data collection"
+title: "Week 7) Finalizing Projects and Course"
 format: html
-draft: true
+draft: false
 ---
+
+
+## Lecture
+
+- Course summary
+- Final questions
+
+## Coaching
+
+- Online coaching session (#4)
+
+<!--
+
 
 __Learning Goals__
 
@@ -10,14 +23,26 @@ __Learning Goals__
 
 __Before the lecture__
 
-- Work through the exam preparation material
 
 __Final lecture__
 
-- Course summary
-- Exam preparation
-- Final questions
+
 
 __Online coaching session (optional)__
 
 - Final technical refinement of the team project
+__Learning Goals__
+
+- Scale up the data extraction
+
+__Online coaching session (optional)__
+
+- Technical refinement of the team project
+
+__After the coaching session__
+
+- Read "Datasheets for Datasets"
+- Continue working on the development of your prototype
+- Start documenting your data collection
+
+-->

@@ -32,7 +32,7 @@ On top of just installing software and getting to know Python, we also recommend
 
 Never worked with the command line/terminal? Then please develop your command line (Windows) / terminal (Mac) skills!
 
-- Check out the ([Datacamp tutorial - first chapter only](https://www.datacamp.com/courses/introduction-to-shell))
+- Check out the [Datacamp tutorial - first chapter only](https://www.datacamp.com/courses/introduction-to-shell)
 - Also check out [this presentation about the command line / terminal](https://generalassembly.github.io/prework/cl). 
     - Though it is targeted to Mac users, it provides a great overview.
     - Windows users could still follow along using *the same commands* by using Git Bash (or Cygwin). 

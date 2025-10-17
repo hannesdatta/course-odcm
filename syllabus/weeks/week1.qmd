@@ -1,7 +1,7 @@
 ---
 title: "Week 1) Getting started"
 format: html
-draft: true
+draft: false
 ---
 
 __Learning Goals__
@@ -10,15 +10,16 @@ __Learning Goals__
 - Launch Jupyter Notebook and run code in Visual Studio Code
 - Know when it’s useful to use Google Colab in the cloud (vs. Jupyter Notebook)
 - Understand basic programming concepts in Python and their applications to collecting web data
+- See your first web scraper and make connections to an API (and know the difference between websites and APIs)
 
 __Preparation before class__
 
-- Ensure you have completed all preparations, including software installation at Datacamp licenses, before the lecture. [Find out more...](prep)
+- Ensure you have completed all preparations, including software installation at Datacamp licenses, before the lecture. 
 
-__Opening lecture and Python bootcamp__
+__Opening lecture and Python Bootcamp__
 
 - Introduction to the course
-- In-class tutorial: Python bootcamp for web data
+- In-class tutorial: Python Bootcamp for web data
 
 ::: {.callout-note}
 __Downloading to and starting the tutorial on your computer__
@@ -32,5 +33,6 @@ __Downloading to and starting the tutorial on your computer__
 
 __After the lecture__
 
-- Work through the in-class tutorial at your own pace.
-- Deepen your understanding of basic programming concepts by completing a tutorial on Datacamp.com (about 3 hours; [work on the first three chapters only](https://datacamp.com/courses/intro-to-python-for-data-science))
+- Work through the tutorial at your own pace.
+- Watch ["What is web scraping and what are Application Programming Interfaces (APIs)?"](https://videocollege.uvt.nl/Mediasite/Play/41afff385bd74db2af5fb8507350ea521d) (30 minutes)
+- Deepen your understanding of basic programming concepts by completing "Intro to Python for Data Science" (about 3 hours; [work on the first three chapters only](https://datacamp.com/courses/intro-to-python-for-data-science))

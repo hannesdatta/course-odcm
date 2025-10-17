@@ -1,26 +1,24 @@
 ---
-title: "Week 3) Web scraping 101"
+title: "Week 3) Foundations of APIs"
 format: html
-draft: true
+draft: false
 ---
 
-__Learning Goals__
+## Learning Goals
 
-- Understand the basics of web scraping
-- Learn how to extract data from static and dynamic websites
-- Explore ethical and legal considerations in web scraping
+- Send HTTP requests to a web API and retrieve JSON responses
+- Use parameters to modify the results of an API call
+- Iterate over multiple pages of JSON responses
+- Extract and store results of an API request in lists of dictionaries and files
 
+<!--
 __Preparation before class__
-
 - Review the materials on web scraping basics.
-- Ensure you have the necessary tools installed (e.g., BeautifulSoup, Selenium).
+-->
 
-__Lecture__
+## Tutorials
+- APIs 101
+- APIs Advanced
 
-- Introduction to web scraping techniques
-- Hands-on tutorial: Scraping data from a sample website
-
-__After the lecture__
-
-- Complete the exercises on extracting data from websites.
-- Begin working on your own web scraping project.
+## After class
+- Work through the tutorials at your own pace.

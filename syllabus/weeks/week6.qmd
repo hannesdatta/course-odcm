@@ -1,19 +1,17 @@
 ---
-title: "Week 6) Prototype development and running data collection"
+title: "Week 6) Project Week"
 format: html
-draft: true
+draft: false
 ---
 
-__Learning Goals__
+## Preparation before the Lecture
 
-- Scale up the data extraction
+- Work through the exam preparation material shared on Canvas
 
-__Online coaching session (optional)__
+## Lecture
 
-- Technical refinement of the team project
+- Exam Q&A
 
-__After the coaching session__
+## Coaching
 
-- Read "Datasheets for Datasets"
-- Continue working on the development of your prototype
-- Start documenting your data collection
+- Online coaching session (#3)

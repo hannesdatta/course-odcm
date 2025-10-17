@@ -1,5 +1,13 @@
 ---
-title: "Week 5) Draft"
+title: "Week 5) Computer infrastructure, compliance, and documentation"
 format: html
-draft: true
+draft: false
 ---
+
+## Lecture
+
+- On-campus lecture
+
+## Coaching
+
+- Online coaching session (#2)

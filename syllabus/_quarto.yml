@@ -24,7 +24,7 @@ book:
       - project/grading.qmd
       - project/spa.qmd
       - project/data.qmd
-      - project/workplan.qmd
+      - project/deliverables.qmd
     - part: "Exam"
       chapters:
       - exam/_index.qmd

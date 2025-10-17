@@ -16,11 +16,11 @@
 # %% [markdown]
 # # 1. Getting Started with Python and Web Scraping/APIs
 #
-# Welcome to your first Python session for Web Data!  
+# Welcome to your first Python session for Web Data, which consists of three sections.
 #
-# - In section 1, we’ll make sure you can run Python both locally and in the cloud, understand how Jupyter works, and get a first feel for the environment you’ll use throughout this course. 
-# - In section 2, we go over basic programming concepts in Python. If you’ve used R or RStudio before, many things will feel familiar — just with slightly different syntax and a few new tricks. 
-# - Finally, in section 3, we introduce you to web scraping and APIs, and applying some of the concepts covered in earlier sections.
+# - In __section 1__, we’ll make sure you can run Python both locally and in the cloud, understand how Jupyter works, and get a first feel for the environment you’ll use throughout this course. 
+# - In __section 2__, we go over basic programming concepts in Python. If you’ve used R or RStudio before, many things will feel familiar — just with slightly different syntax and a few new tricks. 
+# - Finally, in __section 3__, we introduce you to web scraping and APIs, and applying some of the concepts covered in earlier sections.
 #
 # Let's get started!
 
@@ -105,12 +105,6 @@
 print("Hello, Python!")
 
 # %% [markdown]
-# ### ✅ Solution – Exercise 1
-
-# %%
-print("Hello, Python!")
-
-# %% [markdown]
 # **Explanation**  
 # If you see “Hello, Python!” appear below the cell, everything works.  
 # Each time you press **Shift + Enter**, Jupyter runs the active cell and shows the result below.  
@@ -155,9 +149,9 @@ print("Hello, Python!")
 # %%
 # starter code (runs)
 import json
-# help(json)  # shows documentation
+import csv
 
-# TODO: also import csv and call help(csv)
+# TODO: also import csv and call help for json and csv
 
 # %% [markdown]
 # ### ✅ Solution – Exercise 2
@@ -173,13 +167,13 @@ help(csv)
 # - `import json` loads tools for working with structured data — the same format used by most web APIs.  
 # - `import csv` loads tools for handling comma-separated files, which we’ll use later to store scraped data.  
 # - `help()` gives you quick documentation right inside Jupyter.  
-# You don’t need to read it all now — just know that you can always look things up later.
+# You don’t need to read it all now — just know that you can always look things up later. Oh, and __did you know you can use Jupyter also to delete the output of cells you've run? Handy for cleaning up your notebook.__
 #
 # ---
 #
 # <div class="alert alert-block alert-info">
 # <b>Need help?</b><br>
-# You can always ask our __Tilly Chatbot__ on Canvas for course-specific questions.  
+# You can always ask our <b>Tilly Chatbot</b> on Canvas for course-specific questions.  
 # </div>
 
 # %% [markdown]
@@ -354,6 +348,7 @@ for artist in artists:
 #
 # Try running this example.  
 # It simulates visiting pages 1 to 3 and then stopping automatically.
+#
 
 # %%
 # starter code (runs)
@@ -462,7 +457,7 @@ with open("artists.csv", "w", newline="", encoding="utf-8") as f:
 # %% [markdown]
 # ### Exercise 9 – Writing a JSON File
 #
-# Now let’s do the same thing in JSON format — the standard for APIs and web data.
+# Now let’s do the same thing in JSON format — the standard for APIs and web data. Recall: please add another data point to the JSON dictionary, and write it to a file.
 
 # %%
 # starter code (runs)
@@ -503,7 +498,7 @@ with open("artists.json", "w", encoding="utf-8") as f:
 #
 # ---
 #
-# **Tip:** You’ll often use both — JSON to store raw API responses and CSV to summarize cleaned data.
+# **Tip:** You’ll often use both — JSON to store raw API responses and CSV to summarize cleaned data. Here, we stored a single JSON objects; in practice, you often encounter one JSON object per line (called "new-line separated JSON" files).
 
 # %% [markdown]
 # ## 2.6 Summary
@@ -556,7 +551,8 @@ with open("artists.json", "w", encoding="utf-8") as f:
 #
 # Both contain information — but one is formatted for your *eyes*, the other for your *code*.
 #
-# ![The Web Data Workflow](images/web_data_workflow.png)
+# <img src="images/web_data_workflow.png" alt="The Web Data Workflow" width="400"/>
+#
 # > *Figure 1.* The Web Data Workflow – four layers that structure how we collect web data.  
 # > In this tutorial, we’ll focus on the first two layers: **Extraction** and **Looping**.
 #
@@ -576,7 +572,7 @@ with open("artists.json", "w", encoding="utf-8") as f:
 #
 # 1. Open [`https://music-to-scrape.org`](https://music-to-scrape.org) in your browser.  
 #    Right-click and choose **Inspect Element** — this shows you the HTML that the server sent.
-# 2. Now open [`https://music-to-scrape.org/api/songs`](https://music-to-scrape.org/api/songs).  
+# 2. Now open [`https://api.music-to-scrape.org/users/recently-active`](https://api.music-to-scrape.org/users/recently-active).  
 #    You’ll see raw JSON — not pretty, but very structured.
 # 3. Compare:  
 #    - Which version looks nicer for humans?  
@@ -622,16 +618,18 @@ response = requests.get(url)
 soup = BeautifulSoup(response.text, "html.parser")
 
 # Find one song element
-first_song = soup.find("div", class_="song")
+recently_played = soup.find("section", attrs={"name": "recently_played"})
+first_song = recently_played.find('h5')
 print("Example song element ⬇️")
 print(first_song.get_text(strip=True))
 
 # %% [markdown]
-# You’ve just fetched a web page and extracted the first song title. 🎉  
-# The next step is to get *all* songs on the page.
+# You’ve just fetched a web page and extracted the first song title. 🎉 In fact, you *first* "zoomed in" on the recently played songs section, and then - within that section - narrowed down to the first most recently played song.
+#
+# The next step is to get *all* recently played songs on the page.
 
 # %% [markdown]
-# ### Exercise 11 – Collect All Songs
+# ### Exercise 11 – Collect All Recently Played Songs
 #
 # Your turn!  
 # Modify the code above so it collects **all** songs.
@@ -646,7 +644,13 @@ print(first_song.get_text(strip=True))
 
 # %%
 songs = []
-for item in soup.find_all("div", class_="song"):
+
+# Find one song element
+recently_played = soup.find("section", attrs={"name": "recently_played"})
+
+all_songs = recently_played.find_all('h5')
+
+for item in all_songs:
     songs.append(item.get_text(strip=True))
 
 print(f"Found {len(songs)} songs.")
@@ -686,12 +690,31 @@ print("Current Unix time:", timestamp)
 # **add a timestamp** to each record.
 #
 # **Hints**
-# - You can create a list like `rows = [[song, timestamp] for song in songs]`.  
 # - Use the `csv` library to write a header (`title`, `timestamp`) and the rows.
 
 # %% [markdown]
 # ### ✅ Solution – Exercise 12
 
+
+# %%
+import csv
+
+# Add timestamp to each song
+timestamp = time.time()
+
+# Write to CSV
+with open("songs.csv", "w", newline="", encoding="utf-8") as f:
+    writer = csv.writer(f)
+    writer.writerow(["title", "timestamp"])
+    for song in songs: 
+        writer.writerow([song, timestamp])
+
+print("✅  Saved songs.csv with titles and timestamps.")
+
+# %% [markdown]
+# - A more elegant solution would use list comprehension, tying together all songs in a "one liner" and avoiding the extra loop. 
+# - You can create a list like `rows = [[song, timestamp] for song in songs]`.  
+#
 
 # %%
 import csv
@@ -783,8 +806,8 @@ print(data["artists"][0])
 
 # %%
 artist_names = []
-for artist in data["artists"]:
-    artist_names.append(artist["artist_name"])
+for artist in data['artists']:
+    artist_names.append(artist["artist"])
 
 print(f"Found {len(artist_names)} artists.")
 print("First few:", artist_names[:5])
@@ -810,13 +833,15 @@ import time
 print("Example ID:", data["artists"][0]["artist_id"])
 
 # %% [markdown]
-# Let’s loop through three artists and fetch their info pages.
+# Let’s loop through three artists and fetch their info pages. 
 #
-# This code runs a few requests and prints the artist IDs found in each response.
+# The URL to use for this is `https://api.music-to-scrape.org/artist/info?artistid=<ENTER ID HERE>`
+#
+# The code runs a few requests and prints the artist IDs found in each response.
 # The delay of one second keeps things polite.
 
 # %%
-header = {'User-Agent': 'Python Bootcamp student'}
+header = {'User-Agent': 'Mozilla 5.0'}
 
 artists = ['ARICCN811C8A41750F', 'AR1GW0U1187B9B29FD', 'ARZ3U0K1187B999BF4']
 
@@ -826,7 +851,7 @@ for artist in artists:
     response = requests.get(url, headers=header)
     info = response.json()
     print(info)
-    time.sleep(1)
+    time.sleep(1) # respect retrieval limits
 
 # %% [markdown]
 # Notice how similar this looks to our scraping code — but here, we don’t search the page with BeautifulSoup.  
@@ -899,24 +924,12 @@ print("✅ Saved artists.json with timestamps.")
 # - **Retrieve structured data** from APIs and store it as CSV or JSON.  
 # - **Enrich results** with timestamps and write clean, reproducible code.
 #
-# Each section built on the previous one: first you learned *how to run Python*, then *how to structure code*, and finally *how to apply it to real web data*.
-#
-# ---
-# ### Summary of What You Can Now Do
-#
-# | Step | Skill | Key Tools | What You Achieved |
-# |------|--------|------------|-------------------|
-# | **1 – Getting Started** | Launch and manage Python environments | Anaconda / VS Code / Colab | Run and edit notebooks locally or in the cloud |
-# | **2 – Python Basics** | Variables, loops, file I/O | `requests`, `csv`, `json`, `time` | Reused R-style logic in Python, saved small datasets |
-# | **3 – Web Data Collection** | Web scraping & APIs | `BeautifulSoup`, `requests`, `json` | Extracted songs & artists, added timestamps, stored results |
-#
 # ---
 # ### Looking Ahead
 #
 # In the next tutorials, you’ll **go deeper**:
 # - Automating larger scraping tasks and multi-page loops  
 # - Handling structured APIs with authentication  
-# - Cleaning, merging, and visualizing your collected data  
 #
 # Before that, take a moment to review your own notebook:
 # - Are all cells executed top-to-bottom without errors?  
@@ -929,5 +942,3 @@ print("✅ Saved artists.json with timestamps.")
 # <b>Takeaway</b><br>
 # Every dataset on the web — whether hidden in HTML or exposed through an API — can be reached, understood, and stored with a few lines of clean, reproducible Python code.
 # </div>
-
-# %%

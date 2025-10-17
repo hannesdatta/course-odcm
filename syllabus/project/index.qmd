@@ -6,7 +6,7 @@ number-depth: 1
 
 ## Learning Goals
 
-Collecting data via web scraping and APIs requires practice. Together with your team members, you plan and execute an online data collection throughout the course by closely following the recommendations in "Fields of Gold".
+Collecting data via web scraping and APIs requires practice. Together with your team members, you plan and execute an online data collection throughout the course by closely following class content and readings.
 
 At the end of the course, you will submit a data package, consisting of:
 
@@ -14,7 +14,6 @@ At the end of the course, you will submit a data package, consisting of:
 - All source code
 - A documentation ("readme") 
 
-The project teams are finalized in week 3. The project starts in week 4.
 
 <!--(following [this template](Datasheets_for_DataSets.zip))-->
 
@@ -36,8 +35,10 @@ During the course, you will have the opportunity to meet up with the course inst
 - **Session Format:**
   - First Half: Each team gets 5–10 minutes to provide a progress update and seek assistance from the coach.
   - Second Half: Time is allocated on a needs basis to address specific issues or questions raised by teams.
-
-**Deliverables:** Most coaching sessions will help the team work on some deliverables, which are always due before the next coaching session. Please refer to Canvas for exact due dates each week.
+- **Weekly Deliverables:** 
+  - Most coaching sessions will help the team work on some deliverables, which are always due before the next coaching session. 
+  - Deliverables are submitted on Canvas. Please check Canvas for the due dates for each week. 
+  - The course team will provide short feedback in line with the grading rubric, at least a day before the next coaching session.
 
 ::: {.callout-note}
 **How to Prepare for Coaching Sessions?**
@@ -54,12 +55,19 @@ During the course, you will have the opportunity to meet up with the course inst
    - Be ready for the instructor to take over your screen if needed.
 :::
 
+
+### Timeline
+
+- The project teams are finalized in week 2 and must be registered on Canvas.
+- You start working on your project in week 3.
+- Coaching sessions start from week 4 onwards.
+
 ### Team composition
 
 - 4-5 students per team
 - Enroll your team on Canvas by week 3 (project starts in week 4)
 
-### Deadline & submission
+### Submission
 
 - Deadline: 5 December, 2025 (23:59)
 - Submission of your data package on Canvas in one zip file.

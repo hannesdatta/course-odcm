@@ -1,14 +1,10 @@
 ---
-title: "Workplan"
+title: "Weekly Deliverables"
 format: html
-draft: true
+draft: false
 ---
 
-# Project Workplan and Coaching
-
-You'll start working on your project in the course week 3 *before* the coaching sessions start in week 4. The activities below help you to structure your project. Stick to the plan to ensure you can finish the project in time.
-
-**Deliverables** are submitted on Canvas. Please check Canvas for the due dates for each week. The course team will provide short feedback in line with the grading rubric at least a day before the next coaching session.
+The activities below help you to structure your project. Stick to the plan to ensure you can finish the project in time.
 
 ## Coaching 1: *Idea & Extraction Design*
 
@@ -24,8 +20,6 @@ You'll start working on your project in the course week 3 *before* the coaching 
 
 -   **Sections 1 and 2** of your data documentation.
 
-------------------------------------------------------------------------
-
 ## Coaching 2: *Prototype Development*
 
 **Prework**
@@ -38,8 +32,6 @@ You'll start working on your project in the course week 3 *before* the coaching 
 
 -   **Section 3** of your data documentation.
 
-------------------------------------------------------------------------
-
 ## Coaching 3: *Refinement & Data Quality*
 
 **Prework**
@@ -50,8 +42,6 @@ You'll start working on your project in the course week 3 *before* the coaching 
 **Deliverable**
 
 -   **Sections 4 and 5** of your data documentation.
-
-------------------------------------------------------------------------
 
 ## Coaching 4: *Finalise Your Data Package*
 

@@ -131,11 +131,12 @@ print("Hello, Python!")
 #
 # ---
 #
-# ::: {.callout-note}
-# __For R users:__  
-# Think of `install.packages()` as Python’s `>pip install`,
-# and `library()` as Python’s `import`.
-# :::
+# <div class="alert alert-block alert-info">
+# <b>For R users:</b><br>
+# Think of <code>install.packages()</code> as Python’s <code>pip install</code>, 
+# and <code>library()</code> as Python’s <code>import</code>.
+# </div>
+#
 #
 # ---
 #
@@ -154,7 +155,7 @@ print("Hello, Python!")
 # %%
 # starter code (runs)
 import json
-help(json)  # shows documentation
+# help(json)  # shows documentation
 
 # TODO: also import csv and call help(csv)
 
@@ -176,12 +177,10 @@ help(csv)
 #
 # ---
 #
-# ::: {.callout-note}
-# __Need help?__
-#
-# - You can always ask our __Tilly Chatbot__ on Canvas for course-specific questions.  
-#
-# :::
+# <div class="alert alert-block alert-info">
+# <b>Need help?</b><br>
+# You can always ask our __Tilly Chatbot__ on Canvas for course-specific questions.  
+# </div>
 
 # %% [markdown]
 # ## 1.5 Summary
@@ -673,11 +672,11 @@ timestamp = time.time()
 print("Current Unix time:", timestamp)
 
 # %% [markdown]
-# ::: {.callout-note}
-# **What’s Unix time?**  
+# <div class="alert alert-block alert-info">
+# <b>What's Unix time?</b><br>
 # It counts the seconds since 1 January 1970 — a universal format computers use to record moments in time.  
 # It’s perfect for logging when your data was collected.
-# :::
+# </div>
 #
 # ---
 #
@@ -926,8 +925,9 @@ print("✅ Saved artists.json with timestamps.")
 #
 # If yes — you’re ready for the next level.
 #
-# ::: {.callout-note}
-# __Takeaway__
-#
-#  Every dataset on the web — whether hidden in HTML or exposed through an API — can be reached, understood, and stored with a few lines of clean, reproducible Python code.
-# :::
+# <div class="alert alert-block alert-info">
+# <b>Takeaway</b><br>
+# Every dataset on the web — whether hidden in HTML or exposed through an API — can be reached, understood, and stored with a few lines of clean, reproducible Python code.
+# </div>
+
+# %%

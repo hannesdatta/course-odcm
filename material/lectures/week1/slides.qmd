@@ -94,8 +94,8 @@ If you haven't done so, please check out the **Canvas page** for this course:
   - Online data collection and management <https://odcm.hannesdatta.com>  
   - MSc Thesis supervision <https://thesis.hannesdatta.com>  
 - Other initiatives  
+  - tilburg.ai <https://tilburg.ai>  
   - Tilburg Science Hub <https://tilburgsciencehub.com>  
-  - Tilburg.ai <https://tilburg.ai>  
   - Music-to-scrape.org <https://music-to-scrape.org>  
   - YouTube <https://youtube.com/c/hannesdatta>  
   - GitHub <https://github.com/hannesdatta>  
@@ -298,7 +298,7 @@ for song in api_request_json.get('chart'):
 
 - Four **key** tutorials:
   - Python Bootcamp + Datacamp (this week)
-  - Web scraping 101 + API Advanced (week 2)
+  - Web scraping 101 + Web scraping advanced (week 2)
   - API 101 + API Advanced (week 3)
 - Structure of each tutorial
   - interactive walk-through ("semi-lecture") 
@@ -330,6 +330,7 @@ key responsibility: __Hannes Datta__
 * Peer feedback and coaching
 * Based on a research context
 * 5 group members (4 = exception)
+* Mostly online (10-15 minutes per team)
 
 <br>
 Key responsibility: __Roshini Sudhaharan__
@@ -403,7 +404,7 @@ Email = slower
 ## Next steps
 
 
-- Find a group by week 3 (4–5 students, mix skills!)  
+- Find a group and register by week 2 (4–5 students, mix skills!)  
 - Complete software installation & obtain licenses (includes premium Datacamp access)
 - Most up-to-date info: Canvas &rarr; (weekly) modules
 

@@ -11,7 +11,7 @@ The activities below help you to structure your project. Stick to the plan to en
 **Prework**
 
 -   Sign up to teams on Canvas.
--   Identify a potential data source (website/API) that contains data that maybe valueble to the broader research community and industry. Use Table 2 in Boegershausen et al. 2022 for refinement.
+-   Pick a data context of interest and identify a potential data source (website/API) that contains data that maybe valuable to the broader research community and industry. Use Table 2 in Boegershausen et al. 2022 for refinement.
 -   Write preliminary code to connect to the data source and determine its accessibility.\
 -   Design your data extraction plan: decide **what to retrieve**, **which seeds to use**, **how frequently to extract**, and **how to process the data**.\
 -   Use *Table 3* in **Boegershausen et al. (2022)** as guidance throughout.
@@ -47,7 +47,7 @@ The activities below help you to structure your project. Stick to the plan to en
 
 **Prework**
 
--   Finalise your **data documentation** (Sections 1–6).\
+-   Finalise your **data documentation** (Sections 1–5).\
 -   Improve **source code quality** and ensure reproducibility.\
 -   Organise the **final submission package** in a clear and consistent directory structure.
 

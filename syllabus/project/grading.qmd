@@ -12,7 +12,7 @@ The goal of this team project is to collect and document data through web scrapi
 The team project is submitted as a so-called “data package”, consisting of the following two elements:
 
 1. Source code and accompanying files (50% of the final grade)  
-2. Documentation of the data collection (50% of the final grade)
+2. Documentation of the data collection (50% of the final grade) following [this template](resources/Datasheets_for_DataSets_2025.zip).
 
 Students' team project grades will be corrected upwards or downwards, depending on students' individual contribution to the overall team effort. [Learn more here](resources/peerassessment).
 
@@ -94,8 +94,58 @@ Before submitting, test your extraction code on a different computer (e.g., by a
 This ensures reproducibility and helps detect missing package dependencies.
 :::
 
-::: {.callout-note}
 ### Directory and file structure
 
 In preparing your submission, please closely adhere to the following directory structure:
 
+```text
+readme.pdf
+    └── Your main documentation, based on the provided template and rendered as a PDF.
+
+docs/
+    ├── api_documentation.pdf   <-- Any supporting documentation (e.g., API reference)
+    ├── screenshot.pdf          <-- Screenshots, relevant blog articles, or supplementary material
+
+data/
+    ├── file1.json              <-- Raw data files (.json or .csv), depending on the optimal format
+    ├── file2.csv
+    └── file3.csv
+
+src/
+    ├── collection/
+    │     └── collect.py        <-- Final source code used for data collection (can include multiple files)
+    └── reporting/
+          └── descriptives.R    <-- Final source code for generating descriptive statistics or insights
+                                  documented in the readme.
+
+# Note: You are not required to provide a full-fledged data analysis.
+```
+
+::: {.callout-note}
+Ensure that your files are clearly named and placed in the correct folders. Submissions that do not follow this structure may lose points for organization and clarity.
+:::
+
+
+
+### 2. **Documentation**
+
+- You must use this [template](resources/Datasheets_for_DataSets_2025.zip) to create your documentation and fill in all (sub-)questions in sections 1-5. 
+
+- Please refer to the [grading rubric](resources/2025-odcm-project-rubric.zip) for further details on the assessment criteria for the data documentation.
+
+***Disclaimer:***
+The same grading rubric will be used to provide preliminary feedback during the coaching sessions. For these sessions, the sub-criteria are simplified to "Very good", "Sufficient", and "Needs improvement" serving as preliminary feedback to indicate whether the project is on track. The detailed sub-criteria outlined above, however, will be applied for the final grade calculation.
+
+::: {.callout-tip}
+**Tips for filling in the documentation:**
+
+- Please include screenshots and/or an additional recording in your documentation. Not only will this improve interpretability, it also contributes to the accuracy and reproducability of the project!
+
+-	Try to answer all questions to the best of your ability.
+    - Imagine you would have to work with this data in the future – how would you write up the documentation so that you (and your future self) may understand it?
+    - In your writing, be as concise as possible. 
+    - If you are familiar with R, you can write your documentation in RMarkdown, which nicely intertwines answers to the questions (e.g., conceptual answers) with details/statistics from the data (i.e., by including code snippets that directly generate overview tables).
+
+- Please pick a good name for your dataset. This name will be the first thing potential users of your data will see. Use it as the *title* of your documentation (don't call your dataset "Datasheets for Datasets"!). 
+- Don't forget to include a title page for your documentation.
+:::

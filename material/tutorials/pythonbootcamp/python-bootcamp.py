@@ -119,6 +119,8 @@ print("Hello, Python!")
 # - `json` helps us work with web data and APIs.  
 # - `csv` lets us read and write spreadsheets.  
 # - `requests` lets us download web pages.
+# - `pandas` lets you work with tables ("data frames" in `R`)
+# - `beautifulsoup4` helps you structure website content for use with web scraping.
 #
 # You only need to *install* a package once (with `pip install ...`),  
 # but you have to *import* it every time you start a new session.
@@ -139,33 +141,33 @@ print("Hello, Python!")
 # %% [markdown]
 # ### Exercise 2 – Importing Packages
 #
-# The cell below already imports one package called `json`.  
-# Your task:
-# 1. Add another relevant package — for example `csv`.  
-# 2. Use the `help()` function to inspect what each package can do.
+# 1. Use `pip install` to install the library `beautifulsoup4`. 
+# 2. Load the `bs4` package for use in Python -- see example for the `csv` package below.
+# 3. Use the `help()` function to inspect what the `bs4` and `csv` packages can do.
 #
-# Don’t worry, this is just to show that your imports actually work!
 
 # %%
 # starter code (runs)
-import json
 import csv
 
-# TODO: also import csv and call help for json and csv
+# TODO: pip install to install beautifulsoup4; extend import statements to bs4 (also call it like that!) and CSV, 
+# then call help for bs4 and CSV
 
 # %% [markdown]
 # ### ✅ Solution – Exercise 2
 
 # %%
-import json
+# !pip install beautifulsoup4
 import csv
-help(json)
+import bs4
+
 help(csv)
+help(bs4)
 
 # %% [markdown]
 # **Explanation**  
-# - `import json` loads tools for working with structured data — the same format used by most web APIs.  
 # - `import csv` loads tools for handling comma-separated files, which we’ll use later to store scraped data.  
+# - `import bs4` loads tools for working with web data obtained through web scraping. 
 # - `help()` gives you quick documentation right inside Jupyter.  
 # You don’t need to read it all now — just know that you can always look things up later. Oh, and __did you know you can use Jupyter also to delete the output of cells you've run? Handy for cleaning up your notebook.__
 #
@@ -250,7 +252,7 @@ print(f"My name is {name} and I am {age} years old.")
 # Let’s see what that looks like.
 
 # %% [markdown]
-# ### Exercise 4a – Exploring a List of Dictionaries
+# ### Exercise 4 – Exploring a List of Dictionaries
 #
 # Here’s an example list of artists.  
 # Run the cell below and look carefully at what prints out.
@@ -269,9 +271,8 @@ print(artists)
 # Each dictionary has two keys: `name` and `genre`.
 
 # %% [markdown]
-# ### Exercise 4b – Adding Another Item
+# __Now, let's extend the list.__
 #
-# Let’s extend the list.  
 # Add a third artist to the list (remember commas between entries) and then re-run the cell.
 
 # %%
@@ -284,7 +285,7 @@ artists = [
 print(artists)
 
 # %% [markdown]
-# ### ✅ Solution – Exercise 4b
+# ### ✅ Solution – Exercise 4
 
 # %%
 artists = [
@@ -347,18 +348,22 @@ for artist in artists:
 # The `while` loop keeps running as long as a certain condition is true.
 #
 # Try running this example.  
-# It simulates visiting pages 1 to 3 and then stopping automatically.
+#
+# It simulates visiting a (random) number of pages, until the "simulated" number of pages is exceeded.
 #
 
 # %%
 # starter code (runs)
+import random
+
 page = 1
 has_more_pages = True
 
 while has_more_pages:
     print(f"Scraping page {page} …")
     page += 1
-    if page > 3:   # simulate last page
+
+    if (random.uniform(0,100)>90): # simulate last page
         has_more_pages = False
 
 print("No more pages left.")
@@ -466,8 +471,9 @@ artists_data = [
     {"artist": "Adele", "genre": "Pop"},
     {"artist": "Kendrick Lamar", "genre": "Hip-Hop"}
 ]
-with open("artists.json", "w", encoding="utf-8") as f:
-    json.dump(artists_data, f, ensure_ascii=False, indent=2)
+
+with open("artists.json", "w", newline = '\n', encoding="utf-8") as f:
+    f.write(json.dumps(artists_data, ensure_ascii=False, indent=2))
 
 # %% [markdown]
 # ### ✅ Solution – Exercise 9
@@ -479,12 +485,14 @@ artists_data = [
     {"artist": "Kendrick Lamar", "genre": "Hip-Hop"},
     {"artist": "Taylor Swift", "genre": "Pop", "country": "US"}
 ]
+
 with open("artists.json", "w", encoding="utf-8") as f:
-    json.dump(artists_data, f, ensure_ascii=False, indent=2)
+    f.write(json.dumps(artist, ensure_ascii=False, indent=2))
 
 # %% [markdown]
 # **Explanation**  
-# - `json.dump()` writes structured data in the same format most web APIs use.  
+# - `json.dump()` writes structured data in the same format most web APIs use.
+# - Observe that for `csv` files, we use `writer` functions from the `csv` page; these are not needed for `json` files, where we immediately use the `.write` function on our "opened" file `f`. TLDR: CSV &rarr; `writer = csv.writer(f)` and `writer.writerow()`, JSON &rarr; `f.write()`
 # - Notice how we could add an extra field (`country`) without breaking anything — that’s why JSON is so flexible.
 #
 # ---
@@ -698,6 +706,7 @@ print("Current Unix time:", timestamp)
 
 # %%
 import csv
+import time
 
 # Add timestamp to each song
 timestamp = time.time()
@@ -841,14 +850,12 @@ print("Example ID:", data["artists"][0]["artist_id"])
 # The delay of one second keeps things polite.
 
 # %%
-header = {'User-Agent': 'Mozilla 5.0'}
-
 artists = ['ARICCN811C8A41750F', 'AR1GW0U1187B9B29FD', 'ARZ3U0K1187B999BF4']
 
 for artist in artists:
     print(f"Fetching artist {artist} ...")
     url = f"https://api.music-to-scrape.org/artist/info?artistid={artist}"
-    response = requests.get(url, headers=header)
+    response = requests.get(url)
     info = response.json()
     print(info)
     time.sleep(1) # respect retrieval limits
@@ -879,7 +886,7 @@ records = []
 
 for artist in artists:
     url = f"https://api.music-to-scrape.org/artist/info?artistid={artist}"
-    response = requests.get(url, headers=header)
+    response = requests.get(url)
     info = response.json()
     info["timestamp"] = time.time()
     records.append(info)

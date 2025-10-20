@@ -2,7 +2,7 @@
 title: "Project Grading"
 format: html
 number-depth: 2
-draft: true
+draft: false
 ---
 
 ## Overview
@@ -12,9 +12,16 @@ The goal of this team project is to collect and document data through web scrapi
 The team project is submitted as a so-called “data package”, consisting of the following two elements:
 
 1. Source code and accompanying files (50% of the final grade)  
-2. Documentation of the data collection (50% of the final grade) following [this template](resources/Datasheets_for_DataSets_2025.zip).
+2. Documentation of the data collection (50% of the final grade) following a template
 
-Students' team project grades will be corrected upwards or downwards, depending on students' individual contribution to the overall team effort. [Learn more here](resources/peerassessment).
+Students' team project grades will be corrected upwards or downwards, depending on students' individual contribution to the overall team effort. 
+
+
+__Important downloads__:
+
+- [Documentation template ("readme")](https://github.com/hannesdatta/course-odcm/raw/main/syllabus/project/resources/Datasheets_for_DataSets_2025.zip)
+- [Detailed grading rubric](https://github.com/hannesdatta/course-odcm/raw/main/syllabus/project/resources/2025-odcm-project-rubric.zip)
+
 
 ::: {.callout-note}
 ### Be ready for publication
@@ -39,13 +46,14 @@ In calculating your final grade, percentages are converted to grade points on a 
 * *No proficiency* (grade points × 0%)
 
 ::: {.callout-note}
+
 ### Example
 
-A student team has shown adequate proficiency in motivating the context in which the data was collected.  
-The motivation for the data context counts towards 5% of the team project’s final grade.  
-In grade points, this equals 0.5 points on a 10-point scale.  
-The points are weighted with 80% for adequate proficiency.  
-The grade for this part of the data package equals 0.5 × 80% = 0.40.
+- A student team has shown adequate proficiency in motivating the context in which the data was collected.  
+- The motivation for the data context counts towards 5% of the team project’s final grade.  
+- In grade points, this equals 0.5 points on a 10-point scale.  
+- The points are weighted with 80% for adequate proficiency.  
+- The grade for this part of the data package equals 0.5 × 80% = 0.40.
 :::
 
 ## Details
@@ -129,9 +137,9 @@ Ensure that your files are clearly named and placed in the correct folders. Subm
 
 ### 2. **Documentation**
 
-- You must use this [template](resources/Datasheets_for_DataSets_2025.zip) to create your documentation and fill in all (sub-)questions in sections 1-5. 
+- You must use the template (see above) to create your documentation and fill in all (sub-)questions in sections 1-5. 
 
-- Please refer to the [grading rubric](resources/2025-odcm-project-rubric.zip) for further details on the assessment criteria for the data documentation.
+- Please refer to the grading rubric for further details on the assessment criteria for the data documentation.
 
 ***Disclaimer:***
 The same grading rubric will be used to provide preliminary feedback during the coaching sessions. For these sessions, the sub-criteria are simplified to "Very good", "Sufficient", and "Needs improvement" serving as preliminary feedback to indicate whether the project is on track. The detailed sub-criteria outlined above, however, will be applied for the final grade calculation.

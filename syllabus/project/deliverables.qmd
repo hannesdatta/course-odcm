@@ -6,7 +6,7 @@ draft: false
 
 The activities below help you to structure your project. Stick to the plan to ensure you can finish the project in time.
 
-## Coaching 1: *Idea & Extraction Design*
+## Coaching 1: Idea & Extraction Design
 
 **Prework**
 
@@ -20,7 +20,7 @@ The activities below help you to structure your project. Stick to the plan to en
 
 -   **Sections 1 and 2** of your data documentation.
 
-## Coaching 2: *Prototype Development*
+## Coaching 2: Prototype Development
 
 **Prework**
 
@@ -32,7 +32,7 @@ The activities below help you to structure your project. Stick to the plan to en
 
 -   **Section 3** of your data documentation.
 
-## Coaching 3: *Refinement & Data Quality*
+## Coaching 3: Refinement & Data Quality
 
 **Prework**
 
@@ -43,7 +43,7 @@ The activities below help you to structure your project. Stick to the plan to en
 
 -   **Sections 4 and 5** of your data documentation.
 
-## Coaching 4: *Finalise Your Data Package*
+## Coaching 4: Finalise Your Data Package
 
 **Prework**
 

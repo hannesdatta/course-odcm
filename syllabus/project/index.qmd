@@ -20,7 +20,10 @@ At the end of the course, you will submit a data package, consisting of:
 <!--For inspiration, explore [past team projects](pastprojects). Use these as a starting point, keeping in mind that grading criteria may have changed and these examples are not flawless.-->
 
 ::: {.callout-note}
-The focus lies on completing an entire data collection project. Keep each stage of your project manageable and feasible. Your project will ultimately be written up as a proper data documentation following [template download](resources/Datasheets_for_DataSets_2025.zip). Ensure to also check the grading details.
+- The focus lies on completing an entire data collection project. 
+- Keep each stage of your project manageable and feasible. 
+- Your project will ultimately be written up as a proper data documentation ([download template](https://github.com/hannesdatta/course-odcm/raw/main/syllabus/project/resources/Datasheets_for_DataSets_2025.zip)).
+- Please ensure to also check the grading details.
 :::
 
 
@@ -29,15 +32,14 @@ The focus lies on completing an entire data collection project. Keep each stage 
 
 ### Coaching sessions
 
-During the course, you will have the opportunity to meet up with the course instructor for coaching sessions. These sessions are meant for you to receive feedback on your ideas and code. Frequently, this also entails problem-solving & debugging.
+During the course, you will have the opportunity to meet up a lecturer for coaching sessions. These sessions are meant for you to receive feedback on your ideas and code. Frequently, this also entails problem-solving & debugging.
 
-- **Session Format:**
-  The coaching sessions will be held *online*, with each team assigned a 15-minute time slot. A sign up sheet will be sent at least a day before the coaching session. 
+- **Session Format:** The coaching sessions will be held *online*, with each team assigned a 15-minute time slot. A sign up sheet will be sent at least a day before the coaching session. 
 - **Participation:** All team members are expected to attend their scheduled slot and actively participate. Teams should come prepared with a clear list of questions or issues they want to discuss. 
 - **Weekly Deliverables:** 
   - The weekly deliverables will be due *before* the coaching session. The session will focus on clarification questions and discussing the next steps. 
   - Deliverables must be submitted on Canvas. Please check Canvas for the due dates for each week. 
-  - The course team will provide short feedback in line with the [grading rubric](resources/2025-odcm-project-rubric.zip), at least a day before the next coaching session.
+  - The course team will provide short feedback in line with the [grading rubric](https://github.com/hannesdatta/course-odcm/raw/main/syllabus/project/resources/2025-odcm-project-rubric.zip), at least a day before the next coaching session.
 
 ::: {.callout-note}
 **How to Prepare for Coaching Sessions?**

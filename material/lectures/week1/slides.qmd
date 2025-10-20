@@ -16,9 +16,9 @@ We're about to start with the first lecture of this class.
 
 If you haven't done so, please check out the **Canvas page** for this course:
 
-- explore the *course syllabus*
+- explore the *course syllabus* 
 - complete the *software installation* (see "preparation before this class on Canvas)
-- check out my slides on the *modules* page on Canvas
+- check out today's slides on the *modules* page on Canvas
 
 <!--
 - drafted this course for a very long time
@@ -54,14 +54,14 @@ If you haven't done so, please check out the **Canvas page** for this course:
 
 ::: incremental
 - Mix of lectures, teamwork and self-study — all are necessary
-  - I do the tutoriala, lectures and course coordination
+  - I do the tutorials, lectures and course coordination
   - Roshini Sudhaharan will coach you on the team projects
 - This is predominantly about web scraping and APIs — while I teach a bit of Python, becoming an expert requires years of practice  
 - About me
   - I record my lectures and post them on Canvas (remind me if I miss to post one--or forget to start the recording)
-  - Consider me your coach, not your 'distant professor'
-  - Slow me down (yes, that’s needed!)
-- You will have to invest a lot of time and energy
+  - Consider me your coach
+  - Slow me down when needed
+- You will have to invest a lot of time and energy (but the rewards are high!)
 
 :::
 
@@ -69,7 +69,7 @@ If you haven't done so, please check out the **Canvas page** for this course:
 
 - scraping nerd — learned it in 2008 using Visual Basic in Excel  
 - started doing my own research with scraped and API-extracted data in 2012 (so, 10+ years experience)  
-- left Germany around your age, now 15+ years in NL  
+- left Germany around your age, now 17+ years in NL  
 - Associate Professor at Tilburg University  
 
 ---
@@ -77,36 +77,40 @@ If you haven't done so, please check out the **Canvas page** for this course:
 ## Key areas of expertise
 
 **Substantive interests**
+
 - streaming business models (e.g., music, movies)
 - marketing-mix modeling and optimization
 - open science  
 
 **Methodological interests**
+
 - online data collection via APIs and web scraping
 - causal effects with observational data
 
 ---
-
+<!--
 ## Teaching activities
 
 - MSc Marketing Analytics  
-  - Data preparation and workflow management <https://dprep.hannesdatta.com>  
-  - Online data collection and management <https://odcm.hannesdatta.com>  
-  - MSc Thesis supervision <https://thesis.hannesdatta.com>  
+  - Data preparation and programming skills
+  - Online data collection and management
+  - MSc Thesis supervision 
 - Other initiatives  
   - tilburg.ai <https://tilburg.ai>  
   - Tilburg Science Hub <https://tilburgsciencehub.com>  
-  - Music-to-scrape.org <https://music-to-scrape.org>  
+  - **Music-to-scrape.org <https://music-to-scrape.org>  **
   - YouTube <https://youtube.com/c/hannesdatta>  
   - GitHub <https://github.com/hannesdatta>  
   - Personal site <https://hannesdatta.com>  
 
 ---
+--> 
 
 ## Getting to know you {.incremental}
 
-- What’s your background / previous education?  
-- Any experience in Python (or other programming languages)?  
+<!--- What’s your background / previous education?  -->
+- How did dPrep go for you (e.g., programming)?
+- Any experience in Python already?
 - What are your passions & talents? (+ why I am asking you this...)  
 
 ---
@@ -138,11 +142,13 @@ If you haven't done so, please check out the **Canvas page** for this course:
 ## What is scraping, and what are APIs?
 
 **Web scraping:** anything you can view in a web browser  
+
 - pricing data at [bol.com](https://bol.com)  
 - reviews at [Amazon.com](https://amazon.com)  
 - movie data at [imdb.com](https://imdb.com)  
 
 **APIs:** official interfaces by firms for programmatic data access  
+
 - e.g., Instagram, Twitter/X, ChatGPT, AWS  
 - researchers use them to construct datasets from analytics firms  
 
@@ -151,7 +157,7 @@ If you haven't done so, please check out the **Canvas page** for this course:
 ## Introducing music-to-scrape.org
 
 - Mock-up streaming service  
-- Developed last year with Guyt et al. (2024)  
+- Developed and released as part of Guyt et al. (2024)  
 - “Safe” and controlled environment to learn scraping and APIs  
 
 ![](musictoscrape.png)
@@ -200,23 +206,24 @@ for song in api_request_json.get('chart'):
 
 **For businesses**
 
-* connect services, e.g., extend ChatGPT
-* market research (pricing data)
-* build recommendation systems
+* connect to (AI) services (e.g., use ChatGPT in your own products)
+* market research (e.g., retrieve pricing data regularly)
+* build recommendation systems or search (e.g., for a web shop)
 
 **For research**
 
-* document novel phenomena
-* improve methods (text, image, video data)
-* achieve more accurate inferences
-* collect real-world metrics
+* document novel phenomena without formal data access
+* improve methods (text, image, video data, ...)
+* achieve more accurate inferences by getting better control variables
+* collect real-world metrics managers care about
 
 ---
 
 ## Getting inspired {.incremental}
 
 * What’s the last app/website that made you say “wow”?
-* Which three apps/websites would you keep for the next year?
+* Which three apps/websites would you definitely remove in the next month?
+* Which three apps/websites would you definitely keep for the next year?
 * What’s a niche online community you’re part of?
 * What’s the last thing you saw on TikTok that made you stop scrolling?
 * Imagine an AI tool that makes you famous overnight — what would it do?
@@ -274,10 +281,10 @@ for song in api_request_json.get('chart'):
 ## Learning goals {.incremental}
 
 * Explain how to use web data for **creating marketing insight**
-* Select data sources and evaluate their value
-* Design web data collection balancing validity, feasibility, ethics
-* Collect data via scraping and APIs
-* Document and archive for public reuse
+* **Select data sources** and **evaluate** their value
+* **Design web data collections** balancing **validity, feasibility, ethics**
+* **Collect data** via scraping and APIs
+* **Document and archive** for public reuse
 
 ---
 
@@ -290,20 +297,21 @@ for song in api_request_json.get('chart'):
 ## Course structure I: Overview
 
 - Weeks 1-3: Tutorials (Hannes)
-- Weeks 4-7: Lectures (Hannes, some may be pre-recorded) + team coaching (Roshini)
+- Weeks 4-7: Team Project (coach Roshini) + two lectures (Hannes, weeks 4-5)
+
 
 ---
 
 ## Course structure II: Tutorials
 
-- Four **key** tutorials:
-  - Python Bootcamp + Datacamp (this week)
-  - Web scraping 101 + Web scraping advanced (week 2)
-  - API 101 + API Advanced (week 3)
+- Five tutorials:
+  - __This week:__ Python Bootcamp
+  - Week 2: Web scraping 101 (static) + Web scraping advanced (dynamic)
+  - Week 3: API 101 (data extraction) + API Advanced (OpenAI's API)
 - Structure of each tutorial
-  - interactive walk-through ("semi-lecture") 
+  - interactive walk-through ("semi-lecture") wit a Jupyter Notebook posted on Canvas (no slides)
   - discussion how to solve and accompanying you to learn coding to solve questions
-  - solutions available throughout
+  - solutions available
   
 <br> 
 Key responsibility: __Hannes Datta__
@@ -326,11 +334,10 @@ key responsibility: __Hannes Datta__
 
 
 * Collect data (scraping/APIs)
-* Apply framework (Boegershausen et al. 2022, Guyt et al. 2024)
-* Peer feedback and coaching
-* Based on a research context
-* 5 group members (4 = exception)
-* Mostly online (10-15 minutes per team)
+  * Apply frameworks (Boegershausen et al. 2022, Guyt et al. 2024)
+  * Collect data for a research project
+  * Online coaching sessions (10-15 minutes per team)
+  * 5 group members (4 = exception)
 
 <br>
 Key responsibility: __Roshini Sudhaharan__
@@ -341,7 +348,7 @@ Key responsibility: __Roshini Sudhaharan__
 
 __Level of AI allowed for this assignment:__ AI-assisted idea generation and structuring (Level 3 on AI Index Tilburg University)
 
-- You are allowed to use generative AI tools to develop or refine initial ideas, materials, paraphrasing, structures, or outlines. __This includes generating code, e.g., for R.__
+- You are allowed to use generative AI tools to develop or refine initial ideas, materials, paraphrasing, structures, or outlines. __This includes generating code, e.g., for Python.__
 - Failing to declare AI use, or using AI beyond what is allowed in the syllabus, may be considered fraud and will be reported to the Examination Board.
 - Keep a simple “logbook” documenting which AI tools you have used and for what purposes. 
 
@@ -349,13 +356,14 @@ __Level of AI allowed for this assignment:__ AI-assisted idea generation and str
 
 __We will share several course-specific chatbots with you on Tilburg University's chatbot platform Tilly.__
 
-## Assessment
+## Assessment (6 ECTS version!)
 
 - __Computer exam__ (60%, 120 minutes) → on campus, with internet  
   - Mix of open + closed questions  
   - Example questions will be shared on Canvas; exam Q&A in week 6 + during the final lecture in week 7
 - __Team project (40%)__ → submission on Canvas + self- and peer-assessment
 
+__Repeating this course__ for 3 ECTS? Please register on Canvas as such (6 ECTS Canvas page, group: 3 ECTS repeater)
 
 
 ## Tips & tricks
@@ -363,7 +371,7 @@ __We will share several course-specific chatbots with you on Tilburg University'
 - Familiarize yourself with this course (e.g., syllabus) on Canvas
 - Early weeks are toughest, but skills build quickly
 - Collaborate and help each other
-- Recall that coding can be frustrating & tiring + you're learning a new language (Python) --> take breaks, get our support
+- Recall that coding can be frustrating & tiring + you're learning a new language (Python) &rarr; take breaks, get our support
 
 &rarr; __Quick support?__ Make use of our chatbots. 
 

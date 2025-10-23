@@ -2,7 +2,7 @@
 title: "Syllabus"
 format: html
 editor: visual
-date: 2025-10-10
+date: 2025-10-20
 author: Hannes Datta
 ---
 
@@ -36,29 +36,28 @@ When collecting web data for their research, students mostly rely on a mix of bo
 
 ## Prerequisites
 
-- The course uses **Python** for the technical implementation of collecting web data. The course welcomes novices, of whom a significant investment of effort and time is required to learn the necessary skills.
-- Preparation material (before the course starts) is available in the form of Jupyter Notebooks or course recommendations at Datacamp. Novices may further benefit from following other courses at Tilburg University in which Python is used, for example, *Research Skills: Data Processing* and *Research Skills: Data Processing Advanced*.
-- Students are recommended to use the their computer for this course. Windows and Mac users can typically install all required software easily. Linux users may require some advanced understanding of their operating system to install all required software. Android/Chromebook/iOS devices are not supported. The exam is held on campus, using Windows computers. Mac and Linux users are strongly advised to practice on the on-campus computers before the exam. Tutorial sessions are usually scheduled in computer rooms exactly for this purpose.
+-   The course uses **Python** for the technical implementation of collecting web data. The course welcomes novices, of whom a significant investment of effort and time is required to learn the necessary skills.
+-   Preparation material (before the course starts) is available in the form of Jupyter Notebooks or course recommendations at Datacamp. Novices may further benefit from following other courses at Tilburg University in which Python is used, for example, *Research Skills: Data Processing* and *Research Skills: Data Processing Advanced*.
+-   Students are recommended to use the their computer for this course. Windows and Mac users can typically install all required software easily. Linux users may require some advanced understanding of their operating system to install all required software. Android/Chromebook/iOS devices are not supported. The exam is held on campus, using Windows computers. Mac and Linux users are strongly advised to practice on the on-campus computers before the exam. Tutorial sessions are usually scheduled in computer rooms exactly for this purpose.
 
 ## Teaching format
 
-- Blended learning: a mix of lecturers, tutorials and coaching sessions, mostly on-campus, and sometimes online or prerecorded.
--  Learn state-of-the-art tools popular among scientists, marketing analysts, and data scientists (e.g., Python), and collect data from real websites and APIs.
+-   Blended learning: a mix of lecturers, tutorials and coaching sessions, mostly on-campus, and sometimes online or prerecorded.
+-   Learn state-of-the-art tools popular among scientists, marketing analysts, and data scientists (e.g., Python), and collect data from real websites and APIs.
 
 ## Assessment
 
-- Team project (40%, out of which 8% are based on students' individual contribution, measured by self- and peer assessment)
-- Computer exam (60%)
+-   Team project (40%, out of which 8% are based on students' individual contribution, measured by self- and peer assessment)
+-   Computer exam (60%)
 
 ### Passing requirements
 
-Students pass this course if 
+Students pass this course if
 
-- the final course grade (i.e., the weighted average of the following two components: (1) the group project, and (2) the exam; weights indicated above) is ≥ 5.5, and 
-- the exam grade is higher than or equal to 5.0 (≥ 5.0).
+-   the final course grade (i.e., the weighted average of the following two components: (1) the group project, and (2) the exam; weights indicated above) is ≥ 5.5, and
+-   the exam grade is higher than or equal to 5.0 (≥ 5.0).
 
 Final course grades are rounded to multiples of half points (e.g., 6, 6.5, 7, etc.).
-
 
 ### Resit policy
 

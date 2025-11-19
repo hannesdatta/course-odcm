@@ -1,0 +1,285 @@
+---
+title: "Infrastructural Considerations for Web Scraping Projects"
+subtitle: "Online Data Collection & Management" # (2025/2026)"
+author: "Hannes Datta"
+date: "last-modified"
+format: 
+    beamer:
+      theme: metropolis
+      colortheme: seahorse
+      linkcolor: blue
+---
+
+# Overview and Agenda
+
+## Why Infrastructure Matters
+
+- Scraping is often **long-running** (hours → weeks → months)  
+- Machines crash; websites change; networks fail  
+- Good infrastructure ensures:  
+  - reliability  
+  - data quality  
+  - reproducibility  
+  - security & GDPR compliance  
+  - lower legal/ethical risk  
+
+## Agenda
+
+1. Computer Infrastructure for Web Scraping
+2. Governance, Security & Compliance
+3. Summary
+
+# 1. Computer Infrastructure for Web Scraping
+
+## Compute Environment
+
+__Local Machine__
+
+- Best for prototyping  
+- Easy debugging, fast iteration  
+- Weaknesses:
+  - laptop sleeps/shuts down  
+  - unstable WiFi  
+  - not suitable for sensitive data  
+- Use only for early-phase development  
+
+---
+
+## Compute Environment (continued)
+
+__Institutional Servers__
+
+- University-run servers  
+- Stable uptime, monitored, backed-up  
+- Better for GDPR compliance  
+- Reliable for periodic scraping jobs  
+- Often free / no marginal cost  
+
+
+---
+
+## Compute Environment (continued)
+
+__Cloud Virtual Machines__
+
+- AWS / Azure / GCP  
+- “Rent a computer in a data center”  
+- Advantages:
+  - always-on  
+  - scalable (run several scrapers)  
+  - easy to redeploy  
+- Consider:
+  - costs  
+  - basic sysadmin setup  
+- Ideal for medium-sized scraping pipelines  
+
+---
+
+## Automation
+
+__Scheduling__
+
+- Use the **OS scheduler**:
+  - macOS/Linux → `cron`
+  - Windows → Task Scheduler  
+- Reliable for:
+  - daily/weekly scrapes  
+  - monitoring jobs  
+  - incremental updates  
+
+Scheduling scrapers at OS level is recommended in research workflows.[^retail]
+
+[^retail]: Datta et al. (2024), *Journal of Retailing*.
+
+---
+
+## Automation (continued)
+
+__Restartability__
+
+- Scrapers should **resume** after failure  
+- Use:
+  - try–catch blocks  
+  - waiting before retry  
+  - checkpointing progress  
+- Prevents:
+  - hanging scrapers  
+  - half-finished datasets  
+- Major improvement in long-term reliability  
+
+---
+
+## Storage & Retention
+
+__Flat Files (CSV / JSON)__
+
+- Good for most research projects  
+- Easy to validate, inspect, share  
+- Human-readable  
+- Lightweight and transparent  
+
+---
+
+## Storage & Retention (continued)
+
+__Raw HTML Snapshots__
+
+- Store **full HTML** of each page  
+- Essential for reproducibility:
+  - websites change layout  
+  - selectors must be updated  
+  - raw HTML enables re-extraction  
+- Strongly recommended in academic scraping[^fields]
+
+[^fields]: Boegershausen, Datta, Borah & Stephen (2022), *Fields of Gold*.
+
+---
+
+## Storage & Retention (continued)
+
+__Databases__
+
+- SQLite (file-based)  
+- PostgreSQL / MySQL (server-based)  
+- Useful for:
+  - incremental scraping  
+  - avoiding duplicate pages  
+  - storing metadata  
+- Safer than large CSV collections  
+
+---
+
+## Storage & Retention (continued)
+
+__Cloud Object Storage__
+
+- Amazon S3 / Azure Blob / Google Cloud Storage  
+- Think of it as a “large folder in the cloud”  
+- Ideal for:
+  - HTML dumps  
+  - images  
+  - logs  
+  - large-scale archives  
+- Supports versioning & retention policies  
+
+---
+
+## Monitoring & Health Checks
+
+__Metadata-Based Monitoring__
+
+Track over time:
+
+- number of records  
+- file size  
+- number of missing fields  
+- HTTP status codes (200, 404, 500...)  
+- drops/spikes in extracted volume  
+
+Allows early detection of:
+
+- layout changes  
+- rate limit issues  
+- connection failure  
+- missing CSS selectors  
+
+---
+
+## Monitoring & Health Checks (continued)
+
+__Notifications__
+
+- Automatic alerts when something breaks:  
+  - Email  
+  - Slack  
+  - Pushover API  
+- Helps maintain unattended scrapers  
+- Ensures “silent failures” do not accumulate  
+
+---
+
+## Reliability & Maintenance
+
+__Logging__
+
+Log for every run:
+
+- URLs visited  
+- timestamps  
+- number of items scraped  
+- errors / retries  
+- unusual behavior  
+
+Logs support:
+
+- debugging  
+- reproducibility  
+- compliance audits  
+- scientific transparency  
+
+## Reliability & Maintenance (continued)
+
+__Versioning Environments__
+
+- Use reproducible environments:
+  - R: `renv`
+  - Python: `virtualenv` / `requirements.txt`  
+- Prevents:
+  - “works on my machine” issues  
+  - dependency drift  
+- Supports long-term maintainable scraping pipelines  
+
+---
+
+# 2. Governance, Security & Compliance
+
+## Governance, Security & Compliance
+
+__Secrets Management__
+
+- Never hard-code credentials  
+- Store API keys in:
+  - `.env` files  
+  - environment variables  
+- Avoid committing secrets to GitHub  
+
+---
+
+## Governance, Security & Compliance (continued)
+
+__GDPR-Safe Infrastructure__
+
+For any scraping that collects personal data:
+
+- use encrypted disks  
+- restrict folder permissions  
+- delete identifiers when possible  
+- document processing & retention  
+- avoid personal laptops if insecure  
+
+## Governance, Security & Compliance (continued)
+
+__Ethical Scraping Practices__
+
+- Minimize scraping frequency  
+- Minimize amount of collected data  
+- Maintain audit logs  
+- Adapt scraping to public interest (research context)  
+- Use scheduling responsibly  
+- Avoid unnecessary load  
+
+
+---
+
+# 3. Summary
+
+## Summary
+
+- Infrastructure = key to reliability, reproducibility, and compliance  
+- Choose compute environment wisely  
+- Automate with simple, robust tools  
+- Store raw HTML for future-proof extraction  
+- Monitor scraper health  
+- Log everything  
+- Protect data & credentials  
+- Build ethically and responsibly  

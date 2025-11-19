@@ -1,0 +1,344 @@
+---
+title: "Navigating the Legal Landscape of Web Scraping"
+subtitle: "Online Data Collection & Management" # (2025/2026)"
+author: "Hannes Datta"
+date: "last-modified"
+format: 
+    beamer:
+      theme: metropolis
+      colortheme: seahorse
+      linkcolor: blue
+---
+
+# Overview and Agenda
+
+## Why Legal Considerations Matter
+
+- __Web scraping:__ Automated extraction of content from websites using scripts or crawlers. Not APIs provided by firms. But: some APIs are disguised scrapers!
+- __But__: No “Web Scraping Act”: Overlapping laws + similar actions → radically different legal outcomes. 
+  - anti-hacking  
+  - contracts between you (researchers/students/employees) and the firm (data/service provider)
+  - Intellectual property (IP) rights  
+  - privacy law (GDPR in the EU)  
+- Different jurisdictions treat scraping differently.
+- Goal = **risk minimization** (not “perfect legality”).
+
+## Agenda
+
+1. Legal pillars underlying web scraping projects
+2. Case studies
+3. Risk minimization strategies
+4. Summary
+
+
+# 1. Legal Pillars
+
+---
+
+## Legal Pillar 1 — Technical Access
+
+**Core idea:**  Does scraping bypass a technical barrier?
+
+Examples of barriers:  
+
+- Login walls  
+- Session tokens  
+- CAPTCHAs  
+- IP rate limiting  
+- Paywalls
+
+High risk when:  
+
+- You circumvent or bypass.  
+- Even “reasonable circumvention” may count as unauthorized.
+
+---
+
+## Legal Pillar 2 — Intellectual Property (IP)
+
+**Copyright** protects:  
+
+- reviews, descriptions, photos, creative formatting  
+- Does *not* protect facts (prices, timestamps)
+
+**Database Right** (EU, Directive 96/9/EC)
+
+- Protects investment in obtaining/structuring data  
+- Infringed by “substantial extraction”  
+- Applies even if data is factual
+
+---
+
+## Legal Pillar 2 — Intellectual Property (IP) (continued)
+
+**TDM (Text & Data Mining) exceptions** (Digital Single Markets (DSM) Directive 2019/790)  
+
+
+**Art. 3 (scientific research exception)**  
+
+- Applies to *research organisations*  
+- Covers commercial publishers' content  
+- Rightholders **cannot** opt out  
+- But does *not* override ToS or access restrictions
+
+**Art. 4 (general TDM, applies to commercial userse)**  
+
+- Applies to companies  
+- BUT rightholders *may opt out* (e.g., via robots.txt or metadata)
+- Still interacts with ToS
+
+
+---
+
+## Legal Pillar 3 — Terms of Service (Contracts)
+
+Key forms: 
+
+- **Clickwrap** — user clicks “I agree” → fully binding  
+- **Browsewrap** — ToS linked but not clicked  
+- **Sign-in-wrap** — ToS applied when logging in
+
+Enforceable when:  
+
+- Clear notice  
+- Repeated, professional use (constructive notice)  
+- User benefited from service
+
+
+---
+
+## Legal Pillar 4 — Privacy (GDPR)
+
+- Any identifier → personal data  
+  - usernames  
+  - user IDs  
+  - profile URLs  
+- Sensitive data (Art. 9):  
+  - biometric  
+  - health  
+  - politics  
+  - religion  
+
+---
+
+## Legal Pillar 4 — Privacy (GDPR) (continued)
+
+A scraping project needs **one** lawful basis:[^1]
+
+- **Consent**: Explicit agreement (e.g., survey participants sharing profile data).
+- **Contract**: Data needed to fulfil a contract (rare for scraping).
+- **Legal obligation**: Required by law (not relevant for scraping).
+- **Vital interests**: Life-saving situations (never relevant).
+- **Public task**: Official/statistical bodies (rare in academic scraping).
+- **Legitimate interest**: Possible for scraping public data **if** low risk + strong research benefit (example: studying price discrimination using publicly visible prices).
+
+[^1]: GDPR Art. 6 lists six legal bases; legitimate interest requires a strict balancing test.
+
+## Legal Pillar 4 — Privacy (GDPR) (continued)
+
+- **Data minimisation**[^2]
+  - Collect only data needed for the research question.  
+  - Examples: studying prices → no need to store reviewer usernames; studying ratings → keep rating + timestamp, not profile IDs.  
+- **Purpose limitation**[^2]
+  - Use data only for the original purpose.  
+  - Examples: scraped for price trends → cannot repurpose for predicting user gender; academic analysis → cannot turn dataset into a commercial product.
+- **Security**[^2]
+  - Protect data technically and organisationally.  
+  - Examples: store raw HTML on encrypted university servers; restrict access to the research team; delete identifiers early; apply retention policies.
+
+[^2]: GDPR Art. 5 sets out core principles: minimisation, purpose limitation, security.
+
+
+# 2. Case studies
+
+---
+
+## Case 1 — hiQ Labs v LinkedIn (USA)
+
+**Facts**  
+
+- hiQ scraped *public* LinkedIn profiles  
+- LinkedIn issued cease-and-desist  
+- Claims: CFAA (anti-hacking), Breach of Terms of Service
+
+ 
+**Computer Fraud and Abuse Act** (18 U.S.C. § 1030)
+
+- US anti-hacking statute  
+- Makes it illegal to access a computer “without authorization”  
+- Historically used by platforms against scrapers
+
+
+## Case 1 — hiQ Labs v LinkedIn (USA) (continued)
+
+**Court**  
+
+- Public pages does not imply unauthorized access (CFAA)[^hiq2]  
+- BUT hiQ bound by clickwrap ToS → breach of contract
+
+**Takeaway**  
+
+- Anti-hacking and contract law do not imply the same thing
+- But: allowed access does not mean being allowed to scrape
+
+[^hiq2]: Ninth Circuit, 2019; reaffirmed 2022.
+
+---
+
+## Case 2 — Clearview AI (EU/UK)
+
+**Facts**  
+
+- Scraped billions of images from social media, news, blogs
+- Built commercial facial-recognition search engine + sold to law enforcement + private sector
+
+**GDPR Analysis**  
+
+- Photos = *personal data*, Faces = *biometric data* (special category)[^gdpr9]  
+- Requires explicit lawful basis (none existed)
+
+
+## Case 2 — Clearview AI (EU/UK) (continued)
+
+**Outcomes outcomes**: France (CNIL), Italy (Garante), Greece, UK (ICO) issued fines; orders to delete EU/UK residents’ data[^cnil]
+
+**Takeaway**: Public availability does **not** override privacy law
+
+[^gdpr9]: GDPR Art. 9.  
+[^cnil]: CNIL Clearview Decision (2021). ICO Enforcement Notice (2022).
+
+---
+
+## Case 3 — Ryanair v PR Aviation (CJEU)
+
+**Facts**  
+
+- PR Aviation scraped public flight prices  
+- Used in flight comparison tool  
+- Ryanair sued based on: ToS, Possible Database Right
+
+**Court**  
+
+- Database Right did *not* apply (no substantial investment)  
+- BUT Terms of Service were enforceable[^ryanair]
+  - *Browsewrap*: ToS posted but not clicked  
+  - *Constructive notice*: commercial user should know terms
+
+**Takeaway**: ToS alone can block scraping—even for public data
+
+[^ryanair]: CJEU C-30/14 (2015).
+
+---
+
+## Case 4 — Academic Research Case
+
+**Facts**  
+- Combined web scraping + API data  
+- ToS explicitly forbade combining these sources  
+- Collected usernames → personal data (GDPR)
+
+**Outcome**  
+
+- Dialogue with provider
+- Agreed on data minimization steps for academic, non-commercial purpose
+
+**Takeaway**  
+
+- Research scraping = often a grey zone  
+- Transparency and minimization reduce conflict
+
+[^acad1]: Boegershausen, Datta, Borah & Stephen (2022), Appendix D.
+
+---
+
+## Why do these outcomes differ?
+
+__Jurisdictions Disagree__
+
+- **US**  
+  - Anti-hacking focus  
+  - Weak privacy law  
+  - CFAA distinguishes public/private access  
+- **EU**  
+  - Strong privacy law (GDPR)  
+  - Database Right  
+  - Stronger ToS enforceability  
+- **UK**  
+  - GDPR-style privacy + strong contract law
+
+**Implication:**  
+Same scrape → different trigger → different outcome.
+
+# 3. Risk Minimization Strategies
+
+---
+
+## Reduce Access Risk
+
+__“There Is No Safe — Only Safer.”__
+
+- Scrape public pages only  
+- Avoid bypassing barriers  
+- Respect robots.txt as a *signal*
+
+Risk assessment: 
+
+- Scraping behind a login → risk ↑↑  
+- Solving CAPTCHA with automation → risk ↑↑  
+- Using rotating proxies to evade blocking → risk ↑↑
+
+
+---
+
+## Reduce ToS Risk
+
+- Read ToS  
+- Contact provider  
+- Document decisions  
+- Avoid combining API + scraping if forbidden
+
+---
+
+## Reduce IP Risk
+
+- Prefer factual fields  
+- Avoid copying reviews, long text, images  
+- Avoid bulk extraction of structured databases
+
+## Reduce GDPR Risk
+
+- Remove identifiers early  
+- Avoid faces  
+- Store raw data securely  
+- Limit retention
+
+## Reduce Purpose Risk:  
+
+- Research < internal analytics < commercial reuse < resale
+
+---
+
+## Assessing a Project
+
+- Data sensitivity  
+- Technical intrusiveness  
+- ToS conflict  
+- Commercial visibility  
+- Scale (volume/frequency)
+
+**Case placements:**  
+
+- hiQ — medium  
+- Ryanair — medium-high  
+- Academic — low-medium  
+- Clearview — extreme
+
+# 5. Summary
+
+## Summary
+
+- No unified scraping law  
+- Same scraping → different outcomes because different legal pillars are triggered  
+- Research scraping manageable with good practice  
+- Commercial scraping of personal/biometric data = high risk
+

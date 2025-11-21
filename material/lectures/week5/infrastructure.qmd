@@ -14,14 +14,14 @@ format:
 
 ## Why Infrastructure Matters
 
-- Scraping is often **long-running** (hours → weeks → months)  
-- Machines crash; websites change; networks fail  
-- Good infrastructure ensures:  
-  - reliability  
-  - data quality  
-  - reproducibility  
-  - security & GDPR compliance  
-  - lower legal/ethical risk  
+- Web data projects (scraping and APIs) are often **long-running** (hours → weeks → months) or require __mitigation of legal and ethical risks__
+  - __But:__ Machines crash; hard disks fill up; websites change; networks fail; security could be compromised; data could leak...
+- __Good infrastructure__ ensures:  
+  - reliability (expectation it will work now and in the future)
+  - data quality (alert when data collection stops)
+  - security compliance (e.g., hiding API credentials, using right permissions)
+  - GDPR compliance (e.g., anonymization on the fly)
+  - lower legal/ethical risk (e.g., data minimization, choice of jurisdiction)
 
 ## Agenda
 
@@ -29,87 +29,81 @@ format:
 2. Governance, Security & Compliance
 3. Summary
 
-# 1. Computer Infrastructure for Web Scraping
+# 1. Computer Infrastructure for Web Data Projects
 
-## Compute Environment
+## Choice 1: Compute Environment
 
 __Local Machine__
 
-- Best for prototyping  
-- Easy debugging, fast iteration  
+- Best for prototyping (e.g, easy debugging, fast iteration, admin rights to install new packages)
 - Weaknesses:
-  - laptop sleeps/shuts down  
-  - unstable WiFi  
-  - not suitable for sensitive data  
+  - laptop sleeps/shuts down during collection
+  - unstable WiFi lowers data quality
+  - not suitable for sensitive data (e.g., a laptop could be stolen)
 - Use only for early-phase development  
 
 ---
 
-## Compute Environment (continued)
+## Choice 1: Compute Environment (continued)
 
-__Institutional Servers__
+__Institutional/organizational Servers__
 
-- University-run servers  
-- Stable uptime, monitored, backed-up  
-- Better for GDPR compliance  
-- Reliable for periodic scraping jobs  
+- Proper "server", remote login 
+- Usually stable uptime and automatic backups
+- Better for GDPR compliance (e.g., if being in your organization's network)
+- Much more reliable for long-running scraping jobs 
 - Often free / no marginal cost  
-
 
 ---
 
-## Compute Environment (continued)
+## Choice 1: Compute Environment (continued)
 
 __Cloud Virtual Machines__
 
-- AWS / Azure / GCP  
-- “Rent a computer in a data center”  
+- “Rent a virtual machine (i.e., computer) in a data center” (e.g., Amazon Web Services (AWS), Azure, Google Cloud Platform (GCP)
 - Advantages:
-  - always-on  
-  - scalable (run several scrapers)  
-  - easy to redeploy  
+  - always-on, choice of operation system, number of CPUs, RAM, hard disk...
+  - scalable (e.g., up-scale or downscale a VM)
+  - easy to redeploy (i.e., turn machine into template and "copy" 10 times...)
 - Consider:
-  - costs  
-  - basic sysadmin setup  
-- Ideal for medium-sized scraping pipelines  
+  - marginal costs (compute, storage, data transfer)
+  - best to use Linux (to avoid Microsoft's licensing fees for Windows); choice: Ubuntu Desktop to start
 
 ---
 
-## Automation
+## Choice 2: Automation
 
 __Scheduling__
 
-- Use the **OS scheduler**:
+- Use the **scheduler** on your operating system:
+  - Windows → Task Scheduler
   - macOS/Linux → `cron`
-  - Windows → Task Scheduler  
 - Reliable for:
   - daily/weekly scrapes  
   - monitoring jobs  
   - incremental updates  
 
-Scheduling scrapers at OS level is recommended in research workflows.[^retail]
+Scheduling scrapers at the level of your operating system (i.e., not in Python or R) is recommended in research workflows.[^retail]
 
-[^retail]: Datta et al. (2024), *Journal of Retailing*.
-
----
-
-## Automation (continued)
-
-__Restartability__
-
-- Scrapers should **resume** after failure  
-- Use:
-  - try–catch blocks  
-  - waiting before retry  
-  - checkpointing progress  
-- Prevents:
-  - hanging scrapers  
-  - half-finished datasets  
-- Major improvement in long-term reliability  
+[^retail]: Guyt et al. (2024), *Journal of Retailing*.
 
 ---
 
-## Storage & Retention
+## Choice 2: Automation (continued)
+
+__Scheduling require scripts to be "restartable"__
+
+- Scrapers should **resume** after minor failures, and **crash** at larger failures
+  - prevents hanging scrapers and half-finished datasets  
+- For catching minor failures:
+  - try–except blocks
+  - waiting a few seconds before retrying
+  - checkpointing progress
+- Larger failures (e.g., relating to a package update, to a version conflict with Chromedriver) cannot always be anticipated, and it's fine for a scraper to also simply "crash"
+
+---
+
+## Choice 3: Storage & Retention
 
 __Flat Files (CSV / JSON)__
 
@@ -120,7 +114,7 @@ __Flat Files (CSV / JSON)__
 
 ---
 
-## Storage & Retention (continued)
+## Choice 3: Storage & Retention (continued)
 
 __Raw HTML Snapshots__
 
@@ -129,23 +123,26 @@ __Raw HTML Snapshots__
   - websites change layout  
   - selectors must be updated  
   - raw HTML enables re-extraction  
-- Strongly recommended in academic scraping[^fields]
+- Often recommended in academic scraping[^fields], but can increase legal risks
 
 [^fields]: Boegershausen, Datta, Borah & Stephen (2022), *Fields of Gold*.
 
 ---
 
-## Storage & Retention (continued)
+## Choice 3: Storage & Retention (continued)
 
 __Databases__
 
-- SQLite (file-based)  
-- PostgreSQL / MySQL (server-based)  
+- SQL is the standard of data storage/handling and a must for marketing analytics students to master
+- SQL has different implementations
+  - server-based (e.g., PostgreSQL / MySQL)
+  - file-based (e.g., SQLite)
 - Useful for:
-  - incremental scraping  
-  - avoiding duplicate pages  
-  - storing metadata  
-- Safer than large CSV collections  
+  - incremental scraping
+  - avoiding duplicate pages
+  - storing metadata (such as logs)
+- Much safer than large CSV collections
+  - use SQLite for small-scale collections; use server-based SQL implementations for medium- to large projects
 
 ---
 
@@ -157,67 +154,44 @@ __Cloud Object Storage__
 - Think of it as a “large folder in the cloud”  
 - Ideal for:
   - HTML dumps  
-  - images  
-  - logs  
-  - large-scale archives  
-- Supports versioning & retention policies  
+  - storing images, larger files
+- Supports backup, versioning & retention policies natively
 
 ---
 
-## Monitoring & Health Checks
+## Choice 4: Monitoring & Health Checks
 
-__Metadata-Based Monitoring__
+__Metadata-Based Monitoring / Logs__
 
-Track over time:
+Log for every run:
 
-- number of records  
-- file size  
-- number of missing fields  
-- HTTP status codes (200, 404, 500...)  
-- drops/spikes in extracted volume  
+- URLs visited + HTTP status codes (e.g., 200, 404, 500)
+- timestamps
+- number of items scraped, file sizes
+- errors / retries
 
-Allows early detection of:
+Logs support:
 
-- layout changes  
-- rate limit issues  
-- connection failure  
-- missing CSS selectors  
+- debugging (e.g., website/endpoint changes, rate limit issues, connection failure)
+- scientific transparency
+- compliance audits  
 
 ---
 
-## Monitoring & Health Checks (continued)
+## Choice 4: Monitoring & Health Checks (continued)
 
 __Notifications__
 
 - Automatic alerts when something breaks:  
   - Email  
   - Slack  
-  - Pushover API  
+  - Push notifications (e.g., via Pushover, ntfy.sh) -- API-based
 - Helps maintain unattended scrapers  
 - Ensures “silent failures” do not accumulate  
 
 ---
 
-## Reliability & Maintenance
-
-__Logging__
-
-Log for every run:
-
-- URLs visited  
-- timestamps  
-- number of items scraped  
-- errors / retries  
-- unusual behavior  
-
-Logs support:
-
-- debugging  
-- reproducibility  
-- compliance audits  
-- scientific transparency  
-
-## Reliability & Maintenance (continued)
+## Choice 5: Maintenance, Security & Compliance
 
 __Versioning Environments__
 
@@ -231,9 +205,21 @@ __Versioning Environments__
 
 ---
 
-# 2. Governance, Security & Compliance
+## Choice 5: Maintenance, Security & Compliance (continued)
 
-## Governance, Security & Compliance
+__Docker__
+
+- Package your scraper, dependencies, and environment in a single container  
+- Ensures reproducibility across machines and servers  
+- Eliminates “Python version mismatch” and system-level dependency issues  
+- Best for:
+  - Long-running scraping projects  
+  - Pipelines that multiple people need to run
+  - Deploying scrapers on remote machines or many VMs
+  
+---
+
+## Choice 5: Maintenance, Security & Compliance (continued)
 
 __Secrets Management__
 

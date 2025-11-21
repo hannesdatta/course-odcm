@@ -821,6 +821,44 @@ os.getenv("TEST_KEY")
 #
 
 # %% [markdown]
+# ## 11. Hashing User Identifiers Before Saving (Privacy-by-Design)
+#
+# When scraping or collecting logs, you should **never store clear-text usernames or IDs**.  
+# Instead, transform them into **salted hashes** so they cannot be traced back to individuals, even if the database is leaked.
+#
+# A *salt* is a secret random string added before hashing.  
+# This makes the hash irreversible and prevents “dictionary attacks” or guessing by brute-force.
+#
+# The example below shows how to hash a username securely before inserting it into a database or CSV.
+#
+
+# %%
+import hashlib
+import os
+
+# Generate or load your secret salt (store securely, not in Git!)
+# Here we generate it once for demonstration.
+salt = os.environ.get("SCRAPER_SALT") or "my-demo-salt-123"
+
+def hash_identifier(username: str) -> str:
+    """
+    Returns a salted SHA-256 hash of a sensitive identifier.
+    Safe for logging or database storage.
+    """
+    value = (salt + username).encode("utf-8")
+    return hashlib.sha256(value).hexdigest()
+
+# Example usage
+raw_username = "john_doe_1984"
+hashed_username = hash_identifier(raw_username)
+
+print("Raw username:   ", raw_username)
+print("Hashed version: ", hashed_username)
+
+# Save hashed_user to the database instead of the raw identifier.
+
+
+# %% [markdown]
 # # Summary
 #
 # In this notebook we illustrated:

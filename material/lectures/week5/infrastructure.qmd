@@ -7,6 +7,7 @@ format:
     beamer:
       theme: metropolis
       colortheme: seahorse
+      aspectratio: 169
       linkcolor: blue
 ---
 
@@ -26,7 +27,7 @@ format:
 ## Agenda
 
 1. Computer Infrastructure for Web Scraping
-2. Governance, Security & Compliance
+2. Monitoring, Maintenance and Security
 3. Summary
 
 # 1. Computer Infrastructure for Web Data Projects
@@ -157,7 +158,7 @@ __Cloud Object Storage__
   - storing images, larger files
 - Supports backup, versioning & retention policies natively
 
----
+# 2. Monitoring, Maintenance and Security
 
 ## Choice 4: Monitoring & Health Checks
 
@@ -231,7 +232,7 @@ __Secrets Management__
 
 ---
 
-## Governance, Security & Compliance (continued)
+## Choice 5: Maintenance, Security & Compliance (continued)
 
 __GDPR-Safe Infrastructure__
 
@@ -242,20 +243,6 @@ For any scraping that collects personal data:
 - delete identifiers when possible  
 - document processing & retention  
 - avoid personal laptops if insecure  
-
-## Governance, Security & Compliance (continued)
-
-__Ethical Scraping Practices__
-
-- Minimize scraping frequency  
-- Minimize amount of collected data  
-- Maintain audit logs  
-- Adapt scraping to public interest (research context)  
-- Use scheduling responsibly  
-- Avoid unnecessary load  
-
-
----
 
 # 3. Summary
 

@@ -1,6 +1,6 @@
 ---
 title: "Exam preparation (week 6)"
-subtitle: "Data Preparation and Programming Skills (2025/2026)"
+subtitle: "Online Data Collection & Management (2025/2026)"
 author: "Hannes Datta"
 date: "last-modified"
 format: 
@@ -20,22 +20,25 @@ format:
 
 ## Exam Setup
 
-- 120-minute on-campus computer exam (328059-M-6; 180 minutes for 328059-M-3)
-- Closed-book exam
-  - no internet access
-  - cheat sheets allowed (details will follow)
-- Four exam dates per academic year in block 1 & block 3 (max two attempts per academic year)
+- 120-minute on-campus computer exam (328060-M-6; 180 minutes for 328060-M-3) - __let's verify enrollment__
+- "Closed-book" exam
+  - __with__ internet
+  - access to the code of all tutorials and auxilary resources posted on Canvas (Python bootcamp, web scraping 101/adv., API 101/adv., computer infrastructure)
+  - one cheat sheet allowed (details will follow)
+- Two exam dates per academic year (in block 2)
 
 ## Exam Format
 
 - **Mix of open and closed questions** (e.g., multiple-choice, ranking (e.g., from low to high, high to low), matching items)
-- **120 points total** (~1 point per minute), 18 questions
-- **Questions aligned with learning goals** (tutorials + [dPrep book](https://dprep-book.hannesdatta.com))
-- **Cognitive skills assessed**: Comprehension, Application, Analysis, Synthesis, Evaluation
+- **120 points total** (~1 point per minute)
+- **Questions aligned with learning goals** (tutorials, lectures, slides, code posted to Canvas, papers/readings)
 
-## Bloom’s Taxonomy of Learning Objectives
+## Cognitive Skills
 
-- **Comprehension**: Recall key concepts and demonstrate understanding
+*Bloom’s Taxonomy of Learning Objectives*
+
+- **Knowledge**: Recall key concepts 
+- **Comprehension**: Demonstrate understanding of key concepts
 - **Application**: Use techniques to solve new problems
 - **Analysis**: Break down and solve complex tasks (e.g., using datasets, workflows)
 - **Evaluation**: Critically judge suitability of approaches or compare solutions
@@ -43,13 +46,14 @@ format:
 
 ## Overview of Questions
 
-| LG                          | Tutorial  | Book |
-|-----------------------------|--------|-------|
-| Use R for data cleaning     | 2x 10P          | 4P (1Q), ch. 7  |
-| Use GitHub for project mgmt | -            | 12P (4Q), ch. 2, 5 |
-| Use Git/GitHub for versioning| 24P          | 12P (4Q), ch. 6 |
-| Use R for automatic reports | 12P          | 6P (2Q), ch. 4 |
-| Use Workflow Mgmt Tools      | 24P          | 6P (2Q), ch. 3, 8 |
+| No. | Learning goal | Evaluation Level | Question Type | Points |
+|---|------------------------|-------------|------|-----|
+| 1 | Explain web data in academic literature  | Comp. | MC | 12
+| 2 | Select web data sources and evaluate value | Knowledge & Eval. | MC & Open | 24
+| 3 | Design collections balancing V/TF/LER | MC & Open | 24
+| 4 | Collect data with scraping/APIs | Applic. & Synthesis | Coding | 48 |
+| 5 | Document & archive for public (re)use | Knowledge | MC | 12 |
+|   | Total  | | | 120
 
 # Preparing for the Exam
 
@@ -70,22 +74,18 @@ format:
   - Practice using **Windows**, RStudio, and the command prompt (__not__ PowerShell; ideally Anaconda Prompt, sometimes GitBash).
 - **File management**:
   - Organize files by question in local folders (e.g., `C:\Users\<YOUR-U-NUMBER>\Downloads`).
-  - Know how to load `.RData` files (`load('downloaded_data.RData')`).
-  - Zip entire Git repositories before uploading.
-- **Code management**:
-  - Set working directories in RStudio via `Session → Set Working Directory → To Source File Location`.
+  - Know how to open `.ipynb` files 
+  - Zipping (before uploading) / unzipping (when downloading)
   - Revise code for clean (top-down!) execution. No useless code.
-
+- **Use of the Inspect Mode**
+  - Inspect mode not available in Edge; __use Chrome__ (installed)
 
 ## Cheatsheets
 
-- **Official cheatsheets** for R, make, and Git will be provided during the exam (view [previous year's cheatsheets](https://github.
-com/hannesdatta/course-dprep/raw/main/material/exam/cheatsheets/cheatsheets-exam.
-zip))
 - **Collective cheatsheet**
   - Drafted collaboratively in Google Docs, reviewed by the instructor, and shared as PDF.
-  - [Link to the document](https://docs.google.com/document/d/1ufyP0bcndNBltN6efJ87HdI0nthpgMQVSS-Flyr-zpU/edit?usp=sharing)
-  - Deadline to make your changes: 10 October 2025, 1pm.
+  - [Link to the document](https://docs.google.com/document/d/1-Wm94h54ftJ8NDIHAbFoB-O3LeEF4eGlM_xi1delzUs/edit?usp=sharing)
+  - Deadline to make your changes: 10 December 2025, 1pm.
   - I will review the document, make changes where required, and add it to the Cheatsheets.
 
 ## TestVision’s Introduction Page
@@ -96,28 +96,11 @@ zip))
 
 ## Questions so far?
 
-# Example Questions
-
-## Example Questions 
-
-see PDF file posted on Canvas
-
-## Ideas for Developing Your Proficiency
-
-- Work through the example questions and tutorials.
-- Download data and create own "engineering" questions using common data operations from tutorial #3.
-- Share (public) links to your teams’ GitHub repositories & fork and clone them.
-  - `make`: run workflows with `make` (using the README); does it run? if not, can you fix the `makefile`?
-  - Git/GitHub: work on someone else’s project (new feature branch, improve code, commit to your fork, and make a PR); *receiving teams*: review contributions and integrate PRs.
-
-Above all, see this exam preparation *not* just as exam study, but as a way to strengthen and share your skills.
-
-## Remaining questions?
-
 ## Next steps
 
 - Course evaluation
 - Closing lecture next week
 - Final coaching session (Roshini)
+
 <br>
 Thanks!

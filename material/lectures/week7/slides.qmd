@@ -1,35 +1,25 @@
-oDCM - Course Summary & Exam Preparation
-========================================================
-author: Hannes Datta
-date: 
-autosize: true
+---
+title: "Final Lecture (week 7)"
+subtitle: "Online Data Collection & Management (2025/2026)"
+author: "Hannes Datta"
+date: "last-modified"
+format: 
+    beamer:
+      theme: metropolis
+      colortheme: seahorse
+      linkcolor: blue
+---
 
-<style>
-.small-code pre code {
-  font-size: 1em;
-}
-</style>
 
-<!--#
+## Welcome to the final lecture in oDCM!
 
-https://support.rstudio.com/hc/en-us/articles/200486468
--->
 
-Welcome to the final lecture in oDCM!
-========================================================
-
-<br>
-<br>
-
-If you haven't done so, please **explore the exam page & example questions** at [https://odcm.hannesdatta.com/docs/exam]().
+If you haven't done so, please **explore the exam page & example questions** on Canvas (updated!)
 
 The __course evaluation__ is live at https://app.evalytics.nl. Please voice your opinions!
 
-<!--The __course evaluation__ is live at https://app.evalytics.nl. Please voice your opinions!
--->
 
-Agenda
-========================================================
+## Agenda
 
 - Course summary
 - From here onwards
@@ -39,14 +29,13 @@ Agenda
 - Exam preparation
 - Remaining questions
 
-Positioning in the study program
-========================================================
+## Positioning in the study program
 
 ![odcm](odcm_positioning.png)
 
-Lessons learnt #1: Why to use web data?
-========================================================
-incremental: true
+# Course Summary
+
+## Lessons learnt #1: Why to use web data?
 
 - Research is by far more impactful than non-webdata-based research
   - Explore novel phenomena, be timely!
@@ -57,25 +46,19 @@ incremental: true
   - Programming skills to master technical challenges
   - Conceptual thinking to navigate design choices & legal risks
   
-Lessons learnt #2: Staying in balance
-========================================================
-incremental: true
+## Lessons learnt #2: Staying in balance
 
 ![odcm](methodological_framework.png)
 
 __Let's generate a few examples where validity, legal and technical goals conflicted in your projects.__
 
-Lessons learnt #3: Data Source Selection
-========================================================
-incremental: true
+## Lessons learnt #3: Data Source Selection
 
 - Important of "broadening horizon" (e.g., assume perspective of various stakeholders, exceed geographical boundaries, use aggregators rather than primary data providers)
 - Consider alternatives to scraping (i.e., avoid defaulting! e.g., APIs, but also ready-made data sets)
 - Scope the data context (i.e., understand how the data is generated, assess reliability of the data, explore user conversations about the data, etc.)
 
-Lessons learnt #4: Design Challenges (I)
-========================================================
-incremental: true
+## Lessons learnt #4: Design Challenges (I)
 
 - Look out for information - especially the "surprising ones!"
 - Look out for *variables* (e.g., to compare to other studies), but also to see *time availability* differences
@@ -83,9 +66,7 @@ incremental: true
 - Real-time data collection required?! (e.g., wrong historical data, inaccurate timestamps?)
 - Algorithmic biases present? Can exert control?
 
-Lessons learnt #5: Design Challenges (II)
-========================================================
-incremental: true
+## Lessons learnt #5: Design Challenges (II)
 
 - How long does the data collection run?
 - How to sample/seed?
@@ -93,9 +74,7 @@ incremental: true
 - At what frequency to extract the data (e.g., once? multiple times?)
 - How to process the data on-the-fly? (e.g., first store as JSON, then parse; pandas-based parsing)
 
-Lessons learnt #6: Design Challenges (III)
-========================================================
-incremental: true
+## Lessons learnt #6: Design Challenges (III)
 
 - Scientific purpose, and run by research institution?
 - Scale and scope? (all data vs. small sample? running time)
@@ -103,9 +82,7 @@ incremental: true
 - "Go" decision from provider? Technical intrusiveness?
 - Data management & use, commercialization
 
-Lessons learnt #7: Extraction
-========================================================
-incremental: true
+## Lessons learnt #7: Extraction
 
 - Prototyping is extremely important
   - `requests` + `beautifulSoup` vs. `selenium` (Chromedriver)
@@ -118,8 +95,7 @@ incremental: true
   - Generate plots, descriptive stats
   - Think as a "data supplier" rather than narrowly focusing on *one* (research) question
 
-Lessons learnt #8: Web Scraping in Retailing
-========================================================
+## Lessons learnt #8: Web Scraping in Retailing
 
 - Based on Guyt et al. 2024
 - Research opportunities
@@ -128,17 +104,15 @@ Lessons learnt #8: Web Scraping in Retailing
   - Overcoming matching challenges and time alignment
   - LLMs for web scraping
 
-Looking ahead: Recognizing Limitations
-========================================================
-incremental: true
+# Looking ahead...
+
+## Recognizing Limitations
 
 - Web data entails modeling challenges - not covered in this course (e.g., self-selection, endogeneity, "messy" data)
 - Web data can't give you all (i.e., it *looks* l ike internal clickstream data, but it is not) 
 - Legal and ethical issues not fully explored
 
-Potential Applications
-========================================================
-incremental: true
+## Potential Applications
 
 - Collecting data for Master thesis
   - tell my colleagues you have the skills
@@ -148,18 +122,14 @@ incremental: true
   - data was crucial to what I study
   - maybe *you are* a future researcher/PhD student? Start today! 
 
-Academic Opportunities from "what we study"
-========================================================
-incremental: true
+## Academic Opportunities from "what we study"
 
 1. Scout out emerging phenomena 
 2. Study phenomena that can't be captured otherwise (i.e., unobtrusively)
 3. Study diverse populations (e.g., moving being *WEIRD*, more socio-economic backgrounds + geographies)
 4. Generating realistic stimuli for experiments (e.g., brand logos)
 
-Academic Opportunities from "how we study" it
-========================================================
-incremental: true
+## Academic Opportunities from "how we study" it
 
 1. Unleashing real-time data collections (cf. historical)
 2. Conduct & support field experiments with a platform's user base
@@ -175,8 +145,9 @@ incremental: true
   - ...
 -->
 
-Next steps: Projects & SPA
-========================================================
+# Practical Arrangements
+
+## Projects & SPA
 
 - Please hand in so we can __make the data package public__! 
   - Take out any passwords (store as environment variables instead)
@@ -184,37 +155,33 @@ Next steps: Projects & SPA
   - Want to keep your names on the documentation or anonymize them? Choose.
   - Don't make statements that are too bold!
  
-- Re-read the [grading rubric on the course site](https://odcm.hannesdatta.com/docs/project/grading/)!
+- Re-read the grading rubric
 
 - You will receive __invite to self- and peer assessment__ via email
 
-Exam
-=============
+## Exam
 
 - Organization
-  - When: 1 April (time? check Osiris/registration)
-  - Work max. 3 hours on exam
+  - When: 18 December 
+  - Work max. 2 hours on exam
 - How?
   - access to TestVision
   - access to Jupyter Notebook
-  - I make selected resources [available on the instruction page](https://github.com/hannesdatta/course-odcm/raw/master/content/docs/exam/exam-material.zip); want to submit your own cheatsheet? Do so seven days before the exam (see link on Canvas) 
+  - I make selected resources available on the instruction page; want to submit your own cheatsheet? See link on Canvas (deadline: 10 December).
   
-Exam technicalities
-===================
+## Exam technicalities
 
 - You have access to a "Demo exam" on TestVision.
 - Let's walk through it!
 
-Exam content
-======
+## Exam content
 
-- let's look at [some questions now](https://odcm.hannesdatta.com/docs/exam/examplequestions/)
+- let's look at some questions now
 - prep well! Expect new websites (for scraping), new endpoints of APIs (of sites that you know), selenium
-- Internet is available; but: no use of sites/tools (e.g., ChatGPT), or our course Chatbot.
+- Internet is available; but: no use of sites/tools (e.g., ChatGPT), or Tilly.
 
-Exam tips
-========================================================
-incremental: true
+<!--
+## Exam tips
 
 - Practice scraping an unknown website
   - e.g., tutorials at tilburgsciencehub.com, 
@@ -222,9 +189,9 @@ incremental: true
   - focus on "category overview pages" & array misalignment -- the scraper will account for a large share of your grade
 - You will be asked to use `selenium` for some subquestions; `BeautifulSoup` will be the base
 - Cover "Fields of Gold" (2022), including the web appendix, sample size calculations and legal concerns (+ reason through challenges) + Guyt et al. 2024 (J. of Retailing) 
+-->
 
-Next steps: Official course evaluation
-========================================================
+## Next steps: Official course evaluation
 
 - Course evaluation has been immensely important to this course
   - This edition: updated tutorials, refined feedback on coaching support
@@ -235,23 +202,15 @@ Next steps: Official course evaluation
   - Scores are most important to show importance of this course
 - You will be invited via [Evalytics](https://app.evalytics.nl/)
 
-Informal feedback
-===============
+## Informal feedback
 
 - how to ease onboarding?
 - how to make sure all software (including Chromedriver is installed)?
 - Feel you've got enough support?
 
-Stay in touch!
-========================================================
+## Stay in touch!
 
-
-- Stay in touch
-  - [LinkedIn](https://www.linkedin.com/in/hannes-datta/),[YouTube](https://www.youtube.com/c/hannesdatta), [Twitter](https://twitter.com/hannesdatta)
-  - WhatsApp! +31 13 466 8938
-- Contribute to __Tilburg's Open Science initiatives__! 
-  - https://tilburgsciencehub.com as content developer / community manager
-  - change this course at https://github.com/hannesdatta/course-odcm
-<br><br>
-- __And, finally... let's show to the world how awesome your new skills are!__
+- WhatsApp! +31 13 466 8938
+- [LinkedIn](https://www.linkedin.com/in/hannes-datta/)
+- [YouTube](https://www.youtube.com/c/hannesdatta)
 

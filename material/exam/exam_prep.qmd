@@ -2,7 +2,7 @@
 title: "Exam preparation"
 subtitle: "Online Data Collection & Management (328060-M-6)"
 author: "Hannes Datta"
-date: 2025-11-20
+date: 2025-12-01
 format:
   pdf:
     code-overflow: wrap   # or scroll (wrap works better in PDF)
@@ -18,8 +18,8 @@ format:
 \newpage
 
 :::{.callout-warning title="Watch Out for Updates"}
-- Please note that this is the first draft for the example questions; updates may be posted on Canvas. 
-- Updated will always accompanied by Canvas Announcements.
+- Updated on 1 December 2025
+- Please note that this is the second draft for the example questions; updates may be posted on Canvas, always accompanied by Canvas Announcements.
 :::
 
 # Introduction
@@ -27,6 +27,7 @@ format:
 - The exam consists of __open and closed (multiple-choice, ranking, matching) questions__, structured along the learning goals of this course.
 - Cognitive skills that will be tested are knowledge, comprehension, analysis, application, synthesis and evaluation.
 - You can expect to work two hours on the exam.
+- Closed questions are subject to a guessing correction, directly calculated by the testing algorithm in TestVision. In other words: leave closed questions that you are unsure of unanswered, rather than guessing an answer.
 - Material covered: all readings, lectures (& recordings), tutorials (Jupypter Notebooks, recordings, slides) and code snippets posted to Canvas.
 
 ## Overview of Questions
@@ -63,7 +64,6 @@ b) FALSE
 
 *Correct answer: a*
 
-
 #### Q1.1.2 (3P)
 
 The article "Unlocking the Potential of Web Data for Retailing Research" (Guyt, Datta, and Boegershausen 2024) discusses the use of web data in understanding consumer behaviors. Which area of retail research does it specifically highlight as having benefited from web data analysis?
@@ -74,7 +74,6 @@ c) online consumer reviews and their impact
 d) inventory management of assortments
 
 *Correct answer: c*
-
 
 ## Learning Goal 2
 
@@ -110,9 +109,9 @@ Please consider the API documentation of Chartmetric, available at https://api.c
 
 Then, answer the following questions.
 
-1) Please select and name an endpoint that would allow you to collect the desired data set. Briefly argue why this endpoint provides the suitable data (50 words max.).
-2) Given the endpoint selected and named in (1), please justify whether you require an archival or a live data collection to collect the desired data (75 words max.)
-3) After a bit of prototyping, you obtain the following JSON object from the API:
+a) Please select and name an __endpoint__ that would allow you to collect the desired data set. Briefly argue why this endpoint provides the suitable data (50 words max.).
+b) Given the endpoint selected and named in (a), please justify whether you require an archival or a live data collection to collect the desired data (75 words max.)
+c) After a bit of prototyping, you obtain the following JSON object from the API:
 
 ```
 {"status_code": 401,
@@ -122,10 +121,14 @@ Then, answer the following questions.
 }
 ```
 
-(a) How much time will have to pass before the data collection can proceed?
-(b) And how many data points do you expect to gather per hour? (75 words max.)
+- How much time will have to pass before the data collection can proceed?
+- And how many data points do you expect to gather per hour? (75 words max.)
 
 Please provide your answer below, in no more than 200 words. Make use of formatting to indicate which subquestion you are answering.
+
+<!-- 
+what would be other ways to evaluate feasibility of data sources?
+-->
 
 ## Learning Goal 3
 
@@ -164,6 +167,17 @@ d) It may introduce confounding variables by altering the variables in this rese
 
 *Correct answer: b*
 
+#### Q3.1.3 (6P)
+
+A team collects product data repeatedly in Python and saves it in a file-based SQLite database while protecting API keys and user IDs. Which statements are correct?
+
+a) Adding a secret salt before hashing an identifier makes it more secure than hashing without a salt.
+b) If a container image does not copy the `.env` file in its Dockerfile, the API key inside `.env` is not baked into the image.
+c) SQLite cannot store more than one record for the same item_id, even if timestamps differ.
+d) Tables in SQLite work like spreadsheets, where each table can store different variables.
+
+*Correct answer: a, b, d*
+
 <!--
 
 #### Q3.1.2 (6P)
@@ -190,7 +204,31 @@ Live vs archival web scraper
 
 #### Q3.2.1 (12P)
 
-Identify and discuss two out of the five broad topics that need to be addressed when seeking legal counsel about web data collection. For each of your two selected topics, provide an example and explain how you can address it in a research study. Provide your answer in two paragraphs, format in bold the name of the topic, and use less than 100 words in total.
+A data team at a young market-insights company, PriceScout, collects public product ratings from an online marketplace to study pricing and customer sentiment. The company does not collect personal identifiers. During development, two platform safeguards interfere with their automation: a pay-per-view paywall on high-resolution product images, and a clause in the usage rules page that states automated data collection cannot extract “substantial parts” of the platform’s structured content for competitive resale.
+
+Write two concise paragraphs (in <200 words) that: 
+
+- identify which two legal pillars become relevant due to these platform defenses, 
+- explain in clear language what interests those pillars protect for the platform, and 
+- recommend practical safeguards collectors can apply at the data-design or access level to lower risk while keeping the focus on product insights, not personal data.
+
+*Model answer:*
+*Digital marketplaces commonly defend access through the Technical Access pillar. A pay-per-view paywall on high-resolution images is a deliberate access boundary that protects platform stability and monetization. Automated collectors may view ratings publicly, but mass-pulling premium images looks like system exploitation, which platforms treat as a risk to their core service environment.*
+*The second pillar triggered can correctly be either Intellectual Property (reviews, product images, and structured presentation are platform-owned investments) or Terms of Service (usage rules act like contracts governing acceptable automation and data reuse). Both pillars protect the platform’s data investment, prevent resale-like extraction, and require collectors to minimize copied content. Risks can be mitigated by avoiding premium image scraping, collecting only factual fields such as ratings and timestamps, and storing any raw files in secure or restricted environments. A valid trade-off is losing detail for image-focused analysis, but this keeps compliance effort lower and protects project legitimacy without touching personal data.*
+
+#### Q3.2.2 (12P)
+
+A data team at ReviewSense collects product star-ratings and review timestamps from a public marketplace to analyze sentiment and price patterns. Their automation runs into two defenses: the platform requires an account login to access full review text in bulk, and it also uses IP-based request blocking when traffic shows patterns similar to copying a structured database. The team wants product insights only and avoids personal data.
+
+In two short paragraphs (< 200 words), analyze:
+
+- which two legal pillars become relevant due to these barriers or protections,
+- what interests those pillars protect for the platform, and
+- how the team could adjust data collection or access choices to mitigate legal and compliance risk while still studying product-level facts and sentiment.
+
+*Model answer:*
+*Platforms sometimes rely on login walls to protect technical access to content that is structured and valuable in depth, such as full review databases. Even when star-ratings and timestamps are public, requiring an account for bulk extraction indicates a protected access layer. If collectors automate inside this layer, platforms may treat it as unauthorized system access, raising Technical Access risk principles. These protections preserve system integrity and ensure the platform, not external tools, controls large automated demand.*
+*A second relevant pillar can correctly be either Intellectual Property, because product reviews and images represent the platform’s investment in collecting and structuring data, or Terms of Service, because rules pages that set usage limits govern what automation is allowed, even for public product facts. Both pillars protect data investment from substantial competitive extraction. Risk can be mitigated by limiting collection to non-premium, product-level fields (ratings, timestamps, prices), and avoiding automation behind login walls or deep structured databases. This reduces compliance cost while keeping sentiment analysis possible, but forfeits full-text or image mining depth—a valid risk-reduction trade-off that protects legitimacy without collecting personal identifiers.*
 
 <!--
 #### Q3.2.2 (12P)

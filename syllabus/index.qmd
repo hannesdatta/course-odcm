@@ -10,16 +10,19 @@ author: Hannes Datta
 
 ## Course Description
 
-The internet provides a wealth of information that can be used for academic and business purposes. This course is designed to equip students with the skills to collect such **web data** at scale. Through hands-on training, students will learn how to extract data from publicly available websites (e.g., social networks, digital media platforms, or price comparison websites) through the techniques of **web scraping** and **Application Programming Interfaces (APIs)**. Specifically, this course will cover these techniques using Python, and apply them to real-world data sets from websites and APIs.
+**Collecting data from public websites** (such as social media platforms) and **enriching it using Large Language Models (LLMs)** has become an important skill for both academic research and business decision-making. In this course, students learn how to reliably collect and enrich online data using **web
+scraping and Application Programming Interfaces (APIs)**. 
+
+Through **hands-on Python tutorials**, students work through the main steps of an online data collection workflow. The course also discusses key challenges that arise when working with online data, including issues of validity, technical feasibility, and the legal and ethical considerations involved in collecting and processing data at scale. 
 
 ### Learning goals
 
 After successful completion of this course, students will be able to:
 
--   Explain how to use web data for creating marketing insight[^1]
--   Select web data sources and evaluate their value to inform a specific research context or business problem
--   Design the web data collection while balancing validity, technical feasibility, and exposure to legal/ethical risks
--   Collect data via web scraping and APIs by mixing, extending, and repurposing code snippets
+-   Explain how to use and enrich (web) data for creating marketing insight[^1]
+-   Select and evaluate data sources for specific research or business needs
+-   Design data collection workflows, balancing validity, technical feasibility, and legal/ethical risks
+-   Collect data via web scraping and Application Programming Interfaces (APIs) in Python, with and without LLM assistance
 -   Document and archive collected data and make it available for public (re)use
 
 [^1]: Based on (1) Boegershausen, Johannes, Hannes Datta, Abhishek Borah, and Andrew T. Stephen (2022). “Fields of Gold: Scraping Web Data for Marketing Insights.” *Journal of Marketing*. [Download paper](https://doi.org/10.1177/00222429221100750) and (2) Guyt, Jonne, Hannes Datta, and Johannes Boegershausen (2024). "Unlocking the Potential of Web Scraping for Retailing Research." *Journal of Retailing*. [Download paper](https://doi.org/10.1016/j.jretai.2024.02.002).
@@ -37,13 +40,15 @@ When collecting web data for their research, students mostly rely on a mix of bo
 ## Prerequisites
 
 -   The course uses **Python** for the technical implementation of collecting web data. The course welcomes novices, of whom a significant investment of effort and time is required to learn the necessary skills.
--   Preparation material (before the course starts) is available in the form of Jupyter Notebooks or course recommendations at Datacamp. Novices may further benefit from following other courses at Tilburg University in which Python is used, for example, *Research Skills: Data Processing* and *Research Skills: Data Processing Advanced*.
--   Students are recommended to use the their computer for this course. Windows and Mac users can typically install all required software easily. Linux users may require some advanced understanding of their operating system to install all required software. Android/Chromebook/iOS devices are not supported. The exam is held on campus, using Windows computers. Mac and Linux users are strongly advised to practice on the on-campus computers before the exam. Tutorial sessions are usually scheduled in computer rooms exactly for this purpose.
+-   Preparation material is shared with students on Canvas before the start of the course.
+-   Students are recommended using their computer for this course. Windows and Mac users can typically install all required software easily. Linux users may require some advanced understanding of their operating system to install all required software. Android/Chromebook/iOS devices are not supported.
+-   The exam is held on campus, using Windows computers. Mac and Linux users are advised to practice on the on-campus computers before the exam. 
 
 ## Teaching format
 
--   Blended learning: a mix of lecturers, tutorials and coaching sessions, mostly on-campus, and sometimes online or prerecorded.
--   Learn state-of-the-art tools popular among scientists, marketing analysts, and data scientists (e.g., Python), and collect data from real websites and APIs.
+-   Blended learning: a mix of lecturers, tutorials and coaching sessions, mostly on-campus, and sometimes online or prerecorded. 
+
+-   Learn state-of-the-art tools popular among scientists, marketing analysts, and data scientists (e.g., Python), and collect data from real websites and APIs (e.g., OpenAI).
 
 ## Assessment
 

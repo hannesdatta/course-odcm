@@ -18,3 +18,4 @@ slides.md
 /.quarto/
 *.quarto_ipynb
 *pdf
+*_files/

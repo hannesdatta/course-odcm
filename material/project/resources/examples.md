@@ -41,7 +41,6 @@ description: Apply useful (technical) tips.
   - [Wikipedia](https://wikipedia.com) is also locally available, but keep your maximum retrieval frequency at 1 page per second.
 - More advanced use cases
   - Ever tried extracting data from data widgets (e.g., like available at The New York Times)?
-  - [Netflix Home Screen Capture](https://github.com/hannesdatta/data-netflix)
   - [Playlist Promotions and New Releases at Spotify](https://github.com/hannesdatta/data-spotify-playlists-releases)
 
 ### APIs

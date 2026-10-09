@@ -25,7 +25,6 @@ Welcome to oDCM!
 
 We're about to start with __today's tutorial ("API 101")__.
 
-- If you haven't done so, open slides at https://odcm.hannesdatta.com/docs/modules/week4/ (I have just updated them)
 - Today's (live) code is available at [https://tiu.nu/livecoding](https://tiu.nu/livecoding) (refresh is needed when I update my code)
 - You can work in __Google Colab__ throughout this class
 
@@ -33,9 +32,7 @@ We're about to start with __today's tutorial ("API 101")__.
 Before we get started
 =====================
 
-- Recall: Exam dates have been set
-  - dPrep: 3 April 2025 (resit 27 June)
-  - oDCM: 1 April 2025 (resit 26 June)
+- Recall: Exam date is **TBA**. Please check Osiris for the exam and resit dates.
 - Mac users: Please familiarize yourselves with R/RStudio on Windows (i.e., try not to use your laptops today)
 - Presentations during next week's class
 

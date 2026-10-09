@@ -85,7 +85,7 @@ format:
 - **Collective cheatsheet**
   - Drafted collaboratively in Google Docs, reviewed by the instructor, and shared as PDF.
   - [Link to the document](https://docs.google.com/document/d/1-Wm94h54ftJ8NDIHAbFoB-O3LeEF4eGlM_xi1delzUs/edit?usp=sharing)
-  - Deadline to make your changes: 10 December 2025, 1pm.
+  - Deadline to make your changes: TBA.
   - I will review the document, make changes where required, and add it to the Cheatsheets.
 
 ## TestVision’s Introduction Page
@@ -100,7 +100,7 @@ format:
 
 - Course evaluation
 - Closing lecture next week
-- Final coaching session (Roshini)
+- Final coaching session (Jeroen)
 
 <br>
 Thanks!

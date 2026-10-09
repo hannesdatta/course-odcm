@@ -2,7 +2,7 @@
 title: "Syllabus"
 format: html
 editor: visual
-date: 2025-10-20
+date: 2026-10-19
 author: Hannes Datta
 ---
 
@@ -103,7 +103,7 @@ Curious to learn more? Check out [Tilburg's Diversity & Inclusion Policy](https:
 This course is instructed by
 
 -   [dr. Hannes Datta](https://hannesdatta.com), Associate Professor at the Marketing Department of Tilburg University (**course coordinator, tutorials & lectures**), and
--   [Roshini Sudhaharan, MSc.](https://www.linkedin.com/in/roshinisudhaharan/), Junior Lecturer at the Marketing Department of Tilburg University (**team project and coaching sessions**).
+-   [Jeroen Swolfs](https://www.tilburguniversity.edu/staff/j-a-j-d-swolfs), Junior Lecturer at the Department of Marketing of Tilburg University (**team project and coaching sessions**).
 
 ::: {.callout-note title=""}
 Join Hannes' professional network on [LinkedIn](https://www.linkedin.com/in/hannes-datta/), subscribe to his [YouTube Channel](https://youtube.com/c/hannesdatta), and start following him on [GitHub](https://github.com/hannesdatta).

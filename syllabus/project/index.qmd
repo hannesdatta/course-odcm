@@ -70,7 +70,7 @@ During the course, you will have the opportunity to meet up a lecturer for coach
 
 ### Submission
 
-- Deadline: 5 December, 2025 (23:59)
+- Deadline: 4 December, 2026 (23:59)
 - Submission of your data package on Canvas in one zip file.
 
 ### Permitted Level of AI Use
@@ -93,4 +93,3 @@ __Level of AI allowed for this assignment:__ AI-assisted idea generation and str
 
 ## Organization
 -->
-

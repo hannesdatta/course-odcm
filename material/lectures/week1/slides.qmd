@@ -55,7 +55,7 @@ If you haven't done so, please check out the **Canvas page** for this course:
 ::: incremental
 - Mix of lectures, teamwork and self-study — all are necessary
   - I do the tutorials, lectures and course coordination
-  - Roshini Sudhaharan will coach you on the team projects
+  - Jeroen Swolfs will coach you on the team projects
 - This is predominantly about web scraping and APIs — while I teach a bit of Python, becoming an expert requires years of practice  
 - About me
   - I record my lectures and post them on Canvas (remind me if I miss to post one--or forget to start the recording)
@@ -297,7 +297,7 @@ for song in api_request_json.get('chart'):
 ## Course structure I: Overview
 
 - Weeks 1-3: Tutorials (Hannes)
-- Weeks 4-7: Team Project (coach Roshini) + two lectures (Hannes, weeks 4-5)
+- Weeks 4-7: Team Project (coach Jeroen) + two lectures (Hannes, weeks 4-5)
 
 
 ---
@@ -340,7 +340,7 @@ key responsibility: __Hannes Datta__
   * 5 group members (4 = exception)
 
 <br>
-Key responsibility: __Roshini Sudhaharan__
+Key responsibility: __Jeroen Swolfs__
 
 ---
 

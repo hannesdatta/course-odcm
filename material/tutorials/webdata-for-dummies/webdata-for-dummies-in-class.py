@@ -34,7 +34,7 @@
 # * Understand the difference between Jupyter Notebooks and “raw” Python files, and run collection via the command line/terminal
 #
 # <div class="alert alert-block alert-info"><b>Support Needed?</b> 
-#     For technical issues outside of scheduled classes, please check the <a href="https://odcm.hannesdatta.com/docs/course/support" target="_blank">support section</a> on the course website.
+#     For technical issues outside of scheduled classes, please check Canvas.
 # </div>
 #
 # ## What to expect in this tutorial

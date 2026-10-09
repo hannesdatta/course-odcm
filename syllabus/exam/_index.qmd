@@ -24,7 +24,7 @@ Key points to keep in mind:
 
 ## Date and Time
 
-- Please view the date & time directly on Osiris.
+- **TBA** — please view the date & time directly on Osiris.
 
 ## Exam Format
 

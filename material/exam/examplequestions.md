@@ -126,7 +126,7 @@ __This section is still work-in-progress (i.e., we are still adding examples and
 
 *Question type: Application*
 
-Write a function `url_detector()` that loads a list of URLs from the file [`urls.txt`](https://github.com/hannesdatta/course-odcm/blob/master/content/docs/course/exam/urls.txt), and filters that list for valid URLs, starting with `https` and containing a link to a product ID. Although you could rely on [regular expressions](https://tilburgsciencehub.com/building-blocks/develop-your-coding-skills/learn-to-code/learn-regular-expressions/) to get the job done, other simpler workarounds exist. How many URLs do you end up with?
+Write a function `url_detector()` that loads a list of URLs from the file [`urls.txt`](https://github.com/hannesdatta/course-odcm/blob/main/material/exam/urls.txt), and filters that list for valid URLs, starting with `https` and containing a link to a product ID. Although you could rely on [regular expressions](https://tilburgsciencehub.com/building-blocks/develop-your-coding-skills/learn-to-code/learn-regular-expressions/) to get the job done, other simpler workarounds exist. How many URLs do you end up with?
 
 
 ## 3. APIs
@@ -145,6 +145,6 @@ Review the following text in which a master student describes the institutional 
 
 {{< hint info >}}
 **Solutions**  
-The solutions of these example questions can be found [here](https://github.com/hannesdatta/course-odcm/blob/master/content/docs/course/exam/example_questions_solutions.ipynb). Keep in mind that there are often multiple ways to get to the same answer.
+The solutions of these example questions can be found [here](https://github.com/hannesdatta/course-odcm/blob/main/material/exam/example_questions_solutions.ipynb). Keep in mind that there are often multiple ways to get to the same answer.
 {{< /hint >}}
 -->

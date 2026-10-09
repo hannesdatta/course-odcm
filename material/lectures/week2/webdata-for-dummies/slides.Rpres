@@ -33,7 +33,7 @@ Welcome to oDCM!
 We're about to start with __today's tutorial ("web data for dummies")__.
 
 - If you haven't done so, open this slide deck at (course material --> week 2) & corresponding [Jupyter Notebook](https://colab.research.google.com/github/hannesdatta/course-odcm/blob/master/content/docs/modules/week2/webdata-for-dummies/webdata-for-dummies-in-class.ipynb)
-- Coaching sessions start after today's tutorial (with Roshini) + finalize team assignment on Canvas
+- Coaching sessions start after today's tutorial (with Jeroen) + finalize team assignment on Canvas
 - You can work in Google Colab today
 
 Agenda
@@ -45,7 +45,7 @@ Agenda
   - Address some data selection challenges highlighted in "Fields of Gold"
 <br>
 - After class
-  - Check out today's [workplan](https://odcm.hannesdatta.com/docs/project/workplan/)
+  - Check out today's workplan on Canvas
   - Complete in-class tutorial and exercises; solutions available online
 
 When doing exercises...
@@ -699,5 +699,5 @@ Next steps in this class
 - Get engaged - see the "bigger" picture of web scraping and APIs
   - discuss ideas & business opportunities (e.g., OpenAI's developer platform?)
   - use our course chatbot at odcm.tilburgai.nl
-  - be in touch with Roshini (email) or myself (on WhatsApp) for any issues/bugs/etc.
-- __Coaching session__: Work on your team project (see workplan on the course website) + make team allocation definite (with Roshini)
+  - be in touch with Jeroen (email) or myself (on WhatsApp) for any issues/bugs/etc.
+- __Coaching session__: Work on your team project (see workplan on the course website) + make team allocation definite (with Jeroen)

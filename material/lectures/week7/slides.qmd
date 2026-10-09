@@ -180,7 +180,7 @@ __Let's generate a few examples where validity, legal and technical goals confli
 ## Exam
 
 - Organization
-  - When: 18 December 
+  - When: TBA (check Osiris)
   - Work max. 2 hours on exam
   - Main sit and resit in block 2 (the 6 ECTS version has these two exam opportunities, given this course is taught once per academic year; the 3 ECTS version has a main/resit in block 2 and a main/resit in block 3, though without accompanying course work in block 3)
 - How?
@@ -193,7 +193,7 @@ __Let's generate a few examples where validity, legal and technical goals confli
   - tables/figures from Boegershausen et al. (2022)
   - tables/figures from Guyt et al. (2024)
   - all code from tutorials (Jupyter Notebooks)
-  - collective cheatsheet: see [link](https://docs.google.com/document/d/1-Wm94h54ftJ8NDIHAbFoB-O3LeEF4eGlM_xi1delzUs/edit?usp=sharing), also on Canvas (deadline: 10 December 2025, 1pm).
+  - collective cheatsheet: see [link](https://docs.google.com/document/d/1-Wm94h54ftJ8NDIHAbFoB-O3LeEF4eGlM_xi1delzUs/edit?usp=sharing), also on Canvas (deadline: TBA).
 - Internet is available; but: no use of sites/tools (e.g., ChatGPT), or Tilly.
   - STRICTLY follow the instructions on which sites to access.
   
@@ -243,4 +243,3 @@ __Let's generate a few examples where validity, legal and technical goals confli
 - WhatsApp! +31 13 466 8938
 - [LinkedIn](https://www.linkedin.com/in/hannes-datta/)
 - [YouTube](https://www.youtube.com/c/hannesdatta)
-

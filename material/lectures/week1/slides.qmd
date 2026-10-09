@@ -413,7 +413,7 @@ Email = slower
 
 
 - Find a group and register by week 2 (4–5 students, mix skills!)  
-- Complete software installation & obtain licenses (includes premium Datacamp access)
+- Complete the software preparation and confirm access to JupyterLab
 - Most up-to-date info: Canvas &rarr; (weekly) modules
 
 <br>

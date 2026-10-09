@@ -40,23 +40,19 @@
 #
 # ### Working locally
 #
-# If you like having everything on your computer, the easiest way to install Python is through **Anaconda**.  
-# It comes with both **Jupyter Notebook** and **Visual Studio Code (VS Code)**, which are the two main tools we’ll use.
+# For this course, we use **JupyterLab at [jupyterlab.uvt.nl](https://jupyterlab.uvt.nl/)**.
+# It runs in your browser, so no local Python distribution is needed for this tutorial.
 #
-# - Download Anaconda here: [anaconda.com/products/distribution](https://www.anaconda.com/products/distribution)  
-# - Install it using the default settings.  
-# - After installation, open either:
-#   - **Jupyter Notebook** → great for step-by-step exploration.
-#   - **VS Code** → great for bigger projects.
+# If you prefer to work locally, install Python from the [official Python website](https://www.python.org/downloads/)
+# and use JupyterLab or Visual Studio Code.
 #
 # ---
 #
 # ### Working in the cloud
 #
 # If you don’t want to install anything yet, that’s totally fine!  
-# Just head over to [**Google Colab**](https://colab.research.google.com).  
-# It runs notebooks directly in your browser and automatically saves them in your Google Drive.  
-# You can follow all exercises there without setting up anything locally.
+# You can also use [**Google Colab**](https://colab.research.google.com) for experimentation.
+# However, JupyterLab at jupyterlab.uvt.nl is the standard environment for this course.
 
 # %% [markdown]
 # ## 1.2 Navigating the Command Line
@@ -78,14 +74,12 @@
 # These will come in handy later when we save our scraped data or navigate between project folders.
 
 # %% [markdown]
-# ## 1.3 Launching Jupyter Notebook or VS Code
+# ## 1.3 Launching JupyterLab
 #
-# Once Anaconda is installed, you can start **Jupyter Notebook** in one of two ways:
+# Open [JupyterLab at jupyterlab.uvt.nl](https://jupyterlab.uvt.nl/) and open this notebook.
 #
-# - Through the **Anaconda Navigator** app — click “Launch” next to Jupyter Notebook.  
-# - Or by typing `jupyter notebook` in your terminal and pressing Enter.  
 #
-# Jupyter will open a new browser window showing your folders. From there, you can open existing notebooks or create new ones.  
+# From there, you can open existing notebooks or create new ones.
 # Each notebook is made up of “cells,” which can contain either **code** or **text**.
 #
 # ---

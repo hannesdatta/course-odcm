@@ -1,40 +1,90 @@
 ---
 title: "Preparation before the course starts"
 format: html
-
 ---
 
-Obtaining data via web scraping and APIs isn't usually something you do "in your browser". Certainly for continuous data collections, a *local* setup is required. That's why you need to install software on your computer before you can get started. All the software used in this class is available open source, i.e., you don't need to pay for it.
+Obtaining data via web scraping and APIs requires more than a web browser. For the practical parts of this course, you will work with Python notebooks and web-based tools. The course notebook environment is [JupyterLab at jupyterlab.uvt.nl](https://jupyterlab.uvt.nl/).
 
-It's important to spend some time *before the beginning of the class* to install the required software, and familiarize yourself with Python.
+Please complete the following preparation before the first class.
 
-### 1) Install Python via Anaconda
+## 1) Get access to JupyterLab
 
-Please follow the installation guide for [Python via Anaconda](https://tilburgsciencehub.com/topics/Computer-Setup/software-installation/Python/python/). Already have Anaconda, but the installation has been done a while ago? Then please update Anaconda (execute `conda update --all` on your command prompt/terminal; see here for [details](https://www.anaconda.com/blog/keeping-anaconda-date)).
+Open [JupyterLab at jupyterlab.uvt.nl](https://jupyterlab.uvt.nl/) and check that you can log in. We will use this environment for the Python Bootcamp and the introductory tutorials. No local Python distribution is needed for this initial preparation.
 
-::: {.callout-note title="Tips for Installing Python/Anaconda"}
-- The installation of Anaconda can **easily take half an hour**! Please install it before the start of the class, and ensure you have administrator rights.
-- We recommend installing Anaconda (Anaconda 64-Bit Graphical Installer; version 3.13), which you find [here](https://www.anaconda.com/download/success). Make sure to select the __correct version for your operating system.__
-- In the tutorial (at 2:23), we open the Command Prompt. On Mac, this program is called Terminal (for more information on the command prompt/terminal, see tip box below).
-:::
+If you prefer to work locally, you may install Python from the [official Python website](https://www.python.org/downloads/) and use [JupyterLab](https://jupyter.org/install) or [Visual Studio Code](https://code.visualstudio.com/). A local installation is optional for the introductory work, but it may be useful for later tutorials that require browser automation.
 
-### 2) Obtain access to Premium Content at Datacamp.com
+## 2) Prepare a local setup for later tutorials
 
-We use material provided by Datacamp.com that otherwise is only available via paid premium subscriptions. Students can use this material with their `@tilburguniversity.edu` account for free. The link is provided as a link in the preparation module on Canvas.
+JupyterLab at `jupyterlab.uvt.nl` is sufficient for the Python Bootcamp, Web Scraping 101, and APIs 101. Before the advanced web-scraping tutorial, however, you should prepare a local Python setup with Visual Studio Code and a Chromium-based browser. Please do this in advance, even if you initially plan to work in JupyterLab.
 
-### 3) Getting to know Python
+### Install Python
 
-Eager for more? You can already follow the [introduction course to Python on Datacamp, __chapters 1-3__](https://datacamp.com/courses/intro-to-python-for-data-science). Novices will need about 3-4 hours. If you don't have the time, don't worry. In your first course week, we have set aside some time to work through the tutorial and exercises.
+Download Python from the [official Python downloads page](https://www.python.org/downloads/). Do not install Anaconda, Miniconda, or Conda. On Windows, use the standard graphical installer; on macOS, use the macOS installer provided on the Python website.
 
-::: {.callout-note title="Getting to know the terminal/command "}
+Check that Python is available after installation:
 
-On top of just installing software and getting to know Python, we also recommend familiarizing yourself with the command line (also called terminal). The command line is a text-based interface in which you can interact with your computer by entering commands. It's important to know how to use the command line when learning web scraping because many scraping tools and libraries are executed through command-line commands, allowing users to navigate directories, run scripts, and manage data extraction more efficiently.
+- **Windows Command Prompt:** open Command Prompt and run `py --version`.
+- **macOS Terminal:** open Terminal and run `python3 --version`.
 
-Never worked with the command line/terminal? Then please develop your command line (Windows) / terminal (Mac) skills!
+### Install Visual Studio Code
 
-- Check out the [Datacamp tutorial - first chapter only](https://www.datacamp.com/courses/introduction-to-shell)
-- Also check out [this presentation about the command line / terminal](https://generalassembly.github.io/prework/cl). 
-    - Though it is targeted to Mac users, it provides a great overview.
-    - Windows users could still follow along using *the same commands* by using Git Bash (or Cygwin). 
-    - The main goal here is to understand how directory structures work and how to navigate in the terminal or command line.
-:::
+Download and install [Visual Studio Code](https://code.visualstudio.com/download). In VS Code, install these extensions:
+
+- [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+- [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
+
+Open the course folder in VS Code. The Python and Jupyter extensions will allow VS Code to run local Python files and notebooks.
+
+### Install the packages for later tutorials
+
+Create a folder for the course, open a terminal in that folder, and run the following commands. These install the packages used by the active introductory, Selenium, and OpenAI tutorials.
+
+**Windows Command Prompt**
+
+```text
+python -m pip install --upgrade pip
+python -m pip install jupyterlab requests beautifulsoup4 pandas selenium webdriver-manager python-dotenv openai
+```
+
+**macOS Terminal**
+
+```text
+python -m pip install --upgrade pip
+python -m pip install jupyterlab requests beautifulsoup4 pandas selenium webdriver-manager python-dotenv openai
+```
+
+The packages above cover the active introductory, Selenium, and OpenAI tutorials; some tutorials may require additional packages or credentials stated in their own instructions.
+
+### Install a Chromium-based browser
+
+Install [Google Chrome](https://www.google.com/chrome/) or [Chromium](https://www.chromium.org/getting-involved/download-chromium/). Google Chrome is the simplest option for the current Selenium examples, which use `webdriver-manager` to obtain a compatible driver. You do not normally need to download ChromeDriver separately.
+
+To test the local setup, open a new VS Code notebook or Python file and run:
+
+```python
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
+
+driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+driver.get("https://music-to-scrape.org/")
+print(driver.title)
+driver.quit()
+```
+
+If the browser does not start, first confirm that Chrome or Chromium is installed and that VS Code is using the Python installation where you installed Selenium. The [Selenium documentation](https://www.selenium.dev/documentation/webdriver/getting_started/) provides further troubleshooting information.
+
+## 3) Get to know Python
+
+The course's own [Python Bootcamp](../../material/tutorials/pythonbootcamp/python-bootcamp.ipynb) is the required starting point. It introduces the Python concepts that you need for web data collection and APIs. The course does not depend on any external Python tutorial.
+
+If you would like additional practice, you may optionally use:
+
+- [Python for Everybody](https://www.py4e.com/)
+- [Kaggle Learn: Python](https://www.kaggle.com/learn/python)
+
+These resources are not required, assessed, or assumed in later course materials.
+
+## 4) Optional introduction to the command line
+
+The command line can be useful when managing files and running longer data collections, but it is not required for accessing JupyterLab. To practice navigating folders and using terminal commands, work through the exercises at [code-quest.hannesdatta.com](https://code-quest.hannesdatta.com).

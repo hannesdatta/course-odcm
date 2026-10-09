@@ -1,17 +1,27 @@
 ---
-title: "Week 6) Project Week"
+title: "Week 6) Project work and exam preparation"
 format: html
 draft: false
 ---
 
-## Preparation before the Lecture
+## Learning goals
+
+By the end of this week, you should understand:
+
+- how the course concepts apply to your own team project;
+- how to identify and address technical, methodological, legal, or documentation problems; and
+- how to prepare for the exam by reviewing the course material and example questions.
+
+## Preparation before the lecture
 
 - Work through the exam preparation material shared on Canvas
 
 ## Lecture
 
-- Exam Q&A
+- Exam preparation and Q&A
+- Questions about applying course concepts to the team projects
 
 ## Coaching
 
 - Online coaching session (#3)
+- Continue collecting, validating, and documenting your project data.

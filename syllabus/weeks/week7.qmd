@@ -5,14 +5,32 @@ draft: false
 ---
 
 
-## Lecture
+## Learning goals
 
-- Course summary
-- Final questions
+By the end of this week, you should understand:
+
+- the main opportunities and limitations of web data for research;
+- how data validity, technical feasibility, legal risk, and research value can conflict;
+- how to finalize and document a responsible web data project; and
+- how to identify and address remaining questions before the exam.
+
+## Closing lecture
+
+The closing lecture brings together the main lessons from the course:
+
+- why and when web data can strengthen research;
+- how to select and understand a data source;
+- design challenges involving extraction, looping, timing, infrastructure, and sampling;
+- legal and privacy considerations; and
+- limitations, opportunities, and responsible next steps.
+
+The lecture also includes course evaluation, exam preparation, and remaining questions.
 
 ## Coaching
 
 - Online coaching session (#4)
+- Finalize the project data package and documentation.
+- Complete the self- and peer-assessment requirements on Canvas.
 
 <!--
 

@@ -5,9 +5,17 @@ draft: false
 ---
 
 
+## Learning goals
+
+By the end of this week, you should understand:
+
+- why web data can provide valuable marketing or consumer insights;
+- how a research question, a data source, and a data-collection method need to fit together; and
+- which methodological, technical, and legal trade-offs shape a web data project.
+
 ## Lecture
 
-- On-campus lecture
+The lecture introduces web data as a research resource and provides frameworks for designing web data projects. It uses the following readings:
 
 ::: {.callout-note title="Readings"}
 The papers below provide guiding frameworks for the rest of this course, and chance is you'll have to read it a couple of times (e.g., first to get an overview, and later to appreciate and use the details in your project). 
@@ -15,7 +23,7 @@ The papers below provide guiding frameworks for the rest of this course, and cha
 - ["Fields of Gold: Scraping Web Data for Marketing Insights"](https://doi.org/10.1177/00222429221100750) 
 - ["Unlocking the potential of web data for retailing research"](https://doi.org/10.1016/j.jretai.2024.02.002)
 
-Note: The web appendices contain valuable tables, so don't skip them.
+Note: The web appendices contain valuable tables, so do not skip them.
 
 :::
 
@@ -27,3 +35,4 @@ Note: The web appendices contain valuable tables, so don't skip them.
 ## Coaching
 
 - Online coaching session (#1)
+- Start narrowing your team project and select a candidate website, API, or existing dataset.

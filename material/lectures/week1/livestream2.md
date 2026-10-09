@@ -33,13 +33,13 @@ Break
 3. Take questions on material so far
 4. Python Bootcamp (Tutorial)
   1. Run a quick survey
-          1. Completed installation of Python/Anaconda
-          2. Completed Introduction to Python on Datacamp
+          1. Confirmed access to JupyterLab at jupyterlab.uvt.nl
+          2. Opened the course Python Bootcamp
           3. Got familiar with Jupiter Notebook (the 30-minute video)
           4. Worked through the tutorial
           5. Used Google Colab
           6. Used my own Computer
-  2. Discuss difference between Anaconda, Python, Jupyter Notebook, and operating systems
+  2. Discuss the difference between Python, JupyterLab, and operating systems
   3. Explain need for Python
       1. Multi-purpose (web server, web scraping, automating, machine learning)
       2. High-level, relatively easy to learn
@@ -47,7 +47,7 @@ Break
       4. Open source
       5. Widely used in business/data science
       6. Platform independent
-  4. Go through content of Datacamp Course [pick stuff from it, explain why it matters]
+  4. Work through the course Python Bootcamp and explain why the concepts matter for web data
       1. Variables and types: e.g., string, e.g., number
       2. Type conversions: e.g., iteration number (print!)
       3. Python list (e.g., list of URLs): create a list

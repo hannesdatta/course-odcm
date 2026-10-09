@@ -772,7 +772,7 @@ The exact cover page for this year’s exam will be made available on Canvas in 
 
 ## Technical Tips & Beyond
 
-* **Get familiar with the exam environment**: practice using Windows, opening Jupyter Notebook, navigating with the command prompt (i.e., both the standard Windows command prompt as well as Anaconda Prompt), and setting working directories.
+* **Get familiar with the exam environment**: practice using Windows, opening JupyterLab, navigating files, and setting working directories.
 * **Know how to zip and unzip files** so you can upload or submit repositories without issues.
 * **Use and prepare cheatsheet**: one PDF file, printed cheatsheets are not allowed.
 * The **inspect mode in Edge is blocked**. Please **use Chrome** (installed) and access the inspect mode there.
@@ -784,7 +784,7 @@ The exact cover page for this year’s exam will be made available on Canvas in 
   * Be comfortable opening `.py` and `.ipynb` files, as well as `.json`, `.csv` and `.txt` files.
   * Know how to set environment variables via `.env` files.
 * **Finding working directories**:
-  * Be able to locate your working directory in all programs (Jupyter Notebook, VS Code, Explorer, Command Prompt, Anaconda Prompt).
+  * Be able to locate your working directory in JupyterLab, VS Code, and Explorer.
 * **Save time on exam day**: before the exam officially starts, open the required software (e.g., Jupyter Notebook) and set working directories so you can begin immediately.
 
 \newpage

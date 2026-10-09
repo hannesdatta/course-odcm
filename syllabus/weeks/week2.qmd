@@ -5,23 +5,45 @@ draft: false
 ---
 
 ## Learning goals
-- Retrieve and store web data in various formats using Python's requests library and browser inspection tools.
-- Extract and manipulate data from websites and APIs using BeautifulSoup and JSON handling techniques.
-- Apply programming concepts to automate data collection and understand the use of Jupyter Notebooks vs. raw Python files.
-- Learn how to extract data from static and dynamic websites
+
+By the end of this week, you should understand:
+
+- how information is organized and delivered through websites;
+- how researchers can collect information from static and interactive websites;
+- why different websites require different data-collection strategies; and
+- how technical choices affect the quality, completeness, and limitations of collected web data.
 
 ## Preparation before class
-- Ensure you have the necessary tools installed (e.g., BeautifulSoup, Selenium).
+
+- Review the relevant sections of the Python Bootcamp.
+- Make sure that you can access JupyterLab at [jupyterlab.uvt.nl](https://jupyterlab.uvt.nl/).
+- Bring questions or problems encountered while working through the Python Bootcamp.
 
 ## Tutorials
-- Web scraping 101
-- Web scraping Advanced
 
-<!--
-- Tutorial ([in-class slides](webdata-for-dummies/slides.html), <a href = 'webdata-for-dummies/webdata-for-dummies-in-class.ipynb' download>download tutorial</a>, [view tutorial in Google Colab](https://colab.research.google.com/github/hannesdatta/course-odcm/blob/master/content/docs/modules/week2/webdata-for-dummies/webdata-for-dummies-in-class.ipynb), solutions provided by students: <a href = 'webdata-for-dummies/webdata-for-dummies-exercise-scheduling.ipynb' download>download</a>, [Google Colab](https://colab.research.google.com/github/hannesdatta/course-odcm/blob/master/content/docs/modules/week2/webdata-for-dummies/webdata-for-dummies-exercise-scheduling.ipynb))
--->
+### Web Scraping 101
+
+This tutorial introduces the basic workflow for collecting data from webpages:
+
+- sending requests;
+- inspecting HTML;
+- parsing webpages with Beautiful Soup;
+- selecting elements and attributes; and
+- transforming extracted values into a structured dataset.
+
+### Web Scraping Advanced
+
+This tutorial introduces browser automation with Selenium. You will practice:
+
+- simulating selected user interactions;
+- scrolling, clicking, and filling in forms;
+- working with dynamically generated content; and
+- saving collected results as JSON.
+
+The advanced tutorial requires a local Python setup and is not designed for JupyterLab in the cloud.
 
 ## After class
-- Work through the tutorials at your own pace.
-- Register project teams on Canvas.
 
+- Work through the Web Scraping 101 and Web Scraping Advanced tutorials.
+- Begin identifying a possible website or API for your team project.
+- Register your project team on Canvas.

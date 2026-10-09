@@ -4,35 +4,46 @@ format: html
 draft: false
 ---
 
-__Learning Goals__
+## Learning goals
 
-- Get to know Python
-- Launch Jupyter Notebook and run code in Visual Studio Code
-- Know when it’s useful to use Google Colab in the cloud (vs. Jupyter Notebook)
-- Understand basic programming concepts in Python and their applications to collecting web data
-- See your first web scraper and make connections to an API (and know the difference between websites and APIs)
+By the end of this week, you should understand:
 
-__Preparation before class__
+- how Python and notebooks support the collection and analysis of web data;
+- how to use the main environments in which course code can run;
+- the basic programming ideas needed to work with web data; and
+- the difference between a website and an API.
 
-- Ensure you have completed all preparations, including software installation at Datacamp licenses, before the lecture. 
+## Preparation before class
 
-__Opening lecture and Python Bootcamp__
+- Log in to [JupyterLab at jupyterlab.uvt.nl](https://jupyterlab.uvt.nl/).
+- Open the course [Python Bootcamp](../../material/tutorials/pythonbootcamp/python-bootcamp.ipynb) and check that it runs.
+- If you want additional Python practice, you may optionally use [Python for Everybody](https://www.py4e.com/) or [Kaggle Learn: Python](https://www.kaggle.com/learn/python). These resources are not required for the course.
 
-- Introduction to the course
-- In-class tutorial: Python Bootcamp for web data
+## Opening lecture and Python Bootcamp
 
-::: {.callout-note}
-__Downloading to and starting the tutorial on your computer__
+The opening lecture introduces:
 
-- Right-click on the download link and select "download linked file as...".
-- Move the file to a convenient file location (e.g., somewhere in your course folder)
-- If the downloaded file is a `.zip` (compressed) file, unzip it.
-- Open Jupyter Notebook (e.g., using the terminal or the Anaconda Navigator), navigate to the folder where you stored the downloaded files, and open the `.ipynb` file from within Jupyter Notebook.
-- Start with the tutorial!
-:::
+- the structure of the course;
+- how Python will be used for web data collection;
+- notebooks, scripts, and cloud-based environments; and
+- the difference between websites and APIs.
 
-__After the lecture__
+During the Python Bootcamp, you will practice:
 
-- Work through the tutorial at your own pace.
-- Watch ["What is web scraping and what are Application Programming Interfaces (APIs)?"](https://videocollege.uvt.nl/Mediasite/Play/41afff385bd74db2af5fb8507350ea521d) (30 minutes)
-- Deepen your understanding of basic programming concepts by completing "Intro to Python for Data Science" (about 3 hours; [work on the first three chapters only](https://datacamp.com/courses/intro-to-python-for-data-science))
+- running Python code;
+- working with variables and basic data structures;
+- using conditions, loops, and functions;
+- inspecting and saving data; and
+- making a first connection to web scraping and APIs.
+
+## Tutorial
+
+- Python Bootcamp for web data
+
+Work through the notebook in JupyterLab. The tutorial is the course's self-contained introduction to the Python needed in later tutorials.
+
+## After the lecture
+
+- Continue working through the Python Bootcamp at your own pace.
+- Watch ["What is web scraping and what are Application Programming Interfaces (APIs)?"](https://videocollege.uvt.nl/Mediasite/Play/41afff385bd74db2af5fb8507350ea521d) (approximately 30 minutes).
+- Note any Python concepts or setup problems that remain unclear.

@@ -4,21 +4,34 @@ format: html
 draft: false
 ---
 
-## Learning Goals
+## Learning goals
 
-- Send HTTP requests to a web API and retrieve JSON responses
-- Use parameters to modify the results of an API call
-- Iterate over multiple pages of JSON responses
-- Extract and store results of an API request in lists of dictionaries and files
+By the end of this week, you should understand:
 
-<!--
-__Preparation before class__
-- Review the materials on web scraping basics.
--->
+- what APIs are and how they differ from ordinary websites;
+- how APIs provide structured access to data;
+- why APIs have rules and technical limits that researchers need to consider; and
+- how APIs can be used to collect, enrich, or transform research data.
+
+## Preparation before class
+
+- Review the relevant sections of the Python Bootcamp and Web Scraping 101.
+- Make sure that you can access JupyterLab at [jupyterlab.uvt.nl](https://jupyterlab.uvt.nl/).
 
 ## Tutorials
-- APIs 101
-- APIs Advanced
+
+### APIs 101
+
+This tutorial introduces API requests, parameters, JSON responses, pagination, and storing API results.
+
+### APIs Advanced
+
+This tutorial uses an AI API to introduce authenticated requests, prompt-based data enrichment, additional endpoints, and embeddings.
+
+API access may require a separate key or account. Follow the course instructions and never share API keys or commit them to a repository.
 
 ## After class
-- Work through the tutorials at your own pace.
+
+- Work through APIs 101 and APIs Advanced.
+- Compare the strengths and limitations of scraping and APIs for your team project.
+- Continue developing your project data-collection plan.

@@ -40,7 +40,7 @@ The course content will be tested in the form of a computer exam, taken on campu
 
 - Communication with anybody about the exam content is strictly prohibited.
 - You will be able to download ["cheatsheets"](exam-material.zip) from the exam's introduction page.
-- The exam makes use of the "open book" workspace. This means that technically, you are able to access the internet. However, it is strictly forbidden to use any other material accessible on the internet, other than described on the exam's cover page (which covers all the software used in class such as VS Code, Python, Anaconda, Jupyter Notebook, as well as Chrome, Edge and Firefox).
+- The exam makes use of the "open book" workspace. This means that technically, you are able to access the internet. However, it is strictly forbidden to use any other material accessible on the internet, other than described on the exam's cover page (which covers the software used in class, such as VS Code, Python, JupyterLab, Chrome, Edge, and Firefox).
 - The use of any other website/tool, including AI tools such as ChatGPT, OpenAI APIs, Bing Chat, Copilot, etc. is strictly forbidden.
 - Students must not mention their names or student numbers in any of the submitted files, except when being explicitly asked to do so. This is to ensure the exam can be graded anonymously.
 

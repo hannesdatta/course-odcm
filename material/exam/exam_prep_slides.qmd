@@ -71,7 +71,7 @@ format:
 ## Technical Tips
 
 - **Exam environment**:
-  - Practice using **Windows**, RStudio, and the command prompt (__not__ PowerShell; ideally Anaconda Prompt, sometimes GitBash).
+  - Practice using **Windows**, RStudio, and the file-management tools used in the course.
 - **File management**:
   - Organize files by question in local folders (e.g., `C:\Users\<YOUR-U-NUMBER>\Downloads`).
   - Know how to open `.ipynb` files 

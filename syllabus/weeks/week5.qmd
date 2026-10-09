@@ -4,10 +4,25 @@ format: html
 draft: false
 ---
 
+## Learning goals
+
+By the end of this week, you should understand:
+
+- why web data projects require appropriate infrastructure, storage, and monitoring;
+- how reliability, security, and reproducibility affect the value of collected data;
+- the main legal and privacy considerations involved in collecting web data; and
+- how researchers can reduce technical, legal, and ethical risks through design choices.
+
 ## Lecture
 
-- On-campus lecture
+The lecture consists of two parts:
+
+- **Computer infrastructure:** compute environments, scheduling, restartable scripts, storage, monitoring, maintenance, and security.
+- **Legal considerations:** technical access barriers, intellectual property and database rights, terms of service, privacy, GDPR, and risk minimization.
+
+The focus is on making defensible design choices rather than treating web scraping as automatically legal or illegal.
 
 ## Coaching
 
 - Online coaching session (#2)
+- Refine the technical, legal, and documentation choices for your team project.

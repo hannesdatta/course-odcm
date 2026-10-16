@@ -88,3 +88,10 @@ These resources are not required, assessed, or assumed in later course materials
 ## 4) Optional introduction to the command line
 
 The command line can be useful when managing files and running longer data collections, but it is not required for accessing JupyterLab. To practice navigating folders and using terminal commands, work through the exercises at [code-quest.hannesdatta.com](https://code-quest.hannesdatta.com).
+
+## 5) AI tools
+
+In this course we encourage and integrate usage of AI. The following options are available.
+- Tilburg.ai course chatbot ScrAPI: [tilburg.ai](https://chatbot.tilburg.ai/private/invite?token=324c6713-ff69-4cbb-b488-d64cba996c20)
+- VSCode Extension: tilburg.ai in vscode extension library and plug in an API-key on the [tilburg.ai API platform](https://api-portal.tilburg.ai/start)
+- GitHub Copilot Education: apply as a student for [github education](https://github.com/education) and connect your GitHub account to VSCode  (Proof of enrollment needs to be provided and it might take some days)

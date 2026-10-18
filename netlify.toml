@@ -1,0 +1,12 @@
+[build]
+  # The Quarto project and its source files live in this subdirectory.
+  command = "quarto render syllabus"
+  publish = "syllabus/_syllabus"
+
+[build.environment]
+  # Keep the build environment aligned with the version used to generate
+  # the checked-in syllabus output.
+  QUARTO_VERSION = "1.5.56"
+
+[[plugins]]
+  package = "@quarto/netlify-plugin-quarto"

@@ -3,21 +3,32 @@ title: "Preparation before the course starts"
 format: html
 ---
 
-Obtaining data via web scraping and APIs requires more than a web browser. For the practical parts of this course, you will work with Python notebooks and web-based tools. The course notebook environment is [JupyterLab at jupyterlab.uvt.nl](https://jupyterlab.uvt.nl/).
+Collecting data through web scraping and APIs requires more than a web browser. For the practical parts of this course, you will work with Jupyter Notebooks and Python scripts.
 
-Please complete the following preparation before the first class.
+Please complete the first two items before the first class. You do **not** need to install Python locally before the first class.
 
-## 1) Get access to JupyterLab
+## Required before the first class
+
+### 1. Check your access to JupyterLab
 
 Open [JupyterLab at jupyterlab.uvt.nl](https://jupyterlab.uvt.nl/) and check that you can log in. We will use this environment for the Python Bootcamp and the introductory tutorials. No local Python distribution is needed for this initial preparation.
 
 If you prefer to work locally, you may install Python from the [official Python website](https://www.python.org/downloads/) and use [JupyterLab](https://jupyter.org/install) or [Visual Studio Code](https://code.visualstudio.com/). A local installation is optional for the introductory work, but it may be useful for later tutorials that require browser automation.
 
-## 2) Prepare a local setup for later tutorials
+### 2. Start the Python Bootcamp
 
-JupyterLab at `jupyterlab.uvt.nl` is sufficient for the Python Bootcamp, Web Scraping 101, and APIs 101. Before the advanced web-scraping tutorial, however, you should prepare a local Python setup with Visual Studio Code and a Chromium-based browser. Please do this in advance, even if you initially plan to work in JupyterLab.
+The course does not depend on any pre-work in Python. Yet, if Python is entirely new to you, you may use:
 
-### Install Python
+- [Python for Everybody](https://www.py4e.com/)
+- [Kaggle Learn: Python](https://www.kaggle.com/learn/python)
+
+These resources are not required, assessed, or assumed in later course materials.
+
+## Recommended before the first class
+
+For advanced tutorials starting in week 2, you should prepare a local Python setup with Visual Studio Code and a Chromium-based browser. Please do this in advance, even if you initially plan to work in JupyterLab.
+
+### 3. Install Python
 
 Download Python from the [official Python downloads page](https://www.python.org/downloads/). Do not install Anaconda, Miniconda, or Conda. On Windows, use the standard graphical installer; on macOS, use the macOS installer provided on the Python website.
 
@@ -26,40 +37,40 @@ Check that Python is available after installation:
 - **Windows Command Prompt:** open Command Prompt and run `py --version`.
 - **macOS Terminal:** open Terminal and run `python3 --version`.
 
-### Install Visual Studio Code
+### 4. Install Visual Studio Code
 
 Download and install [Visual Studio Code](https://code.visualstudio.com/download). In VS Code, install these extensions:
 
 - [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 - [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
 
-Open the course folder in VS Code. The Python and Jupyter extensions will allow VS Code to run local Python files and notebooks.
+Open the folder containing the tutorial files in VS Code. The Python and Jupyter extensions will allow VS Code to run local Python files and notebooks.
 
-### Install the packages for later tutorials
+### 5. Install packages for later tutorials
 
-Create a folder for the course, open a terminal in that folder, and run the following commands. These install the packages used by the active introductory, Selenium, and OpenAI tutorials.
+Create a short, easy-to-find folder for the course files, open a terminal in that folder, and run the following commands. These install the packages used by the tutorials currently included in the course.
 
 **Windows Command Prompt**
 
 ```text
-python -m pip install --upgrade pip
-python -m pip install jupyterlab requests beautifulsoup4 pandas selenium webdriver-manager python-dotenv openai
+py -m pip install --upgrade pip
+py -m pip install jupyterlab requests beautifulsoup4 pandas selenium webdriver-manager python-dotenv openai
 ```
 
 **macOS Terminal**
 
 ```text
-python -m pip install --upgrade pip
-python -m pip install jupyterlab requests beautifulsoup4 pandas selenium webdriver-manager python-dotenv openai
+python3 -m pip install --upgrade pip
+python3 -m pip install jupyterlab requests beautifulsoup4 pandas selenium webdriver-manager python-dotenv openai
 ```
 
-The packages above cover the active introductory, Selenium, and OpenAI tutorials; some tutorials may require additional packages or credentials stated in their own instructions.
+The packages above cover the tutorials currently included in the course. Some tutorials may require additional packages or credentials; their own instructions will explain this.
 
-### Install a Chromium-based browser
+### 6. Install a Chromium-based browser
 
 Install [Google Chrome](https://www.google.com/chrome/) or [Chromium](https://www.chromium.org/getting-involved/download-chromium/). Google Chrome is the simplest option for the current Selenium examples, which use `webdriver-manager` to obtain a compatible driver. You do not normally need to download ChromeDriver separately.
 
-To test the local setup, open a new VS Code notebook or Python file and run:
+To test the local setup, open a new VS Code notebook or Python file and run the following code. This test is only needed when you prepare for the advanced web-scraping tutorial:
 
 ```python
 from selenium import webdriver
@@ -72,26 +83,20 @@ print(driver.title)
 driver.quit()
 ```
 
-If the browser does not start, first confirm that Chrome or Chromium is installed and that VS Code is using the Python installation where you installed Selenium. The [Selenium documentation](https://www.selenium.dev/documentation/webdriver/getting_started/) provides further troubleshooting information.
+If the browser does not start, first confirm that Chrome or Chromium is installed and that VS Code is using the Python installation where you installed Selenium. Also check that your internet connection allows the driver download. The [Selenium documentation](https://www.selenium.dev/documentation/webdriver/getting_started/) provides further troubleshooting information.
 
-## 3) Get to know Python
+### 7. Set up AI tooling
 
-The course's own [Python Bootcamp](../../material/tutorials/pythonbootcamp/python-bootcamp.ipynb) is the required starting point. It introduces the Python concepts that you need for web data collection and APIs. The course does not depend on any external Python tutorial.
+In this course, we integrate Large Language Models (LLMs) and agentic coding into some activities.
 
-If you would like additional practice, you may optionally use:
+- For *feedback* on your web-scraping projects, please use [ScrAPI on Tilly](https://chatbot.tilburg.ai/private/invite?token=324c6713-ff69-4cbb-b488-d64cba996c20). Follow the link and accept the invite.
+- To integrate LLMs into your coding environment, install the [tilburg.ai VS Code extension](https://marketplace.visualstudio.com/items?itemName=Tilburgaichat.tilburg-ai) and generate an API key through [Tilburg University's API Platform](https://api-portal.tilburg.ai/start). The relevant tutorials will explain when you need to use these tools.
+- Do not enter private, confidential, or personally identifiable information into an AI tool.
 
-- [Python for Everybody](https://www.py4e.com/)
-- [Kaggle Learn: Python](https://www.kaggle.com/learn/python)
+<!--- Optional:
+- GitHub Copilot Education: apply as a student for [github education](https://github.com/education) and connect your GitHub account to VSCode  (Proof of enrollment needs to be provided and it might take some days)
+-->
 
-These resources are not required, assessed, or assumed in later course materials.
-
-## 4) Optional introduction to the command line
+### 8. Optional introduction to the command line
 
 The command line can be useful when managing files and running longer data collections, but it is not required for accessing JupyterLab. To practice navigating folders and using terminal commands, work through the exercises at [code-quest.hannesdatta.com](https://code-quest.hannesdatta.com).
-
-## 5) AI tools
-
-In this course we encourage and integrate usage of AI. The following options are available.
-- Tilburg.ai course chatbot ScrAPI: [tilburg.ai](https://chatbot.tilburg.ai/private/invite?token=324c6713-ff69-4cbb-b488-d64cba996c20)
-- VSCode Extension: tilburg.ai in vscode extension library and plug in an API-key on the [tilburg.ai API platform](https://api-portal.tilburg.ai/start)
-- GitHub Copilot Education: apply as a student for [github education](https://github.com/education) and connect your GitHub account to VSCode  (Proof of enrollment needs to be provided and it might take some days)

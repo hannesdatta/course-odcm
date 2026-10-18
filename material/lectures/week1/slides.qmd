@@ -1,6 +1,6 @@
 ---
 title: "Opening Lecture (week 1)"
-subtitle: "Online Data Collection & Management (2025/2026)"
+subtitle: "Online Data Collection & Management (2026/2027)"
 author: "Hannes Datta"
 date: "last-modified"
 format: 
@@ -17,7 +17,7 @@ We're about to start with the first lecture of this class.
 If you haven't done so, please check out the **Canvas page** for this course:
 
 - explore the *course syllabus* 
-- complete the *software installation* (see "preparation before this class on Canvas)
+- complete the *software preparation* (see "Preparation before the course starts")
 - check out today's slides on the *modules* page on Canvas
 
 <!--
@@ -69,8 +69,8 @@ If you haven't done so, please check out the **Canvas page** for this course:
 
 - scraping nerd — learned it in 2008 using Visual Basic in Excel  
 - started doing my own research with scraped and API-extracted data in 2012 (so, 10+ years experience)  
-- left Germany around your age, now 17+ years in NL  
-- Associate Professor at Tilburg University  
+- left Germany around your age, now 18+ years in the Netherlands
+- Full Professor of Digital Marketing and Artificial Intelligence at Tilburg University
 
 ---
 
@@ -78,14 +78,15 @@ If you haven't done so, please check out the **Canvas page** for this course:
 
 **Substantive interests**
 
-- streaming business models (e.g., music, movies)
-- marketing-mix modeling and optimization
-- open science  
+- digital media consumption (e.g., streaming services, digital TV, and short-video platforms)
+- digital platforms and artificial intelligence
+- retailing and open science
 
 **Methodological interests**
 
 - online data collection via APIs and web scraping
 - causal effects with observational data
+- econometric models for managerial decision-making and public policy
 
 ---
 <!--
@@ -133,7 +134,7 @@ If you haven't done so, please check out the **Canvas page** for this course:
 - [power imbalances in the music industry](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4079693)  
 - [playlist ecosystem data](https://github.com/hannesdatta/data-spotify-playlist-ecosystem)  
 - 100k+ images from Amazon, Google Vision/NLP API  
-- [video streaming wars (Netflix vs Disney+)](https://trakt.tv)  
+- video streaming wars (Netflix vs Disney+)
 - [methodological framework on scraping/APIs](https://doi.org/10.1177%2F00222429221100750)  
 - faced legal battles…  
 
@@ -280,11 +281,11 @@ for song in api_request_json.get('chart'):
 
 ## Learning goals {.incremental}
 
-* Explain how to use web data for **creating marketing insight**
-* **Select data sources** and **evaluate** their value
-* **Design web data collections** balancing **validity, feasibility, ethics**
-* **Collect data** via scraping and APIs
-* **Document and archive** for public reuse
+* Explain how to use and enrich (web) data for creating marketing insight
+* Select and evaluate data sources for specific research or business needs
+* Design data collection workflows, balancing validity, technical feasibility, and legal/ethical risks
+* Collect data via web scraping and APIs in Python, with and without LLM assistance
+* Document and archive collected data and make it available for public (re)use
 
 ---
 
@@ -307,9 +308,9 @@ for song in api_request_json.get('chart'):
 - Five tutorials:
   - __This week:__ Python Bootcamp
   - Week 2: Web scraping 101 (static) + Web scraping advanced (dynamic)
-  - Week 3: API 101 (data extraction) + API Advanced (OpenAI's API)
+   - Week 3: API 101 (data extraction) + API Advanced (AI APIs, including OpenAI and other models)
 - Structure of each tutorial
-  - interactive walk-through ("semi-lecture") wit a Jupyter Notebook posted on Canvas (no slides)
+   - interactive walk-through ("semi-lecture") with a Jupyter Notebook posted on Canvas (no slides)
   - discussion how to solve and accompanying you to learn coding to solve questions
   - solutions available
   
@@ -336,21 +337,22 @@ key responsibility: __Hannes Datta__
 * Collect data (scraping/APIs)
   * Apply frameworks (Boegershausen et al. 2022, Guyt et al. 2024)
   * Collect data for a research project
-  * Online coaching sessions (10-15 minutes per team)
-  * 5 group members (4 = exception)
+   * On-campus coaching sessions (10-15 minutes per team)
+   * 4 group members (3 = exception)
 
 <br>
 Key responsibility: __Jeroen Swolfs__
 
 ---
 
-## Course structure V: Team project (AI Use)
+## Course structure V: Team project (AI use)
 
-__Level of AI allowed for this assignment:__ AI-assisted idea generation and structuring (Level 3 on AI Index Tilburg University)
+__AI use:__ [Level 3](https://www.tilburguniversity.edu/sites/default/files/download/AI%20Index%20-%20TSHD%20-%202026.pdf) by default; Level 4 for specified tasks.
 
-- You are allowed to use generative AI tools to develop or refine initial ideas, materials, paraphrasing, structures, or outlines. __This includes generating code, e.g., for Python.__
-- Failing to declare AI use, or using AI beyond what is allowed in the syllabus, may be considered fraud and will be reported to the Examination Board.
-- Keep a simple “logbook” documenting which AI tools you have used and for what purposes. 
+- Level 3: use AI for initial ideas, structures, outlines, and code.
+- Level 4: for specified tasks, AI may complete parts of the work; critically evaluate its output.
+- Set up [ScrAPI on Tilly](https://chatbot.tilburg.ai/private/invite?token=324c6713-ff69-4cbb-b488-d64cba996c20), the [Tilburg.ai VS Code extension](https://marketplace.visualstudio.com/items?itemName=Tilburgaichat.tilburg-ai), and an API key from [Tilburg University's API Platform](https://api-portal.tilburg.ai/start).
+- Never enter private or confidential information into AI tools.
 
 <br>
 
@@ -359,12 +361,10 @@ __We will share several course-specific chatbots with you on Tilburg University'
 ## Assessment (6 ECTS version!)
 
 - __Computer exam__ (60%, 120 minutes) → on campus, with internet  
-  - Mix of open + closed questions  
-  - Example questions will be shared on Canvas; exam Q&A in week 6 + during the final lecture in week 7
+   - Mix of open + closed questions
+   - AI use is partly permitted: some parts are Level 1 (no AI), while permitted AI use will be considered in grading (both the process and the final output)
+   - Example questions will be shared on Canvas; exam Q&A in week 6 + during the final lecture in week 7
 - __Team project (40%)__ → submission on Canvas + self- and peer-assessment
-
-__Repeating this course__ for 3 ECTS? Please register on Canvas as such (6 ECTS Canvas page, group: 3 ECTS repeater)
-
 
 ## Tips & tricks
 
@@ -373,27 +373,16 @@ __Repeating this course__ for 3 ECTS? Please register on Canvas as such (6 ECTS 
 - Collaborate and help each other
 - Recall that coding can be frustrating & tiring + you're learning a new language (Python) &rarr; take breaks, get our support
 
-&rarr; __Quick support?__ Make use of our chatbots. 
+&rarr; __Quick support?__ Use the [course chatbot on Tilly](https://chatbot.tilburg.ai).
 
 ---
 
-## Steps of escalation
+## Questions and support
 
-1. Use chatbot
-2. Check course site
-3. Google / StackOverflow
-4. Ask classmates
-5. Feedback sessions
-6. If urgent → contact me
-
----
-
-## WhatsApp
-
-![](wa_qr.jpeg)
+- For project questions, contact **Jeroen Swolfs**.
+- For course questions, contact **Hannes Datta** by [email](mailto:h.datta@tilburguniversity.edu) or WhatsApp.
 
 +31 13 466 8938
-Email = slower
 
 ---
 
@@ -412,7 +401,7 @@ Email = slower
 ## Next steps
 
 
-- Find a group and register by week 2 (4–5 students, mix skills!)  
+- Find a group and register by week 2 (4 students; 3 is an exception; mix skills!)
 - Complete the software preparation and confirm access to JupyterLab
 - Most up-to-date info: Canvas &rarr; (weekly) modules
 

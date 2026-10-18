@@ -23,6 +23,7 @@ The __course evaluation__ will (soon) be live at https://app.evalytics.nl. Pleas
 ## Agenda
 
 - Course summary
+- Synthesis using the course workflow
 - From here onwards
   - Recognizing limitations
   - Seizing research opportunities
@@ -35,6 +36,21 @@ The __course evaluation__ will (soon) be live at https://app.evalytics.nl. Pleas
 ![odcm](odcm_positioning.png)
 
 # Course Summary
+
+## The course workflow
+
+Throughout the course, we have worked through six connected questions:
+
+1. **Why / opportunity:** what research or business problem could web data help address?
+2. **What data is available?** which websites, APIs, or existing datasets could provide it?
+3. **Does it fit?** consider validity, coverage, sampling, timing, and limitations.
+4. **How will we collect it?** choose methods, variables, seeds, frequency, and processing.
+5. **Can we collect it responsibly and reliably?** consider feasibility, infrastructure, monitoring, legal and ethical risks.
+6. **What did we collect, and can others use it?** inspect, preprocess, document, archive, and communicate limitations.
+
+The two papers provide the conceptual foundation for this workflow; the tutorials, lectures, and project apply it in practice.
+
+---
 
 ## Lessons learnt #1: Why to use web data?
 

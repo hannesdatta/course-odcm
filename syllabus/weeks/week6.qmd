@@ -20,6 +20,7 @@ By the end of this week, you should understand:
 
 - Exam preparation and Q&A
 - Questions about applying course concepts to the team projects
+- Inspecting collected data: record missing data, duplicates, unexpected values, and other limitations that affect documentation and reuse
 
 ## Coaching
 

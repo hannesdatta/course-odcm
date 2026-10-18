@@ -42,6 +42,10 @@ This tutorial introduces browser automation with Selenium. You will practice:
 
 The advanced tutorial requires a local Python setup and is not designed for JupyterLab in the cloud.
 
+## Connecting scraping to your project
+
+When exploring a possible project source, do not begin with the technical question alone. First identify the research, business, or knowledge opportunity that the data could address. Then use the scraping exercises to investigate whether the source contains the information you need and whether it can be accessed reliably.
+
 ## After class
 
 - Work through the Web Scraping 101 and Web Scraping Advanced tutorials.

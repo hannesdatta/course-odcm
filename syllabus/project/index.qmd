@@ -34,12 +34,12 @@ At the end of the course, you will submit a data package, consisting of:
 
 During the course, you will have the opportunity to meet up a lecturer for coaching sessions. These sessions are meant for you to receive feedback on your ideas and code. Frequently, this also entails problem-solving & debugging.
 
-- **Session Format:** The coaching sessions will be held *online*, with each team assigned a 15-minute time slot. A sign up sheet will be sent at least a day before the coaching session. 
+- **Session Format:** The coaching sessions will be held *on campus*, with each team assigned a 10-minute time slot. Team time slots will be provided at the start of the coaching session.
 - **Participation:** All team members are expected to attend their scheduled slot and actively participate. Teams should come prepared with a clear list of questions or issues they want to discuss. 
 - **Weekly Deliverables:** 
-  - The weekly deliverables will be due *before* the coaching session. The session will focus on clarification questions and discussing the next steps. 
+  - The weekly deliverables will be due *5 days* after the coaching session. The session will focus on clarification questions and discussing the next steps. 
   - Deliverables must be submitted on Canvas. Please check Canvas for the due dates for each week. 
-  - The course team will provide short feedback in line with the [grading rubric](https://github.com/hannesdatta/course-odcm/raw/main/syllabus/project/resources/2025-odcm-project-rubric.zip), at least a day before the next coaching session.
+  - The course team will provide short feedback in line with the [grading rubric](https://github.com/hannesdatta/course-odcm/raw/main/syllabus/project/resources/ODCM_Rubric_2026.xlsx), on the day before the next coaching session.
 
 ::: {.callout-note}
 **How to Prepare for Coaching Sessions?**
@@ -70,7 +70,7 @@ During the course, you will have the opportunity to meet up a lecturer for coach
 
 ### Submission
 
-- Deadline: 4 December, 2026 (23:59)
+- Deadline: 9 December, 2026 (17:00)
 - Submission of your data package on Canvas in one zip file.
 
 ### Permitted Level of AI Use

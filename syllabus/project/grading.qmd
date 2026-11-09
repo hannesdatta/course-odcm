@@ -20,7 +20,7 @@ Students' team project grades will be corrected upwards or downwards, depending 
 __Important downloads__:
 
 - [Documentation template ("readme")](https://github.com/hannesdatta/course-odcm/raw/main/syllabus/project/resources/Datasheets_for_DataSets_2025.zip)
-- [Detailed grading rubric](https://github.com/hannesdatta/course-odcm/raw/main/syllabus/project/resources/2025-odcm-project-rubric.zip)
+- [Detailed grading rubric](https://github.com/hannesdatta/course-odcm/raw/main/syllabus/project/resources/ODCM_Rubric_2026.xlsx)
 
 
 ::: {.callout-note}
